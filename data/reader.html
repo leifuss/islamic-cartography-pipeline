@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reader — Islamic Cartography</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:     #1a1a1a;
+  --panel:  #111;
+  --border: #2e2e2e;
+  --text:   #e0e0e0;
+  --muted:  #666;
+  --accent: #0071e3;
+  --link:   #5ba3f5;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── Loading ── */
+#loading {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ── App shell ── */
+#app { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+/* ── Header ── */
+header {
+  background: #111;
+  border-bottom: 1px solid var(--border);
+  padding: 10px 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.back-link {
+  font-size: 12px;
+  color: var(--link);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.back-link:hover { text-decoration: underline; }
+#docTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#docMeta { font-size: 12px; color: var(--muted); flex-shrink: 0; }
+
+/* ── Two-pane reader ── */
+.reader {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  min-height: 0;
+}
+
+/* ── Left: PDF page ── */
+.pane-pdf {
+  flex: 0 0 55%;
+  overflow-y: auto;
+  background: #0d0d0d;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+}
+.pane-pdf img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.6);
+}
+.pane-pdf .no-image {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 40px;
+}
+
+/* ── PDF wrapper + bbox overlay ── */
+.pdf-wrapper {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  max-width: 100%;
+}
+.pdf-wrapper img { display: block; max-width: 100%; height: auto; border-radius: 3px; box-shadow: 0 4px 24px rgba(0,0,0,.6); }
+.bbox-layer { position: absolute; inset: 0; pointer-events: none; }
+.bbox-item {
+  position: absolute;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  background: transparent;
+  transition: background .12s, border-color .12s;
+  box-sizing: border-box;
+}
+.bbox-item.active {
+  background: rgba(255, 200, 50, 0.22);
+  border-color: rgba(255, 180, 30, 0.75);
+}
+
+/* ── Right: text panel ── */
+.pane-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  min-width: 0;
+}
+.text-toolbar {
+  background: #161616;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.tab-btn {
+  background: #222;
+  border: 1px solid #3a3a3a;
+  color: var(--muted);
+  padding: 4px 14px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all .15s;
+}
+.tab-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tab-btn:hover:not(.active) { color: var(--text); border-color: #555; }
+.page-quality {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.text-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 28px 32px;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #1a1510;
+  background: #ffffff;
+  font-family: Georgia, 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+}
+/* Inner wrapper constrains text to ideal reading width and centres it */
+.text-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.text-content p { margin-bottom: 1em; }
+.text-content h1 { font-size: 19px; font-weight: 700; color: #111; margin: 1.5em 0 .6em; font-family: Georgia, serif; }
+.text-content h2 { font-size: 15px; font-weight: 700; color: #222; margin: 1.3em 0 .5em; font-family: Georgia, serif; }
+.text-content em { color: #4a3f30; font-style: italic; }
+.text-content strong { color: #111; }
+
+/* Full-document mode */
+.text-content.full-doc-mode { padding: 28px 36px; }
+.full-doc-divider {
+  border: none;
+  border-top: 1px solid #d8d0c4;
+  margin: 1.5em 0;
+}
+.page-marker {
+  font-size: 10px;
+  color: #a0907c;
+  text-align: center;
+  margin: 0.5em 0;
+  font-variant: small-caps;
+  letter-spacing: .05em;
+  font-family: system-ui, sans-serif;
+}
+
+/* RTL (Arabic) support */
+.text-content.rtl {
+  direction: rtl;
+  font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+  font-size: 17px;
+  line-height: 2.3;
+  color: #1a1510;
+}
+
+/* ── Footer / navigation ── */
+footer {
+  background: #111;
+  border-top: 1px solid var(--border);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.nav-btn {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #ccc;
+  width: 34px; height: 34px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .15s;
+  user-select: none;
+}
+.nav-btn:hover:not(:disabled) { background: #3a3a3a; color: #fff; border-color: #666; }
+.nav-btn:disabled { opacity: .3; cursor: default; }
+.page-indicator { font-size: 13px; color: #888; display: flex; align-items: center; gap: 6px; }
+.page-indicator input {
+  width: 42px;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #ddd;
+  text-align: center;
+  padding: 3px 4px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.page-indicator input:focus { outline: none; border-color: var(--accent); }
+
+/* ── Tables ── */
+.text-content .md-table { border-collapse: collapse; font-size: 13px; margin: 1em 0; width: 100%; font-family: system-ui, sans-serif; }
+.text-content .md-table th, .text-content .md-table td {
+  border: 1px solid #c8bfb0; padding: 5px 10px; text-align: left; vertical-align: top; color: #1a1510;
+}
+.text-content .md-table thead th { background: #ede8df; color: #2a2010; font-weight: 600; }
+.text-content .md-table tbody tr:nth-child(even) { background: #f4f0ea; }
+
+/* ── Footnote numbers ── */
+.text-content .footnote-num {
+  color: #8b5e3c; font-size: 10px; vertical-align: super; font-weight: 600; margin-right: 1px;
+}
+
+/* ── Fit-page toggle ── */
+.pane-pdf.fit-page { overflow: hidden; align-items: center; }
+.pane-pdf.fit-page img {
+  max-height: calc(100vh - 140px); /* viewport minus header + footer + pane padding */
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ── PDF pane collapse button ── */
+#pdfCollapseBtn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 48px;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  color: #aaa;
+  font-size: 11px;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity .15s;
+}
+#pdfCollapseBtn:hover { opacity: 1; color: #fff; }
+.pane-pdf.pdf-collapsed {
+  flex: 0 0 18px !important;
+  overflow: hidden;
+  min-width: 18px;
+}
+.pane-pdf.pdf-collapsed .pdf-wrapper,
+.pane-pdf.pdf-collapsed .no-image,
+.pane-pdf.pdf-collapsed .pdf-controls {
+  display: none !important;
+}
+
+/* ── Page offset panel ── */
+#offsetPanel {
+  background: #161616;
+  border-top: 1px solid var(--border);
+  padding: 7px 20px;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #888;
+  flex-shrink: 0;
+}
+#offsetPanel.visible { display: flex; }
+#offsetInput {
+  width: 58px; background: #2a2a2a; border: 1px solid #444;
+  color: #ddd; padding: 3px 6px; border-radius: 4px; font-size: 12px; text-align: center;
+}
+#offsetApply {
+  background: #2a2a2a; border: 1px solid #444; color: #ccc;
+  padding: 3px 10px; border-radius: 4px; font-size: 12px; cursor: pointer;
+}
+#offsetApply:hover { background: #333; }
+#printedPage { color: #666; font-size: 11px; display: none; }
+.nav-btn.toggled { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* ── Layout elements (semantic labels from Docling) ── */
+.le-block {
+  margin-bottom: .8em;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: default;
+  transition: background .1s;
+}
+.le-block:hover { background: rgba(139, 94, 60, 0.08); }
+.le-block.highlighted { background: rgba(255, 200, 50, 0.25) !important; outline: 1px solid rgba(200,150,20,.4); }
+/* labels are now tooltips only — no chips rendered */
+.le-label { display: none; }
+
+/* title */
+.le-title .le-text-body { font-size: 19px; font-weight: 700; color: #111; display: block; }
+/* section_header — base */
+.le-section_header .le-text-body { font-size: 14px; font-weight: 700; color: #1a1510; display: block; letter-spacing: .01em; }
+.le-section_header.le-chapter .le-text-body { font-size: 17px; color: #0d0d0d; border-bottom: 1px solid #c8bfb0; padding-bottom: .3em; margin-bottom: .2em; }
+/* Numbered heading depths: H1 = "6", H2 = "6.1", H3 = "6.1.2", H4 = "6.1.2.3" */
+.le-section_header.le-h1 .le-text-body { font-size: 17px; color: #0d0d0d; letter-spacing: .02em; margin-top: 1.2em; }
+.le-section_header.le-h2 .le-text-body { font-size: 15px; color: #1a1a1a; font-weight: 700; letter-spacing: .01em; margin-top: .9em; }
+.le-section_header.le-h3 .le-text-body { font-size: 14px; color: #2a2520; font-weight: 600; font-style: italic; letter-spacing: 0; margin-top: .6em; }
+.le-section_header.le-h4 .le-text-body { font-size: 13px; color: #555; font-weight: 600; letter-spacing: 0; margin-top: .5em; }
+/* footnote */
+.le-footnote { border-left: 3px solid #b8c8a8; padding-left: 10px; background: rgba(184,200,168,.07); border-radius: 0 4px 4px 0; }
+.le-footnote .le-text-body { font-size: 12px; color: #3a5030; line-height: 1.65; }
+/* caption */
+.le-caption .le-text-body { font-size: 12px; color: #5a5040; font-style: italic; }
+/* page_header / page_footer */
+.le-page_header, .le-page_footer { opacity: .45; }
+.le-page_header .le-text-body, .le-page_footer .le-text-body { font-size: 10px; color: #7a6a58; letter-spacing: .04em; font-variant: small-caps; font-family: system-ui, sans-serif; }
+/* list_item */
+.le-list_item { padding-left: 20px; position: relative; }
+.le-list_item::before { content: '–'; position: absolute; left: 6px; color: #8a7a68; }
+/* formula */
+.le-formula .le-text-body { font-family: 'Courier New', monospace; font-size: 13px; color: #2a3a5a; background: #edf2fa; padding: 4px 10px; border-radius: 4px; display: inline-block; }
+/* picture: centered block, no body text */
+.le-picture { text-align: center; }
+.le-picture .le-text-body { display: none; }
+/* generic text — first-line indent like a typeset book */
+.le-text .le-text-body { color: #1a1510; text-indent: 1.5em; display: block; }
+/* indented block quote / extract */
+.le-indented {
+  margin-left: 2em; margin-right: 1.5em;
+  border-left: 3px solid #c8b89a;
+  padding-left: 1em;
+}
+.le-indented .le-text-body {
+  text-indent: 0;
+  font-style: italic;
+  font-size: 14px;
+  color: #2a2010;
+}
+/* foreign-term spans (Arabic transliterations etc.) */
+.foreign-term { font-style: italic; color: #3a2a1a; }
+
+/* ── Bibliography panel (bottom pane like Notes) ── */
+#bibPanel {
+  display: none;
+  flex-direction: column;
+  border-top: 2px solid #9ab8c8;
+  max-height: 45%;
+  overflow-y: auto;
+  flex-shrink: 0;
+  background: #ffffff;
+}
+#bibPanel.visible { display: flex; }
+#bibPanelInner {
+  padding: 8px 20px 14px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #1a1510;
+  font-family: Georgia, serif;
+  overflow-y: auto;
+  flex: 1;
+  background: #ffffff;
+}
+#bibPanelInner .bib-entry {
+  padding: 5px 0 5px 32px;
+  text-indent: -32px;
+  border-bottom: 1px solid #f0ece4;
+  transition: background .15s;
+}
+#bibPanelInner .bib-entry:last-child { border-bottom: none; }
+#bibPanelInner .bib-entry.highlighted { background: rgba(255,200,50,.3); }
+#bibPanelInner .bib-id {
+  display: inline-block; min-width: 28px; font-weight: 700;
+  color: #8b5e3c; font-family: system-ui, sans-serif; font-size: 11px;
+}
+#bibPanelHeader {
+  display: flex; align-items: center; gap: 8px;
+  padding: 5px 20px; background: #deeaf0;
+  border-bottom: 1px solid #9ab8c8; flex-shrink: 0;
+  font-size: 11px; color: #3a5a68; font-family: system-ui, sans-serif;
+}
+#bibPanelHeader button {
+  margin-left: auto; background: none; border: none; color: #6a8a98;
+  font-size: 14px; cursor: pointer; line-height: 1; padding: 0 2px;
+}
+
+/* ── Shared document panel styles (Contents, References, Info) ── */
+.doc-panel {
+  display: none;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #fff;
+  z-index: 20;
+  flex-direction: column;
+  overflow: hidden;
+  border-left: 1px solid #d8d0c4;
+}
+.doc-panel.visible { display: flex; }
+.doc-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid #d8d0c4;
+  font-weight: 600;
+  font-size: 13px;
+  color: #4a3f30;
+  font-family: system-ui, sans-serif;
+  flex-shrink: 0;
+}
+.doc-panel-header button {
+  background: none; border: none; cursor: pointer;
+  font-size: 16px; color: #8a7a68; padding: 0 4px;
+}
+.doc-panel-header button:hover { color: #2a2010; }
+.doc-panel-inner {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 16px;
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+}
+/* TOC entries */
+.toc-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 1.4;
+}
+.toc-entry:hover { background: rgba(139,94,60,.08); }
+.toc-entry-heading { flex: 1; color: #2a2010; }
+.toc-entry-page { color: #8a7a68; font-size: 11px; white-space: nowrap; }
+.toc-title { font-weight: 700; font-size: 14px; color: #111; }
+.toc-section { padding-left: 0; }
+.toc-sub { padding-left: 12px; font-size: 12px; }
+/* Reference entries */
+.ref-entry {
+  padding: 6px 0;
+  border-bottom: 1px solid #f0ece4;
+  line-height: 1.5;
+  color: #1a1510;
+}
+.ref-entry:last-child { border-bottom: none; }
+.ref-id { display: inline-block; min-width: 24px; font-weight: 600; color: #8b5e3c; font-size: 11px; }
+.ref-text { font-size: 12px; }
+/* Info entries */
+.info-row { display: flex; gap: 12px; padding: 5px 0; border-bottom: 1px solid #f0ece4; font-size: 12px; }
+.info-row:last-child { border-bottom: none; }
+.info-label { min-width: 80px; font-weight: 600; color: #8a7a68; }
+.info-value { color: #1a1510; flex: 1; }
+.info-value a { color: #3b6ea5; text-decoration: none; }
+.info-value a:hover { text-decoration: underline; }
+.info-tag {
+  display: inline-block; background: #e8e0d4; border-radius: 3px;
+  padding: 1px 6px; font-size: 11px; color: #4a3f30; margin: 1px 2px;
+}
+.info-section-head {
+  font-weight: 700; font-size: 11px; color: #8a7a68; text-transform: uppercase;
+  letter-spacing: .04em; margin: 12px 0 4px;
+  font-family: system-ui, sans-serif; padding-top: 8px;
+  border-top: 1px solid #e8e0d4;
+}
+.info-note {
+  font-size: 12px; color: #2a2010; line-height: 1.6; margin-bottom: 6px;
+  padding: 6px 10px; background: #faf6ee; border-radius: 4px;
+  border-left: 3px solid #d8c898;
+}
+.info-abstract {
+  font-size: 13px; color: #1a1510; line-height: 1.7;
+  font-family: Georgia, serif; margin: 6px 0;
+  padding: 8px 12px; background: #f8f4ee; border-radius: 4px;
+}
+
+/* ── Notes panel (aggregated footnotes/endnotes) ── */
+#notesPanel {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d0c8bc;
+  background: #ffffff;
+  background: #f4f0e8;
+  max-height: 28vh;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+#notesPanelInner {
+  padding: 10px 20px 14px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #3a4a30;
+  font-family: Georgia, serif;
+  background: #ffffff;
+}
+#notesPanelInner .note-entry { margin-bottom: .6em; }
+#notesPanelInner .note-num {
+  font-size: 10px; font-weight: 700; color: #8b5e3c;
+  font-family: system-ui, sans-serif; vertical-align: super; margin-right: 3px;
+}
+#notesPanelHeader {
+  display: flex; align-items: center; gap: 8px;
+  padding: 5px 20px 5px; background: #edeae0;
+  border-bottom: 1px solid #d0c8bc; flex-shrink: 0;
+  font-size: 11px; color: #6a5a48; font-family: system-ui, sans-serif;
+}
+#notesPanelHeader button {
+  margin-left: auto; background: none; border: none; color: #8a7a68;
+  font-size: 14px; cursor: pointer; line-height: 1; padding: 0 2px;
+}
+#notesPanel.notes-collapsed #notesPanelInner { display: none; }
+#notesPanel.notes-collapsed { max-height: none; }
+
+/* ── Center-justified text (detected from bbox) ── */
+.le-centered .le-text-body { text-align: center; display: block; }
+
+/* ── Footnote refs & popup ── */
+.fn-ref {
+  color: #8b5e3c;
+  font-size: 10px;
+  vertical-align: super;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+  padding: 0 1px;
+  border-bottom: 1px dotted #c09070;
+  transition: color .1s;
+}
+.fn-ref:hover { color: #c07030; }
+#fnPopup {
+  position: fixed;
+  background: #fffaf4;
+  border: 1px solid #c8a878;
+  border-radius: 7px;
+  padding: 10px 14px;
+  font-size: 12.5px;
+  line-height: 1.65;
+  max-width: 340px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.18);
+  z-index: 9999;
+  display: none;
+  color: #2a1f10;
+  font-family: Georgia, serif;
+  pointer-events: none;
+}
+#fnPopup .fn-popup-num {
+  font-size: 10px;
+  font-weight: 700;
+  color: #8b5e3c;
+  font-family: system-ui, sans-serif;
+  margin-right: 4px;
+  vertical-align: super;
+}
+
+/* ── Unknown glyph placeholder ── */
+.glyph-unknown {
+  color: #c04030;
+  font-size: 10px;
+  font-family: system-ui, sans-serif;
+  font-weight: 700;
+  background: #ffeedd;
+  border-radius: 2px;
+  padding: 0 2px;
+  cursor: help;
+}
+
+/* ── Picture inline crop ── */
+.le-pic-crop {
+  display: block;
+  max-width: 90%;
+  margin: 8px auto;   /* centred, no shadow/border — blends into white background */
+}
+
+/* ── Bibliography items ── */
+.le-bib {
+  border-left: 3px solid #9ab8c8;
+  padding-left: 10px;
+}
+.le-bib .le-text-body { font-size: 12.5px; color: #1a3050; }
+
+/* ── Scrollbars ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+</style>
+</head>
+<body>
+
+<div id="loading">Loading document…</div>
+<div id="fnPopup"></div>
+
+<div id="app" style="display:none; flex-direction:column; flex:1; overflow:hidden;">
+  <header>
+    <a href="explore.html" class="back-link">← Explorer</a>
+    <span id="docTitle">…</span>
+    <span id="docMeta"></span>
+    <span id="translBadge" style="display:none;font-size:11px;background:#1a3a2a;color:#5fba7d;border:1px solid #2a5a2a;border-radius:4px;padding:2px 8px;flex-shrink:0">🌐 EN translation</span>
+  </header>
+
+  <div class="reader">
+    <!-- Left: PDF page image -->
+    <div class="pane-pdf" id="pdfPane">
+      <div class="pdf-wrapper" id="pdfWrapper">
+        <img id="pageImg" src="" alt="">
+        <div class="bbox-layer" id="bboxLayer"></div>
+      </div>
+      <div class="no-image" id="noImage" style="display:none">
+        Page image not available.<br>
+        Run: <code>python scripts/generate_reader.py --key KEY</code>
+      </div>
+      <button id="pdfCollapseBtn" onclick="togglePdfPane()" title="Collapse/expand PDF pane">&#9664;</button>
+    </div>
+
+    <!-- Right: extracted text -->
+    <div class="pane-text">
+      <div class="text-toolbar">
+        <button class="tab-btn"        id="btnContents"  onclick="toggleContentsPanel()" title="Table of contents" style="display:none">Contents</button>
+        <button class="tab-btn active" id="btnElem"      onclick="setMode('elements')"   title="Semantic layout elements from Docling">Reading view</button>
+        <button class="tab-btn"        id="btnPage"      onclick="setMode('page')">Page text</button>
+        <button class="tab-btn"        id="btnFull"      onclick="setMode('full')">Full document</button>
+        <button class="tab-btn"        id="btnInfo"      onclick="toggleInfoPanel()"     title="Document information" style="display:none">Doc info</button>
+        <button class="tab-btn"        id="btnBib"       onclick="toggleBibPanel()"      title="Bibliography / references" style="display:none">Bibliography</button>
+        <button class="tab-btn"        id="btnTranslate" onclick="toggleTranslation()"   title="Toggle English translation" style="display:none">🌐 Translation</button>
+        <span class="page-quality" id="pageQuality"></span>
+      </div>
+      <div class="text-content" id="textContent"></div>
+      <div id="notesPanel">
+        <div id="notesPanelHeader">
+          <span id="notesPanelTitle">Foot/endnotes</span>
+          <button id="notesPanelToggle" onclick="toggleNotesCollapse()" title="Collapse/expand footnotes">▼</button>
+        </div>
+        <div id="notesPanelInner"></div>
+      </div>
+
+      <!-- Contents panel (TOC) -->
+      <div id="contentsPanel" class="doc-panel">
+        <div class="doc-panel-header">
+          <span>Contents</span>
+          <button onclick="toggleContentsPanel()" title="Close">×</button>
+        </div>
+        <div id="contentsPanelInner" class="doc-panel-inner"></div>
+      </div>
+
+      <!-- Bibliography panel (bottom pane, like notesPanel) -->
+      <div id="bibPanel">
+        <div id="bibPanelHeader">
+          <span id="bibPanelTitle">Bibliography</span>
+          <button onclick="toggleBibPanel()" title="Close">×</button>
+        </div>
+        <div id="bibPanelInner"></div>
+      </div>
+
+      <!-- Document info panel -->
+      <div id="infoPanel" class="doc-panel">
+        <div class="doc-panel-header">
+          <span>Document Information</span>
+          <button onclick="toggleInfoPanel()" title="Close">×</button>
+        </div>
+        <div id="infoPanelInner" class="doc-panel-inner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page offset settings panel -->
+  <div id="offsetPanel">
+    <span>Printed page offset</span>
+    <input type="number" id="offsetInput" value="0" title="printed = PDF page + offset">
+    <button id="offsetApply" onclick="applyOffset()">Apply</button>
+    <span style="font-size:11px;color:#555">e.g. if printed p.1 = PDF p.3, enter −2</span>
+    <button onclick="applyOffset(0)" style="margin-left:auto;background:none;border:none;color:#555;font-size:11px;cursor:pointer">Clear</button>
+  </div>
+
+  <footer>
+    <button class="nav-btn" id="btnFitPage" onclick="toggleFitPage()" title="Fit full page in view">⊡</button>
+    <button class="nav-btn" id="btnFirst" onclick="goTo(0)"     title="First page">⇤</button>
+    <button class="nav-btn" id="btnPrev"  onclick="goTo(cur-1)" title="Previous page">‹</button>
+    <div class="page-indicator">
+      p. <input type="number" id="pageInput" min="1" value="1">
+      / <span id="pageTotal">?</span>
+      <span id="printedPage"></span>
+    </div>
+    <button class="nav-btn" id="btnNext"  onclick="goTo(cur+1)" title="Next page">›</button>
+    <button class="nav-btn" id="btnLast"  onclick="goTo(N-1)"   title="Last page">⇥</button>
+    <button class="nav-btn" id="btnOffset" onclick="toggleOffsetPanel()" title="Set printed page offset" style="font-size:10px;letter-spacing:-.5px">p±n</button>
+  </footer>
+</div>
+
+<script>
+// ── URL param ──────────────────────────────────────────────────────────────────
+const params = new URLSearchParams(location.search);
+const KEY    = params.get('key');
+
+// ── State ─────────────────────────────────────────────────────────────────────
+let cur            = 0;
+let N              = 0;
+let mode           = 'elements';  // default to Elements view
+let pageTexts      = {};   // {1: "text", 2: "text", …}  (1-based string keys from JSON)
+let fullMd         = null; // cached full markdown
+let mdPageMap      = {};   // {1: "md text", …}  markdown aligned to PDF pages
+let layoutElements = {};   // {1: [{label, text, bbox?}, …], …}  Docling layout labels
+let pageSizes      = {};   // {1: {w, h}} page dimensions in PDF points
+let textSpans      = {};   // {1: [{text, italic, bold, foreign, bbox}, …]} pdfplumber spans
+let bibliography    = null; // bibliography.json content if available
+let translationData = null; // translation.json content if available
+let translMode      = false; // true = show English translation overlay
+let docInventory   = null;  // inventory entry for this doc
+let docTOC         = [];   // [{heading, page}, …] built from section_headers
+let fitPage        = true; // default to fit-page view
+let pgOffset       = 0;    // printed page = (cur + 1) + pgOffset
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+if (location.protocol === 'file:') {
+  document.getElementById('loading').innerHTML =
+    '<div style="max-width:480px;text-align:left;line-height:1.7">' +
+    '<strong style="color:#fff">⚠ reader.html must be served over HTTP</strong><br><br>' +
+    'You opened this file directly from disk (<code>file://</code>). ' +
+    'Browsers block network requests from <code>file://</code> pages, so the ' +
+    'text and metadata cannot load.<br><br>' +
+    '<strong>Fix:</strong> start the dev server and open via localhost:<br>' +
+    '<code style="display:block;margin:8px 0;padding:8px;background:#222;border-radius:4px">' +
+    'python -m http.server 8001 --directory data</code>' +
+    'Then visit: <a href="http://localhost:8001/reader.html' + location.search + '" ' +
+    'style="color:#5ba3f5">http://localhost:8001/reader.html' + location.search + '</a>' +
+    '</div>';
+} else if (!KEY) {
+  document.getElementById('loading').textContent =
+    'No document key specified. Use: reader.html?key=XXXX';
+} else {
+  loadDocument(KEY);
+}
+
+async function loadDocument(key) {
+  const loadEl = document.getElementById('loading');
+  try {
+    // Fetch all document data in parallel
+    const [metaResp, textsResp, mdResp, layoutResp, spansResp, bibResp, invResp, translResp] = await Promise.all([
+      fetch(`texts/${key}/reader_meta.json`).catch(() => null),
+      fetch(`texts/${key}/page_texts.json`).catch(() => null),
+      fetch(`texts/${key}/docling.md`).catch(() => null),
+      fetch(`texts/${key}/layout_elements.json`).catch(() => null),
+      fetch(`texts/${key}/text_spans.json`).catch(() => null),
+      fetch(`texts/${key}/bibliography.json`).catch(() => null),
+      fetch(`inventory.json`).catch(() => null),
+      fetch(`texts/${key}/translation.json`).catch(() => null),
+    ]);
+
+    // Fall back to extraction meta.json if reader_meta.json doesn't exist
+    const metaFinal = (metaResp && metaResp.ok) ? metaResp
+      : await fetch(`texts/${key}/meta.json`).catch(() => null);
+
+    const meta = (metaFinal && metaFinal.ok) ? await metaFinal.json() : {};
+    pageTexts       = (textsResp  && textsResp.ok)  ? await textsResp.json()  : {};
+    layoutElements  = (layoutResp && layoutResp.ok) ? await layoutResp.json() : {};
+    textSpans       = (spansResp  && spansResp.ok)  ? await spansResp.json()  : {};
+    bibliography    = (bibResp    && bibResp.ok)    ? await bibResp.json()    : null;
+    translationData = (translResp && translResp.ok) ? await translResp.json() : null;
+    translMode      = false;  // always start in original language
+
+    // Find this document's inventory entry
+    if (invResp && invResp.ok) {
+      const inv = await invResp.json();
+      docInventory = inv.find(it => it.key === key) || null;
+    }
+
+    // Build TOC from section_headers across all pages
+    docTOC = [];
+    const allPageKeys = Object.keys(layoutElements).filter(k => k !== '_page_sizes')
+      .sort((a,b) => parseInt(a) - parseInt(b));
+    for (const pgStr of allPageKeys) {
+      const pgItems = layoutElements[pgStr];
+      if (!Array.isArray(pgItems)) continue;
+      for (const it of pgItems) {
+        const lbl = (it.label || '').toLowerCase();
+        if ((lbl === 'section_header' || lbl === 'title') && (it.text || '').trim()) {
+          docTOC.push({ heading: it.text.trim(), page: parseInt(pgStr) });
+        }
+      }
+    }
+    // Show/hide Contents button
+    document.getElementById('btnContents').style.display = docTOC.length ? '' : 'none';
+    // Show/hide References button
+    const hasRefs = bibliography && (bibliography.refs || []).length > 0;
+    document.getElementById('btnBib').style.display = hasRefs ? '' : 'none';
+    // Show/hide Translation button
+    document.getElementById('btnTranslate').style.display = translationData ? '' : 'none';
+    if (translationData) {
+      const srcLang = (translationData.source_language || '').toUpperCase();
+      document.getElementById('btnTranslate').title =
+        `Toggle English translation (source: ${srcLang})`;
+    }
+    // Update info button
+    document.getElementById('btnInfo').style.display = docInventory ? '' : 'none';
+
+    // Extract page sizes stored under special '_page_sizes' key
+    pageSizes = layoutElements['_page_sizes'] || {};
+
+    // Show/hide Elements tab depending on availability
+    const hasElements = Object.keys(layoutElements).some(k => k !== '_page_sizes');
+    document.getElementById('btnElem').style.display = hasElements ? '' : 'none';
+    // If no elements, fall back to page mode
+    if (!hasElements && mode === 'elements') mode = 'page';
+
+    // Page count: prefer meta, fall back to counting page_texts entries
+    N = parseInt(meta.page_count) || Object.keys(pageTexts).length || 0;
+
+    // Build per-page markdown map from docling.md (cache as fullMd too)
+    if (mdResp && mdResp.ok) {
+      fullMd = await mdResp.text();
+      if (N > 0) buildMdPageMap(fullMd);
+    }
+
+    if (N === 0) {
+      loadEl.textContent = `No page data found for key "${key}". ` +
+        'Run: python scripts/05_extract_embedded.py && python scripts/generate_reader.py --key ' + key;
+      return;
+    }
+
+    // Populate header
+    document.title = (meta.title || key) + ' — Reader';
+    document.getElementById('docTitle').textContent = meta.title || key;
+    const pubTitle  = docInventory && docInventory.pub_title ? docInventory.pub_title : null;
+    const placeStr  = docInventory && docInventory.place     ? docInventory.place     : null;
+    document.getElementById('docMeta').innerHTML =
+      [meta.authors, meta.year, placeStr].filter(Boolean).join(' · ') +
+      (pubTitle ? `<span style="font-style:italic;opacity:.6"> · ${escWithGlyphs(pubTitle)}</span>` : '');
+
+    // Wire up page input
+    const inp = document.getElementById('pageInput');
+    inp.max = N;
+    inp.onchange   = e => goTo(+e.target.value - 1);
+    inp.onkeydown  = e => { if (e.key === 'Enter') goTo(+e.target.value - 1); };
+    document.getElementById('pageTotal').textContent = N;
+
+    // Restore saved page offset for this doc
+    const saved = localStorage.getItem('pgOffset_' + key);
+    if (saved !== null) {
+      pgOffset = parseInt(saved) || 0;
+      document.getElementById('offsetInput').value = pgOffset;
+    }
+
+    // Zotero pages field (e.g. "83-121") → seed offset from first page
+    if (saved === null && docInventory && docInventory.pages) {
+      const m = String(docInventory.pages).match(/^\s*(\d+)/);
+      if (m) {
+        const firstPage = parseInt(m[1]);
+        if (firstPage > 1) {
+          pgOffset = firstPage - 1;
+          document.getElementById('offsetInput').value = pgOffset;
+          localStorage.setItem('pgOffset_' + key, pgOffset);
+          console.log(`[reader] Page offset from Zotero pages "${docInventory.pages}": ${pgOffset}`);
+        }
+      }
+    }
+
+    // Auto-detect page number offset from embedded page numbers in text
+    if (saved === null && !pgOffset && Object.keys(pageTexts).length > 1) {
+      const offsetVotes = {};
+      for (const [pgStr, text] of Object.entries(pageTexts)) {
+        const pdfPage = parseInt(pgStr);
+        if (!pdfPage || !text) continue;
+        // Find all integers 1-9999 in the page text
+        const nums = [...text.matchAll(/\b(\d{1,4})\b/g)]
+          .map(m => parseInt(m[1]))
+          .filter(n => n >= 1 && n <= 9999);
+        for (const n of nums) {
+          const off = n - pdfPage;
+          if (off !== 0) {  // offset 0 = no correction needed, skip
+            offsetVotes[off] = (offsetVotes[off] || 0) + 1;
+          }
+        }
+      }
+      // Find offset with most votes, requiring at least 3 pages agreeing
+      let bestOff = null, bestCount = 0;
+      for (const [off, count] of Object.entries(offsetVotes)) {
+        if (count > bestCount && count >= 3) {
+          bestCount = count;
+          bestOff = parseInt(off);
+        }
+      }
+      // Sanity check: offset should be in plausible range (-500 to 5000)
+      if (bestOff !== null && bestOff >= -500 && bestOff <= 5000) {
+        pgOffset = bestOff;
+        document.getElementById('offsetInput').value = pgOffset;
+        localStorage.setItem('pgOffset_' + key, pgOffset);
+        console.log(`[reader] Auto-detected page offset: ${pgOffset} (${bestCount} votes)`);
+      }
+    }
+
+    // Show app
+    loadEl.style.display  = 'none';
+    const app = document.getElementById('app');
+    app.style.display = 'flex';
+
+    // Apply initial fitPage state
+    document.getElementById('pdfPane').classList.toggle('fit-page', fitPage);
+    document.getElementById('btnFitPage').classList.toggle('toggled', fitPage);
+
+    // Sync tab button active states with default mode
+    document.getElementById('btnPage').classList.toggle('active', mode === 'page');
+    document.getElementById('btnFull').classList.toggle('active', mode === 'full');
+    document.getElementById('btnElem').classList.toggle('active', mode === 'elements');
+
+    goTo(0);
+  } catch (err) {
+    loadEl.textContent = 'Error loading document: ' + err.message;
+  }
+}
+
+// ── Navigation ────────────────────────────────────────────────────────────────
+function goTo(n) {
+  cur = Math.max(0, Math.min(N - 1, n));
+
+  // Update page image
+  const img    = document.getElementById('pageImg');
+  const noImg  = document.getElementById('noImage');
+  const padded = String(cur + 1).padStart(3, '0');
+  img.style.display  = 'block';
+  noImg.style.display = 'none';
+  img.onerror = () => {
+    document.getElementById('pdfWrapper').style.display = 'none';
+    noImg.style.display = 'block';
+  };
+  img.onload = () => {
+    document.getElementById('pdfWrapper').style.display = 'inline-block';
+    noImg.style.display = 'none';
+    const pk = String(cur + 1);
+    updateBboxOverlays(pk);
+    // Re-render picture crops now that image dimensions are known
+    if (mode === 'elements') renderPictureCropsForPage(pk);
+  };
+  img.src = `texts/${KEY}/pages/${padded}.jpg`;
+
+  // Scroll PDF pane to top
+  document.getElementById('pdfPane').scrollTop = 0;
+
+  // Update controls
+  document.getElementById('pageInput').value   = cur + 1;
+  document.getElementById('btnFirst').disabled = cur === 0;
+  document.getElementById('btnPrev').disabled  = cur === 0;
+  document.getElementById('btnNext').disabled  = cur === N - 1;
+  document.getElementById('btnLast').disabled  = cur === N - 1;
+
+  // Show printed page number: prefer auto-detected from elements, fall back to offset
+  const ppEl = document.getElementById('printedPage');
+  const autoPage = detectPrintedPage(String(cur + 1));
+  if (autoPage !== null) {
+    ppEl.textContent = '(printed p.' + autoPage + ')';
+    ppEl.style.display = 'inline';
+  } else if (pgOffset !== 0) {
+    ppEl.textContent = '(printed p.' + (cur + 1 + pgOffset) + ')';
+    ppEl.style.display = 'inline';
+  } else {
+    ppEl.style.display = 'none';
+  }
+
+  if (mode === 'page') renderPageText();
+  else if (mode === 'elements') renderLayoutElements();
+}
+
+// ── Markdown page alignment ────────────────────────────────────────────────────
+function stripMarkdown(s) {
+  return s.replace(/^#+\s*/gm, '')
+          .replace(/\*\*/g, '').replace(/\*/g, '')
+          .replace(/<!--.*?-->/gs, '')
+          .replace(/\s+/g, ' ').trim();
+}
+
+function buildMdPageMap(md) {
+  mdPageMap = {};
+  const sections = md.split(/\n?<!-- image -->\n?/).filter(s => s.trim());
+  const M = sections.length;
+  if (!M) return;
+
+  // IMAGE path only when sections are dense (avg ≤ 3 pages/section).
+  // Coarse docs like 228AHDGB (4 sections / 14 pages) must use PLAIN path instead.
+  if (M >= Math.max(2, Math.ceil(N * 0.25)) && (N / M) <= 3) {
+    // ── IMAGE-MARKER PATH: many sections → align sections to pages ──────────
+    const stripped = sections.map(s =>
+      stripMarkdown(s).replace(/\s+/g, ' ').toLowerCase()
+    );
+    const secStartOff = new Array(M);
+    let off = 0;
+    for (let i = 0; i < M; i++) {
+      secStartOff[i] = off;
+      off += stripped[i].length + 1;
+    }
+    const fullText = stripped.join(' ');
+    const totalLen = off;
+
+    const pageStart = new Array(N + 2).fill(totalLen);
+    let searchFrom  = 0;
+    for (let page = 1; page <= N; page++) {
+      const pt = (pageTexts[String(page)] || '').trim();
+      if (!pt) { pageStart[page] = searchFrom; continue; }
+      const needle = pt.replace(/\s+/g, ' ').toLowerCase().slice(0, 40);
+      const pos    = fullText.indexOf(needle.slice(0, 28), searchFrom);
+      if (pos >= 0) {
+        pageStart[page] = pos;
+        searchFrom = pos + 1;
+      } else {
+        pageStart[page] = Math.max(searchFrom, Math.round((page - 1) / N * totalLen));
+      }
+    }
+    pageStart[N + 1] = totalLen;
+    for (let p = 2; p <= N + 1; p++) {
+      if (pageStart[p] < pageStart[p - 1]) pageStart[p] = pageStart[p - 1];
+    }
+    for (let page = 1; page <= N; page++) {
+      const pS = pageStart[page];
+      const pE = pageStart[page + 1];
+      const secs = sections.filter((_, i) => secStartOff[i] >= pS && secStartOff[i] < pE);
+      mdPageMap[page] = secs.join('\n\n');
+    }
+    return;
+  }
+
+  // ── PLAIN-TEXT PATH: few/no image markers → split raw markdown by page fingerprints ──
+  // Search each page's text fingerprint directly in the raw markdown, then slice.
+  const mdLower   = md.toLowerCase();
+  const mdLen     = md.length;
+  const pageStart = new Array(N + 2).fill(mdLen);
+  let searchFrom  = 0;
+
+  for (let page = 1; page <= N; page++) {
+    const pt = (pageTexts[String(page)] || '').trim();
+    if (!pt) { pageStart[page] = searchFrom; continue; }
+    const needle = pt.replace(/\s+/g, ' ').toLowerCase().slice(0, 30);
+    const pos    = mdLower.indexOf(needle.slice(0, 20), searchFrom);
+    if (pos >= 0) {
+      // Walk back to start of line for a clean heading-aware split
+      let lineStart = pos;
+      while (lineStart > 0 && md[lineStart - 1] !== '\n') lineStart--;
+      pageStart[page] = lineStart;
+      searchFrom = pos + 1;
+    } else {
+      pageStart[page] = Math.max(searchFrom, Math.round((page - 1) / N * mdLen));
+    }
+  }
+  pageStart[N + 1] = mdLen;
+  for (let p = 2; p <= N + 1; p++) {
+    if (pageStart[p] < pageStart[p - 1]) pageStart[p] = pageStart[p - 1];
+  }
+  for (let page = 1; page <= N; page++) {
+    mdPageMap[page] = md.slice(pageStart[page], pageStart[page + 1]).trim();
+  }
+}
+
+// ── Text rendering ─────────────────────────────────────────────────────────────
+// ── Translation helpers ────────────────────────────────────────────────────────
+
+function toggleTranslation() {
+  if (!translationData) return;
+  translMode = !translMode;
+  const btn   = document.getElementById('btnTranslate');
+  const badge = document.getElementById('translBadge');
+  btn.classList.toggle('active', translMode);
+  btn.textContent = translMode ? '📄 Original' : '🌐 Translation';
+  if (badge) badge.style.display = translMode ? '' : 'none';
+
+  // Re-render current view with new mode
+  if (mode === 'page') renderPageText();
+  else if (mode === 'elements') renderLayoutElements();
+  else renderFullDoc();
+}
+
+/** Return the page text for rendering, respecting translation mode. */
+function activePageText(pageKey) {
+  if (translMode && translationData && translationData.page_texts) {
+    const t = translationData.page_texts[pageKey];
+    if (t !== undefined) return t;
+  }
+  return pageTexts[pageKey] || '';
+}
+
+/** Return layout elements for a page, with translated text when in transl mode. */
+function activeElements(pageKey) {
+  const orig = layoutElements[pageKey] || [];
+  if (!translMode || !translationData || !translationData.elements) return orig;
+  const tEls = translationData.elements[pageKey];
+  if (!tEls || !tEls.length) return orig;
+  // Merge: keep original bbox/label/etc., replace text only
+  return orig.map((item, i) => {
+    const tItem = tEls[i];
+    if (!tItem) return item;
+    return { ...item, text: tItem.text ?? item.text };
+  });
+}
+
+function setMode(m) {
+  mode = m;
+  document.getElementById('btnPage').classList.toggle('active', m === 'page');
+  document.getElementById('btnFull').classList.toggle('active', m === 'full');
+  document.getElementById('btnElem').classList.toggle('active', m === 'elements');
+  if (m === 'page') {
+    renderPageText();
+  } else if (m === 'elements') {
+    renderLayoutElements();
+  } else {
+    renderFullDoc();
+  }
+}
+
+function renderPageText() {
+  const el     = document.getElementById('textContent');
+  const qEl    = document.getElementById('pageQuality');
+  const pageKey = String(cur + 1);   // page_texts uses 1-based string keys
+  const plain  = pageTexts[pageKey] || '';
+  const active = activePageText(pageKey);             // may be translated
+  const raw    = translMode ? active : (mdPageMap[pageKey] || plain);
+
+  // Quality hint from original (char count unaffected by markdown syntax)
+  const charCount = plain.trim().length;
+  if (charCount === 0) {
+    qEl.textContent = '(no text)';
+  } else if (charCount < 100) {
+    qEl.textContent = `${charCount} chars — diagram page?`;
+  } else {
+    qEl.textContent = charCount + ' chars' + (translMode ? ' · translated' : '');
+  }
+
+  el.className = 'text-content';
+
+  if (!plain.trim()) {
+    el.innerHTML = '<em style="color:#555">No text extracted for this page.<br>' +
+      'This page may be a diagram or figure.</em>';
+    return;
+  }
+
+  // Detect Arabic (only in original mode)
+  if (!translMode) {
+    const arabicChars = (raw.match(/[\u0600-\u06FF]/g) || []).length;
+    if (arabicChars > raw.length * 0.3) el.classList.add('rtl');
+  }
+
+  el.innerHTML = '<div class="text-inner"><p>' + mdToHtml(raw) + '</p></div>';
+  el.scrollTop = 0;
+}
+
+async function renderFullDoc() {
+  const el  = document.getElementById('textContent');
+  const qEl = document.getElementById('pageQuality');
+  qEl.textContent = translMode ? 'translated' : '';
+  el.className = 'text-content full-doc-mode';
+
+  // In translation mode, assemble from translated page texts
+  if (translMode && translationData && translationData.page_texts) {
+    const pages = Object.keys(translationData.page_texts)
+      .sort((a, b) => parseInt(a) - parseInt(b));
+    const combined = pages.map(pg => translationData.page_texts[pg] || '').join('\n\n');
+    el.innerHTML = '<div class="text-inner">' + buildFullDocHtml(combined) + '</div>';
+    return;
+  }
+
+  if (fullMd !== null) {
+    el.innerHTML = '<div class="text-inner">' + buildFullDocHtml(fullMd) + '</div>';
+    return;
+  }
+
+  el.innerHTML = '<em style="color:#666">Loading full document…</em>';
+  try {
+    const resp = await fetch(`texts/${KEY}/docling.md`);
+    if (!resp.ok) throw new Error('not found');
+    fullMd = await resp.text();
+    el.innerHTML = '<div class="text-inner">' + buildFullDocHtml(fullMd) + '</div>';
+  } catch {
+    el.innerHTML = '<em style="color:#666">Full document text not available.</em>';
+  }
+}
+
+// ── GLYPH token resolution ─────────────────────────────────────────────────────
+// Known cmap → character mappings (discovered from corpus context)
+const GLYPH_MAP = {
+  'df00': 'd',   // Arabic transliteration: Aḥmad, Muḥammad, ḥadīth, Ḥudūd…
+  // Extend as more are discovered
+};
+function fixGlyphs(raw) {
+  return raw.replace(/GLYPH\(cmap:([0-9a-fA-F]+)\)/gi, (_, code) => {
+    const ch = GLYPH_MAP[code.toLowerCase()];
+    return ch || `\x02${code}\x02`;   // sentinel for unknown; replaced after esc()
+  });
+}
+function escWithGlyphs(raw) {
+  const fixed = fixGlyphs(raw);
+  return fixed
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/\x02([0-9a-f]+)\x02/gi,
+      (_, c) => `<span class="glyph-unknown" title="Unresolved glyph cmap:${c}">·</span>`);
+}
+
+// ── Inline italic/bold injection from pdfplumber text spans ───────────────────
+// Strategy: build a sorted list of italic/bold substrings for the page,
+// then for each element text do a single-pass replacement inserting <em>/<strong>.
+// We normalise whitespace before comparing to handle minor extraction differences.
+function _normalise(s) { return s.replace(/\s+/g, ' ').trim(); }
+
+function buildSpanIndex(pageKey) {
+  const spans = (textSpans[pageKey] || []).filter(s =>
+    s.italic || s.bold || s.foreign
+  );
+  // Deduplicate by normalised text, preferring longer matches
+  const seen = new Map();
+  for (const s of spans) {
+    const k = _normalise(s.text);
+    if (k.length < 2) continue;
+    if (!seen.has(k) || k.length > (seen.get(k).text || '').length)
+      seen.set(k, s);
+  }
+  // Sort longest first so longer matches don't get overridden by sub-spans
+  return [...seen.values()].sort((a, b) =>
+    _normalise(b.text).length - _normalise(a.text).length
+  );
+}
+
+// Inject <em>/<strong> into already-HTML-escaped text.
+// We operate on the raw (pre-escape) text, escape span-by-span, then reassemble.
+function injectFormatting(rawText, pageKey) {
+  const spanIndex = buildSpanIndex(pageKey);
+  if (!spanIndex.length) return escWithGlyphs(rawText);
+
+  // Find all formatting regions in the raw text
+  // Build list of {start, end, italic, bold, foreign}
+  const regions = [];
+  const used = new Uint8Array(rawText.length);  // track already-matched chars
+
+  for (const s of spanIndex) {
+    const needle = _normalise(s.text);
+    if (!needle) continue;
+    // Build a loose regex: normalise whitespace between words
+    const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+                          .replace(/\s+/g, '\\s+');
+    const re = new RegExp(escaped, 'g');
+    let m;
+    while ((m = re.exec(rawText)) !== null) {
+      const start = m.index, end = m.index + m[0].length;
+      // Skip if already covered by a longer match
+      if (used.slice(start, end).some(v => v)) continue;
+      for (let i = start; i < end; i++) used[i] = 1;
+      regions.push({ start, end, italic: s.italic, bold: s.bold, foreign: s.foreign });
+    }
+  }
+
+  if (!regions.length) return escWithGlyphs(rawText);
+
+  // Sort by start position
+  regions.sort((a, b) => a.start - b.start);
+
+  // Reassemble: escape each segment and wrap formatting regions
+  let result = '';
+  let pos = 0;
+  for (const r of regions) {
+    if (r.start > pos) result += escWithGlyphs(rawText.slice(pos, r.start));
+    const inner = escWithGlyphs(rawText.slice(r.start, r.end));
+    const tag = r.bold ? 'strong' : 'em';
+    const cls = r.foreign ? ' class="foreign-term"' : (r.italic ? '' : '');
+    result += `<${tag}${cls}>${inner}</${tag}>`;
+    pos = r.end;
+  }
+  if (pos < rawText.length) result += escWithGlyphs(rawText.slice(pos));
+  return result;
+}
+
+// ── Footnote map builder ───────────────────────────────────────────────────────
+function buildFootnoteMap(pageKey) {
+  const fnMap = {};
+  const items = layoutElements[pageKey] || [];
+
+  // Primary pass: items explicitly labelled 'footnote'
+  for (const item of items) {
+    if (item.label !== 'footnote') continue;
+    const m = (item.text || '').match(/^(\d{1,3})[\s.)\]]+(.+)/s);
+    if (m) fnMap[parseInt(m[1])] = m[2].trim();
+    else fnMap[Object.keys(fnMap).length + 1] = item.text;
+  }
+
+  // Fallback: if no explicit footnotes found, check list_item elements that
+  // look like footnotes (start with a number marker — Docling sometimes
+  // misclassifies bottom-of-page footnotes as list items)
+  if (!Object.keys(fnMap).length) {
+    const FN_RE = /^(\d{1,3})\s*[.)]\s+(.+)/s;
+    const candidates = items.filter(i => i.label === 'list_item');
+    let matched = 0;
+    for (const item of candidates) {
+      const m = (item.text || '').match(FN_RE);
+      if (m) { fnMap[parseInt(m[1])] = m[2].trim(); matched++; }
+    }
+    // Only keep if at least 2 numbered items found (avoid false positives)
+    if (matched < 2) { for (const k of Object.keys(fnMap)) delete fnMap[k]; }
+  }
+
+  return fnMap;
+}
+
+// ── Inject footnote reference spans into escaped text HTML ────────────────────
+function injectFnRefs(escapedHtml, fnMap) {
+  if (!Object.keys(fnMap).length) return escapedHtml;
+  const nums = new Set(Object.keys(fnMap).map(Number));
+  // Pattern: number after punctuation or at end of word, before space/punct
+  // Matches ", 1 " or ". 3 " style academic footnote markers
+  return escapedHtml.replace(/([,;.!?\s])(\d{1,3})(?=\s|$|[,;.])/g, (m, pre, num) => {
+    if (!nums.has(+num)) return m;
+    return `${pre}<span class="fn-ref" data-fn="${num}" data-page="${cur+1}">${num}</span>`;
+  });
+}
+
+// ── Bibliography section detection ────────────────────────────────────────────
+const BIB_HEADER_RE = /^(bibliography|references|works cited|sources|bibliograph|bibliographie)/i;
+function isBibHeader(text) { return BIB_HEADER_RE.test(text.trim()); }
+
+// ── Picture crop via Canvas ────────────────────────────────────────────────────
+function renderPictureCrop(item, pageKey, container) {
+  const img = document.getElementById('pageImg');
+  const ps  = pageSizes[pageKey];
+  const bb  = item.bbox;
+  if (!img || !ps || !bb || img.naturalWidth === 0) return;
+
+  const scaleX = img.naturalWidth  / ps.w;
+  const scaleY = img.naturalHeight / ps.h;
+  // BOTTOMLEFT → image coords (y flipped)
+  const sx = bb.l * scaleX;
+  const sy = ((ps.h - bb.t) * scaleY);
+  const sw = (bb.r - bb.l) * scaleX;
+  const sh = (bb.t - bb.b) * scaleY;
+  if (sw < 4 || sh < 4) return;
+
+  const canvas = document.createElement('canvas');
+  const scale  = Math.min(1, (container.offsetWidth * 0.9) / sw);
+  canvas.width  = Math.round(sw * scale);
+  canvas.height = Math.round(sh * scale);
+  canvas.className = 'le-pic-crop';
+  try {
+    canvas.getContext('2d').drawImage(img, sx, sy, sw, sh, 0, 0, canvas.width, canvas.height);
+    container.appendChild(canvas);
+  } catch (e) { /* cross-origin or not loaded yet — silently skip */ }
+}
+
+// ── Centre-justification detection ────────────────────────────────────────────
+function isCentered(item, pageKey) {
+  const bb = item.bbox;
+  const ps = pageSizes[pageKey];
+  if (!bb || !ps || !ps.w) return false;
+  const elemCX  = (bb.l + bb.r) / 2;
+  const pageCX  = ps.w / 2;
+  const elemW   = bb.r - bb.l;
+  // Centred: midpoint within 10% of page centre AND width < 55% of page
+  // Tight width threshold prevents full-width justified text being misclassified.
+  return Math.abs(elemCX - pageCX) / ps.w < 0.10 && elemW < ps.w * 0.55;
+}
+
+// ── Picture crop re-render (called from img.onload) ────────────────────────────
+function renderPictureCropsForPage(pageKey) {
+  const items = layoutElements[pageKey] || [];
+  items.forEach((item, idx) => {
+    const lbl = (item.label || '').toLowerCase().replace(/-/g,'_');
+    if (lbl !== 'picture') return;
+    const container = document.getElementById(`elem-${pageKey}-${idx}`);
+    if (container && !container.querySelector('canvas')) {
+      renderPictureCrop(item, pageKey, container);
+    }
+  });
+}
+
+// ── Notes panel helpers ────────────────────────────────────────────────────────
+function populateNotesPanel(fnMap, pageKey) {
+  const panel = document.getElementById('notesPanel');
+  const inner = document.getElementById('notesPanelInner');
+  const title = document.getElementById('notesPanelTitle');
+  const nums  = Object.keys(fnMap).map(Number).sort((a,b)=>a-b);
+
+  if (!nums.length) {
+    title.textContent = `Foot/endnotes — page ${pageKey}`;
+    inner.innerHTML = '<em style="color:#9a8a78;font-style:italic;font-size:11px">No footnotes or endnotes on this page.</em>';
+    return;
+  }
+  title.textContent = `Foot/endnotes — page ${pageKey} (${nums.length})`;
+  inner.innerHTML = nums.map(n =>
+    `<div class="note-entry"><span class="note-num">${n}</span>${escWithGlyphs(fnMap[n])}</div>`
+  ).join('');
+}
+
+// ── Contents panel ────────────────────────────────────────────────────────────
+function toggleContentsPanel() {
+  const panel = document.getElementById('contentsPanel');
+  const btn   = document.getElementById('btnContents');
+  const isOpen = panel.classList.toggle('visible');
+  btn.classList.toggle('active', isOpen);
+  // Close other panels
+  if (isOpen) {
+    document.getElementById('infoPanel').classList.remove('visible');
+    document.getElementById('btnInfo').classList.remove('active');
+    renderContentsPanel();
+  }
+}
+
+function renderContentsPanel() {
+  const inner = document.getElementById('contentsPanelInner');
+  if (!docTOC.length) { inner.innerHTML = '<em style="color:#8a7a68">No section headings found.</em>'; return; }
+
+  // Determine nesting level heuristically from the heading text patterns
+  const rows = docTOC.map(entry => {
+    const h = entry.heading;
+    const isNum = /^\d+[\.\s]/.test(h) || /^chapter\b/i.test(h);
+    const isSub = /^\d+\.\d+/.test(h);
+    const cls = 'toc-entry ' + (isSub ? 'toc-sub' : isNum ? 'toc-section' : 'toc-title');
+    const pg = entry.page;
+    return `<div class="${cls}" onclick="goTo(${pg-1})" title="Go to page ${pg}">
+      <span class="toc-entry-heading">${escWithGlyphs(h)}</span>
+      <span class="toc-entry-page">p.${pg}</span>
+    </div>`;
+  });
+  inner.innerHTML = rows.join('');
+}
+
+// ── Bibliography panel (bottom pane) ──────────────────────────────────────────
+function toggleBibPanel() {
+  const panel = document.getElementById('bibPanel');
+  const btn   = document.getElementById('btnBib');
+  const isOpen = panel.classList.toggle('visible');
+  btn.classList.toggle('active', isOpen);
+  if (isOpen) renderBibPanel();
+}
+
+function renderBibPanel() {
+  const inner = document.getElementById('bibPanelInner');
+  const title = document.getElementById('bibPanelTitle');
+  if (!bibliography || !(bibliography.refs || []).length) {
+    inner.innerHTML = '<em style="color:#8a7a68">No bibliography extracted yet — run: python scripts/06_extract_bibliography.py</em>';
+    return;
+  }
+  const refs = bibliography.refs;
+  title.textContent = `Bibliography (${refs.length} entries)`;
+  inner.innerHTML = refs.map(r => {
+    const id  = r.id != null ? `<span class="bib-id">[${r.id}]</span>` : '';
+    const raw = escWithGlyphs(r.raw || [r.authors, r.year, r.title, r.venue].filter(Boolean).join(', '));
+    return `<div class="bib-entry" id="bib-ref-${r.id}">${id}${raw}</div>`;
+  }).join('');
+}
+
+// Scroll to a specific ref and briefly highlight it
+function linkToBibRef(refId) {
+  const panel = document.getElementById('bibPanel');
+  if (!panel.classList.contains('visible')) {
+    panel.classList.add('visible');
+    document.getElementById('btnBib').classList.add('active');
+    renderBibPanel();
+  }
+  const entry = document.getElementById(`bib-ref-${refId}`);
+  if (!entry) return;
+  entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  entry.classList.add('highlighted');
+  setTimeout(() => entry.classList.remove('highlighted'), 2000);
+}
+
+// ── Info panel ────────────────────────────────────────────────────────────────
+function toggleInfoPanel() {
+  const panel = document.getElementById('infoPanel');
+  const btn   = document.getElementById('btnInfo');
+  const isOpen = panel.classList.toggle('visible');
+  btn.classList.toggle('active', isOpen);
+  if (isOpen) {
+    document.getElementById('contentsPanel').classList.remove('visible');
+    document.getElementById('btnContents').classList.remove('active');
+    renderInfoPanel();
+  }
+}
+
+function renderInfoPanel() {
+  const inner = document.getElementById('infoPanelInner');
+  if (!docInventory) { inner.innerHTML = '<em style="color:#8a7a68">No document info available.</em>'; return; }
+  const d = docInventory;
+
+  // Metadata rows
+  const rows = [
+    d.title      && ['Title',       escWithGlyphs(d.title)],
+    d.pub_title  && ['In',          `<em>${escWithGlyphs(d.pub_title)}</em>`],
+    d.authors    && ['Authors',     escWithGlyphs(d.authors)],
+    d.year       && ['Year',        d.year],
+    d.pages      && ['Pages',       d.pages],
+    d.item_type  && ['Type',        d.item_type.replace(/([A-Z])/g,' $1').trim()],
+    d.place      && ['Place',       escWithGlyphs(d.place)],
+    d.publisher  && ['Publisher',   escWithGlyphs(d.publisher)],
+    d.url        && ['URL',         `<a href="${d.url}" target="_blank" rel="noreferrer">${d.url.length > 50 ? d.url.slice(0,50)+'…' : d.url}</a>`],
+    d.language   && ['Language',    d.language.toUpperCase()],
+    d.page_count && ['PDF pages',   d.page_count],
+    d.text_quality && ['Quality',   d.text_quality],
+    d.key        && ['Key',         `<code>${d.key}</code>`],
+  ].filter(Boolean);
+
+  let html = rows.map(([label, val]) =>
+    `<div class="info-row"><span class="info-label">${label}</span><span class="info-value">${val}</span></div>`
+  ).join('');
+
+  // Zotero tags
+  const tags = d.tags || [];
+  if (tags.length) {
+    html += `<div class="info-row"><span class="info-label">Tags</span><span class="info-value">${
+      tags.map(t => `<span class="info-tag">${escWithGlyphs(typeof t === 'string' ? t : (t.tag || ''))}</span>`).join(' ')
+    }</span></div>`;
+  }
+
+  // Zotero notes
+  const notes = d.notes || [];
+  if (notes.length) {
+    html += `<div class="info-section-head">Zotero Notes</div>`;
+    html += notes.map(n =>
+      `<div class="info-note">${escWithGlyphs(typeof n === 'string' ? n : (n.note || ''))}</div>`
+    ).join('');
+  }
+
+  // Haiku-generated abstract (from bibliography.json summary)
+  const abstract = bibliography && bibliography.summary && bibliography.summary.abstract;
+  if (abstract) {
+    html += `<div class="info-section-head">Abstract</div>`;
+    html += `<div class="info-abstract">${escWithGlyphs(abstract)}</div>`;
+  }
+
+  // Haiku-generated TOC summary (optional — just the count if contents available)
+  const contents = bibliography && bibliography.summary && bibliography.summary.contents;
+  if (contents && contents.length) {
+    html += `<div class="info-section-head">Contents (${contents.length} sections)</div>`;
+    html += contents.map(c =>
+      `<div class="toc-entry" onclick="goTo(${(c.page||1)-1})" style="padding:2px 6px">` +
+      `<span class="toc-entry-heading">${escWithGlyphs(c.heading)}</span>` +
+      `<span class="toc-entry-page">p.${c.page}</span></div>`
+    ).join('');
+  }
+
+  inner.innerHTML = html;
+}
+
+// ── Main Elements renderer ─────────────────────────────────────────────────────
+function renderLayoutElements() {
+  const el      = document.getElementById('textContent');
+  const qEl     = document.getElementById('pageQuality');
+  const pageKey = String(cur + 1);
+  const items   = activeElements(pageKey);   // uses translation when translMode=true
+
+  el.className = 'text-content';
+
+  if (!items || items.length === 0) {
+    qEl.textContent = '';
+    el.innerHTML = '<em style="color:#7a6a58;font-family:system-ui,sans-serif;font-size:13px">No layout elements for this page.<br>' +
+      'Re-extract to generate layout_elements.json.</em>';
+    updateBboxOverlays(pageKey);
+    return;
+  }
+
+  qEl.textContent = translMode ? 'translated' : '';
+  const fnMap  = buildFootnoteMap(pageKey);
+  const isChapter = t => /^chapter\b/i.test(t.trim());
+
+  // Detect numbered heading depth: "6" → 1, "6.1" → 2, "6.1.2" → 3, etc. 0 = no numeric prefix
+  function headingDepth(text) {
+    const m = text.trim().match(/^(\d+)((\.\d+)*)\s/);
+    if (!m) return 0;
+    if (!m[2]) return 1;
+    return Math.min((m[2].match(/\./g) || []).length + 1, 4);
+  }
+
+  // Only show tooltips on non-obvious element types
+  const TIPS_FOR = new Set(['footnote','caption','page_header','page_footer','formula','picture','table','code']);
+
+  // Compute page left margin robustly: use only body-text elements with >30 chars
+  // (short elements may be diagram labels at arbitrary positions, skewing the minimum)
+  const ps = pageSizes[pageKey];
+  let pageLeftMargin = null;
+  if (ps) {
+    for (const it of items) {
+      const lbl = (it.label || '').toLowerCase().replace(/-/g,'_');
+      if (lbl !== 'text' && lbl !== 'paragraph') continue;
+      if (!it.bbox || (it.text || '').length < 30) continue;
+      if (pageLeftMargin === null || it.bbox.l < pageLeftMargin)
+        pageLeftMargin = it.bbox.l;
+    }
+  }
+  // An element is "indented" if its left edge is > 8 PDF pts beyond the left margin
+  // AND the text is at least 30 chars (to exclude short diagram labels / captions).
+  const INDENT_THRESHOLD = 8;
+  function isIndented(item) {
+    if (!item.bbox || pageLeftMargin === null) return false;
+    if ((item.text || '').length < 30) return false;
+    return item.bbox.l - pageLeftMargin > INDENT_THRESHOLD;
+  }
+
+  let html   = '';
+  let inList = false;
+  let inBib  = false;
+
+  items.forEach((item, idx) => {
+    const rawLabel = (item.label || 'text').toLowerCase().replace(/-/g, '_');
+    const text     = item.text || '';
+    const elemId   = `elem-${pageKey}-${idx}`;
+    let cssClass   = 'le-' + rawLabel;
+
+    // Skip footnotes from main flow — they go to the Notes panel instead
+    if (rawLabel === 'footnote') return;
+
+    if (rawLabel === 'section_header' && isChapter(text))  cssClass += ' le-chapter';
+    if (rawLabel === 'section_header' && isBibHeader(text)) inBib = true;
+    if (rawLabel === 'section_header') {
+      const depth = headingDepth(text);
+      if (depth > 0) cssClass += ` le-h${depth}`;
+    }
+    if (isCentered(item, pageKey)) cssClass += ' le-centered';
+    if (isIndented(item) && rawLabel === 'text') cssClass += ' le-indented';
+
+    const bibExtra = inBib && rawLabel !== 'section_header' ? ' le-bib' : '';
+    const tipAttr  = TIPS_FOR.has(rawLabel) ? ` title="${rawLabel.replace(/_/g,' ')}"` : '';
+
+    let bodyHtml;
+    if (rawLabel === 'picture') {
+      bodyHtml = '';  // canvas injected by renderPictureCropsForPage
+    } else {
+      bodyHtml = injectFnRefs(injectFormatting(text, pageKey), fnMap);
+    }
+
+    if (rawLabel === 'list_item') {
+      if (!inList) { html += '<ul style="list-style:none;padding:0;margin:.5em 0">'; inList = true; }
+      html += `<li class="le-block ${cssClass}${bibExtra}" id="${elemId}" data-elem-idx="${idx}"${tipAttr}>` +
+              `<span class="le-text-body">${bodyHtml}</span></li>`;
+    } else {
+      if (inList) { html += '</ul>'; inList = false; }
+      html += `<div class="le-block ${cssClass}${bibExtra}" id="${elemId}" data-elem-idx="${idx}"${tipAttr}>` +
+              `<span class="le-text-body">${bodyHtml}</span></div>`;
+    }
+  });
+  if (inList) html += '</ul>';
+
+  el.innerHTML = '<div class="text-inner">' + html + '</div>';
+  el.scrollTop = 0;
+  qEl.textContent = `${items.length} elements`;
+
+  // Notes panel
+  populateNotesPanel(fnMap, pageKey);
+
+  // Picture crops (try immediately; img.onload will retry if image not yet decoded)
+  renderPictureCropsForPage(pageKey);
+
+  // Text→bbox hover (dynamic lookup — never stale)
+  items.forEach((item, idx) => {
+    const textEl = document.getElementById(`elem-${pageKey}-${idx}`);
+    if (!textEl) return;
+    textEl.addEventListener('mouseenter', () => {
+      document.getElementById(`bbox-${pageKey}-${idx}`)?.classList.add('active');
+    });
+    textEl.addEventListener('mouseleave', () => {
+      document.getElementById(`bbox-${pageKey}-${idx}`)?.classList.remove('active');
+    });
+  });
+
+  // Footnote ref popups
+  const popup = document.getElementById('fnPopup');
+  el.querySelectorAll('.fn-ref').forEach(span => {
+    span.addEventListener('mouseenter', e => {
+      const note = fnMap[parseInt(span.dataset.fn)];
+      if (!note) return;
+      popup.innerHTML = `<span class="fn-popup-num">${span.dataset.fn}</span>${escWithGlyphs(note)}`;
+      popup.style.display = 'block';
+      positionPopup(popup, e);
+    });
+    span.addEventListener('mousemove', e => positionPopup(popup, e));
+    span.addEventListener('mouseleave', () => { popup.style.display = 'none'; });
+    // Click → jump to bibliography entry
+    span.addEventListener('click', () => {
+      popup.style.display = 'none';
+      linkToBibRef(span.dataset.fn);
+    });
+  });
+
+  updateBboxOverlays(pageKey);
+}
+
+function positionPopup(popup, e) {
+  const margin = 12;
+  let x = e.clientX + margin;
+  let y = e.clientY + margin;
+  const pw = popup.offsetWidth  || 300;
+  const ph = popup.offsetHeight || 80;
+  if (x + pw > window.innerWidth  - margin) x = e.clientX - pw - margin;
+  if (y + ph > window.innerHeight - margin) y = e.clientY - ph - margin;
+  popup.style.left = x + 'px';
+  popup.style.top  = y + 'px';
+}
+
+// ── Bbox overlay management ────────────────────────────────────────────────────
+function updateBboxOverlays(pageKey) {
+  const layer = document.getElementById('bboxLayer');
+  if (!layer) return;
+  layer.innerHTML = '';
+
+  const items = layoutElements[pageKey];
+  if (!items || !items.length) return;
+
+  const ps = pageSizes[pageKey];
+  if (!ps || !ps.w || !ps.h) return;  // no page size → can't normalise
+
+  items.forEach((item, idx) => {
+    const bb = item.bbox;
+    if (!bb) return;
+
+    // Docling coords: BOTTOMLEFT origin → convert to top-left percentages
+    const left   = (bb.l / ps.w) * 100;
+    const top    = ((ps.h - bb.t) / ps.h) * 100;
+    const width  = ((bb.r - bb.l) / ps.w) * 100;
+    const height = ((bb.t - bb.b) / ps.h) * 100;
+    if (width <= 0 || height <= 0) return;
+
+    const div = document.createElement('div');
+    div.className = 'bbox-item';
+    div.id        = `bbox-${pageKey}-${idx}`;
+    div.style.cssText = `left:${left.toFixed(2)}%;top:${top.toFixed(2)}%;` +
+                        `width:${width.toFixed(2)}%;height:${height.toFixed(2)}%`;
+
+    // Hover on image bbox → highlight matching text element
+    div.style.pointerEvents = 'auto';
+    const textEl = document.getElementById(`elem-${pageKey}-${idx}`);
+    div.addEventListener('mouseenter', () => {
+      div.classList.add('active');
+      if (textEl) { textEl.classList.add('highlighted'); textEl.scrollIntoView({block:'nearest'}); }
+    });
+    div.addEventListener('mouseleave', () => {
+      div.classList.remove('active');
+      if (textEl) textEl.classList.remove('highlighted');
+    });
+
+    layer.appendChild(div);
+  });
+}
+
+// ── Auto-detect printed page from page_header / page_footer elements ──────────
+function detectPrintedPage(pageKey) {
+  const items = layoutElements[pageKey];
+  if (!items) return null;
+  for (const item of items) {
+    if (item.label === 'page_header' || item.label === 'page_footer') {
+      // Extract the last standalone number from the header/footer text
+      const nums = item.text.match(/\b\d{1,4}\b/g);
+      if (nums) return parseInt(nums[nums.length - 1]);
+    }
+  }
+  return null;
+}
+
+function buildFullDocHtml(md) {
+  // Prefer mdPageMap when populated — gives accurate page dividers for all doc types
+  if (Object.keys(mdPageMap).length > 0) {
+    return Object.keys(mdPageMap)
+      .map(Number).sort((a, b) => a - b)
+      .map(p => {
+        const content = mdPageMap[p];
+        if (!content) return '';
+        return `<div class="page-marker">— PDF page ${p} —</div>` +
+               '<p>' + mdToHtml(content) + '</p>';
+      })
+      .filter(Boolean)
+      .join('<hr class="full-doc-divider">');
+  }
+  // Fallback: split by <!-- image --> markers
+  const pages = md.split(/\n?<!-- image -->\n?/).filter(p => p.trim());
+  if (pages.length <= 1) return '<div>' + mdToHtml(md) + '</div>';
+  return pages.map((pg, i) =>
+    `<div class="page-marker">— PDF page ${i + 1} —</div>` +
+    '<p>' + mdToHtml(pg) + '</p>'
+  ).join('<hr class="full-doc-divider">');
+}
+
+// ── Markdown → HTML (minimal) ─────────────────────────────────────────────────
+function mdToHtml(raw) {
+  // 1. Extract and convert markdown tables before HTML escaping
+  const tables = [];
+  raw = raw.replace(/((?:\|[^\n]+\|\n?){2,})/g, m => {
+    const tok = '\x00T' + tables.length + '\x00';
+    tables.push(renderMdTable(m));
+    return tok;
+  });
+
+  // 2. Standard escaping + markdown → HTML
+  let html = raw
+    .replace(/&/g,  '&amp;')
+    .replace(/</g,  '&lt;')
+    .replace(/>/g,  '&gt;')
+    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.+)$/gm,  '<h1>$1</h1>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g,     '<em>$1</em>')
+    .replace(/<!--.*?-->/gs,   '')
+    .replace(/^\s{0,3}(\d+)\s+/gm, '<span class="footnote-num">$1</span> ')
+    .replace(/\n\n+/g, '</p><p>')
+    .replace(/\n/g,    ' ');
+
+  // 3. Restore tables
+  tables.forEach((t, i) => { html = html.replace('\x00T' + i + '\x00', t); });
+  return html;
+}
+
+function renderMdTable(md) {
+  const esc  = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const rows = md.trim().split('\n').filter(r => /\|/.test(r));
+  if (!rows.length) return md;
+  const isSep = r => /^[\|\-\:\s]+$/.test(r);
+  const parseRow = (r, tag) =>
+    '<tr>' + r.replace(/^\||\|$/g,'').split('|')
+      .map(c => `<${tag}>${esc(c.trim())}</${tag}>`).join('') + '</tr>';
+  let head = '', body = '';
+  if (rows.length >= 2 && isSep(rows[1])) {
+    head = '<thead>' + parseRow(rows[0], 'th') + '</thead>';
+    rows.slice(2).forEach(r => { body += parseRow(r, 'td'); });
+  } else {
+    rows.forEach(r => { body += parseRow(r, 'td'); });
+  }
+  return `<table class="md-table">${head}<tbody>${body}</tbody></table>`;
+}
+
+// ── Notes panel collapse ──────────────────────────────────────────────────────
+function toggleNotesCollapse() {
+  const panel = document.getElementById('notesPanel');
+  const btn   = document.getElementById('notesPanelToggle');
+  if (panel.classList.contains('notes-collapsed')) {
+    panel.classList.remove('notes-collapsed');
+    btn.textContent = '▼';
+    btn.title = 'Collapse footnotes';
+  } else {
+    panel.classList.add('notes-collapsed');
+    btn.textContent = '▲';
+    btn.title = 'Expand footnotes';
+  }
+}
+
+// ── PDF pane collapse ─────────────────────────────────────────────────────────
+function togglePdfPane() {
+  const pane = document.querySelector('.pane-pdf');
+  const btn  = document.getElementById('pdfCollapseBtn');
+  if (pane.classList.contains('pdf-collapsed')) {
+    pane.classList.remove('pdf-collapsed');
+    btn.textContent = '◀';
+    btn.title = 'Collapse PDF pane';
+  } else {
+    pane.classList.add('pdf-collapsed');
+    btn.textContent = '▶';
+    btn.title = 'Show PDF pane';
+  }
+}
+
+// ── Fit-page & offset toggles ─────────────────────────────────────────────────
+function toggleFitPage() {
+  fitPage = !fitPage;
+  document.getElementById('pdfPane').classList.toggle('fit-page', fitPage);
+  document.getElementById('btnFitPage').classList.toggle('toggled', fitPage);
+}
+
+function toggleOffsetPanel() {
+  document.getElementById('offsetPanel').classList.toggle('visible');
+}
+
+function applyOffset(forceVal) {
+  pgOffset = (forceVal !== undefined) ? forceVal
+           : (parseInt(document.getElementById('offsetInput').value) || 0);
+  document.getElementById('offsetInput').value = pgOffset;
+  localStorage.setItem('pgOffset_' + KEY, pgOffset);
+  // Refresh printed page display (auto-detected takes priority)
+  const ppEl   = document.getElementById('printedPage');
+  const autoPage = detectPrintedPage(String(cur + 1));
+  if (autoPage !== null) {
+    ppEl.textContent = '(printed p.' + autoPage + ')';
+    ppEl.style.display = 'inline';
+  } else if (pgOffset !== 0) {
+    ppEl.textContent = '(printed p.' + (cur + 1 + pgOffset) + ')';
+    ppEl.style.display = 'inline';
+  } else {
+    ppEl.style.display = 'none';
+  }
+}
+
+// ── Keyboard navigation ───────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); goTo(cur + 1); }
+  if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   { e.preventDefault(); goTo(cur - 1); }
+  if (e.key === 'Home') goTo(0);
+  if (e.key === 'End')  goTo(N - 1);
+});
+</script>
+
+</body>
+</html>

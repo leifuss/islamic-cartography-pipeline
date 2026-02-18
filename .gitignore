@@ -1,0 +1,45 @@
+# Generated data — regenerable, not tracked
+data/texts/
+data/pdfs/
+data/raw/
+data/extracted/
+data/test_samples/
+data/*.json
+data/*.log
+
+# But DO track the reader and documentation
+!data/reader.html
+!data/explore.html
+!data/dashboard.html
+
+*.db
+*.sqlite
+
+# Credentials
+gen-lang-client-*.json
+*credentials*.json
+
+# Old phase docs (kept locally, not tracked)
+PHASE_*.md
+PHASE_*.txt
+FIND_*.md
+ZOTERO*.md
+
+# Test scripts
+test_*.py
+
+# Claude workspace
+.claude/
+
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

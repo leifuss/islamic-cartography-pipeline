@@ -1,0 +1,26 @@
+# Zotero integration
+zotero-mcp>=0.1.0
+
+# Document processing (Phase 2)
+docling>=2.0.0
+pytesseract>=0.3.10
+google-cloud-vision>=3.7.0
+
+# PDF handling
+PyPDF2>=3.0.0
+pdf2image>=1.16.3
+
+# Image processing
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Text comparison
+python-Levenshtein>=0.21.0
+
+# Language detection (for Tesseract language selection)
+langdetect>=1.0.9
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0
+tqdm>=4.66.0
