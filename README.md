@@ -256,8 +256,10 @@ Makefile              Task runner (make help for full list)
 
 ## Roadmap
 
+- [x] `scripts/05c_layout_heron.py` — semantic layout enrichment via Heron (RT-DETRv2); cloud-friendly (works from page images, no PDF needed)
 - [ ] `scripts/00_import_bibtex.py` — BibTeX → inventory.json bootstrapper
 - [ ] `scripts/03_sync_zotero_api.py` — sync metadata from Zotero web API (no desktop app required)
-- [ ] GitHub Actions extraction workflow — process new docs in the cloud
+- [ ] GitHub Actions `layout.yml` workflow — run 05c in the cloud after new pages are committed
 - [ ] Render.com deployment guide for RAG server
-- [ ] Image compression pass (target 60KB/page, ~300MB for full corpus)
+- [ ] Image compression pass (target 60 KB/page, ~300 MB for full corpus)
+- [ ] DPI upscaling test — evaluate bicubic / ESRGAN upscaling on 144 DPI scans before Heron + Tesseract

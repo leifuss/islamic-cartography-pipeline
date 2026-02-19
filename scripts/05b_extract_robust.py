@@ -396,10 +396,13 @@ def extract_document(item: dict, use_vision: bool = False,
         doc_type = "embedded" if avg >= SCANNED_THRESHOLD else "scanned"
 
     # ── Page-by-page extraction ────────────────────────────────────────────────
+    pages_dir = doc_dir / "pages"
+
     for i in range(n_pages):
-        page_num = str(i + 1)
-        text     = ""
-        method   = "none"
+        page_num     = str(i + 1)
+        text         = ""
+        method       = "none"
+        _rendered    = None   # PIL image if we render this page (lazy)
 
         if doc_type == "embedded":
             text   = _extract_page_embedded(pdf, i)
@@ -407,14 +410,14 @@ def extract_document(item: dict, use_vision: bool = False,
 
         # Fallback for scanned docs OR embedded pages that came out blank
         if len(text.strip()) < EMBEDDED_THRESHOLD:
-            pil_img = _render_page_to_pil(pdf, i)
-            if pil_img is not None:
-                tess_text = _tesseract_ocr(pil_img, lang=tess_lang)
+            _rendered = _render_page_to_pil(pdf, i)
+            if _rendered is not None:
+                tess_text = _tesseract_ocr(_rendered, lang=tess_lang)
                 if len(tess_text.strip()) >= EMBEDDED_THRESHOLD:
                     text   = tess_text
                     method = f"tesseract:{tess_lang}"
                 elif use_vision:
-                    vision_text = _vision_ocr_page(pil_img)
+                    vision_text = _vision_ocr_page(_rendered)
                     if vision_text.strip():
                         text   = vision_text
                         method = "vision"
@@ -425,7 +428,17 @@ def extract_document(item: dict, use_vision: bool = False,
                     text   = tess_text or ""
                     method = f"tesseract:{tess_lang}(low)" if tess_text else "none"
 
-        page_texts[page_num] = text
+        # Save page image for reader.html and 05c_layout_heron.py.
+        # Render now if we didn't already (embedded pages with good text).
+        img_path = pages_dir / f"{i+1:03d}.jpg"
+        if not img_path.exists():
+            if _rendered is None:
+                _rendered = _render_page_to_pil(pdf, i)
+            if _rendered is not None:
+                pages_dir.mkdir(parents=True, exist_ok=True)
+                _rendered.save(img_path, "JPEG", quality=JPEG_QUALITY)
+
+        page_texts[page_num]   = text
         page_methods[page_num] = method
 
     pdf.close()

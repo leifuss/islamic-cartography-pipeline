@@ -14,6 +14,8 @@
 ##   make inventory        Re-scan Zotero and regenerate dashboard.html
 ##   make bibliography     Extract bibliography from all extracted docs
 ##   make rag              Start the RAG chat server on port 8001
+##   make layout           Enrich layout_elements.json with Heron (background)
+##   make layout-dry       Preview which docs need layout enrichment
 ##   make clean-locks      Remove stale .extract.lock files
 ##   make commit           Git add all and commit with a timestamp message
 ##
@@ -149,6 +151,23 @@ inventory:  ## Re-scan Zotero and regenerate dashboard.html
 .PHONY: bibliography
 bibliography:  ## Extract bibliography from all extracted docs
 	$(PYTHON) scripts/06_extract_bibliography.py
+
+# ── Layout enrichment ──────────────────────────────────────────────────────────
+
+LAYOUT_LOG = $(LOG_DIR)/layout.log
+
+.PHONY: layout
+layout: $(LOG_DIR)  ## Enrich layout_elements.json with Heron (cloud-friendly, no PDF needed)
+	@echo "Starting Heron layout enrichment in background…"
+	@nohup $(PYTHON) scripts/05c_layout_heron.py \
+	  > $(LAYOUT_LOG) 2>&1 &
+	@echo "PID $$!"
+	@echo "Log: $(LAYOUT_LOG)"
+	@echo "Run 'tail -f $(LAYOUT_LOG)' to monitor"
+
+.PHONY: layout-dry
+layout-dry:  ## Preview which docs need layout enrichment
+	$(PYTHON) scripts/05c_layout_heron.py --dry-run
 
 # ── RAG server ─────────────────────────────────────────────────────────────────
 
