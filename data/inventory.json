@@ -23,7 +23,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 1275.7
+    "chars_per_page": 1275.7,
+    "pages": "120-158"
   },
   {
     "key": "GWSRUUU9",
@@ -75,7 +76,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "159-172"
   },
   {
     "key": "5FBQAZ7C",
@@ -103,7 +105,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 2522.5
+    "chars_per_page": 2522.5,
+    "pages": "9-24"
   },
   {
     "key": "CPZ7FNY4",
@@ -127,7 +130,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "323-330"
   },
   {
     "key": "TXXX6Q9Y",
@@ -151,7 +155,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "121-142"
   },
   {
     "key": "46ZPP8LT",
@@ -163,7 +168,7 @@
     "publisher": "University of Texas Press",
     "abstract": "During the Middle Ages, a thriving center for learning and research was Muslim Spain, where students gathered to consult Arabic manuscripts of earlier scientific works and study with famous teachers. One of these teachers was Sa'id al-Andalusi, who in 1068 wrote Kitab Tabaqat al-'Umam, or \"Book of the Categories of Nations,\" which recorded the contributions to science of all known nations. Today, it is one of few surviving medieval Spanish Muslim texts, and this is its first English translation.Science ('ulum), as used by Sa'id and other scholars of that period, is a broad term covering virtually all aspects of human knowledge. After initial discussions of the categories of nations that did or did not cultivate science, Sa'id details the specific contribution of nine nations or peoples-India, Persia, Chaldea, Greece, Rome, Egypt, the Arab Orient, al-Andalus, and the Hebrews. He includes the names of many individual scientists and scholars and describes their various contributions to knowledge, making his book a significant work of reference as well as history.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -174,9 +179,9 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
+      "get this",
       "key",
-      "primary source",
-      "get this"
+      "primary source"
     ],
     "notes": [],
     "has_reader": false
@@ -202,9 +207,9 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
+      "astronomy",
       "key",
-      "primary source",
-      "astronomy"
+      "primary source"
     ],
     "notes": [],
     "has_reader": false,
@@ -232,9 +237,9 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
+      "history of astronomy",
       "key",
-      "primary source",
-      "history of astronomy"
+      "primary source"
     ],
     "notes": [],
     "has_reader": false,
@@ -244,7 +249,7 @@
   {
     "key": "VJ76PXSI",
     "title": "‘Ajā’ib al-aqālīm al-sab‘ah عجائب الأقاليم السبعة",
-    "year": "709",
+    "year": "0709",
     "authors": "Suhrab",
     "item_type": "manuscript",
     "place": "",
@@ -278,7 +283,7 @@
     "publisher": "Harrassowitz",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -306,7 +311,7 @@
     "publisher": "Boydell & Brewer",
     "abstract": "A discussion of European understanding of the physical world from the 9th century to the 15th, ranging from astronomy to zoology - and refuting the more recent notion that the world was thought flat. What were the ideas held by medieval man concerning the size and shape of the earth? How many planets were there, and of what material was the universe constructed? What was the relationship between the sky and Heaven? How were snow, thunderstorms and comets explained? In this fascinating book Dr Simek shows that though nature was thought to be permeated by the will of God, there were numerous explanations for unknown phenomena, from the simple theories of the early middle ages to the more sophisticated ideas of the centres of learned scholasticism in Paris and Oxford. He presents a cross-section of the medieval knowledge of the physical world as deliberated and discussed byauthors from the 9th to the 15th centuries. He touches on fields as diverse as astronomy, geography, physics, botany and chemistry, and shows how medieval knowledge combined `scientific' explanations with others from popular mythology and folklore. RUDOLF SIMEKis Professor of Medieval German and Scandinavian Literature at the University of Bonn in Germany.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -318,8 +323,8 @@
     "recommendation": "",
     "tags": [
       "History / Europe / Medieval",
-      "Religion / History",
       "Religion / General",
+      "Religion / History",
       "Science / Space Science / Cosmology"
     ],
     "notes": [],
@@ -335,7 +340,7 @@
     "publisher": "A. Hiersemann",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -359,7 +364,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Anales de Historia del Arte",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/CNS8ZILK/Sáenz-López Pérez - 2013 - The world as an apple on the hand the orb and its.pdf",
     "doc_type": "unknown",
@@ -375,7 +380,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 2991.3
+    "chars_per_page": 2991.3,
+    "pages": "537-549"
   },
   {
     "key": "HU7JWYFK",
@@ -413,7 +419,7 @@
     "publisher": "Iran Cultural Foundation",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/YYK837PT/Anonymous - 1974 - Seven Keshvar or Images of the Climes.pdf",
     "doc_type": "unknown",
@@ -463,7 +469,7 @@
     "publisher": "Routledge",
     "abstract": "The widespread appearance of critical comments in Islamic literature about teachings that were developed in the field of philosophy and about the practice of philosophy in general led many Western historians of the past to conclude that philosophy was a marginal phenomenon in Islam and its practitioners considered heretics. Al-Ghazālī’s (d. 505/1111) condemnation of three teachings held by the so-called falāsifa – here referring to Avicenna and his followers – was often seen as a watershed for the philosophical movement in Islam that led to its demise and subsequent disappearance. A close reading of the sources, however, leads to more nuanced conclusions. Philosophy did not decline or disappear after Al-Ghazālī but was soon practiced by religious scholars. While rejecting some positions of the falāsifa, Al-Ghazālī himself endorsed others and his legal condemnation of philosophers as apostates from Islam was hardly ever followed. Western and mostly Christian categories of religious heterodoxy and deviation, such as “heretic,” do not match up with the Islamic vocabulary of religious heterodoxy and should be avoided.",
     "pub_title": "Routledge Handbook on the Sciences in Islamicate Societies",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -487,7 +493,7 @@
     "publisher": "Routledge",
     "abstract": "This chapter explains the construction methods applied in Islamicate societies from the 2nd/8th to the 13th/19th centuries when making celestial globes or armillary spheres and the individual parts and forms of usage of such instruments. It reviews the literature dedicated to those two kinds of instruments or to larger groups of scientific instruments. The chapter also discusses the reasons for the survival of numerous globes against the negligible number of preserved armillary spheres and introduces some of the most prolific individual globe makers as well as generations of interrelated experts.",
     "pub_title": "Routledge Handbook on the Sciences in Islamicate Societies",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/6RHCU7CZ/Arslan - 2023 - Three-Dimensional Astronomy Celestial globes and .pdf",
     "doc_type": "unknown",
@@ -513,7 +519,7 @@
     "publisher": "Routledge",
     "abstract": "This chapter surveys important forms of textual organization of accepted knowledge, although not all genres used in the astral sciences to present results are discussed. Its second part is devoted to examples of the visual representation of astral knowledge and the role of such visualizations in the cultural success of major parts of this knowledge for almost a millennium.",
     "pub_title": "Routledge Handbook on the Sciences in Islamicate Societies",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -537,7 +543,7 @@
     "publisher": "Routledge",
     "abstract": "This chapter surveys two types of social practices as they pertained to observations. First, short- or long-term observations were undertaken by individual scholars or within a family or workshop context. Second, observations were carried out by larger groups of scholars, craftsmen and administrators within the context of a long-term program, often including the construction of an observatory with specialized buildings and fixed instruments with large scales. Long-term group activities were enabled by substantive patronage, normally by a ruler but occasionally also by a vizier or an affiliated prince. Many of the individual observation projects and all group projects led to the compilation of a set of astronomical and astrological tables called a zīj (pl. zijes). But individual projects also occurred on a more limited scale of purpose and duration. Examining currently published research results yielded the remarkable insight that many more long-term observation projects have taken place than previously thought, often as individual efforts.",
     "pub_title": "Routledge Handbook on the Sciences in Islamicate Societies",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -561,7 +567,7 @@
     "publisher": "Routledge",
     "abstract": "This chapter deals exclusively with efforts to develop non-Ptolemaic models for planetary movements from the 5th/11th to the 10th/16th centuries, with some remarks about the late phase of those discussions from the 11th/17th to the 13th/19th centuries. It begins with Ibn al-Haytham’s reflections on the configuration of the universe and his criticisms of Ptolemy’s models due to their violation of major principles of Aristotelian physics; these provided topics and orientation for later scholars. It then argues that with al-Kharaqī, a new genre specifically dedicated to the discussion of physical models emerged, leading to the development of the new models created at Maragha. Al-Tūsī’s new model for the superior planets is described as a concrete example. The chapter then identifies the Marāgha School’s most important known successors up to the 12th/17th century and briefly reviews the completely different approach that developed in Andalusia.",
     "pub_title": "Routledge Handbook on the Sciences in Islamicate Societies",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -585,7 +591,7 @@
     "publisher": "Routledge",
     "abstract": "This chapter surveys Zoroastrian scholarly activities from antiquity to the early modern period. It pays special attention to such activities in periods and regions under the rule of different Muslim dynasties. Of particular importance are reflections on the dating and interpretation of Zoroastrian discussions on natural philosophical themes in Pahlavi sources and the involvement of Zoroastrian clerics in the intellectual discussions at the caliphal court in Baghdad in the late 2nd-early 3rd/9th centuries. Here, the chapter offers arguments that challenge the standard histories of the existence of Pahlavi translations of Greek philosophical works in pre-Islamic times and their role in the Abbasid translation efforts.",
     "pub_title": "Routledge Handbook on the Sciences in Islamicate Societies",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/WRCR324W/König - 2023 - Practices of Zoroastrian Scholars Before and After.pdf",
     "doc_type": "unknown",
@@ -611,7 +617,7 @@
     "publisher": "Routledge",
     "abstract": "This chapter tries to capture the multiple and, at the same time, ambiguous nature of texts and images about the earth and its divisions into climates, cities, seas, rivers and mountains by discussing them according to methodologies, major authors and modern classifications. It argues that Ptolemy was the main father figure of all geographical authors, although they used different textual and pictorial styles and methods of organization of knowledge. It acknowledges literary elegance as a second criterion according to which geographical works can be classified and its intentional renunciation as a main rupture in the history of geography. From this perspective and with a glance at modern categories, geography and mapmaking in Islamicate societies are described as a hybrid between science and the humanities.",
     "pub_title": "Routledge Handbook on the Sciences in Islamicate Societies",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/7PWW8EXU/Bonner - 2023 - Geography and Mapmaking Until 7001300.pdf",
     "doc_type": "unknown",
@@ -639,7 +645,7 @@
     "publisher": "Routledge",
     "abstract": "This chapter treats the astral sciences as a whole instead of treating its parts in separate chapters. In order to explain some positions held by historical actors, it begins with a brief survey on the classifications of the astral sciences. Its main themes are practices in different parts of the astral sciences, including cosmological theories, astrological concepts and mathematical methods.",
     "pub_title": "Routledge Handbook on the Sciences in Islamicate Societies",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/HBMELKKA/Brentjes - 2023 - The Astral Sciences through the 7th13th Century .pdf",
     "doc_type": "unknown",
@@ -707,7 +713,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 4161.7
+    "chars_per_page": 4161.7,
+    "pages": "414-427"
   },
   {
     "key": "BKPDGDRL",
@@ -719,7 +726,7 @@
     "publisher": "Ed. du Centre National de la Recherche Scientifique",
     "abstract": null,
     "pub_title": "Dictionnaire des philosophes antiques, Supplément",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -730,12 +737,13 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "key",
       "908",
-      "Subject: http://syriaca.org/work/9723"
+      "Subject: http://syriaca.org/work/9723",
+      "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "481-483"
   },
   {
     "key": "9I2TFSDC",
@@ -747,7 +755,7 @@
     "publisher": "Routledge",
     "abstract": "This Variorum volume reprints ten papers on contextual elements of the so-called ancient sciences in Islamicate societies between the thirteenth and the seventeenth centuries. They address four major themes: the ancient sciences in educational institutions; courtly patronage of science; the role of the astral and other sciences in the Mamluk sultanate; and narratives about knowledge.\nThe main arguments are directed against the then dominant historiographical claims about the exclusion of the ancient sciences from the madrasa and cognate educational institutes, the suppression of philosophy and other ancient sciences in Damascus after 1229, the limited role of the new experts for timekeeping in the educational and professional exercise of this science, and the marginal impact of astrology under Mamluk rule. It is shown that the muwaqqits (timekeepers) were important teachers at madrasas and Sufi convents, that Mamluk officers sought out astrologers for counselling and that narratives about knowledge reveal important information about scholarly debates and beliefs. Colophons and dedications are used to prove that courtly patronage for the ancient sciences continued uninterrupted until the end of the seventeenth century. Furthermore, these papers refute the idea of a continued and strong conflict between the ancient and modern sciences, showing rather shifting alliances between various of them and their regrouping in the classifications of the entire disciplinary edifice.\nThese papers are suited for graduate teaching in the history of science and the intellectual, cultural and social history of the Middle East and for all readers interested in the study of the contexts of the sciences.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -760,11 +768,11 @@
     "tags": [
       "History",
       "Intellectual life",
-      "Study and teaching",
-      "Science",
-      "key",
       "Islam and science",
-      "Mathematics"
+      "Mathematics",
+      "Science",
+      "Study and teaching",
+      "key"
     ],
     "notes": [],
     "has_reader": false
@@ -847,7 +855,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 4558.5
+    "chars_per_page": 4558.5,
+    "pages": "851-881"
   },
   {
     "key": "23K87F66",
@@ -873,7 +882,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 2572.2
+    "chars_per_page": 2572.2,
+    "pages": "371-375"
   },
   {
     "key": "ANLFTXVL",
@@ -896,9 +906,9 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "key",
       "Asian Studies",
-      "Central Asia"
+      "Central Asia",
+      "key"
     ],
     "notes": [],
     "has_reader": true,
@@ -939,7 +949,7 @@
     "publisher": "University Press",
     "abstract": "Pliny's World offers readers a translation of the Natural History's opening books unprecedented for its completeness, accuracy and accessibility. Here, in quirky, often breathless style, Pliny lays the foundation of a hugely influential encyclopedia with coverage of the universe, stars, planets and moon, followed by earth's climate and then its physical and human geography. From Rome as ruling centerpoint, Pliny surveys the known world and its countless peoples in a vast arc from the Atlantic to Sri Lanka, embracing the Danube, Euphrates and Nile lands, Atlas and Caucasus mountains, Germany, Africa, Arabia, India. Passages from later books further illustrating his geographical grasp are appended, on topics as varied as wine, water, trees, birds and fish. Throughout, Pliny's frank expression of strong opinions about religion, distorted human values, abuse of the environment (and more) reveal uncannily modern preoccupations. His work remained an inspirational resource through the Renaissance, and still fascinates today.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -980,7 +990,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "32-103"
   },
   {
     "key": "D9KQH3RS",
@@ -1124,7 +1135,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "163-180"
   },
   {
     "key": "FXG9S57V",
@@ -1136,7 +1148,7 @@
     "publisher": "Routledge",
     "abstract": "From the middle of the eighth century to the tenth century, almost all non-literary and non-historical secular Greek books, including such diverse topics as astrology, alchemy, physics, botany and medicine, that were not available throughout the eastern Byzantine Empire and the Near East, were translated into Arabic.Greek Thought, Arabic Culture explores the major social, political and ideological factors that occasioned the unprecedented translation movement from Greek into Arabic in Baghdad, the newly founded capital of the Arab dynasty of the 'Abbasids', during the first two centuries of their rule. Dimitri Gutas draws upon the preceding historical and philological scholarship in Greco-Arabic studies and the study of medieval translations of secular Greek works into Arabic and analyses the social and historical reasons for this phenomenon.Dimitri Gutas provides a stimulating, erudite and well-documented survey of this key movement in the transmission of ancient Greek culture to the Middle Ages.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -1147,10 +1159,10 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "History",
-      "key",
       "Ancient Philosophy",
-      "Islamic Philosophy"
+      "History",
+      "Islamic Philosophy",
+      "key"
     ],
     "notes": [],
     "has_reader": false
@@ -1177,8 +1189,8 @@
     "recommendation": "",
     "tags": [
       "Geography",
-      "key",
       "cartography",
+      "key",
       "religion"
     ],
     "notes": [],
@@ -1205,11 +1217,11 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Religion",
       "History",
-      "key",
+      "Iran",
       "Islam",
-      "Iran"
+      "Religion",
+      "key"
     ],
     "notes": [
       "Machine generated contents note: 1. Introduction; Part I. The Revolts: 2. The Jibal: Sunbadh, the Muslimiyya; 3. Azerbaijan: Babak; 4. Khurasan: Muhammira, Khidashiyya, Rawandiyya, Harithiyya; 5. Sogdia and Turkestan: Ishaq; 6. Sogdia: al-Muqanna and the Mubayyida; 7. South-eastern Iran: Bihafaridh, ustadhsis, and Yusuf al-Barm; 8. The nature of the revolts; 9. The aftermath; Part II. The Religion: 10. God, cosmology, and eschatology; 11. Divine indwelling; 12. Reincarnation; 13. Ethos, organisation, overall character; 14. Khurrami beliefs in pre-Islamic sources; 15. Regional and official Zoroastrianism: doctrines; 16. Regional and official Zoroastrianism on the ground; Part III. Women and Property: 17. 'Wife-sharing'; 18. The Mazdakite utopia and after; Part IV. Conclusion: 19. Iranian religion versus Islam and inside it; Appendices",
@@ -1227,7 +1239,7 @@
     "publisher": "Oxford University Press, in association with The Institute of Ismaili Studies",
     "abstract": "The Epistles of the Brethren of Purity' is an encyclopedic compendium, probably composed in tenth-century Iraq by a society of adepts with Platonic, Pythagorean, and Shi'i tendencies. Its 52 sections ('epistles') are divided into four parts (Mathematics, Natural Philosophy, Sciences of the Soul and Intellect, and Theology). The current volume provides an edition, translation, and notes to Epistle 3 ('On Astronomia'), which forms one of the 14 sections on Mathematics. The content is a mixture of elementary astronomy and astrology, but it is not a beginner's textbook. Rather, the purpose is to use examples from those disciplines to provide spiritual, moral, and soteriological guidance. Thus the Epistle uses the argument from design to show the necessity for a Creator who made the harmonious universe; this wondrous design is then employed by the authors as a model, providing humans with a paradigm for proper ethical, political, and even economic conduct; and the study of Astronomia helps the soul achieve ultimate happiness as it seeks to throw off the shackles of this mundane world and oppressive body in favour of the purity of the celestial realm.0Although by no means typical of Islamic astronomical literature, Epistle 3 of the Brethren of Purity gives a window into a fascinating and intriguing group operating during the early period of Islam who sought to continue and adopt one of the esoteric strands of Hellenistic philosophy within an Islamic context, meshing astronomy, astrology, Platonic-Pythagorean philosophy, Quranic and Biblical quotations, and anecdotes from the lives of the Abrahamic prophets",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -1238,14 +1250,14 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Early works to 1800",
-      "Astronomy",
-      "Islamic philosophy",
       "Astrology",
       "Astrology, Arab",
+      "Astronomy",
       "Astronomy, Arab",
       "Astronomy, Medieval",
+      "Early works to 1800",
       "Islamic astrology",
+      "Islamic philosophy",
       "Philosophy, Arab"
     ],
     "notes": [
@@ -1287,7 +1299,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Le Museón",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/7WFBRJIK/Klein-Franke - 1974 - Die Oberlieferung der altesten arabischen Handschr.pdf",
     "doc_type": "unknown",
@@ -1303,7 +1315,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 1974.8
+    "chars_per_page": 1974.8,
+    "pages": "59-65"
   },
   {
     "key": "W277BB43",
@@ -1315,7 +1328,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Le Museón",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/C8NIVWWN/Grignaschi - 1967 - Le roman épistolaire classique conservé dans la ve.pdf",
     "doc_type": "unknown",
@@ -1332,7 +1345,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 2390.9
+    "chars_per_page": 2390.9,
+    "pages": "211-264"
   },
   {
     "key": "NIE76AUD",
@@ -1344,7 +1358,7 @@
     "publisher": "Cambridge University Press",
     "abstract": "The Muslim afterworld, with its imagery rich in sensual promises, has shaped Western perceptions of Islam for centuries. However, to date, no single study has done justice to the full spectrum of traditions of thinking about the topic in Islamic history. The Muslim hell, in particular, remains a little studied subject. This book, which is based on a wide array of carefully selected Arabic and Persian texts, covers not only the theological and exegetical but also the philosophical, mystical, topographical, architectural and ritual aspects of the Muslim belief in paradise and hell, in both the Sunni and the Shiʿi world. By examining a broad range of sources related to the afterlife, Christian Lange shows that Muslim religious literature, against transcendentalist assumptions to the contrary, often pictures the boundary between this world and the otherworld as being remarkably thin, or even permeable",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -1368,7 +1382,7 @@
     "publisher": "Università degli studi di Napoli",
     "abstract": null,
     "pub_title": "Labor Limae: atti in onore di Carmela",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/AA75YHZL/Maróth - 2015 - An Unknown Source of al-Khwārizmī’s Kitāb ṣūrat al.pdf",
     "doc_type": "embedded",
@@ -1379,12 +1393,12 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "key",
       "Baffioni, Carmela",
       "Conference papers and proceedings",
       "Islam",
+      "Islam Congresses",
       "Islam Congrès",
-      "Islam Congresses"
+      "key"
     ],
     "notes": [],
     "has_reader": false,
@@ -1393,7 +1407,7 @@
   },
   {
     "key": "UF5KFEK8",
-    "title": "The Syriac De Mundo: Translation, Commentary, and Analysis of Translation Technique",
+    "title": "The Syriac De Wundo: Translation, Commentary, and Analysis of Translation Technique",
     "year": "2009",
     "authors": "Adam McCollum; Pseudo-Aristotle",
     "item_type": "thesis",
@@ -1401,7 +1415,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Hebrew Union College – Jewish Institute of Religion",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/J7KT6HW3/Adam McCollum and Pseudo-Aristotle - 2009 - The Syriac De Mundo Translation, Commentary, and .pdf",
     "doc_type": "embedded",
@@ -1412,8 +1426,8 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "key",
       "901",
+      "key",
       "primary source"
     ],
     "notes": [],
@@ -1444,7 +1458,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "20-57"
   },
   {
     "key": "WDPWYM23",
@@ -1467,18 +1482,18 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
+      "11.84 Islam: other",
+      "Anthropologie théologique Islam",
       "Early works",
       "Early works to 1800",
-      "11.84 Islam: other",
-      "Islamic philosophy",
-      "Philosophie islamique",
-      "Anthropologie théologique Islam",
       "Ikhwan al-Safa'",
+      "Islamic philosophy",
       "Islamische Philosophie",
       "Islamische Theologie",
       "Mensch",
       "Mensch Tiere",
       "Mensch-Tier-Kommunikation",
+      "Philosophie islamique",
       "Rasa'il Ikhwan al-Safa (encyclopaedia)",
       "Theological anthropology Islam",
       "Tiere",
@@ -1508,11 +1523,10 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "History",
-      "Histoire",
-      "Early works to 1800",
       "11.84 Islam: other",
-      "historia",
+      "Early works to 1800",
+      "Histoire",
+      "History",
       "Ikhwan al-Safa",
       "Ikhwan al-Safa' gtt",
       "Ikhwān al-Ṣafāʼ",
@@ -1520,7 +1534,8 @@
       "Islamic philosophy",
       "Islamisk filosofi",
       "Philosophie islamique",
-      "Philosophy, Islamic"
+      "Philosophy, Islamic",
+      "historia"
     ],
     "notes": [],
     "has_reader": false
@@ -1549,7 +1564,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "161"
   },
   {
     "key": "V78L72HS",
@@ -1572,11 +1588,11 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "key",
+      "Islamic geography - medieval geography",
       "and distance between relay-stations",
       "couriers",
       "early Islamic geographies - displaying three traits as evidence of Iranian influence",
-      "Islamic geography - medieval geography",
+      "key",
       "medieval - period between antiquity and modernity",
       "medieval Islamic worldview - Arabic geography in its historical context",
       "postal system - denoting postal mounts",
@@ -1584,7 +1600,8 @@
       "surrat al-ar -navel of the earth"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "273-290"
   },
   {
     "key": "6UNLR5DR",
@@ -1622,7 +1639,7 @@
     "publisher": "Scholars' Facsimiles & Reprints",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/XLFPBB7U/al-Hāshimī - 1981 - The book of the reasons behind astronomical tables.pdf",
     "doc_type": "embedded",
@@ -1675,7 +1692,7 @@
     "publisher": "Brill",
     "abstract": "\"Cihānnümā is the summa of Ottoman geography and one of the axial texts of Islamic intellectual history. Kātib Çelebi (d. 1657) sought to combine the Islamic geographical tradition with the new European discoveries, atlases and surveys. His cosmography included a comprehensive description of the regions of the world, extending westward from Japan and as far as the eastern Ottoman provinces. Ebū Bekr b. Behrām ed-Dimaşḳī(d. 1691) continued with a survey of the Arab countries and the remaining Ottoman provinces of Anatolia. İbrāhīm Müteferriḳa combined the two, with additional notes and maps of his own, in one of the earliest Ottoman printed books, Kitāb-ı Cihānnümā (1732). Our translation includes the entire text of Müteferriḳa's edition, distinguishing clearly between the contributions of the three authors. Based on Kātib Çelebi's original manuscript we have made hundreds of corrections to Müteferriḳa's text. Additional corrections are based on comparison with Kātib Çelebi's Arabic, Persian, Turkish, Latin and Italian sources\"--",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -1686,10 +1703,10 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Geography",
       "Cartography",
-      "Early works to 1800",
       "Cosmography",
+      "Early works to 1800",
+      "Geography",
       "Spherical astronomy",
       "Turkey",
       "World maps"
@@ -1747,7 +1764,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "108-128"
   },
   {
     "key": "LNP4E8TG",
@@ -1797,8 +1815,8 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "primary source",
-      "Arabic language"
+      "Arabic language",
+      "primary source"
     ],
     "notes": [],
     "has_reader": false
@@ -1839,7 +1857,7 @@
     "publisher": "Cazimi Press",
     "abstract": "The astrological poem (Carmen Astrologicum) of Dorotheus of Sidon (1st Century AD) played a key role in later Persian, Arabic, and Latin astrology, forming the basis of many works on nativities, inceptions or elections, and questions (\"horary\"), such as the Book of Aristotle, al-Rijāl's Book of the Skilled, and the books of Sahl b. Bishr. After being translated into Persian in the 3rd Century, it was later put into an Arabic edition by the famous astrologer 'Umar al-Tabarī.This new English translation of al-Tabarī explains many special features of Dorotheus's work, including chart dating, the use of triplicity lords, transits and profections, ascensional times, and more. With numerous footnotes, extra diagrams, and the Greek prose Excerpts (translated by Eduardo Gramaglia), it supersedes the 1976 edition by Pingree. This essential work for traditional astrologers and will repay close study.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -1877,8 +1895,8 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "primary source",
-      "Chronology"
+      "Chronology",
+      "primary source"
     ],
     "notes": [
       "discussion of Alexander’s ancestry & Gog & Magog in chapter 4 (on basis of importance in Quran. (aristotle mentioned v. briefly as his advisor."
@@ -1907,12 +1925,13 @@
     "recommendation": "",
     "tags": [
       "History",
+      "History & Culture",
       "Medieval History",
-      "Middle East and Islamic Studies",
-      "History & Culture"
+      "Middle East and Islamic Studies"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "201-234"
   },
   {
     "key": "9RW3JDS8",
@@ -1936,12 +1955,13 @@
     "recommendation": "",
     "tags": [
       "History",
+      "History & Culture",
       "Medieval History",
-      "Middle East and Islamic Studies",
-      "History & Culture"
+      "Middle East and Islamic Studies"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "29-60"
   },
   {
     "key": "7GZ3JTRK",
@@ -1953,7 +1973,7 @@
     "publisher": "Urdu-Books",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -2093,7 +2113,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "246-262"
   },
   {
     "key": "XI94AH9K",
@@ -2120,7 +2141,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "103-123"
   },
   {
     "key": "JF2HM2W4",
@@ -2147,7 +2169,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "97-125"
   },
   {
     "key": "CRQ8WR9R",
@@ -2183,7 +2206,7 @@
     "publisher": "Harvard University Press",
     "abstract": "This volume contains two texts that crossed the Mediterranean in Late Antiquity. The Apocalypse of Pseudo-Methodius was one of the first works composed in response to the Arab invasions and the establishment of the Muslim empire in the seventh century. In a matter of decades, it was translated from its original Syriac into Greek and from Greek into Latin. (Both the Greek and Latin texts are presented here.) The Apocalypse enjoyed immense popularity throughout the Middle Ages, informing expectations of the end of the world, responses to strange and exotic invaders like the Mongols and Turks, and even the legendary versions of the life of Alexander the Great. An Alexandrian World Chronicle (Excerpta Latina Barbari) was considered important by no less a humanist than Joseph Scaliger. He recognized it as a representative of an early stage in the Christian chronicle tradition that would dominate medieval historiography. The original Greek text may have been a diplomatic gift from the court of Justinian to a potential ally among Frankish royalty, translated two centuries later by the Franks themselves in their efforts to convert the pagan Saxons. In addition to presenting a universal chronicle with a comprehensive ethnography and geography, the Excerpta offer a Euhemeristic narrative of the gods and another account of Alexander.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -2347,7 +2370,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "483-492"
   },
   {
     "key": "KABL5YB2",
@@ -2371,7 +2395,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "195-259"
   },
   {
     "key": "ESE9SRE7",
@@ -2395,7 +2420,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "90-91"
   },
   {
     "key": "8AV9EKAW",
@@ -2445,7 +2471,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "7-83"
   },
   {
     "key": "K6L7V6IN",
@@ -2526,13 +2553,14 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Classical Studies",
-      "key",
       "Ancient Philosophy",
-      "Greek & Latin Literature"
+      "Classical Studies",
+      "Greek & Latin Literature",
+      "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "319-350"
   },
   {
     "key": "M8G2YBZL",
@@ -2555,18 +2583,19 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "History",
-      "Philosophy",
       "Classical Studies",
-      "Middle East and Islamic Studies",
-      "Theology & Science",
-      "History of Science",
-      "primary source",
       "Classical Tradition & Reception Studies",
-      "Medieval Philosophy"
+      "History",
+      "History of Science",
+      "Medieval Philosophy",
+      "Middle East and Islamic Studies",
+      "Philosophy",
+      "Theology & Science",
+      "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "224-343"
   },
   {
     "key": "D3D2J3NQ",
@@ -2589,18 +2618,19 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "History",
-      "Philosophy",
       "Classical Studies",
-      "Middle East and Islamic Studies",
-      "Theology & Science",
-      "History of Science",
-      "primary source",
       "Classical Tradition & Reception Studies",
-      "Medieval Philosophy"
+      "History",
+      "History of Science",
+      "Medieval Philosophy",
+      "Middle East and Islamic Studies",
+      "Philosophy",
+      "Theology & Science",
+      "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "540-713"
   },
   {
     "key": "3V5JDK6Y",
@@ -2732,7 +2762,7 @@
     "publisher": "Brepols",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -2758,7 +2788,7 @@
     "publisher": "Brepols",
     "abstract": "The 'Jami' Zij' ('Comprehensive Zij') was a highly popular Arabic astronomical handbook with tables written by the Iranian astronomer Kushyar ibn Labban al-Jili around the year 1000. It belonged to an important category of works, modelled after Ptolemy?s 'Almagest' and 'Handy Tables', that allowed the practising astronomer/astrologer to carry out all necessary calculations of arcs on the heavenly sphere and planetary positions, and ultimately to cast horoscopes. Around one hundred such works are extant, but only very few have been edited, translated or studied in detail.0This book contains a full treatment of Book II of Kushyar's astronomical handbook centred around a critical edition of all the mathematical tables and their paratexts. It sets new standards for the edition of such tables by designing new types of apparatus entries for related variants in the tabular values. The introductory part describes the eight surviving manuscripts that transmit Kushyar's tables and establishes by a detailed survey that they represent at least three different versions of the 'Jami' Zij' that in all likelihood stem from Kushyar himself. An extensive commentary with mathematical analyses uncovers numerous new details of the methods by which the tables were computed, the astronomical parameter values on which they were based, the sources for the tables, and their influence on later 'zijes'. These results show how Kushyar, on the one hand, stayed firmly within the framework of the Ptolemaic tradition, but on the other introduced several types of innovations that later became common in Arabic and Persian astronomical handbooks",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -2880,7 +2910,7 @@
     "publisher": "Presses universitaires d'Iran Institut français de recherche en Iran diff. Peeters",
     "abstract": null,
     "pub_title": "Sciences, techniques et instruments dans le monde iranien: Xe-XIXe siècle actes du colloque tenu à l'Université de Téhéran, 7-9 juin 1998",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -2892,7 +2922,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "77-84"
   },
   {
     "key": "HNB3QHNW",
@@ -2952,7 +2983,7 @@
     "publisher": "Dār Ṣādir",
     "abstract": "A treatise recounting various facts of interest, mainly geographical, bu also bearing on cosmography, topography and natural history.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -3332,7 +3363,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "9-105"
   },
   {
     "key": "LVKJY3RN",
@@ -3356,7 +3388,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "393-400"
   },
   {
     "key": "YCS79Q7W",
@@ -3368,7 +3401,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Comparative Civilizations Review",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/XS2NW3LP/Brauer - 1992 - Geography in the Medieval Muslim World Seeking a .pdf",
     "doc_type": "embedded",
@@ -3392,7 +3425,7 @@
     "publisher": "",
     "abstract": "The analysis of geographical coordinates extracted from the Kennedy & Kennedy's book \"Geographical coordinates of localities from Islamic sources\" (1987), allows a renewed vision of mathematical geography in the medieval Muslim West (9th -16th centuries). We show that, contrary to what they themselves assert in their writings, all the ancient Arab geographers retain a \"zero meridian” rejected to the west of the Canary Islands (meridian of water). This meridian was inaccessible, so that in practice they use a conventional fixed meridian located in the Middle East (most likely Baghdad and/or Damascus). We show that al-Khwārizmī (9th century) played a founding role in the creation of this system and in partial correcting the erroneous data of Ptolemy. Subsequently, especially in the 10th and 11th centuries, some authors made further global and/or local improvements, but these were soon forgotten.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/4XFC5GC3/Mercier - 2020 - Meridians of reference and mathematical geography .pdf",
     "doc_type": "embedded",
@@ -3418,7 +3451,7 @@
     "publisher": "",
     "abstract": "This survey of the movements of astronomical tables within medieval Islam provides a backdrop for the remaining articles in this volume. We discuss the types of document that contained astronomical tables, and some of the analytical tools that have produced discoveries with respect to the transmission of tables from one author or subculture to another. We conclude with a summary of table transmission: from origins with the appropriation of traditions of astronomical tables taken from Greece and India, through the establishment of a Ptolemaic tradition in the 9th century and a uniquely Islamic expansion of methods and concepts starting in the 10th, to important sub-traditions in alAndalus and the Maghrib.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/3QS59YCL/van Brummelen - The Travels of Astronomical Tables within Medieval.pdf",
     "doc_type": "embedded",
@@ -3458,7 +3491,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "357-372"
   },
   {
     "key": "7PNEZWRA",
@@ -3485,7 +3519,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "132-151"
   },
   {
     "key": "VD97NEBR",
@@ -3509,7 +3544,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "35-69"
   },
   {
     "key": "BMHZCXPD",
@@ -3533,7 +3569,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "1-45"
   },
   {
     "key": "V2F25JKB",
@@ -3557,7 +3594,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "123-177"
   },
   {
     "key": "LUNHZBUZ",
@@ -3581,7 +3619,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "246-262"
   },
   {
     "key": "64X97FGE",
@@ -3665,7 +3704,7 @@
     "publisher": "Munksgaard [in Komm.]",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/JEGJWWLY/Ḫwārizmī - 1962 - The astronomical tables of al-Khwārizmī translatio.pdf",
     "doc_type": "embedded",
@@ -3676,10 +3715,10 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Early works",
       "Astronomy",
       "Astronomy Early works to 1800",
       "Astronomy Tables",
+      "Early works",
       "Quelle",
       "Tables"
     ],
@@ -3696,7 +3735,7 @@
     "publisher": "Routledge",
     "abstract": null,
     "pub_title": "Encyclopedia of the history of Arabic science",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -3707,13 +3746,14 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "History",
-      "Science",
       "Arab countries",
-      "Encyclopedias"
+      "Encyclopedias",
+      "History",
+      "Science"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "20-57"
   },
   {
     "key": "SMCFIBW5",
@@ -3725,7 +3765,7 @@
     "publisher": "Routledge",
     "abstract": null,
     "pub_title": "Encyclopedia of the history of Arabic science",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -3736,13 +3776,14 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "History",
-      "Science",
       "Arab countries",
-      "Encyclopedias"
+      "Encyclopedias",
+      "History",
+      "Science"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "20-57"
   },
   {
     "key": "IVP8MU9S",
@@ -3754,7 +3795,7 @@
     "publisher": "Routledge",
     "abstract": null,
     "pub_title": "Encyclopedia of the history of Arabic science",
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -3765,15 +3806,16 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "History",
-      "Science",
       "Arab countries",
-      "Encyclopedias"
+      "Encyclopedias",
+      "History",
+      "Science"
     ],
     "notes": [
       "v. 1. Astronomy, theoretical and applied -- v. 2. Mathematics and the physical sciences -- v. 3. Technology, alchemy, and life sciences"
     ],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "185-201"
   },
   {
     "key": "5BRKR8G9",
@@ -3785,7 +3827,7 @@
     "publisher": "Oxford University Press",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -3797,9 +3839,9 @@
     "recommendation": "",
     "tags": [
       "Geography",
-      "Philosophy",
       "Geography, Arab",
       "Islamic Empire",
+      "Philosophy",
       "Place attachment",
       "Religious aspects Islam"
     ],
@@ -3816,7 +3858,7 @@
     "publisher": "Princeton University press",
     "abstract": "In this sweeping and richly illustrated history, S. Frederick Starr tells the fascinating but largely unknown story of Central Asia's medieval enlightenment through the eventful lives and astonishing accomplishments of its greatest minds--remarkable figures who built a bridge to the modern world. Because nearly all of these figures wrote in Arabic, they were long assumed to have been Arabs. In fact, they were from Central Asia--drawn from the Persianate and Turkic peoples of a region that today extends from Kazakhstan southward through Afghanistan, and from the easternmost province of Iran through Xinjiang, China. Lost Enlightenment recounts how, between the years 800 and 1200, Central Asia led the world in trade and economic development, the size and sophistication of its cities, the refinement of its arts, and, above all, in the advancement of knowledge in many fields. -- Publisher website",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -3976,7 +4018,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "62-82"
   },
   {
     "key": "GM87FIXS",
@@ -3999,18 +4042,19 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Cartography",
-      "History",
-      "General",
-      "Medieval History",
-      "Middle East and Islamic Studies",
-      "Literature and Cultural Studies",
       "Book History and Cartography",
+      "Cartography",
+      "Comparative Studies & World Literature",
+      "General",
+      "History",
       "History of Cartography",
-      "Comparative Studies & World Literature"
+      "Literature and Cultural Studies",
+      "Medieval History",
+      "Middle East and Islamic Studies"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "189-196"
   },
   {
     "key": "5VZIASKP",
@@ -4033,18 +4077,19 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Cartography",
-      "History",
-      "General",
-      "Medieval History",
-      "Middle East and Islamic Studies",
-      "Literature and Cultural Studies",
       "Book History and Cartography",
+      "Cartography",
+      "Comparative Studies & World Literature",
+      "General",
+      "History",
       "History of Cartography",
-      "Comparative Studies & World Literature"
+      "Literature and Cultural Studies",
+      "Medieval History",
+      "Middle East and Islamic Studies"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "113-136"
   },
   {
     "key": "I6QEKUQM",
@@ -4067,18 +4112,19 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Cartography",
-      "History",
-      "General",
-      "Medieval History",
-      "Middle East and Islamic Studies",
-      "Literature and Cultural Studies",
       "Book History and Cartography",
+      "Cartography",
+      "Comparative Studies & World Literature",
+      "General",
+      "History",
       "History of Cartography",
-      "Comparative Studies & World Literature"
+      "Literature and Cultural Studies",
+      "Medieval History",
+      "Middle East and Islamic Studies"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "74-90"
   },
   {
     "key": "9YMS8JFA",
@@ -4101,15 +4147,15 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Cartography",
-      "History",
-      "General",
-      "Medieval History",
-      "Middle East and Islamic Studies",
-      "Literature and Cultural Studies",
       "Book History and Cartography",
+      "Cartography",
+      "Comparative Studies & World Literature",
+      "General",
+      "History",
       "History of Cartography",
-      "Comparative Studies & World Literature"
+      "Literature and Cultural Studies",
+      "Medieval History",
+      "Middle East and Islamic Studies"
     ],
     "notes": [],
     "has_reader": false
@@ -4185,44 +4231,44 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Geography, Medieval",
-      "Description and travel",
       "17th century",
-      "aat",
       "Ann Arbor",
+      "Description and travel",
       "Early works to 1800",
+      "Geography, Medieval",
       "Headpieces (layout features)",
       "Ilkhanid dynasty",
       "Iran",
       "Manuscripts, Persian",
       "Michigan",
-      "Mongols"
+      "Mongols",
+      "aat"
     ],
     "notes": [
+      "Accompanying materials: Scrap with notes between pp.416-417",
+      "Binding: Pasteboards (quite heavy) faced in light brown leather and edged in dark red leather (leather faced and edged binding) ; Type III binding (without flap) ; doublures in brown leather ; upper and lower covers carry blind-stamped (with recessed paper onlays) mandorla, pendants and cornerpieces (each filled with vegetal composition) ; sewn in dark blue thread, two stations ; worked chevron endbands in pink and yellow, good condition ; overall in somewhat poor condition with much abrasion, delamination, staining, moisture damage, lifting and losses of leather, shrinkage, etc.",
       "Shelfmark: Ann Arbor, University of Michigan, Special Collections Research Center, Isl. Ms. 274",
       "Origin: As appears in colophon at close on p.542, copied by Muḥammad Zamān ibn Sayyid Murād al-Ḥusaynī with transcription completed 5 Shaʻbān 1051 [ca. 9 November 1641].",
-      "Accompanying materials: Scrap with notes between pp.416-417",
       "Former shelfmark: \"534 T. De M. [i.e. Tammaro De Marinis]\" in pencil and \"5/3\" in ink on 'title page' (p.1).",
-      "Binding: Pasteboards (quite heavy) faced in light brown leather and edged in dark red leather (leather faced and edged binding) ; Type III binding (without flap) ; doublures in brown leather ; upper and lower covers carry blind-stamped (with recessed paper onlays) mandorla, pendants and cornerpieces (each filled with vegetal composition) ; sewn in dark blue thread, two stations ; worked chevron endbands in pink and yellow, good condition ; overall in somewhat poor condition with much abrasion, delamination, staining, moisture damage, lifting and losses of leather, shrinkage, etc.",
       "Support: non-European (Persian) laid paper with 8 laid lines per cm. (vertical, fairly distinct, some curving) and no chain lines plainly visible, sturdy though crisp and transluscent, quite well-burnished, some inclusions.",
       "Decoration: Illuminated headpiece (ʻunwān / sarlawḥ ) at opening on p.2 consisting of small rectangular panel carrying the basmalah surrounded by gilt cloud-bands and flanked by swirling floral vegetal pattern in green, pink, lavender, yellow, white, etc. on fields of gold, surmounted by larger rectangular panel evoking book cover design with empty gold central cartouche (or mandorla) flanked by pendants and surrounded by swirling floral vegetal pattern on a lapis lazuli ground, surmounted by a scalloped semi-circular piece (dome) filled with the same floral vegetal designs on fields of lapis lazuli and gold ; entire piece surmounted by vertical stalks (tīgh) in blue and set into a well of gold with black vegetal design ; written area surrounded by frame consisting of innermost gold band flanked by black fillets with outermost red and blue rules ; keywords and some abbreviation symbols (stroke above notable words, etc.) rubricated ; overlining in red ; textual dividers in the form of inverted commas and discs in red ; numerous tables and line diagrams in red and black (see p.30, 64, 65, 67-69, 70, 71, 72, 83, 344, 346) ; two maps (including world with 7 iqlīms, seas, cities, locales, etc. see p.340-341 and p.496-497).",
-      "Script: Nastaʻlīq ; elegant hand, characteristically serifless and with descent of words to baseline, exaggerated thickness of elongated horizontal strokes ; Arabic excerpts in a compact, elegant naskh, fairly vertical and adhering to baseline ; occasional vocalization.",
       "Layout: Written in 19 lines per page ; frame-ruled.",
       "Collation: 34 IV (272), I (274) ; almost exclusively quaternions ; lacuna on pp.28-29 (pages left partially blank) ; catchwords present ; pagination in pencil, Western numerals, supplied during digitization (skips two pages between pp.33-34).",
-      "Colophon: \"Scribal,\" reads \"تم الكتابة على يد الفقير محمد زمان ابن سيد مراد الحسيني ستر عيوبهما وغفر ذنوبهما في خامس شهر شعبان سنه ١٠٥١ تم تم تم تم تم تم\"",
       "Explicit: \"و ختم سخن و دعا را برين كلمات اختصار رفت ... نجز الكتاب والحمد لله اولا واخرا وظاهرا وباطنا وصلى الله على محمد المصطفى طاهرا وافيا والسلام\"",
-      "Incipit: \"چون واهب مواهب بى علت علت كلمته كه مبدع محژعات ومحژع مبدعاتست ...\"",
-      "Title from inscription on 'title page' (p.1).",
       "Ms. codex.",
       "Cat. Pers. MSS. Brit. Mus.,pp.418-420",
+      "Script: Nastaʻlīq ; elegant hand, characteristically serifless and with descent of words to baseline, exaggerated thickness of elongated horizontal strokes ; Arabic excerpts in a compact, elegant naskh, fairly vertical and adhering to baseline ; occasional vocalization.",
+      "Colophon: \"Scribal,\" reads \"تم الكتابة على يد الفقير محمد زمان ابن سيد مراد الحسيني ستر عيوبهما وغفر ذنوبهما في خامس شهر شعبان سنه ١٠٥١ تم تم تم تم تم تم\"",
+      "Incipit: \"چون واهب مواهب بى علت علت كلمته كه مبدع محژعات ومحژع مبدعاتست ...\"",
+      "Title from inscription on 'title page' (p.1).",
+      "Elegant copy of the important cosmographical and geographical work by Ḥamd Allāh Mustawfī Qazvīnī (d. after 1340), particularly significant for the human geography of the last period of the Īlkhān empire. Contributions to the cataloguing from Hossein Alizadeh and David Hughes.",
+      "Purchase ;Acquired by purchase (funds donated by Horace Rackham).1924",
+      "Inscriptions in pencil and ink on 'title page' (p.1) \"534 T. De M. [i.e. Tammaro De Marinis]\" and \"5/3\" ; traces of an oval seal impression on 'title page' (p.1) and at close on p.542 (along with possibly almond-shaped seal impression at head of the page) ; statement on final leaf (p.546) dated 1223 [1808 or 9].",
       "Spuler, B. \"Ḥamd Allāhb. Abī Bakr b. Aḥmād b. Naṣr al-Mustawfīal-Ḳazwīnī,\" in EI2,Vol. III, p. 122, col. 1",
       "Storey,v. I, p. 81-84",
       "Browne,v. III, p. 87-100",
-      "Elegant copy of the important cosmographical and geographical work by Ḥamd Allāh Mustawfī Qazvīnī (d. after 1340), particularly significant for the human geography of the last period of the Īlkhān empire. Contributions to the cataloguing from Hossein Alizadeh and David Hughes.",
-      "Purchase ;Acquired by purchase (funds donated by Horace Rackham).1924",
       "The author was born ca. 1281 and died after 1339-40 in Qazvīn. A Persian historian, geographer, and administrator (under the famous Rashīd al-Dīn). In addition to this text, he composed the Ẓafarnāmah, a verse history of the Islamic world up to his own time, and Tārīkh-i guzīdah, a concise prose history (supplied by D. Hughes).",
-      "Persian.",
-      "Inscriptions in pencil and ink on 'title page' (p.1) \"534 T. De M. [i.e. Tammaro De Marinis]\" and \"5/3\" ; traces of an oval seal impression on 'title page' (p.1) and at close on p.542 (along with possibly almond-shaped seal impression at head of the page) ; statement on final leaf (p.546) dated 1223 [1808 or 9]."
+      "Persian."
     ],
     "has_reader": false
   },
@@ -4236,7 +4282,7 @@
     "publisher": "University of Texas Press",
     "abstract": "During the Middle Ages, a thriving center for learning and research was Muslim Spain, where students gathered to consult Arabic manuscripts of earlier scientific works and study with famous teachers. One of these teachers was Sa'id al-Andalusi, who in 1068 wrote Kitab Tabaqat al-'Umam, or \"Book of the Categories of Nations,\" which recorded the contributions to science of all known nations. Today, it is one of few surviving medieval Spanish Muslim texts, and this is its first English translation. Science ('ulum), as used by Sa'id and other scholars of that period, is a broad term covering virtually all aspects of human knowledge. After initial discussions of the categories of nations that did or did not cultivate science, Sa'id details the specific contribution of nine nations or peoples-India, Persia, Chaldea, Greece, Rome, Egypt, the Arab Orient, al-Andalus, and the Hebrews. He includes the names of many individual scientists and scholars and describes their various contributions to knowledge, making his book a significant work of reference as well as history.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -4247,9 +4293,9 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "primary source",
+      "Science / General",
       "Science / History",
-      "Science / General"
+      "primary source"
     ],
     "notes": [
       "available from Forum library"
@@ -4303,13 +4349,14 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Literature",
-      "Middle East and Islamic Studies",
+      "History & Culture",
       "Journal",
-      "History & Culture"
+      "Literature",
+      "Middle East and Islamic Studies"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "142-167"
   },
   {
     "key": "LS75YY3B",
@@ -4333,7 +4380,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "203-218"
   },
   {
     "key": "GDHSVTDM",
@@ -4380,9 +4428,9 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
+      "Islamic astronomy",
       "key",
-      "primary source",
-      "Islamic astronomy"
+      "primary source"
     ],
     "notes": [
       "For Battani on Arin earth see Ch. 6. for al-Kharaki trans. see [ages 165-175]"
@@ -4499,7 +4547,7 @@
     "publisher": "E. J. Brill",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -4549,7 +4597,7 @@
     "publisher": "Oxford University Press",
     "abstract": "The Ikhwan al-Safa' (Brethren of Purity), the anonymous adepts of a tenth-century esoteric fraternity based in Basra and Baghdad, hold an eminent position in the history of science and philosophy amongst Muslims due to the wide reception and assimilation of their monumental encyclopaedia, the Rasa'il Ikhwan al-Safa' (Epistles of the Brethren of Purity). The present volume is the fourth of this definitive series consisting of the very first critical edition of the Rasa'il in Arabic, complete with the first fully annotated English translation. Prepared by James Montgomery and Ignacio Sánchez, Epistle 4: 'On Geography' contains a description of the Earth and its climes of great importance to understand both the Islamic geographical tradition and the thought of the Ikhwan al-Safa'.This epistle, which was one of the few geographical works translated into Latin in Medieval Europe, clearly shows the acquaintance of its authors with the Greek Prolemaic tradition, and allows us to trace the main sources used in its composition, namely al-Farghani and al-Khwarizmi. But it is also a propaedeutic work aimed at providing the intellectual tools needed to decipher the signs of God's Creation, and at understanding the phenomena of the sub-lunar world in the light of the cosmological order. In this regard, 'On Geography' epitomises many of the central themes in the conceptual universe of the Ikhwan al-Safa', such as the conception of science as a path towards the superior knowledge of God, and the relationship between microcosmos and macrocosmos as part of the divine design.\n             \n             \n              \n            ,  \n             The Ikhwan al-Safa' (Brethren of Purity), the anonymous adepts of a tenth-century esoteric fraternity based in Basra and Baghdad, hold an eminent position in the history of science and philosophy amongst Muslims due to the wide reception and assimilation of their monumental encyclopaedia, the Rasa'il Ikhwan al-Safa' (Epistles of the Brethren of Purity). The present volume is the fourth of this definitive series consisting of the very first critical edition of the Rasa'il in Arabic, complete with the first fully annotated English translation. Prepared by James Montgomery and Ignacio Sánchez, Epistle 4: 'On Geography' contains a description of the Earth and its climes of great importance to understand both the Islamic geographical tradition and the thought of the Ikhwan al-Safa'.This epistle, which was one of the few geographical works translated into Latin in Medieval Europe, clearly shows the acquaintance of its authors with the Greek Prolemaic tradition, and allows us to trace the main sources used in its composition, namely al-Farghani and al-Khwarizmi. But it is also a propaedeutic work aimed at providing the intellectual tools needed to decipher the signs of God's Creation, and at understanding the phenomena of the sub-lunar world in the light of the cosmological order. In this regard, 'On Geography' epitomises many of the central themes in the conceptual universe of the Ikhwan al-Safa', such as the conception of science as a path towards the superior knowledge of God, and the relationship between microcosmos and macrocosmos as part of the divine design.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/J3HM2PWF/Sánchez et al. - 2014 - On Geography An Arabic Edition and English Transl.pdf",
     "doc_type": "embedded",
@@ -4784,10 +4832,10 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "primary source",
+      "Description and travel",
       "Historical geography",
       "Spain",
-      "Description and travel"
+      "primary source"
     ],
     "notes": [
       "Includes bibliographical references and indexes."
@@ -4841,7 +4889,6 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "primary source",
       "1935",
       "burgess",
       "calcutta",
@@ -4851,6 +4898,7 @@
       "hpd",
       "of",
       "phanindralal",
+      "primary source",
       "rev",
       "reverend",
       "shree",
@@ -4887,8 +4935,8 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "primary source",
-      "bub_upload"
+      "bub_upload",
+      "primary source"
     ],
     "notes": [],
     "has_reader": false
@@ -4914,8 +4962,8 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "primary source",
-      "bub_upload"
+      "bub_upload",
+      "primary source"
     ],
     "notes": [],
     "has_reader": false
@@ -4941,8 +4989,8 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "primary source",
-      "Arabic language"
+      "Arabic language",
+      "primary source"
     ],
     "notes": [],
     "has_reader": false
@@ -4957,7 +5005,7 @@
     "publisher": "Ed. Erdmann",
     "abstract": "In seiner Weltbeschreibung, der wertvollsten Kosmographie der islamischen Kultur, hält der Autor al-Qazwînî (ca. 1203 bis 1283) das Wissen seiner Epoche fest.Dabei verbindet er wissenschaftliche Fakten in geschickter Weise und gefälliger Sprache mit Anekdoten, Versen und Aussprüchen berühmter Leute und erfüllt soden Anspruch, die Menschen nicht nur zu informieren, sondern auch zu unterhalten. Al-Qazwînî weiß, dass die Erde eine Kugel ist; er weiß von der Heilkraftder Pflanzen und vom Einfluss des Mondes auf das Wasser der Meere und das Befinden der Menschen. Dass er aber auch an Wahrsagerei glaubt und an die Existenz von Wassermännern, dass er die Fliegen lobt, weil sie angeblich das rohe Fleisch vor Fäulnis bewahren, darüber wird der heutige Leser schmunzeln- und doch immer wieder die Anschaulichkeit, die Geschlossenheit und den Reichtum dieser frühen Weltbeschreibung bewundern und vergleichend unseren Himmel und unsere Erde betrachten.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -4983,7 +5031,7 @@
     "publisher": "Harvard University Press",
     "abstract": "“As Zadeh concludes, reformers and modernists have closed the rich and varied archive revealed in Wonders and Rarities...In this beautifully written and engaging text, Zadeh takes his readers back to the world of surprise and enchantment that preceded this closure.”—Malise Ruthven, Financial Times“The wonders and curiosities of the Islamic imagination await discovery by a new generation of readers in this superb and very enjoyable book by Travis Zadeh.”—Orhan Pamuk, winner of the Nobel Prize in LiteratureThe astonishing biography of one of the world’s most influential books.During the thirteenth century, the Persian naturalist and judge Zakariyyāʾ Qazwīnī authored what became one of the most influential works of natural history in the world: Wonders and Rarities. Exploring the dazzling movements of the stars above, the strange minutiae of the minerals beneath the earth, and everything in between, Qazwīnī offered a captivating account of the cosmos. With fine paintings and leading science, Wonders and Rarities inspired generations as it traveled through madrasas and courts, unveiling the magical powers of nature. Yet after circulating for centuries, first in Arabic and Persian, then in Turkish and Urdu, Qazwīnī’s compendium eventually came to stand as a strange, if beautiful, emblem of medieval ignorance.Restoring Qazwīnī to his place as a herald of the rare and astonishing, Travis Zadeh dramatically revises the place of wonder in the history of Islamic philosophy, science, and literature. From the Mongol conquests to the rise of European imperialism and Islamic reform, Zadeh shows, wonder provided an enduring way to conceive of the world—at once constituting an affective reaction, an aesthetic stance, a performance of piety, and a cognitive state. Yet through the course of colonial modernity, Qazwīnī’s universe of marvels helped advance the notion that Muslims lived in a timeless world of superstition and enchantment, unaware of the western hemisphere or the earth’s rotation around the sun.Recovering Qazwīnī’s ideas and his reception, Zadeh invites us into a forgotten world of thought, where wonder mastered the senses through the power of reason and the pleasure of contemplation.",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -5013,7 +5061,7 @@
     "publisher": "Fues",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -5076,7 +5124,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "61-234"
   },
   {
     "key": "W9BNB9XA",
@@ -5088,7 +5137,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "British Library",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -5156,7 +5205,8 @@
       "géographie médiévale"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "15-27"
   },
   {
     "key": "GU4XBHXQ",
@@ -5192,7 +5242,7 @@
     "publisher": "Vrin",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -5282,8 +5332,8 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "key",
       "Ibn-an-Nadim. Fihrist",
+      "key",
       "primary source"
     ],
     "notes": [],
@@ -5362,7 +5412,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "27-72"
   },
   {
     "key": "L9TF6AII",
@@ -5390,7 +5441,8 @@
     "notes": [
       "see page 11 for comments on relationship to Alexander and Persians [but note that initial translation is under the ummayads?]"
     ],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "1-26"
   },
   {
     "key": "AAEQG5XA",
@@ -5414,7 +5466,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "1-53"
   },
   {
     "key": "EWCWLI4Q",
@@ -5450,7 +5503,7 @@
     "publisher": "Peeters",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -5461,13 +5514,13 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "In literature",
-      "History and criticism",
-      "key",
-      "Arabic literature",
       "Alexander",
+      "Arabic literature",
       "Historia Alexandri Magni",
-      "Pseudo-Callisthenes"
+      "History and criticism",
+      "In literature",
+      "Pseudo-Callisthenes",
+      "key"
     ],
     "notes": [
       "Translation of the author's thesis (doctoral)--Rijksuniversiteit te Leiden, 2003 \"Translated from Dutch by Ania Lentz-Michaelis\"--T.p. verso"
@@ -5551,7 +5604,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "121-142"
   },
   {
     "key": "VG65YCB8",
@@ -5563,7 +5617,7 @@
     "publisher": "ad-Dār al-ʿArabiya li-'l-Kitāb",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -5603,7 +5657,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "609-626"
   },
   {
     "key": "DAKPWREF",
@@ -5615,7 +5670,7 @@
     "publisher": "The University of Chicago Press",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -5627,9 +5682,9 @@
     "recommendation": "",
     "tags": [
       "Cartography",
+      "Geography, Arab",
       "History",
-      "Islamic countries",
-      "Geography, Arab"
+      "Islamic countries"
     ],
     "notes": [
       "A look back -- A sketch of the Islamic mapping tradition -- KMMS world maps primer -- Iconography of the encircling ocean -- Classical and medieval encircling oceans -- The Muslim Baḥr al-Muḥīṭ -- The Beja in time and space -- How the Beja capture imagination -- Mehmed II and map patronage -- The KMMS Ottoman cluster -- Source of the Ottoman cluster -- Conclusion: mundus est immundus"
@@ -5660,7 +5715,8 @@
       "islam"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "359-360"
   },
   {
     "key": "79M6NSRB",
@@ -5725,7 +5781,7 @@
     "publisher": "Impr. Impériale",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -5789,9 +5845,9 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
+      "State",
       "key",
-      "primary source",
-      "State"
+      "primary source"
     ],
     "notes": [],
     "has_reader": true,
@@ -5916,7 +5972,7 @@
     "publisher": "Princeton Univ. Press",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -5955,10 +6011,10 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "primary source",
+      "Istakhri",
       "arabic literature",
       "geography",
-      "Istakhri"
+      "primary source"
     ],
     "notes": [],
     "has_reader": false
@@ -6243,7 +6299,7 @@
     "publisher": "Institute for the History of Arabic-Islamic Science",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -6267,7 +6323,7 @@
     "publisher": "Institute for the History of Arabic-Islamic Science",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -6303,7 +6359,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "1-57"
   },
   {
     "key": "BSKSCHJ3",
@@ -6341,7 +6398,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Journal for the History of Arabic Science",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -6355,7 +6412,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "47-80"
   },
   {
     "key": "KNIUHDKM",
@@ -6367,7 +6425,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Journal for the History of Arabic Science",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -6381,7 +6439,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "113-131"
   },
   {
     "key": "M7HF3VXK",
@@ -6472,7 +6531,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Aligarh Muslim University",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -6566,7 +6625,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "333-410"
   },
   {
     "key": "ZRYBKK5E",
@@ -6578,7 +6638,7 @@
     "publisher": "Harrassowitz",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/X7NRGQNE/MzikA.pdf",
     "doc_type": "embedded",
@@ -6965,7 +7025,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "59-70"
   },
   {
     "key": "TSW8LVZP",
@@ -6977,7 +7038,7 @@
     "publisher": "Routledge",
     "abstract": "The De Mundo (hereafter DM) occupies somewhat of a unique position in the \nhistory of philosophical and scientific transmission from Greek to Syriac and \nArabic in that the complete work is extant in all three languages. What is more, \nthere are in fact three separate versions in Arabic,1 not to mention two Armenian \ntranslations,2 as well as an early Latin version, the work of Apuleius (c.125c.180).3 Too often we have only testimonia that this or that text was translated into1  This version has only been well known since the publications of S.M. Stern, ‘The \nArabic Translations of the Pseudo-Aristotelian Treatise De Mundo’, Le Muséon, 77 (1964): \npp. 187-204, and ‘A Third Arabic Translation of the Pseudo-Aristotelian Treatise De \nMundo’, Le Muséon, 78 (1965): pp. 381-93; see also F. Klein-Franke, ‘Die Überlieferung \nder ältesten arabischen Handschrift von Pseudo-Aristoteles De Mundo’, Le Muséon, 87 \n(1974): pp. 59-65, for an important clarification of the relationship to the Greek and Syriac \ntexts. D.A. Brafman, The Arabic De Mundo: An Edition with Translation and Commentary \n(Ph.D. dissertation, Duke University, 1985), made the texts more widely available, but \nsince he did not know Syriac, from which at least two of the three translations were made, \nhe made some mistakes in interpretation. Incidentally, the Princeton Arabic MS of the DM \nalso contains the related Treatise on the Movement of the Universe (Risālah fī ḥarakat alkull) by Alexander of Aphrodisias (fols 176r-177r); for an edition and English translation, \nsee C. Genequand, Alexander of Aphrodisias on the Cosmos (Leiden, 2000), pp. 136-43; \nthe Syriac version of this treatise had, like the DM, been translated from Greek by Sergius \nof Reshaina (on whom see below). I am currently preparing an edition (with English \ntranslation and commentary) of the Syriac and Arabic versions of the DM.",
     "pub_title": "Interpreting the Bible and Aristotle in Late Antiquity",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/84A457N7/McCollum - 2011 - Sergius of Reshaina as Translator The Case of the.pdf",
     "doc_type": "embedded",
@@ -7013,7 +7074,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "399-400"
   },
   {
     "key": "SK5GVA3B",
@@ -7037,7 +7099,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "42-58"
   },
   {
     "key": "KQHTBY5Q",
@@ -7049,7 +7112,7 @@
     "publisher": "Bodleian Library, University of Oxford",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -7088,12 +7151,12 @@
     "tags": [
       "Cartography",
       "History",
-      "Philosophy",
+      "History & Culture",
+      "History of Science",
       "Medieval History",
       "Middle East and Islamic Studies",
-      "Theology & Science",
-      "History & Culture",
-      "History of Science"
+      "Philosophy",
+      "Theology & Science"
     ],
     "notes": [],
     "has_reader": false
@@ -7108,7 +7171,7 @@
     "publisher": "Bodleian Library, University of Oxford",
     "abstract": null,
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -7134,7 +7197,7 @@
     "publisher": "The Bodleian Library",
     "abstract": "Spanning the Islamic world, from ninth-century Baghdad to nineteenth-century Iran, this book tells the story of the key Muslim map-makers and the art of Islamic cartography. Muslims were uniquely placed to explore the edges of the inhabited world and their maps stretched from Isfahan to Palermo, from Istanbul to Cairo and Aden. Over a similar period, Muslim artists developed distinctive styles, often based on geometrical patterns and calligraphy. Map-makers, including al-Khwarazmi and al-Idrisi, combined novel cartographical techniques with art, science and geographical knowledge. The results could be aesthetically stunning and mathematically sophisticated, politically charged as well as a celebration of human diversity. 0'Islamic Maps' examines Islamic visual interpretations of the world in their historical context, through the lives of the map-makers themselves. What was the purpose of their maps, what choices did they make and what was the argument they were trying to convey? Lavishly illustrated with stunning manuscripts, beautiful instruments and Qibla charts, this book shows how maps constructed by Muslim map-makers capture the many dimensions of Islamic civilisation, providing a window into the worldviews of Islamic societies",
     "pub_title": null,
-    "url": null,
+    "url": "",
     "pdf_status": "attachment_missing",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -7145,8 +7208,8 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Geography",
       "Cartography",
+      "Geography",
       "History",
       "Islamic civilization",
       "Islamic countries",
@@ -7227,7 +7290,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "17-28"
   },
   {
     "key": "WFXUZA6K",
@@ -7251,7 +7315,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "11-23"
   },
   {
     "key": "7Q6B7YZB",
@@ -7275,7 +7340,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "81-92"
   },
   {
     "key": "7L4DVXMP",
@@ -7299,7 +7365,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "32-43"
   },
   {
     "key": "SUWQGYPB",
@@ -7323,7 +7390,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "9-15"
   },
   {
     "key": "4JKDF8DI",
@@ -7347,7 +7415,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "153-156"
   },
   {
     "key": "CKPRXRHI",
@@ -7371,7 +7440,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "141-156"
   },
   {
     "key": "CGLV6I75",
@@ -7395,7 +7465,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "7-24"
   },
   {
     "key": "LSLQQX6R",
@@ -7455,7 +7526,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Acta Antiqua Academiae Scientiarum Hungaricae",
-    "url": null,
+    "url": "",
     "pdf_status": "stored",
     "pdf_path": "/Users/leifuss/Zotero/storage/97HRHVYS/Maróth - 1983 - Ptolemaic Elements and Geographical Actuality in a.pdf",
     "doc_type": "embedded",
@@ -7467,7 +7538,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "317-352"
   },
   {
     "key": "3UKXG592",
@@ -7479,7 +7551,7 @@
     "publisher": "",
     "abstract": null,
     "pub_title": "Astronomy and civilization in the new enlightenment",
-    "url": null,
+    "url": "",
     "pdf_status": "no_attachment",
     "pdf_path": null,
     "doc_type": "unknown",
@@ -7491,7 +7563,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "111-118"
   },
   {
     "key": "9Y3W35EL",
@@ -7515,7 +7588,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "231-315"
   },
   {
     "key": "ICWKFJG5",
@@ -7548,7 +7622,8 @@
       "supralunary"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "33-61"
   },
   {
     "key": "GEVRTGKV",
@@ -7620,7 +7695,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "89-106"
   },
   {
     "key": "HASB6P26",
@@ -7644,7 +7720,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "153-168"
   },
   {
     "key": "7673Q8EI",
@@ -7667,13 +7744,14 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "History",
+      "Ancient History",
       "Classical Studies",
-      "Medieval History",
-      "Ancient History"
+      "History",
+      "Medieval History"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "121-138"
   },
   {
     "key": "MVLNXFLW",
@@ -7697,7 +7775,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "209-227"
   },
   {
     "key": "KCK4ANHK",
@@ -7723,7 +7802,8 @@
     "notes": [
       "available at forum library"
     ],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "206-208"
   },
   {
     "key": "CNP8D68S",
@@ -7747,7 +7827,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "156-174"
   },
   {
     "key": "79H77QYC",
@@ -7771,7 +7852,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "137-155"
   },
   {
     "key": "KLU4EMEJ",
@@ -7795,7 +7877,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "108-136"
   },
   {
     "key": "JT3DG5WY",
@@ -7819,7 +7902,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "71-88"
   },
   {
     "key": "6PTUQX67",
@@ -7843,7 +7927,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "12-70"
   },
   {
     "key": "KYMZRGMG",
@@ -7867,7 +7952,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "3-11"
   },
   {
     "key": "C2M2JZYQ",
@@ -7891,7 +7977,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "90-106"
   },
   {
     "key": "PQ2GRRN3",
@@ -7939,7 +8026,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "455-457"
   },
   {
     "key": "IA8PPL8T",
@@ -7966,15 +8054,16 @@
       "British Islands",
       "Caspian Sea",
       "Hyrcanian Sea",
-      "inhabited world",
-      "ocean",
-      "oikoumenē",
       "Okeanos",
       "Posidonius",
-      "Pytheas"
+      "Pytheas",
+      "inhabited world",
+      "ocean",
+      "oikoumenē"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "80-120"
   },
   {
     "key": "WVQZUC9U",
@@ -7997,19 +8086,20 @@
     "quality_score": null,
     "recommendation": "",
     "tags": [
-      "Literature",
-      "Philosophy",
-      "Classical Studies",
-      "Middle East and Islamic Studies",
       "Ancient Philosophy",
       "Arts & Science",
+      "Classical Studies",
+      "Literature",
       "Literature and Cultural Studies",
+      "Middle East and Islamic Studies",
+      "Philosophy",
       "Theology & Science"
     ],
     "notes": [
       "Includes additional bibliography from Thom version"
     ],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "496-512"
   },
   {
     "key": "XZCZ2RDP",
@@ -8033,7 +8123,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "383-403"
   },
   {
     "key": "DA6KW4AG",
@@ -8059,7 +8150,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "405-415"
   },
   {
     "key": "YCB6J2NM",
@@ -8107,7 +8199,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "151-191"
   },
   {
     "key": "A2USGZMM",
@@ -8131,7 +8224,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "383-403"
   },
   {
     "key": "2BEURR8U",
@@ -8155,7 +8249,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "139-149"
   },
   {
     "key": "L6HLT3H5",
@@ -8181,7 +8276,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "131-138"
   },
   {
     "key": "MLRG5XH7",
@@ -8205,7 +8301,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "93-96"
   },
   {
     "key": "WE4GTRB2",
@@ -8235,5 +8332,59 @@
       "https://en.wikipedia.org/wiki/Hudud_al-%27Alam Available from Exeter Uni Library: 891.5581/HUD Google Books makes most of translations available multiple ediitons The Ḥudūd al-ʿĀlam ( Arabic : حدود العالم, lit. \"Boundaries of the World\" or \"Limits of the World\") is a 10th-century geography book written in Persian by an unknown author from Guzgan (present day northern Afghanistan). [1] The title in full is حدود العالم من المشرق الی المغرب ( Ḥudūd al-ʿĀlam min al-Mashriq ilá l-Maghrib , lit. \"The Boundaries of The World from The East to the West\"). In English, the title is also translated as \"The Regions of the World\" following Vladimir Minorsky 's 1937 translation, in which he commented on the title as follows: \"The word ḥudūd (properly 'boundaries') in our case evidently refers to the 'regions within definite boundaries' into which the world is divided in the Ḥ.-'Ā., the author indicating with special care the frontiers of each one of these areas, v.i., p. 30. [As I use the word \"region\" mostly for nāḥiyat it would have been better, perhaps, to translate Ḥudūd al-Ālam as \"The limited areas of the World\".]\" [2]"
     ],
     "has_reader": false
+  },
+  {
+    "key": "KDRPGWIW",
+    "title": "Le Livre des Routes et de Provinces, par Ibn Khordadbeh: Text",
+    "year": "1865",
+    "authors": "Ibn Khordadbeh",
+    "item_type": "journalArticle",
+    "place": "",
+    "publisher": "",
+    "abstract": null,
+    "pub_title": "Journal Asiatique",
+    "pages": "5-127",
+    "url": "https://archive.org/details/journalasiatique566sociuoft/page/4/mode/2up",
+    "tags": [
+      "Oriental philology -- Periodicals",
+      "primary source"
+    ],
+    "notes": [],
+    "pdf_status": "url_only",
+    "pdf_path": null,
+    "doc_type": "unknown",
+    "page_count": null,
+    "avg_chars_pg": null,
+    "language": null,
+    "extracted": false,
+    "quality_score": null,
+    "recommendation": ""
+  },
+  {
+    "key": "MLK5YS97",
+    "title": "Le Livre des Routes et de Provinces, par Ibn Khordadbeh: Translation",
+    "year": "1865",
+    "authors": "Ibn Khordadbeh",
+    "item_type": "journalArticle",
+    "place": "",
+    "publisher": "",
+    "abstract": null,
+    "pub_title": "Journal Asiatique",
+    "pages": "227-296",
+    "url": "https://archive.org/details/journalasiatique566sociuoft/page/n233/mode/2up",
+    "tags": [
+      "Oriental philology -- Periodicals",
+      "primary source"
+    ],
+    "notes": [],
+    "pdf_status": "url_only",
+    "pdf_path": null,
+    "doc_type": "unknown",
+    "page_count": null,
+    "avg_chars_pg": null,
+    "language": null,
+    "extracted": false,
+    "quality_score": null,
+    "recommendation": ""
   }
 ]
