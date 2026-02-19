@@ -1,0 +1,11 @@
+{
+  "default": "islamic-cartography",
+  "collections": [
+    {
+      "slug": "islamic-cartography",
+      "name": "Islamic Cartography",
+      "description": "Medieval Islamic maps and geographical literature",
+      "path": "."
+    }
+  ]
+}

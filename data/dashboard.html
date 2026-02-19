@@ -91,8 +91,9 @@
     <p id="subtitle">Loading inventory&hellip;</p>
   </div>
   <nav class="site-nav">
-    <a href="dashboard.html" class="active">Dashboard</a>
-    <a href="explore.html">Explorer</a>
+    <a href="index.html" id="navCollections">Collections</a>
+    <a id="navDashboard" href="dashboard.html" class="active">Dashboard</a>
+    <a id="navExplorer" href="explore.html">Explorer</a>
   </nav>
 </header>
 
@@ -170,14 +171,49 @@
 <script>
 let DATA = [];
 
-// ── Load inventory at runtime ────────────────────────────────────────────────
-fetch('inventory.json')
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(init)
-  .catch(err => {
-    document.getElementById('tbody').innerHTML =
-      `<tr><td colspan="13" class="loading">Failed to load inventory.json: ${err.message}</td></tr>`;
-  });
+// ── Collection resolution ────────────────────────────────────────────────────
+const _urlParams     = new URLSearchParams(location.search);
+const _collectionSlug = _urlParams.get('collection') || '';
+let   BASE_PATH      = '.';
+
+function collectionQS(prefix) {
+  return _collectionSlug ? prefix + 'collection=' + encodeURIComponent(_collectionSlug) : '';
+}
+
+(async function resolveCollection() {
+  if (_collectionSlug) {
+    try {
+      const resp = await fetch('collections.json');
+      if (resp.ok) {
+        const data = await resp.json();
+        const coll = (data.collections || []).find(c => c.slug === _collectionSlug);
+        if (coll && coll.path) {
+          BASE_PATH = coll.path === '.' ? '.' : coll.path;
+        }
+        if (coll && coll.name) {
+          document.getElementById('page-title').textContent = coll.name + ' — Dashboard';
+          document.title = coll.name + ' — Corpus Dashboard';
+        }
+      }
+    } catch (e) {
+      console.warn('Could not load collections.json, using default path', e);
+    }
+  }
+  // Update nav links to carry the collection param
+  const qs = collectionQS('?');
+  document.getElementById('navDashboard').href = 'dashboard.html' + qs;
+  document.getElementById('navExplorer').href   = 'explore.html' + qs;
+
+  // Load inventory at runtime
+  const invUrl = BASE_PATH === '.' ? 'inventory.json' : BASE_PATH + '/inventory.json';
+  fetch(invUrl)
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(init)
+    .catch(err => {
+      document.getElementById('tbody').innerHTML =
+        `<tr><td colspan="13" class="loading">Failed to load inventory.json: ${err.message}</td></tr>`;
+    });
+})();
 
 function init(inventory) {
   DATA = inventory;

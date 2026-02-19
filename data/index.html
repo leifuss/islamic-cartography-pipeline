@@ -1,3 +1,194 @@
 <!DOCTYPE html>
-<meta http-equiv="refresh" content="0; url=explore.html">
-<a href="explore.html">Islamic Cartography — Corpus Explorer</a>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corpus Collections</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #111;
+  --panel:   #1a1a1a;
+  --border:  #2e2e2e;
+  --text:    #d8d8d8;
+  --muted:   #666;
+  --accent:  #0071e3;
+  --link:    #5ba3f5;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+header {
+  background: #0a0a0a;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+header h1 { font-size: 16px; font-weight: 600; color: #fff; }
+header .sub { font-size: 12px; color: var(--muted); flex: 1; }
+
+/* ── Main content ── */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 24px 40px;
+}
+
+.main h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.main .intro {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 36px;
+  text-align: center;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+/* ── Collection cards grid ── */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.collection-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color .2s, transform .15s, box-shadow .2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.collection-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.3);
+  text-decoration: none;
+  color: inherit;
+}
+
+.collection-card .card-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+}
+.collection-card .card-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.collection-card .card-meta {
+  font-size: 11px;
+  color: #555;
+  margin-top: 4px;
+  display: flex;
+  gap: 12px;
+}
+.collection-card .card-arrow {
+  font-size: 12px;
+  color: var(--accent);
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* ── Loading / error ── */
+.loading-msg {
+  text-align: center;
+  padding: 60px 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ── Scrollbars ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Corpus Collections</h1>
+  <span class="sub" id="subtitle">Loading collections&hellip;</span>
+</header>
+
+<div class="main">
+  <h2>Choose a Collection</h2>
+  <p class="intro">Select a collection to explore its documents, timeline, map, and full-text reader.</p>
+  <div class="collection-grid" id="grid">
+    <p class="loading-msg">Loading collections&hellip;</p>
+  </div>
+</div>
+
+<script>
+function esc(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+fetch('collections.json')
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    const collections = data.collections || [];
+    const grid = document.getElementById('grid');
+    document.getElementById('subtitle').textContent =
+      collections.length + ' collection' + (collections.length !== 1 ? 's' : '') + ' available';
+
+    if (!collections.length) {
+      grid.innerHTML = '<p class="loading-msg">No collections found in collections.json.</p>';
+      return;
+    }
+
+    // If there is only one collection, redirect directly to explore
+    if (collections.length === 1) {
+      const c = collections[0];
+      // Still show the landing page but auto-navigate is optional;
+      // let the user see the card and click through.
+    }
+
+    grid.innerHTML = collections.map(c => {
+      const href = `explore.html?collection=${encodeURIComponent(c.slug)}`;
+      return `<a class="collection-card" href="${esc(href)}">
+        <div class="card-name">${esc(c.name)}</div>
+        <div class="card-desc">${esc(c.description || '')}</div>
+        <div class="card-meta">
+          <span>${esc(c.slug)}</span>
+          <span>path: ${esc(c.path)}</span>
+        </div>
+        <div class="card-arrow">Open collection &rarr;</div>
+      </a>`;
+    }).join('');
+  })
+  .catch(err => {
+    document.getElementById('grid').innerHTML =
+      `<p class="loading-msg">Failed to load collections.json: ${esc(err.message)}</p>`;
+  });
+</script>
+</body>
+</html>
