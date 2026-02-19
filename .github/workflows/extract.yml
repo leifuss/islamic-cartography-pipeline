@@ -17,9 +17,9 @@ on:
         required: false
         default: false
       workers:
-        description: "Parallel worker threads"
+        description: "Parallel worker threads (keep at 1 for large scanned PDFs — memory limits)"
         required: false
-        default: "3"
+        default: "1"
       run_layout:
         description: "Also run Heron layout enrichment (05c) after extraction"
         type: boolean
