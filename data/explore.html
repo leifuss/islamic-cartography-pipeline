@@ -389,6 +389,9 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 .b-tag {
   background: #1a2020; color: #88bbaa; border: 1px solid #1a4a3a;
 }
+.b-tag-key            { background: #2a1010; color: #e06060; border: 1px solid #5a2020; font-weight: 600; }
+.b-tag-primary-source { background: #101a2a; color: #6090e0; border: 1px solid #203060; font-weight: 600; }
+.b-tag-get-this       { background: #102a10; color: #60c060; border: 1px solid #205a20; font-weight: 600; }
 
 /* ── Document info side panel ── */
 #doc-info-panel {
@@ -476,6 +479,7 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
     <a href="index.html" id="navCollections">Collections</a>
     <a id="navDashboard" href="dashboard.html">Dashboard</a>
     <a id="navExplorer" href="explore.html" class="active">Explorer</a>
+    <a id="navChat" href="chat.html">Chat</a>
   </nav>
 </header>
 
@@ -527,6 +531,9 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
   <label>Tag:
     <select id="fTag" onchange="applyFilters()">
       <option value="">All tags</option>
+      <option value="key" style="color:#e06060">&#x1f534; Key</option>
+      <option value="primary source" style="color:#6090e0">&#x1f535; Primary Source</option>
+      <option value="get this" style="color:#60c060">&#x1f7e2; Get This</option>
     </select>
   </label>
   <label>Period:
@@ -648,6 +655,7 @@ function collectionQS(prefix) {
   const qs = collectionQS('?');
   document.getElementById('navDashboard').href = 'dashboard.html' + qs;
   document.getElementById('navExplorer').href   = 'explore.html' + qs;
+  document.getElementById('navChat').href        = 'chat.html' + qs;
 
   // Now load inventory from the resolved basePath
   const invUrl = BASE_PATH === '.' ? 'inventory.json' : BASE_PATH + '/inventory.json';
@@ -803,15 +811,7 @@ function init(inventory) {
   document.getElementById('subtitle').textContent =
     `${DATA.length} items \u00b7 ${withYear} with date \u00b7 ${withPlace} with place`;
 
-  // Populate tag filter dropdown from inventory data
-  const allTags = new Set();
-  DATA.forEach(r => (r.tags || []).forEach(t => allTags.add(t)));
-  const tagSel = document.getElementById('fTag');
-  [...allTags].sort().forEach(t => {
-    const o = document.createElement('option');
-    o.value = t; o.textContent = t;
-    tagSel.appendChild(o);
-  });
+  // Tag dropdown is pre-populated with the three curated tags (key, primary source, get this)
 
   filtered = DATA.slice();
   applyFilters();
@@ -849,6 +849,10 @@ function periodOf(year) {
 
 function badge(cls, text) {
   return `<span class="badge ${cls}">${esc(text)}</span>`;
+}
+const TAG_CLASSES = { 'key': 'b-tag-key', 'primary source': 'b-tag-primary-source', 'get this': 'b-tag-get-this' };
+function tagBadge(t) {
+  return badge(TAG_CLASSES[t.toLowerCase()] || 'b-tag', t);
 }
 
 function pdfBadge(s) {
@@ -1204,7 +1208,7 @@ function renderList() {
       const pubHtml  = r.pub_title ? `<div class="card-pub">${esc(r.pub_title)}</div>` : '';
       const meta = [(r.authors||'').split(';')[0], r.year, r.place].filter(Boolean).join(' \u00b7 ');
       const tq   = r.text_quality;
-      const tagHtml = (r.tags || []).map(t => badge('b-tag', t)).join('');
+      const tagHtml = (r.tags || []).map(t => tagBadge(t)).join('');
       const cardCls = r.has_reader ? 'has-reader' : r.extracted ? 'extracted' : '';
       return `<div class="card ${cardCls}" onclick="showDocInfo('${r.key}')" style="cursor:pointer">
         <div class="card-title">${titleHtml}</div>
@@ -1271,7 +1275,7 @@ function showDocInfo(key) {
   // Tags
   const tags = r.tags || [];
   if (tags.length) {
-    html += `<div class="dip-tags">${tags.map(t => badge('b-tag', t)).join('')}</div>`;
+    html += `<div class="dip-tags">${tags.map(t => tagBadge(t)).join('')}</div>`;
   }
 
   // Metadata table

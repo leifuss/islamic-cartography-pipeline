@@ -264,7 +264,9 @@ function renderMarkdown(text) {
 
 // Build Harvard short ref: "Author, Year, p.N"
 function harvardRef(s) {
-  const author = s.authors || s.key;
+  // Prefer the pre-built label from the server (handles title fallback)
+  if (s.label) return `${s.label}, p.${s.page}`;
+  const author = s.authors || s.title || s.key;
   const year   = s.year   || 'n.d.';
   return `${author}, ${year}, p.${s.page}`;
 }
@@ -286,27 +288,35 @@ function renderSources(sources) {
   </div>`;
 }
 
-// Replace inline Harvard citations (Author, Year, p.N) with linked versions
+// Replace inline citations (Author, Year, p.N) or (Label, p.N) with reader links
 function linkifyCitations(html, sources) {
   if (!sources.length) return html;
-  // Build lookup: "Author, Year, p.N" → reader URL  (case-insensitive author match)
+  // Build multiple lookup keys per source for flexible matching
   const lookup = {};
   for (const s of sources) {
-    const author = (s.authors || s.key).toLowerCase();
-    const year   = s.year || 'n.d.';
-    const url    = `reader.html?key=${s.key}&page=${s.page}`;
-    lookup[`${author},${year},${s.page}`] = url;
+    const url = `reader.html?key=${s.key}&page=${s.page}`;
+    // Key 1: author,year,page (classic Harvard)
+    const author = (s.authors || '').toLowerCase().trim();
+    const year   = s.year || '';
+    if (author && year) lookup[`${author},${year},${s.page}`] = url;
+    // Key 2: label,page (for title-based fallback labels)
+    if (s.label) lookup[`${s.label.toLowerCase()},${s.page}`] = url;
   }
-  // Match (Author, Year, p.N) — allow spaces around commas
-  return html.replace(/\(([^)]+?,\s*\d{4},\s*p\.\s*\d+)\)/g, (match, inner) => {
-    // Normalise: extract parts
-    const m = inner.match(/^(.+?),\s*(\d{4}),\s*p\.\s*(\d+)$/);
-    if (!m) return match;
-    const [, rawAuthor, rawYear, rawPage] = m;
-    const lookupKey = `${rawAuthor.trim().toLowerCase()},${rawYear.trim()},${rawPage.trim()}`;
-    const url = lookup[lookupKey];
-    if (!url) return match;
-    return `(<a href="${url}" target="_blank" style="color:var(--accent);text-decoration:none">${inner.trim()}</a>)`;
+  // Match (…, p.N) patterns
+  return html.replace(/\(([^)]+?,\s*p\.\s*\d+)\)/g, (match, inner) => {
+    // Try author,year,page format first
+    const m3 = inner.match(/^(.+?),\s*(\d{4}),\s*p\.\s*(\d+)$/);
+    if (m3) {
+      const key3 = `${m3[1].trim().toLowerCase()},${m3[2].trim()},${m3[3].trim()}`;
+      if (lookup[key3]) return `(<a href="${lookup[key3]}" target="_blank" style="color:var(--accent);text-decoration:none">${inner.trim()}</a>)`;
+    }
+    // Try label,page format
+    const m2 = inner.match(/^(.+?),\s*p\.\s*(\d+)$/);
+    if (m2) {
+      const key2 = `${m2[1].trim().toLowerCase()},${m2[2].trim()}`;
+      if (lookup[key2]) return `(<a href="${lookup[key2]}" target="_blank" style="color:var(--accent);text-decoration:none">${inner.trim()}</a>)`;
+    }
+    return match;
   });
 }
 

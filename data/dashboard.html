@@ -94,6 +94,7 @@
     <a href="index.html" id="navCollections">Collections</a>
     <a id="navDashboard" href="dashboard.html" class="active">Dashboard</a>
     <a id="navExplorer" href="explore.html">Explorer</a>
+    <a id="navChat" href="chat.html">Chat</a>
   </nav>
 </header>
 
@@ -203,6 +204,7 @@ function collectionQS(prefix) {
   const qs = collectionQS('?');
   document.getElementById('navDashboard').href = 'dashboard.html' + qs;
   document.getElementById('navExplorer').href   = 'explore.html' + qs;
+  document.getElementById('navChat').href        = 'chat.html' + qs;
 
   // Load inventory at runtime
   const invUrl = BASE_PATH === '.' ? 'inventory.json' : BASE_PATH + '/inventory.json';

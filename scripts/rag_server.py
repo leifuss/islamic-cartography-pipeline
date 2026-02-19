@@ -367,13 +367,30 @@ def retrieve(query: str, chunks: list[dict], bm25: BM25Okapi | None,
     return results
 
 
+def _short_label(h: dict) -> str:
+    """Build a citation label: prefer Author, Year — fall back to short title."""
+    author = (h.get("authors") or "").split(";")[0].strip()
+    year   = h.get("year") or ""
+    if author and year:
+        return f"{author}, {year}"
+    if author:
+        return author
+    # Fallback: first few words of title (strip PDF extension)
+    title = h.get("title", h["key"]).replace(".pdf", "").strip()
+    words = title.split()[:4]
+    label = " ".join(words)
+    if len(words) < len(title.split()):
+        label += "…"
+    if year:
+        label += f", {year}"
+    return label
+
+
 def format_context(hits: list[dict], max_words: int = MAX_CTX_WORDS) -> str:
     parts = []
     total = 0
     for h in hits:
-        author = h.get("authors", "") or h["key"]
-        year   = h.get("year", "n.d.")
-        doc_label = f"[{author}, {year}, p.{h['page']}]"
+        doc_label = f"[{_short_label(h)}, p.{h['page']}]"
         chunk_words = len(h["text"].split())
         if total + chunk_words > max_words:
             remaining = max_words - total
@@ -392,9 +409,16 @@ def format_context(hits: list[dict], max_words: int = MAX_CTX_WORDS) -> str:
 SYSTEM_PROMPT = """\
 You are a research assistant specialising in Islamic cartography, historical geography,
 and medieval Arabic/Persian geographical literature. Answer questions using ONLY the
-provided corpus excerpts. Cite sources inline using Harvard author-date-page format,
-e.g. (Tibbetts, 1992, p.14) — match exactly the author and year shown in the excerpt
-labels. If the excerpts do not contain enough information to answer, say so clearly.
+provided corpus excerpts.
+
+CITATION RULES:
+- Cite sources inline using the EXACT label shown in square brackets before each excerpt,
+  e.g. if the excerpt is labelled [Tibbetts, 1992, p.14] cite it as (Tibbetts, 1992, p.14).
+- NEVER cite Zotero keys (alphanumeric codes like QIGTV3FC). Always use the human-readable
+  author/title and page number from the excerpt labels.
+- Keep citations in parentheses: (Author, Year, p.N).
+
+If the excerpts do not contain enough information to answer, say so clearly.
 Be concise but scholarly."""
 
 
@@ -462,8 +486,9 @@ def stream_llm(query: str, context: str, sources: list[dict]) -> Iterator[str]:
     """Auto-select provider based on which API key is available."""
     source_list = [{"key": h["key"], "page": h["page"],
                     "title": h.get("title", h["key"]),
-                    "authors": h.get("authors", ""),
+                    "authors": (h.get("authors") or "").split(";")[0].strip(),
                     "year": h.get("year", ""),
+                    "label": _short_label(h),
                     "score": round(h["score"], 3)}
                    for h in sources]
     yield f"data: {json.dumps({'type': 'sources', 'sources': source_list})}\n\n"
