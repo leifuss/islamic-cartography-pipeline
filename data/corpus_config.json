@@ -1,7 +1,7 @@
 {
   "name": "Islamic Cartography",
   "description": "A research corpus of Islamic cartographic and geographical texts",
-  "rag_api": "http://localhost:8001/api",
+  "rag_api": "https://web-production-e9c9.up.railway.app/api",
   "texts_dir": "texts/",
   "nav": {
     "dashboard": { "label": "📋 Dashboard", "href": "dashboard.html" },
