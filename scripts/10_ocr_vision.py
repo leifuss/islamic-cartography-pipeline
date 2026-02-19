@@ -71,7 +71,19 @@ def vision_client():
     return vision.ImageAnnotatorClient()
 
 
-def ocr_page(client, img_path: Path) -> dict:
+def upscale_image(img_path: Path, factor: int, tmp_dir: Path) -> Path:
+    """Return path to a temporary upscaled copy of the image."""
+    img = Image.open(img_path)
+    w, h = img.size
+    img = img.resize((w * factor, h * factor), Image.LANCZOS)
+    tmp = tmp_dir / f"_up{factor}_{img_path.name}"
+    img.save(tmp)
+    return tmp
+
+
+def ocr_page(client, img_path: Path, upsample: int = 1,
+             lang_hints: list[str] | None = None,
+             tmp_dir: Path | None = None) -> dict:
     """
     Run Vision document_text_detection on one page image.
     Returns {
@@ -81,9 +93,21 @@ def ocr_page(client, img_path: Path) -> dict:
     """
     from google.cloud import vision
 
-    content = img_path.read_bytes()
+    src = img_path
+    if upsample > 1 and tmp_dir is not None:
+        src = upscale_image(img_path, upsample, tmp_dir)
+
+    content = src.read_bytes()
     image = vision.Image(content=content)
-    response = client.document_text_detection(image=image)
+
+    image_context = None
+    if lang_hints:
+        image_context = vision.ImageContext(language_hints=lang_hints)
+
+    response = client.document_text_detection(
+        image=image,
+        image_context=image_context,
+    )
 
     if response.error.message:
         raise RuntimeError(f"Vision error on {img_path.name}: {response.error.message}")
@@ -126,7 +150,7 @@ def ocr_page(client, img_path: Path) -> dict:
                              "r": round(r, 2), "b": round(b, 2)},
                 })
 
-    return {"text": full_text, "blocks": blocks}
+    return {"text": full_text, "blocks": blocks, "src_w": img_w, "src_h": img_h}
 
 
 def _image_size(img_path: Path) -> tuple[int, int]:
@@ -182,7 +206,8 @@ def already_processed(doc_dir: Path, page_num: int) -> bool:
 
 
 def process_doc(client, doc_dir: Path, page_nums: list[int] | None,
-                force: bool, dry_run: bool) -> dict:
+                force: bool, dry_run: bool,
+                upsample: int = 1, lang_hints: list[str] | None = None) -> dict:
     """
     Process one document. Returns stats dict.
     """
@@ -200,6 +225,8 @@ def process_doc(client, doc_dir: Path, page_nums: list[int] | None,
 
     pt_path = doc_dir / "page_texts.json"
     le_path = doc_dir / "layout_elements.json"
+    ocr_dir = doc_dir / "ocr_test"
+    ocr_dir.mkdir(exist_ok=True)
 
     # Load existing data
     page_texts = load_json(pt_path)
@@ -223,7 +250,8 @@ def process_doc(client, doc_dir: Path, page_nums: list[int] | None,
             continue
 
         try:
-            result = ocr_page(client, img_path)
+            result = ocr_page(client, img_path, upsample=upsample,
+                              lang_hints=lang_hints, tmp_dir=ocr_dir)
         except Exception as e:
             print(f"  ERROR page {pnum}: {e}")
             errors += 1
@@ -293,6 +321,12 @@ def main():
                         help="Re-process pages that already have Vision output")
     parser.add_argument("--dry-run", action="store_true",
                         help="Show what would be processed without calling Vision API")
+    parser.add_argument("--upsample", type=int, default=1, metavar="N",
+                        help="Upsample images N× before sending to Vision (e.g. 2 or 3). "
+                             "Helps when source images are below ~150 DPI.")
+    parser.add_argument("--lang-hints", nargs="+", default=None, metavar="LANG",
+                        help="BCP-47 language hint(s) for Vision (e.g. fa ar en). "
+                             "Useful for Arabic/Persian docs.")
     args = parser.parse_args()
 
     # Credentials
@@ -322,6 +356,8 @@ def main():
 
     print(f"Documents : {len(doc_dirs)}")
     print(f"Pages     : {args.pages or 'all'}")
+    print(f"Upsample  : {args.upsample}×" if args.upsample > 1 else f"Upsample  : none")
+    print(f"Lang hints: {args.lang_hints or 'auto-detect'}")
     print(f"Force     : {args.force}")
     print(f"Dry run   : {args.dry_run}")
     print()
@@ -342,7 +378,8 @@ def main():
         total_pages = len(images)
         print(f"── {key} ({total_pages} images) ──")
 
-        stats = process_doc(client, doc_dir, page_nums, args.force, args.dry_run)
+        stats = process_doc(client, doc_dir, page_nums, args.force, args.dry_run,
+                            upsample=args.upsample, lang_hints=args.lang_hints)
 
         print(f"   processed={stats['processed']}  skipped={stats['skipped']}"
               f"  errors={stats.get('errors', 0)}\n")
