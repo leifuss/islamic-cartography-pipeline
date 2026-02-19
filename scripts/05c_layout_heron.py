@@ -55,6 +55,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import signal
 import sys
 import time
 from pathlib import Path
@@ -79,6 +80,7 @@ HERON_MODEL = "docling-project/docling-layout-heron"
 
 DEFAULT_THRESHOLD = 0.6    # Heron confidence threshold
 DEFAULT_BATCH     = 4      # Pages per inference batch
+TESSERACT_TIMEOUT = 120    # seconds per page for Tesseract OCR
 
 # Heron label map: class index → label name compatible with reader.html
 HERON_LABELS: dict[int, str] = {
@@ -200,13 +202,22 @@ def _assign_text_from_image(pil_image, regions: list[dict],
     import pytesseract
 
     # image_to_data returns word-level boxes + confidence
+    def _timeout_handler(signum, frame):
+        raise TimeoutError("Tesseract timed out")
+
     try:
-        data = pytesseract.image_to_data(
-            pil_image.convert("RGB"),
-            lang=lang,
-            output_type=pytesseract.Output.DICT,
-        )
-    except Exception:
+        old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
+        signal.alarm(TESSERACT_TIMEOUT)
+        try:
+            data = pytesseract.image_to_data(
+                pil_image.convert("RGB"),
+                lang=lang,
+                output_type=pytesseract.Output.DICT,
+            )
+        finally:
+            signal.alarm(0)
+            signal.signal(signal.SIGALRM, old_handler)
+    except (Exception, TimeoutError):
         for r in regions:
             r.setdefault("text", "")
         return regions
@@ -384,13 +395,21 @@ def enrich_document(item: dict, force: bool = False,
     # ── Run Heron in batches ──────────────────────────────────────────────────
     heron_per_page: dict[int, list[dict]] = {}
     page_indices   = sorted(pil_images.keys())
+    total_pages    = len(page_indices)
 
-    for batch_start in range(0, len(page_indices), batch_size):
+    for batch_start in range(0, total_pages, batch_size):
         batch_idxs = page_indices[batch_start : batch_start + batch_size]
         batch_imgs = [pil_images[i] for i in batch_idxs]
+        page_hi    = batch_start + len(batch_idxs)
+        print(
+            f"    pages {batch_start+1}-{page_hi}/{total_pages}"
+            f"  (batch of {len(batch_idxs)})",
+            flush=True,
+        )
         try:
             detected = _detect_layout(batch_imgs, threshold=threshold)
         except Exception as e:
+            print(f"    ⚠ batch failed: {e}", flush=True)
             # Inference failure — leave these pages with fallback single element
             detected = [[] for _ in batch_imgs]
         for page_idx, regions in zip(batch_idxs, detected):
@@ -398,9 +417,12 @@ def enrich_document(item: dict, force: bool = False,
 
     # ── Assign text and build output ──────────────────────────────────────────
     result_elements: dict[str, object] = {}
+    print(f"    assigning text to {n_pages} pages …", flush=True)
 
     for i in range(n_pages):
         page_num   = str(i + 1)
+        if n_pages > 20 and (i + 1) % 50 == 0:
+            print(f"    text assign {i+1}/{n_pages}", flush=True)
         regions    = heron_per_page.get(i, [])
         sz         = page_sizes.get(page_num, {"w": 612.0, "h": 792.0})
         pw, ph     = sz["w"], sz["h"]

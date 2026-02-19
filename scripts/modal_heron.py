@@ -60,9 +60,11 @@ REPO_URL = "https://github.com/leifuss/islamic-cartography-pipeline.git"
 REPO_DIR = Path("/repo")
 
 # ── Main function ─────────────────────────────────────────────────────────────
+PER_KEY_TIMEOUT = 2700     # 45 min per key — enough for 1000+ pages on T4
+
 @app.function(
     gpu="T4",
-    timeout=3600,          # 1 hour — generous for large batches
+    timeout=14400,         # 4 hours — needed for large corpora (1000+ page docs)
     secrets=[modal.Secret.from_name("islamic-cartography")],
 )
 def run_heron(keys: list[str] | None = None, github_token: str = ""):
@@ -95,15 +97,23 @@ def run_heron(keys: list[str] | None = None, github_token: str = ""):
 
     print(f"Keys to enrich: {keys}")
 
+    # Run all keys in a single 05c subprocess so the model is loaded only once.
+    # Use per-key timeout to prevent any single document from stalling the run.
     failed = []
     for key in keys:
-        print(f"\n{'═'*40}\nLayout: {key}\n{'═'*40}")
-        result = subprocess.run(
-            [sys.executable, "scripts/05c_layout_heron.py", "--batch", "4", "--keys", key],
-            cwd=REPO_DIR,
-        )
-        if result.returncode != 0:
-            print(f"⚠ {key} failed (exit {result.returncode})")
+        print(f"\n{'═'*40}\nLayout: {key}\n{'═'*40}", flush=True)
+        try:
+            result = subprocess.run(
+                [sys.executable, "scripts/05c_layout_heron.py",
+                 "--batch", "4", "--keys", key],
+                cwd=REPO_DIR,
+                timeout=PER_KEY_TIMEOUT,
+            )
+            if result.returncode != 0:
+                print(f"⚠ {key} failed (exit {result.returncode})")
+                failed.append(key)
+        except subprocess.TimeoutExpired:
+            print(f"⚠ {key} timed out after {PER_KEY_TIMEOUT}s — skipping")
             failed.append(key)
 
     # Commit results back using a deploy token if set, else skip
