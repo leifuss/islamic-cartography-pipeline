@@ -71,12 +71,14 @@ def run_heron(keys: list[str] | None = None, github_token: str = ""):
     import subprocess
     from pathlib import Path
 
-    # Clone the repo (with LFS for PDFs if needed)
+    # Clone the repo and pull LFS objects (PDFs needed by 05c for page rendering)
     print("Cloning repo...")
     subprocess.run(
         ["git", "clone", "--depth=1", REPO_URL, str(REPO_DIR)],
         check=True, capture_output=True
     )
+    print("Pulling LFS objects (PDFs)...")
+    subprocess.run(["git", "lfs", "pull"], cwd=REPO_DIR, check=True)
 
     # Configure git for committing results back
     subprocess.run(["git", "config", "user.name",  "modal-heron[bot]"], cwd=REPO_DIR, check=True)
