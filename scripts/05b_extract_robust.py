@@ -599,11 +599,19 @@ def main():
             q  = result.get("text_quality", "?")
             icon = {"good": "✓", "suspect": "⚠", "garbled": "✗"}.get(q, "?")
             methods = ", ".join(result.get("methods", []))
+            pages   = result.get("pages", 0) or 1
+            cpp     = round(result.get("chars", 0) / pages)
+            lang    = result.get("language", "?")
+            # Warn if tesseract language doesn't match inventory language
+            tess_langs = [m.split(":")[1].split("(")[0]
+                          for m in result.get("methods", []) if m.startswith("tesseract:")]
+            expected_tess = LANG_TESSERACT.get(lang, DEFAULT_TESS_LANG)
+            lang_warn = " ⚠LANG" if tess_langs and tess_langs[0] != expected_tess else ""
             with lock_print:
                 print(
                     f"  {icon}  [{done_count}/{total}] {key}  "
                     f"{result.get('chars',0):,} chars · {result.get('pages',0)} pp · "
-                    f"{q} · {methods} · {elapsed}s"
+                    f"{cpp} c/pg · {q} · lang:{lang}{lang_warn} · {methods} · {elapsed}s"
                 )
             _update_status(status, key, "ok",
                            title=title, chars=result.get("chars"),

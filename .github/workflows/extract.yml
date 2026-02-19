@@ -195,34 +195,47 @@ jobs:
           [ -n "$FAILED" ] && echo "Failed keys:$FAILED" || echo "All keys succeeded."
           exit 0   # never fail the step
 
-      # ── Update inventory flags ────────────────────────────────────────────────
-      - name: Update inventory flags
-        run: python scripts/00_update_inventory_flags.py
-
-      # ── Commit results back to repo ──────────────────────────────────────────
-      - name: Commit extracted results
+      # ── Commit extraction results immediately (before slow Heron step) ─────────
+      - name: Commit extraction results
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          python scripts/00_update_inventory_flags.py
           git add data/texts/ data/inventory.json
 
           if git diff --staged --quiet; then
-            echo "Nothing new to commit."
+            echo "Nothing new to commit from extraction."
           else
-            # Count processed docs
             CHANGED=$(git diff --staged --name-only | grep page_texts.json | wc -l)
-            git commit -m "extract: process ${CHANGED} doc(s) [skip ci]
+            git commit -m "extract(05b): ${CHANGED} doc(s) [skip ci]
 
           Keys: ${{ inputs.keys || 'all-unextracted' }}
-          Workers: ${{ inputs.workers }}
           Vision: ${{ inputs.use_vision }}
-          Layout: ${{ inputs.run_layout }}
-
           Run: ${{ github.run_id }}"
-
             git push
-            echo "Committed and pushed results for ${CHANGED} doc(s)."
+            echo "✓ Extraction results committed for ${CHANGED} doc(s)."
+          fi
+
+      # ── Commit layout results after Heron ────────────────────────────────────
+      - name: Commit layout results
+        if: ${{ inputs.run_layout }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/texts/
+
+          if git diff --staged --quiet; then
+            echo "Nothing new to commit from layout enrichment."
+          else
+            CHANGED=$(git diff --staged --name-only | grep layout_elements.json | wc -l)
+            git commit -m "layout(05c): ${CHANGED} doc(s) enriched [skip ci]
+
+          Keys: ${{ inputs.keys || 'all-unextracted' }}
+          Run: ${{ github.run_id }}"
+            git push
+            echo "✓ Layout results committed for ${CHANGED} doc(s)."
           fi
 
       # ── Summary ───────────────────────────────────────────────────────────────
