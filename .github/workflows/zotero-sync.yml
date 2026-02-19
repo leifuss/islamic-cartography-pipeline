@@ -50,12 +50,17 @@ jobs:
         id: sync
         run: python scripts/zotero_sync.py --trigger-extract
 
-      - name: Commit updated inventory
+      - name: Regenerate dashboard & explorer HTML
+        run: |
+          python scripts/03_inventory.py --from-json
+          python scripts/generate_explore.py
+
+      - name: Commit updated inventory & HTML
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add data/inventory.json
+          git add data/inventory.json data/dashboard.html data/explore.html
 
           if git diff --staged --quiet; then
             echo "No inventory changes."

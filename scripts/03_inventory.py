@@ -660,23 +660,33 @@ def main():
     parser.add_argument('--dashboard',   default='data/dashboard.html')
     parser.add_argument('--no-classify', action='store_true',
                         help='Skip PDF classification (fast mode — no doc_type/language)')
+    parser.add_argument('--from-json', action='store_true',
+                        help='Regenerate dashboard.html from existing inventory.json (no Zotero needed)')
     args = parser.parse_args()
 
     inv_path  = _ROOT / args.output
     dash_path = _ROOT / args.dashboard
 
-    classify = not args.no_classify
-    if not _PDFIUM and classify:
-        print("⚠ pypdfium2 not available — running in fast mode (no PDF classification)")
-        classify = False
+    if args.from_json:
+        # Just regenerate dashboard from existing inventory.json
+        if not inv_path.exists():
+            print(f"✗ {inv_path} not found — run a full sync first.")
+            sys.exit(1)
+        inventory = json.loads(inv_path.read_text(encoding='utf-8'))
+        print(f"Read {len(inventory)} items from {inv_path}")
+    else:
+        classify = not args.no_classify
+        if not _PDFIUM and classify:
+            print("⚠ pypdfium2 not available — running in fast mode (no PDF classification)")
+            classify = False
 
-    inventory = build_inventory(classify=classify)
+        inventory = build_inventory(classify=classify)
 
-    # Save JSON
-    inv_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(inv_path, 'w', encoding='utf-8') as f:
-        json.dump(inventory, f, indent=2, ensure_ascii=False)
-    print(f"✓ Inventory saved → {inv_path}")
+        # Save JSON
+        inv_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(inv_path, 'w', encoding='utf-8') as f:
+            json.dump(inventory, f, indent=2, ensure_ascii=False)
+        print(f"✓ Inventory saved → {inv_path}")
 
     # Save HTML dashboard
     html = build_dashboard(inventory)
