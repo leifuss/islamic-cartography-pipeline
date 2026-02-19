@@ -99,6 +99,8 @@ jobs:
       # ── Run extraction (05b) — one process per key for memory isolation ────────
       - name: Run extraction
         run: |
+          set +e   # don't abort on segfault — we handle failures per-key
+
           VISION_FLAG=""
           if [ "${{ inputs.use_vision }}" = "true" ]; then
             VISION_FLAG="--vision"
@@ -118,6 +120,7 @@ jobs:
           fi
 
           echo "Keys to process: $KEYS"
+          FAILED=""
 
           # Process each key in its own subprocess — full memory reset between docs
           for KEY in $KEYS; do
@@ -128,24 +131,69 @@ jobs:
             python scripts/05b_extract_robust.py \
               --workers 1 \
               --keys "$KEY" \
-              $VISION_FLAG || echo "⚠ $KEY failed — continuing with next doc"
+              $VISION_FLAG
+            EXIT=$?
+            if [ $EXIT -ne 0 ]; then
+              echo "⚠ $KEY failed (exit $EXIT) — continuing with next doc"
+              FAILED="$FAILED $KEY"
+            fi
           done
 
           echo ""
           echo "All keys attempted."
+          [ -n "$FAILED" ] && echo "Failed keys:$FAILED" || echo "All keys succeeded."
+          exit 0   # never fail the step — results are logged above
 
-      # ── Run layout enrichment (05c, optional) ────────────────────────────────
+      # ── Run layout enrichment (05c) — one process per key for memory isolation ─
       - name: Run Heron layout enrichment
         if: ${{ inputs.run_layout }}
         run: |
-          KEY_ARGS=""
+          set +e   # don't abort on segfault — we handle failures per-key
+
+          # Build list of keys — only those with page_texts.json (i.e. 05b succeeded)
           if [ -n "${{ inputs.keys }}" ]; then
-            KEY_ARGS="--keys ${{ inputs.keys }}"
+            RAW_KEYS="${{ inputs.keys }}"
+          else
+            RAW_KEYS=$(python3 -c "
+          import json
+          inv = json.load(open('data/inventory.json'))
+          keys = [i['key'] for i in inv if i.get('extracted')]
+          print(' '.join(keys))
+          ")
           fi
 
-          python scripts/05c_layout_heron.py \
-            --batch 1 \
-            $KEY_ARGS
+          # Filter to keys that actually have page_texts.json
+          KEYS=""
+          for KEY in $RAW_KEYS; do
+            if [ -f "data/texts/$KEY/page_texts.json" ]; then
+              KEYS="$KEYS $KEY"
+            else
+              echo "⏭ Skipping $KEY — no page_texts.json (05b may have failed)"
+            fi
+          done
+
+          echo "Layout keys to process: $KEYS"
+          FAILED=""
+
+          for KEY in $KEYS; do
+            echo ""
+            echo "════════════════════════════════════════"
+            echo "Layout: $KEY"
+            echo "════════════════════════════════════════"
+            python scripts/05c_layout_heron.py \
+              --batch 1 \
+              --keys "$KEY"
+            EXIT=$?
+            if [ $EXIT -ne 0 ]; then
+              echo "⚠ $KEY layout failed (exit $EXIT) — continuing"
+              FAILED="$FAILED $KEY"
+            fi
+          done
+
+          echo ""
+          echo "All layout keys attempted."
+          [ -n "$FAILED" ] && echo "Failed keys:$FAILED" || echo "All keys succeeded."
+          exit 0   # never fail the step
 
       # ── Update inventory flags ────────────────────────────────────────────────
       - name: Update inventory flags
