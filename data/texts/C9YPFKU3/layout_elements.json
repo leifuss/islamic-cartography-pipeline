@@ -1,0 +1,2096 @@
+{
+  "_page_sizes": {
+    "1": {
+      "w": 893,
+      "h": 1263
+    },
+    "2": {
+      "w": 893,
+      "h": 1191
+    },
+    "3": {
+      "w": 893,
+      "h": 1191
+    },
+    "4": {
+      "w": 893,
+      "h": 1191
+    },
+    "5": {
+      "w": 893,
+      "h": 1191
+    },
+    "6": {
+      "w": 893,
+      "h": 1191
+    },
+    "7": {
+      "w": 893,
+      "h": 1191
+    },
+    "8": {
+      "w": 893,
+      "h": 1191
+    },
+    "9": {
+      "w": 893,
+      "h": 1191
+    },
+    "10": {
+      "w": 893,
+      "h": 1191
+    },
+    "11": {
+      "w": 893,
+      "h": 1191
+    },
+    "12": {
+      "w": 893,
+      "h": 1191
+    },
+    "13": {
+      "w": 893,
+      "h": 1191
+    },
+    "14": {
+      "w": 893,
+      "h": 1191
+    },
+    "15": {
+      "w": 893,
+      "h": 1191
+    }
+  },
+  "1": [
+    {
+      "label": "text",
+      "text": "Provided for non - commercial research and educational use only .",
+      "bbox": {
+        "l": 158,
+        "t": 1206,
+        "r": 734,
+        "b": 1189
+      },
+      "page": 1
+    },
+    {
+      "label": "section_header",
+      "text": "Not for reproduction , distribution or commercial use .",
+      "bbox": {
+        "l": 207,
+        "t": 1185,
+        "r": 683,
+        "b": 1163
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "This article was originally published in International Encyclopedia of Human Geography , published by Elsevier , and the attached copy is provided by Elsevier for the author's benefit and for the benefit of the author's institution , for non - commercial research and educational use including without limitation use in instruction at your institution , sending it to specific colleagues who you know , and providing a copy to your institution's administrator .",
+      "bbox": {
+        "l": 66,
+        "t": 1130,
+        "r": 826,
+        "b": 1055
+      },
+      "page": 1
+    },
+    {
+      "label": "picture",
+      "text": "INTERNATIONAL ENCYCLOPEDIA OF HUMAN GEOGRAPHY",
+      "bbox": {
+        "l": 373,
+        "t": 990,
+        "r": 538,
+        "b": 912
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "All other uses , reproduction and distribution , including without limitation commercial reprints , selling or licensing copies or access , or posting on open internet sites , your personal or institution's website or repository , are prohibited . For exceptions , permission may be sought for such use through Elsevier's permissions site at : http://www.elsevier.com/locate/permissionusematerial",
+      "bbox": {
+        "l": 67,
+        "t": 737,
+        "r": 825,
+        "b": 664
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Brentjes S. 2009. Cartography in Islamic Societies . In Kitchin R , Thrift N ( eds ) International Encyclopedia of Human Geography , Volume 1 , pp . 414-427 . Oxford : Elsevier",
+      "bbox": {
+        "l": 84,
+        "t": 640,
+        "r": 811,
+        "b": 604
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "ISBN : 978-0-08-044911-1",
+      "bbox": {
+        "l": 358,
+        "t": 601,
+        "r": 534,
+        "b": 589
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Copyright 2009 Elsevier Ltd.",
+      "bbox": {
+        "l": 357,
+        "t": 583,
+        "r": 550,
+        "b": 565
+      },
+      "page": 1
+    }
+  ],
+  "2": [
+    {
+      "label": "section_header",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 279,
+        "t": 1181,
+        "r": 614,
+        "b": 1149
+      },
+      "page": 2
+    },
+    {
+      "label": "section_header",
+      "text": "Cartography in Islamic Societies",
+      "bbox": {
+        "l": 111,
+        "t": 1102,
+        "r": 450,
+        "b": 1081
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "S. Brentjes , Universidad de Sevilla , Sevilla , Spain",
+      "bbox": {
+        "l": 109,
+        "t": 1061,
+        "r": 419,
+        "b": 1049
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "© 2009 Elsevier Ltd. All rights reserved .",
+      "bbox": {
+        "l": 110,
+        "t": 1036,
+        "r": 323,
+        "b": 1023
+      },
+      "page": 2
+    },
+    {
+      "label": "section_header",
+      "text": "Glossary",
+      "bbox": {
+        "l": 110,
+        "t": 986,
+        "r": 182,
+        "b": 971
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Al - Bahr al - Muhit The Encompassing Sea .",
+      "bbox": {
+        "l": 109,
+        "t": 965,
+        "r": 364,
+        "b": 952
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Barzakh A small , narrow land barrier that separates the two main oceans of the maps , that is , the Indian Ocean and the Mediterranean Sea . The main Quranic meaning of barzakh is , however , not geographical , but eschatological . It denotes the life of the soul after the death of the body until the Day of Judgment . Dar al - funun House of the Disciplines / Sciences / Arts , new school of higher education for the Qajar army and administration , founded in 1851 ; taught European military methods , theories , technologies , sciences including geography and cartography and languages . Hadith A body of religious teachings about what the Prophet and his companions had said and done . Hudud Boundaries , the word has also other meanings such as definitions .",
+      "bbox": {
+        "l": 109,
+        "t": 946,
+        "r": 424,
+        "b": 685
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "' Ilm al - hay'a Mathematical cosmography . Isolarii Books about islands , produced in Italy . Mi'raj Ascent to the heavens .",
+      "bbox": {
+        "l": 110,
+        "t": 679,
+        "r": 384,
+        "b": 630
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Mount Qaf Often drawn on world maps around the Encompassing Sea ; this is derived from an interpretation of Sura 1.1 according to which God created a mountain chain at the edge of the earth out of a single green emerald . This chain is called Mt. Qaf .",
+      "bbox": {
+        "l": 110,
+        "t": 624,
+        "r": 425,
+        "b": 542
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Qibla Indicates direction toward Mecca , hence prayer direction , also direction regulating other social activities such as the way in which a dead body is laid to rest . Sīlā Island",
+      "bbox": {
+        "l": 109,
+        "t": 535,
+        "r": 426,
+        "b": 470
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Korea .",
+      "bbox": {
+        "l": 186,
+        "t": 480,
+        "r": 224,
+        "b": 470
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "that is , Hajji Khalifa's ( d . 1067 h / 1657 ) Cibānnāmā ( version II ) . These printed maps adopted and adapted certain cartographic conventions , methods , and fields of interest that dominated cartography in early modern Catholic and Protestant societies in Europe . This was , however , neither the first nor the last encounter between the various cartographic traditions and practices as pursued in various societies around the Mediterranean basin . The length and depth of the history of these cross - cultural encounters renders the notion of a history of cartography in well- defined geographical and cultural spaces that formed separate entities difficult to sustain .",
+      "bbox": {
+        "l": 463,
+        "t": 998,
+        "r": 807,
+        "b": 785
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Cartographic products independent of manuscripts or printed books appeared primarily in cultural fields out- side the sphere of education and knowledge production . Navigation , war , water administration , architecture , landscape design , religious ritual , and gift giving were such domains where self - contained cartographic prod- ucts are known to have existed in several Islamic societies or are preserved in libraries , museums , and collections across the world . Military maps gained increasing im- portance during the nineteenth century . In the twentieth century , private and state institutions for cartography and surveying were founded in Iran , Turkey , and Arab countries . They produced a broad variety of thematic maps , among them street maps , historical maps , me- teorological maps , geological maps , and maps for tourism . These new cartographic products were supported by new methods and techniques of surveying , displaying , re- searching , measuring , and representing .",
+      "bbox": {
+        "l": 463,
+        "t": 781,
+        "r": 807,
+        "b": 462
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "In Islamic societies , cartographic activities were part of Cultures of Mapmaking courtly patronage and diplomatic exchange , educational literacy and scientific study , religious rituals and remin- iscence , entertainment and the arts , and to some extent of war , seafaring , and administration .",
+      "bbox": {
+        "l": 97,
+        "t": 434,
+        "r": 658,
+        "b": 345
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Many of the extant cartographic products are parts of manuscripts . Words , narratives , numbers , tables , and geo- metrical figures organize , structure , delineate , and inter- pret them . Books with maps form several topical categories as well as genres . They include cosmography , astronomy , history , and geography on the one hand and pilgrimage books , encyclopedias , dictionaries , and miscellanies on the other . The most important types of cartographic products are world maps , regional maps of the Islamic world , and maps and diagrams of the prayer directions , the qibla . The first printed maps appeared in the early eighteenth cen- tury in Istanbul , first as single - sheet maps , but quickly followed as parts of a book on the Old and the New World ,",
+      "bbox": {
+        "l": 96,
+        "t": 341,
+        "r": 442,
+        "b": 112
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Mapmaking in Islamic societies took its themes , methods , techniques , and formats from several societies that either existed before the emergence of Islamic societies or parallel to them . The regions where these societies flourished were Greece , Egypt , Iran , India , China , Spain , Italy , the Netherlands , and France . With the shifts and changes in Europe since the sixteenth century , further European societies became relevant to cartographic ac- tivities in various Islamic societies , among them Russia , German countries , and Great Britain .",
+      "bbox": {
+        "l": 464,
+        "t": 398,
+        "r": 808,
+        "b": 221
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "The two earliest appropriations of cartographic products and practices from other cultures , which shaped mapmak- ing in Islamic societies for more than 500 years , occurred during the eighth and ninth centuries in Abbasid Baghdad and other regions of the empire . One of the two cross- cultural encounters is represented through the translations",
+      "bbox": {
+        "l": 464,
+        "t": 215,
+        "r": 807,
+        "b": 112
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "414",
+      "bbox": {
+        "l": 96,
+        "t": 51,
+        "r": 117,
+        "b": 43
+      },
+      "page": 2
+    }
+  ],
+  "3": [
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 277,
+        "t": 1181,
+        "r": 614,
+        "b": 1147
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "of Ptolemy's Geography into Arabic during the ninth century and their subsequent appropriation and adaptation to the interests of scholars . These translations were made in the circle of the Abbasid courtier and son of the Arab governor of Kufa , the philosopher Abū Yusuf Ya'qub b . Isḥāq al - Kindī ( d . c . 260 h / 874 ) , and the Sabean moneylender , mathem- atician , astronomer , philosopher , and theologian Thabit b . Qurra ( d . 288 h / 901 ) . The other encounter had its basis in a series of maps of possibly Sasanian origin that were re- produced in Arabic , although it is unclear when this took place . These maps were adapted during the ninth and tenth centuries to the new political and religious powers and structures in Iran , the Arabian Peninsula , and Northern Africa . Step by step the original set of maps was enriched by maps of new regions of the Islamic world and accompanied by descriptions of the mapped territories and their cultures .",
+      "bbox": {
+        "l": 87,
+        "t": 1094,
+        "r": 432,
+        "b": 811
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "The two encounters led to different views on how to organize and represent the world and its parts . Maps in the tradition of Ptolemy's Geography worked with pro- jections , latitudes and longitudes , grids , occasionally scales , and the theory of astronomically defined climates , mostly seven in number . They often contain short ref- erences to uninhabitable parts of the earth due to ex- cessive cold or heat derived from Aristotelian physics and meteorology . The geographical space represented in such maps was first and foremost the entire world . It was mapped as a sphere or as a semisphere . Over time , such world maps focused more and more on the Islamic world . But certain regions of the world outside of Islamic so- cieties continued to be reported about such as China , Sri Lanka , Byzantium , or the land of the Slaves . In addition to the world maps , maps of oceans , seas , rivers , and is- lands are extant from this cartographic encounter . These local maps show clear non - Ptolemaic features . They may be the result of the mapmakers ' efforts to translate textual and oral geographic information into images . The people involved in this cartographic tradition were primarily scholars of the mathematical sciences which comprised in Islamic societies in continuation of earlier Greek models number theory , geometry , theory of proportions , and astronomy . The most important representatives of this tradition in Islamic societies were the lost maps produced in the early ninth century for the Abbasid caliph al- Ma'mun ( r . 198-218 h / 813-33 ) , the maps extant in Muḥammad b . Mūsā al - Khwārazmi's ( fl . late second - early third century h / late eighth - early ninth century ) Şurat al- ard ( image / form of the earth ) , the maps extant in copies of the new Arabic translation of Ptolemy's Geography made by Georgios Amirutzes ( d . 1475 ) and his son for the Ottoman Sultan Mehmet Fatih ( r . 849 h / 1444 and 855-86 h / 1451-81 ) , and the maps found in the geographical chapter of texts on ilm al - bay'a ( mathematical cos- mography ) such as Nizam al - Din al - Nīsābūrī's ( d . 730 h / 1329 ) Tawdiḥ or Sharb al - Tadbkira ( explanation of or commentary on the ' Memoir ' ) ( Figure 1 ) .",
+      "bbox": {
+        "l": 87,
+        "t": 808,
+        "r": 432,
+        "b": 111
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies 415",
+      "bbox": {
+        "l": 526,
+        "t": 1139,
+        "r": 796,
+        "b": 1127
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "Maps derived from possible Sasanian models worked with geometrical figures such as circles , semicircles , crescents , triangles , rectangles , ovals , and straight lines to represent regional units , directions , and distances . Their focal points are the postal and pilgrimage routes within the Abbasid Empire and other Islamic states , for instance , in al - Andalus and the main parts that formed the Abbasid caliphate . The views on what these parts were and which rank each part assumed in relationship to the others depended largely on the outlook the mapmaker and commentator subscribed to a preference for Iranian cultural values , a preference for Islamic values , or a preference for his own environment and travel experi- ences . The set of maps created within this tradition in- cluded as a rule a world map and in most cases 21 regional maps . Most of the world maps in the extant manuscripts show the world as a full circle ; but there are also manuscripts from as early as the tenth century and as late as probably the seventeenth or eighteenth century that show the world as a bird . The distribution of the regions over the body of the bird varies . China or Arabia can be found as the head . India , the land of the Khazars in the Northern Caucasus Mountains , Asia , or Africa fill the wings . The tail is taken up by Northern Africa or Europe . The world maps show cosmological concepts such as al- Babr al - Mubit ( the Encompassing Sea ) also known from much earlier cultures and religious concepts specific to the Qur'an and other sources of Muslim belief such as the barzakh , a small , narrow land barrier that separates the two main oceans of the maps , that is , the Indian Ocean and the Mediterranean Sea . The main Quranic meaning of barzakh is , however , not geographical , but eschatological . It denotes the life of the soul after the death of the body until the Day of Judgment . The provinces and regions in these world maps are mostly registered in form of rectangular tables or stripes of boxes . They also include countries outside the Islamic world such as India or China . A few cities such as Mecca or Alexandria , rivers and occasionally their sources , is- lands and tribes are also noted . The regional maps focus entirely on the Islamic world . They map Iran , Central Asia , parts of the Caucasus Mountains , the Arabian Peninsula , Iraq , the Fertile Crescent , Northern Africa , and three seas ( the Persian Sea that is the Indian Ocean ; the Mediterranean Sea ; the Caspian Sea ) . The sequence of the mapped regions and their relative delineation differs from my naming them in the sense that most extant manuscript maps show the following order and content : Arabia ; Persian Sea ; al - Maghrib ( Northwest Africa ) ; Egypt ; Syria ; Mediterranean Sea ; al - Jazira ( Northern Iraq and Southeast Turkey ) ; Iraq ( Central and South Iraq ) ; Khuzistan ; Fars ; Kirman ( parts of Iran ) ; Sind ( part of Pakistan ) ; Armenia , Arran , Azerbaijan ( part of Caucasus Mountains , Azerbaijan , and Iran ) ; Jibal ; Day- lam , Rayy , Tabaristan ( parts of Iran ) , Caspian Sea ;",
+      "bbox": {
+        "l": 454,
+        "t": 1097,
+        "r": 800,
+        "b": 112
+      },
+      "page": 3
+    }
+  ],
+  "4": [
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1183,
+        "r": 613,
+        "b": 1150
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "416 Cartography in Islamic Societies",
+      "bbox": {
+        "l": 96,
+        "t": 1140,
+        "r": 364,
+        "b": 1126
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "地",
+      "bbox": {
+        "l": 330,
+        "t": 853,
+        "r": 343,
+        "b": 841
+      },
+      "page": 4
+    },
+    {
+      "label": "caption",
+      "text": "Figure 1 Ptolemy , Geographike Hyphegesis , Arabian Peninsula , Arabic translation by Georgios Amyrutzes , MS Istanbul , Süleymaniye Kütüphanesi , Aya Sofya 2610 , pp 198-199 . Courtesy of Süleymaniye Kütüphanesi .",
+      "bbox": {
+        "l": 97,
+        "t": 544,
+        "r": 751,
+        "b": 517
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Persian Desert ; Sijistan ; Khurasan ( parts of Iran , Turk- menistan , Pakistan , Afghanistan ) ; and Mã wara ' al - nahr ( part of Uzbekistan ) ( Figure 2 ) .",
+      "bbox": {
+        "l": 97,
+        "t": 486,
+        "r": 439,
+        "b": 435
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "The people creating maps and writing texts in this cartographic tradition were mostly members of the Ab- basid administration for which they worked as officers of the postal routes or of the finances , philosophers , and scholars of religious disciplines , or wealthy , independent travelers and merchants . After its first famous prac- titioner , the geographer , mathematician , astronomer , physician , philosopher , and student of al - Kindi , Abū Zayd Ahmad b . Sahl al - Balkhi ( d . 322 h / 934 ) , this tradition is called the Balkhi school of geography . Other major representatives of this school were Abū Ishaq Ibrahim b . Muḥammad al - Istakhri ( fourth century h / tenth century ) , Abū l - Qasim Muḥammad b . Hawqal ( d . c . 367 h / 977 ) , and Abū ' Abdallah Muḥammad b . Aḥmad al - Muqaddasi ( d . c . 390/1000 ) . The earliest maps sur- viving from this body of works belong to a manuscript of Ibn Hawqal from 479 h / 1086 extant in the Topkapı Sarayı Müzesi Kütüphanesi in Istanbul .",
+      "bbox": {
+        "l": 96,
+        "t": 432,
+        "r": 443,
+        "b": 113
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "The most pervasive feature of maps in Arabic , Persian , and Ottoman Turkish after the centuries of translation , adoption , and adaptation is , however , their combination of more than one cultural tradition of cartography . World maps attached to geographical , cosmographical , or his- torical texts combine between the eleventh- and the sixteenth - century elements of the Ptolemaic tradition with the components of the Balkhi school to which their makers added further elements taken from the Qur'ān and contemporary developments in politics , commerce , war , or demography . Mount Qaf , another Quranic concept , appears for instance as a mountainous ring enclosing the Encompassing Sea in maps joined to geo- graphic manuscripts such as Abū ' Abdallah Muḥammad b . al - Sharif al - Idrisi's ( 495- c . 560 h / 1100- c . 1165 ) Nuzhat al - mushtaq fi ' khtiraq al - afaq ( The Pleasant Journey of Those Who Desire to Travel through Faraway Lands ) , to texts seen as popularizing scientific ideas such as Zakariya ' al- Qazwini's ( d . 682 h / 1283 ) Kitab ajaib al - makblūgāt fi gbara'ib al - mawjūdāt ( Book of Marvels of Things Created and Miraculous Aspects of Things Existing ) , and to texts of a",
+      "bbox": {
+        "l": 463,
+        "t": 486,
+        "r": 810,
+        "b": 112
+      },
+      "page": 4
+    }
+  ],
+  "5": [
+    {
+      "label": "text",
+      "text": "417",
+      "bbox": {
+        "l": 773,
+        "t": 1138,
+        "r": 794,
+        "b": 1130
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "لاد الشام",
+      "bbox": {
+        "l": 615,
+        "t": 562,
+        "r": 660,
+        "b": 504
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1183,
+        "r": 614,
+        "b": 1149
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies",
+      "bbox": {
+        "l": 526,
+        "t": 1139,
+        "r": 746,
+        "b": 1127
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "الشمال",
+      "bbox": {
+        "l": 604,
+        "t": 909,
+        "r": 672,
+        "b": 884
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "صورة الجزيرة",
+      "bbox": {
+        "l": 409,
+        "t": 1070,
+        "r": 540,
+        "b": 1042
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "لاد الجزيرة",
+      "bbox": {
+        "l": 562,
+        "t": 894,
+        "r": 613,
+        "b": 844
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "لاجان",
+      "bbox": {
+        "l": 463,
+        "t": 892,
+        "r": 500,
+        "b": 872
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "افانه",
+      "bbox": {
+        "l": 520,
+        "t": 806,
+        "r": 554,
+        "b": 786
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "التاليه",
+      "bbox": {
+        "l": 518,
+        "t": 774,
+        "r": 544,
+        "b": 757
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "G",
+      "bbox": {
+        "l": 365,
+        "t": 631,
+        "r": 379,
+        "b": 617
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "راق",
+      "bbox": {
+        "l": 319,
+        "t": 1047,
+        "r": 344,
+        "b": 1017
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "الحديثة",
+      "bbox": {
+        "l": 258,
+        "t": 761,
+        "r": 289,
+        "b": 739
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "الجنوب",
+      "bbox": {
+        "l": 266,
+        "t": 731,
+        "r": 305,
+        "b": 701
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "39",
+      "bbox": {
+        "l": 265,
+        "t": 1088,
+        "r": 282,
+        "b": 1078
+      },
+      "page": 5
+    },
+    {
+      "label": "caption",
+      "text": "Figure 2 Şürat al - Jazira ( Image of the land between the Tigris and the Euphrates ) , MS Istanbul , Topkapı Sarayı Müzesi Kütüphanesi Ahmet III.1285 , f 39a ( dated 1285 ) . Courtesy of Topkapı Sarayı Müzesi .",
+      "bbox": {
+        "l": 87,
+        "t": 428,
+        "r": 796,
+        "b": 400
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "more religious character such as the Kharīdat al - ' aja'ib wa - faridat al - gbara ib ( The Unbored Pearl of Wonders and Precious Gem of Marvels ) attributed to Siraj al - Din Abū Hafs ' Umar b . al - Wardī ( d . 861 h / 1457 ) . The maps to The Book of Curiosities , a twelfth - century manuscript on as- tronomy , geography , commerce , and wondrous things copying a work of the eleventh century , include already the famous circular map ascribed to al - Idrīsī . It also has a rectangular world map and maps of the Indian Ocean , the Mediterranean Sea , Cyprus , Sicily , maps of great rivers such as the Nile , the Euphrates , and the Tigris , maps of the former Fatimid capital al - Mahdīya and the Egyptian town of Tinnis , and maps of lakes . The author , in all likelihood a Fatimid custom officer , combined conceptual",
+      "bbox": {
+        "l": 88,
+        "t": 360,
+        "r": 434,
+        "b": 113
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "and technical elements of the Ptolemaic tradition such as climate zones , geographical coordinates , a scale , and the configuration of the Old World with symbolic features from al - Khwārazmi's maps such as the depiction of the Mountains of the Moon as sources of the Nile and conceptual and representational elements of the Balkhi school such as the representation of rivers by straight lines or lakes by circles to which he added information from travelers , texts , and perhaps adminis- trative documents . He chose some unique and not yet well - understood forms of representation for the Medi- terranean Sea and the Indian Ocean ( an oval ) and for Cyprus ( a rectangle divided into smaller units of rect- angles and text ) ( Figure 3 ) .",
+      "bbox": {
+        "l": 455,
+        "t": 360,
+        "r": 800,
+        "b": 112
+      },
+      "page": 5
+    }
+  ],
+  "6": [
+    {
+      "label": "text",
+      "text": "418",
+      "bbox": {
+        "l": 95,
+        "t": 1139,
+        "r": 116,
+        "b": 1129
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1183,
+        "r": 613,
+        "b": 1150
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies",
+      "bbox": {
+        "l": 145,
+        "t": 1141,
+        "r": 364,
+        "b": 1127
+      },
+      "page": 6
+    },
+    {
+      "label": "caption",
+      "text": "Figure 3 Book of Curiosities , Rectangular World Map , MS Oxford , Bodleian Library , Ar.c.90 , ff 23b - 24a . Courtesy of Bodleian Library .",
+      "bbox": {
+        "l": 96,
+        "t": 780,
+        "r": 805,
+        "b": 767
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "Al - Sharif al - Idrīsī and his geographical and carto- graphic work represent another kind of cross - cultural encounter since he lived in more than one of the Mediterranean cultures . He was born in Ceuta , received his education in al - Andalus , and traveled widely in the Islamic world . Then he worked for two Norman kings , Roger II ( r . 1097-1154 ) and William I ( r . 1154-66 ) at their court in Palermo . At the end of his life , he returned to the Islamic world , possibly to Ceuta . Conceptually , he fol- lowed Ptolemaic cartographic theory and methods . He produced two sets of new maps . One was a circular world map engraved on a silver plate , which is lost . The other is a set of 70 regional maps drawn on paper . They are extant in various manuscripts across the world . Al - Idrīsī planned to combine them into one large rectangular map of the known world stretching from 180 ° in the east in the Sīlā Island ( Korea ) to the prime meridian in the west running through the Fortunate Isles . Presenting Roger not only as a successful conqueror and master of politics , he de- scribed him as the head of the cartographic project who decided on what geographical and cartographic truth was . One method applied for sorting out conflicting infor- mation was to trace with iron instruments on a drawing board all data on longitudes , latitudes , and distances . Al- Idrīsī wrote two , perhaps even three geographical texts , all of them lavishly illustrated with regional maps por- traying the entire world in a combination of Ptolemaic concepts with ideas and symbols taken from the Balkhī school . He also had access to non - Arabic oral and per- haps written sources and provided fresh information about the physical and cultural geography of European lands , not available previously in Arabic .",
+      "bbox": {
+        "l": 96,
+        "t": 738,
+        "r": 440,
+        "b": 166
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "Almost all of Ottoman mapmaking is best described as a highly flexible merging of cartographic and artistic languages from all major cultural traditions the Ottoman",
+      "bbox": {
+        "l": 97,
+        "t": 161,
+        "r": 440,
+        "b": 112
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "Empire drew upon , cooperated and traded with , and fought against . While these mergers are often seen as a reflex of Ottoman cultural and scholarly inferiority , the cultural dynamics and force that brought forth such mergers cannot be overrated . If nothing else , the people involved in producing such eclectic maps were capable of reading and understanding different geographical con- cepts , philological descriptions , and iconographic repre- sentations . A fair amount of concrete cross - cultural work was needed in order to interpret foreign maps and make their copies and translations into Ottoman Turkish ac- ceptable for the local consumer . As is well known and can be demonstrated for a number of the preserved Ottoman maps designed from the sixteenth to the eighteenth centuries , even the copyists participated in this process of cross - cultural adaptation .",
+      "bbox": {
+        "l": 463,
+        "t": 739,
+        "r": 808,
+        "b": 453
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "Four major cultures of mapmaking arose in the Ot- toman realm . Two of these cultures , the making of por- tolan charts and the creation of maritime handbooks with maps of Mediterranean islands , coasts , and fortresses , were closely interconnected . They combined several previous mapmaking traditions from different Medi- terranean cultures , mainly Arabic , Catalan , and Italian portolan charts , regional maps , and isolarii . They were apparently primarily designed by members of the Otto- man navy . Scribes and painters from imperial as well as commercial workshops participated in executing the fine copies . Specialized mapmaking workshops existed in the middle of the seventeenth century in Istanbul . Almost all extant specimens were made for acquiring courtly pat- ronage or to be given away as gifts . In particular the maps illustrating the various copies of Pīrī Re'is ' ( c . 875-961 h / 1470-1554 ) two versions of the Kitab - i Bahriye ( Maritime Handbook ) are wonderful products of art . Some of them show the inclusion of Renaissance painting techniques ,",
+      "bbox": {
+        "l": 464,
+        "t": 449,
+        "r": 807,
+        "b": 111
+      },
+      "page": 6
+    }
+  ],
+  "7": [
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1181,
+        "r": 613,
+        "b": 1149
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies 419",
+      "bbox": {
+        "l": 526,
+        "t": 1139,
+        "r": 795,
+        "b": 1127
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "while others are splendid experiments in colors and symbolic interpretations of physical objects ( Figure 4 ) . The two other main Ottoman mapmaking cultures were situated directly in the courtly sphere . One of them consists of town views and itineraries in official histories mapping Ottoman military campaigns , adversaries , and imperial architecture . Their execution was the task of the painters of the imperial painting workshops . As a result , many are superb exemplars of Ottoman fine arts . ( Figure 5 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 1095,
+        "r": 432,
+        "b": 936
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "The other mapmaking culture began to appear during the sixteenth century when Arabic and Persian models of world maps became to be replaced gradually by models from Italy and then from the United Provinces , France ,",
+      "bbox": {
+        "l": 87,
+        "t": 934,
+        "r": 432,
+        "b": 865
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "and German countries . Partial or full translations of books on the New World , a Latin edition of Ptolemy's Geography , Abraham Ortelius ' Theatrum Orbis Terrarum , Gerard Mercator's and Henricus Hondius ' Atlas Minor , Willem J. and Joan Blaeu's Atlas Maior , and other geo- graphical and cartographic works produced in different Catholic and Protestant countries of Europe were undertaken by Ottoman scholars , often in collaboration with members of the religious minorities living in the Ottoman Empire or with converts from Catholic or Protestant Europe . The maps of these books had a pro- found impact on Ottoman mapmaking . The changes , however , did not constitute a unilateral Westernization ,",
+      "bbox": {
+        "l": 454,
+        "t": 1095,
+        "r": 800,
+        "b": 864
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "نه اسیکی ادوی",
+      "bbox": {
+        "l": 418,
+        "t": 391,
+        "r": 465,
+        "b": 348
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "شكال",
+      "bbox": {
+        "l": 655,
+        "t": 786,
+        "r": 676,
+        "b": 774
+      },
+      "page": 7
+    },
+    {
+      "label": "caption",
+      "text": "Figure 4 Piri Reis , Kitāb - i Bahriye ( Maritime Handbook ) , The Island of Rhodes , MS Istanbul , İstanbul Üniversitesi , T6605 , f 100a . Courtesy of İstanbul Üniversitesi .",
+      "bbox": {
+        "l": 88,
+        "t": 141,
+        "r": 790,
+        "b": 113
+      },
+      "page": 7
+    }
+  ],
+  "8": [
+    {
+      "label": "text",
+      "text": "420",
+      "bbox": {
+        "l": 96,
+        "t": 1138,
+        "r": 118,
+        "b": 1129
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1181,
+        "r": 613,
+        "b": 1149
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies",
+      "bbox": {
+        "l": 145,
+        "t": 1141,
+        "r": 364,
+        "b": 1127
+      },
+      "page": 8
+    },
+    {
+      "label": "caption",
+      "text": "Figure 5 Szigetvár , Ahmed Feridun , Nüzhet Esrar el - Ahbar der Sefer - i Sigetvar ( Present of the Secrets of Information on the Journey to Szigetvár ) , MS Istanbul , Topkapı Sarayı Müzesi Kütüphanesi H. 1339 , ff 32b - 33a ( copied in 1568-69 ) . Courtesy of Topkapı Sarayı Müzesi .",
+      "bbox": {
+        "l": 97,
+        "t": 824,
+        "r": 806,
+        "b": 797
+      },
+      "page": 8
+    },
+    {
+      "label": "caption",
+      "text": "Figure 6 Willem and loan Blaeu , Atlas Maior , Translation ascribed to Abu Bakr al - Dimashqi , Asia , MS Istanbul , Süleymaniye Kütüphanesi , Nuruosmaniye 2995 , before f 104a . Courtesy Süleymaniye Kütüphanesi .",
+      "bbox": {
+        "l": 97,
+        "t": 372,
+        "r": 774,
+        "b": 345
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "to use an anachronistic term . Translators , scholars , copyists , calligraphers , painters , and trainees , and tea- chers of the Ottoman army transformed the translated maps in a variety of ways into maps accessible to Otto- man spectators and situated them firmly within Ottoman visual , geographic , and literary cultures ( Figure 6 ) .",
+      "bbox": {
+        "l": 97,
+        "t": 324,
+        "r": 440,
+        "b": 219
+      },
+      "page": 8
+    },
+    {
+      "label": "section_header",
+      "text": "Cartographic Genres and Practices",
+      "bbox": {
+        "l": 97,
+        "t": 182,
+        "r": 391,
+        "b": 167
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "In addition to the world and regional maps , portolan charts , and handbooks for sailing directions discussed in",
+      "bbox": {
+        "l": 97,
+        "t": 146,
+        "r": 439,
+        "b": 111
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "the previous section , a number of other cartographic formats were developed in Islamic societies . Early in the ninth century , or perhaps even in the eighth century , the question of how to determine from any given place the direction toward Mecca was raised . David A. King claims that there were two cartographic worlds in Islamic societies with respect to the qibla . Mathemat- icians , astronomers , and mathematical geographers inhabited one of these two worlds . They developed trigonometric , projective , arithmetic , and other exact or approximate methods for solving the problem ( Figure 7 ) .",
+      "bbox": {
+        "l": 463,
+        "t": 323,
+        "r": 807,
+        "b": 111
+      },
+      "page": 8
+    }
+  ],
+  "9": [
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1182,
+        "r": 613,
+        "b": 1150
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies 421",
+      "bbox": {
+        "l": 526,
+        "t": 1141,
+        "r": 795,
+        "b": 1127
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Legal scholars , students of the religious traditions , descriptive geographers , folk astronomers , and cos- mographers who focused on miracles , wonders , and narrated histories populated the other . They relied on ḥadīth , a body of religious teachings about what the Prophet and his companions had said and done , on astronomical and meteorological alignments ascribed to the Ka'ba since pre - Islamic times , and on practices of travelers .",
+      "bbox": {
+        "l": 88,
+        "t": 1094,
+        "r": 434,
+        "b": 939
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Among the various methods used for mapmaking , grids , coordinate frames , and scales played roles that are not always easily discernible . Some mapmakers applied",
+      "bbox": {
+        "l": 88,
+        "t": 933,
+        "r": 431,
+        "b": 883
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "them as mathematical tools , while others apparently saw in them primarily symbolic statements about the possi- bility of mapping the world mathematically . Grids were used in rectangular and circular maps . Rectangular grids were applied in world maps such as the one made for al- Ma'mun and by Suhrab ( fl . first - half fourth century h / tenth century ) , for regional maps and world maps illus- trating historical works or encyclopedias such as the Masalik al - absar fi mamalik al - amsar ( Ways of Perception Concerning the Most Populous [ Civilized ] Provinces ) compiled by the Mamluk judge and administrator Ibn Faḍlallah al- ' Umari ( 691-749 h / 1301-49 ) . Suhrāb described his",
+      "bbox": {
+        "l": 454,
+        "t": 1097,
+        "r": 799,
+        "b": 883
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "r",
+      "bbox": {
+        "l": 580,
+        "t": 628,
+        "r": 606,
+        "b": 608
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "90",
+      "bbox": {
+        "l": 596,
+        "t": 607,
+        "r": 616,
+        "b": 594
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "12",
+      "bbox": {
+        "l": 628,
+        "t": 647,
+        "r": 644,
+        "b": 628
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "سواس",
+      "bbox": {
+        "l": 535,
+        "t": 706,
+        "r": 573,
+        "b": 679
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "00",
+      "bbox": {
+        "l": 610,
+        "t": 263,
+        "r": 650,
+        "b": 243
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "لكه ك",
+      "bbox": {
+        "l": 386,
+        "t": 798,
+        "r": 482,
+        "b": 783
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "اسکندریہ",
+      "bbox": {
+        "l": 426,
+        "t": 765,
+        "r": 465,
+        "b": 747
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "ت المقدس",
+      "bbox": {
+        "l": 489,
+        "t": 718,
+        "r": 500,
+        "b": 669
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "کر دبان",
+      "bbox": {
+        "l": 510,
+        "t": 570,
+        "r": 543,
+        "b": 541
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "اصفهان",
+      "bbox": {
+        "l": 455,
+        "t": 581,
+        "r": 493,
+        "b": 568
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "شاکاره",
+      "bbox": {
+        "l": 430,
+        "t": 552,
+        "r": 463,
+        "b": 537
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "کرمان",
+      "bbox": {
+        "l": 454,
+        "t": 512,
+        "r": 492,
+        "b": 478
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "4",
+      "bbox": {
+        "l": 354,
+        "t": 794,
+        "r": 362,
+        "b": 786
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "نفعان",
+      "bbox": {
+        "l": 380,
+        "t": 629,
+        "r": 419,
+        "b": 606
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "عرض",
+      "bbox": {
+        "l": 307,
+        "t": 816,
+        "r": 342,
+        "b": 802
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "سونات",
+      "bbox": {
+        "l": 335,
+        "t": 605,
+        "r": 374,
+        "b": 574
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "اصفهان",
+      "bbox": {
+        "l": 397,
+        "t": 308,
+        "r": 435,
+        "b": 271
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "A",
+      "bbox": {
+        "l": 360,
+        "t": 436,
+        "r": 368,
+        "b": 428
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "42",
+      "bbox": {
+        "l": 215,
+        "t": 821,
+        "r": 245,
+        "b": 807
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "سه عه ت له سه",
+      "bbox": {
+        "l": 269,
+        "t": 757,
+        "r": 286,
+        "b": 544
+      },
+      "page": 9
+    },
+    {
+      "label": "caption",
+      "text": "Figure 7 Qibla Map , MS Paris , BnF Perse 169 , f 42a . Courtesy Bibliothèque nationale de France .",
+      "bbox": {
+        "l": 88,
+        "t": 125,
+        "r": 621,
+        "b": 112
+      },
+      "page": 9
+    }
+  ],
+  "10": [
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1181,
+        "r": 613,
+        "b": 1149
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "422 Cartography in Islamic Societies",
+      "bbox": {
+        "l": 96,
+        "t": 1141,
+        "r": 365,
+        "b": 1127
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "method as starting with a rectangle , followed by dividing the edges into degrees and marking the equator . Then he drew the horizontal lines that separate the climates . For positioning the localities he stretched two threads over the rectangle , one horizontally , the other vertically . Lost world maps made before 1500 may have worked with curvilinear grids as does the only extant exemplar of such a type attached to a manuscript of al - ' Umari's work . The meaning of this grid has been interpreted differently by Fuat Sezgin who believes the grid to be a stereographic projection and the map to represent the map made for al- Ma'mun and by David A. King who points to the several errors in the grid and al - ' Umari's explanation and refers to historical evidence contradicting the identification of this map with that made for al - Ma'mūn .",
+      "bbox": {
+        "l": 96,
+        "t": 1094,
+        "r": 442,
+        "b": 830
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "Coordinate frames and scales appear early on maps made in Islamic societies . Several maps , however , are inscribed merely with one set of the coordinates , mostly longitudes , and the placement of the equator on which they are noted varies . Scales too show contradictory in- formation . Such features are often taken to illustrate a lack of mathematical knowledge on the side of the mapmakers . The quality and care invested in some spe- cimens of this kind and the people involved in the pro- duction of the manuscripts where they are found make such a reading unlikely . An example is the world map attached to one of the anthologies produced for the Timurid prince Iskandar Sultan ( r . 812-17 h / 1409-14 ) .",
+      "bbox": {
+        "l": 96,
+        "t": 826,
+        "r": 441,
+        "b": 595
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "Simple circular as well as quadratic schemes were used for organizing geographical knowledge for religious and divinatory purposes . Such diagrams could evolve into small - scale maps since they linked either the Ka'ba or major religious monuments in Mecca with the indi- vidual sectors of the circle and the regions or towns in- scribed in them . They often group a multitude of localities behind one specifically chosen town whose qibla serves as a marker or representative for all the other directions . The effect of such an arrangement was di- dactic and mnemonic in the same time . The earliest known scheme of this kind is found in a manuscript copy of Ibn Khurradadhbih's ( third century h / ninth century ) Kitāb al - masālik wa'l - mamalik ( Book of the Routes and Prov- inces ) . It consists of four sectors of the world , each one of them being connected with a part of the Ka'ba - Maghrib , Egypt , Syria , al - Jazira ; Iraq , Armenia , Kashmir ; Mansūra , Tibet , China ; Yemen . Over time , the schemes became more elaborate and could comprise as many as seventy two divisions . In addition to the schemes , maps and in- struments for finding the qibla were created . The most sophisticated , Mecca - centered map was engraved on three astrolabes made by Safavid instrument makers in the late seventeenth century .",
+      "bbox": {
+        "l": 96,
+        "t": 593,
+        "r": 442,
+        "b": 164
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "Climatic zone charts are a further type of diagram- matic schemes that were widely used in geographical , cosmographical , astronomical , and historical treatises and",
+      "bbox": {
+        "l": 97,
+        "t": 162,
+        "r": 440,
+        "b": 112
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "dictionaries for illustrating the theoretical division of the earth as taught by natural philosophy and astronomy . Its widespread appearance across the disciplines and literary genres is but one indicator of the depth at which the intellectual outlook in Islamic societies was permeated by scientific elements of ancient Greek origin . A very simple exemplar of these kinds of diagrams is found in Sharaf al- Dīn al - Mas'udi's ( 545 - after 613 h / 1150 - after 1216 ) Jaban Danish ( Knowledge of the World ) , a book on astronomy , as- trology , and geography written in ( 549 h / 1154-55 ) . Three unnamed circles enclose eight parallel , equidistant lines identified at the right as demarcating the seven climates . Geographical features such as oceans , islands , and countries are sparsely marked by words alone . Nu- merous Arabic , Persian , and Ottoman circular and semicircular world maps also show such a scheme of climatic zones . The division into climates became the most important format of structuring the physical world in maps as well as texts . It was applied to maps of the Ptolemaic tradition , maps working within the tradition of the Balkhi schools , and maps derived from early modern European maps . Examples are the semicircular world map in ' Ayn al - Zaman's Hasan b . ' Ali Qattan Marwazi's ( 465-548 h / 1072-1153 ) Gayban Shenakht ( Constructing the World ) and the circular maps for Iskandar Sultan , the Book of Curiosities and Mehmet b . ' Alī Sipāhī - zādeh's ( d . 997 / 1589 ) Turkish translation of his Awdab al - masalik fi ma'rifat al - buldan wa'l - mamālik ( Explanation of the Routes about the Knowledge of Places and Provinces ) .",
+      "bbox": {
+        "l": 463,
+        "t": 1095,
+        "r": 809,
+        "b": 577
+      },
+      "page": 10
+    },
+    {
+      "label": "section_header",
+      "text": "Functions and Purposes",
+      "bbox": {
+        "l": 465,
+        "t": 542,
+        "r": 665,
+        "b": 525
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "Maps , charts , plans , diagrams , and tables served a variety of functions and purposes in Islamic societies although the bulk seems to have spent their life in manuscripts , that is , in the spheres of educated readers . The earliest usage of maps seems to have happened when the armies of the newly converted Arab tribes invaded regions of Iran and Central Asia . The governor of the eastern parts of the Umayyad Empire , al - Hajjaj b . Yusuf ( d . 95h / 714 ) , is said to have ordered a map of Daylam , a mountainous region south of the Caspian Sea , before attacking it in c . 83 h / 702 . Five years later , when planning to lay siege at Bukhara , he ordered a plan of the city . Plans or sketches are also reported for planning in 141 h / 758 the new capital Baghdad of the Abbasid caliphate and possibly for waterworks in the swamps near Basra made for the sec- ond Abbasid caliph al - Mansur ( r . 136-58 h / 754-75 ) . The next time that sources report of maps , sketches , or plans for military purposes occurs in the Ottoman Empire . Laying siege to cities and fortresses such as Constan- tinople , Szigetvār , Vienna , Baghdad , or the fortresses of the Order of St. John at Rhodes and Malta included the drawing of sketches and plans , while the actual warfare",
+      "bbox": {
+        "l": 463,
+        "t": 502,
+        "r": 809,
+        "b": 111
+      },
+      "page": 10
+    }
+  ],
+  "11": [
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1183,
+        "r": 613,
+        "b": 1149
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "made use of compasses for tunneling the walls . It is only after the treaty of Karlowitz in 1699 , that maps became an important tool for the Ottoman army for settling boundary disputes and negotiations over lost territories .",
+      "bbox": {
+        "l": 88,
+        "t": 1094,
+        "r": 431,
+        "b": 1027
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "Tax collection and market regulation , on the other hand , were subjects that apparently rarely worked with maps , and the manuals written about these themes were seldom illustrated with more than the simplest diagrams . This is , according to Ahmet T. Karamustafa , even true for the Islamic society with the broadest use for maps and the widest array of types of maps - the Ottoman Empire . Different bodies of the Ottoman state used maps and plans that visualized waterways and channels , archi- tecture , and navigation in the Mediterranean and the",
+      "bbox": {
+        "l": 88,
+        "t": 1022,
+        "r": 432,
+        "b": 846
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "Black Sea .",
+      "bbox": {
+        "l": 89,
+        "t": 843,
+        "r": 151,
+        "b": 833
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "A central function of maps in Islamic societies was to indicate religious beliefs , support the believer in carrying out her or his religious duties , and help her or him re- member the visits to the Holy shrines . A further religious theme illuminated by maps relates to the Prophet's mi'raj ( ascent to the heavens ) . Maps functioned as instruments , tools , and pictorial narratives . They were turned into souvenirs and certificates ( Figure 8 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 825,
+        "r": 433,
+        "b": 685
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "Maps also served as objects of art and diplomacy . Fatimid world and regional maps were produced on costly silks embroidered with gold and colored silk threads . Consequently , they were stored with other valuables in the princely treasury rooms . The anonymous author of the Kitāb al - Hadaya wal - Tubaf ( Book of Gifts and Rarities ) when describing the treasures stored by the Fatimid rulers ex- claimed that among them several hundreds , close to a thousand silk drapes were found that represented king- doms with their kings . He marveled at the precious ma- terial used for this display of royal splendor and possession and emphasized that these drapes showed a portrait of every king , his name , the span of his reign , and an account of his life . At least four more courts are known where maps were either painted on silk or engraved on silver plates - the court of the Khwarazmshah Sultan ' Ala ' al - Din Muḥammad ( r . 596-617 h / 1199-1220 ) in Khiva , the court of the Ilkhanid ruler Ghāzān Mahmud ( r . 694-703 h / 1295-1304 ) in Tabriz , the Norman court of Roger II ( d . 1154 ) in Palermo , and the Ottoman court in Istanbul ( 857- 1341 h / 1453-1922 ) . Except for Ottoman maps on silk , none of these maps are extant .",
+      "bbox": {
+        "l": 88,
+        "t": 682,
+        "r": 434,
+        "b": 290
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "In various contexts , maps were treated like miniature paintings . Outstanding examples are the world map for Iskandar Sultan mentioned above , maps in a manuscript of the Beyan - i Menazil - i Sefer - i Irakeyn - i Sultan Süleyman Han ( Explanation of the Stops in Sultan Süleyman Khan's Travel to the Two Iraqs ) ( 944 h / 1537-38 ) by Matrakçī Nasūḥ ( d . 971 h / 1564 ) commemorating Sultan Süley- man's ( r . 926-74 h / 1520-66 ) successful military cam- paign of 941 h / 1534-35 against his Safavid neighbor Shāh Tahmāsb ( r . 930-84 r / 1524-76 ) , and maps in",
+      "bbox": {
+        "l": 88,
+        "t": 289,
+        "r": 432,
+        "b": 111
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies 423",
+      "bbox": {
+        "l": 526,
+        "t": 1139,
+        "r": 795,
+        "b": 1127
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "eighteenth - century manuscripts of Hajji Khalifa's Cibānnümā ( version II ) .",
+      "bbox": {
+        "l": 455,
+        "t": 1097,
+        "r": 796,
+        "b": 1061
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "A fourth function of maps was their capacity to memorize historical events and portray princely power and splendor . The most splendid examples of maps as constructs of historical memory are found in books de- scribing and eternalizing the feats of the Ottoman sultans . Many of the views of cities and ports found in Ottoman histories since the early sixteenth century celebrate ei- ther their conquest by an Ottoman sultan or an attack by a fleet in Ottoman service . According to J. M. Rogers they were also meant to visualize \" the pomp and circumstance of the Ottoman court \" . The composition of the views usually includes a representation of an abstract landscape - some mountains , some flowers , some herbs , occasion- ally also trees and animals . This theme of the landscape , its elements , and its colors is borrowed from miniature painting . The major difference between the maps and the miniatures is the complete lack of human beings in al- most all maps of this genre .",
+      "bbox": {
+        "l": 454,
+        "t": 1061,
+        "r": 799,
+        "b": 740
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "A different , but equally splendid construction of im- perial allegory can be found in miniatures produced for the Mughal rulers Jahangir ( r . 1014-37 h / 1605-1628 ) and Shah Jahan ( r . 1037-1068 h / 1628-1658 ) . Both rulers were keen to express their imperial claims by relying sym- bolically on the image of a globe with or without de- pictions of lands and seas . A series of images painted by Muslim and Hindu court painters between 1614 and 1658 stress the legitimacy of the ruler as a dutiful son , just defender of the interests of his subjects , and pious follower of the saints . Jahangir also used the globe for depicting his relationship to his most powerful Muslim neighbor outside of India , the Safavid Shāh ' Abbas I ( r . 986-1038 h / 1587-1628 ) . The portrait , called Jahangir's Dream , shows Jahangir as the superior and benign ruler who is connected by friendship with his smaller neighbor . Both stand on a world map that reflects knowledge of Western cartographic developments . Two animals rest at the feet of the two rulers , a lion and a lamb . The juxta- position of lion and lamb symbolized the peaceful coexistence of natural enemies , of irreconcilable contra- dictions , hence the highest good a just ruler could achieve . The symbolic globe also figures in other por- traits of Jahangir , which describe his successful squelch- ing of Khurram's rebellion , the later Shah Jahan , and his desire to destroy his political and military rival Malik ' Ambar , minister to the rulers of Ahmadnagar from 1596 to 1626. The minister valiantly opposed Mughal imperial ambitions in the Deccan and pursued a policy of steady recovery of territory conquered by Shah Akbar late in the sixteenth century . It was only ' Ambar's death in 1626 that opened the Deccan to Mughal invasion . The miniature of Jahangir shooting at a beheaded and speared Malik ' Ambar while standing on a complex cosmological alle- gory composed of a terrestrial globe seated both on an",
+      "bbox": {
+        "l": 453,
+        "t": 736,
+        "r": 800,
+        "b": 112
+      },
+      "page": 11
+    }
+  ],
+  "12": [
+    {
+      "label": "text",
+      "text": "424",
+      "bbox": {
+        "l": 96,
+        "t": 1138,
+        "r": 118,
+        "b": 1130
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1182,
+        "r": 615,
+        "b": 1148
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies",
+      "bbox": {
+        "l": 145,
+        "t": 1141,
+        "r": 364,
+        "b": 1127
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "مام شيخ المحو المحترم كبته الله",
+      "bbox": {
+        "l": 282,
+        "t": 1007,
+        "r": 353,
+        "b": 988
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "نیا سعادت امین و شهر را",
+      "bbox": {
+        "l": 320,
+        "t": 741,
+        "r": 357,
+        "b": 690
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "با مبنای رمانی تریفه",
+      "bbox": {
+        "l": 456,
+        "t": 446,
+        "r": 508,
+        "b": 436
+      },
+      "page": 12
+    },
+    {
+      "label": "caption",
+      "text": "Figure 8 View of Mecca and its pilgrimage stations , MS Jena , University Library Prov . q . 215 , f 6b . Courtesy of the University Library of the University of Jena .",
+      "bbox": {
+        "l": 96,
+        "t": 369,
+        "r": 807,
+        "b": 343
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "elephant and a huge whale surrounded by a wealth of other symbolic elements expresses the magnitude of emotions roused in Jahangir by the obstacle the Deccani minister of Ethiopian origin posed to fulfilling his im- perial dream .",
+      "bbox": {
+        "l": 97,
+        "t": 308,
+        "r": 442,
+        "b": 221
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Most Islamic maps before the eighteenth century ig- nore political space in favor of cultural space . Elements that may signal political entities such as boundaries , emblems , names of dynasties , flags , or monuments rarely occur at all on Islamic maps before 1700. Maps of the so - called Balkhi school indicate boundaries ( budūd )",
+      "bbox": {
+        "l": 96,
+        "t": 217,
+        "r": 440,
+        "b": 112
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "explicitly , but they are not boundaries separating differ- ent states or kingdoms , but boundaries dividing the Is- lamic world into administrative subunits . In contrast to geographical writings , which even stressed the linkage between geography and history , maps produced in Is- lamic societies before the sixteenth century did not ex- press this disciplinary neighborhood .",
+      "bbox": {
+        "l": 463,
+        "t": 307,
+        "r": 807,
+        "b": 185
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "A similar reluctance to deal with the political com- position of the world can be seen in maps illustrating the manuscripts of Hajji Khalifa and Abu Bakr al - Dimashqi ( d . 1102 h / 1691 ) . In the autograph of the translation of",
+      "bbox": {
+        "l": 464,
+        "t": 181,
+        "r": 809,
+        "b": 112
+      },
+      "page": 12
+    }
+  ],
+  "13": [
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1181,
+        "r": 613,
+        "b": 1149
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies 425",
+      "bbox": {
+        "l": 526,
+        "t": 1139,
+        "r": 795,
+        "b": 1127
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "the Atlas Minor , Hajj Khalifa and his French partner Mehmet Ikhlāsī followed closely the views about the political division of Europe and Asia as propagated by the Dutch cartographers Gerard Mercator and Henricus Hondius . In the autograph of Hajji Khalifa's own geo- graphical work for which he had engaged in the project of translation , the Cibānnümā ( version II ) , the Ottoman Empire is not mapped at all and the Safavid Empire has disintegrated into a series of maps reflecting views of Iranian provinces held in pre - Safavid geographical lit- erature . The fine copy of Abu Bakr al - Dimashqi's trans- lation of the Atlas Major does not contain any map of the Ottoman or the Safavid Empires . Later paraphrases of the work map the two Muslim neighbor - states as found in Western atlases , that is , the Ottoman Empire is clipped to Anatolia and the Safavid Empire has borders that fit more the situation of the early nineteenth than that of the late seventeenth or early eighteenth centuries when these maps were painted in Istanbul . Possibly the first Ottoman map that names Anatolia and even parts of Iran Memleket- e devlet - e ' aliye ( Kingdom of the Supreme Dynasty ) , but con- tinues to disregard the matter of precise boundaries of the empire in contrast to other states in Europe , is a silk map painted in Istanbul in 1182 h / 1768 . This map too follows without further reflection the structuring of the political space as seen in Catholic and Protestant Europe . A rupture with this disrespect for the political status and extension of the Ottoman state in Ottoman mapmaking occurred only in the nineteenth century , when the modernized Ottoman army and its Western advisors took a fresh interest due to military and economic reasons in mapping the Ottoman territories .",
+      "bbox": {
+        "l": 88,
+        "t": 1097,
+        "r": 433,
+        "b": 523
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "Maps of nineteenth - century Qajar Iran likewise do not show any explicit interest in mapping the political space of the country . Their authors mostly focused on mapping particular provinces and their physical and cultural properties . Qajar maps show clearly that by now mapmaking in Iran followed the map culture of Europe . In the first - half of the nineteenth century , British and Russian officers toured the country for mapping several of its provinces , mountains , and shores , partly on order of the Qajar court . In the second - half of the nineteenth century , Iranian mapmakers who were trained in modern mathematical and cartographic methods and concepts at the Dar al - funun in Tehran started to work . The Dār al- funun was a new type of school for higher education founded in 1851 by Mirzā Taqi Khān Amir - i Nizām ( 1186",
+      "bbox": {
+        "l": 84,
+        "t": 522,
+        "r": 433,
+        "b": 237
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "assassinated in 1231 h sh / 1807 - assassinated in 1852 ) , a diplomat and highly disputed prime minister of the Qajar ruler Nasir al - Din Shah ( r . 1227-75 h sh / 1848- 96 ) . The new school was part of efforts to reform the Qajar army . European teachers taught new military methods , theories , technologies , sciences including geography and cartography , and languages . The major cartographic works undertaken by Austrian professors",
+      "bbox": {
+        "l": 88,
+        "t": 251,
+        "r": 434,
+        "b": 111
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "and Iranian students and later professors of the Dar al- funun were explorations , triangulations , descriptions , and drawings of boundaries between Iran , the Ottoman Em- pire , Central Asia , Afghanistan , and Northwest India ( today Pakistan ) and various kinds of mapping enterprises about Tehran and the settlements in its immediate en- vironment . A number of the engineers involved in these different projects studied for some time in France or England and worked for different departments of the government and the army . In addition to mapmaking , they wrote books about geography and mathematics ( Figure 9 ) .",
+      "bbox": {
+        "l": 452,
+        "t": 1094,
+        "r": 799,
+        "b": 883
+      },
+      "page": 13
+    },
+    {
+      "label": "section_header",
+      "text": "Cartography and Surveying in Iran in the Twentieth Century",
+      "bbox": {
+        "l": 454,
+        "t": 846,
+        "r": 793,
+        "b": 811
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "In the twentieth century , cartography developed in Iran in three sectors private cartographic and surveying companies , the army , and governmental civil institutions . The first private cartographic company , Sahab Geo- graphic & Drafting Company , was founded in 1315 h sh / 1936 by ' Abdolghasem Saḥāb ( 1265-1335 h sh / 1886- 1956 ) and led for most of the century by his son ' Abbas Sahāb ( 1300-79 h sh / 1921-2000 ) , who was trained as an engineer . It began with publishing maps of Iranian history and physical geography . After 1945 , it also produced road maps , maps for tourism , globes , maps of Iran's neighbors , atlases , posters , and school books . Ebädolähe Bakhtiarī ( 1306-62 h sh / 1927-83 ) , the husband of a sister of ' Abbas Saḥāb , founded in 1351 h sh / 1972 the second private cartographic publishing house in Iran , Gitashenasi Geographical and Cartographic Institute . Being today the more active of the two , it has a similar range of products , including political , physical , historical , and topographical maps of Iran , its provinces and cities , road and street maps , maps for tourism and outdoor activities , maps of Asian countries , globes , books , and postcards . Since some time , the company produces its maps with computer technologies .",
+      "bbox": {
+        "l": 455,
+        "t": 789,
+        "r": 800,
+        "b": 380
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "In the field of geophysics and surveying , two men shaped the face of modern practices and products in Iran - Mahmud Hisābī ( 1282-71 h sh / 1903-92 ) and Taqi Riyāḥī ( d . after 1989 ) . Hisābī , a student of Albert Einstein , was educated as a civil engineer in Beirut and Paris and did his PhD in physics at the Sorbonne . Starting in 1928 , he surveyed Iranian coastal roads and was a founder or co- founder of a number of institutions important for Iranian cartography , among them the country's first weather sta- tion ( 1931 ) , Tehran University ( 1934 ) , the Institute of Standards of Iran ( 1954 ) , and the Geophysical Institute of Tehran University ( 1961 ) . Hisābī worked for Mossadegh's government as the first general manager of the Iranian National Oil Company . Riyāḥī was a civil engineer who had studied at the École Polytechnique in Paris . In 1952 , he",
+      "bbox": {
+        "l": 454,
+        "t": 377,
+        "r": 800,
+        "b": 112
+      },
+      "page": 13
+    }
+  ],
+  "14": [
+    {
+      "label": "text",
+      "text": "426",
+      "bbox": {
+        "l": 96,
+        "t": 1139,
+        "r": 119,
+        "b": 1129
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1183,
+        "r": 613,
+        "b": 1150
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies",
+      "bbox": {
+        "l": 145,
+        "t": 1141,
+        "r": 364,
+        "b": 1126
+      },
+      "page": 14
+    },
+    {
+      "label": "caption",
+      "text": "Figure 9 Naqsh - i Färis ( Map of Persia ) , MS Berlin , Preussischer Kulturbesitz , Staatsbibliothek , Kartensammlung D9515 ; Courtesy of Preussischer Kulturbesitz , Staatsbibliothek .",
+      "bbox": {
+        "l": 97,
+        "t": 756,
+        "r": 807,
+        "b": 730
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "became Mossadegh's chief of staff . After the CIA coup in 1953 , Riyāḥī was sentenced to 2 years of prison . In 1979 , he worked for the head of the interim government after the fall of the Shah , Mahdi Bazargān ( d . 1995 ) , but left the country soon after to live until his death in France . In 1956 , Riyāḥī founded with a partner the first private sur- veying company of Iran , Cherkate - e Nesbi Nagbsbeb Bardari . The company began with land surveying in the year of its foundation , but quickly expanded into other fields , among them photogrammetry ( 1959 ) and terrestrial photogram- metry . It cooperated closely with the French company La Foncière registered in the French protectorate of Morocco . About 20 French engineers and technicians came to Iran providing expertise and bringing with them needed in- struments for surveying and mapmaking . The company sent c . 25 of its employees for education to France , among them Nasr Ghazālī , today's head of the company , who had to leave Tehran University due to political difficulties under the Shah ; five or six to the Netherlands ; and three to Switzerland . Renamed in 1967 as Rassad Surveying Company , it moved into hydrography , microgeodesy , orthophoto mapping , digital mapping , GIS design and implementation , tunnel drilling control , and industrial control surveying . Twice , it mapped half of Iran , the first time using photogrammetric methods , the second working with satellite material . Its main clients are oil and road companies , the municipalities of Tehran , Yazd , and Kish , and various ministries .",
+      "bbox": {
+        "l": 96,
+        "t": 701,
+        "r": 440,
+        "b": 206
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "In 1921 , the army founded its first group for cartog- raphy . The first tasks the engineers of this department carried out consisted in translating , correcting , and completing Russian and English maps of Iran and ad- jacent countries . Fourteen years later , the first books on",
+      "bbox": {
+        "l": 95,
+        "t": 200,
+        "r": 440,
+        "b": 111
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "Iranian geography illustrated with military maps were produced for educational purposes . Subsequently , the cartographic organization of the army began creating its own military maps . As in the nineteenth and early twentieth century , a major focus of military mapmaking was the exploration of the borderlands . As the National Geographic Organization , it is now the most powerful cartographic body in Iran and possesses the most ad- vanced technology , for instance , for area photography .",
+      "bbox": {
+        "l": 463,
+        "t": 701,
+        "r": 807,
+        "b": 543
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "In 1953 , Iran founded its first governmental institution for civil cartography , the National Cartographic Center ( NCC ) . It started in 1948 as an engineering department of the Plan and Budget Organization . Working with foreign consultants and army officers , it carried out sur- veying work and planned the structure for the new governmental institution for mapping Iran . It focused its activities on three major domains . The first domain em- braces the creation of terrestrial maps of various prov- inces , regions , and cities of Iran and works for producing a comprehensive map of the entire Iranian territory . NCC brought foreign engineers and technicians , mainly from France and the Netherlands , for surveying the country and trained students of mathematics and physics in cartographic methods and techniques . The second domain covers the charting of Iranian coastal and mari- time areas , in particular in the Persian Gulf . The third major domain lies in creating the intellectual infra- structure for cartography in Iran . NCC created a re- search journal , organized conferences , published textbooks and the series National Atlas of Iran , and sponsored the translation of foreign publications . It has two special responsibilities - the supervision of all gov- ernment contracts and area photography .",
+      "bbox": {
+        "l": 462,
+        "t": 539,
+        "r": 807,
+        "b": 112
+      },
+      "page": 14
+    }
+  ],
+  "15": [
+    {
+      "label": "text",
+      "text": "Author's personal copy",
+      "bbox": {
+        "l": 278,
+        "t": 1183,
+        "r": 613,
+        "b": 1150
+      },
+      "page": 15
+    },
+    {
+      "label": "text",
+      "text": "From 1941 onward , state bodies such as the Mining Administration , the Ministry of Agriculture , or the Ministry of the Roads ordered engineers to map the entities under their responsibility . Other governmental organizations , in particular institutes of Tehran Uni- versity , the Geological Survey of Iran , and the Me- teorological Survey of Iran , founded mostly in the second - half of the twentieth century , produce specialized thematic maps on geology , geomorphology , geophysics , geochemistry , meteorology and soil or land use .",
+      "bbox": {
+        "l": 88,
+        "t": 1095,
+        "r": 431,
+        "b": 918
+      },
+      "page": 15
+    },
+    {
+      "label": "text",
+      "text": "See also : Art and Cartography ; Mapping , Non - Western ; Maps and the State ; Medieval Geography ; Middle East and North Africa ; Orientalism .",
+      "bbox": {
+        "l": 87,
+        "t": 896,
+        "r": 422,
+        "b": 849
+      },
+      "page": 15
+    },
+    {
+      "label": "section_header",
+      "text": "Further Reading",
+      "bbox": {
+        "l": 90,
+        "t": 811,
+        "r": 223,
+        "b": 794
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Ahmad , S. M. ( 1992 ) . Cartography of al - Sharif al - Idrisi . In Harley , J. B. & Woodward , D. ( eds . ) History of Cartography , vol . 2 , Bk . 1 : Cartography in the Traditional Islamic and South Asian Societies , pp 156-174 . Chicago , IL : University Press of Chicago .",
+      "bbox": {
+        "l": 88,
+        "t": 774,
+        "r": 430,
+        "b": 722
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "' Ayn al - Zamān's Hasan b . ' Ali Qattan Marwazi , Gayhan Shenakht . Qom : Vaḥed - e enteshārāt - e kitābkhāne - ye bozorg - e Ayatollah al- ' uzma Mar'ashi Najafi .",
+      "bbox": {
+        "l": 89,
+        "t": 720,
+        "r": 421,
+        "b": 684
+      },
+      "page": 15
+    },
+    {
+      "label": "text",
+      "text": "Brentjes , S. ( 2004 ) . Mapmaking in Ottoman Istanbul between 1650 and 1750 : A domain of painters , calligraphers , or cartographers ?",
+      "bbox": {
+        "l": 89,
+        "t": 680,
+        "r": 430,
+        "b": 656
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "In Imber , C. , Kiyotaki , K. & Murphey , R. ( eds . ) Frontiers of Ottoman Studies , vol . 2 , pp 125-156 . London : I. B. Tauris .",
+      "bbox": {
+        "l": 101,
+        "t": 653,
+        "r": 430,
+        "b": 629
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Brentjes , S. ( 2007 ) . Nasr Ghazali , Rassadiran , Interview , Tehran , March , 25 , 2007 .",
+      "bbox": {
+        "l": 89,
+        "t": 628,
+        "r": 430,
+        "b": 602
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Edson , E. and Savage - Smith , E. ( 2004 ) . Medieval Views of the Cosmos : Picturing the Universe in the Christian and Islamic Middle Ages . Oxford : The Bodleian Library , Oxford University . Ghada al - Hijjawi al - Qaddumi , ( 1996 ) . Book of Gifts and Rarities .",
+      "bbox": {
+        "l": 88,
+        "t": 601,
+        "r": 429,
+        "b": 548
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Harvard Middle Eastern Monographies XXIX , Harvard UP , Boston . Goodrich , T. D. ( 1990 ) . The Ottoman Turks and the New World : A Study of Tarih - i Hind - i Garbi and Sixteenth - Century Ottoman Americana . Wiesbaden : Harrassowitz Verlag .",
+      "bbox": {
+        "l": 88,
+        "t": 546,
+        "r": 431,
+        "b": 493
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Hagen , G. ( 2003 ) . Ein Osmanischer Geograph bei der Arbeit . Entstehung und Gedankenwelt von Katib Čelebis Gihannūmā . Berlin : Klaus Schwarz Verlag .",
+      "bbox": {
+        "l": 88,
+        "t": 493,
+        "r": 405,
+        "b": 453
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Karamustafa , A. T. ( 1992 ) . Military , administrative , and scholarly maps and plans . In Harley , J. B. & Woodward , D. ( eds . ) History of Cartography , vol . 2 , Bk . 1 : Cartography in the Traditional Islamic and South Asian Societies , pp 209-227 . Chicago , IL : University Press of Chicago .",
+      "bbox": {
+        "l": 88,
+        "t": 451,
+        "r": 431,
+        "b": 387
+      },
+      "page": 15
+    },
+    {
+      "label": "text",
+      "text": "Cartography in Islamic Societies 427",
+      "bbox": {
+        "l": 526,
+        "t": 1141,
+        "r": 796,
+        "b": 1127
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "King , D. A. ( 1999 ) . World - Maps for Finding the Direction and Distance to Mecca . Innovation and Tradition in Islamic Science . Leiden : Köln : Brill .",
+      "bbox": {
+        "l": 455,
+        "t": 1094,
+        "r": 798,
+        "b": 1056
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "King , D. A. and Lorch , R. ( 1992 ) . Qibla charts , Qibla maps , and related instruments . In Harley , J. B. & Woodward , D. ( eds . ) History of Cartography , vol . 2 , Bk . 1 : Cartography in the Traditional Islamic and South Asian Societies , pp 189-205 . Chicago , IL : University Press of Chicago .",
+      "bbox": {
+        "l": 455,
+        "t": 1053,
+        "r": 798,
+        "b": 988
+      },
+      "page": 15
+    },
+    {
+      "label": "text",
+      "text": "MS Istanbul , Süleymaniye Library , Mihrişah Sultan 304 . Orientalische Buchkunst in Gotha ( 1997 ) . Ausstellung zum 350jährigen",
+      "bbox": {
+        "l": 455,
+        "t": 984,
+        "r": 797,
+        "b": 960
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Jubiläum der Forschungs- und Landesbibliothek Gotha . Spiegelsaal 11. September 1997 bis 14. Dezember 1997. Forschungs- und Landesbibliothek Gotha , 1997 .",
+      "bbox": {
+        "l": 469,
+        "t": 957,
+        "r": 798,
+        "b": 921
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Rogers , J. M. ( 1992 ) . Itineraries and town views in Ottoman Histories . In Harley , J. B. & Woodward , D. ( eds . ) History of Cartography , vol . 2 , Bk . 1 : Cartography in the Traditional Islamic and South Asian Societies , pp 228-255 . Chicago , IL : University Press of Chicago .",
+      "bbox": {
+        "l": 456,
+        "t": 918,
+        "r": 783,
+        "b": 853
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Sezgin , F. ( 1987 ) . Contribution of the Arabic - Islamic Geographers to the Formation of the World Map . Frankfurt am Main : Institut für Geschichte der Arabisch - Islamischen Wissenschaften .",
+      "bbox": {
+        "l": 455,
+        "t": 852,
+        "r": 798,
+        "b": 814
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Sharaf al - Din Muḥammad b . Mas'ud Mas'ūdī , ( 2003 ) . Jahan Danish ( edited and introduced by Zanjāni , D.-A. ) . Tehran : Mirās - e Maktub .",
+      "bbox": {
+        "l": 455,
+        "t": 809,
+        "r": 788,
+        "b": 773
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Soucek , S. ( 1992 ) . Islamic charting in the Mediterranean . In Harley , J. B. & Woodward , D. ( eds . ) History of Cartography , vol . 2 , Bk . 1 : Cartography in the Traditional Islamic and South Asian Societies , pp 265-284 . Chicago , IL : University Press of Chicago . The National Atlas of Iran . Maps . vol . 18 , The Islamic Republic of Iran , Management and Planning Organization , National Cartographic Center , Tehran , 1371 sh .",
+      "bbox": {
+        "l": 455,
+        "t": 770,
+        "r": 797,
+        "b": 679
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Tibbets , G. R. ( 1992 ) . Later cartographic developments . In Harley , J. B. & Woodward , D. ( eds . ) History of Cartography , vol . 2 , Bk . 1 : Cartography in the Traditional Islamic and South Asian Societies , pp 137-155 . Chicago , IL : University Press of Chicago . Tibbets , G. R. ( 1992 ) . The Balkhi school of geographers . In Harley , J. B. & Woodward , D. ( eds . ) History of Cartography , vol . 2 , Bk . 1 : Cartography in the Traditional Islamic and South Asian Societies , pp 108-136 . Chicago , IL : University Press of Chicago . Tibbets , G. R. ( 1992 ) . The beginnings of a cartographic tradition . In Harley , J. B. & Woodward , D. ( eds . ) History of Cartography , vol . 2 , Bk . 1 : Cartography in the Traditional Islamic and South Asian Societies , pp 90-107 . Chicago , IL : University Press of Chicago .",
+      "bbox": {
+        "l": 455,
+        "t": 676,
+        "r": 797,
+        "b": 503
+      },
+      "page": 15
+    },
+    {
+      "label": "section_header",
+      "text": "Relevant Websites",
+      "bbox": {
+        "l": 456,
+        "t": 473,
+        "r": 610,
+        "b": 460
+      },
+      "page": 15
+    },
+    {
+      "label": "text",
+      "text": "http://cosmos.bodley.ox.ac.uk",
+      "bbox": {
+        "l": 456,
+        "t": 437,
+        "r": 604,
+        "b": 427
+      },
+      "page": 15
+    },
+    {
+      "label": "text",
+      "text": "Medieval Views of the Cosmos , The Book of Curiosities . http://www.ncc.org.ir",
+      "bbox": {
+        "l": 455,
+        "t": 423,
+        "r": 743,
+        "b": 400
+      },
+      "page": 15
+    },
+    {
+      "label": "text",
+      "text": "National Cartographic Center .",
+      "bbox": {
+        "l": 469,
+        "t": 399,
+        "r": 613,
+        "b": 386
+      },
+      "page": 15
+    }
+  ]
+}

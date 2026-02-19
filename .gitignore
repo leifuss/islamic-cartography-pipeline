@@ -1,6 +1,9 @@
 # Generated data — regenerable, not tracked
-data/texts/
 data/pdfs/
+
+# Exclude bulky/redundant files inside texts/ but keep the rest
+data/texts/*/docling.md
+data/texts/*/*.docling.json
 data/raw/
 data/extracted/
 data/test_samples/

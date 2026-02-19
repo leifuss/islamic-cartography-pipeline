@@ -1,0 +1,2134 @@
+{
+  "1": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.6.1 Introduction",
+      "bbox": {
+        "l": 205.2,
+        "t": 418.92,
+        "r": 299.1,
+        "b": 429.92
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "the science of the configuration [of the universe]",
+      "bbox": {
+        "l": 123.36,
+        "t": 472.49,
+        "r": 286.9,
+        "b": 482.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 289.83,
+        "t": 474.7,
+        "r": 333.19,
+        "b": 482.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "the science of the configuration [of the universe]",
+      "bbox": {
+        "l": 304.91,
+        "t": 568.5,
+        "r": 98.61,
+        "b": 566.25
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "science of configuration",
+      "bbox": {
+        "l": 121.22,
+        "t": 592.5,
+        "r": 197.2,
+        "b": 602.25
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 202.65,
+        "t": 594.7,
+        "r": 245.49,
+        "b": 602.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "astral sciences",
+      "bbox": {
+        "l": 369.52,
+        "t": 616.49,
+        "r": 416.03,
+        "b": 626.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "munajjimūn",
+      "bbox": {
+        "l": 204.02,
+        "t": 628.49,
+        "r": 246.19,
+        "b": 638.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "astral experts",
+      "bbox": {
+        "l": 260.47,
+        "t": 628.49,
+        "r": 306.35,
+        "b": 638.24
+      }
+    }
+  ],
+  "2": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Almagest",
+      "bbox": {
+        "l": 128.29,
+        "t": 183.8,
+        "r": 160.38,
+        "b": 193.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Doubts on the",
+      "bbox": {
+        "l": 338.02,
+        "t": 207.81,
+        "r": 387.12,
+        "b": 217.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shukūk fī l-Majisṭī",
+      "bbox": {
+        "l": 62.72,
+        "t": 222.02,
+        "r": 129.99,
+        "b": 229.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book on the Rea­sons behind the Astronomical Handbooks",
+      "bbox": {
+        "l": 362.61,
+        "t": 231.8,
+        "r": 203.21,
+        "b": 229.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb ʿilal al-zījāt",
+      "bbox": {
+        "l": 209.04,
+        "t": 234.02,
+        "r": 272.61,
+        "b": 241.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Treatise on the Distances and (Heavenly) Bodies",
+      "bbox": {
+        "l": 322.6,
+        "t": 243.8,
+        "r": 123.79,
+        "b": 241.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Risāla fī l-abʿād wa-l-ajrām",
+      "bbox": {
+        "l": 129.79,
+        "t": 246.02,
+        "r": 226.96,
+        "b": 253.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book on the Introduction in the Science of the Judgment of the Stars",
+      "bbox": {
+        "l": 277.48,
+        "t": 255.8,
+        "r": 146.71,
+        "b": 253.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-Mudkhal ilā ṣināʿat",
+      "bbox": {
+        "l": 152.25,
+        "t": 258.02,
+        "r": 251.65,
+        "b": 265.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "aḥkām al-nujūm",
+      "bbox": {
+        "l": 254.24,
+        "t": 258.02,
+        "r": 311.41,
+        "b": 265.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Treatise on the Testing of Those Who Call Themselves Astral Experts",
+      "bbox": {
+        "l": 374.43,
+        "t": 267.8,
+        "r": 252.29,
+        "b": 265.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Risāla fī imtiḥān al-munajjimīn mimman huwa muttasim bi-hādha l-ism",
+      "bbox": {
+        "l": 258.16,
+        "t": 279.8,
+        "r": 146.69,
+        "b": 277.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "complete",
+      "bbox": {
+        "l": 345.99,
+        "t": 291.8,
+        "r": 374.84,
+        "b": 301.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Encyclopaedia of Islam",
+      "bbox": {
+        "l": 117.24,
+        "t": 387.8,
+        "r": 197.77,
+        "b": 397.55
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.6.2 Classifications of the astral sciences",
+      "bbox": {
+        "l": 144.97,
+        "t": 478.24,
+        "r": 341.96,
+        "b": 489.24
+      }
+    }
+  ],
+  "3": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Posterior Analytics",
+      "bbox": {
+        "l": 126.04,
+        "t": 183.82,
+        "r": 190.92,
+        "b": 193.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 110.1,
+        "t": 279.84,
+        "r": 112.74,
+        "b": 289.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 290.83,
+        "t": 279.84,
+        "r": 293.48,
+        "b": 289.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 187.0,
+        "t": 351.85,
+        "r": 189.64,
+        "b": 361.6
+      }
+    }
+  ],
+  "4": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm",
+      "bbox": {
+        "l": 249.0,
+        "t": 90.17,
+        "r": 262.04,
+        "b": 97.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿamal",
+      "bbox": {
+        "l": 313.46,
+        "t": 90.17,
+        "r": 332.08,
+        "b": 97.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Ikhwān al-ṣafāʾ",
+      "bbox": {
+        "l": 215.12,
+        "t": 246.17,
+        "r": 269.81,
+        "b": 253.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Third Epistle: On Astronomy",
+      "bbox": {
+        "l": 282.34,
+        "t": 339.96,
+        "r": 387.36,
+        "b": 349.71
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Risāla al-thālitha fī asṭrunūmiyā",
+      "bbox": {
+        "l": 393.08,
+        "t": 354.17,
+        "r": 147.41,
+        "b": 349.71
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 148.28,
+        "t": 378.17,
+        "r": 192.11,
+        "b": 385.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-nujūm al-taʿlīmī",
+      "bbox": {
+        "l": 257.44,
+        "t": 450.17,
+        "r": 340.84,
+        "b": 457.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Treatise on the Parts of the Rational Sciences",
+      "bbox": {
+        "l": 116.39,
+        "t": 519.96,
+        "r": 277.2,
+        "b": 529.71
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Risāla fī aqsām al-ʿulūm al-ʿaqliyya",
+      "bbox": {
+        "l": 280.55,
+        "t": 522.17,
+        "r": 406.82,
+        "b": 529.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Heavens",
+      "bbox": {
+        "l": 168.76,
+        "t": 591.96,
+        "r": 228.93,
+        "b": 601.71
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "science of the config­uration [of the universe]",
+      "bbox": {
+        "l": 353.72,
+        "t": 627.97,
+        "r": 147.0,
+        "b": 625.72
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 153.91,
+        "t": 630.17,
+        "r": 199.43,
+        "b": 637.7
+      }
+    }
+  ],
+  "5": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "judgments of the stars",
+      "bbox": {
+        "l": 247.85,
+        "t": 75.95,
+        "r": 324.29,
+        "b": 85.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "the configuration",
+      "bbox": {
+        "l": 78.63,
+        "t": 159.97,
+        "r": 134.91,
+        "b": 169.72
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "of the universe",
+      "bbox": {
+        "l": 140.1,
+        "t": 159.97,
+        "r": 188.62,
+        "b": 169.72
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "science of the judgments of the stars",
+      "bbox": {
+        "l": 250.34,
+        "t": 159.97,
+        "r": 368.41,
+        "b": 169.72
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.6.3 Debates on astral theories and practices I.6.3.1 Philosophical foundations",
+      "bbox": {
+        "l": 144.22,
+        "t": 394.39,
+        "r": 332.14,
+        "b": 381.39
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Timaios",
+      "bbox": {
+        "l": 212.92,
+        "t": 435.95,
+        "r": 241.36,
+        "b": 445.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Heavens",
+      "bbox": {
+        "l": 151.82,
+        "t": 447.96,
+        "r": 209.43,
+        "b": 457.71
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Meteorology",
+      "bbox": {
+        "l": 303.37,
+        "t": 459.96,
+        "r": 345.13,
+        "b": 469.71
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Almagest",
+      "bbox": {
+        "l": 186.85,
+        "t": 483.96,
+        "r": 218.94,
+        "b": 493.71
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Planetary Hypotheses",
+      "bbox": {
+        "l": 237.76,
+        "t": 483.96,
+        "r": 312.84,
+        "b": 493.71
+      }
+    }
+  ],
+  "6": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 288.65,
+        "t": 543.87,
+        "r": 291.3,
+        "b": 553.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Physical Arguments, Drawn from the Books of Aristotle, Negating Those Who Have Claimed That the Heavenly Sphere is Living and Rational",
+      "bbox": {
+        "l": 256.84,
+        "t": 567.87,
+        "r": 403.07,
+        "b": 565.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Ḥujaj",
+      "bbox": {
+        "l": 406.09,
+        "t": 570.02,
+        "r": 424.77,
+        "b": 579.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ṭabīʿiyya mustakhraja min kutub Arisṭāṭālīs fī l-radd ʿalā man zaʿama anna l-falak ḥayy",
+      "bbox": {
+        "l": 59.78,
+        "t": 582.02,
+        "r": 360.22,
+        "b": 589.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "nāṭiq",
+      "bbox": {
+        "l": 362.94,
+        "t": 582.02,
+        "r": 380.56,
+        "b": 591.02
+      }
+    }
+  ],
+  "7": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 258.49,
+        "t": 207.8,
+        "r": 261.13,
+        "b": 217.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 308.44,
+        "t": 207.8,
+        "r": 311.08,
+        "b": 217.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Elements",
+      "bbox": {
+        "l": 245.58,
+        "t": 435.84,
+        "r": 277.27,
+        "b": 445.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Concise",
+      "bbox": {
+        "l": 222.46,
+        "t": 447.84,
+        "r": 252.34,
+        "b": 457.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book",
+      "bbox": {
+        "l": 256.05,
+        "t": 447.84,
+        "r": 274.38,
+        "b": 457.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "on the Science of the Configuration",
+      "bbox": {
+        "l": 280.86,
+        "t": 447.84,
+        "r": 409.62,
+        "b": 457.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "of the Universe",
+      "bbox": {
+        "l": 413.36,
+        "t": 459.85,
+        "r": 98.57,
+        "b": 457.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Mukhtaṣar fī ʿilm al-hayʾa",
+      "bbox": {
+        "l": 106.71,
+        "t": 462.02,
+        "r": 196.05,
+        "b": 469.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "(MS Paris, BnF, Arabe 2515, fol. 5b,10–13)",
+      "bbox": {
+        "l": 253.91,
+        "t": 543.81,
+        "r": 418.17,
+        "b": 553.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Treatises of the Bretren of Purity",
+      "bbox": {
+        "l": 222.49,
+        "t": 567.82,
+        "r": 339.7,
+        "b": 577.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Rasāʾil Ikhwān al-Ṣafāʾ",
+      "bbox": {
+        "l": 346.28,
+        "t": 570.02,
+        "r": 430.51,
+        "b": 577.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Astronomy",
+      "bbox": {
+        "l": 155.22,
+        "t": 591.8,
+        "r": 193.07,
+        "b": 601.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "asṭrunūmiyā",
+      "bbox": {
+        "l": 199.08,
+        "t": 594.02,
+        "r": 240.98,
+        "b": 603.02
+      }
+    }
+  ],
+  "8": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Instruction on the Elements of the Art of Astrology",
+      "bbox": {
+        "l": 274.84,
+        "t": 123.8,
+        "r": 117.46,
+        "b": 121.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-Tafhīm li-awāʾil",
+      "bbox": {
+        "l": 123.8,
+        "t": 126.02,
+        "r": 212.38,
+        "b": 133.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ṣināʿat al-tanjīm",
+      "bbox": {
+        "l": 215.78,
+        "t": 126.02,
+        "r": 272.61,
+        "b": 133.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Solar Year",
+      "bbox": {
+        "l": 262.23,
+        "t": 291.82,
+        "r": 326.66,
+        "b": 301.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb fī sanat al-shams",
+      "bbox": {
+        "l": 332.56,
+        "t": 291.82,
+        "r": 413.98,
+        "b": 301.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book on the Motions of the Celestial Spheres",
+      "bbox": {
+        "l": 118.87,
+        "t": 459.85,
+        "r": 278.41,
+        "b": 469.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb Ḥarakāt al-aflāk",
+      "bbox": {
+        "l": 284.33,
+        "t": 462.02,
+        "r": 365.59,
+        "b": 469.55
+      }
+    }
+  ],
+  "9": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Recension of the Almagest",
+      "bbox": {
+        "l": 316.94,
+        "t": 267.8,
+        "r": 406.38,
+        "b": 277.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Taḥrīr",
+      "bbox": {
+        "l": 411.47,
+        "t": 270.02,
+        "r": 433.45,
+        "b": 279.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Majisṭī",
+      "bbox": {
+        "l": 68.45,
+        "t": 282.02,
+        "r": 102.25,
+        "b": 291.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Great Introduction to Astrology",
+      "bbox": {
+        "l": 184.7,
+        "t": 519.8,
+        "r": 291.72,
+        "b": 529.55
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.6.3.2 Debates on astronomical problems",
+      "bbox": {
+        "l": 153.67,
+        "t": 562.24,
+        "r": 350.65,
+        "b": 573.24
+      }
+    }
+  ],
+  "10": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Almagest",
+      "bbox": {
+        "l": 336.03,
+        "t": 87.8,
+        "r": 368.12,
+        "b": 97.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Solar Year",
+      "bbox": {
+        "l": 126.25,
+        "t": 159.82,
+        "r": 189.15,
+        "b": 169.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Motion of the Eighth Sphere",
+      "bbox": {
+        "l": 322.74,
+        "t": 363.85,
+        "r": 83.04,
+        "b": 361.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Liber de motu de octaue sphere",
+      "bbox": {
+        "l": 215.95,
+        "t": 363.85,
+        "r": 327.18,
+        "b": 373.6
+      }
+    }
+  ],
+  "11": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Treatise on the Motion of the Fixed Stars",
+      "bbox": {
+        "l": 122.84,
+        "t": 63.55,
+        "r": 268.17,
+        "b": 73.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Maqāla fī ḥarakat al-iqbāl wa-l-idbār",
+      "bbox": {
+        "l": 274.11,
+        "t": 65.77,
+        "r": 404.65,
+        "b": 73.3
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.6.3.3 Is the science of the judgment of the stars a science?",
+      "bbox": {
+        "l": 114.18,
+        "t": 307.99,
+        "r": 390.15,
+        "b": 318.99
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "(Burnett 2002, 202)",
+      "bbox": {
+        "l": 340.44,
+        "t": 625.57,
+        "r": 418.16,
+        "b": 635.32
+      }
+    }
+  ],
+  "12": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "science of the judgments of the stars",
+      "bbox": {
+        "l": 260.62,
+        "t": 87.8,
+        "r": 378.93,
+        "b": 97.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Almagest",
+      "bbox": {
+        "l": 112.54,
+        "t": 99.8,
+        "r": 144.63,
+        "b": 109.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "science of the judgments of the stars",
+      "bbox": {
+        "l": 107.98,
+        "t": 135.8,
+        "r": 230.73,
+        "b": 145.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "summa",
+      "bbox": {
+        "l": 133.22,
+        "t": 183.8,
+        "r": 157.9,
+        "b": 193.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "science of the configuration [of the universe]",
+      "bbox": {
+        "l": 194.09,
+        "t": 183.8,
+        "r": 344.73,
+        "b": 193.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "science of the stars",
+      "bbox": {
+        "l": 100.37,
+        "t": 195.8,
+        "r": 164.04,
+        "b": 205.55
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.6.3.4 Methods for houses, rays and progressions",
+      "bbox": {
+        "l": 128.15,
+        "t": 238.24,
+        "r": 358.81,
+        "b": 249.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "houses",
+      "bbox": {
+        "l": 288.02,
+        "t": 291.8,
+        "r": 310.65,
+        "b": 301.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "aspects",
+      "bbox": {
+        "l": 384.42,
+        "t": 291.8,
+        "r": 407.65,
+        "b": 301.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "rays",
+      "bbox": {
+        "l": 126.98,
+        "t": 303.81,
+        "r": 140.6,
+        "b": 313.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "places",
+      "bbox": {
+        "l": 246.44,
+        "t": 303.81,
+        "r": 266.33,
+        "b": 313.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "domiciles",
+      "bbox": {
+        "l": 382.7,
+        "t": 303.81,
+        "r": 414.07,
+        "b": 313.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "aspects",
+      "bbox": {
+        "l": 354.57,
+        "t": 351.82,
+        "r": 377.81,
+        "b": 361.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "rays",
+      "bbox": {
+        "l": 98.42,
+        "t": 363.82,
+        "r": 112.04,
+        "b": 373.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "rays",
+      "bbox": {
+        "l": 336.22,
+        "t": 375.82,
+        "r": 349.84,
+        "b": 385.57
+      }
+    }
+  ],
+  "13": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.6.4 Mathematical practices",
+      "bbox": {
+        "l": 181.7,
+        "t": 65.46,
+        "r": 322.6,
+        "b": 76.46
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Elements",
+      "bbox": {
+        "l": 303.1,
+        "t": 239.05,
+        "r": 337.5,
+        "b": 248.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Data",
+      "bbox": {
+        "l": 367.55,
+        "t": 239.05,
+        "r": 388.12,
+        "b": 248.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Dedomena",
+      "bbox": {
+        "l": 390.6,
+        "t": 239.05,
+        "r": 427.98,
+        "b": 248.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Almagest",
+      "bbox": {
+        "l": 107.13,
+        "t": 251.05,
+        "r": 139.22,
+        "b": 260.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 343.88,
+        "t": 251.05,
+        "r": 346.53,
+        "b": 260.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "fl",
+      "bbox": {
+        "l": 216.08,
+        "t": 263.05,
+        "r": 220.75,
+        "b": 272.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 192.11,
+        "t": 611.07,
+        "r": 207.4,
+        "b": 620.82
+      }
+    }
+  ],
+  "14": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.6.5 Final remarks",
+      "bbox": {
+        "l": 194.47,
+        "t": 106.24,
+        "r": 292.46,
+        "b": 117.24
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Note",
+      "bbox": {
+        "l": 231.27,
+        "t": 262.24,
+        "r": 255.43,
+        "b": 273.24
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Bibliography Sources",
+      "bbox": {
+        "l": 212.26,
+        "t": 332.24,
+        "r": 261.61,
+        "b": 319.24
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Bīrūnī, Abū l-Rayḥan. tr. Wright, R. R. 1934.",
+      "bbox": {
+        "l": 59.77,
+        "t": 350.97,
+        "r": 237.41,
+        "b": 357.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-Tafhīm li-awāʾil ṣināʿat al-tanjīm",
+      "bbox": {
+        "l": 238.2,
+        "t": 350.6,
+        "r": 372.16,
+        "b": 357.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Al-asʾila wa-l-ajwiba",
+      "bbox": {
+        "l": 301.87,
+        "t": 380.6,
+        "r": 368.34,
+        "b": 387.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On Astronomia: An Arabic Critical Edition and English Translation of Epistle 3",
+      "bbox": {
+        "l": 273.47,
+        "t": 408.57,
+        "r": 171.06,
+        "b": 407.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Epistles of the Brethren of Purity",
+      "bbox": {
+        "l": 175.76,
+        "t": 408.57,
+        "r": 278.49,
+        "b": 417.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Scientific Weather Forecasting in the Middle Ages: The Writings of Al-Kindi",
+      "bbox": {
+        "l": 255.66,
+        "t": 428.57,
+        "r": 138.93,
+        "b": 427.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Al-Qabīṣī (Alcabitius): The Introduction to Astrology. Editions of the Arabic and Latin Texts and an English Translation",
+      "bbox": {
+        "l": 301.53,
+        "t": 448.57,
+        "r": 318.04,
+        "b": 447.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Bulletin d’études orientales",
+      "bbox": {
+        "l": 182.47,
+        "t": 488.57,
+        "r": 266.33,
+        "b": 497.32
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Manuscripts",
+      "bbox": {
+        "l": 213.55,
+        "t": 521.24,
+        "r": 273.39,
+        "b": 532.24
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Research literature",
+      "bbox": {
+        "l": 199.91,
+        "t": 597.24,
+        "r": 287.05,
+        "b": 608.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Recherches de Théol­ogie et Philosophie médiévales",
+      "bbox": {
+        "l": 359.35,
+        "t": 623.57,
+        "r": 164.06,
+        "b": 622.32
+      }
+    }
+  ],
+  "15": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Al-Kindi",
+      "bbox": {
+        "l": 135.58,
+        "t": 63.87,
+        "r": 164.93,
+        "b": 72.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Stanford Encyclopedia of Philosophy",
+      "bbox": {
+        "l": 243.02,
+        "t": 73.87,
+        "r": 355.91,
+        "b": 82.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Philosophical Works of al-Kindi",
+      "bbox": {
+        "l": 219.29,
+        "t": 93.87,
+        "r": 334.03,
+        "b": 102.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Republic of Arabic Letters: Islam and the European Enlightenment",
+      "bbox": {
+        "l": 143.59,
+        "t": 113.88,
+        "r": 368.69,
+        "b": 122.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Perspectives on Science",
+      "bbox": {
+        "l": 80.46,
+        "t": 143.88,
+        "r": 150.12,
+        "b": 152.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Science, Literature and Aesthetics. History of Science, Philosophy and Culture in Indian Civilization",
+      "bbox": {
+        "l": 105.53,
+        "t": 163.88,
+        "r": 415.23,
+        "b": 172.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Travellers from Europe in the Ottoman and Safavid Empires, 16th–17th Centuries. Seeking, Transforming, Discarding Knowledge",
+      "bbox": {
+        "l": 133.97,
+        "t": 193.89,
+        "r": 195.2,
+        "b": 192.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Early Science and Medicine",
+      "bbox": {
+        "l": 113.76,
+        "t": 213.87,
+        "r": 199.17,
+        "b": 222.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "EI-3",
+      "bbox": {
+        "l": 189.91,
+        "t": 223.87,
+        "r": 205.58,
+        "b": 232.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": ": Rasāʾil Ijwān al-Ṣafāʾ",
+      "bbox": {
+        "l": 216.51,
+        "t": 235.91,
+        "r": 286.71,
+        "b": 242.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Rutbat al-ḥakīm y Gāyat al-ḥakīm",
+      "bbox": {
+        "l": 291.26,
+        "t": 235.91,
+        "r": 397.63,
+        "b": 242.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Picatrix",
+      "bbox": {
+        "l": 402.55,
+        "t": 233.87,
+        "r": 425.84,
+        "b": 242.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Qanṭara",
+      "bbox": {
+        "l": 80.46,
+        "t": 245.91,
+        "r": 113.9,
+        "b": 253.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Suhayl",
+      "bbox": {
+        "l": 275.68,
+        "t": 253.87,
+        "r": 297.56,
+        "b": 262.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 225.16,
+        "t": 263.87,
+        "r": 238.44,
+        "b": 272.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Al-Qanṭara",
+      "bbox": {
+        "l": 341.89,
+        "t": 285.91,
+        "r": 376.08,
+        "b": 293.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Archives internationales d’histoire des sciences",
+      "bbox": {
+        "l": 80.45,
+        "t": 303.87,
+        "r": 221.37,
+        "b": 312.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "EI-3",
+      "bbox": {
+        "l": 194.09,
+        "t": 313.87,
+        "r": 209.76,
+        "b": 322.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Suhayl",
+      "bbox": {
+        "l": 182.26,
+        "t": 333.88,
+        "r": 204.14,
+        "b": 342.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Suhayl",
+      "bbox": {
+        "l": 259.64,
+        "t": 343.87,
+        "r": 281.52,
+        "b": 352.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Ordering the Heavens. Roman Astronomy and Cosmology in the Carolingian Renaissance",
+      "bbox": {
+        "l": 148.15,
+        "t": 353.87,
+        "r": 435.84,
+        "b": 362.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Historia Mathe­matica",
+      "bbox": {
+        "l": 382.19,
+        "t": 383.88,
+        "r": 100.23,
+        "b": 382.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Ptolemy’s Philosophy. Mathematics as a Way of Life",
+      "bbox": {
+        "l": 118.01,
+        "t": 393.88,
+        "r": 281.17,
+        "b": 402.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Isis",
+      "bbox": {
+        "l": 330.06,
+        "t": 403.88,
+        "r": 340.27,
+        "b": 412.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Centaurus",
+      "bbox": {
+        "l": 106.63,
+        "t": 423.87,
+        "r": 139.17,
+        "b": 432.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Centaurus",
+      "bbox": {
+        "l": 198.72,
+        "t": 443.87,
+        "r": 231.26,
+        "b": 452.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "tasyīr",
+      "bbox": {
+        "l": 355.22,
+        "t": 453.87,
+        "r": 371.99,
+        "b": 462.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "From Māshāʾallāh to Kepler: Theory and Practice in Medieval and Renaissance Astrology",
+      "bbox": {
+        "l": 181.84,
+        "t": 473.87,
+        "r": 109.73,
+        "b": 472.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Astronomy and Astrology in the Medieval Islamic World",
+      "bbox": {
+        "l": 252.18,
+        "t": 493.87,
+        "r": 431.16,
+        "b": 502.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Al-Abḥāth",
+      "bbox": {
+        "l": 389.66,
+        "t": 515.91,
+        "r": 419.62,
+        "b": 523.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 190.59,
+        "t": 523.87,
+        "r": 204.24,
+        "b": 532.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Studies in the Islamic Exact Sciences",
+      "bbox": {
+        "l": 231.56,
+        "t": 523.87,
+        "r": 347.34,
+        "b": 532.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Aristotle’s Meteorology and Its Reception in the Arab World: With an Edition and Translation of Ibn Suwār’s Treatise on Meteorological Phenomena and Ibn Bājja’s Commentary on the Meteorology",
+      "bbox": {
+        "l": 131.16,
+        "t": 553.88,
+        "r": 384.32,
+        "b": 552.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Intellectual History in the Islamicate World",
+      "bbox": {
+        "l": 156.05,
+        "t": 573.88,
+        "r": 290.15,
+        "b": 582.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arabic Sciences and Philosophy",
+      "bbox": {
+        "l": 336.92,
+        "t": 583.87,
+        "r": 435.87,
+        "b": 592.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Les doctrines de la science dans l’antiquité à l’âge classique",
+      "bbox": {
+        "l": 218.97,
+        "t": 613.87,
+        "r": 400.87,
+        "b": 622.62
+      }
+    }
+  ],
+  "16": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Thābit ibn Qurra. Science and Philosophy in Ninth-Century Baghdad",
+      "bbox": {
+        "l": 330.09,
+        "t": 73.87,
+        "r": 195.13,
+        "b": 72.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Cambridge History of Science",
+      "bbox": {
+        "l": 374.76,
+        "t": 93.87,
+        "r": 127.19,
+        "b": 92.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Medieval Science",
+      "bbox": {
+        "l": 181.76,
+        "t": 93.87,
+        "r": 233.98,
+        "b": 102.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Archive for History of Exact Sciences",
+      "bbox": {
+        "l": 239.86,
+        "t": 103.88,
+        "r": 354.58,
+        "b": 112.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Proceedings of the American Philosophical Society",
+      "bbox": {
+        "l": 71.77,
+        "t": 123.87,
+        "r": 225.74,
+        "b": 132.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 297.83,
+        "t": 133.87,
+        "r": 311.1,
+        "b": 142.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 310.12,
+        "t": 143.87,
+        "r": 323.39,
+        "b": 152.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "EI-3",
+      "bbox": {
+        "l": 180.99,
+        "t": 193.88,
+        "r": 196.66,
+        "b": 202.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Physique",
+      "bbox": {
+        "l": 200.61,
+        "t": 203.88,
+        "r": 231.1,
+        "b": 212.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Thābit ibn Qurra. Science and Philosophy in Ninth-Century Baghdad",
+      "bbox": {
+        "l": 71.77,
+        "t": 213.88,
+        "r": 293.3,
+        "b": 222.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The ‘Arabick’ Interest of the Natural Philosophers in Seventeenth Century England",
+      "bbox": {
+        "l": 152.35,
+        "t": 223.88,
+        "r": 422.46,
+        "b": 232.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Dictionary of the Middle Ages",
+      "bbox": {
+        "l": 300.13,
+        "t": 243.88,
+        "r": 394.0,
+        "b": 252.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Islamic Astronomy and Medieval Spain",
+      "bbox": {
+        "l": 107.2,
+        "t": 273.89,
+        "r": 230.22,
+        "b": 282.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Ancient Meteorology",
+      "bbox": {
+        "l": 112.8,
+        "t": 283.89,
+        "r": 176.78,
+        "b": 292.64
+      }
+    }
+  ]
+}

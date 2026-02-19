@@ -1,0 +1,684 @@
+{
+  "key": "PRZTK6C7",
+  "title": "Cosmology and Cosmic Order in Islamic Astronomy",
+  "refs": [
+    {
+      "id": "91",
+      "raw": "Duran, 'Nefsuʾl-emr,' 103.",
+      "authors": [
+        "Duran"
+      ],
+      "year": null,
+      "title": "Nefsuʾl-emr",
+      "venue": null,
+      "pages": "103"
+    },
+    {
+      "id": "92",
+      "raw": "Ibid., 104.",
+      "authors": [
+        "Duran"
+      ],
+      "year": null,
+      "title": "Nefsuʾl-emr",
+      "venue": null,
+      "pages": "104"
+    },
+    {
+      "id": "93",
+      "raw": "Ibid., 105.",
+      "authors": [
+        "Duran"
+      ],
+      "year": null,
+      "title": "Nefsuʾl-emr",
+      "venue": null,
+      "pages": "105"
+    },
+    {
+      "id": "94",
+      "raw": "Fazlıoǧlu, 'Between Reality and Mentality,' 11.",
+      "authors": [
+        "Fazlıoǧlu"
+      ],
+      "year": null,
+      "title": "Between Reality and Mentality",
+      "venue": null,
+      "pages": "11"
+    },
+    {
+      "id": "95",
+      "raw": "Shīrāzī, Tuḥfa , 52b.",
+      "authors": [
+        "Shīrāzī"
+      ],
+      "year": null,
+      "title": "Tuḥfa",
+      "venue": null,
+      "pages": "52b"
+    },
+    {
+      "id": "96",
+      "raw": "Hasan, 'Foundations of Science,' 133.",
+      "authors": [
+        "Hasan"
+      ],
+      "year": null,
+      "title": "Foundations of Science",
+      "venue": null,
+      "pages": "133"
+    },
+    {
+      "id": "97",
+      "raw": "Fazlıoǧlu, 'Between Reality and Mentality,' 21. This passage from Jurjānī's commentary was also cited and translated in Abdelhamid I. Sabra's foundational 'Science and Philosophy in Medieval Islamic Theology: The Evidence of the Fourteenth Century,' Zeitschrift für Geschichte der arabisch-islamischen Wissenschaften 9 (1994), 1-42, 39.",
+      "authors": [
+        "Fazlıoǧlu",
+        "Sabra, Abdelhamid I."
+      ],
+      "year": "1994",
+      "title": "Between Reality and Mentality; Science and Philosophy in Medieval Islamic Theology: The Evidence of the Fourteenth Century",
+      "venue": "Zeitschrift für Geschichte der arabisch-islamischen Wissenschaften",
+      "pages": "21, 1-42"
+    },
+    {
+      "id": "98",
+      "raw": "Nīsābūrī (Fatih MS 3397, 37b) wrote: 'And by my life, achieving truth in eliciting the reasons that necessitate the observed variations of the planets, with their motions being themselves uniform, is something of majestic import and a true complement for the mathematical perspective of philosophy.",
+      "authors": [
+        "Nīsābūrī"
+      ],
+      "year": null,
+      "title": "Tawḍīḥ al-Tadhkira",
+      "venue": "Fatih MS 3397",
+      "pages": "37b"
+    },
+    {
+      "id": "99",
+      "raw": "Niẓām al-Dīn al-Nīsābūrī, Sharḥ Taḥrīr al-Majisṭī (Tunis MS 3663, 92b). On that passage, see Robert Morrison, Islam and Science: The Intellectual Career of Niẓām al-Dīn al-Nīsābūrī (Abingdon, 2007), 30.",
+      "authors": [
+        "Niẓām al-Dīn al-Nīsābūrī",
+        "Morrison, Robert"
+      ],
+      "year": "2007",
+      "title": "Sharḥ Taḥrīr al-Majisṭī; Islam and Science: The Intellectual Career of Niẓām al-Dīn al-Nīsābūrī",
+      "venue": "Tunis MS 3663; Abingdon",
+      "pages": "92b, 30"
+    },
+    {
+      "id": "100",
+      "raw": "Shīrāzī, Tuḥfa , 33a.",
+      "authors": [
+        "Shīrāzī"
+      ],
+      "year": null,
+      "title": "Tuḥfa",
+      "venue": null,
+      "pages": "33a"
+    },
+    {
+      "id": "101",
+      "raw": "Ibid. , 52a.",
+      "authors": [
+        "Shīrāzī"
+      ],
+      "year": null,
+      "title": "Tuḥfa",
+      "venue": null,
+      "pages": "52a"
+    },
+    {
+      "id": "102",
+      "raw": "Shīrāzī noted how things emerged through contemplation to the clever and insightful person ( yalūḥ bi-l-ta'ammul li-l-fāṭin ). See ibid. , 56b-57a.",
+      "authors": [
+        "Shīrāzī"
+      ],
+      "year": null,
+      "title": "Tuḥfa",
+      "venue": null,
+      "pages": "56b-57a"
+    }
+  ],
+  "citations": [
+    {
+      "page": 1,
+      "marker": "1",
+      "context": "outlooks implicit in certain social structures. Survey articles capture this range in various ways."
+    },
+    {
+      "page": 2,
+      "marker": "2",
+      "context": "We read in the Encyclopedia of Religion that 'Cosmology refers to more consciously entertained images, doctrines, and scientific views concerning the universe.'"
+    },
+    {
+      "page": 2,
+      "marker": "3",
+      "context": "Tjitze de Boer clarified in the first part of the article on ʿālam (world), which implicated definitions of the cosmos, that he was not addressing 'the scientific development'"
+    },
+    {
+      "page": 2,
+      "marker": "4",
+      "context": "Y. Tzvi Langermann, in his 1997 survey article 'Arabic Cosmology,' defined cosmology as 'that enterprise which describes what the universe looks like.'"
+    },
+    {
+      "page": 2,
+      "marker": "5",
+      "context": "Scholars besides Langermann have used 'cosmology' as a translation for the general field of ʿilm al-hayʾa."
+    },
+    {
+      "page": 3,
+      "marker": "6",
+      "context": "distinguished between cosmology and ʿilm al-hayʾa and then blurred that distinction."
+    },
+    {
+      "page": 3,
+      "marker": "7",
+      "context": "Recently, Damien Janos has taken a more synthetic approach and has argued, in the case of Fārābī, that astronomy was a discipline"
+    },
+    {
+      "page": 3,
+      "marker": "8",
+      "context": "George Saliba has written that '[t]he best way to translate ʿilm al-hayʾa into English is to think of the term 'cosmography'"
+    },
+    {
+      "page": 3,
+      "marker": "9",
+      "context": "Ragep, in his 1982 dissertation, had also described part of Ṭūsī's enterprise in the Tadhkira as cosmography."
+    },
+    {
+      "page": 3,
+      "marker": "10",
+      "context": "The genre of hayʾa generally excluded 'why' questions, preferring to confine itself to descriptions of the external aspects"
+    },
+    {
+      "page": 4,
+      "marker": "11",
+      "context": "As earlier scholarship has suggested, ʿUrḍī's position could have developed out of a conversation or debate with kalām."
+    },
+    {
+      "page": 5,
+      "marker": "1",
+      "context": "nafs al-amr (the fact of the matter) became relevant to discussions of cosmic order."
+    },
+    {
+      "page": 5,
+      "marker": "12",
+      "context": "even though the world kósmos was probably not in the title of Alexander of Aphrodisias' Greek original"
+    },
+    {
+      "page": 5,
+      "marker": "13",
+      "context": "Aristotle's De Caelo had much to say about the cosmos, but was also concerned with more"
+    },
+    {
+      "page": 6,
+      "marker": "14",
+      "context": "To survey the ways in which kósmos was used in classical Greek literature, I consulted Liddell, Scott and"
+    },
+    {
+      "page": 6,
+      "marker": "15",
+      "context": "The first definition given is 'order', with examples of 'each of them sat down at the oarlocks in order,'"
+    },
+    {
+      "page": 6,
+      "marker": "16",
+      "context": "and '[t]he constitution of quartans is agreeable to the same order.'"
+    },
+    {
+      "page": 6,
+      "marker": "17",
+      "context": "This order could also extend to politics: 'Deioces was first to establish the rule that no one"
+    },
+    {
+      "page": 6,
+      "marker": "18",
+      "context": "In Aristotle's Politics, kósmos referred to the rulers: 'the overseers are five in number and the order keepers"
+    },
+    {
+      "page": 6,
+      "marker": "19",
+      "context": "kósmos referred to world order and the universe in the Timaeus: 'In virtue of this reasoning, when he framed"
+    },
+    {
+      "page": 6,
+      "marker": "20",
+      "context": "In the Planetary Hypotheses, Ptolemy wrote: kósmou dé gínetai mía peristrophḗ"
+    },
+    {
+      "page": 6,
+      "marker": "21",
+      "context": "The Arabic was: wa-l-ʿālam yadūr dawr an wāḥid an, meaning that the cosmos, in the sense of the conglomeration"
+    },
+    {
+      "page": 7,
+      "marker": "22",
+      "context": "Of less significance for this article, kósmos also denoted ornamentation,"
+    },
+    {
+      "page": 7,
+      "marker": "23",
+      "context": "and by metaphorical extension, honor and credit as well as the words for six and ten"
+    },
+    {
+      "page": 8,
+      "marker": "24",
+      "context": "finer than the house of gold witnessed in the lands of India."
+    },
+    {
+      "page": 8,
+      "marker": "25",
+      "context": "Another Arabic translation, found in a different MS of the same text, was Risālat Arisṭūṭālīs"
+    },
+    {
+      "page": 8,
+      "marker": "26",
+      "context": "In Thābit b. Qurra's translation of Nicomachus' Arithmetic, kósmos was rendered as niẓām"
+    },
+    {
+      "page": 8,
+      "marker": "27",
+      "context": "In the Arabic Compendium of the 'Timaeus', the world was created with order"
+    },
+    {
+      "page": 8,
+      "marker": "28",
+      "context": "Pythagoras may have been the first to propose a cosmos ordered according to mathematical principles"
+    },
+    {
+      "page": 8,
+      "marker": "29",
+      "context": "ensouled the cosmos and created it as lasting as is possible."
+    },
+    {
+      "page": 9,
+      "marker": "30",
+      "context": "At the beginning of the Planetary Hypotheses, Ptolemy used táxis to mean 'order'"
+    },
+    {
+      "page": 9,
+      "marker": "31",
+      "context": "the reason for the creation of the world is God's, may he be blessed and exalted, generosity"
+    },
+    {
+      "page": 9,
+      "marker": "32",
+      "context": "He created the world from fire and earth"
+    },
+    {
+      "page": 9,
+      "marker": "33",
+      "context": "when he mixed the first mixture in which he mixed the soul of the world"
+    },
+    {
+      "page": 9,
+      "marker": "34",
+      "context": "niẓām occurs as a translation not only for the Greek hḗ táxis but also for hē harmoníā"
+    },
+    {
+      "page": 9,
+      "marker": "35",
+      "context": "The first page of Aristotle's Poetics uses harmoníā, and it is translated as naẓm"
+    },
+    {
+      "page": 10,
+      "marker": "36",
+      "context": "Lisān al-ʿarab and al-Qāmūs al-muḥīṭ defined ʿālam as 'creation, all of it'"
+    },
+    {
+      "page": 10,
+      "marker": "37",
+      "context": "the translation of kósmos as khalq motivated the Islamic cosmologies"
+    },
+    {
+      "page": 10,
+      "marker": "38",
+      "context": "The text reads: wa-thalātha kawākib min al-jawzāʾ"
+    },
+    {
+      "page": 11,
+      "marker": "39",
+      "context": "the ear. The entry in Lisān al-ʿUnāʾ is similar, though it adds"
+    },
+    {
+      "page": 11,
+      "marker": "40",
+      "context": "nor rectitude. It remains according to a single niẓām, that is: a custom."
+    },
+    {
+      "page": 11,
+      "marker": "41",
+      "context": "particularly the extent to which one could be certain of one's theories."
+    },
+    {
+      "page": 11,
+      "marker": "42",
+      "context": "why the most perfect motion was a circular (dawriyya) motion, and of all"
+    },
+    {
+      "page": 11,
+      "marker": "43",
+      "context": "in the Planetary Hypotheses, that many of the orbs could be replaced by"
+    },
+    {
+      "page": 12,
+      "marker": "44",
+      "context": "moving about their centers with uniform, continual, and continuous motions in an order"
+    },
+    {
+      "page": 12,
+      "marker": "45",
+      "context": "no shortcomings or deficiencies.' ʿUrḍī's premise that the goal of hayʾa was"
+    },
+    {
+      "page": 12,
+      "marker": "46",
+      "context": "which this winding [iltifāf] can be accomplished and it can proceed according to order"
+    },
+    {
+      "page": 13,
+      "marker": "47",
+      "context": "Although Ptolemy's models did explain the limited observable motions, ʿUrḍī claimed that"
+    },
+    {
+      "page": 13,
+      "marker": "48",
+      "context": "according to the depiction suitable for the heavenly nature (al-ṭabīʿa al-samāwiyya)."
+    },
+    {
+      "page": 13,
+      "marker": "49",
+      "context": "drawing on the conclusions of philosophy: for instance, the idea that the heavens"
+    },
+    {
+      "page": 13,
+      "marker": "50",
+      "context": "On the earth's sphericity, see Ibid., 38. On the earth's being stationary"
+    },
+    {
+      "page": 13,
+      "marker": "51",
+      "context": "some of these principles (uṣūl) were taken over from other areas, while others"
+    },
+    {
+      "page": 13,
+      "marker": "52",
+      "context": "Conformity to observations and to the adopted principles was evidence for a model's"
+    },
+    {
+      "page": 13,
+      "marker": "53",
+      "context": "The simplest model that met those criteria would be the best."
+    },
+    {
+      "page": 14,
+      "marker": "54",
+      "context": "Cf. ʿUrḍī's comments about Ptolemy in Ibid., 228."
+    },
+    {
+      "page": 15,
+      "marker": "55",
+      "context": "them or disprove them, especially if they came from one whose erudition is famous."
+    },
+    {
+      "page": 15,
+      "marker": "56",
+      "context": "turned out to be a crucial source for Quṭb al-Dīn al-Shīrāzī's (d. 1311) al-Tuḥfa al-shāhiyya"
+    },
+    {
+      "page": 15,
+      "marker": "57",
+      "context": "Shīrāzī was more confident that his models were the right models than Urḍī had been"
+    },
+    {
+      "page": 15,
+      "marker": "58",
+      "context": "Shīrāzī's ideas about the relationship between astronomy and other fields."
+    },
+    {
+      "page": 16,
+      "marker": "59",
+      "context": "he did not always mean a necessarily ordered cosmos."
+    },
+    {
+      "page": 16,
+      "marker": "60",
+      "context": "and not in a state of turmoil ( wa-mā iḍṭarabat )."
+    },
+    {
+      "page": 16,
+      "marker": "61",
+      "context": "the matter of the moon has become ordered."
+    },
+    {
+      "page": 16,
+      "marker": "62",
+      "context": "suggested that the ordered cosmos possessed significance for humans' lives."
+    },
+    {
+      "page": 16,
+      "marker": "63",
+      "context": "The Moon is like a vizier and a successor to the king."
+    },
+    {
+      "page": 16,
+      "marker": "64",
+      "context": "just as earthly kings are caliphs of God on His Earth."
+    },
+    {
+      "page": 16,
+      "marker": "65",
+      "context": "an important goal of the Tuḥfa was predictive and retrodictive accuracy."
+    },
+    {
+      "page": 17,
+      "marker": "66",
+      "context": "discussions of cosmic order."
+    },
+    {
+      "page": 17,
+      "marker": "67",
+      "context": "uniformity in the fact of the matter ( fī nafs al-amr )"
+    },
+    {
+      "page": 17,
+      "marker": "68",
+      "context": "just as walking, stopping, and returning arise from one who is confused."
+    },
+    {
+      "page": 17,
+      "marker": "69",
+      "context": "without necessarily existing externally."
+    },
+    {
+      "page": 18,
+      "marker": "70",
+      "context": "Shīrāzī did not provide his own definition."
+    },
+    {
+      "page": 18,
+      "marker": "71",
+      "context": "whether or not the subject of that statement existed externally."
+    },
+    {
+      "page": 19,
+      "marker": "72",
+      "context": "or, more correctly, without these constraints. The configurations (i.e., the hypotheses and models)"
+    },
+    {
+      "page": 19,
+      "marker": "73",
+      "context": "the causes of the motions, which would include the configurations of orbs that caused the variations in the motions."
+    },
+    {
+      "page": 19,
+      "marker": "74",
+      "context": "the observed motions of the planets. Again, Dallal observed"
+    },
+    {
+      "page": 19,
+      "marker": "75",
+      "context": "together with their configurations. The implicit disagreement with Ṭūsī"
+    },
+    {
+      "page": 19,
+      "marker": "76",
+      "context": "uniform circular motion as part of the problem that practitioners of astronomy were trying to solve."
+    },
+    {
+      "page": 20,
+      "marker": "77",
+      "context": "overall practice of science was no longer bound to their pursuit."
+    },
+    {
+      "page": 20,
+      "marker": "78",
+      "context": "uniformly transmitted from one orb to the other. Dallal observed"
+    },
+    {
+      "page": 20,
+      "marker": "79",
+      "context": "sciences, and at another time did not. Ṣadr al-Sharī'a's"
+    },
+    {
+      "page": 20,
+      "marker": "80",
+      "context": "reliance on the physics of falsafa. 5 Nafs al-Amr"
+    },
+    {
+      "page": 21,
+      "marker": "81",
+      "context": "relationship (al-nasab) in the fact of the matter"
+    },
+    {
+      "page": 21,
+      "marker": "82",
+      "context": "its 'why' in itself. Here Ibn Sīnā used the phrase"
+    },
+    {
+      "page": 22,
+      "marker": "83",
+      "context": "what is in the fact of the matter (bi-mā fī nafs al-amr)."
+    },
+    {
+      "page": 22,
+      "marker": "84",
+      "context": "the preserved tablet (al-lawḥ al-maḥfūẓ), and sometimes as the clear book"
+    },
+    {
+      "page": 22,
+      "marker": "85",
+      "context": "and dry. And that is what we wanted. God grants success and assists."
+    },
+    {
+      "page": 23,
+      "marker": "86",
+      "context": "For Ṭūsī's use of the term 'active intellect' to describe nafs al-amr, see Fazlıoǧlu"
+    },
+    {
+      "page": 23,
+      "marker": "87",
+      "context": "As Remi Brague (Aristote, 30) noted in the very different context of Aristotle's cosmology"
+    },
+    {
+      "page": 23,
+      "marker": "88",
+      "content": "Nīsābūrī, Tawḍīḥ, Fatih MS 3397, 37v and Al-ʿAllāma al-Ḥillī (d. 1325), Jawhar al-naḍīd fī sharḥ Manṭiq al-tajrīd"
+    },
+    {
+      "page": 23,
+      "marker": "89",
+      "context": "Fazlıoǧlu, 'Between Reality and Mentality,' 8"
+    },
+    {
+      "page": 23,
+      "marker": "90",
+      "context": "For more on Jurjānī's understanding of nafs al-amr, see Moiz Hasan, 'Foundations of Science"
+    },
+    {
+      "page": 24,
+      "marker": "91",
+      "context": "Duran, 'Nefsuʾl-emr,' 103"
+    },
+    {
+      "page": 24,
+      "marker": "92",
+      "context": "Ibid., 104"
+    },
+    {
+      "page": 24,
+      "marker": "93",
+      "context": "Ibid., 105"
+    },
+    {
+      "page": 24,
+      "marker": "94",
+      "context": "Fazlıoǧlu, 'Between Reality and Mentality,' 11. For Fazlıoǧlu, these treatises argued"
+    },
+    {
+      "page": 25,
+      "marker": "95",
+      "context": "Shīrāzī, Tuḥfa, 52b. It is possible, though, that Shīrāzī was not talking"
+    },
+    {
+      "page": 25,
+      "marker": "96",
+      "context": "Hasan, 'Foundations of Science,' 133. See also 260 for Jurjānī's position"
+    },
+    {
+      "page": 25,
+      "marker": "97",
+      "context": "Fazlıoǧlu, 'Between Reality and Mentality,' 21. This passage from Jurjānī's commentary was also cited and translated in Abdelhamid I. Sabra's foundational 'Science and Philosophy in Medieval Islamic Theology'"
+    },
+    {
+      "page": 26,
+      "marker": "98",
+      "context": "In Tawḍīḥ al-Tadhkira, Nīsābūrī (Fatih MS 3397, 37b) wrote"
+    },
+    {
+      "page": 26,
+      "marker": "99",
+      "context": "Occasionally, in hayʾa texts, the author did remark on how hayʾa was a means for understanding. See Niẓām al-Dīn al-Nīsābūrī, Sharḥ Taḥrīr al-Majisṭī"
+    },
+    {
+      "page": 26,
+      "marker": "100",
+      "context": "Shīrāzī, Tuḥfa, 33a"
+    },
+    {
+      "page": 26,
+      "marker": "101",
+      "context": "Ibid., 52a"
+    },
+    {
+      "page": 26,
+      "marker": "102",
+      "context": "Shīrāzī noted how things emerged through contemplation to the clever person. See ibid., 56b-57a"
+    },
+    {
+      "page": 27,
+      "marker": "6",
+      "context": "This fundamental order was due to God's role as creator."
+    },
+    {
+      "page": 27,
+      "marker": "7",
+      "context": "I hope to explore discussions of an ordered universe in ʿilm al-hayʾa texts from the fifteenth and early sixteenth centuries in a subsequent publication."
+    }
+  ],
+  "summary": {
+    "abstract": "This article examines how Islamic astronomy of the thirteenth and fourteenth centuries functioned as cosmology by analyzing Arabic translations of Greek texts and debates among Islamic astronomers about cosmic order. Morrison distinguishes between cosmography (describing external characteristics of celestial bodies) and cosmology (discussing underlying order in the universe), arguing that while most of ʿilm al-hayʾa was cosmographic, certain authors—particularly Muʾayyad al-Dīn al-ʿUrḍī and Quṭb al-Dīn al-Shīrāzī—engaged cosmological questions. The article traces how the semantic range of Greek kósmos (order, universe) was preserved in Arabic translations as ʿālam and niẓām, and shows how the technical term nafs al-amr (the fact of the matter) became central to discussing cosmic order in later astronomical works.",
+    "contents": [
+      {
+        "heading": "Introduction: The Greek Semantic Background and the Semantic Range of the Arabic Translations",
+        "page": 5
+      },
+      {
+        "heading": "Cosmic Order in Muʾayyad al-Dīn al-ʿUrḍī's Astronomy",
+        "page": 11
+      },
+      {
+        "heading": "Quṭb al-Dīn al-Shīrāzī's Different Understanding of Cosmic Order",
+        "page": 15
+      }
+    ]
+  }
+}

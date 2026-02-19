@@ -1,0 +1,16 @@
+{
+  "key": "JXWQALKB",
+  "title": "Aryabhatiya of Aryabhata: 3 volumes",
+  "authors": "Aryabhata I",
+  "year": "1976",
+  "language": "en",
+  "doc_type": "embedded",
+  "page_count": 251,
+  "extracted_at": "2026-02-19T10:39:46",
+  "extraction_method": "05b_extract_robust",
+  "chars_per_page": 0.0,
+  "pua_ratio": 0.0,
+  "replacement_ratio": 0.0,
+  "empty_pages": 251,
+  "text_quality": "garbled"
+}

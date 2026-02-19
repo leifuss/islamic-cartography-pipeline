@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OCR Comparison — PRZTK6C7</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1300px;margin:2em auto;padding:0 1em;color:#222}
+h1{border-bottom:2px solid #333;padding-bottom:.4em}
+.summary{background:#f5f5f5;border-radius:6px;padding:1em 1.5em;margin:1.5em 0}
+.summary dt{font-weight:600;color:#555;float:left;width:160px}
+.summary dd{margin-left:170px;margin-bottom:.4em}
+.scoreboard{display:flex;gap:1em;flex-wrap:wrap;margin:1.5em 0}
+.scorecard{border:1px solid #ddd;border-radius:6px;padding:.8em 1.2em;min-width:160px;text-align:center}
+.scorecard h3{margin:0 0 .3em;font-size:.9em;color:#555}
+.scorecard .avg{font-size:1.6em;font-weight:700}
+.good-bg{background:#d4edda}.ok-bg{background:#fff3cd}.poor-bg{background:#f8d7da}
+.page-block{margin:2em 0;border:1px solid #ddd;border-radius:6px;overflow:hidden}
+.page-block h2{margin:0;background:#f0f0f0;padding:.6em 1em;font-size:1.1em;border-bottom:1px solid #ddd}
+.meta{font-size:.85em;color:#666;padding:.4em 1em;background:#fafafa;border-bottom:1px solid #eee}
+.engine-tabs{display:flex;gap:0;background:#f0f0f0;padding:.5em 1em 0;border-bottom:1px solid #ccc}
+.engine-tab{padding:.4em .9em;cursor:pointer;border:1px solid transparent;
+  border-radius:4px 4px 0 0;margin-right:.3em;font-size:.85em;font-weight:500;background:#e8e8e8}
+.engine-tab.active{background:#fff;border-color:#ccc;border-bottom-color:#fff;
+  margin-bottom:-1px;position:relative}
+.engine-panel{display:none}.engine-panel.active{display:block}
+table.diff{width:100%;border-collapse:collapse;font-size:.82em;font-family:monospace}
+table.diff th{background:#e8e8e8;padding:.35em .6em;text-align:left;border-bottom:1px solid #ccc}
+table.diff td{padding:.25em .6em;vertical-align:top;border-bottom:1px solid #eee;
+  width:50%;word-break:break-word;white-space:pre-wrap}
+table.diff tr.eq td{color:#999}
+td.del{background:#ffeef0;color:#c0392b}
+td.ins{background:#e6ffed;color:#196127}
+.badge{display:inline-block;font-size:.75em;padding:.2em .55em;border-radius:12px;
+  font-weight:600;margin-left:.4em}
+.good{background:#d4edda;color:#155724}
+.ok{background:#fff3cd;color:#856404}
+.poor{background:#f8d7da;color:#721c24}
+label{font-size:.85em;color:#666;cursor:pointer}
+</style>
+<script>
+function switchTab(pageId, engine) {
+  const block = document.getElementById(pageId);
+  block.querySelectorAll('.engine-tab').forEach(
+    t => t.classList.toggle('active', t.dataset.eng === engine));
+  block.querySelectorAll('.engine-panel').forEach(
+    p => p.classList.toggle('active', p.dataset.eng === engine));
+}
+function toggleEqual(cb) {
+  cb.closest('.page-block').querySelectorAll('tr.eq').forEach(
+    r => r.style.display = cb.checked ? 'none' : '');
+}
+document.addEventListener('DOMContentLoaded', () =>
+  document.querySelectorAll('tr.eq').forEach(r => r.style.display = 'none'));
+</script>
+</head>
+<body>
+<h1>OCR Engine Comparison — PRZTK6C7</h1>
+<div class="summary"><dl>
+  <dt>Document</dt><dd>PRZTK6C7</dd>
+  <dt>Pages</dt><dd>1, 2, 3, 4, 5</dd>
+  <dt>Engines</dt><dd>Tesseract-eng, Google Vision, EasyOCR-en</dd>
+  <dt>Tesseract</dt><dd>Tesseract raw, OEM 1, PSM 3</dd>
+  <dt>Reference</dt><dd>Docling embedded-text extraction (word-F1 vs this)</dd>
+</dl></div>
+<div class="scoreboard"><div class='scorecard good-bg'><h3>Tesseract-eng</h3><div class='avg'>86.4%</div><div style='font-size:.75em;color:#666'>avg word-F1</div></div><div class='scorecard good-bg'><h3>Google Vision</h3><div class='avg'>89.5%</div><div style='font-size:.75em;color:#666'>avg word-F1</div></div><div class='scorecard good-bg'><h3>EasyOCR-en</h3><div class='avg'>85.7%</div><div style='font-size:.75em;color:#666'>avg word-F1</div></div></div>
+
+        <section class="page-block" id="page-1">
+          <h2>Page 1 <span class='badge good'>Tesseract-eng: 84.9%</span><span class='badge good'>Google Vision: 88.5%</span><span class='badge good'>EasyOCR-en: 81.7%</span></h2>
+          <div class="meta">
+            Docling words: 149
+            &nbsp;·&nbsp;
+            <label><input type="checkbox" onchange="toggleEqual(this)" checked>
+            hide matching rows</label>
+          </div>
+          <div class="engine-tabs"><div class='engine-tab active' data-eng='Tesseract-eng' onclick='switchTab("page-1","Tesseract-eng")'>Tesseract-eng</div><div class='engine-tab' data-eng='Google Vision' onclick='switchTab("page-1","Google Vision")'>Google Vision</div><div class='engine-tab' data-eng='EasyOCR-en' onclick='switchTab("page-1","EasyOCR-en")'>EasyOCR-en</div></div>
+          <div class='engine-panel active' data-eng='Tesseract-eng'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Tesseract-eng</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>EARLY SCIENCE AND MEDICINE 24 (2019) 340-366 Barly Ge Science and Medicine ‘ewes</td></tr>
+<tr class='eq'><td>Cosmology and Cosmic Order in Islamic Astronomy Robert G.</td><td>Cosmology and Cosmic Order in Islamic Astronomy Robert G.</td></tr>
+<tr class='chg'><td class='del'>Morrison *</td><td class='ins'>Morrison*</td></tr>
+<tr class='eq'><td>Bowdoin College rgmorris@bowdoin.edu Abstract</td><td>Bowdoin College rgmorris@bowdoin.edu Abstract</td></tr>
+<tr class='chg'><td class='del'>This article analyzes how the astronomy of Islamic societies in</td><td></td></tr>
+<tr class='eq'><td>the thirteenth and</td><td>the thirteenth and</td></tr>
+<tr class='chg'><td class='del'>fourteenth</td><td class='ins'>four- teenth</td></tr>
+<tr class='eq'><td>centuries can be understood as cosmological. By studying the Arabic</td><td>centuries can be understood as cosmological. By studying the Arabic</td></tr>
+<tr class='chg'><td class='del'>translations ofthe</td><td class='ins'>transla- tions of the</td></tr>
+<tr class='eq'><td>relevant Greek terms and then the definitions</td><td>relevant Greek terms and then the definitions</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>medieval Arabic dictionaries, the article finds that Arabic terms did not communicate order in the way implied by the Greek</td><td>medieval Arabic dictionaries, the article finds that Arabic terms did not communicate order in the way implied by the Greek</td></tr>
+<tr class='eq'><td>ho</td><td>ho</td></tr>
+<tr class='chg'><td class='del'>kósmos (/uni1F41 κόσμος;</td><td class='ins'>késmos (8 xéoy0s;</td></tr>
+<tr class='eq'><td>the cosmos). Yet, astronomers of the period sometimes discussed cosmic order in addition to describing the cosmos. This article finds,</td><td>the cosmos). Yet, astronomers of the period sometimes discussed cosmic order in addition to describing the cosmos. This article finds,</td></tr>
+<tr class='eq'><td>too, that a new technical term, nafs al-amr (the fact of the matter) became part of later discussions of cosmic</td><td>too, that a new technical term, nafs al-amr (the fact of the matter) became part of later discussions of cosmic</td></tr>
+<tr class='eq'><td>order.</td><td>order.</td></tr>
+<tr class='chg'><td></td><td class='ins'>‘This article analyzes how the astronomy of Islami</td></tr>
+<tr class='eq'><td>Keywords cosmology</td><td>Keywords cosmology</td></tr>
+<tr class='chg'><td class='del'>-</td><td class='ins'>~</td></tr>
+<tr class='eq'><td>cosmography</td><td>cosmography</td></tr>
+<tr class='chg'><td class='del'>-</td><td class='ins'>—</td></tr>
+<tr class='eq'><td>astronomy</td><td>astronomy</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-kalām -nafs al-amr - Ṣadr al-Sharī/uni02BFa al-Bukhārī -</td><td class='ins'>— ‘lm al-kalém — nafs al-amr— Sadr al-Shari'a al-Bukhari—</td></tr>
+<tr class='eq'><td>al-Sayyid</td><td>al-Sayyid</td></tr>
+<tr class='chg'><td class='del'>al-Sharīf al-Jurjānī - Mu'ayyad al-Dīn al-/uni02BFUrḍī</td><td class='ins'>al-Sharif al-Jurjani — Muayyad al-Din al“Urdi</td></tr>
+<tr class='eq'><td>Defining Islamic cosmology, the cosmology of Islamic societies, is not simple because cosmology does not have historic equivalents in languages</td><td>Defining Islamic cosmology, the cosmology of Islamic societies, is not simple because cosmology does not have historic equivalents in languages</td></tr>
+<tr class='eq'><td>such as Arabic, Persian, or Ottoman Turkish, and does not map onto a single</td><td>such as Arabic, Persian, or Ottoman Turkish, and does not map onto a single</td></tr>
+<tr class='chg'><td class='del'>actors'</td><td class='ins'>actors’</td></tr>
+<tr class='eq'><td>category. Cosmology has been applied to synthesize a wide variety of sub-fields within Islamic studies, ranging, on the one hand,</td><td>category. Cosmology has been applied to synthesize a wide variety of sub-fields within Islamic studies, ranging, on the one hand,</td></tr>
+<tr class='eq'><td>from the synthesis of a</td><td>from the synthesis of a</td></tr>
+<tr class='chg'><td class='del'>number</td><td class='ins'>num- ber</td></tr>
+<tr class='eq'><td>of scientific approaches to the universe, and on the other hand, to the</td><td>of scientific approaches to the universe, and on the other hand, to the</td></tr>
+<tr class='chg'><td class='del'>description</td><td class='ins'>de- scription</td></tr>
+<tr class='eq'><td>of the world views of</td><td>of the world views of</td></tr>
+<tr class='chg'><td class='del'>ṣūfī s</td><td class='ins'>safis</td></tr>
+<tr class='eq'><td>to the outlooks implicit in certain social</td><td>to the outlooks implicit in certain social</td></tr>
+<tr class='chg'><td class='del'>structures.$^{1}</td><td class='ins'>structures.!</td></tr>
+<tr class='eq'><td>Survey articles capture this range in various ways. We read in the</td><td>Survey articles capture this range in various ways. We read in the</td></tr>
+<tr class='chg'><td class='del'>*</td><td class='ins'>=</td></tr>
+<tr class='eq'><td>Department of Religion, Bowdoin College, 7300 College Station, Brunswick, ME</td><td>Department of Religion, Bowdoin College, 7300 College Station, Brunswick, ME</td></tr>
+<tr class='chg'><td class='del'>04011,</td><td class='ins'>0gou,</td></tr>
+<tr class='eq'><td>USA. 1</td><td>USA. 1</td></tr>
+<tr class='chg'><td class='del'>A non-exhaustive</td><td class='ins'>Anon-exhaustive</td></tr>
+<tr class='eq'><td>sampling would include: Patricia</td><td>sampling would include: Patricia</td></tr>
+<tr class='chg'><td class='del'>Crone: 'Excursus II:</td><td class='ins'>Crone:“Excursus 11:</td></tr>
+<tr class='eq'><td>Ungodly</td><td>Ungodly</td></tr>
+<tr class='chg'><td class='del'>Cosmologies,'</td><td class='ins'>Cosmologies”</td></tr>
+<tr class='eq'><td>in Sabine Schmidtke,</td><td>in Sabine Schmidtke,</td></tr>
+<tr class='chg'><td class='del'>ed.,</td><td class='ins'>ed,,</td></tr>
+<tr class='eq'><td>The Oxford Handbook of Islamic Theology (Oxford, 2016), 103-129;</td><td>The Oxford Handbook of Islamic Theology (Oxford, 2016), 103-129;</td></tr>
+<tr class='chg'><td></td><td class='ins'>(© KONINKLIJKE BRILL NY, LEIDEN, 2019 | DOr:t0.1163/15733623-00244P02</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='Google Vision'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Google Vision</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>BRILL EARLY SCIENCE AND MEDICINE 24 (2019) 340-366) Early Science and Medicine wwwcbrill.com/esm</td></tr>
+<tr class='eq'><td>Cosmology and Cosmic Order in Islamic Astronomy Robert G.</td><td>Cosmology and Cosmic Order in Islamic Astronomy Robert G.</td></tr>
+<tr class='chg'><td class='del'>Morrison *</td><td class='ins'>Morrison*</td></tr>
+<tr class='eq'><td>Bowdoin College rgmorris@bowdoin.edu Abstract This article analyzes how the astronomy of Islamic societies in the thirteenth and</td><td>Bowdoin College rgmorris@bowdoin.edu Abstract This article analyzes how the astronomy of Islamic societies in the thirteenth and</td></tr>
+<tr class='chg'><td class='del'>fourteenth</td><td class='ins'>four- teenth</td></tr>
+<tr class='eq'><td>centuries can be understood as cosmological. By studying the Arabic</td><td>centuries can be understood as cosmological. By studying the Arabic</td></tr>
+<tr class='chg'><td class='del'>translations ofthe</td><td class='ins'>transla- tions of the</td></tr>
+<tr class='eq'><td>relevant Greek terms and then the definitions</td><td>relevant Greek terms and then the definitions</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>medieval Arabic dictionaries, the article finds that Arabic terms did not communicate order in the way implied by the Greek</td><td>medieval Arabic dictionaries, the article finds that Arabic terms did not communicate order in the way implied by the Greek</td></tr>
+<tr class='eq'><td>ho kósmos</td><td>ho kósmos</td></tr>
+<tr class='chg'><td class='del'>(/uni1F41 κόσμος;</td><td class='ins'>(ó xóσuoc;</td></tr>
+<tr class='eq'><td>the cosmos). Yet, astronomers of the period sometimes discussed cosmic order in addition to describing the cosmos. This article finds,</td><td>the cosmos). Yet, astronomers of the period sometimes discussed cosmic order in addition to describing the cosmos. This article finds,</td></tr>
+<tr class='eq'><td>too, that a new technical term, nafs al-amr (the fact of the matter) became part of later discussions of cosmic</td><td>too, that a new technical term, nafs al-amr (the fact of the matter) became part of later discussions of cosmic</td></tr>
+<tr class='eq'><td>order. Keywords cosmology</td><td>order. Keywords cosmology</td></tr>
+<tr class='chg'><td class='del'>-</td><td></td></tr>
+<tr class='eq'><td>cosmography - astronomy</td><td>cosmography - astronomy</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm</td><td class='ins'>- ilm</td></tr>
+<tr class='eq'><td>al-kalām</td><td>al-kalām</td></tr>
+<tr class='chg'><td class='del'>-nafs</td><td class='ins'>- nafs</td></tr>
+<tr class='eq'><td>al-amr -</td><td>al-amr -</td></tr>
+<tr class='chg'><td class='del'>Ṣadr al-Sharī/uni02BFa</td><td class='ins'>Şadr al-Shari'a</td></tr>
+<tr class='eq'><td>al-Bukhārī - al-Sayyid</td><td>al-Bukhārī - al-Sayyid</td></tr>
+<tr class='chg'><td class='del'>al-Sharīf</td><td class='ins'>al-Sharif</td></tr>
+<tr class='eq'><td>al-Jurjānī - Mu'ayyad</td><td>al-Jurjānī - Mu'ayyad</td></tr>
+<tr class='chg'><td class='del'>al-Dīn al-/uni02BFUrḍī</td><td class='ins'>al-Din al-'Urdi</td></tr>
+<tr class='eq'><td>Defining Islamic cosmology, the cosmology of Islamic societies, is not simple because cosmology does not have historic equivalents in languages</td><td>Defining Islamic cosmology, the cosmology of Islamic societies, is not simple because cosmology does not have historic equivalents in languages</td></tr>
+<tr class='eq'><td>such as Arabic, Persian, or Ottoman Turkish, and does not map onto a single actors' category. Cosmology has been applied</td><td>such as Arabic, Persian, or Ottoman Turkish, and does not map onto a single actors' category. Cosmology has been applied</td></tr>
+<tr class='eq'><td>to synthesize a wide variety of sub-fields within Islamic studies, ranging, on the one hand, from the synthesis of a</td><td>to synthesize a wide variety of sub-fields within Islamic studies, ranging, on the one hand, from the synthesis of a</td></tr>
+<tr class='chg'><td class='del'>number</td><td class='ins'>num- ber</td></tr>
+<tr class='eq'><td>of scientific approaches to the universe, and on the other hand, to the</td><td>of scientific approaches to the universe, and on the other hand, to the</td></tr>
+<tr class='chg'><td class='del'>description</td><td class='ins'>de- scription</td></tr>
+<tr class='eq'><td>of the world views of</td><td>of the world views of</td></tr>
+<tr class='chg'><td class='del'>ṣūfī s</td><td class='ins'>sufis</td></tr>
+<tr class='eq'><td>to the outlooks implicit in certain social</td><td>to the outlooks implicit in certain social</td></tr>
+<tr class='chg'><td class='del'>structures.$^{1}</td><td class='ins'>structures.¹</td></tr>
+<tr class='eq'><td>Survey articles capture this range in various ways. We read in the * Department of Religion, Bowdoin College, 7300 College</td><td>Survey articles capture this range in various ways. We read in the * Department of Religion, Bowdoin College, 7300 College</td></tr>
+<tr class='eq'><td>Station, Brunswick, ME 04011, USA. 1 A non-exhaustive sampling would include: Patricia Crone:</td><td>Station, Brunswick, ME 04011, USA. 1 A non-exhaustive sampling would include: Patricia Crone:</td></tr>
+<tr class='chg'><td class='del'>'Excursus II:</td><td class='ins'>"Excursus 11:</td></tr>
+<tr class='eq'><td>Ungodly</td><td>Ungodly</td></tr>
+<tr class='chg'><td class='del'>Cosmologies,'</td><td class='ins'>Cosmologies,"</td></tr>
+<tr class='eq'><td>in Sabine Schmidtke, ed., The Oxford Handbook of Islamic Theology (Oxford, 2016), 103-129;</td><td>in Sabine Schmidtke, ed., The Oxford Handbook of Islamic Theology (Oxford, 2016), 103-129;</td></tr>
+<tr class='chg'><td></td><td class='ins'>ⒸKONINKLIJKE BRILL NV, LEIDEN, 2019 | DOI:10.1163/15733823-00244P02</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='EasyOCR-en'><table class='diff'><thead><tr><th>Docling (ref)</th><th>EasyOCR-en</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>EARLY SCIENCE AND MEDICINE 2 (2019) 310-366 Early Scicnce and Medicine uttkillom RRAII</td></tr>
+<tr class='eq'><td>Cosmology and Cosmic Order in Islamic Astronomy Robert</td><td>Cosmology and Cosmic Order in Islamic Astronomy Robert</td></tr>
+<tr class='chg'><td class='del'>G. Morrison *</td><td class='ins'>G Morrison*</td></tr>
+<tr class='eq'><td>Bowdoin College</td><td>Bowdoin College</td></tr>
+<tr class='chg'><td class='del'>rgmorris@bowdoin.edu</td><td class='ins'>rgmorris@bowdoin_edu</td></tr>
+<tr class='eq'><td>Abstract This article analyzes how the astronomy of Islamic societies in the thirteenth and</td><td>Abstract This article analyzes how the astronomy of Islamic societies in the thirteenth and</td></tr>
+<tr class='chg'><td class='del'>fourteenth</td><td class='ins'>four- teenth</td></tr>
+<tr class='eq'><td>centuries can be understood as cosmological. By studying the Arabic</td><td>centuries can be understood as cosmological. By studying the Arabic</td></tr>
+<tr class='chg'><td class='del'>translations ofthe</td><td class='ins'>transla- tions of the</td></tr>
+<tr class='eq'><td>relevant Greek terms and then the definitions</td><td>relevant Greek terms and then the definitions</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>medieval Arabic</td><td>medieval Arabic</td></tr>
+<tr class='chg'><td class='del'>dictionaries,</td><td class='ins'>dictionaries;</td></tr>
+<tr class='eq'><td>the article finds that Arabic terms did not communicate order in the way implied by the Greek ho</td><td>the article finds that Arabic terms did not communicate order in the way implied by the Greek ho</td></tr>
+<tr class='chg'><td class='del'>kósmos (/uni1F41 κόσμος;</td><td class='ins'>kosmos XoouoG;</td></tr>
+<tr class='eq'><td>the</td><td>the</td></tr>
+<tr class='chg'><td class='del'>cosmos). Yet,</td><td class='ins'>cosmos Yet;</td></tr>
+<tr class='eq'><td>astronomers</td><td>astronomers</td></tr>
+<tr class='chg'><td class='del'>of</td><td class='ins'>Of</td></tr>
+<tr class='eq'><td>the period sometimes discussed cosmic order in addition to describing the</td><td>the period sometimes discussed cosmic order in addition to describing the</td></tr>
+<tr class='chg'><td class='del'>cosmos.</td><td class='ins'>cosmos</td></tr>
+<tr class='eq'><td>This article</td><td>This article</td></tr>
+<tr class='chg'><td class='del'>finds, too,</td><td class='ins'>finds; too;</td></tr>
+<tr class='eq'><td>that</td><td>that</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>new technical term, nafs al-amr (the fact of the matter) became</td><td>new technical term, nafs al-amr (the fact of the matter) became</td></tr>
+<tr class='chg'><td class='del'>part of</td><td class='ins'>Part ,</td></tr>
+<tr class='eq'><td>later discussions of</td><td>later discussions of</td></tr>
+<tr class='chg'><td class='del'>cosmic order.</td><td class='ins'>cusmic order</td></tr>
+<tr class='eq'><td>Keywords cosmology</td><td>Keywords cosmology</td></tr>
+<tr class='chg'><td class='del'>-</td><td></td></tr>
+<tr class='eq'><td>cosmography</td><td>cosmography</td></tr>
+<tr class='chg'><td class='del'>-</td><td></td></tr>
+<tr class='eq'><td>astronomy</td><td>astronomy</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-kalām -nafs</td><td class='ins'>"im al-kalam nafs</td></tr>
+<tr class='eq'><td>al-amr</td><td>al-amr</td></tr>
+<tr class='chg'><td class='del'>- Ṣadr al-Sharī/uni02BFa al-Bukhārī -</td><td class='ins'>Sadr al-Sharia al-Bukhari</td></tr>
+<tr class='eq'><td>al-Sayyid</td><td>al-Sayyid</td></tr>
+<tr class='chg'><td class='del'>al-Sharīf al-Jurjānī - Mu'ayyad al-Dīn al-/uni02BFUrḍī</td><td class='ins'>al-Sharif al-Jurjani Mu ayyad al-Din al-'Urdi</td></tr>
+<tr class='eq'><td>Defining Islamic</td><td>Defining Islamic</td></tr>
+<tr class='chg'><td class='del'>cosmology,</td><td class='ins'>cosmology</td></tr>
+<tr class='eq'><td>the cosmology of Islamic societies, is not simple because cosmology does not have historic equivalents in languages such as</td><td>the cosmology of Islamic societies, is not simple because cosmology does not have historic equivalents in languages such as</td></tr>
+<tr class='chg'><td class='del'>Arabic,</td><td class='ins'>Arabic;</td></tr>
+<tr class='eq'><td>Persian, or Ottoman</td><td>Persian, or Ottoman</td></tr>
+<tr class='chg'><td class='del'>Turkish,</td><td class='ins'>Turkish</td></tr>
+<tr class='eq'><td>and does not map onto</td><td>and does not map onto</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>single actors'</td><td>single actors'</td></tr>
+<tr class='chg'><td class='del'>category.</td><td class='ins'>category:</td></tr>
+<tr class='eq'><td>Cosmology has been applied to synthesize</td><td>Cosmology has been applied to synthesize</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>wide variety of sub-fields within Islamic studies,</td><td>wide variety of sub-fields within Islamic studies,</td></tr>
+<tr class='chg'><td class='del'>ranging,</td><td class='ins'>ranging;</td></tr>
+<tr class='eq'><td>on the one hand, from the synthesis of</td><td>on the one hand, from the synthesis of</td></tr>
+<tr class='chg'><td class='del'>a number</td><td class='ins'>num- ber</td></tr>
+<tr class='eq'><td>of scientific approaches to the universe, and on the other hand, to the</td><td>of scientific approaches to the universe, and on the other hand, to the</td></tr>
+<tr class='chg'><td class='del'>description</td><td class='ins'>de- scription</td></tr>
+<tr class='eq'><td>of the world views of</td><td>of the world views of</td></tr>
+<tr class='chg'><td class='del'>ṣūfī s</td><td class='ins'>sufis</td></tr>
+<tr class='eq'><td>to the outlooks implicit in certain social</td><td>to the outlooks implicit in certain social</td></tr>
+<tr class='chg'><td class='del'>structures.$^{1}</td><td class='ins'>structures !</td></tr>
+<tr class='eq'><td>Survey articles capture this range in various</td><td>Survey articles capture this range in various</td></tr>
+<tr class='chg'><td class='del'>ways.</td><td class='ins'>ways</td></tr>
+<tr class='eq'><td>We read in the</td><td>We read in the</td></tr>
+<tr class='chg'><td class='del'>*</td><td></td></tr>
+<tr class='eq'><td>Department of</td><td>Department of</td></tr>
+<tr class='chg'><td class='del'>Religion,</td><td class='ins'>= Keligion</td></tr>
+<tr class='eq'><td>Bowdoin</td><td>Bowdoin</td></tr>
+<tr class='chg'><td class='del'>College,</td><td class='ins'>College -</td></tr>
+<tr class='eq'><td>7300 College</td><td>7300 College</td></tr>
+<tr class='chg'><td class='del'>Station, Brunswick,</td><td class='ins'>Station; Brunswick;</td></tr>
+<tr class='eq'><td>ME 04011, USA.</td><td>ME 04011, USA.</td></tr>
+<tr class='chg'><td class='del'>1 A non-exhaustive sampling would</td><td class='ins'>nou erhauemve samplingwould</td></tr>
+<tr class='eq'><td>include: Patricia Crone:</td><td>include: Patricia Crone:</td></tr>
+<tr class='chg'><td class='del'>'Excursus II:</td><td class='ins'>EYCMTCusu:</td></tr>
+<tr class='eq'><td>Ungodly</td><td>Ungodly</td></tr>
+<tr class='chg'><td class='del'>Cosmologies,'</td><td class='ins'>Cosmologies"</td></tr>
+<tr class='eq'><td>in Sabine</td><td>in Sabine</td></tr>
+<tr class='chg'><td class='del'>Schmidtke, ed.,</td><td class='ins'>Schmidtke; ed=</td></tr>
+<tr class='eq'><td>The Oxford Handbook of Islamic Theology</td><td>The Oxford Handbook of Islamic Theology</td></tr>
+<tr class='chg'><td class='del'>(Oxford,</td><td class='ins'>Oxford,</td></tr>
+<tr class='eq'><td>2016), 103-129;</td><td>2016), 103-129;</td></tr>
+<tr class='chg'><td></td><td class='ins'>KOSINKLIJKE BRILL NV; LEIDEN z019 DOH0.GI 15743821 00z44P0_</td></tr>
+</tbody></table></div>
+        </section>
+        <section class="page-block" id="page-2">
+          <h2>Page 2 <span class='badge good'>Tesseract-eng: 83.6%</span><span class='badge good'>Google Vision: 88.4%</span><span class='badge good'>EasyOCR-en: 84.4%</span></h2>
+          <div class="meta">
+            Docling words: 250
+            &nbsp;·&nbsp;
+            <label><input type="checkbox" onchange="toggleEqual(this)" checked>
+            hide matching rows</label>
+          </div>
+          <div class="engine-tabs"><div class='engine-tab active' data-eng='Tesseract-eng' onclick='switchTab("page-2","Tesseract-eng")'>Tesseract-eng</div><div class='engine-tab' data-eng='Google Vision' onclick='switchTab("page-2","Google Vision")'>Google Vision</div><div class='engine-tab' data-eng='EasyOCR-en' onclick='switchTab("page-2","EasyOCR-en")'>EasyOCR-en</div></div>
+          <div class='engine-panel active' data-eng='Tesseract-eng'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Tesseract-eng</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>COSMOLOGY AND COSMIC ORDER IN ISLAMIC ASTRONOMY 341</td></tr>
+<tr class='eq'><td>Encyclopedia of Religion that</td><td>Encyclopedia of Religion that</td></tr>
+<tr class='chg'><td class='del'>'Cosmology</td><td class='ins'>“Cosmology</td></tr>
+<tr class='eq'><td>refers to more consciously</td><td>refers to more consciously</td></tr>
+<tr class='chg'><td class='del'>entertained</td><td class='ins'>enter- tained</td></tr>
+<tr class='eq'><td>images, doctrines, and scientific views concerning the</td><td>images, doctrines, and scientific views concerning the</td></tr>
+<tr class='chg'><td class='del'>universe.'$^{2}</td><td class='ins'>universe.”</td></tr>
+<tr class='eq'><td>Some scholars have acknowledged this range of meanings in their work. For instance, in the Encyclopaedia of</td><td>Some scholars have acknowledged this range of meanings in their work. For instance, in the Encyclopaedia of</td></tr>
+<tr class='chg'><td class='del'>Islam ,</td><td class='ins'>Islam,</td></tr>
+<tr class='eq'><td>Second</td><td>Second</td></tr>
+<tr class='chg'><td class='del'>Edition ,</td><td class='ins'>Edition,</td></tr>
+<tr class='eq'><td>Tjitze de Boer clarified in the first part of the article on</td><td>Tjitze de Boer clarified in the first part of the article on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>‘alam</td></tr>
+<tr class='eq'><td>(world), which implicated definitions of the</td><td>(world), which implicated definitions of the</td></tr>
+<tr class='chg'><td class='del'>cosmos,</td><td class='ins'>cos- mos,</td></tr>
+<tr class='eq'><td>that he was not addressing</td><td>that he was not addressing</td></tr>
+<tr class='chg'><td class='del'>'the</td><td class='ins'>“the</td></tr>
+<tr class='eq'><td>scientific development of the</td><td>scientific development of the</td></tr>
+<tr class='chg'><td class='del'>cosmogonic</td><td class='ins'>cosmogon- ic</td></tr>
+<tr class='eq'><td>teaching of Aristotle and Ptolemy in</td><td>teaching of Aristotle and Ptolemy in</td></tr>
+<tr class='chg'><td class='del'>Islām'</td><td class='ins'>Islam’</td></tr>
+<tr class='eq'><td>and referred readers</td><td>and referred readers</td></tr>
+<tr class='chg'><td class='del'>elsewhere.$^{3}</td><td class='ins'>elsewhere.</td></tr>
+<tr class='eq'><td>He focused, instead, on philosophical,</td><td>He focused, instead, on philosophical,</td></tr>
+<tr class='chg'><td class='del'>qur'ān ic</td><td class='ins'>qur’anic</td></tr>
+<tr class='eq'><td>and theological</td><td>and theological</td></tr>
+<tr class='chg'><td class='del'>(i.e.,</td><td class='ins'>(ice.</td></tr>
+<tr class='eq'><td>in the sense of</td><td>in the sense of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-kalām )</td><td class='ins'>‘lm al-kaldm)</td></tr>
+<tr class='eq'><td>speculation about cosmogony. In the second part of the article, Louis Gardet described</td><td>speculation about cosmogony. In the second part of the article, Louis Gardet described</td></tr>
+<tr class='chg'><td class='del'>ṣūfī</td><td class='ins'>sift</td></tr>
+<tr class='eq'><td>and illuminationist</td><td>and illuminationist</td></tr>
+<tr class='chg'><td class='del'>( ishrāqī )</td><td class='ins'>(ishraqi)</td></tr>
+<tr class='eq'><td>cosmologies, again setting aside cosmologies that drew on fields such as natural philosophy and science. Other scholarship has focused on</td><td>cosmologies, again setting aside cosmologies that drew on fields such as natural philosophy and science. Other scholarship has focused on</td></tr>
+<tr class='eq'><td>the cosmologies found in science and</td><td>the cosmologies found in science and</td></tr>
+<tr class='chg'><td class='del'>philosophy</td><td class='ins'>phi- losophy</td></tr>
+<tr class='eq'><td>texts. Y. Tzvi Langermann, in his 1997 survey article</td><td>texts. Y. Tzvi Langermann, in his 1997 survey article</td></tr>
+<tr class='chg'><td class='del'>'Arabic Cosmology,'</td><td class='ins'>“Arabic Cosmolo- gy"</td></tr>
+<tr class='eq'><td>defined cosmology as</td><td>defined cosmology as</td></tr>
+<tr class='chg'><td class='del'>'that</td><td class='ins'>“that</td></tr>
+<tr class='eq'><td>enterprise which describes what the universe looks</td><td>enterprise which describes what the universe looks</td></tr>
+<tr class='chg'><td class='del'>like.'$^{4} Langermann</td><td class='ins'>like."* Langerman</td></tr>
+<tr class='eq'><td>clarified that the focus of his survey was the tradition of</td><td>clarified that the focus of his survey was the tradition of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa ,</td><td class='ins'>im al-hay‘a,</td></tr>
+<tr class='eq'><td>a locus for numerous, fascinating discussions in Islamic</td><td>a locus for numerous, fascinating discussions in Islamic</td></tr>
+<tr class='chg'><td class='del'>societies</td><td class='ins'>societ- ies</td></tr>
+<tr class='eq'><td>about astronomy. Scholars besides Langermann have used</td><td>about astronomy. Scholars besides Langermann have used</td></tr>
+<tr class='chg'><td class='del'>'cosmology'</td><td class='ins'>‘cosmology’</td></tr>
+<tr class='eq'><td>as a translation for the general field of</td><td>as a translation for the general field of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa .$^{5}</td><td class='ins'>‘im al-hay‘a.&gt;</td></tr>
+<tr class='eq'><td>Other scholarship has both Yousef, Mohamed Haj,</td><td>Other scholarship has both Yousef, Mohamed Haj,</td></tr>
+<tr class='chg'><td class='del'>Ibn /uni02BF Arabî: time</td><td class='ins'>bn ‘Arabi: ime</td></tr>
+<tr class='eq'><td>and cosmology (Oxon, 2008); Heinz Halm,</td><td>and cosmology (Oxon, 2008); Heinz Halm,</td></tr>
+<tr class='chg'><td class='del'>'The</td><td class='ins'>“The</td></tr>
+<tr class='eq'><td>Cosmology</td><td>Cosmology</td></tr>
+<tr class='chg'><td class='del'>of the</td><td class='ins'>ofthe</td></tr>
+<tr class='eq'><td>Pre-Fatimid</td><td>Pre-Fatimid</td></tr>
+<tr class='chg'><td class='del'>Ismā/uni02BFīliyya,'</td><td class='ins'>Isma‘liyya”</td></tr>
+<tr class='eq'><td>in Farhad Daftary,</td><td>in Farhad Daftary,</td></tr>
+<tr class='chg'><td class='del'>ed.,</td><td class='ins'>ed,</td></tr>
+<tr class='eq'><td>Mediaeval</td><td>Mediaeval</td></tr>
+<tr class='chg'><td class='del'>Isma/uni02BFili</td><td class='ins'>Ismaili</td></tr>
+<tr class='eq'><td>history and thought, (Cambridge, 1996), 75-83; Frank Griffel,</td><td>history and thought, (Cambridge, 1996), 75-83; Frank Griffel,</td></tr>
+<tr class='chg'><td class='del'>'Al-Ghazālī's</td><td class='ins'>“Al-Ghazali’s</td></tr>
+<tr class='eq'><td>Cosmology in the Veil Section of His</td><td>Cosmology in the Veil Section of His</td></tr>
+<tr class='chg'><td class='del'>Mishkāt al-anwār, ' in Y.</td><td class='ins'>Mishkatal-anwar” in.</td></tr>
+<tr class='eq'><td>Tzvi Langermann,</td><td>Tzvi Langermann,</td></tr>
+<tr class='chg'><td class='del'>ed.,</td><td class='ins'>ed,</td></tr>
+<tr class='eq'><td>Avicenna and his</td><td>Avicenna and his</td></tr>
+<tr class='chg'><td class='del'>legacy: a golden age of science and philosophy</td><td class='ins'>legacy:agolden ‘age ofscience andphilosophy</td></tr>
+<tr class='eq'><td>(Turnhout,</td><td>(Turnhout,</td></tr>
+<tr class='chg'><td class='del'>2009), 27-49; R.</td><td class='ins'>2909), 27-49.</td></tr>
+<tr class='eq'><td>Kevin Jaques,</td><td>Kevin Jaques,</td></tr>
+<tr class='chg'><td class='del'>'Sajarah Leluhur:</td><td class='ins'>"Sajarah Leluhur</td></tr>
+<tr class='eq'><td>Hindu cosmology and the construction of Javanese Muslim genealogical</td><td>Hindu cosmology and the construction of Javanese Muslim genealogical</td></tr>
+<tr class='chg'><td class='del'>authority,'</td><td class='ins'>authority’</td></tr>
+<tr class='eq'><td>Journal</td><td>Journal</td></tr>
+<tr class='chg'><td class='del'>of Islamic</td><td class='ins'>ofIslamic</td></tr>
+<tr class='eq'><td>Studies</td><td>Studies</td></tr>
+<tr class='chg'><td class='del'>17</td><td class='ins'>v7</td></tr>
+<tr class='eq'><td>(2006), 129-157; Eva Orthmann,</td><td>(2006), 129-157; Eva Orthmann,</td></tr>
+<tr class='chg'><td class='del'>'Court</td><td class='ins'>“Court</td></tr>
+<tr class='eq'><td>Culture and Cosmology in the Mughal Empire:</td><td>Culture and Cosmology in the Mughal Empire:</td></tr>
+<tr class='chg'><td class='del'>Humāyūn</td><td class='ins'>Humayiin</td></tr>
+<tr class='eq'><td>and the foundations of the</td><td>and the foundations of the</td></tr>
+<tr class='chg'><td class='del'>dīn-i ilāhī,'</td><td class='ins'>din- ilahi”</td></tr>
+<tr class='eq'><td>in Albrecht Fuess and Jan-Peter Hartung, eds., Court cultures in the Muslim world: seventh</td><td>in Albrecht Fuess and Jan-Peter Hartung, eds., Court cultures in the Muslim world: seventh</td></tr>
+<tr class='chg'><td class='del'>to</td><td class='ins'>o</td></tr>
+<tr class='eq'><td>nineteenth centuries (London-New York,</td><td>nineteenth centuries (London-New York,</td></tr>
+<tr class='chg'><td class='del'>2011), 202-220.</td><td class='ins'>201), 202-220</td></tr>
+<tr class='eq'><td>2 Kees W. Bolle,</td><td>2 Kees W. Bolle,</td></tr>
+<tr class='chg'><td class='del'>'Cosmology:</td><td class='ins'>“Cosmology:</td></tr>
+<tr class='eq'><td>An</td><td>An</td></tr>
+<tr class='chg'><td class='del'>Overview,'</td><td class='ins'>Overview</td></tr>
+<tr class='eq'><td>in Lindsay Jones,</td><td>in Lindsay Jones,</td></tr>
+<tr class='chg'><td class='del'>ed.,</td><td class='ins'>ed,</td></tr>
+<tr class='eq'><td>Encyclopedia of</td><td>Encyclopedia of</td></tr>
+<tr class='chg'><td class='del'>Religion ,</td><td class='ins'>Religion,</td></tr>
+<tr class='eq'><td>14 vols. (Detroit, MI,</td><td>14 vols. (Detroit, MI,</td></tr>
+<tr class='chg'><td class='del'>2005),</td><td class='ins'>2008),</td></tr>
+<tr class='eq'><td>1991-1998. 3</td><td>1991-1998. 3</td></tr>
+<tr class='chg'><td class='del'>Tjitze</td><td class='ins'>Tite</td></tr>
+<tr class='eq'><td>de Boer and Louis Gardet,</td><td>de Boer and Louis Gardet,</td></tr>
+<tr class='chg'><td class='del'>'/uni02BFĀlam,',</td><td class='ins'>“Alam;</td></tr>
+<tr class='eq'><td>in Peri Bearman, Thierry Bianquis, Clifford E. Bosworth, Emeri van Donzel and</td><td>in Peri Bearman, Thierry Bianquis, Clifford E. Bosworth, Emeri van Donzel and</td></tr>
+<tr class='chg'><td class='del'>Wolfhart</td><td class='ins'>Wolthart</td></tr>
+<tr class='eq'><td>P. Heinrichs,</td><td>P. Heinrichs,</td></tr>
+<tr class='chg'><td class='del'>eds.,</td><td class='ins'>eds,</td></tr>
+<tr class='eq'><td>Encyclopaedia of Islam, Second</td><td>Encyclopaedia of Islam, Second</td></tr>
+<tr class='chg'><td class='del'>Edition</td><td class='ins'>dition</td></tr>
+<tr class='eq'><td>(Leiden, 2010), consulted online</td><td>(Leiden, 2010), consulted online</td></tr>
+<tr class='chg'><td class='del'>11.04.2018 &lt;http://dx.doi.org/10.1163/1573-3912_islam_ COM_0041&gt;. 4 Y. Tzvi Langermann, 'Arabic Cosmology,'</td><td class='ins'>1.042018 &lt;http:| cdo. org/10.063/1573-3912 islam_ COM_o0a1&gt; 4. Y.Tavi Langerman, “Arabic Cosmology”</td></tr>
+<tr class='eq'><td>Early Science and Medicine 2 (1997),</td><td>Early Science and Medicine 2 (1997),</td></tr>
+<tr class='chg'><td class='del'>185-213,</td><td class='ins'>185-283,</td></tr>
+<tr class='eq'><td>185. Langermann wrote,</td><td>185. Langermann wrote,</td></tr>
+<tr class='chg'><td class='del'>'The 'cosmologists'</td><td class='ins'>“The ‘cosmologists’</td></tr>
+<tr class='eq'><td>of whom we shall be speaking shared the common</td><td>of whom we shall be speaking shared the common</td></tr>
+<tr class='chg'><td class='del'>concern</td><td class='ins'>concer</td></tr>
+<tr class='eq'><td>of providing an adequate portrayal</td><td>of providing an adequate portrayal</td></tr>
+<tr class='chg'><td class='del'>of the</td><td class='ins'>ofthe</td></tr>
+<tr class='eq'><td>physics of the universe</td><td>physics of the universe</td></tr>
+<tr class='chg'><td class='del'>as a</td><td class='ins'>asa</td></tr>
+<tr class='eq'><td>whole, but</td><td>whole, but</td></tr>
+<tr class='chg'><td class='del'>especially of the</td><td class='ins'>especialy ofthe</td></tr>
+<tr class='eq'><td>celestial</td><td>celestial</td></tr>
+<tr class='chg'><td class='del'>regions.' 5</td><td class='ins'>regions” 5.</td></tr>
+<tr class='eq'><td>See,</td><td>See,</td></tr>
+<tr class='chg'><td class='del'>e.g.,</td><td class='ins'>e.g,</td></tr>
+<tr class='eq'><td>George Saliba,</td><td>George Saliba,</td></tr>
+<tr class='chg'><td class='del'>'Early</td><td class='ins'>“Early</td></tr>
+<tr class='eq'><td>Arabic Critique of Ptolemaic Cosmology: A Ninth-Century Text</td><td>Arabic Critique of Ptolemaic Cosmology: A Ninth-Century Text</td></tr>
+<tr class='chg'><td class='del'>on</td><td class='ins'>‘on</td></tr>
+<tr class='eq'><td>the Motion of the Celestial</td><td>the Motion of the Celestial</td></tr>
+<tr class='chg'><td class='del'>Spheres,'</td><td class='ins'>Spheres</td></tr>
+<tr class='eq'><td>in Journal for History of Astronomy 25 (1994),</td><td>in Journal for History of Astronomy 25 (1994),</td></tr>
+<tr class='chg'><td class='del'>115-41;</td><td class='ins'>5</td></tr>
+<tr class='eq'><td>Robert</td><td>Robert</td></tr>
+<tr class='chg'><td class='del'>Morrison, 'Islamic</td><td class='ins'>Mortison, “Islamic</td></tr>
+<tr class='eq'><td>Astronomy and</td><td>Astronomy and</td></tr>
+<tr class='chg'><td class='del'>Cosmology,'</td><td class='ins'>Cosmology</td></tr>
+<tr class='eq'><td>in David Lindberg and Michael Shank,</td><td>in David Lindberg and Michael Shank,</td></tr>
+<tr class='chg'><td class='del'>eds.,</td><td class='ins'>eds,</td></tr>
+<tr class='eq'><td>Cambridge History of</td><td>Cambridge History of</td></tr>
+<tr class='chg'><td class='del'>Science ,</td><td class='ins'>Science,</td></tr>
+<tr class='eq'><td>8 vols. (Cambridge-New York,</td><td>8 vols. (Cambridge-New York,</td></tr>
+<tr class='chg'><td class='del'>2011), vol. 5, 109-138.</td><td class='ins'>201), ol. 5109-18. EARLY SCIENCE AND MEDICINE 24 (2019) 340-366,</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='Google Vision'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Google Vision</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>COSMOLOGY AND COSMIC ORDER IN ISLAMIC ASTRONOMY 341</td></tr>
+<tr class='eq'><td>Encyclopedia of Religion that</td><td>Encyclopedia of Religion that</td></tr>
+<tr class='chg'><td class='del'>'Cosmology</td><td class='ins'>"Cosmology</td></tr>
+<tr class='eq'><td>refers to more consciously</td><td>refers to more consciously</td></tr>
+<tr class='chg'><td class='del'>entertained</td><td class='ins'>enter- tained</td></tr>
+<tr class='eq'><td>images, doctrines, and scientific views concerning the</td><td>images, doctrines, and scientific views concerning the</td></tr>
+<tr class='chg'><td class='del'>universe.'$^{2}</td><td class='ins'>universe."²</td></tr>
+<tr class='eq'><td>Some scholars have acknowledged this range of meanings in their work. For instance, in the Encyclopaedia of</td><td>Some scholars have acknowledged this range of meanings in their work. For instance, in the Encyclopaedia of</td></tr>
+<tr class='chg'><td class='del'>Islam ,</td><td class='ins'>Islam,</td></tr>
+<tr class='eq'><td>Second</td><td>Second</td></tr>
+<tr class='chg'><td class='del'>Edition ,</td><td class='ins'>Edition,</td></tr>
+<tr class='eq'><td>Tjitze de Boer clarified in the first part of the article on</td><td>Tjitze de Boer clarified in the first part of the article on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>'alam</td></tr>
+<tr class='eq'><td>(world), which implicated definitions of the</td><td>(world), which implicated definitions of the</td></tr>
+<tr class='chg'><td class='del'>cosmos,</td><td class='ins'>cos- mos,</td></tr>
+<tr class='eq'><td>that he was not addressing</td><td>that he was not addressing</td></tr>
+<tr class='chg'><td class='del'>'the</td><td class='ins'>"the</td></tr>
+<tr class='eq'><td>scientific development of the</td><td>scientific development of the</td></tr>
+<tr class='chg'><td class='del'>cosmogonic</td><td class='ins'>cosmogon- ic</td></tr>
+<tr class='eq'><td>teaching of Aristotle and Ptolemy in</td><td>teaching of Aristotle and Ptolemy in</td></tr>
+<tr class='chg'><td class='del'>Islām'</td><td class='ins'>Islām"</td></tr>
+<tr class='eq'><td>and referred readers</td><td>and referred readers</td></tr>
+<tr class='chg'><td class='del'>elsewhere.$^{3}</td><td class='ins'>elsewhere.3</td></tr>
+<tr class='eq'><td>He focused, instead, on philosophical,</td><td>He focused, instead, on philosophical,</td></tr>
+<tr class='chg'><td class='del'>qur'ān ic</td><td class='ins'>qur'anic</td></tr>
+<tr class='eq'><td>and theological (i.e., in the sense of</td><td>and theological (i.e., in the sense of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-kalām )</td><td class='ins'>'ilm al-kalām)</td></tr>
+<tr class='eq'><td>speculation about cosmogony. In the second part of the article, Louis Gardet described</td><td>speculation about cosmogony. In the second part of the article, Louis Gardet described</td></tr>
+<tr class='chg'><td class='del'>ṣūfī</td><td class='ins'>sufi</td></tr>
+<tr class='eq'><td>and illuminationist</td><td>and illuminationist</td></tr>
+<tr class='chg'><td class='del'>( ishrāqī )</td><td class='ins'>(ishraqi)</td></tr>
+<tr class='eq'><td>cosmologies, again setting aside cosmologies that drew on fields such as natural philosophy and science. Other scholarship has focused on</td><td>cosmologies, again setting aside cosmologies that drew on fields such as natural philosophy and science. Other scholarship has focused on</td></tr>
+<tr class='eq'><td>the cosmologies found in science and</td><td>the cosmologies found in science and</td></tr>
+<tr class='chg'><td class='del'>philosophy</td><td class='ins'>phi- losophy</td></tr>
+<tr class='eq'><td>texts. Y. Tzvi Langermann, in his 1997 survey article</td><td>texts. Y. Tzvi Langermann, in his 1997 survey article</td></tr>
+<tr class='chg'><td class='del'>'Arabic Cosmology,'</td><td class='ins'>"Arabic Cosmolo- gy,"</td></tr>
+<tr class='eq'><td>defined cosmology as</td><td>defined cosmology as</td></tr>
+<tr class='chg'><td class='del'>'that</td><td class='ins'>"that</td></tr>
+<tr class='eq'><td>enterprise which describes what the universe looks</td><td>enterprise which describes what the universe looks</td></tr>
+<tr class='chg'><td class='del'>like.'$^{4}</td><td class='ins'>like."4</td></tr>
+<tr class='eq'><td>Langermann clarified that the focus of his survey was the tradition of</td><td>Langermann clarified that the focus of his survey was the tradition of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa ,</td><td class='ins'>'ilm al-hay'a,</td></tr>
+<tr class='eq'><td>a locus for numerous, fascinating discussions in Islamic</td><td>a locus for numerous, fascinating discussions in Islamic</td></tr>
+<tr class='chg'><td class='del'>societies</td><td class='ins'>societ- ies</td></tr>
+<tr class='eq'><td>about astronomy. Scholars besides Langermann have used 'cosmology' as a translation for the general field of</td><td>about astronomy. Scholars besides Langermann have used 'cosmology' as a translation for the general field of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa .$^{5}</td><td class='ins'>'ilm al-haya.5</td></tr>
+<tr class='eq'><td>Other scholarship has both Yousef, Mohamed Haj, Ibn</td><td>Other scholarship has both Yousef, Mohamed Haj, Ibn</td></tr>
+<tr class='chg'><td class='del'>/uni02BF Arabî:</td><td class='ins'>'Arabi:</td></tr>
+<tr class='eq'><td>time and cosmology (Oxon, 2008); Heinz Halm,</td><td>time and cosmology (Oxon, 2008); Heinz Halm,</td></tr>
+<tr class='chg'><td class='del'>'The</td><td class='ins'>"The</td></tr>
+<tr class='eq'><td>Cosmology of the Pre-Fatimid</td><td>Cosmology of the Pre-Fatimid</td></tr>
+<tr class='chg'><td class='del'>Ismā/uni02BFīliyya,'</td><td class='ins'>Ismailiyya,"</td></tr>
+<tr class='eq'><td>in Farhad Daftary, ed., Mediaeval</td><td>in Farhad Daftary, ed., Mediaeval</td></tr>
+<tr class='chg'><td class='del'>Isma/uni02BFili</td><td class='ins'>Ismaili</td></tr>
+<tr class='eq'><td>history and thought, (Cambridge, 1996), 75-83; Frank Griffel,</td><td>history and thought, (Cambridge, 1996), 75-83; Frank Griffel,</td></tr>
+<tr class='chg'><td class='del'>'Al-Ghazālī's</td><td class='ins'>"Al-Ghazali's</td></tr>
+<tr class='eq'><td>Cosmology in the Veil Section of His</td><td>Cosmology in the Veil Section of His</td></tr>
+<tr class='chg'><td class='del'>Mishkāt al-anwār, '</td><td class='ins'>Mishkat al-anwar,"</td></tr>
+<tr class='eq'><td>in Y. Tzvi Langermann, ed., Avicenna and his legacy: a golden age of science and philosophy (Turnhout, 2009), 27-49; R.</td><td>in Y. Tzvi Langermann, ed., Avicenna and his legacy: a golden age of science and philosophy (Turnhout, 2009), 27-49; R.</td></tr>
+<tr class='eq'><td>Kevin Jaques,</td><td>Kevin Jaques,</td></tr>
+<tr class='chg'><td class='del'>'Sajarah</td><td class='ins'>"Sajarah</td></tr>
+<tr class='eq'><td>Leluhur: Hindu cosmology and the construction of Javanese Muslim genealogical</td><td>Leluhur: Hindu cosmology and the construction of Javanese Muslim genealogical</td></tr>
+<tr class='chg'><td class='del'>authority,'</td><td class='ins'>authority,"</td></tr>
+<tr class='eq'><td>Journal of Islamic Studies 17 (2006), 129-157; Eva Orthmann,</td><td>Journal of Islamic Studies 17 (2006), 129-157; Eva Orthmann,</td></tr>
+<tr class='chg'><td class='del'>'Court</td><td class='ins'>"Court</td></tr>
+<tr class='eq'><td>Culture and Cosmology in the Mughal Empire:</td><td>Culture and Cosmology in the Mughal Empire:</td></tr>
+<tr class='chg'><td class='del'>Humāyūn</td><td class='ins'>Humayun</td></tr>
+<tr class='eq'><td>and the foundations of the</td><td>and the foundations of the</td></tr>
+<tr class='chg'><td class='del'>dīn-i ilāhī,'</td><td class='ins'>din-i ilahi,"</td></tr>
+<tr class='eq'><td>in Albrecht Fuess and Jan-Peter Hartung, eds., Court cultures in the Muslim world: seventh to nineteenth centuries (London-New York, 2011),</td><td>in Albrecht Fuess and Jan-Peter Hartung, eds., Court cultures in the Muslim world: seventh to nineteenth centuries (London-New York, 2011),</td></tr>
+<tr class='eq'><td>202-220. 2 Kees W. Bolle,</td><td>202-220. 2 Kees W. Bolle,</td></tr>
+<tr class='chg'><td class='del'>'Cosmology:</td><td class='ins'>"Cosmology:</td></tr>
+<tr class='eq'><td>An</td><td>An</td></tr>
+<tr class='chg'><td class='del'>Overview,'</td><td class='ins'>Overview,"</td></tr>
+<tr class='eq'><td>in Lindsay Jones, ed., Encyclopedia of</td><td>in Lindsay Jones, ed., Encyclopedia of</td></tr>
+<tr class='chg'><td class='del'>Religion ,</td><td class='ins'>Religion,</td></tr>
+<tr class='eq'><td>14 vols. (Detroit, MI, 2005), 1991-1998. 3 Tjitze de Boer and Louis Gardet,</td><td>14 vols. (Detroit, MI, 2005), 1991-1998. 3 Tjitze de Boer and Louis Gardet,</td></tr>
+<tr class='chg'><td class='del'>'/uni02BFĀlam,',</td><td class='ins'>"Alam,",</td></tr>
+<tr class='eq'><td>in Peri Bearman, Thierry Bianquis, Clifford E. Bosworth, Emeri van Donzel and Wolfhart P. Heinrichs, eds., Encyclopaedia of Islam, Second</td><td>in Peri Bearman, Thierry Bianquis, Clifford E. Bosworth, Emeri van Donzel and Wolfhart P. Heinrichs, eds., Encyclopaedia of Islam, Second</td></tr>
+<tr class='eq'><td>Edition (Leiden, 2010), consulted online 11.04.2018 &lt;http://dx.doi.org/10.1163/1573-3912_islam_ COM_0041&gt;. 4 Y. Tzvi Langermann,</td><td>Edition (Leiden, 2010), consulted online 11.04.2018 &lt;http://dx.doi.org/10.1163/1573-3912_islam_ COM_0041&gt;. 4 Y. Tzvi Langermann,</td></tr>
+<tr class='chg'><td class='del'>'Arabic Cosmology,'</td><td class='ins'>"Arabic Cosmology,"</td></tr>
+<tr class='eq'><td>Early Science and Medicine 2 (1997), 185-213, 185. Langermann wrote,</td><td>Early Science and Medicine 2 (1997), 185-213, 185. Langermann wrote,</td></tr>
+<tr class='chg'><td class='del'>'The</td><td class='ins'>"The</td></tr>
+<tr class='eq'><td>'cosmologists' of whom we shall be speaking shared the common concern of providing an adequate portrayal of the physics of</td><td>'cosmologists' of whom we shall be speaking shared the common concern of providing an adequate portrayal of the physics of</td></tr>
+<tr class='eq'><td>the universe as a whole, but especially of the celestial</td><td>the universe as a whole, but especially of the celestial</td></tr>
+<tr class='chg'><td class='del'>regions.'</td><td class='ins'>regions."</td></tr>
+<tr class='eq'><td>5 See, e.g., George Saliba,</td><td>5 See, e.g., George Saliba,</td></tr>
+<tr class='chg'><td class='del'>'Early</td><td class='ins'>"Early</td></tr>
+<tr class='eq'><td>Arabic Critique of Ptolemaic Cosmology: A Ninth-Century Text on the Motion of the Celestial</td><td>Arabic Critique of Ptolemaic Cosmology: A Ninth-Century Text on the Motion of the Celestial</td></tr>
+<tr class='chg'><td class='del'>Spheres,'</td><td class='ins'>Spheres,"</td></tr>
+<tr class='eq'><td>in Journal for History of Astronomy 25 (1994), 115-41; Robert Morrison,</td><td>in Journal for History of Astronomy 25 (1994), 115-41; Robert Morrison,</td></tr>
+<tr class='chg'><td class='del'>'Islamic</td><td class='ins'>"Islamic</td></tr>
+<tr class='eq'><td>Astronomy and</td><td>Astronomy and</td></tr>
+<tr class='chg'><td class='del'>Cosmology,'</td><td class='ins'>Cosmology,"</td></tr>
+<tr class='eq'><td>in David Lindberg and Michael Shank, eds., Cambridge History of</td><td>in David Lindberg and Michael Shank, eds., Cambridge History of</td></tr>
+<tr class='chg'><td class='del'>Science ,</td><td class='ins'>Science,</td></tr>
+<tr class='eq'><td>8 vols. (Cambridge-New York, 2011), vol. 5, 109-138.</td><td>8 vols. (Cambridge-New York, 2011), vol. 5, 109-138.</td></tr>
+<tr class='chg'><td></td><td class='ins'>EARLY SCIENCE AND MEDICINE 24 (2019) 340-366</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='EasyOCR-en'><table class='diff'><thead><tr><th>Docling (ref)</th><th>EasyOCR-en</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>COSMOLOGY AND COSMIC ORDER IN ISLAMIC ASTRONOMY 3+1</td></tr>
+<tr class='eq'><td>Encyclopedia of Religion that</td><td>Encyclopedia of Religion that</td></tr>
+<tr class='chg'><td class='del'>'Cosmology</td><td class='ins'>"Cosmology</td></tr>
+<tr class='eq'><td>refers to more consciously</td><td>refers to more consciously</td></tr>
+<tr class='chg'><td class='del'>entertained</td><td class='ins'>enter- tained</td></tr>
+<tr class='eq'><td>images, doctrines, and scientific views concerning the</td><td>images, doctrines, and scientific views concerning the</td></tr>
+<tr class='chg'><td class='del'>universe.'$^{2}</td><td class='ins'>universe.</td></tr>
+<tr class='eq'><td>Some scholars have acknowledged this range of meanings in their</td><td>Some scholars have acknowledged this range of meanings in their</td></tr>
+<tr class='chg'><td class='del'>work.</td><td class='ins'>work</td></tr>
+<tr class='eq'><td>For instance, in the Encyclopaedia of</td><td>For instance, in the Encyclopaedia of</td></tr>
+<tr class='chg'><td class='del'>Islam ,</td><td class='ins'>Islam,</td></tr>
+<tr class='eq'><td>Second</td><td>Second</td></tr>
+<tr class='chg'><td class='del'>Edition ,</td><td class='ins'>Edition,</td></tr>
+<tr class='eq'><td>Tjitze de Boer clarified in the first part of the article on</td><td>Tjitze de Boer clarified in the first part of the article on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>alam</td></tr>
+<tr class='eq'><td>(world), which implicated definitions of the</td><td>(world), which implicated definitions of the</td></tr>
+<tr class='chg'><td class='del'>cosmos,</td><td class='ins'>cos - mos,</td></tr>
+<tr class='eq'><td>that he was not addressing</td><td>that he was not addressing</td></tr>
+<tr class='chg'><td class='del'>'the</td><td class='ins'>"the</td></tr>
+<tr class='eq'><td>scientific development of the</td><td>scientific development of the</td></tr>
+<tr class='chg'><td class='del'>cosmogonic</td><td class='ins'>cosmogon</td></tr>
+<tr class='eq'><td>teaching of Aristotle and Ptolemy in</td><td>teaching of Aristotle and Ptolemy in</td></tr>
+<tr class='chg'><td class='del'>Islām'</td><td class='ins'>Islam"</td></tr>
+<tr class='eq'><td>and referred readers</td><td>and referred readers</td></tr>
+<tr class='chg'><td class='del'>elsewhere.$^{3}</td><td class='ins'>elsewhere.3</td></tr>
+<tr class='eq'><td>He focused, instead,</td><td>He focused, instead,</td></tr>
+<tr class='chg'><td class='del'>on</td><td></td></tr>
+<tr class='eq'><td>philosophical,</td><td>philosophical,</td></tr>
+<tr class='chg'><td class='del'>qur'ān ic</td><td class='ins'>quranic</td></tr>
+<tr class='eq'><td>and theological</td><td>and theological</td></tr>
+<tr class='chg'><td class='del'>(i.e.,</td><td class='ins'>(ie ,</td></tr>
+<tr class='eq'><td>in the sense of</td><td>in the sense of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-kalām )</td><td class='ins'>'ilm al-kalam)</td></tr>
+<tr class='eq'><td>speculation about</td><td>speculation about</td></tr>
+<tr class='chg'><td class='del'>cosmogony.</td><td class='ins'>cosmogony</td></tr>
+<tr class='eq'><td>In the second part of the article, Louis Gardet described</td><td>In the second part of the article, Louis Gardet described</td></tr>
+<tr class='chg'><td class='del'>ṣūfī</td><td class='ins'>sufi</td></tr>
+<tr class='eq'><td>and illuminationist</td><td>and illuminationist</td></tr>
+<tr class='chg'><td class='del'>( ishrāqī )</td><td class='ins'>(ishraqi)</td></tr>
+<tr class='eq'><td>cosmologies, again setting aside cosmologies that drew on fields such as natural philosophy and</td><td>cosmologies, again setting aside cosmologies that drew on fields such as natural philosophy and</td></tr>
+<tr class='chg'><td class='del'>science. Other</td><td class='ins'>science: Other:</td></tr>
+<tr class='eq'><td>scholarship has focused on the cosmologies found in science and</td><td>scholarship has focused on the cosmologies found in science and</td></tr>
+<tr class='chg'><td class='del'>philosophy texts. Y.</td><td class='ins'>phi- losophy texts Y</td></tr>
+<tr class='eq'><td>Tzvi Langermann, in his 1997 survey article</td><td>Tzvi Langermann, in his 1997 survey article</td></tr>
+<tr class='chg'><td class='del'>'Arabic Cosmology,'</td><td class='ins'>"Arabic Cosmolo- gy;"</td></tr>
+<tr class='eq'><td>defined cosmology as</td><td>defined cosmology as</td></tr>
+<tr class='chg'><td class='del'>'that</td><td class='ins'>"that</td></tr>
+<tr class='eq'><td>enterprise which describes what the universe looks</td><td>enterprise which describes what the universe looks</td></tr>
+<tr class='chg'><td class='del'>like.'$^{4}</td><td class='ins'>like</td></tr>
+<tr class='eq'><td>Langermann clarified that the focus of his survey was the tradition</td><td>Langermann clarified that the focus of his survey was the tradition</td></tr>
+<tr class='chg'><td class='del'>of /uni02BFilm al-hayʾa , a</td><td class='ins'>"ilm al-haya,</td></tr>
+<tr class='eq'><td>locus for numerous, fascinating discussions in Islamic</td><td>locus for numerous, fascinating discussions in Islamic</td></tr>
+<tr class='chg'><td class='del'>societies</td><td class='ins'>societ- ies</td></tr>
+<tr class='eq'><td>about</td><td>about</td></tr>
+<tr class='chg'><td class='del'>astronomy.</td><td class='ins'>astronomy</td></tr>
+<tr class='eq'><td>Scholars besides Langermann have used 'cosmology' as a translation for the general field of</td><td>Scholars besides Langermann have used 'cosmology' as a translation for the general field of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa .$^{5}</td><td class='ins'>'ilm al-haya 5</td></tr>
+<tr class='eq'><td>Other scholarship has both</td><td>Other scholarship has both</td></tr>
+<tr class='chg'><td class='del'>Yousef,</td><td class='ins'>Yousef;</td></tr>
+<tr class='eq'><td>Mohamed</td><td>Mohamed</td></tr>
+<tr class='chg'><td class='del'>Haj,</td><td class='ins'>Haj;</td></tr>
+<tr class='eq'><td>Ibn</td><td>Ibn</td></tr>
+<tr class='chg'><td class='del'>/uni02BF Arabî:</td><td class='ins'>Arabi:</td></tr>
+<tr class='eq'><td>time and cosmology (Oxon, 2008); Heinz</td><td>time and cosmology (Oxon, 2008); Heinz</td></tr>
+<tr class='chg'><td class='del'>Halm, 'The</td><td class='ins'>Halmt; "The</td></tr>
+<tr class='eq'><td>Cosmology of the Pre-Fatimid</td><td>Cosmology of the Pre-Fatimid</td></tr>
+<tr class='chg'><td class='del'>Ismā/uni02BFīliyya,'</td><td class='ins'>IsmaTliyya</td></tr>
+<tr class='eq'><td>in Farhad</td><td>in Farhad</td></tr>
+<tr class='chg'><td class='del'>Daftary, ed.,</td><td class='ins'>Daftary; ed</td></tr>
+<tr class='eq'><td>Mediaeval</td><td>Mediaeval</td></tr>
+<tr class='chg'><td class='del'>Isma/uni02BFili</td><td class='ins'>Isma ili</td></tr>
+<tr class='eq'><td>history</td><td>history</td></tr>
+<tr class='chg'><td class='del'>and thought, (Cambridge, 1996),</td><td class='ins'>thought; Cambridge, 1996}</td></tr>
+<tr class='eq'><td>75-83; Frank</td><td>75-83; Frank</td></tr>
+<tr class='chg'><td class='del'>Griffel, 'Al-Ghazālī's</td><td class='ins'>Griffel; "Al-Ghazali's</td></tr>
+<tr class='eq'><td>Cosmology in the Veil Section of His</td><td>Cosmology in the Veil Section of His</td></tr>
+<tr class='chg'><td class='del'>Mishkāt al-anwār, ' in Y.</td><td class='ins'>Mishkatal-cnwar;</td></tr>
+<tr class='eq'><td>Tzvi</td><td>Tzvi</td></tr>
+<tr class='chg'><td class='del'>Langermann, ed., Avicenna and his</td><td class='ins'>Langermann Avicerna @dhis_</td></tr>
+<tr class='eq'><td>legacy:</td><td>legacy:</td></tr>
+<tr class='chg'><td class='del'>a</td><td class='ins'>@</td></tr>
+<tr class='eq'><td>golden age of science</td><td>golden age of science</td></tr>
+<tr class='chg'><td class='del'>and philosophy (Turnhout, 2009), 27-49; R.</td><td class='ins'>andphilosophy (Turnhout,2039 27-*49; R</td></tr>
+<tr class='eq'><td>Kevin</td><td>Kevin</td></tr>
+<tr class='chg'><td class='del'>Jaques, 'Sajarah</td><td class='ins'>Jaques; "Sajarah</td></tr>
+<tr class='eq'><td>Leluhur: Hindu</td><td>Leluhur: Hindu</td></tr>
+<tr class='chg'><td class='del'>cosmology and the</td><td class='ins'>cosmologyandthe</td></tr>
+<tr class='eq'><td>construction of Javanese Muslim</td><td>construction of Javanese Muslim</td></tr>
+<tr class='chg'><td class='del'>genealogical authority,'</td><td class='ins'>genealogicalauthority;"</td></tr>
+<tr class='eq'><td>Journal of Islamic Studies</td><td>Journal of Islamic Studies</td></tr>
+<tr class='chg'><td class='del'>17 (2006),</td><td class='ins'>(2006},</td></tr>
+<tr class='eq'><td>129-157; Eva</td><td>129-157; Eva</td></tr>
+<tr class='chg'><td class='del'>Orthmann, 'Court</td><td class='ins'>Orthmann; Court</td></tr>
+<tr class='eq'><td>Culture and Cosmology in the Mughal Empire:</td><td>Culture and Cosmology in the Mughal Empire:</td></tr>
+<tr class='chg'><td class='del'>Humāyūn</td><td class='ins'>Humayin</td></tr>
+<tr class='eq'><td>and the foundations of the</td><td>and the foundations of the</td></tr>
+<tr class='chg'><td class='del'>dīn-i ilāhī,'</td><td class='ins'>din-i ilahi;"</td></tr>
+<tr class='eq'><td>in Albrecht Fuess and</td><td>in Albrecht Fuess and</td></tr>
+<tr class='chg'><td class='del'>Jan-Peter</td><td class='ins'>Jan Peter</td></tr>
+<tr class='eq'><td>Hartung,</td><td>Hartung,</td></tr>
+<tr class='chg'><td class='del'>eds.,</td><td class='ins'>eds</td></tr>
+<tr class='eq'><td>Court cultures in the Muslim world: seventh to nineteenth centuries (London-New</td><td>Court cultures in the Muslim world: seventh to nineteenth centuries (London-New</td></tr>
+<tr class='chg'><td class='del'>York, 2011), 202-220. 2</td><td class='ins'>York; zon), 202-220</td></tr>
+<tr class='eq'><td>Kees</td><td>Kees</td></tr>
+<tr class='chg'><td class='del'>W. Bolle, 'Cosmology:</td><td class='ins'>W Bolle; Cosmology:</td></tr>
+<tr class='eq'><td>An</td><td>An</td></tr>
+<tr class='chg'><td class='del'>Overview,'</td><td class='ins'>Overview;"</td></tr>
+<tr class='eq'><td>in Lindsay</td><td>in Lindsay</td></tr>
+<tr class='chg'><td class='del'>Jones, ed.,</td><td class='ins'>Jones; ed ,</td></tr>
+<tr class='eq'><td>Encyclopedia of</td><td>Encyclopedia of</td></tr>
+<tr class='chg'><td class='del'>Religion ,</td><td class='ins'>Religion;</td></tr>
+<tr class='eq'><td>14</td><td>14</td></tr>
+<tr class='chg'><td class='del'>vols. (Detroit, MI, 2005), 1991-1998. 3</td><td class='ins'>vols (Detroit MI; 2005/, 1991-199&amp;</td></tr>
+<tr class='eq'><td>Tjitze de Boer and Louis</td><td>Tjitze de Boer and Louis</td></tr>
+<tr class='chg'><td class='del'>Gardet, '/uni02BFĀlam,',</td><td class='ins'>Gardet; "Alam;"</td></tr>
+<tr class='eq'><td>in Peri</td><td>in Peri</td></tr>
+<tr class='chg'><td class='del'>Bearman,</td><td class='ins'>Bearman;</td></tr>
+<tr class='eq'><td>Thierry Bianquis, Clifford</td><td>Thierry Bianquis, Clifford</td></tr>
+<tr class='chg'><td class='del'>E. Bosworth,</td><td class='ins'>E Bosworth;</td></tr>
+<tr class='eq'><td>Emeri van Donzel and Wolfhart</td><td>Emeri van Donzel and Wolfhart</td></tr>
+<tr class='chg'><td class='del'>P. Heinrichs, eds.,</td><td class='ins'>Heinrichs; eds ,</td></tr>
+<tr class='eq'><td>Encyclopaedia of Islam, Second Edition</td><td>Encyclopaedia of Islam, Second Edition</td></tr>
+<tr class='chg'><td class='del'>(Leiden, 2010),</td><td class='ins'>(Leiden,2010]</td></tr>
+<tr class='eq'><td>consulted online 11.04.2018</td><td>consulted online 11.04.2018</td></tr>
+<tr class='chg'><td class='del'>&lt;http://dx.doi.org/10.1163/1573-3912_islam_ COM_0041&gt;. 4 Y.</td><td class='ins'>&lt;http:/ {dxdoiorgh10.116z/1573-3912_islam COM_0041&gt;</td></tr>
+<tr class='eq'><td>Tzvi</td><td>Tzvi</td></tr>
+<tr class='chg'><td class='del'>Langermann, 'Arabic Cosmology,'</td><td class='ins'>Langermann; "Arabic Cosmology"</td></tr>
+<tr class='eq'><td>Early Science and Medicine</td><td>Early Science and Medicine</td></tr>
+<tr class='chg'><td class='del'>2</td><td></td></tr>
+<tr class='eq'><td>(1997), 185-213, 185. Langermann</td><td>(1997), 185-213, 185. Langermann</td></tr>
+<tr class='chg'><td class='del'>wrote, 'The</td><td class='ins'>WrOIC ~"The</td></tr>
+<tr class='eq'><td>'cosmologists' of whom we shall be speaking shared the common concern of providing</td><td>'cosmologists' of whom we shall be speaking shared the common concern of providing</td></tr>
+<tr class='chg'><td class='del'>an</td><td></td></tr>
+<tr class='eq'><td>adequate portrayal of the physics of the universe as</td><td>adequate portrayal of the physics of the universe as</td></tr>
+<tr class='chg'><td class='del'>a whole,</td><td class='ins'>whole;</td></tr>
+<tr class='eq'><td>but especially</td><td>but especially</td></tr>
+<tr class='chg'><td class='del'>of</td><td></td></tr>
+<tr class='eq'><td>the celestial</td><td>the celestial</td></tr>
+<tr class='chg'><td class='del'>regions.' 5 See, e.g.,</td><td class='ins'>regions. See,eg</td></tr>
+<tr class='eq'><td>George</td><td>George</td></tr>
+<tr class='chg'><td class='del'>Saliba, 'Early</td><td class='ins'>Saliba; "Early</td></tr>
+<tr class='eq'><td>Arabic Critique of Ptolemaic Cosmology:</td><td>Arabic Critique of Ptolemaic Cosmology:</td></tr>
+<tr class='chg'><td class='del'>A</td><td></td></tr>
+<tr class='eq'><td>Ninth-Century Text on the Motion of the Celestial</td><td>Ninth-Century Text on the Motion of the Celestial</td></tr>
+<tr class='chg'><td class='del'>Spheres,'</td><td class='ins'>Spheres;</td></tr>
+<tr class='eq'><td>in Journal for History</td><td>in Journal for History</td></tr>
+<tr class='chg'><td class='del'>of</td><td class='ins'>%f</td></tr>
+<tr class='eq'><td>Astronomy 25 (1994),</td><td>Astronomy 25 (1994),</td></tr>
+<tr class='chg'><td class='del'>115-41;</td><td class='ins'>115*41;</td></tr>
+<tr class='eq'><td>Robert</td><td>Robert</td></tr>
+<tr class='chg'><td class='del'>Morrison, 'Islamic Astronomy and Cosmology,' in</td><td class='ins'>Morrison; "Islamic Astronomyand Cosmology;"</td></tr>
+<tr class='eq'><td>David</td><td>David</td></tr>
+<tr class='chg'><td class='del'>Lindberg and</td><td class='ins'>Lindbergand</td></tr>
+<tr class='eq'><td>Michael</td><td>Michael</td></tr>
+<tr class='chg'><td class='del'>Shank, eds.,</td><td class='ins'>Shank; eds:</td></tr>
+<tr class='eq'><td>Cambridge History</td><td>Cambridge History</td></tr>
+<tr class='chg'><td class='del'>of Science , 8 vols.</td><td class='ins'>Science; vols</td></tr>
+<tr class='eq'><td>(Cambridge-New</td><td>(Cambridge-New</td></tr>
+<tr class='chg'><td class='del'>York, 2011), vol. 5,</td><td class='ins'>York; zou), vol</td></tr>
+<tr class='eq'><td>109-138.</td><td>109-138.</td></tr>
+<tr class='chg'><td></td><td class='ins'>EARLY SCIENCE AND MEDICINE 2 (2019) 310-466</td></tr>
+</tbody></table></div>
+        </section>
+        <section class="page-block" id="page-3">
+          <h2>Page 3 <span class='badge good'>Tesseract-eng: 86.5%</span><span class='badge good'>Google Vision: 90.3%</span><span class='badge good'>EasyOCR-en: 86.7%</span></h2>
+          <div class="meta">
+            Docling words: 219
+            &nbsp;·&nbsp;
+            <label><input type="checkbox" onchange="toggleEqual(this)" checked>
+            hide matching rows</label>
+          </div>
+          <div class="engine-tabs"><div class='engine-tab active' data-eng='Tesseract-eng' onclick='switchTab("page-3","Tesseract-eng")'>Tesseract-eng</div><div class='engine-tab' data-eng='Google Vision' onclick='switchTab("page-3","Google Vision")'>Google Vision</div><div class='engine-tab' data-eng='EasyOCR-en' onclick='switchTab("page-3","EasyOCR-en")'>EasyOCR-en</div></div>
+          <div class='engine-panel active' data-eng='Tesseract-eng'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Tesseract-eng</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>342, MORRISON</td></tr>
+<tr class='eq'><td>distinguished between cosmology and</td><td>distinguished between cosmology and</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>‘lm al-hay’a</td></tr>
+<tr class='eq'><td>and then blurred that</td><td>and then blurred that</td></tr>
+<tr class='chg'><td class='del'>distinction.$^{6}</td><td class='ins'>dis- tinction.</td></tr>
+<tr class='eq'><td>Recently, Damien Janos has taken a more synthetic approach and has argued, in the case of</td><td>Recently, Damien Janos has taken a more synthetic approach and has argued, in the case of</td></tr>
+<tr class='chg'><td class='del'>Fārābī,</td><td class='ins'>Farabi,</td></tr>
+<tr class='eq'><td>that astronomy was a discipline from which one could construct</td><td>that astronomy was a discipline from which one could construct</td></tr>
+<tr class='chg'><td class='del'>Fārābī's</td><td class='ins'>Farabi’s</td></tr>
+<tr class='eq'><td>cosmology, and that no single discipline that</td><td>cosmology, and that no single discipline that</td></tr>
+<tr class='chg'><td class='del'>Fārābī</td><td class='ins'>Farabi</td></tr>
+<tr class='eq'><td>pursued mapped precisely onto the category</td><td>pursued mapped precisely onto the category</td></tr>
+<tr class='chg'><td class='del'>ofcosmology.$^{7}</td><td class='ins'>of cosmology.”</td></tr>
+<tr class='eq'><td>George Saliba has written that</td><td>George Saliba has written that</td></tr>
+<tr class='chg'><td class='del'>'[t]he</td><td class='ins'>‘[t]he</td></tr>
+<tr class='eq'><td>best way to translate</td><td>best way to translate</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>‘im al-hay‘a</td></tr>
+<tr class='eq'><td>into English is to think of the term</td><td>into English is to think of the term</td></tr>
+<tr class='chg'><td class='del'>'cosmography'</td><td class='ins'>‘cosmography’</td></tr>
+<tr class='eq'><td>in the literal sense. This is because</td><td>in the literal sense. This is because</td></tr>
+<tr class='chg'><td class='del'>hayʾa ,</td><td class='ins'>hay’a,</td></tr>
+<tr class='eq'><td>in this context, simply meant the attempt to describe the apparent behavior of the cosmos</td><td>in this context, simply meant the attempt to describe the apparent behavior of the cosmos</td></tr>
+<tr class='chg'><td class='del'>[…]</td><td class='ins'>[...</td></tr>
+<tr class='eq'><td>celestial spheres interpreted and understood in the same sense</td><td>celestial spheres interpreted and understood in the same sense</td></tr>
+<tr class='chg'><td class='del'>as in</td><td class='ins'>asin</td></tr>
+<tr class='eq'><td>Aristotelian works upon the</td><td>Aristotelian works upon the</td></tr>
+<tr class='chg'><td class='del'>subject.'$^{8}</td><td class='ins'>subject”*</td></tr>
+<tr class='eq'><td>Ragep, in his 1982 dissertation, had also described part of</td><td>Ragep, in his 1982 dissertation, had also described part of</td></tr>
+<tr class='chg'><td class='del'>Ṭūsī's</td><td class='ins'>Tlisi’s</td></tr>
+<tr class='eq'><td>enterprise in the Tadhkira as</td><td>enterprise in the Tadhkira as</td></tr>
+<tr class='chg'><td class='del'>cosmography.$^{9} Cosmography</td><td class='ins'>cosmography.? Cos- mography</td></tr>
+<tr class='eq'><td>is an appealing translation of</td><td>is an appealing translation of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>im al-hay'a</td></tr>
+<tr class='eq'><td>because it reflects how all writers on</td><td>because it reflects how all writers on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>tm al-hay‘a</td></tr>
+<tr class='eq'><td>were certainly describing the apparent behavior of the cosmos. But since cosmography could also be understood as</td><td>were certainly describing the apparent behavior of the cosmos. But since cosmography could also be understood as</td></tr>
+<tr class='chg'><td class='del'>'writing</td><td class='ins'>‘writing</td></tr>
+<tr class='eq'><td>the</td><td>the</td></tr>
+<tr class='chg'><td class='del'>cosmos'</td><td class='ins'>cos- mos’</td></tr>
+<tr class='eq'><td>and, thus, as a way to study the cosmos,</td><td>and, thus, as a way to study the cosmos,</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>‘lm al-hay’a</td></tr>
+<tr class='eq'><td>might also be</td><td>might also be</td></tr>
+<tr class='chg'><td class='del'>cosmological</td><td class='ins'>cosmo- logical</td></tr>
+<tr class='eq'><td>in ways in addition to the cosmographic. This article will investigate instances when authors on</td><td>in ways in addition to the cosmographic. This article will investigate instances when authors on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>‘lm al-hay’a</td></tr>
+<tr class='eq'><td>went beyond cosmography, or beyond the definition</td><td>went beyond cosmography, or beyond the definition</td></tr>
+<tr class='chg'><td class='del'>ofcosmology</td><td class='ins'>of cosmology</td></tr>
+<tr class='eq'><td>that one might call cosmography</td><td>that one might call cosmography</td></tr>
+<tr class='chg'><td class='del'>-</td><td class='ins'>—</td></tr>
+<tr class='eq'><td>explaining what the cosmos looked like</td><td>explaining what the cosmos looked like</td></tr>
+<tr class='chg'><td class='del'>-</td><td class='ins'>—</td></tr>
+<tr class='eq'><td>and ventured into a different subset of</td><td>and ventured into a different subset of</td></tr>
+<tr class='chg'><td class='del'>cosmology,</td><td class='ins'>cosmol- ogy,</td></tr>
+<tr class='eq'><td>a subset that communicated a certain understanding of cosmic order, and exploring the cosmos as an ordered universe, versus others.</td><td>a subset that communicated a certain understanding of cosmic order, and exploring the cosmos as an ordered universe, versus others.</td></tr>
+<tr class='eq'><td>As all authors on</td><td>As all authors on</td></tr>
+<tr class='chg'><td class='del'>hayʾa</td><td class='ins'>haya</td></tr>
+<tr class='eq'><td>presumed that the motions were uniform,</td><td>presumed that the motions were uniform,</td></tr>
+<tr class='chg'><td class='del'>I am looking</td><td class='ins'>lam look- ing</td></tr>
+<tr class='eq'><td>for arguments or contentions that there is an underlying order in the</td><td>for arguments or contentions that there is an underlying order in the</td></tr>
+<tr class='chg'><td class='del'>cosmos</td><td class='ins'>cos- mos</td></tr>
+<tr class='eq'><td>(cosmology), not simply arguments that a given set of observations can be explained in terms of uniform motions (cosmography). The</td><td>(cosmology), not simply arguments that a given set of observations can be explained in terms of uniform motions (cosmography). The</td></tr>
+<tr class='eq'><td>genre of</td><td>genre of</td></tr>
+<tr class='chg'><td class='del'>hayʾa generally</td><td class='ins'>hay’a gen- erally</td></tr>
+<tr class='eq'><td>excluded</td><td>excluded</td></tr>
+<tr class='chg'><td class='del'>'why'</td><td class='ins'>‘why’</td></tr>
+<tr class='eq'><td>questions, preferring to confine itself to descriptions of the external aspects of the celestial</td><td>questions, preferring to confine itself to descriptions of the external aspects of the celestial</td></tr>
+<tr class='chg'><td class='del'>bodies.$^{1}$^{0}</td><td class='ins'>bodies.!°</td></tr>
+<tr class='eq'><td>Metaphysical statements about 6</td><td>Metaphysical statements about 6</td></tr>
+<tr class='chg'><td class='del'>The distinction</td><td class='ins'>Thedistinction</td></tr>
+<tr class='eq'><td>between</td><td>between</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>‘dmal-hay'a</td></tr>
+<tr class='eq'><td>and cosmology blurs in</td><td>and cosmology blurs in</td></tr>
+<tr class='chg'><td class='del'>F. Jamil</td><td class='ins'>F.,Jamil</td></tr>
+<tr class='eq'><td>Ragep,</td><td>Ragep,</td></tr>
+<tr class='chg'><td class='del'>'Astronomy,' in</td><td class='ins'>“Astronomy”</td></tr>
+<tr class='eq'><td>Kate Fleet, Gudrun</td><td>Kate Fleet, Gudrun</td></tr>
+<tr class='chg'><td class='del'>Krämer,</td><td class='ins'>Krier,</td></tr>
+<tr class='eq'><td>Denis Matringe, John Nawas and Everett Rowson,</td><td>Denis Matringe, John Nawas and Everett Rowson,</td></tr>
+<tr class='chg'><td class='del'>eds.,</td><td class='ins'>ed</td></tr>
+<tr class='eq'><td>Encyclopaedia of Islam,</td><td>Encyclopaedia of Islam,</td></tr>
+<tr class='chg'><td class='del'>THREE</td><td class='ins'>rHR#x</td></tr>
+<tr class='eq'><td>(Leiden, 2009),</td><td>(Leiden, 2009),</td></tr>
+<tr class='chg'><td class='del'>&lt;http://dx.doi.org/10.1163/1573-3912_ei3_ COM_22652&gt;</td><td class='ins'>&lt;http://dx.dol.org/10.u63/1573-3912_elg_ (COM 226 52&gt;</td></tr>
+<tr class='eq'><td>last accessed 19.05.2019. Ragep wrote that</td><td>last accessed 19.05.2019. Ragep wrote that</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa al-basīṭa</td><td class='ins'>‘im al-hay'a al-basita</td></tr>
+<tr class='eq'><td>specified</td><td>specified</td></tr>
+<tr class='chg'><td class='del'>'a</td><td class='ins'>“a</td></tr>
+<tr class='eq'><td>certain genre of theoretical</td><td>certain genre of theoretical</td></tr>
+<tr class='chg'><td class='del'>astronomy/cosmology.'</td><td class='ins'>astronomy cosmology”</td></tr>
+<tr class='eq'><td>Three of the four sub-headings of the article included the word</td><td>Three of the four sub-headings of the article included the word</td></tr>
+<tr class='chg'><td class='del'>'cosmology'.</td><td class='ins'>‘cosmology’.</td></tr>
+<tr class='eq'><td>For another example</td><td>For another example</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>blurred distinction between</td><td>blurred distinction between</td></tr>
+<tr class='chg'><td class='del'>ilm al-hayʾa</td><td class='ins'>iim al-hay'a</td></tr>
+<tr class='eq'><td>and cosmology, see Morrison,</td><td>and cosmology, see Morrison,</td></tr>
+<tr class='chg'><td class='del'>'Islamic Astronomy.' (Leiden-</td><td class='ins'>“Islamic Astronomy.”</td></tr>
+<tr class='eq'><td>7 Damien Janos, Method, Structure, and Development in</td><td>7 Damien Janos, Method, Structure, and Development in</td></tr>
+<tr class='chg'><td class='del'>al-Fārābī's</td><td class='ins'>al-Farabis</td></tr>
+<tr class='eq'><td>Cosmology</td><td>Cosmology</td></tr>
+<tr class='chg'><td></td><td class='ins'>(Leiden-</td></tr>
+<tr class='eq'><td>Boston, MA, 2012),</td><td>Boston, MA, 2012),</td></tr>
+<tr class='chg'><td class='del'>11, n1.</td><td class='ins'>1, mi</td></tr>
+<tr class='eq'><td>8 George Saliba,</td><td>8 George Saliba,</td></tr>
+<tr class='chg'><td class='del'>'Islamic</td><td class='ins'>"Islamic</td></tr>
+<tr class='eq'><td>Astronomy in Context: Attacks on Astrology and the Rise of the</td><td>Astronomy in Context: Attacks on Astrology and the Rise of the</td></tr>
+<tr class='chg'><td class='del'>Hay'a Tradition,'</td><td class='ins'>Haya Tradition,’</td></tr>
+<tr class='eq'><td>Bulletin</td><td>Bulletin</td></tr>
+<tr class='chg'><td class='del'>of the</td><td class='ins'>ofthe</td></tr>
+<tr class='eq'><td>Royal Institute for Inter-Faith</td><td>Royal Institute for Inter-Faith</td></tr>
+<tr class='chg'><td class='del'>Studies ,</td><td class='ins'>Studies,</td></tr>
+<tr class='eq'><td>4 (2002), 25-46, 42-43. 9</td><td>4 (2002), 25-46, 42-43. 9</td></tr>
+<tr class='chg'><td class='del'>F.</td><td class='ins'>E</td></tr>
+<tr class='eq'><td>Jamil Ragep:</td><td>Jamil Ragep:</td></tr>
+<tr class='chg'><td class='del'>'Cosmography</td><td class='ins'>“Cosmography</td></tr>
+<tr class='eq'><td>in the Tadhkira of</td><td>in the Tadhkira of</td></tr>
+<tr class='chg'><td class='del'>Naṣīr al-Dīn al-Ṭūsī'</td><td class='ins'>Nasir al-Din al-Tus"</td></tr>
+<tr class='eq'><td>(dissertation,</td><td>(dissertation,</td></tr>
+<tr class='chg'><td class='del'>Harvard</td><td class='ins'>Har- vard</td></tr>
+<tr class='eq'><td>University,</td><td>University,</td></tr>
+<tr class='chg'><td class='del'>1982). 10 Naṣīr al-Dīn Muḥammad</td><td class='ins'>1982), to Nasir al-Din Muhammad</td></tr>
+<tr class='eq'><td>b.</td><td>b.</td></tr>
+<tr class='chg'><td class='del'>Muḥammad al-Ṭūsī, Naṣīr al-Dīn al-Ṭūsī's</td><td class='ins'>Muhammad al-Tusi, Nasir al-Din al-T i's</td></tr>
+<tr class='eq'><td>Memoir on</td><td>Memoir on</td></tr>
+<tr class='chg'><td class='del'>Astron-</td><td class='ins'>Astron: EARLY SCIENCE AND MEDICINE 24 (2019) 240-266</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='Google Vision'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Google Vision</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>342 MORRISON</td></tr>
+<tr class='eq'><td>distinguished between cosmology and</td><td>distinguished between cosmology and</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>and then blurred that</td><td>and then blurred that</td></tr>
+<tr class='chg'><td class='del'>distinction.$^{6}</td><td class='ins'>dis- tinction.</td></tr>
+<tr class='eq'><td>Recently, Damien Janos has taken a more synthetic approach and has argued, in the case of</td><td>Recently, Damien Janos has taken a more synthetic approach and has argued, in the case of</td></tr>
+<tr class='chg'><td class='del'>Fārābī,</td><td class='ins'>Färābi,</td></tr>
+<tr class='eq'><td>that astronomy was a discipline from which one could construct</td><td>that astronomy was a discipline from which one could construct</td></tr>
+<tr class='chg'><td class='del'>Fārābī's</td><td class='ins'>Fărăbi's</td></tr>
+<tr class='eq'><td>cosmology, and that no single discipline that</td><td>cosmology, and that no single discipline that</td></tr>
+<tr class='chg'><td class='del'>Fārābī</td><td class='ins'>Fārābi</td></tr>
+<tr class='eq'><td>pursued mapped precisely onto the category</td><td>pursued mapped precisely onto the category</td></tr>
+<tr class='chg'><td class='del'>ofcosmology.$^{7}</td><td class='ins'>of cosmology.7</td></tr>
+<tr class='eq'><td>George Saliba has written that</td><td>George Saliba has written that</td></tr>
+<tr class='chg'><td class='del'>'[t]he</td><td class='ins'>"[t]he</td></tr>
+<tr class='eq'><td>best way to translate</td><td>best way to translate</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>into English is to think of the term 'cosmography' in the literal sense. This is because</td><td>into English is to think of the term 'cosmography' in the literal sense. This is because</td></tr>
+<tr class='chg'><td class='del'>hayʾa ,</td><td class='ins'>hay'a,</td></tr>
+<tr class='eq'><td>in this context, simply meant the attempt to describe the apparent behavior of the cosmos</td><td>in this context, simply meant the attempt to describe the apparent behavior of the cosmos</td></tr>
+<tr class='chg'><td class='del'>[…]</td><td class='ins'>[...]</td></tr>
+<tr class='eq'><td>celestial spheres interpreted and understood in the same sense as in Aristotelian works upon the</td><td>celestial spheres interpreted and understood in the same sense as in Aristotelian works upon the</td></tr>
+<tr class='chg'><td class='del'>subject.'$^{8}</td><td class='ins'>subject."8</td></tr>
+<tr class='eq'><td>Ragep, in his 1982 dissertation, had also described part of</td><td>Ragep, in his 1982 dissertation, had also described part of</td></tr>
+<tr class='chg'><td class='del'>Ṭūsī's</td><td class='ins'>Ţusi's</td></tr>
+<tr class='eq'><td>enterprise in the Tadhkira as</td><td>enterprise in the Tadhkira as</td></tr>
+<tr class='chg'><td class='del'>cosmography.$^{9} Cosmography</td><td class='ins'>cosmography.⁹ Cos- mography</td></tr>
+<tr class='eq'><td>is an appealing translation of</td><td>is an appealing translation of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>because it reflects how all writers on</td><td>because it reflects how all writers on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>were certainly describing the apparent behavior of the cosmos. But since cosmography could also be understood as 'writing the</td><td>were certainly describing the apparent behavior of the cosmos. But since cosmography could also be understood as 'writing the</td></tr>
+<tr class='chg'><td class='del'>cosmos'</td><td class='ins'>cos- mos'</td></tr>
+<tr class='eq'><td>and, thus, as a way to study the cosmos,</td><td>and, thus, as a way to study the cosmos,</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>might also be</td><td>might also be</td></tr>
+<tr class='chg'><td class='del'>cosmological</td><td class='ins'>cosmo- logical</td></tr>
+<tr class='eq'><td>in ways in addition to the cosmographic. This article will investigate instances when authors on</td><td>in ways in addition to the cosmographic. This article will investigate instances when authors on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>went beyond cosmography, or beyond the definition</td><td>went beyond cosmography, or beyond the definition</td></tr>
+<tr class='chg'><td class='del'>ofcosmology</td><td class='ins'>of cosmology</td></tr>
+<tr class='eq'><td>that one might call cosmography - explaining what the cosmos looked like - and ventured into a different subset of</td><td>that one might call cosmography - explaining what the cosmos looked like - and ventured into a different subset of</td></tr>
+<tr class='chg'><td class='del'>cosmology,</td><td class='ins'>cosmol- ogy,</td></tr>
+<tr class='eq'><td>a subset that communicated a certain understanding of cosmic order, and exploring the cosmos as an ordered universe, versus others.</td><td>a subset that communicated a certain understanding of cosmic order, and exploring the cosmos as an ordered universe, versus others.</td></tr>
+<tr class='eq'><td>As all authors on</td><td>As all authors on</td></tr>
+<tr class='chg'><td class='del'>hayʾa</td><td class='ins'>hay'a</td></tr>
+<tr class='eq'><td>presumed that the motions were uniform, I am</td><td>presumed that the motions were uniform, I am</td></tr>
+<tr class='chg'><td class='del'>looking</td><td class='ins'>look- ing</td></tr>
+<tr class='eq'><td>for arguments or contentions that there is an underlying order in the</td><td>for arguments or contentions that there is an underlying order in the</td></tr>
+<tr class='chg'><td class='del'>cosmos</td><td class='ins'>cos- mos</td></tr>
+<tr class='eq'><td>(cosmology), not simply arguments that a given set of observations can be explained in terms of uniform motions (cosmography). The</td><td>(cosmology), not simply arguments that a given set of observations can be explained in terms of uniform motions (cosmography). The</td></tr>
+<tr class='eq'><td>genre of</td><td>genre of</td></tr>
+<tr class='chg'><td class='del'>hayʾa generally</td><td class='ins'>hay'a gen- erally</td></tr>
+<tr class='eq'><td>excluded 'why' questions, preferring to confine itself to descriptions of the external aspects of the celestial</td><td>excluded 'why' questions, preferring to confine itself to descriptions of the external aspects of the celestial</td></tr>
+<tr class='chg'><td class='del'>bodies.$^{1}$^{0}</td><td class='ins'>bodies.10</td></tr>
+<tr class='eq'><td>Metaphysical statements about 6</td><td>Metaphysical statements about 6</td></tr>
+<tr class='chg'><td></td><td class='ins'>7 8 9 10</td></tr>
+<tr class='eq'><td>The distinction between</td><td>The distinction between</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>and cosmology blurs in F. Jamil Ragep,</td><td>and cosmology blurs in F. Jamil Ragep,</td></tr>
+<tr class='chg'><td class='del'>'Astronomy,'</td><td class='ins'>"Astronomy,"</td></tr>
+<tr class='eq'><td>in Kate Fleet, Gudrun Krämer, Denis Matringe, John Nawas and Everett Rowson, eds., Encyclopaedia of Islam, THREE (Leiden, 2009), &lt;http://dx.doi.org/10.1163/1573-3912_ei3_</td><td>in Kate Fleet, Gudrun Krämer, Denis Matringe, John Nawas and Everett Rowson, eds., Encyclopaedia of Islam, THREE (Leiden, 2009), &lt;http://dx.doi.org/10.1163/1573-3912_ei3_</td></tr>
+<tr class='eq'><td>COM_22652&gt; last accessed 19.05.2019. Ragep wrote that</td><td>COM_22652&gt; last accessed 19.05.2019. Ragep wrote that</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa al-basīṭa</td><td class='ins'>'ilm al-hay'a al-basita</td></tr>
+<tr class='eq'><td>specified</td><td>specified</td></tr>
+<tr class='chg'><td class='del'>'a</td><td class='ins'>"a</td></tr>
+<tr class='eq'><td>certain genre of theoretical</td><td>certain genre of theoretical</td></tr>
+<tr class='chg'><td class='del'>astronomy/cosmology.'</td><td class='ins'>astronomy/cosmology."</td></tr>
+<tr class='eq'><td>Three of the four sub-headings of the article included the word</td><td>Three of the four sub-headings of the article included the word</td></tr>
+<tr class='chg'><td class='del'>'cosmology'.</td><td class='ins'>'cosmology.</td></tr>
+<tr class='eq'><td>For another example</td><td>For another example</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>blurred distinction between ilm</td><td>blurred distinction between ilm</td></tr>
+<tr class='chg'><td class='del'>al-hayʾa</td><td class='ins'>al-hay'a</td></tr>
+<tr class='eq'><td>and cosmology, see Morrison,</td><td>and cosmology, see Morrison,</td></tr>
+<tr class='chg'><td class='del'>'Islamic Astronomy.' (Leiden- 7</td><td class='ins'>"Islamic Astronomy."</td></tr>
+<tr class='eq'><td>Damien Janos, Method, Structure, and Development in</td><td>Damien Janos, Method, Structure, and Development in</td></tr>
+<tr class='chg'><td class='del'>al-Fārābī's</td><td class='ins'>al-Farabi's</td></tr>
+<tr class='eq'><td>Cosmology</td><td>Cosmology</td></tr>
+<tr class='chg'><td></td><td class='ins'>(Leiden-</td></tr>
+<tr class='eq'><td>Boston, MA, 2012), 11,</td><td>Boston, MA, 2012), 11,</td></tr>
+<tr class='chg'><td class='del'>n1. 8</td><td class='ins'>ni.</td></tr>
+<tr class='eq'><td>George Saliba,</td><td>George Saliba,</td></tr>
+<tr class='chg'><td class='del'>'Islamic</td><td class='ins'>"Islamic</td></tr>
+<tr class='eq'><td>Astronomy in Context: Attacks on Astrology and the Rise of the Hay'a</td><td>Astronomy in Context: Attacks on Astrology and the Rise of the Hay'a</td></tr>
+<tr class='chg'><td class='del'>Tradition,'</td><td class='ins'>Tradition,"</td></tr>
+<tr class='eq'><td>Bulletin of the Royal Institute for Inter-Faith</td><td>Bulletin of the Royal Institute for Inter-Faith</td></tr>
+<tr class='chg'><td class='del'>Studies ,</td><td class='ins'>Studies,</td></tr>
+<tr class='eq'><td>4 (2002), 25-46,</td><td>4 (2002), 25-46,</td></tr>
+<tr class='chg'><td class='del'>42-43. 9</td><td class='ins'>42-43-</td></tr>
+<tr class='eq'><td>F. Jamil Ragep:</td><td>F. Jamil Ragep:</td></tr>
+<tr class='chg'><td class='del'>'Cosmography</td><td class='ins'>"Cosmography</td></tr>
+<tr class='eq'><td>in the Tadhkira of</td><td>in the Tadhkira of</td></tr>
+<tr class='chg'><td class='del'>Naṣīr al-Dīn al-Ṭūsī'</td><td class='ins'>Nasir al-Din al-Ṭusi"</td></tr>
+<tr class='eq'><td>(dissertation,</td><td>(dissertation,</td></tr>
+<tr class='chg'><td class='del'>Harvard</td><td class='ins'>Har- vard</td></tr>
+<tr class='eq'><td>University, 1982).</td><td>University, 1982).</td></tr>
+<tr class='chg'><td class='del'>10 Naṣīr al-Dīn</td><td class='ins'>Nasir al-Din</td></tr>
+<tr class='eq'><td>Muḥammad b. Muḥammad</td><td>Muḥammad b. Muḥammad</td></tr>
+<tr class='chg'><td class='del'>al-Ṭūsī, Naṣīr al-Dīn al-Ṭūsī's</td><td class='ins'>al-Ṭūsi, Nasir al-Din al-Ṭusi's</td></tr>
+<tr class='eq'><td>Memoir on Astron-</td><td>Memoir on Astron-</td></tr>
+<tr class='chg'><td></td><td class='ins'>EARLY SCIENCE AND MEDICINE 24 (2019) 340-366</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='EasyOCR-en'><table class='diff'><thead><tr><th>Docling (ref)</th><th>EasyOCR-en</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>342 MORRISON</td></tr>
+<tr class='eq'><td>distinguished between cosmology and</td><td>distinguished between cosmology and</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-haya</td></tr>
+<tr class='eq'><td>and then blurred that</td><td>and then blurred that</td></tr>
+<tr class='chg'><td class='del'>distinction.$^{6} Recently,</td><td class='ins'>dis- tinction_ Recently;</td></tr>
+<tr class='eq'><td>Damien Janos has taken</td><td>Damien Janos has taken</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>more synthetic approach and has argued, in the case of</td><td>more synthetic approach and has argued, in the case of</td></tr>
+<tr class='chg'><td class='del'>Fārābī,</td><td class='ins'>Farabi,</td></tr>
+<tr class='eq'><td>that astronomy was</td><td>that astronomy was</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>discipline from which one could construct</td><td>discipline from which one could construct</td></tr>
+<tr class='chg'><td class='del'>Fārābī's cosmology,</td><td class='ins'>Farabi s cosmology</td></tr>
+<tr class='eq'><td>and that no single discipline that</td><td>and that no single discipline that</td></tr>
+<tr class='chg'><td class='del'>Fārābī</td><td class='ins'>Farabi</td></tr>
+<tr class='eq'><td>pursued mapped precisely onto the category</td><td>pursued mapped precisely onto the category</td></tr>
+<tr class='chg'><td class='del'>ofcosmology.$^{7}</td><td class='ins'>of cosmology'</td></tr>
+<tr class='eq'><td>George Saliba has written that</td><td>George Saliba has written that</td></tr>
+<tr class='chg'><td class='del'>'[t]he</td><td class='ins'>"[tJhe</td></tr>
+<tr class='eq'><td>best way to translate</td><td>best way to translate</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>%ilm al-haya</td></tr>
+<tr class='eq'><td>into English is to think of the term 'cosmography' in the literal</td><td>into English is to think of the term 'cosmography' in the literal</td></tr>
+<tr class='chg'><td class='del'>sense.</td><td class='ins'>sense:</td></tr>
+<tr class='eq'><td>This is because</td><td>This is because</td></tr>
+<tr class='chg'><td class='del'>hayʾa , in</td><td class='ins'>haya,in</td></tr>
+<tr class='eq'><td>this context, simply meant the attempt to describe the apparent behavior of the cosmos</td><td>this context, simply meant the attempt to describe the apparent behavior of the cosmos</td></tr>
+<tr class='chg'><td class='del'>[…]</td><td class='ins'>[-]</td></tr>
+<tr class='eq'><td>celestial spheres interpreted and understood in the same sense as in Aristotelian works upon the</td><td>celestial spheres interpreted and understood in the same sense as in Aristotelian works upon the</td></tr>
+<tr class='chg'><td class='del'>subject.'$^{8} Ragep,</td><td class='ins'>subject Ragep;</td></tr>
+<tr class='eq'><td>in his 1982 dissertation, had also described part of</td><td>in his 1982 dissertation, had also described part of</td></tr>
+<tr class='chg'><td class='del'>Ṭūsī's</td><td class='ins'>Tusis</td></tr>
+<tr class='eq'><td>enterprise in the Tadhkira as</td><td>enterprise in the Tadhkira as</td></tr>
+<tr class='chg'><td class='del'>cosmography.$^{9} Cosmography</td><td class='ins'>cosmography ? Cos- mography</td></tr>
+<tr class='eq'><td>is an appealing translation of</td><td>is an appealing translation of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>ilm al-haya</td></tr>
+<tr class='eq'><td>because it reflects how all writers on</td><td>because it reflects how all writers on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-haya</td></tr>
+<tr class='eq'><td>were certainly describing the apparent behavior of the</td><td>were certainly describing the apparent behavior of the</td></tr>
+<tr class='chg'><td class='del'>cosmos.</td><td class='ins'>cosmos:</td></tr>
+<tr class='eq'><td>But since cosmography could also be understood as 'writing the</td><td>But since cosmography could also be understood as 'writing the</td></tr>
+<tr class='chg'><td class='del'>cosmos' and, thus,</td><td class='ins'>cos - mos' and,thus;</td></tr>
+<tr class='eq'><td>as</td><td>as</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>way to</td><td>way to</td></tr>
+<tr class='chg'><td class='del'>study the cosmos, /uni02BFilm al-hayʾa</td><td class='ins'>studythe cosmos; 'ilm al-haya</td></tr>
+<tr class='eq'><td>might also be</td><td>might also be</td></tr>
+<tr class='chg'><td class='del'>cosmological</td><td class='ins'>cosmo logical</td></tr>
+<tr class='eq'><td>in ways in addition to the</td><td>in ways in addition to the</td></tr>
+<tr class='chg'><td class='del'>cosmographic.</td><td class='ins'>cosmographic:</td></tr>
+<tr class='eq'><td>This article will investigate instances when authors on</td><td>This article will investigate instances when authors on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-haya</td></tr>
+<tr class='eq'><td>went beyond</td><td>went beyond</td></tr>
+<tr class='chg'><td class='del'>cosmography,</td><td class='ins'>cosmography;</td></tr>
+<tr class='eq'><td>or beyond the definition</td><td>or beyond the definition</td></tr>
+<tr class='chg'><td class='del'>ofcosmology</td><td class='ins'>of cosmology</td></tr>
+<tr class='eq'><td>that one might call cosmography</td><td>that one might call cosmography</td></tr>
+<tr class='chg'><td class='del'>-</td><td></td></tr>
+<tr class='eq'><td>explaining what the cosmos looked like</td><td>explaining what the cosmos looked like</td></tr>
+<tr class='chg'><td class='del'>-</td><td></td></tr>
+<tr class='eq'><td>and ventured into</td><td>and ventured into</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>different subset of</td><td>different subset of</td></tr>
+<tr class='chg'><td class='del'>cosmology, a</td><td class='ins'>cosmol- ogy;</td></tr>
+<tr class='eq'><td>subset that communicated</td><td>subset that communicated</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>certain understanding of cosmic</td><td>certain understanding of cosmic</td></tr>
+<tr class='chg'><td class='del'>order,</td><td class='ins'>order</td></tr>
+<tr class='eq'><td>and exploring the cosmos as an ordered</td><td>and exploring the cosmos as an ordered</td></tr>
+<tr class='chg'><td class='del'>universe,</td><td class='ins'>universe</td></tr>
+<tr class='eq'><td>versus</td><td>versus</td></tr>
+<tr class='chg'><td class='del'>others.</td><td class='ins'>others:</td></tr>
+<tr class='eq'><td>As all authors on</td><td>As all authors on</td></tr>
+<tr class='chg'><td class='del'>hayʾa</td><td class='ins'>haya</td></tr>
+<tr class='eq'><td>presumed that the motions were uniform,</td><td>presumed that the motions were uniform,</td></tr>
+<tr class='chg'><td class='del'>I</td><td></td></tr>
+<tr class='eq'><td>am</td><td>am</td></tr>
+<tr class='chg'><td class='del'>looking</td><td class='ins'>look- ing</td></tr>
+<tr class='eq'><td>for arguments or contentions that there is an underlying order in the</td><td>for arguments or contentions that there is an underlying order in the</td></tr>
+<tr class='chg'><td class='del'>cosmos (cosmology),</td><td class='ins'>cos- mos cosmology),</td></tr>
+<tr class='eq'><td>not simply arguments that a given set of observations can be explained in terms of uniform motions</td><td>not simply arguments that a given set of observations can be explained in terms of uniform motions</td></tr>
+<tr class='chg'><td class='del'>(cosmography).</td><td class='ins'>cosmography)</td></tr>
+<tr class='eq'><td>The genre of</td><td>The genre of</td></tr>
+<tr class='chg'><td class='del'>hayʾa generally</td><td class='ins'>hay a gen- erally</td></tr>
+<tr class='eq'><td>excluded 'why' questions, preferring to confine itself to descriptions of the external aspects of the celestial</td><td>excluded 'why' questions, preferring to confine itself to descriptions of the external aspects of the celestial</td></tr>
+<tr class='chg'><td class='del'>bodies.$^{1}$^{0}</td><td class='ins'>bodies_</td></tr>
+<tr class='eq'><td>Metaphysical statements about</td><td>Metaphysical statements about</td></tr>
+<tr class='chg'><td class='del'>6</td><td></td></tr>
+<tr class='eq'><td>The distinction between</td><td>The distinction between</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>ilm al-haya</td></tr>
+<tr class='eq'><td>and cosmology blurs in</td><td>and cosmology blurs in</td></tr>
+<tr class='chg'><td class='del'>F.</td><td class='ins'>E</td></tr>
+<tr class='eq'><td>Jamil</td><td>Jamil</td></tr>
+<tr class='chg'><td class='del'>Ragep, 'Astronomy,' in</td><td class='ins'>Ragep "Astronomy"</td></tr>
+<tr class='eq'><td>Kate</td><td>Kate</td></tr>
+<tr class='chg'><td class='del'>Fleet,</td><td class='ins'>Fleet;</td></tr>
+<tr class='eq'><td>Gudrun</td><td>Gudrun</td></tr>
+<tr class='chg'><td class='del'>Krämer,</td><td class='ins'>Krimer;</td></tr>
+<tr class='eq'><td>Denis</td><td>Denis</td></tr>
+<tr class='chg'><td class='del'>Matringe,</td><td class='ins'>Mauinge:</td></tr>
+<tr class='eq'><td>John Nawas and Everett Rowson,</td><td>John Nawas and Everett Rowson,</td></tr>
+<tr class='chg'><td class='del'>eds.,</td><td class='ins'>eds:</td></tr>
+<tr class='eq'><td>Encyclopaedia of</td><td>Encyclopaedia of</td></tr>
+<tr class='chg'><td class='del'>Islam,</td><td class='ins'>Islam;</td></tr>
+<tr class='eq'><td>THREE</td><td>THREE</td></tr>
+<tr class='chg'><td class='del'>(Leiden, 2009), &lt;http://dx.doi.org/10.1163/1573-3912_ei3_ COM_22652&gt;</td><td class='ins'>(Leiden; 2009) chttp:| Ildxdoiorg/o.163/1573-3912_ei3 COM_22652 &gt;</td></tr>
+<tr class='eq'><td>last accessed 19.05.2019. Ragep wrote that</td><td>last accessed 19.05.2019. Ragep wrote that</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa al-basīṭa</td><td class='ins'>'iln al-haya al-basita</td></tr>
+<tr class='eq'><td>specified</td><td>specified</td></tr>
+<tr class='chg'><td class='del'>'a</td><td></td></tr>
+<tr class='eq'><td>certain genre</td><td>certain genre</td></tr>
+<tr class='chg'><td></td><td class='ins'>(</td></tr>
+<tr class='eq'><td>of theoretical</td><td>of theoretical</td></tr>
+<tr class='chg'><td class='del'>astronomy/cosmology.'</td><td class='ins'>astronomy/cosmology"</td></tr>
+<tr class='eq'><td>Three of the four</td><td>Three of the four</td></tr>
+<tr class='chg'><td class='del'>sub-headings of the</td><td class='ins'>sub headings ofthe</td></tr>
+<tr class='eq'><td>article</td><td>article</td></tr>
+<tr class='chg'><td class='del'>included</td><td class='ins'>Included</td></tr>
+<tr class='eq'><td>the word</td><td>the word</td></tr>
+<tr class='chg'><td class='del'>'cosmology'.</td><td class='ins'>'cosmology</td></tr>
+<tr class='eq'><td>For another example</td><td>For another example</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>blurred distinction between ilm</td><td>blurred distinction between ilm</td></tr>
+<tr class='chg'><td class='del'>al-hayʾa</td><td class='ins'>al-haya</td></tr>
+<tr class='eq'><td>and</td><td>and</td></tr>
+<tr class='chg'><td class='del'>cosmology,</td><td class='ins'>cosmology;</td></tr>
+<tr class='eq'><td>see</td><td>see</td></tr>
+<tr class='chg'><td class='del'>Morrison, 'Islamic Astronomy.' (Leiden- 7</td><td class='ins'>Morrison; "Islamic Astronomy</td></tr>
+<tr class='eq'><td>Damien</td><td>Damien</td></tr>
+<tr class='chg'><td class='del'>Janos, Method, Structure, and</td><td class='ins'>Janos Method Structure</td></tr>
+<tr class='eq'><td>Development in</td><td>Development in</td></tr>
+<tr class='chg'><td class='del'>al-Fārābī's</td><td class='ins'>al-Farabis</td></tr>
+<tr class='eq'><td>Cosmology</td><td>Cosmology</td></tr>
+<tr class='chg'><td class='del'>Boston, MA, 2012), 11, n1. 8</td><td class='ins'>(Leiden- Boston; MA 2012</td></tr>
+<tr class='eq'><td>George</td><td>George</td></tr>
+<tr class='chg'><td class='del'>Saliba, 'Islamic</td><td class='ins'>Saliba "Islamic</td></tr>
+<tr class='eq'><td>Astronomy in Context: Attacks on Astrology and the Rise of the</td><td>Astronomy in Context: Attacks on Astrology and the Rise of the</td></tr>
+<tr class='chg'><td class='del'>Hay'a Tradition,'</td><td class='ins'>Haya Tradition "</td></tr>
+<tr class='eq'><td>Bulletin of the Royal Institute for Inter-Faith</td><td>Bulletin of the Royal Institute for Inter-Faith</td></tr>
+<tr class='chg'><td class='del'>Studies , 4 (2002), 25-46, 42-43. 9 F.</td><td class='ins'>Studies, (2002 25*46,42-43 F</td></tr>
+<tr class='eq'><td>Jamil Ragep:</td><td>Jamil Ragep:</td></tr>
+<tr class='chg'><td class='del'>'Cosmography</td><td class='ins'>"Cosmography</td></tr>
+<tr class='eq'><td>in the Tadhkira of</td><td>in the Tadhkira of</td></tr>
+<tr class='chg'><td class='del'>Naṣīr al-Dīn al-Ṭūsī'</td><td class='ins'>Nasir al-Din al- Tusi"</td></tr>
+<tr class='eq'><td>(dissertation,</td><td>(dissertation,</td></tr>
+<tr class='chg'><td class='del'>Harvard University, 1982). 10 Naṣīr al-Dīn Muḥammad b. Muḥammad al-Ṭūsī, Naṣīr al-Dīn al-Ṭūsī's</td><td class='ins'>Har- vard University; 1982 Nasir al-Din Muhammad Muhammad al-Tusi,Nasir al-Din al-Tusts</td></tr>
+<tr class='eq'><td>Memoir</td><td>Memoir</td></tr>
+<tr class='chg'><td class='del'>on</td><td class='ins'>0n</td></tr>
+<tr class='eq'><td>Astron-</td><td>Astron-</td></tr>
+<tr class='chg'><td></td><td class='ins'>EARLY SCIENCE AND MEDICINE 2 (2019) 340-366</td></tr>
+</tbody></table></div>
+        </section>
+        <section class="page-block" id="page-4">
+          <h2>Page 4 <span class='badge good'>Tesseract-eng: 87.2%</span><span class='badge good'>Google Vision: 89.7%</span><span class='badge good'>EasyOCR-en: 87.1%</span></h2>
+          <div class="meta">
+            Docling words: 215
+            &nbsp;·&nbsp;
+            <label><input type="checkbox" onchange="toggleEqual(this)" checked>
+            hide matching rows</label>
+          </div>
+          <div class="engine-tabs"><div class='engine-tab active' data-eng='Tesseract-eng' onclick='switchTab("page-4","Tesseract-eng")'>Tesseract-eng</div><div class='engine-tab' data-eng='Google Vision' onclick='switchTab("page-4","Google Vision")'>Google Vision</div><div class='engine-tab' data-eng='EasyOCR-en' onclick='switchTab("page-4","EasyOCR-en")'>EasyOCR-en</div></div>
+          <div class='engine-panel active' data-eng='Tesseract-eng'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Tesseract-eng</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>COSMOLOGY AND COSMIC ORDER IN ISLAMIC ASTRONOMY 343</td></tr>
+<tr class='eq'><td>order in the cosmos were borrowed, not discussed. Thus, most of</td><td>order in the cosmos were borrowed, not discussed. Thus, most of</td></tr>
+<tr class='chg'><td class='del'>hayʾa</td><td class='ins'>hay’a</td></tr>
+<tr class='eq'><td>turns out to be cosmography, but there are cases in which authors talk about the universe's underlying order, and this</td><td>turns out to be cosmography, but there are cases in which authors talk about the universe's underlying order, and this</td></tr>
+<tr class='eq'><td>article aims to clarify which is which and why. Within the history of</td><td>article aims to clarify which is which and why. Within the history of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa ,</td><td class='ins'>‘im al-hay’a,</td></tr>
+<tr class='eq'><td>the article focuses on writers</td><td>the article focuses on writers</td></tr>
+<tr class='chg'><td class='del'>associated</td><td class='ins'>associat- ed</td></tr>
+<tr class='eq'><td>with the</td><td>with the</td></tr>
+<tr class='chg'><td class='del'>Marāgha</td><td class='ins'>Maragha</td></tr>
+<tr class='eq'><td>Observatory through 1400. Academic discussions of</td><td>Observatory through 1400. Academic discussions of</td></tr>
+<tr class='chg'><td class='del'>Islamic</td><td class='ins'>Is- lamic</td></tr>
+<tr class='eq'><td>cosmology in all periods have been complicated by the wide semantic range of the Greek ho</td><td>cosmology in all periods have been complicated by the wide semantic range of the Greek ho</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>késmos</td></tr>
+<tr class='eq'><td>(cosmos), by how the Arabic words</td><td>(cosmos), by how the Arabic words</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>‘alam</td></tr>
+<tr class='eq'><td>(world) and</td><td>(world) and</td></tr>
+<tr class='chg'><td class='del'>niẓām</td><td class='ins'>nizgdm</td></tr>
+<tr class='eq'><td>(order) render more than one Greek term respectively, and by how neither Arabic lexicographic dictionaries nor texts translated from the</td><td>(order) render more than one Greek term respectively, and by how neither Arabic lexicographic dictionaries nor texts translated from the</td></tr>
+<tr class='eq'><td>Greek make a necessary connection between</td><td>Greek make a necessary connection between</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>‘alam</td></tr>
+<tr class='eq'><td>and</td><td>and</td></tr>
+<tr class='chg'><td class='del'>niẓām .</td><td class='ins'>nizdm.</td></tr>
+<tr class='eq'><td>Acknowledging the range of possible uses and definitions of Arabic words like</td><td>Acknowledging the range of possible uses and definitions of Arabic words like</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>“alam</td></tr>
+<tr class='eq'><td>and English words like</td><td>and English words like</td></tr>
+<tr class='chg'><td class='del'>'cosmos'</td><td class='ins'>‘cosmos’</td></tr>
+<tr class='eq'><td>is important background for the debates about cosmic</td><td>is important background for the debates about cosmic</td></tr>
+<tr class='chg'><td class='del'>order</td><td class='ins'>or- der</td></tr>
+<tr class='eq'><td>that follow. Thus, the article begins by examining the semantic range of</td><td>that follow. Thus, the article begins by examining the semantic range of</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kdsmos</td></tr>
+<tr class='eq'><td>in Greek and how that and related words were translated into Arabic. These lexicographic considerations matter because they clarify why</td><td>in Greek and how that and related words were translated into Arabic. These lexicographic considerations matter because they clarify why</td></tr>
+<tr class='eq'><td>thirteenth and fourteenth-century discussions of the cosmos may or may not</td><td>thirteenth and fourteenth-century discussions of the cosmos may or may not</td></tr>
+<tr class='chg'><td class='del'>communicate</td><td class='ins'>communi- cate</td></tr>
+<tr class='eq'><td>an inherent order. These different stances on whether the cosmos was inherently ordered are the focus of the first part</td><td>an inherent order. These different stances on whether the cosmos was inherently ordered are the focus of the first part</td></tr>
+<tr class='eq'><td>of the article. Second, the paper will examine the ways in which some writers on</td><td>of the article. Second, the paper will examine the ways in which some writers on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa ,</td><td class='ins'>‘ilm al-hay‘a,</td></tr>
+<tr class='eq'><td>particularly Mu'ayyad</td><td>particularly Mu'ayyad</td></tr>
+<tr class='chg'><td class='del'>al-Dīn al/uni02BFUrḍī</td><td class='ins'>al-Din al- “Urdi</td></tr>
+<tr class='eq'><td>(d. 1266), discussed</td><td>(d. 1266), discussed</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa 's</td><td class='ins'>‘dm al-hay‘a’s</td></tr>
+<tr class='eq'><td>models in terms of the</td><td>models in terms of the</td></tr>
+<tr class='chg'><td class='del'>cosmos' underlying</td><td class='ins'>cosmos’ under- lying</td></tr>
+<tr class='eq'><td>order. As earlier scholarship has suggested,</td><td>order. As earlier scholarship has suggested,</td></tr>
+<tr class='chg'><td class='del'>/uni02BFUrḍī's</td><td class='ins'>‘Urdi’s</td></tr>
+<tr class='eq'><td>position could have developed out of a conversation or debate with</td><td>position could have developed out of a conversation or debate with</td></tr>
+<tr class='chg'><td class='del'>kalām .$^{1}$^{1}</td><td class='ins'>kalam."</td></tr>
+<tr class='eq'><td>Third, following</td><td>Third, following</td></tr>
+<tr class='chg'><td class='del'>/uni02BFUrḍī,</td><td class='ins'>Urdi,</td></tr>
+<tr class='eq'><td>the article engages the astronomy of</td><td>the article engages the astronomy of</td></tr>
+<tr class='chg'><td class='del'>Quṭb al-Dīn al-Shīrāzī (d. 1311),</td><td class='ins'>Qutb al-Din al-Shirazi (d.1g11),</td></tr>
+<tr class='eq'><td>which</td><td>which</td></tr>
+<tr class='chg'><td class='del'>featured</td><td class='ins'>fea- tured</td></tr>
+<tr class='eq'><td>increased confidence about the correctness of</td><td>increased confidence about the correctness of</td></tr>
+<tr class='chg'><td class='del'>astronomy's</td><td class='ins'>astronomy’s</td></tr>
+<tr class='eq'><td>models but fewer references to an ordered cosmos. Fourth, the paper, as an interlude, will mention</td><td>models but fewer references to an ordered cosmos. Fourth, the paper, as an interlude, will mention</td></tr>
+<tr class='chg'><td class='del'>Ṣadr al-Sharī/uni02BFa's</td><td class='ins'>Sadr al-Shari'a’s</td></tr>
+<tr class='eq'><td>(d. 1347) position about how the knowledge afforded by</td><td>(d. 1347) position about how the knowledge afforded by</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>‘im al-hay’a</td></tr>
+<tr class='eq'><td>was restricted to particulars and did not lead to knowledge of an essential natural order.</td><td>was restricted to particulars and did not lead to knowledge of an essential natural order.</td></tr>
+<tr class='chg'><td class='del'>Ṣadr al-Sharī/uni02BFa's</td><td class='ins'>Sadr al-Shari‘a’s</td></tr>
+<tr class='eq'><td>response to</td><td>response to</td></tr>
+<tr class='chg'><td class='del'>Shīrāzī</td><td class='ins'>Shirazi</td></tr>
+<tr class='eq'><td>and</td><td>and</td></tr>
+<tr class='chg'><td class='del'>Naṣīr al-Dīn al-Ṭūsī's</td><td class='ins'>Nasir al-Din al-Tasi’s</td></tr>
+<tr class='eq'><td>theoretical astronomy illustrates how one could be an influential</td><td>theoretical astronomy illustrates how one could be an influential</td></tr>
+<tr class='chg'><td class='del'>writer</td><td class='ins'>writ- er</td></tr>
+<tr class='eq'><td>on</td><td>on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>tm al-hay‘a</td></tr>
+<tr class='eq'><td>without arguing that there was an underlying natural order detectable through the systematic interrogation of creation. Fifth and finally, the</td><td>without arguing that there was an underlying natural order detectable through the systematic interrogation of creation. Fifth and finally, the</td></tr>
+<tr class='eq'><td>article will cover ways that discussions of an ordered universe, in works on</td><td>article will cover ways that discussions of an ordered universe, in works on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>‘im al-hay’a</td></tr>
+<tr class='eq'><td>written at the beginning of the thirteenth century, endured even without as strong a dependence on the physics and metaphysics</td><td>written at the beginning of the thirteenth century, endured even without as strong a dependence on the physics and metaphysics</td></tr>
+<tr class='eq'><td>derived from</td><td>derived from</td></tr>
+<tr class='chg'><td class='del'>omy: al-Tadhkira fī /uni02BFilm al-hayʾa, ed.,</td><td class='ins'>‘mye al-Fadhkira film l-hay', ed,</td></tr>
+<tr class='eq'><td>trans. and commentary F. Jamil Ragep, 2 vols. (New</td><td>trans. and commentary F. Jamil Ragep, 2 vols. (New</td></tr>
+<tr class='chg'><td class='del'>York-Heidelberg-Berlin,</td><td class='ins'>York Heidelberg-Berlin,</td></tr>
+<tr class='eq'><td>1993), vol.</td><td>1993), vol.</td></tr>
+<tr class='chg'><td class='del'>1, 33-41,</td><td class='ins'>139-4</td></tr>
+<tr class='eq'><td>esp.</td><td>esp.</td></tr>
+<tr class='chg'><td class='del'>38-41. 11</td><td class='ins'>38-41 1</td></tr>
+<tr class='eq'><td>Heidrun Eichner, The Post-Avicennian Philosophical Tradition and Islamic Orthodoxy. Philosophical and Theological Summae in</td><td>Heidrun Eichner, The Post-Avicennian Philosophical Tradition and Islamic Orthodoxy. Philosophical and Theological Summae in</td></tr>
+<tr class='chg'><td class='del'>Context , (Habilitationsschrift, Martin-LutherUniversität Halle-Wittenberg,</td><td class='ins'>Context, (Habiltationsschrif, Martin-Luther- Universitat Halle Wittenberg,</td></tr>
+<tr class='eq'><td>2009), 285.</td><td>2009), 285.</td></tr>
+<tr class='chg'><td></td><td class='ins'>EARLY SCIENCE AND MEDICINE 24 (2019) 340-366,</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='Google Vision'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Google Vision</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>COSMOLOGY AND COSMIC ORDER IN ISLAMIC ASTRONOMY 343</td></tr>
+<tr class='eq'><td>order in the cosmos were borrowed, not discussed. Thus, most of</td><td>order in the cosmos were borrowed, not discussed. Thus, most of</td></tr>
+<tr class='chg'><td class='del'>hayʾa</td><td class='ins'>hay'a</td></tr>
+<tr class='eq'><td>turns out to be cosmography, but there are cases in which authors talk about the universe's underlying order, and this</td><td>turns out to be cosmography, but there are cases in which authors talk about the universe's underlying order, and this</td></tr>
+<tr class='eq'><td>article aims to clarify which is which and why. Within the history of</td><td>article aims to clarify which is which and why. Within the history of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa ,</td><td class='ins'>'ilm al-hay'a,</td></tr>
+<tr class='eq'><td>the article focuses on writers</td><td>the article focuses on writers</td></tr>
+<tr class='chg'><td class='del'>associated</td><td class='ins'>associat- ed</td></tr>
+<tr class='eq'><td>with the</td><td>with the</td></tr>
+<tr class='chg'><td class='del'>Marāgha</td><td class='ins'>Maragha</td></tr>
+<tr class='eq'><td>Observatory through 1400. Academic discussions of</td><td>Observatory through 1400. Academic discussions of</td></tr>
+<tr class='chg'><td class='del'>Islamic</td><td class='ins'>Is- lamic</td></tr>
+<tr class='eq'><td>cosmology in all periods have been complicated by the wide semantic range of the Greek ho kósmos (cosmos), by how</td><td>cosmology in all periods have been complicated by the wide semantic range of the Greek ho kósmos (cosmos), by how</td></tr>
+<tr class='eq'><td>the Arabic words</td><td>the Arabic words</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>'alam</td></tr>
+<tr class='eq'><td>(world) and</td><td>(world) and</td></tr>
+<tr class='chg'><td class='del'>niẓām</td><td class='ins'>nizam</td></tr>
+<tr class='eq'><td>(order) render more than one Greek term respectively, and by how neither Arabic lexicographic dictionaries nor texts translated from the</td><td>(order) render more than one Greek term respectively, and by how neither Arabic lexicographic dictionaries nor texts translated from the</td></tr>
+<tr class='eq'><td>Greek make a necessary connection between</td><td>Greek make a necessary connection between</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>'äalam</td></tr>
+<tr class='eq'><td>and</td><td>and</td></tr>
+<tr class='chg'><td class='del'>niẓām .</td><td class='ins'>nizam.</td></tr>
+<tr class='eq'><td>Acknowledging the range of possible uses and definitions of Arabic words like</td><td>Acknowledging the range of possible uses and definitions of Arabic words like</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>'alam</td></tr>
+<tr class='eq'><td>and English words like 'cosmos' is important background for the debates about cosmic</td><td>and English words like 'cosmos' is important background for the debates about cosmic</td></tr>
+<tr class='chg'><td class='del'>order</td><td class='ins'>or- der</td></tr>
+<tr class='eq'><td>that follow. Thus, the article begins by examining the semantic range of kósmos in Greek and how that and related</td><td>that follow. Thus, the article begins by examining the semantic range of kósmos in Greek and how that and related</td></tr>
+<tr class='eq'><td>words were translated into Arabic. These lexicographic considerations matter because they clarify why thirteenth and fourteenth-century discussions of the cosmos</td><td>words were translated into Arabic. These lexicographic considerations matter because they clarify why thirteenth and fourteenth-century discussions of the cosmos</td></tr>
+<tr class='eq'><td>may or may not</td><td>may or may not</td></tr>
+<tr class='chg'><td class='del'>communicate</td><td class='ins'>communi- cate</td></tr>
+<tr class='eq'><td>an inherent order. These different stances on whether the cosmos was inherently ordered are the focus of the first part</td><td>an inherent order. These different stances on whether the cosmos was inherently ordered are the focus of the first part</td></tr>
+<tr class='eq'><td>of the article. Second, the paper will examine the ways in which some writers on</td><td>of the article. Second, the paper will examine the ways in which some writers on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa ,</td><td class='ins'>'ilm al-haya,</td></tr>
+<tr class='eq'><td>particularly Mu'ayyad</td><td>particularly Mu'ayyad</td></tr>
+<tr class='chg'><td class='del'>al-Dīn al/uni02BFUrḍī</td><td class='ins'>al-Din al- 'Urḍi</td></tr>
+<tr class='eq'><td>(d. 1266), discussed</td><td>(d. 1266), discussed</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa 's</td><td class='ins'>'ilm al-hay'a's</td></tr>
+<tr class='eq'><td>models in terms of the cosmos'</td><td>models in terms of the cosmos'</td></tr>
+<tr class='chg'><td class='del'>underlying</td><td class='ins'>under- lying</td></tr>
+<tr class='eq'><td>order. As earlier scholarship has suggested,</td><td>order. As earlier scholarship has suggested,</td></tr>
+<tr class='chg'><td class='del'>/uni02BFUrḍī's</td><td class='ins'>'Urdi's</td></tr>
+<tr class='eq'><td>position could have developed out of a conversation or debate with</td><td>position could have developed out of a conversation or debate with</td></tr>
+<tr class='chg'><td class='del'>kalām .$^{1}$^{1}</td><td class='ins'>kalām."</td></tr>
+<tr class='eq'><td>Third, following</td><td>Third, following</td></tr>
+<tr class='chg'><td class='del'>/uni02BFUrḍī,</td><td class='ins'>'Urdi,</td></tr>
+<tr class='eq'><td>the article engages the astronomy of</td><td>the article engages the astronomy of</td></tr>
+<tr class='chg'><td class='del'>Quṭb al-Dīn al-Shīrāzī</td><td class='ins'>Qutb al-Din al-Shirazi</td></tr>
+<tr class='eq'><td>(d. 1311), which</td><td>(d. 1311), which</td></tr>
+<tr class='chg'><td class='del'>featured</td><td class='ins'>fea- tured</td></tr>
+<tr class='eq'><td>increased confidence about the correctness of astronomy's models but fewer references to an ordered cosmos. Fourth, the paper, as an</td><td>increased confidence about the correctness of astronomy's models but fewer references to an ordered cosmos. Fourth, the paper, as an</td></tr>
+<tr class='eq'><td>interlude, will mention</td><td>interlude, will mention</td></tr>
+<tr class='chg'><td class='del'>Ṣadr al-Sharī/uni02BFa's</td><td class='ins'>Şadr al-Shari'a's</td></tr>
+<tr class='eq'><td>(d. 1347) position about how the knowledge afforded by</td><td>(d. 1347) position about how the knowledge afforded by</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>was restricted to particulars and did not lead to knowledge of an essential natural order.</td><td>was restricted to particulars and did not lead to knowledge of an essential natural order.</td></tr>
+<tr class='chg'><td class='del'>Ṣadr al-Sharī/uni02BFa's</td><td class='ins'>Şadr al-Shari'a's</td></tr>
+<tr class='eq'><td>response to</td><td>response to</td></tr>
+<tr class='chg'><td class='del'>Shīrāzī</td><td class='ins'>Shirazi</td></tr>
+<tr class='eq'><td>and</td><td>and</td></tr>
+<tr class='chg'><td class='del'>Naṣīr al-Dīn al-Ṭūsī's</td><td class='ins'>Nasir al-Din al-Ṭūsi's</td></tr>
+<tr class='eq'><td>theoretical astronomy illustrates how one could be an influential</td><td>theoretical astronomy illustrates how one could be an influential</td></tr>
+<tr class='chg'><td class='del'>writer</td><td class='ins'>writ- er</td></tr>
+<tr class='eq'><td>on</td><td>on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>without arguing that there was an underlying natural order detectable through the systematic interrogation of creation. Fifth and finally, the</td><td>without arguing that there was an underlying natural order detectable through the systematic interrogation of creation. Fifth and finally, the</td></tr>
+<tr class='eq'><td>article will cover ways that discussions of an ordered universe, in works on</td><td>article will cover ways that discussions of an ordered universe, in works on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>written at the beginning of the thirteenth century, endured even without as strong a dependence on the physics and metaphysics</td><td>written at the beginning of the thirteenth century, endured even without as strong a dependence on the physics and metaphysics</td></tr>
+<tr class='eq'><td>derived from</td><td>derived from</td></tr>
+<tr class='chg'><td></td><td class='ins'>11</td></tr>
+<tr class='eq'><td>omy: al-Tadhkira</td><td>omy: al-Tadhkira</td></tr>
+<tr class='chg'><td class='del'>fī /uni02BFilm al-hayʾa,</td><td class='ins'>fi 'ilm al-hay'a,</td></tr>
+<tr class='eq'><td>ed., trans. and commentary F. Jamil Ragep, 2 vols. (New York-Heidelberg-Berlin, 1993), vol. 1, 33-41, esp. 38-41.</td><td>ed., trans. and commentary F. Jamil Ragep, 2 vols. (New York-Heidelberg-Berlin, 1993), vol. 1, 33-41, esp. 38-41.</td></tr>
+<tr class='chg'><td class='del'>11</td><td></td></tr>
+<tr class='eq'><td>Heidrun Eichner, The Post-Avicennian Philosophical Tradition and Islamic Orthodoxy. Philosophical and Theological Summae in</td><td>Heidrun Eichner, The Post-Avicennian Philosophical Tradition and Islamic Orthodoxy. Philosophical and Theological Summae in</td></tr>
+<tr class='chg'><td class='del'>Context ,</td><td class='ins'>Context,</td></tr>
+<tr class='eq'><td>(Habilitationsschrift,</td><td>(Habilitationsschrift,</td></tr>
+<tr class='chg'><td class='del'>Martin-LutherUniversität</td><td class='ins'>Martin-Luther- Universität</td></tr>
+<tr class='eq'><td>Halle-Wittenberg, 2009), 285.</td><td>Halle-Wittenberg, 2009), 285.</td></tr>
+<tr class='chg'><td></td><td class='ins'>EARLY SCIENCE AND MEDICINE 24 (2019) 340-366</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='EasyOCR-en'><table class='diff'><thead><tr><th>Docling (ref)</th><th>EasyOCR-en</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>COSMOLOGY AND COSMIC ORDER IN ISLAMIC ASTRONOMY 343</td></tr>
+<tr class='eq'><td>order in the cosmos were borrowed, not discussed.</td><td>order in the cosmos were borrowed, not discussed.</td></tr>
+<tr class='chg'><td class='del'>Thus,</td><td class='ins'>Thus;</td></tr>
+<tr class='eq'><td>most of</td><td>most of</td></tr>
+<tr class='chg'><td class='del'>hayʾa</td><td class='ins'>haya</td></tr>
+<tr class='eq'><td>turns out to be</td><td>turns out to be</td></tr>
+<tr class='chg'><td class='del'>cosmography,</td><td class='ins'>cosmography;</td></tr>
+<tr class='eq'><td>but there are cases in which authors talk about the universe's underlying</td><td>but there are cases in which authors talk about the universe's underlying</td></tr>
+<tr class='chg'><td class='del'>order,</td><td class='ins'>order;</td></tr>
+<tr class='eq'><td>and this article aims to clarify which is which and</td><td>and this article aims to clarify which is which and</td></tr>
+<tr class='chg'><td class='del'>why.</td><td class='ins'>why:</td></tr>
+<tr class='eq'><td>Within the history of</td><td>Within the history of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa ,</td><td class='ins'>'ilm al-haya,</td></tr>
+<tr class='eq'><td>the article focuses on writers</td><td>the article focuses on writers</td></tr>
+<tr class='chg'><td class='del'>associated</td><td class='ins'>associat- ed</td></tr>
+<tr class='eq'><td>with the</td><td>with the</td></tr>
+<tr class='chg'><td class='del'>Marāgha</td><td class='ins'>Maragha</td></tr>
+<tr class='eq'><td>Observatory through 1400. Academic discussions of</td><td>Observatory through 1400. Academic discussions of</td></tr>
+<tr class='chg'><td class='del'>Islamic</td><td class='ins'>Is- lamic</td></tr>
+<tr class='eq'><td>cosmology in all periods have been complicated by the wide semantic range of the Greek ho</td><td>cosmology in all periods have been complicated by the wide semantic range of the Greek ho</td></tr>
+<tr class='chg'><td class='del'>kósmos (cosmos),</td><td class='ins'>kosmos cosmos),</td></tr>
+<tr class='eq'><td>by how the Arabic words</td><td>by how the Arabic words</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>alam</td></tr>
+<tr class='eq'><td>(world) and</td><td>(world) and</td></tr>
+<tr class='chg'><td class='del'>niẓām</td><td class='ins'>nizam</td></tr>
+<tr class='eq'><td>(order) render more than one Greek term</td><td>(order) render more than one Greek term</td></tr>
+<tr class='chg'><td class='del'>respectively,</td><td class='ins'>respectively;</td></tr>
+<tr class='eq'><td>and by how neither Arabic lexicographic dictionaries nor texts translated from the Greek make</td><td>and by how neither Arabic lexicographic dictionaries nor texts translated from the Greek make</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>necessary connection between</td><td>necessary connection between</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>'alam</td></tr>
+<tr class='eq'><td>and</td><td>and</td></tr>
+<tr class='chg'><td class='del'>niẓām .</td><td class='ins'>nizam.</td></tr>
+<tr class='eq'><td>Acknowledging the range of possible uses and definitions of Arabic words like</td><td>Acknowledging the range of possible uses and definitions of Arabic words like</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam</td><td class='ins'>'alam</td></tr>
+<tr class='eq'><td>and English words like 'cosmos' is important background for the debates about cosmic</td><td>and English words like 'cosmos' is important background for the debates about cosmic</td></tr>
+<tr class='chg'><td class='del'>order</td><td class='ins'>r- der</td></tr>
+<tr class='eq'><td>that</td><td>that</td></tr>
+<tr class='chg'><td class='del'>follow.</td><td class='ins'>follow:</td></tr>
+<tr class='eq'><td>Thus, the article begins by examining the semantic range of</td><td>Thus, the article begins by examining the semantic range of</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kosmos</td></tr>
+<tr class='eq'><td>in Greek and how that and related words were translated into</td><td>in Greek and how that and related words were translated into</td></tr>
+<tr class='chg'><td class='del'>Arabic.</td><td class='ins'>Arabic:</td></tr>
+<tr class='eq'><td>These lexicographic considerations matter because they clarify why thirteenth and fourteenth-century discussions of the cosmos may or may not</td><td>These lexicographic considerations matter because they clarify why thirteenth and fourteenth-century discussions of the cosmos may or may not</td></tr>
+<tr class='chg'><td class='del'>communicate</td><td class='ins'>communi- cate</td></tr>
+<tr class='eq'><td>an inherent</td><td>an inherent</td></tr>
+<tr class='chg'><td class='del'>order.</td><td class='ins'>order</td></tr>
+<tr class='eq'><td>These different stances on whether the cosmos was inherently ordered are the focus of the first part of the</td><td>These different stances on whether the cosmos was inherently ordered are the focus of the first part of the</td></tr>
+<tr class='chg'><td class='del'>article.</td><td class='ins'>article_</td></tr>
+<tr class='eq'><td>Second, the paper will examine the ways in which some writers on</td><td>Second, the paper will examine the ways in which some writers on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa ,</td><td class='ins'>'ilm al-haya,</td></tr>
+<tr class='eq'><td>particularly Mu'ayyad</td><td>particularly Mu'ayyad</td></tr>
+<tr class='chg'><td class='del'>al-Dīn al/uni02BFUrḍī</td><td class='ins'>al-Din al- 'Urdi</td></tr>
+<tr class='eq'><td>(d.</td><td>(d.</td></tr>
+<tr class='chg'><td class='del'>1266),</td><td class='ins'>1266 ) ,</td></tr>
+<tr class='eq'><td>discussed</td><td>discussed</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa 's</td><td class='ins'>'ilm al-hay'ds</td></tr>
+<tr class='eq'><td>models in terms of the cosmos'</td><td>models in terms of the cosmos'</td></tr>
+<tr class='chg'><td class='del'>underlying order.</td><td class='ins'>under- lying order:</td></tr>
+<tr class='eq'><td>As earlier scholarship has suggested,</td><td>As earlier scholarship has suggested,</td></tr>
+<tr class='chg'><td class='del'>/uni02BFUrḍī's</td><td class='ins'>'Urdis</td></tr>
+<tr class='eq'><td>position could have developed out of</td><td>position could have developed out of</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>conversation</td><td>conversation</td></tr>
+<tr class='chg'><td class='del'>or</td><td class='ins'>Or</td></tr>
+<tr class='eq'><td>debate with</td><td>debate with</td></tr>
+<tr class='chg'><td class='del'>kalām .$^{1}$^{1}</td><td class='ins'>kalam_</td></tr>
+<tr class='eq'><td>Third, following</td><td>Third, following</td></tr>
+<tr class='chg'><td class='del'>/uni02BFUrḍī,</td><td class='ins'>'Urdi,</td></tr>
+<tr class='eq'><td>the article engages the astronomy of</td><td>the article engages the astronomy of</td></tr>
+<tr class='chg'><td class='del'>Quṭb al-Dīn al-Shīrāzī</td><td class='ins'>Qutb al-Din al-Shirazi</td></tr>
+<tr class='eq'><td>(d. 1311), which</td><td>(d. 1311), which</td></tr>
+<tr class='chg'><td class='del'>featured</td><td class='ins'>fea- tured</td></tr>
+<tr class='eq'><td>increased confidence about the correctness of</td><td>increased confidence about the correctness of</td></tr>
+<tr class='chg'><td class='del'>astronomy's</td><td class='ins'>astronomy'</td></tr>
+<tr class='eq'><td>models but fewer references to an ordered</td><td>models but fewer references to an ordered</td></tr>
+<tr class='chg'><td class='del'>cosmos.</td><td class='ins'>cosmos</td></tr>
+<tr class='eq'><td>Fourth, the</td><td>Fourth, the</td></tr>
+<tr class='chg'><td class='del'>paper,</td><td class='ins'>paper;</td></tr>
+<tr class='eq'><td>as an interlude, will mention</td><td>as an interlude, will mention</td></tr>
+<tr class='chg'><td class='del'>Ṣadr al-Sharī/uni02BFa's</td><td class='ins'>Sadr al-Shanas</td></tr>
+<tr class='eq'><td>(d. 1347) position about how the knowledge afforded by</td><td>(d. 1347) position about how the knowledge afforded by</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-haya</td></tr>
+<tr class='eq'><td>was restricted to particulars and did not lead to knowledge of an essential natural</td><td>was restricted to particulars and did not lead to knowledge of an essential natural</td></tr>
+<tr class='chg'><td class='del'>order. Ṣadr al-Sharī/uni02BFa's</td><td class='ins'>order Sadral-Sharras</td></tr>
+<tr class='eq'><td>response to</td><td>response to</td></tr>
+<tr class='chg'><td class='del'>Shīrāzī</td><td class='ins'>Shirazi</td></tr>
+<tr class='eq'><td>and</td><td>and</td></tr>
+<tr class='chg'><td class='del'>Naṣīr al-Dīn al-Ṭūsī's</td><td class='ins'>Nasir al-Din al-Tusi's</td></tr>
+<tr class='eq'><td>theoretical astronomy illustrates how one could be an influential</td><td>theoretical astronomy illustrates how one could be an influential</td></tr>
+<tr class='chg'><td class='del'>writer</td><td class='ins'>writ- er</td></tr>
+<tr class='eq'><td>on</td><td>on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>%ilm al-haya</td></tr>
+<tr class='eq'><td>without arguing that there was an underlying natural order detectable through the systematic interrogation of</td><td>without arguing that there was an underlying natural order detectable through the systematic interrogation of</td></tr>
+<tr class='chg'><td class='del'>creation.</td><td class='ins'>creation:</td></tr>
+<tr class='eq'><td>Fifth and finally, the article will cover ways that discussions of an ordered universe, in works on</td><td>Fifth and finally, the article will cover ways that discussions of an ordered universe, in works on</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>ilm al-haya</td></tr>
+<tr class='eq'><td>written at the beginning of the thirteenth</td><td>written at the beginning of the thirteenth</td></tr>
+<tr class='chg'><td class='del'>century,</td><td class='ins'>century;</td></tr>
+<tr class='eq'><td>endured even without as strong</td><td>endured even without as strong</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>dependence on the physics and metaphysics derived from omy: al-Tadhkira</td><td>dependence on the physics and metaphysics derived from omy: al-Tadhkira</td></tr>
+<tr class='chg'><td class='del'>fī /uni02BFilm al-hayʾa, ed., trans.</td><td class='ins'>ilm al E hay ^ ed-, trans:</td></tr>
+<tr class='eq'><td>and</td><td>and</td></tr>
+<tr class='chg'><td class='del'>commentary F. Jamil</td><td class='ins'>commentan ~Jamil</td></tr>
+<tr class='eq'><td>Ragep,</td><td>Ragep,</td></tr>
+<tr class='chg'><td class='del'>2 vols.</td><td class='ins'>vols</td></tr>
+<tr class='eq'><td>(New</td><td>(New</td></tr>
+<tr class='chg'><td class='del'>York-Heidelberg-Berlin, 1993),</td><td class='ins'>York Heidelberg-Berlin; 1993)</td></tr>
+<tr class='eq'><td>vol.</td><td>vol.</td></tr>
+<tr class='chg'><td class='del'>1,</td><td></td></tr>
+<tr class='eq'><td>33-41,</td><td>33-41,</td></tr>
+<tr class='chg'><td class='del'>esp. 38-41. 11</td><td class='ins'>eSp 38</td></tr>
+<tr class='eq'><td>Heidrun</td><td>Heidrun</td></tr>
+<tr class='chg'><td class='del'>Eichner,</td><td class='ins'>Eichner;</td></tr>
+<tr class='eq'><td>The Post-Avicennian Philosophical Tradition and Islamic</td><td>The Post-Avicennian Philosophical Tradition and Islamic</td></tr>
+<tr class='chg'><td class='del'>Orthodoxy.</td><td class='ins'>Orthodory</td></tr>
+<tr class='eq'><td>Philosophical and Theological Summae in</td><td>Philosophical and Theological Summae in</td></tr>
+<tr class='chg'><td class='del'>Context ,</td><td class='ins'>Context,</td></tr>
+<tr class='eq'><td>(Habilitationsschrift,</td><td>(Habilitationsschrift,</td></tr>
+<tr class='chg'><td class='del'>Martin-LutherUniversität Halle-Wittenberg,</td><td class='ins'>Martin-Luther- Universitit Halle-Wittenberg;</td></tr>
+<tr class='eq'><td>2009),</td><td>2009),</td></tr>
+<tr class='chg'><td class='del'>285.</td><td class='ins'>285 EARLY SCIENCE AND MEDICINE 2 (2019) 310-466</td></tr>
+</tbody></table></div>
+        </section>
+        <section class="page-block" id="page-5">
+          <h2>Page 5 <span class='badge good'>Tesseract-eng: 89.8%</span><span class='badge good'>Google Vision: 90.8%</span><span class='badge good'>EasyOCR-en: 88.5%</span></h2>
+          <div class="meta">
+            Docling words: 190
+            &nbsp;·&nbsp;
+            <label><input type="checkbox" onchange="toggleEqual(this)" checked>
+            hide matching rows</label>
+          </div>
+          <div class="engine-tabs"><div class='engine-tab active' data-eng='Tesseract-eng' onclick='switchTab("page-5","Tesseract-eng")'>Tesseract-eng</div><div class='engine-tab' data-eng='Google Vision' onclick='switchTab("page-5","Google Vision")'>Google Vision</div><div class='engine-tab' data-eng='EasyOCR-en' onclick='switchTab("page-5","EasyOCR-en")'>EasyOCR-en</div></div>
+          <div class='engine-panel active' data-eng='Tesseract-eng'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Tesseract-eng</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>344 MORRISON</td></tr>
+<tr class='eq'><td>Ibn</td><td>Ibn</td></tr>
+<tr class='chg'><td class='del'>Sīnā.</td><td class='ins'>Sina.</td></tr>
+<tr class='eq'><td>Specifically, the technical term nafs al-amr (the fact of the matter) became relevant to discussions of cosmic order. 1 Introduction:</td><td>Specifically, the technical term nafs al-amr (the fact of the matter) became relevant to discussions of cosmic order. 1 Introduction:</td></tr>
+<tr class='eq'><td>The Greek Semantic Background and the Semantic Range of the Arabic Translations The wide variety of the ways in which</td><td>The Greek Semantic Background and the Semantic Range of the Arabic Translations The wide variety of the ways in which</td></tr>
+<tr class='eq'><td>the word</td><td>the word</td></tr>
+<tr class='chg'><td class='del'>kósmos ,</td><td class='ins'>késmos,</td></tr>
+<tr class='eq'><td>which informs</td><td>which informs</td></tr>
+<tr class='chg'><td class='del'>Western</td><td class='ins'>West- em</td></tr>
+<tr class='eq'><td>understandings of cosmology, was used in ancient Greek and the different semantic ranges of the Arabic translations of the relevant</td><td>understandings of cosmology, was used in ancient Greek and the different semantic ranges of the Arabic translations of the relevant</td></tr>
+<tr class='eq'><td>Greek terms</td><td>Greek terms</td></tr>
+<tr class='chg'><td class='del'>complicate</td><td class='ins'>compli- cate</td></tr>
+<tr class='eq'><td>the task of specifying how</td><td>the task of specifying how</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>‘lm al-hay’a</td></tr>
+<tr class='eq'><td>was (or was not) cosmological. The semantic range of the word</td><td>was (or was not) cosmological. The semantic range of the word</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam ,</td><td class='ins'>‘am,</td></tr>
+<tr class='eq'><td>often used as a translation for</td><td>often used as a translation for</td></tr>
+<tr class='chg'><td class='del'>kósmos ,</td><td class='ins'>késmos,</td></tr>
+<tr class='eq'><td>does not include all of the ways in which</td><td>does not include all of the ways in which</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>késmos</td></tr>
+<tr class='eq'><td>was used in ancient Greek, but adds some others, as is acknowledged in the Encyclopaedia of Islam, Second Edition article</td><td>was used in ancient Greek, but adds some others, as is acknowledged in the Encyclopaedia of Islam, Second Edition article</td></tr>
+<tr class='chg'><td class='del'>'/uni02BF Ālam.'</td><td class='ins'>“Alam.”</td></tr>
+<tr class='eq'><td>Likewise, there are Arabic texts that address seemingly cosmological matters, such as the Arabic treatise</td><td>Likewise, there are Arabic texts that address seemingly cosmological matters, such as the Arabic treatise</td></tr>
+<tr class='chg'><td class='del'>Fī Mabādi' al-kull ,</td><td class='ins'>7 Mabadi’ al-kull,</td></tr>
+<tr class='eq'><td>which Charles Genequand translated as On the</td><td>which Charles Genequand translated as On the</td></tr>
+<tr class='chg'><td class='del'>Cosmos ,</td><td class='ins'>Cosmos,</td></tr>
+<tr class='eq'><td>even though the world</td><td>even though the world</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kés- ‘mos</td></tr>
+<tr class='eq'><td>was probably not in the title of Alexander of</td><td>was probably not in the title of Alexander of</td></tr>
+<tr class='chg'><td class='del'>Aphrodisias'</td><td class='ins'>Aphrodisias’</td></tr>
+<tr class='eq'><td>Greek original upon which the Arabic text was</td><td>Greek original upon which the Arabic text was</td></tr>
+<tr class='chg'><td class='del'>based.$^{1}$^{2}</td><td class='ins'>based.”</td></tr>
+<tr class='eq'><td>Still,</td><td>Still,</td></tr>
+<tr class='chg'><td class='del'>Fī Mabādi'</td><td class='ins'>F’ Mabadi’</td></tr>
+<tr class='eq'><td>al-kull was dedicated to a holistic view of the cosmos, the question of cosmic order, as well as that</td><td>al-kull was dedicated to a holistic view of the cosmos, the question of cosmic order, as well as that</td></tr>
+<tr class='chg'><td class='del'>order's</td><td class='ins'>order’s</td></tr>
+<tr class='eq'><td>moral implications. Likewise, Aristotle's De Caelo had much to say about the cosmos, but was also concerned with more than</td><td>moral implications. Likewise, Aristotle's De Caelo had much to say about the cosmos, but was also concerned with more than</td></tr>
+<tr class='eq'><td>cosmography,</td><td>cosmography,</td></tr>
+<tr class='chg'><td class='del'>i.e.,</td><td class='ins'>ie.,</td></tr>
+<tr class='eq'><td>with more than just the physical models that accounted for and predicted</td><td>with more than just the physical models that accounted for and predicted</td></tr>
+<tr class='chg'><td class='del'>observable</td><td class='ins'>ob- servable</td></tr>
+<tr class='eq'><td>celestial</td><td>celestial</td></tr>
+<tr class='chg'><td class='del'>motions.$^{1}$^{3}</td><td class='ins'>motions.'®</td></tr>
+<tr class='eq'><td>Reviewing the semantic range</td><td>Reviewing the semantic range</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>relevant Greek terms and how they passed into Arabic lends insights into why a writer in English might classify all</td><td>relevant Greek terms and how they passed into Arabic lends insights into why a writer in English might classify all</td></tr>
+<tr class='eq'><td>of these topics as cosmology, and why different writers in Islamic societies wrote about the cosmos in different ways. The</td><td>of these topics as cosmology, and why different writers in Islamic societies wrote about the cosmos in different ways. The</td></tr>
+<tr class='eq'><td>semantic range of the Greek</td><td>semantic range of the Greek</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kdsmos</td></tr>
+<tr class='eq'><td>affected the semantic range of the analytic term</td><td>affected the semantic range of the analytic term</td></tr>
+<tr class='chg'><td class='del'>'cosmology'</td><td class='ins'>‘cosmology’</td></tr>
+<tr class='eq'><td>in European languages. To survey the ways in which</td><td>in European languages. To survey the ways in which</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kdsmos</td></tr>
+<tr class='eq'><td>was used in classical Greek literature, I consulted Liddell, Scott and 12 See Charles Genequand, Alexander of Aphrodisias on the</td><td>was used in classical Greek literature, I consulted Liddell, Scott and 12 See Charles Genequand, Alexander of Aphrodisias on the</td></tr>
+<tr class='eq'><td>Cosmos (Leiden-Boston, MA,</td><td>Cosmos (Leiden-Boston, MA,</td></tr>
+<tr class='chg'><td class='del'>2001).</td><td class='ins'>2001),</td></tr>
+<tr class='eq'><td>13</td><td>13</td></tr>
+<tr class='chg'><td class='del'>One translator</td><td class='ins'>Onetranslator</td></tr>
+<tr class='eq'><td>of Aristotle's De Caelo</td><td>of Aristotle's De Caelo</td></tr>
+<tr class='chg'><td class='del'>( On</td><td class='ins'>(On</td></tr>
+<tr class='eq'><td>the</td><td>the</td></tr>
+<tr class='chg'><td class='del'>Heaven s)</td><td class='ins'>Heavens)</td></tr>
+<tr class='eq'><td>was</td><td>was</td></tr>
+<tr class='chg'><td class='del'>Yaḥyā Ibn al-Biṭrīq</td><td class='ins'>Yahya tbn al-Bitrig</td></tr>
+<tr class='eq'><td>[within the</td><td>[within the</td></tr>
+<tr class='chg'><td class='del'>Kindī</td><td class='ins'>Kindi</td></tr>
+<tr class='eq'><td>circle; see Dimitri Gutas, Greek</td><td>circle; see Dimitri Gutas, Greek</td></tr>
+<tr class='chg'><td class='del'>Thought ,</td><td class='ins'>Thought,</td></tr>
+<tr class='eq'><td>Arabic Culture (London-New York, 1998),</td><td>Arabic Culture (London-New York, 1998),</td></tr>
+<tr class='chg'><td class='del'>145.]</td><td class='ins'>145]</td></tr>
+<tr class='eq'><td>Both Ibn</td><td>Both Ibn</td></tr>
+<tr class='chg'><td class='del'>Sīnā</td><td class='ins'>Sind</td></tr>
+<tr class='eq'><td>and Ibn Rushd produced versions</td><td>and Ibn Rushd produced versions</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>De</td><td>De</td></tr>
+<tr class='chg'><td class='del'>Caelo ,</td><td class='ins'>Caelo,</td></tr>
+<tr class='eq'><td>but De</td><td>but De</td></tr>
+<tr class='chg'><td class='del'>Caelo 's</td><td class='ins'>Caelo’s</td></tr>
+<tr class='eq'><td>approach to astronomy, focusing more on physical principles and less on mathematical precision, became less prominent in Islamic societies with</td><td>approach to astronomy, focusing more on physical principles and less on mathematical precision, became less prominent in Islamic societies with</td></tr>
+<tr class='eq'><td>the rise of</td><td>the rise of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa .</td><td class='ins'>‘lm al-hay’a.</td></tr>
+<tr class='eq'><td>On</td><td>On</td></tr>
+<tr class='chg'><td class='del'>Ibn Rushd's</td><td class='ins'>Ibn. Rushd’s</td></tr>
+<tr class='eq'><td>epitome and commentaries on the De</td><td>epitome and commentaries on the De</td></tr>
+<tr class='chg'><td class='del'>Caelo ,</td><td class='ins'>Caelo,</td></tr>
+<tr class='eq'><td>see Gerhard Endress,</td><td>see Gerhard Endress,</td></tr>
+<tr class='chg'><td class='del'>'Averroes'</td><td class='ins'>“Averroes'</td></tr>
+<tr class='eq'><td>De</td><td>De</td></tr>
+<tr class='chg'><td class='del'>Caelo :</td><td class='ins'>Caelo:</td></tr>
+<tr class='eq'><td>Ibn</td><td>Ibn</td></tr>
+<tr class='chg'><td class='del'>Rushd's</td><td class='ins'>Rushals</td></tr>
+<tr class='eq'><td>Cosmology in His Commentaries on Aristotle's On the</td><td>Cosmology in His Commentaries on Aristotle's On the</td></tr>
+<tr class='chg'><td class='del'>Heavens ,'</td><td class='ins'>Heavens?</td></tr>
+<tr class='eq'><td>Arabic Sciences and Philosophy 5 (1995), 9-49.</td><td>Arabic Sciences and Philosophy 5 (1995), 9-49.</td></tr>
+<tr class='chg'><td></td><td class='ins'>EARLY SCIENCE AND MEDICINE 24 (2019) 240-266</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='Google Vision'><table class='diff'><thead><tr><th>Docling (ref)</th><th>Google Vision</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>344 MORRISON</td></tr>
+<tr class='eq'><td>Ibn</td><td>Ibn</td></tr>
+<tr class='chg'><td class='del'>Sīnā.</td><td class='ins'>Sinā.</td></tr>
+<tr class='eq'><td>Specifically, the technical term nafs al-amr (the fact of the matter) became relevant to discussions of cosmic order. 1 Introduction:</td><td>Specifically, the technical term nafs al-amr (the fact of the matter) became relevant to discussions of cosmic order. 1 Introduction:</td></tr>
+<tr class='eq'><td>The Greek Semantic Background and the Semantic Range of the Arabic Translations The wide variety of the ways in which</td><td>The Greek Semantic Background and the Semantic Range of the Arabic Translations The wide variety of the ways in which</td></tr>
+<tr class='eq'><td>the word</td><td>the word</td></tr>
+<tr class='chg'><td class='del'>kósmos ,</td><td class='ins'>kósmos,</td></tr>
+<tr class='eq'><td>which informs</td><td>which informs</td></tr>
+<tr class='chg'><td class='del'>Western</td><td class='ins'>West- ern</td></tr>
+<tr class='eq'><td>understandings of cosmology, was used in ancient Greek and the different semantic ranges of the Arabic translations of the relevant</td><td>understandings of cosmology, was used in ancient Greek and the different semantic ranges of the Arabic translations of the relevant</td></tr>
+<tr class='eq'><td>Greek terms</td><td>Greek terms</td></tr>
+<tr class='chg'><td class='del'>complicate</td><td class='ins'>compli- cate</td></tr>
+<tr class='eq'><td>the task of specifying how</td><td>the task of specifying how</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-hay'a</td></tr>
+<tr class='eq'><td>was (or was not) cosmological. The semantic range of the word</td><td>was (or was not) cosmological. The semantic range of the word</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam ,</td><td class='ins'>'alam,</td></tr>
+<tr class='eq'><td>often used as a translation for</td><td>often used as a translation for</td></tr>
+<tr class='chg'><td class='del'>kósmos ,</td><td class='ins'>kósmos,</td></tr>
+<tr class='eq'><td>does not include all of the ways in which kósmos was used in ancient Greek, but adds some others, as</td><td>does not include all of the ways in which kósmos was used in ancient Greek, but adds some others, as</td></tr>
+<tr class='eq'><td>is acknowledged in the Encyclopaedia of Islam, Second Edition article</td><td>is acknowledged in the Encyclopaedia of Islam, Second Edition article</td></tr>
+<tr class='chg'><td class='del'>'/uni02BF Ālam.'</td><td class='ins'>"Alam."</td></tr>
+<tr class='eq'><td>Likewise, there are Arabic texts that address seemingly cosmological matters, such as the Arabic treatise</td><td>Likewise, there are Arabic texts that address seemingly cosmological matters, such as the Arabic treatise</td></tr>
+<tr class='chg'><td class='del'>Fī Mabādi' al-kull ,</td><td class='ins'>Fi Mabadi' al-kull,</td></tr>
+<tr class='eq'><td>which Charles Genequand translated as On the</td><td>which Charles Genequand translated as On the</td></tr>
+<tr class='chg'><td class='del'>Cosmos ,</td><td class='ins'>Cosmos,</td></tr>
+<tr class='eq'><td>even though the world</td><td>even though the world</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kós- mos</td></tr>
+<tr class='eq'><td>was probably not in the title of Alexander of Aphrodisias' Greek original upon which the Arabic text was</td><td>was probably not in the title of Alexander of Aphrodisias' Greek original upon which the Arabic text was</td></tr>
+<tr class='chg'><td class='del'>based.$^{1}$^{2}</td><td class='ins'>based.12</td></tr>
+<tr class='eq'><td>Still,</td><td>Still,</td></tr>
+<tr class='chg'><td class='del'>Fī Mabādi'</td><td class='ins'>Fi Mabadi'</td></tr>
+<tr class='eq'><td>al-kull was dedicated to a holistic view of the cosmos, the question of cosmic order, as well as that order's</td><td>al-kull was dedicated to a holistic view of the cosmos, the question of cosmic order, as well as that order's</td></tr>
+<tr class='eq'><td>moral implications. Likewise, Aristotle's De Caelo had much to say about the cosmos, but was also concerned with more than</td><td>moral implications. Likewise, Aristotle's De Caelo had much to say about the cosmos, but was also concerned with more than</td></tr>
+<tr class='eq'><td>cosmography, i.e., with more than just the physical models that accounted for and predicted</td><td>cosmography, i.e., with more than just the physical models that accounted for and predicted</td></tr>
+<tr class='chg'><td class='del'>observable</td><td class='ins'>ob- servable</td></tr>
+<tr class='eq'><td>celestial</td><td>celestial</td></tr>
+<tr class='chg'><td class='del'>motions.$^{1}$^{3}</td><td class='ins'>motions.13</td></tr>
+<tr class='eq'><td>Reviewing the semantic range</td><td>Reviewing the semantic range</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>relevant Greek terms and how they passed into Arabic lends insights into why a writer in English might classify all</td><td>relevant Greek terms and how they passed into Arabic lends insights into why a writer in English might classify all</td></tr>
+<tr class='eq'><td>of these topics as cosmology, and why different writers in Islamic societies wrote about the cosmos in different ways. The</td><td>of these topics as cosmology, and why different writers in Islamic societies wrote about the cosmos in different ways. The</td></tr>
+<tr class='eq'><td>semantic range of the Greek kósmos affected the semantic range of the analytic term 'cosmology' in European languages. To survey</td><td>semantic range of the Greek kósmos affected the semantic range of the analytic term 'cosmology' in European languages. To survey</td></tr>
+<tr class='eq'><td>the ways in which kósmos was used in classical Greek literature, I consulted Liddell, Scott and 12 See Charles Genequand,</td><td>the ways in which kósmos was used in classical Greek literature, I consulted Liddell, Scott and 12 See Charles Genequand,</td></tr>
+<tr class='eq'><td>Alexander of Aphrodisias on the Cosmos (Leiden-Boston, MA, 2001). 13 One translator of Aristotle's De Caelo</td><td>Alexander of Aphrodisias on the Cosmos (Leiden-Boston, MA, 2001). 13 One translator of Aristotle's De Caelo</td></tr>
+<tr class='chg'><td class='del'>( On</td><td class='ins'>(On</td></tr>
+<tr class='eq'><td>the</td><td>the</td></tr>
+<tr class='chg'><td class='del'>Heaven s)</td><td class='ins'>Heavens)</td></tr>
+<tr class='eq'><td>was</td><td>was</td></tr>
+<tr class='chg'><td class='del'>Yaḥyā</td><td class='ins'>Yahya</td></tr>
+<tr class='eq'><td>Ibn</td><td>Ibn</td></tr>
+<tr class='chg'><td class='del'>al-Biṭrīq</td><td class='ins'>al-Bitriq</td></tr>
+<tr class='eq'><td>[within the</td><td>[within the</td></tr>
+<tr class='chg'><td class='del'>Kindī</td><td class='ins'>Kindi</td></tr>
+<tr class='eq'><td>circle; see Dimitri Gutas, Greek</td><td>circle; see Dimitri Gutas, Greek</td></tr>
+<tr class='chg'><td class='del'>Thought ,</td><td class='ins'>Thought,</td></tr>
+<tr class='eq'><td>Arabic Culture (London-New York, 1998), 145.] Both Ibn</td><td>Arabic Culture (London-New York, 1998), 145.] Both Ibn</td></tr>
+<tr class='chg'><td class='del'>Sīnā</td><td class='ins'>Sina</td></tr>
+<tr class='eq'><td>and Ibn Rushd produced versions</td><td>and Ibn Rushd produced versions</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>De</td><td>De</td></tr>
+<tr class='chg'><td class='del'>Caelo ,</td><td class='ins'>Caelo,</td></tr>
+<tr class='eq'><td>but De</td><td>but De</td></tr>
+<tr class='chg'><td class='del'>Caelo 's</td><td class='ins'>Caelo's</td></tr>
+<tr class='eq'><td>approach to astronomy, focusing more on physical principles and less on mathematical precision, became less prominent in Islamic societies with</td><td>approach to astronomy, focusing more on physical principles and less on mathematical precision, became less prominent in Islamic societies with</td></tr>
+<tr class='eq'><td>the rise of</td><td>the rise of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa .</td><td class='ins'>'ilm al-haya.</td></tr>
+<tr class='eq'><td>On Ibn Rushd's epitome and commentaries on the De</td><td>On Ibn Rushd's epitome and commentaries on the De</td></tr>
+<tr class='chg'><td class='del'>Caelo ,</td><td class='ins'>Caelo,</td></tr>
+<tr class='eq'><td>see Gerhard Endress,</td><td>see Gerhard Endress,</td></tr>
+<tr class='chg'><td class='del'>'Averroes'</td><td class='ins'>"Averroes'</td></tr>
+<tr class='eq'><td>De</td><td>De</td></tr>
+<tr class='chg'><td class='del'>Caelo :</td><td class='ins'>Caelo:</td></tr>
+<tr class='eq'><td>Ibn Rushd's Cosmology in His Commentaries on Aristotle's On the</td><td>Ibn Rushd's Cosmology in His Commentaries on Aristotle's On the</td></tr>
+<tr class='chg'><td class='del'>Heavens ,'</td><td class='ins'>Heavens,"</td></tr>
+<tr class='eq'><td>Arabic Sciences and Philosophy 5 (1995),</td><td>Arabic Sciences and Philosophy 5 (1995),</td></tr>
+<tr class='chg'><td class='del'>9-49.</td><td class='ins'>9-49- EARLY SCIENCE AND MEDICINE 24 (2019) 340-366</td></tr>
+</tbody></table></div><div class='engine-panel' data-eng='EasyOCR-en'><table class='diff'><thead><tr><th>Docling (ref)</th><th>EasyOCR-en</th></tr></thead><tbody><tr class='chg'><td></td><td class='ins'>341 MORRISON</td></tr>
+<tr class='eq'><td>Ibn</td><td>Ibn</td></tr>
+<tr class='chg'><td class='del'>Sīnā. Specifically,</td><td class='ins'>Sina: Specifically;</td></tr>
+<tr class='eq'><td>the technical term nafs al-amr (the fact of the matter) became relevant to discussions of cosmic</td><td>the technical term nafs al-amr (the fact of the matter) became relevant to discussions of cosmic</td></tr>
+<tr class='chg'><td class='del'>order. 1</td><td class='ins'>order</td></tr>
+<tr class='eq'><td>Introduction: The Greek Semantic Background and the Semantic Range of the Arabic Translations The wide variety of the ways in</td><td>Introduction: The Greek Semantic Background and the Semantic Range of the Arabic Translations The wide variety of the ways in</td></tr>
+<tr class='eq'><td>which the word</td><td>which the word</td></tr>
+<tr class='chg'><td class='del'>kósmos ,</td><td class='ins'>kosmos,</td></tr>
+<tr class='eq'><td>which informs</td><td>which informs</td></tr>
+<tr class='chg'><td class='del'>Western</td><td class='ins'>West- ern</td></tr>
+<tr class='eq'><td>understandings of</td><td>understandings of</td></tr>
+<tr class='chg'><td class='del'>cosmology,</td><td class='ins'>cosmology;</td></tr>
+<tr class='eq'><td>was used in ancient Greek and the different semantic ranges of the Arabic translations of the relevant Greek terms</td><td>was used in ancient Greek and the different semantic ranges of the Arabic translations of the relevant Greek terms</td></tr>
+<tr class='chg'><td class='del'>complicate</td><td class='ins'>compli- cate</td></tr>
+<tr class='eq'><td>the task of specifying how</td><td>the task of specifying how</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa</td><td class='ins'>'ilm al-haya</td></tr>
+<tr class='eq'><td>was (or was not)</td><td>was (or was not)</td></tr>
+<tr class='chg'><td class='del'>cosmological.</td><td class='ins'>cosmological</td></tr>
+<tr class='eq'><td>The semantic range of the word</td><td>The semantic range of the word</td></tr>
+<tr class='chg'><td class='del'>/uni02BFālam ,</td><td class='ins'>'alam,</td></tr>
+<tr class='eq'><td>often used as</td><td>often used as</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>translation for</td><td>translation for</td></tr>
+<tr class='chg'><td class='del'>kósmos ,</td><td class='ins'>kosmos,</td></tr>
+<tr class='eq'><td>does not include all of the ways in which</td><td>does not include all of the ways in which</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kosmos</td></tr>
+<tr class='eq'><td>was used in ancient</td><td>was used in ancient</td></tr>
+<tr class='chg'><td class='del'>Greek,</td><td class='ins'>Greek;</td></tr>
+<tr class='eq'><td>but adds some</td><td>but adds some</td></tr>
+<tr class='chg'><td class='del'>others,</td><td class='ins'>others;</td></tr>
+<tr class='eq'><td>as is acknowledged in the Encyclopaedia of Islam, Second Edition article</td><td>as is acknowledged in the Encyclopaedia of Islam, Second Edition article</td></tr>
+<tr class='chg'><td class='del'>'/uni02BF Ālam.'</td><td class='ins'>"Alam "</td></tr>
+<tr class='eq'><td>Likewise, there are Arabic texts that address seemingly cosmological</td><td>Likewise, there are Arabic texts that address seemingly cosmological</td></tr>
+<tr class='chg'><td class='del'>matters,</td><td class='ins'>matters;</td></tr>
+<tr class='eq'><td>such as the Arabic treatise</td><td>such as the Arabic treatise</td></tr>
+<tr class='chg'><td class='del'>Fī Mabādi' al-kull ,</td><td class='ins'>F Mabadi' al-kull,</td></tr>
+<tr class='eq'><td>which Charles Genequand translated as On the</td><td>which Charles Genequand translated as On the</td></tr>
+<tr class='chg'><td class='del'>Cosmos ,</td><td class='ins'>Cosmos,</td></tr>
+<tr class='eq'><td>even though the world</td><td>even though the world</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kos- mos</td></tr>
+<tr class='eq'><td>was probably not in the title of Alexander of Aphrodisias' Greek original upon which the Arabic text was</td><td>was probably not in the title of Alexander of Aphrodisias' Greek original upon which the Arabic text was</td></tr>
+<tr class='chg'><td class='del'>based.$^{1}$^{2}</td><td class='ins'>based 12</td></tr>
+<tr class='eq'><td>Still,</td><td>Still,</td></tr>
+<tr class='chg'><td class='del'>Fī Mabādi'</td><td class='ins'>F Mabadi'</td></tr>
+<tr class='eq'><td>al-kull was dedicated</td><td>al-kull was dedicated</td></tr>
+<tr class='chg'><td class='del'>to a</td><td></td></tr>
+<tr class='eq'><td>holistic view of the cosmos, the question of cosmic</td><td>holistic view of the cosmos, the question of cosmic</td></tr>
+<tr class='chg'><td class='del'>order,</td><td class='ins'>order;</td></tr>
+<tr class='eq'><td>as well as that</td><td>as well as that</td></tr>
+<tr class='chg'><td class='del'>order's</td><td class='ins'>orders</td></tr>
+<tr class='eq'><td>moral</td><td>moral</td></tr>
+<tr class='chg'><td class='del'>implications.</td><td class='ins'>implications</td></tr>
+<tr class='eq'><td>Likewise, Aristotle's De Caelo had much</td><td>Likewise, Aristotle's De Caelo had much</td></tr>
+<tr class='chg'><td class='del'>to</td><td class='ins'>tO</td></tr>
+<tr class='eq'><td>say about the cosmos, but was also concerned with more than</td><td>say about the cosmos, but was also concerned with more than</td></tr>
+<tr class='chg'><td class='del'>cosmography, i.e.,</td><td class='ins'>cosmography; iea</td></tr>
+<tr class='eq'><td>with more than just the physical models that accounted for and predicted</td><td>with more than just the physical models that accounted for and predicted</td></tr>
+<tr class='chg'><td class='del'>observable</td><td class='ins'>ob- servable</td></tr>
+<tr class='eq'><td>celestial</td><td>celestial</td></tr>
+<tr class='chg'><td class='del'>motions.$^{1}$^{3}</td><td class='ins'>motions13</td></tr>
+<tr class='eq'><td>Reviewing the semantic range</td><td>Reviewing the semantic range</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>relevant Greek terms and how they passed into Arabic lends insights into why</td><td>relevant Greek terms and how they passed into Arabic lends insights into why</td></tr>
+<tr class='chg'><td class='del'>a</td><td></td></tr>
+<tr class='eq'><td>writer in English might classify all of these topics as</td><td>writer in English might classify all of these topics as</td></tr>
+<tr class='chg'><td class='del'>cosmology,</td><td class='ins'>cosmology;</td></tr>
+<tr class='eq'><td>and why different writers in Islamic societies wrote about the cosmos in different</td><td>and why different writers in Islamic societies wrote about the cosmos in different</td></tr>
+<tr class='chg'><td class='del'>ways.</td><td class='ins'>ways</td></tr>
+<tr class='eq'><td>The semantic range of the Greek</td><td>The semantic range of the Greek</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kosmos</td></tr>
+<tr class='eq'><td>affected the semantic range of the analytic term 'cosmology' in European</td><td>affected the semantic range of the analytic term 'cosmology' in European</td></tr>
+<tr class='chg'><td class='del'>languages.</td><td class='ins'>languages</td></tr>
+<tr class='eq'><td>To survey the ways in which</td><td>To survey the ways in which</td></tr>
+<tr class='chg'><td class='del'>kósmos</td><td class='ins'>kosmos</td></tr>
+<tr class='eq'><td>was used in classical Greek literature,</td><td>was used in classical Greek literature,</td></tr>
+<tr class='chg'><td class='del'>I</td><td></td></tr>
+<tr class='eq'><td>consulted</td><td>consulted</td></tr>
+<tr class='chg'><td class='del'>Liddell,</td><td class='ins'>Liddell;</td></tr>
+<tr class='eq'><td>Scott and</td><td>Scott and</td></tr>
+<tr class='chg'><td class='del'>12</td><td></td></tr>
+<tr class='eq'><td>See Charles Genequand, Alexander of Aphrodisias</td><td>See Charles Genequand, Alexander of Aphrodisias</td></tr>
+<tr class='chg'><td class='del'>on</td><td></td></tr>
+<tr class='eq'><td>the Cosmos</td><td>the Cosmos</td></tr>
+<tr class='chg'><td class='del'>(Leiden-Boston, MA, 2001). 13</td><td class='ins'>(Leiden-Boston; MA; 2001}.</td></tr>
+<tr class='eq'><td>One translator of</td><td>One translator of</td></tr>
+<tr class='chg'><td class='del'>Aristotle's</td><td class='ins'>Aristotle'$</td></tr>
+<tr class='eq'><td>De Caelo</td><td>De Caelo</td></tr>
+<tr class='chg'><td class='del'>( On</td><td class='ins'>Un</td></tr>
+<tr class='eq'><td>the</td><td>the</td></tr>
+<tr class='chg'><td class='del'>Heaven s) was Yaḥyā</td><td class='ins'>Heavens} Yahya</td></tr>
+<tr class='eq'><td>Ibn</td><td>Ibn</td></tr>
+<tr class='chg'><td class='del'>al-Biṭrīq</td><td class='ins'>al-Bitriq</td></tr>
+<tr class='eq'><td>[within the</td><td>[within the</td></tr>
+<tr class='chg'><td class='del'>Kindī</td><td class='ins'>Kindi</td></tr>
+<tr class='eq'><td>circle; see Dimitri</td><td>circle; see Dimitri</td></tr>
+<tr class='chg'><td class='del'>Gutas,</td><td class='ins'>Gutas;</td></tr>
+<tr class='eq'><td>Greek</td><td>Greek</td></tr>
+<tr class='chg'><td class='del'>Thought ,</td><td class='ins'>Thought,</td></tr>
+<tr class='eq'><td>Arabic Culture (London-New</td><td>Arabic Culture (London-New</td></tr>
+<tr class='chg'><td class='del'>York,</td><td class='ins'>York;</td></tr>
+<tr class='eq'><td>1998),</td><td>1998),</td></tr>
+<tr class='chg'><td class='del'>145.]</td><td></td></tr>
+<tr class='eq'><td>Both Ibn</td><td>Both Ibn</td></tr>
+<tr class='chg'><td class='del'>Sīnā</td><td class='ins'>Sina</td></tr>
+<tr class='eq'><td>and Ibn Rushd produced versions</td><td>and Ibn Rushd produced versions</td></tr>
+<tr class='chg'><td class='del'>ofthe</td><td class='ins'>of the</td></tr>
+<tr class='eq'><td>De</td><td>De</td></tr>
+<tr class='chg'><td class='del'>Caelo ,</td><td class='ins'>Caelo_</td></tr>
+<tr class='eq'><td>but De Caelo</td><td>but De Caelo</td></tr>
+<tr class='chg'><td class='del'>'s</td><td class='ins'>s</td></tr>
+<tr class='eq'><td>approach</td><td>approach</td></tr>
+<tr class='chg'><td class='del'>to astronomy,</td><td class='ins'>astronomy;</td></tr>
+<tr class='eq'><td>focusing more</td><td>focusing more</td></tr>
+<tr class='chg'><td class='del'>on physical</td><td class='ins'>physica</td></tr>
+<tr class='eq'><td>principles and less</td><td>principles and less</td></tr>
+<tr class='chg'><td class='del'>on</td><td class='ins'>0n</td></tr>
+<tr class='eq'><td>mathematical</td><td>mathematical</td></tr>
+<tr class='chg'><td class='del'>precision,</td><td class='ins'>precision;</td></tr>
+<tr class='eq'><td>became less prominent in Islamic societies with the rise of</td><td>became less prominent in Islamic societies with the rise of</td></tr>
+<tr class='chg'><td class='del'>/uni02BFilm al-hayʾa . On</td><td class='ins'>'ilmt al-hayaOn</td></tr>
+<tr class='eq'><td>Ibn</td><td>Ibn</td></tr>
+<tr class='chg'><td class='del'>Rushd's</td><td class='ins'>Rushds</td></tr>
+<tr class='eq'><td>epitome and commentaries on the De</td><td>epitome and commentaries on the De</td></tr>
+<tr class='chg'><td class='del'>Caelo ,</td><td class='ins'>Caelo,</td></tr>
+<tr class='eq'><td>see Gerhard</td><td>see Gerhard</td></tr>
+<tr class='chg'><td class='del'>Endress, 'Averroes'</td><td class='ins'>Endress; Averroes'</td></tr>
+<tr class='eq'><td>De</td><td>De</td></tr>
+<tr class='chg'><td class='del'>Caelo :</td><td class='ins'>Caelo:</td></tr>
+<tr class='eq'><td>Ibn</td><td>Ibn</td></tr>
+<tr class='chg'><td class='del'>Rushd's</td><td class='ins'>Rushd s</td></tr>
+<tr class='eq'><td>Cosmology in His Commentaries on Aristotle's On the</td><td>Cosmology in His Commentaries on Aristotle's On the</td></tr>
+<tr class='chg'><td class='del'>Heavens ,'</td><td class='ins'>Heavens"</td></tr>
+<tr class='eq'><td>Arabic Sciences and Philosophy</td><td>Arabic Sciences and Philosophy</td></tr>
+<tr class='chg'><td class='del'>5 (1995), 9-49.</td><td class='ins'>(1995}, 9-49- EARLY SCIENCE AND MEDICINE 2 (2019) 340-366</td></tr>
+</tbody></table></div>
+        </section>
+</body></html>

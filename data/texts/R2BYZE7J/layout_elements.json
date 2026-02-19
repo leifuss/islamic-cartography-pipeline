@@ -1,0 +1,1468 @@
+{
+  "1": [
+    {
+      "label": "section_header",
+      "text": "An Unknown Source of al-Khwarizmi's Kitab şürat al-ard",
+      "bbox": {
+        "l": 137.05,
+        "t": 536.84,
+        "r": 394.91,
+        "b": 503.15
+      }
+    },
+    {
+      "label": "section_header",
+      "text": "Miklós MARóTH",
+      "bbox": {
+        "l": 231.46,
+        "t": 489.15,
+        "r": 320.8,
+        "b": 475.81
+      }
+    },
+    {
+      "label": "text",
+      "text": "Al-Khwarizmi composed his famous Kitab Șürat al-ard before 850 in the first half of the ninth century. There is no doubt that his description of the inhabited part of the world (seal gull) followed Ptolemy's Fetypapiki ipriynes. This basic observation is accepted by all scholars, but there are different views as to a number of details. One of the most interesting questions is, whether the Arabic text relies on the Greek original version directly, or else it is based on Syriac translation.",
+      "bbox": {
+        "l": 69.0,
+        "t": 449.48,
+        "r": 438.56,
+        "b": 351.81
+      }
+    },
+    {
+      "label": "text",
+      "text": "The existence of a Syriac translation is attested by In al-Nadim. Writing on Ptolemy's Geography of the Inhabited Lands and Description of the Earth he states the followings:",
+      "bbox": {
+        "l": 70.88,
+        "t": 354.9,
+        "r": 438.56,
+        "b": 311.86
+      }
+    },
+    {
+      "label": "text",
+      "text": "This book was in eight sections. Al-Kindi made a bad translation of it and then Thäbit [ibn Qurra] made an excellent Arabic translation. It is also extant in Syriac.'",
+      "bbox": {
+        "l": 105.58,
+        "t": 287.81,
+        "r": 419.27,
+        "b": 273.48
+      }
+    },
+    {
+      "label": "text",
+      "text": "This book was in eight sections. Al-Kindi made a bad translation of it and then Thäbit [ibn Qurra] made an excellent Arabic translation. It is also extant in Syriac.'",
+      "bbox": {
+        "l": 95.43,
+        "t": 275.61,
+        "r": 419.27,
+        "b": 248.15
+      }
+    },
+    {
+      "label": "text",
+      "text": "Al-Kindi and Thabit ibn Qurra were younger contemporaries of alKhwarizmi; consequently, it is not very likely that their translation of Ptolemy's Geography served as the main source for al-Khwarizmi's Kitah Strat al-ard. In this case one has to come to the conclusion that the unknown Syriac translation must have played an indispensable role in transmitting this piece of Greek geographic knowledge to the Arabs.",
+      "bbox": {
+        "l": 72.89,
+        "t": 225.96,
+        "r": 439.94,
+        "b": 147.67
+      }
+    },
+    {
+      "label": "text",
+      "text": "Al-Kindi and Thabit ibn Qurra were younger contemporaries of alKhwarizmi; consequently, it is not very likely that their translation of Ptolemy's Geography served as the main source for al-Khwarizmi's Kitah Strat al-ard. In this case one has to come to the conclusion that the unknown Syriac translation must have played an indispensable role in transmitting this piece of Greek geographic knowledge to the Arabs.",
+      "bbox": {
+        "l": 72.96,
+        "t": 158.92,
+        "r": 433.65,
+        "b": 137.0
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "See Ihn al-Nadim, The Fihrist of al-Nadim. Tenth Century Survey of Muslim Culture, ed. and tr. by Bayard Dodge, Columbia University Press, New York-London, 1970, 2 vols., vol. 2, p. 640.",
+      "bbox": {
+        "l": 75.07,
+        "t": 120.15,
+        "r": 441.66,
+        "b": 85.48
+      }
+    }
+  ],
+  "2": [
+    {
+      "label": "text",
+      "text": "Nallino proved in one of his articles that none of the abovementioned options are satisfactory. The first must be rejected because the chronological difficulties cannot be explained in any way, whilst the second one is not supported by orthographic evidence:",
+      "bbox": {
+        "l": 71.91,
+        "t": 633.79,
+        "r": 440.28,
+        "b": 578.04
+      }
+    },
+    {
+      "label": "text",
+      "text": "Talvolta la o greca è rappresentata da una à araba (p. es. Ottorogara per 'Отторокрра, Milibāgõn per Mndißokov), il che potrebbe forse indicare un'influenza siriaca; ma altre volte la o è rimasta anche nell'arabo (od almeno non è segnata con a. poiché il ins. non scrive le vocali brevi; p. es. Qatoraqțonyun = Karoupaktóviov. Eboraqun = \"Eßópaov), oppure si è mutata in u (p. es. Filümilyon = Dilouńhov, Masuryā = Macópa); quindi non si puó tirarne alcuna conclusione. La k è sempre resa da un q. - La O ed il x sono resi rispettivamente da I e da h, due lettere che l'alfabeto siriaco non possiede: ma anche ciò non prova nulla, giacché gli scrittori siri, per una tacita convenzione, rappresentano sempre le aspirate ® e x con 1 e k. laddove per le tenui t e k si servono delle enfatiche ! e q (...) però il fatto che qualche volta al i corrisponde pure la semplice 1, sembra far prevalere l'ipotesi d'una derivazione diretta dal Greco.*",
+      "bbox": {
+        "l": 92.33,
+        "t": 553.72,
+        "r": 417.8,
+        "b": 375.68
+      }
+    },
+    {
+      "label": "text",
+      "text": "After this passage Nallino proceeds to prove that in al-Khwarizmi's transcription the Greek y is usually g instead of g, which would indicate a Syriac intermediate form. Not only does the rendering of certain Greek letters with certain Arabic letters prove a direct derivation from",
+      "bbox": {
+        "l": 71.87,
+        "t": 349.93,
+        "r": 438.38,
+        "b": 294.27
+      }
+    },
+    {
+      "label": "text",
+      "text": "We have to conclude that neither the two Arabic translations nor the Syriac translation referred to by Ibn al-Nadim served as the main source for al-Khwarizmi. Nallino -who read Mas'üdi's Kitah altanbih- has found a solution to the dilemma in a section which follows here (in Nallino's Italian translation): Mas'üdi says in this passage that he has seen some good maps in Marinus' Geography:",
+      "bbox": {
+        "l": 68.92,
+        "t": 268.04,
+        "r": 439.26,
+        "b": 184.21
+      }
+    },
+    {
+      "label": "text",
+      "text": "Greek original, but the absence of some errors (e. g. l1 = b) also seems to confirm the above conclusion.",
+      "bbox": {
+        "l": 69.8,
+        "t": 296.04,
+        "r": 438.35,
+        "b": 267.43
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "\" C.A. Nallino, \"Al-Khuwārizmi e il suo rifacimento della Geografia di Tolomeo\", in M. Nallino (a cura di), Raccolta di scritti editi e inediti V, Istituto per l'Oriente,",
+      "bbox": {
+        "l": 67.89,
+        "t": 121.47,
+        "r": 438.23,
+        "b": 96.71
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "Roma 1994, pp. 485-486.",
+      "bbox": {
+        "l": 68.92,
+        "t": 98.84,
+        "r": 176.94,
+        "b": 86.39
+      }
+    }
+  ],
+  "3": [
+    {
+      "label": "text",
+      "text": "e nella figura al-ma múniana eseguita per al-Ma'mun, intorno alla quale avevan lavorato insieme molti dotti del tempo. Ivi era stato rappresentato il mondo con le sue sfere celestici, i suoi astri, il continente, il mare, le terre abitate, le terre deserte, le regioni occupate da ciascun popolo, le grandi cittâ ecc. Questa figura è migliore delle precedenti che si trovano nella Geografia di Tolomeo, in quella di Marino ed altre.",
+      "bbox": {
+        "l": 122.94,
+        "t": 636.93,
+        "r": 428.78,
+        "b": 546.91
+      }
+    },
+    {
+      "label": "text",
+      "text": "Examining how al-Khwarizmi described the inhabited part of the world, Nallino notes the strange fact that the colours of the mountains are indicated in the text, and that there are some remarks which say, without citing the names, that a \"river passes between a city and a mountain\".4",
+      "bbox": {
+        "l": 97.45,
+        "t": 523.64,
+        "r": 448.32,
+        "b": 465.47
+      }
+    },
+    {
+      "label": "text",
+      "text": "Seeking an explanation to these and similar expressions Nallino propounds his theory:",
+      "bbox": {
+        "l": 97.13,
+        "t": 473.89,
+        "r": 448.38,
+        "b": 436.97
+      }
+    },
+    {
+      "label": "text",
+      "text": "Io non so spiegarmi un tal fatto se non ammettendo che alKhwärizmi abbia composto il suo libro per illustrare una serie di carte geografiche, anzi traendo da queste ultime tutto il materiale dell'opera sua, appunto come Tolomeo aveva ricavato la sua geografia da carte che si era prima costruito in base ad itinerari Se tale è la genesi del libro arabo si capisce il motivo dell'indicazione dei colori dei monti: questi, per maggiore chiarezza, erano variamente dipinti sulla carta.\"'",
+      "bbox": {
+        "l": 119.95,
+        "t": 417.06,
+        "r": 432.02,
+        "b": 324.72
+      }
+    },
+    {
+      "label": "text",
+      "text": "Io non so spiegarmi un tal fatto se non ammettendo che alKhwärizmi abbia composto il suo libro per illustrare una serie di carte geografiche, anzi traendo da queste ultime tutto il materiale dell'opera sua, appunto come Tolomeo aveva ricavato la sua geografia da carte che si era prima costruito in base ad itinerari Se tale è la genesi del libro arabo si capisce il motivo dell'indicazione dei colori dei monti: questi, per maggiore chiarezza, erano variamente dipinti sulla carta.\"'",
+      "bbox": {
+        "l": 119.65,
+        "t": 328.77,
+        "r": 219.72,
+        "b": 309.61
+      }
+    },
+    {
+      "label": "text",
+      "text": "This theory seems to be accepted by everybody. Kračkovskiy gives a general survey of the later history of research.\"",
+      "bbox": {
+        "l": 95.13,
+        "t": 290.62,
+        "r": 451.46,
+        "b": 253.62
+      }
+    },
+    {
+      "label": "text",
+      "text": "Hans von Mžik says that al-Khwärizmi drew his map on the basis of another map, which was drawn following a Syriac text.?",
+      "bbox": {
+        "l": 94.19,
+        "t": 263.78,
+        "r": 453.54,
+        "b": 225.83
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "\" Al-Mas'üdi, Kitäb al-tanbih, BGA VIII, ed. M. J. de Goeje, Lugduni-Batavorum, 1894, p. 33.",
+      "bbox": {
+        "l": 94.54,
+        "t": 207.0,
+        "r": 454.4,
+        "b": 176.76
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "5 Ibidem.",
+      "bbox": {
+        "l": 111.03,
+        "t": 154.38,
+        "r": 154.21,
+        "b": 144.03
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "· C.A. Nallino, \"Al-Khuwārizmi e il suo rifacimento della Geografia di Tolomeo\". cit. p. 483.",
+      "bbox": {
+        "l": 94.5,
+        "t": 185.04,
+        "r": 453.55,
+        "b": 153.94
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "• See 1. Yu. Krěakovskiy Arabskaya Geografičeskaya Literatura, Izbrannüye",
+      "bbox": {
+        "l": 110.0,
+        "t": 147.18,
+        "r": 456.45,
+        "b": 132.7
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "Sočineniya, vol. 4, Moskva - Leningrad 1957, p. 97.",
+      "bbox": {
+        "l": 93.36,
+        "t": 136.19,
+        "r": 331.22,
+        "b": 118.18
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "des Claudius Ptolemaeus von Muhammad ibn Müsă al-Hwärizmi, K. Akademie der",
+      "bbox": {
+        "l": 93.55,
+        "t": 112.37,
+        "r": 457.48,
+        "b": 97.71
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "Wissenschaften in Wien, hist.-phil. Classe, Denkschriften LIX, Abh. 4, Wien 1916,",
+      "bbox": {
+        "l": 93.55,
+        "t": 101.05,
+        "r": 458.51,
+        "b": 85.39
+      }
+    }
+  ],
+  "4": [
+    {
+      "label": "text",
+      "text": "Ernst Honigmann explains al-Khwārizmi's map as an attempt to unify the maps of Ptolemy and al-Ma'mün in one map.*",
+      "bbox": {
+        "l": 73.24,
+        "t": 626.07,
+        "r": 428.32,
+        "b": 597.28
+      }
+    },
+    {
+      "label": "text",
+      "text": "Kračkovskiy himself cannot decide with whom to take sides: \"It is not entirely sure, which version was used by him, the Greek one or the Syriac translation\"?",
+      "bbox": {
+        "l": 73.24,
+        "t": 599.34,
+        "r": 427.24,
+        "b": 559.59
+      }
+    },
+    {
+      "label": "text",
+      "text": "The problem, as has been pointed out by Nallino, is that the transcription of some names indicates a direct Greek source, whereas some others point to a Syriac intermediate form. If one tacitly adopts the view (as has evidently been done by the majority of scholars) that only one source can be taken into consideration, then this contradiction cannot be solved.",
+      "bbox": {
+        "l": 71.18,
+        "t": 558.61,
+        "r": 428.32,
+        "b": 476.91
+      }
+    },
+    {
+      "label": "text",
+      "text": "Some circumstances compel us to re-examine certain facts which were observed and discussed by previous researchers.",
+      "bbox": {
+        "l": 72.22,
+        "t": 476.0,
+        "r": 427.24,
+        "b": 449.49
+      }
+    },
+    {
+      "label": "text",
+      "text": "Nallino was the first scholar to call attention to the second important fact:",
+      "bbox": {
+        "l": 72.22,
+        "t": 328.8,
+        "r": 429.33,
+        "b": 303.61
+      }
+    },
+    {
+      "label": "text",
+      "text": "The first fact is the arrangement of the material. The arrangement of the material in al-Khwārizmi's book is different from that in Ptolemy's Гешурафікі ińyno. The first book, containing the principles of cartography, and the eighth book, containing the comparative data, are absent. The geographic material in Books II-VII is arranged in a special way: Ptolemy enumerates cities, mountains, rivers, etc. in each one of the climates one after the other; while al-Khwārizmi enumerates first all cities in all the climates, then all mountains, countries, rivers, etc., in the same way.'\"",
+      "bbox": {
+        "l": 71.21,
+        "t": 449.61,
+        "r": 429.35,
+        "b": 328.19
+      }
+    },
+    {
+      "label": "text",
+      "text": "Abbiamo già veduto che moltissimi monti e fiumi, e quasi tutte le isole (eccettuate le maggiori) rimangono senza nome; ora se alaccolto molti nomi affatto greci che più tardi scompaiono nella",
+      "bbox": {
+        "l": 91.44,
+        "t": 274.32,
+        "r": 408.93,
+        "b": 225.23
+      }
+    },
+    {
+      "label": "text",
+      "text": "Khwärizmi rimaneggiava il testo di Tolomeo, perché mai avrebbe geografia araba [...] ed altri invece ne avrebbe taciuti in quelle stesse regioni, contentandosi dire \"monte, isola, fiume\" benché vi unisse tutte le cifre relative?''",
+      "bbox": {
+        "l": 90.53,
+        "t": 249.69,
+        "r": 409.94,
+        "b": 189.55
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "pp. VI-VII; Id., 'Ptolemaeus und die Karten der arabischen Geographen\", in Mitteilungen der k. k. Geographischen Gesellscheft in Wien 58 (1915), p. 164.",
+      "bbox": {
+        "l": 70.19,
+        "t": 164.07,
+        "r": 432.32,
+        "b": 139.6
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "\" See I. Yu. Kračkovskiy, Arabskaya, cit., p. 96.",
+      "bbox": {
+        "l": 84.43,
+        "t": 117.28,
+        "r": 284.82,
+        "b": 105.95
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "* See E. Honigmann, Die sieben Klimata und die nòleIç Entionuoi, Carl Winter's Universitätsbuchhandlung, Hidelberg 1929, p. 156.",
+      "bbox": {
+        "l": 71.13,
+        "t": 139.61,
+        "r": 430.29,
+        "b": 115.57
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "'''See ibid., p. 94.",
+      "bbox": {
+        "l": 84.43,
+        "t": 105.96,
+        "r": 156.65,
+        "b": 93.61
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "\" C.A. Nallino, \"al-Khuwārizmi\" , cit., p. 484.",
+      "bbox": {
+        "l": 84.43,
+        "t": 95.77,
+        "r": 279.74,
+        "b": 83.54
+      }
+    }
+  ],
+  "5": [
+    {
+      "label": "text",
+      "text": "Nallino is right in drawing the conclusion:",
+      "bbox": {
+        "l": 93.65,
+        "t": 624.95,
+        "r": 315.56,
+        "b": 611.57
+      }
+    },
+    {
+      "label": "text",
+      "text": "La cosa si spiega benissimo quando si ammetta che le carte geografıche su cul lavorava al-Khwärizmi indicavano in certi luoghi l'esistenza d'una città, d'un fiume, d'un monte, di un'isola, ma senza dar loro alcuna denominazione, appunto come avviene in ogni carta geografica.'",
+      "bbox": {
+        "l": 106.88,
+        "t": 584.05,
+        "r": 417.41,
+        "b": 533.95
+      }
+    },
+    {
+      "label": "text",
+      "text": "La cosa si spiega benissimo quando si ammetta che le carte geografıche su cul lavorava al-Khwärizmi indicavano in certi luoghi l'esistenza d'una città, d'un fiume, d'un monte, di un'isola, ma senza dar loro alcuna denominazione, appunto come avviene in ogni carta geografica.'",
+      "bbox": {
+        "l": 106.7,
+        "t": 535.26,
+        "r": 200.85,
+        "b": 520.91
+      }
+    },
+    {
+      "label": "text",
+      "text": "Nallino's hypothesis gives us a good explanation to some difficulties, such as: why al-Khwärizmi changed the arrangement of the traditional geographic material that one finds in Ptolemy's book which served as the ultimate source of his description of the world, and why he left unmentioned a lot of less important names, etc. If we assume that his immediate source was a world-map which had been made by al-Ma'mun's scientists and, while still extant in the ninth century, has remained unknown to us, then his departure from Ptolemy's description of the oikoumené can be explained and justified",
+      "bbox": {
+        "l": 84.42,
+        "t": 496.38,
+        "r": 436.69,
+        "b": 370.45
+      }
+    },
+    {
+      "label": "text",
+      "text": "At the same time one has to realize that this theory does not enable us to give a satisfactory account of some other facts. Thus why are the names which are extant in al-Khwarizmi's book quoted in the Arabic text, while the others were left out? And why did al-Khwarizmi choose",
+      "bbox": {
+        "l": 86.52,
+        "t": 372.02,
+        "r": 437.71,
+        "b": 316.95
+      }
+    },
+    {
+      "label": "text",
+      "text": "Гешурафки ipńynois, while Ptolemy's material is included in his work?",
+      "bbox": {
+        "l": 87.43,
+        "t": 294.62,
+        "r": 432.76,
+        "b": 275.02
+      }
+    },
+    {
+      "label": "text",
+      "text": "Naturally we have to suppose that many scientists in Baghdad who participated in the preparation of the map of the celestial spheres and",
+      "bbox": {
+        "l": 90.6,
+        "t": 186.66,
+        "r": 437.87,
+        "b": 156.93
+      }
+    },
+    {
+      "label": "text",
+      "text": "Thus the following problem arises. Nallino did not fail to prove that al-Khwärizmi's work is not a translation but a \"rifacimento\" of Ptolemy's book on the basis of an extant map of the inhabited part of the world, but he did not devote the necessary attention to the question of what the additional sources were that played a considerable role in the rearrangement of the material in al-Khwãrizmi's Kitab Surat al-ard and in sorting out the geographic names.",
+      "bbox": {
+        "l": 88.46,
+        "t": 279.32,
+        "r": 437.89,
+        "b": 183.28
+      }
+    },
+    {
+      "label": "text",
+      "text": "stars together with the map of the inhabited world' did not confine themselves to one single geographic sourcebook. This assumption en-",
+      "bbox": {
+        "l": 89.45,
+        "t": 159.24,
+        "r": 439.85,
+        "b": 127.63
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "12 C.A. Nallino, \"al-Khuwärizmi\", cit., p. 484.",
+      "bbox": {
+        "l": 105.86,
+        "t": 105.96,
+        "r": 308.43,
+        "b": 94.61
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "\" See al-Mas'üdi, Kitab al-tanbih, cit., p. 33.",
+      "bbox": {
+        "l": 106.77,
+        "t": 95.87,
+        "r": 305.48,
+        "b": 82.21
+      }
+    }
+  ],
+  "6": [
+    {
+      "label": "text",
+      "text": "ables us to explain why certain names are excluded from, and some others are incorporated into, al-Khwarizmi's description. On the basis of what was noted at the beginning about the names (i. e. that some of them postulate a transcription made directly from Greek, while some other transcriptions can be traced back to an intermediary Syriac translation) one should postulate the incorporation of the (otherwise unknown) Syriac geographic tradition too, in addition to the Greek material and the supposed world-maps.",
+      "bbox": {
+        "l": 66.2,
+        "t": 627.46,
+        "r": 425.37,
+        "b": 517.32
+      }
+    },
+    {
+      "label": "text",
+      "text": "had a lot of books at their disposal; but it is naturally impossible to define which ones were accessible to them. Nevertheless, we can perhaps make an attempt to try to shed more light on the question.",
+      "bbox": {
+        "l": 66.15,
+        "t": 504.83,
+        "r": 423.49,
+        "b": 460.93
+      }
+    },
+    {
+      "label": "text",
+      "text": "Those \"molti dotti\" (Nallino, p. 484) in al-Ma'mün's court surely",
+      "bbox": {
+        "l": 75.3,
+        "t": 521.11,
+        "r": 422.54,
+        "b": 499.39
+      }
+    },
+    {
+      "label": "text",
+      "text": "Let us see a small section of al-Khwārizmi's map, that of Central Asia (from 91 to 150 degrees of longitude, from 35 to 80 degrees of latitude.",
+      "bbox": {
+        "l": 66.14,
+        "t": 463.27,
+        "r": 421.35,
+        "b": 432.4
+      }
+    },
+    {
+      "label": "text",
+      "text": "Isbijab, al-Tarāz, Khwärizm, madinat al-Khazar, Nawikat are well ture. In the enumeration of cities it is obvious that the old Ptolemaic material has been replaced by the new knowledge of the Moslem travellers and administration.!4",
+      "bbox": {
+        "l": 65.01,
+        "t": 411.31,
+        "r": 421.45,
+        "b": 342.47
+      }
+    },
+    {
+      "label": "text",
+      "text": "In this map there are many cities which are completely unknown in Ptolemy's work. Ushrüsanat, Khujanda, Banäkath, Akhsikath, Täraband, known stations of the Arab itineraries in the Masalik wa mamalik litera-",
+      "bbox": {
+        "l": 66.14,
+        "t": 436.89,
+        "r": 422.5,
+        "b": 380.5
+      }
+    },
+    {
+      "label": "text",
+      "text": "The names of countries as well as the names of rivers reflect the new and more reliable actual knowledge of the Moslem scholars as opposed to that of earlier world maps. These examples show that alKhwärizmi was ready to incorporate new data acquired from new sources and by personal investigation into the old framework inherited from Ptolemy.",
+      "bbox": {
+        "l": 65.07,
+        "t": 342.92,
+        "r": 420.42,
+        "b": 283.34
+      }
+    },
+    {
+      "label": "text",
+      "text": "The names of countries as well as the names of rivers reflect the new and more reliable actual knowledge of the Moslem scholars as opposed to that of earlier world maps. These examples show that alKhwärizmi was ready to incorporate new data acquired from new sources and by personal investigation into the old framework inherited from Ptolemy.",
+      "bbox": {
+        "l": 63.98,
+        "t": 288.08,
+        "r": 419.32,
+        "b": 262.73
+      }
+    },
+    {
+      "label": "text",
+      "text": "The problem of mountains is more complicated than the previous one. Ptolemy describes the mountains in Central Asia in his Гешурафкі upńynois and he gives the name of each one of them. In alKhwärizmi's Kitab Surat al-ard some of the mountains are marked by",
+      "bbox": {
+        "l": 63.08,
+        "t": 261.88,
+        "r": 420.44,
+        "b": 202.7
+      }
+    },
+    {
+      "label": "text",
+      "text": "If one wishes to give an explanation for the fact that some Ptolemaic names are taken over while some others are left out of consideration, one will have to observe that the Arabic names of the mountains show name, some of them remain unnamed. All names mentioned in the Arabic text are originally Ptolemaic names in Arabic transcription.",
+      "bbox": {
+        "l": 62.09,
+        "t": 180.66,
+        "r": 418.42,
+        "b": 137.41
+      }
+    },
+    {
+      "label": "text",
+      "text": "If one wishes to give an explanation for the fact that some Ptolemaic names are taken over while some others are left out of consideration, one will have to observe that the Arabic names of the mountains show name, some of them remain unnamed. All names mentioned in the Arabic text are originally Ptolemaic names in Arabic transcription.",
+      "bbox": {
+        "l": 63.08,
+        "t": 207.61,
+        "r": 418.32,
+        "b": 176.03
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "14 See M. Maróth, \"Ptolemaic Elements and Geographical Actuality in alHuwarizmi's Description of Central Asia\", in Acta Antiqua Academiae Scientiarum Hungaricae 28/1-4 (1980), pp. 317-352.",
+      "bbox": {
+        "l": 61.11,
+        "t": 119.49,
+        "r": 418.35,
+        "b": 83.01
+      }
+    }
+  ],
+  "7": [
+    {
+      "label": "text",
+      "text": "the characteristic features of Syriac orthography as compared with the parallel Greek forms.",
+      "bbox": {
+        "l": 69.41,
+        "t": 625.47,
+        "r": 446.09,
+        "b": 598.94
+      }
+    },
+    {
+      "label": "text",
+      "text": "If we wish to examine the question of a probable Syriac geographic tradition indicated by the transcription of names, it will be useful to turn to the well-known geographic section of Jacobus Edessenus's Hexameron.\" In this treatise we find the following description of the mountains in ('entral Asia:",
+      "bbox": {
+        "l": 70.25,
+        "t": 597.0,
+        "r": 445.07,
+        "b": 528.44
+      }
+    },
+    {
+      "label": "text",
+      "text": "In sarmatia Asiatica hi montes celebres et insignes: Inriká quae dicuntur. et alii. quae Kepaúvia et Kaukúdia nuncupantur, et Kópağ, mons.",
+      "bbox": {
+        "l": 93.85,
+        "t": 500.0,
+        "r": 423.63,
+        "b": 461.82
+      }
+    },
+    {
+      "label": "text",
+      "text": "Scythiae vero tum ei. qui in Sarmatia nominati sunt, tum Alavá qui dicuntur et Punká et praeter hos Opoacos mons et Aomoía, qui dicuntur, et alii nomine Tároupa et Luńßa (apud Ptol. Avapéa). Inter Scythiam interiore et exteriorem extenditur in longitudinem usque ad terram incognitam mons ille magnus, qui Tuaos dicitur. In Scythia exteriore et provincia Serium hi montes patent: Aujakía, Kasia. Hucusa, quibuscum in provincia Serium coniunguntur montes Avvißa. Heáyoupov, Oropokóppa, A quipa qui dicuntur.!\"",
+      "bbox": {
+        "l": 93.83,
+        "t": 462.33,
+        "r": 421.66,
+        "b": 353.46
+      }
+    },
+    {
+      "label": "text",
+      "text": "Comparing the Latin translation of the Syriac text with our world-map one can notice a striking similarity between them. The first mountain mentioned in the text is Alavá which can be seen in al-Khwarizmi's map marked by the numbers 939-940. 'Poquikó is al-Khwärizmi's us ling) (927-928). The Ptolemaic Aoroia is named on the map as Lulêul indicated by the numbers 937-938. The Ptolemaic Tároupa is Lab da (941-942). Zuńßa is Liew (943-944). Al-Khwärizmi's 4i jül da is obviously a misspelling for ANARTA (947-948). In Scythia extra Imaum AuŞakia (in Ptolemy's book Auğakía) corresponds to used co (951952), Kaoia corresponds to Lulố J→ (871-872), Huda corresponds to jas a (825-826). In the North numbers 953-954 define a certain u* üüli which is the Ptolemaic Avvíßa.",
+      "bbox": {
+        "l": 70.35,
+        "t": 334.7,
+        "r": 436.92,
+        "b": 165.48
+      }
+    },
+    {
+      "label": "text",
+      "text": "left out of consideration so far.",
+      "bbox": {
+        "l": 72.11,
+        "t": 159.72,
+        "r": 249.49,
+        "b": 140.62
+      }
+    },
+    {
+      "label": "text",
+      "text": "In our Syriac source there are two further mountains which we have",
+      "bbox": {
+        "l": 81.55,
+        "t": 175.85,
+        "r": 434.1,
+        "b": 152.1
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "IS See 1. Hjelt (éd.), Etudes sur l'Hexaméron de Jacques d'Edesse notamment",
+      "bbox": {
+        "l": 88.81,
+        "t": 128.67,
+        "r": 436.9,
+        "b": 113.26
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "''Ibid., p. 78.",
+      "bbox": {
+        "l": 88.81,
+        "t": 94.0,
+        "r": 155.16,
+        "b": 81.63
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "sur ses notions géographiques contenues dans le 3-ième traité, J.C. Frenckell et fils, Helsingfors 1892.",
+      "bbox": {
+        "l": 72.39,
+        "t": 117.75,
+        "r": 438.02,
+        "b": 92.85
+      }
+    }
+  ],
+  "8": [
+    {
+      "label": "text",
+      "text": "The first one is called \"Opoooos. This mountain may have alKhwarizmi's Lily! ut as its counterpart which in turn can be identified with Ptolemy's Nópoooov opos. This identification is justified by two facts: the position of the mountain on the one hand, and the fact that al-Khwarizmi's Arsana has no other linguistic equivalent in our Syriac text on the other.",
+      "bbox": {
+        "l": 70.14,
+        "t": 624.95,
+        "r": 426.63,
+        "b": 544.28
+      }
+    },
+    {
+      "label": "text",
+      "text": "The second one is Juaos in Ptolemy's book. Al-Khwarizmi does not put this name on the map in his description of the inhabited world, but his follower known as Suhräb knows a mountain (821-822, and",
+      "bbox": {
+        "l": 70.24,
+        "t": 542.28,
+        "r": 426.51,
+        "b": 499.03
+      }
+    },
+    {
+      "label": "text",
+      "text": "1349-1350) under the name uw glail uta.",
+      "bbox": {
+        "l": 71.14,
+        "t": 500.74,
+        "r": 258.69,
+        "b": 486.62
+      }
+    },
+    {
+      "label": "text",
+      "text": "Now we should examine the Syriac names of the mountains re-",
+      "bbox": {
+        "l": 79.33,
+        "t": 486.25,
+        "r": 425.55,
+        "b": 471.69
+      }
+    },
+    {
+      "label": "text",
+      "text": "The two names Lulew and 'Jib do not constitute complicated questions. The Greek Tánoupa contains a n which should be transcribed as y in Arabic. The actual form with an f in the middle indicates a Syriac intermediate transcription. The word rinert in Jacobus's text shows that this intermediate Syriac form did indeed exist.",
+      "bbox": {
+        "l": 70.13,
+        "t": 462.48,
+        "r": 425.61,
+        "b": 386.97
+      }
+    },
+    {
+      "label": "text",
+      "text": "ferred to recently.",
+      "bbox": {
+        "l": 70.0,
+        "t": 473.36,
+        "r": 160.05,
+        "b": 461.14
+      }
+    },
+    {
+      "label": "text",
+      "text": "The name Luléw! corresponds to the Greek name Aotoia. If we asreceson, etc.). In this name the Greek -la ending is represented by the",
+      "bbox": {
+        "l": 71.18,
+        "t": 389.42,
+        "r": 425.58,
+        "b": 330.6
+      }
+    },
+    {
+      "label": "text",
+      "text": "In these two cases it is obvious that the Arabic text depends on a Syrirect. The Arabic q cannot be explained, only if we assume that the Arab sume a Syriac transcription, then it should be regor, and this form is in fact attested in various orthographic variants (recraco, Syriac -re, as is proven by many examples.!",
+      "bbox": {
+        "l": 70.09,
+        "t": 320.03,
+        "r": 424.63,
+        "b": 272.34
+      }
+    },
+    {
+      "label": "text",
+      "text": "In these two cases it is obvious that the Arabic text depends on a Syrirect. The Arabic q cannot be explained, only if we assume that the Arab sume a Syriac transcription, then it should be regor, and this form is in fact attested in various orthographic variants (recraco, Syriac -re, as is proven by many examples.!",
+      "bbox": {
+        "l": 70.0,
+        "t": 375.73,
+        "r": 425.73,
+        "b": 316.33
+      }
+    },
+    {
+      "label": "text",
+      "text": "ac geographic source, even though their connection seems to be indiscribe put two dots instead of one on the letter f. To put it in another way: the Arabic map in the Abbasid court which has been described by al-Khwarizmi must also have been based on a Syriac source.",
+      "bbox": {
+        "l": 70.03,
+        "t": 303.72,
+        "r": 424.61,
+        "b": 231.89
+      }
+    },
+    {
+      "label": "text",
+      "text": "This can be derived from a Syriac Cano. The graphic form of the Syriac word coincides with the line of the Arabic one, which by misplaced dots can be easily turned into its actual form: Wigw. The correct transcription of the Syriac -y- with one dot above the line transforms the letter from -y- into -n-, and one dot instead of two under the line",
+      "bbox": {
+        "l": 68.2,
+        "t": 224.28,
+        "r": 425.49,
+        "b": 150.81
+      }
+    },
+    {
+      "label": "text",
+      "text": "A similar mistake in spelling can serve as the explanation for Lew.",
+      "bbox": {
+        "l": 79.29,
+        "t": 237.63,
+        "r": 425.6,
+        "b": 218.54
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "17 For example see J. Tkatsch, Die arabische Übersetzung der Poetik des Aristoteles, Wien - Leipzig 1928-1932, 2 vols., vol. I, p. 208: Havia - Russ",
+      "bbox": {
+        "l": 68.09,
+        "t": 121.36,
+        "r": 424.61,
+        "b": 94.7
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "18 The actual Syriac form in Jacobus' text is Ranas.",
+      "bbox": {
+        "l": 81.32,
+        "t": 97.93,
+        "r": 302.44,
+        "b": 84.65
+      }
+    }
+  ],
+  "9": [
+    {
+      "label": "text",
+      "text": "transforms the -b- into -v-. (In this context is worth mentioning that the Arabic text edited by Mžik has many letters without any dot.)",
+      "bbox": {
+        "l": 77.35,
+        "t": 627.13,
+        "r": 434.02,
+        "b": 598.47
+      }
+    },
+    {
+      "label": "text",
+      "text": "for Anmaos, because of the strong similarity between the Syriac i and n.",
+      "bbox": {
+        "l": 78.37,
+        "t": 530.35,
+        "r": 430.97,
+        "b": 512.49
+      }
+    },
+    {
+      "label": "text",
+      "text": "The Greek name \"luaos cannot be found in al-Khwärizmi's map, but Suhrab knows it as gail. The initial An- cannot be explained if we assume a direct transcription of the Greek form into Arabic. In Jacobus' Syriac text one finds the form consor, which is the correct transcription of Ptolemy's Greek name. The Syriac condor can be easily taken",
+      "bbox": {
+        "l": 78.32,
+        "t": 599.62,
+        "r": 433.99,
+        "b": 528.3
+      }
+    },
+    {
+      "label": "text",
+      "text": "The names jo, lily!, jy!, Lew, compared with the Syriac version Knesai and Fire, cronio and ricar (927-928, 931-932, 939940, 825-826) do not furnish us with enough evidence to prove or to (871-872) contains at the end a typical Syriac transcription of the",
+      "bbox": {
+        "l": 79.36,
+        "t": 517.99,
+        "r": 432.92,
+        "b": 444.14
+      }
+    },
+    {
+      "label": "text",
+      "text": "The names L! jul, jee 947-948, 951-952), when compared with Jacobus\" Rink, rhino seem to prove that the Syriac text which served as a source for the \"molti dotti\" of geography in Baghdad was not that of our Jacobus Edessenus. His rhinor cannot be misread as reject the existence of a Syriac intermediate form. The Arabic Lul Greek -ta as —va. In Jacobus' text one finds the form reone which is literally identical with al-Khwärizmi's Arabic name.",
+      "bbox": {
+        "l": 80.35,
+        "t": 421.06,
+        "r": 434.11,
+        "b": 361.41
+      }
+    },
+    {
+      "label": "text",
+      "text": "The names L! jul, jee 947-948, 951-952), when compared with Jacobus\" Rink, rhino seem to prove that the Syriac text which served as a source for the \"molti dotti\" of geography in Baghdad was not that of our Jacobus Edessenus. His rhinor cannot be misread as reject the existence of a Syriac intermediate form. The Arabic Lul Greek -ta as —va. In Jacobus' text one finds the form reone which is literally identical with al-Khwärizmi's Arabic name.",
+      "bbox": {
+        "l": 79.34,
+        "t": 476.06,
+        "r": 433.07,
+        "b": 417.89
+      }
+    },
+    {
+      "label": "text",
+      "text": "be te Syria and i are not interchangeable, due to their dissimilarity in shape.",
+      "bbox": {
+        "l": 80.39,
+        "t": 363.97,
+        "r": 435.1,
+        "b": 335.28
+      }
+    },
+    {
+      "label": "text",
+      "text": "At the same time it can be observed that Greek loanwords which did not come to Arabic via Syriac transcribe the ending -a as *; or else the transcription of the final -a is simply omitted. The Arabic -ya at the end of the Arabic names, however, indicates a Syriac intermediary form. The letter s at the end of an Arabic word usually stands for a Greek -n. A possible Greek 'Avvißn is not known to me in the Greek geographic literature. In short, it seems to be impossible to explain the yet 1 am still inclined to see the traces of a possible unknown Syriac",
+      "bbox": {
+        "l": 83.38,
+        "t": 242.66,
+        "r": 437.13,
+        "b": 115.15
+      }
+    },
+    {
+      "label": "text",
+      "text": "Turning to the last name we are confronted with special difficulties. The mountain marked by the numbers 953-954 is known in Arabic as sILy. On the basis of its position it can be identified with Ptolemy's Avvißa öpn. The Greek form is quite distant from the Arabic one, which must be the result of a serious mistake. The Syriac name in Jacobus's text is nor, which in its turn strictly corresponds to the Ptolemaic form.",
+      "bbox": {
+        "l": 81.39,
+        "t": 336.53,
+        "r": 435.04,
+        "b": 240.52
+      }
+    },
+    {
+      "label": "text",
+      "text": "extant Arabic form on the basis of sources which are at our disposal, version in it, due to the correspondence of final -n in the Greek to the final s- in Arabic.",
+      "bbox": {
+        "l": 84.55,
+        "t": 147.76,
+        "r": 438.09,
+        "b": 90.61
+      }
+    }
+  ],
+  "10": [
+    {
+      "label": "text",
+      "text": "Having briefly reviewed the mountains of Central Asia I feel entitled to state that al-Khwärizmi's world-map drew on various sources. In addition to the Ptolemaic material some of them must have represented genuine Arabic knowledge obtained from the administration of the Islamic empire, as is evidenced by the original enumeration of cities;'\" some of which must have had Syriac sources. This fact, i.e. the mixed character of the orthography, can account for the apparent hesitation in the literature about the acceptance of the theory of either a unique Greek or a Syriac source. Both of these theories are wrong, because alKhwärizmi's map must rely indirectly on many different sources. Its direct source must have been al-Ma'mün's world map made in Bagh-",
+      "bbox": {
+        "l": 67.83,
+        "t": 625.57,
+        "r": 425.52,
+        "b": 473.33
+      }
+    },
+    {
+      "label": "text",
+      "text": "It is very likely that Jacobus Edessenus was not among the sources of our scientists in Baghdad, as has been argued above. However, there is a striking similarity between Jacobus' text and al-Khwarizmi's map of the inhabited world.",
+      "bbox": {
+        "l": 66.85,
+        "t": 465.12,
+        "r": 423.56,
+        "b": 409.78
+      }
+    },
+    {
+      "label": "text",
+      "text": "dad, as has been pointed out by Nallino.",
+      "bbox": {
+        "l": 67.01,
+        "t": 477.17,
+        "r": 265.0,
+        "b": 462.78
+      }
+    },
+    {
+      "label": "text",
+      "text": "Jacobus does not enumerate all the mountains represented in the world maps. Ptolemy describes much more mountains than Jacobus. One can assume that Jacobus knew Ptolemy's map, then he made a se-",
+      "bbox": {
+        "l": 66.76,
+        "t": 413.47,
+        "r": 423.55,
+        "b": 363.42
+      }
+    },
+    {
+      "label": "text",
+      "text": "A more careful comparison of Jacobus' text with the map of the inhabited world proves, however, that only the names mentioned in the Syriac text appear in the world map. The names which can be found in Ptolemy's text but cannot be found in Jacobus' text remain unmentioned in al-Khwārizmi's map. The similarity between the world map and the philosophically inspired geographic work of a Syriac speaking Father of the Church consists in the selection of names, and it cannot result merely from accidental coincidence.",
+      "bbox": {
+        "l": 61.75,
+        "t": 303.17,
+        "r": 421.56,
+        "b": 193.03
+      }
+    },
+    {
+      "label": "text",
+      "text": "lection of his own. He quoted the names of the more important mountains, while leaving out of consideration the less important ones. The adoption of a similar method can be observed on al-Khwarizmi's map too. He represented a lot of mountains on his map, but only some of them are marked by name, while many others are nameless.",
+      "bbox": {
+        "l": 64.78,
+        "t": 370.27,
+        "r": 423.52,
+        "b": 298.24
+      }
+    },
+    {
+      "label": "text",
+      "text": "One has to draw the conclusion that the postulated map in Baghdad was made by scientists who had the intention to make a \"revised and enlarged edition\" of Ptolemy's world map, as far as the delineation of mountains, rivers, and seas is concerned. (In our map, for example, the mountains 935-936, 933-934 are new in comparison to Ptolemy. They reflect a more detailed knowledge as compared to Ptolemy's map.)",
+      "bbox": {
+        "l": 58.79,
+        "t": 195.68,
+        "r": 421.46,
+        "b": 109.93
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "'' See M. Maróth, \"Ptolemaic Elements\", cit., pp. 317-352.",
+      "bbox": {
+        "l": 72.79,
+        "t": 100.83,
+        "r": 322.09,
+        "b": 80.77
+      }
+    }
+  ],
+  "11": [
+    {
+      "label": "text",
+      "text": "As regards the selection of names, it was done by scientists, and doing so they did not follow the lead of their professional masters in geography. The selection of names depends on a literature which is akin",
+      "bbox": {
+        "l": 69.06,
+        "t": 621.51,
+        "r": 444.3,
+        "b": 579.78
+      }
+    },
+    {
+      "label": "text",
+      "text": "It is difficult to say with certainty who might have been the author of to the Syriac work of Jacobus Edessenus.",
+      "bbox": {
+        "l": 79.22,
+        "t": 568.69,
+        "r": 442.31,
+        "b": 551.58
+      }
+    },
+    {
+      "label": "text",
+      "text": "It is difficult to say with certainty who might have been the author of to the Syriac work of Jacobus Edessenus.",
+      "bbox": {
+        "l": 68.12,
+        "t": 580.84,
+        "r": 305.01,
+        "b": 567.51
+      }
+    },
+    {
+      "label": "text",
+      "text": "Jacobus's supposed source written in Syriac. Similarly, it is difficult to prove whether the Syriac work was a genuine one, or else it was only a translation of a Greek work. All we do know is that this work/these works must have given a bird's-eye description of the inhabited world. They did not mention every detail because they were only interested in the most important cities, mountains, rivers, lakes and seas. They only contain the most important geographic names.",
+      "bbox": {
+        "l": 68.95,
+        "t": 554.51,
+        "r": 440.23,
+        "b": 454.45
+      }
+    },
+    {
+      "label": "text",
+      "text": "treatise also gives a bird's eye view of the world, without a compreies, and incidentally hints at certain mountains and lakes.",
+      "bbox": {
+        "l": 69.02,
+        "t": 432.25,
+        "r": 437.18,
+        "b": 375.01
+      }
+    },
+    {
+      "label": "text",
+      "text": "The anonymous Syriac work (works) must have been similar to the geographic chapter of the well known deal jleil Jily. This short hensive list of mountains, rivers, lakes and seas. It contains a detailed description of the climates, references to countries and important cit-",
+      "bbox": {
+        "l": 70.1,
+        "t": 459.84,
+        "r": 437.18,
+        "b": 388.5
+      }
+    },
+    {
+      "label": "text",
+      "text": "This example seems to suggest that there must have been a not professionally but philosophically oriented type of geography as well. This idea is supported by the fact that Jacobus' text belongs to a long chain of similar works, written by Fathers of the Church from Ambrosius through Chrysostomus, Lactantius, etc., until Jacobus. As has been suggested by the editor of Jacobus's text, his immediate predecessor was a well-known philosopher. As Arthur Hjelt tries to prove, the main source of Jacobus' Hexaméron was Philoponus's work known",
+      "bbox": {
+        "l": 70.08,
+        "t": 377.31,
+        "r": 435.17,
+        "b": 268.44
+      }
+    },
+    {
+      "label": "text",
+      "text": "On the basis of all that has been said so far, one has to come to the conclusion that the ultimate source of this kind of description of the inhabited world is a literature which is based on Pseudo-Aristotle's De mundo.?' This short treatise neglects the description of the climates; consequently it does not contain a systematic description of mountains or rivers distributed into climates, as was done by Ptolemy. To my knowledge this was the first work which gave a bird's-eye view of the as Пері кобнологас.\"\"",
+      "bbox": {
+        "l": 70.01,
+        "t": 259.29,
+        "r": 432.37,
+        "b": 160.51
+      }
+    },
+    {
+      "label": "text",
+      "text": "On the basis of all that has been said so far, one has to come to the conclusion that the ultimate source of this kind of description of the inhabited world is a literature which is based on Pseudo-Aristotle's De mundo.?' This short treatise neglects the description of the climates; consequently it does not contain a systematic description of mountains or rivers distributed into climates, as was done by Ptolemy. To my knowledge this was the first work which gave a bird's-eye view of the as Пері кобнологас.\"\"",
+      "bbox": {
+        "l": 70.15,
+        "t": 269.51,
+        "r": 204.36,
+        "b": 255.17
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "2\" See A. Hielt (éd.), Études, cit., p. 10.",
+      "bbox": {
+        "l": 86.42,
+        "t": 148.51,
+        "r": 271.46,
+        "b": 135.16
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "31 See Aristotle, On the Cosmos, ed. D.J. Furley, Harvard University Press, Cambridge, Mass.-London, 1978 (Loeb Classical Library), pp. 344-409; Aristoteles, Meteorologie. Über die Welt, Übersetzt von Hans Strohm, Akademie Verlag, Berlin 1970, in Werke in deutscher Übersetzung, herausgegeben von Erst Grumach; fortgeführt von | ellmut Flashar. Akademie Verlag, Berlin 1956-, pp. 237-352.",
+      "bbox": {
+        "l": 70.09,
+        "t": 139.49,
+        "r": 436.16,
+        "b": 81.17
+      }
+    }
+  ],
+  "12": [
+    {
+      "label": "text",
+      "text": "inhabited world. It contains a general survey of the oceans and seas, bays, islands and continents, as was done by Jacobus as well. PseudoAristotle, however, does not describe the mountains, nor does he mention the names of towns. Nevertheless, the method of description of the inhabited world in Jacobus's Hexaméron is identical to PseudoAristotle's method.",
+      "bbox": {
+        "l": 74.25,
+        "t": 624.23,
+        "r": 437.35,
+        "b": 545.76
+      }
+    },
+    {
+      "label": "text",
+      "text": "Pseudo-Aristotle's De mundo, as I tried to point out in my recent works, must have been the handbook of geography in the ancient schools of rhetoric.\" This can be verified by the fact that it was rewritten in Latin by Apuleius,\" that, furthermore, it was known to the Fathers of the Church (as the names quoted above -Ambrosius, Chrysostomus, Lactantius- prove), and, lastly, that it was translated three times into Arabic.? The transcription of names and the text itself (omitted, inserted and misunderstood words) serve as evidence supporting our conviction that the Arabic text was translated from the Syriac version prepared by Sargis of Reshaina.? The first Arabic translation of this geographic treatise was made in the court of the Omayyad Caliph Hishām ibn 'Abd al-Malik as part of a novel in letters written in a Syrian school of rhetoric. This novel contains some treatises of Pseudo-Aristotle disguised as letters sent to Alexander the Great.",
+      "bbox": {
+        "l": 75.2,
+        "t": 544.89,
+        "r": 437.51,
+        "b": 356.32
+      }
+    },
+    {
+      "label": "text",
+      "text": "All Latin writers and Fathers of the Church studied in schools of rhetoric. These schools represented the institutes of higher education in the classical Antiquity and early Middle Ages. What was to be regarded as generally obligatory knowledge of a well-educated person in geography, was defined by the curricula of the schools of rhetoric which, in turn, taught the elements of philosophy and sciences on an elementary level. The geographic material taught in the Greek schools of rhetoric both in Greece and the Greek-speaking oriental provinces turns up in al-Khwarizmi's world map.",
+      "bbox": {
+        "l": 74.13,
+        "t": 356.34,
+        "r": 437.56,
+        "b": 233.96
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "22 See M. Maróth (ed.), The Correspondence between Aristotle and Alexander the",
+      "bbox": {
+        "l": 88.3,
+        "t": 222.01,
+        "r": 437.47,
+        "b": 203.89
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "23 Apuleius Madurensis, De philosophia libri, ed. P. Thomas, Teubner, Lipsiae",
+      "bbox": {
+        "l": 87.36,
+        "t": 163.94,
+        "r": 437.43,
+        "b": 148.85
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "Great. An Anonymous Greek Novel in Letters in Arabic Translation, The Avicenna Institute of Middle East Studies, Piliscsaba, 2006, pp. 75, 81-90; Id., \"Science and Literature in the age of Hellenism\", in Acta Antiqua Academia Scientiarum Hungaricae 53/1 (2013), pp. 33-46.",
+      "bbox": {
+        "l": 73.23,
+        "t": 209.77,
+        "r": 438.48,
+        "b": 162.84
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "1908, pp. 135-175.",
+      "bbox": {
+        "l": 73.23,
+        "t": 151.64,
+        "r": 152.56,
+        "b": 140.43
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "24 See S.M. Stern, 'The Arabic Translation of the Pseudo-Aristotelian Treatise",
+      "bbox": {
+        "l": 87.47,
+        "t": 140.56,
+        "r": 437.35,
+        "b": 130.23
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "De mundo\", in Le Museon 77 (1964), pp. 187-204.",
+      "bbox": {
+        "l": 73.23,
+        "t": 129.23,
+        "r": 288.85,
+        "b": 116.89
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "pp. 81-83.",
+      "bbox": {
+        "l": 73.09,
+        "t": 96.19,
+        "r": 116.09,
+        "b": 83.85
+      }
+    },
+    {
+      "label": "footnote",
+      "text": "25 See P. Lagardius, P. Lagardii Analecta Syriaca, Teubner, Lipsiac 1858, pp. 134158; M. Maróth, The Correspondence between Aristorle and Alexander the Great, cit..",
+      "bbox": {
+        "l": 73.23,
+        "t": 119.4,
+        "r": 438.45,
+        "b": 94.56
+      }
+    }
+  ],
+  "13": [
+    {
+      "label": "text",
+      "text": "After the Muslim conquest of the former Greek and Roman territories these schools of the ancient Greek rhetoric continued their activity, but in the course of time they turned into special Christian institutes of education serving as channels to convey Greek knowledge to the new Islamic countries. As our example proves, these schools played a certain role in the development of the Muslim sciences. The relationship between the ancient schools of rhetoric and Islamic civilization is perhaps an unknown domain of the history of the Islamic sciences which deserves to be investigated in the future.",
+      "bbox": {
+        "l": 85.35,
+        "t": 625.23,
+        "r": 436.46,
+        "b": 501.89
+      }
+    },
+    {
+      "label": "section_header",
+      "text": "ABSTRACTS",
+      "bbox": {
+        "l": 238.96,
+        "t": 475.86,
+        "r": 313.34,
+        "b": 461.89
+      }
+    },
+    {
+      "label": "text",
+      "text": "It has been a long debated question what was the ultimate source of alKhwarizmi's Kitab strat al-ard. The author of the present paper supports Nallino's thesis which says that al-Khwarizmi described al-Ma'mun's already existing world-map in his book. The right question is thus: what are the sources of al-Ma mün's map. In the article arguments are put forward to prove that Ptolemy's Geographike hyphegesis served as a basis for the world-map, but also newly acquired materials from the al-masālik wa'lmamalik literature have been inserted. The names of mountains, etc., from Ptolemy's description of world appear on al-Ma'mün's map and, accordingly, in al-Khwärizmi's book only in selection and based on Syriac translation. The selection follows the tradition of the philosophically inspired geographic literature used in the schools of Greek rhetoric, starting with Ps.-Aristotle's De mundo, continued by the Greek and Syriac Church Fathers and by the Arabic translation of De mundo in the correspondence ascribed to Aristotle and Alexander. The same tradition is still living in the geographic section of the philosophical encyclopaedia of the Ikhwān al-Safa'.",
+      "bbox": {
+        "l": 84.26,
+        "t": 440.08,
+        "r": 438.49,
+        "b": 236.69
+      }
+    },
+    {
+      "label": "text",
+      "text": "***",
+      "bbox": {
+        "l": 270.56,
+        "t": 227.0,
+        "r": 288.86,
+        "b": 218.85
+      }
+    },
+    {
+      "label": "text",
+      "text": "Déterminer qui est la source ultime de le Kitāb şurat al-ard d'al-Khwarizmi est une question débattue depuis longtemps. Dans la présente contribution nous soutenons la thèse de Nallino selon laquelle al-Khwārizmi décrirait dans son livre une carte du monde déjà en possession d'al-Ma'mün. À ce point, la question devrait être posée dans les termes suivants : quelles sont les sources utilisées pour la carte d'al-Ma'mün ? Les sujets abordés ici visent à prouver que la Geographike hyphegesis de Ptolémée a servi de base pour une carte du monde, mais que de nouveaux matériaux appartenant à la littérature al-masalik wa'l-mamalik ont été également utilisés. Par exemple, les noms des montagnes etc., qui viennent de la description du monde de Ptolémée, apparaissent sur la carte d'al-Ma'mun et, par conséquent, dans le livre",
+      "bbox": {
+        "l": 83.32,
+        "t": 216.4,
+        "r": 435.41,
+        "b": 79.23
+      }
+    }
+  ],
+  "14": [
+    {
+      "label": "text",
+      "text": "d'al-Khwarizmi, dans une sélection basée sur une traduction syriaque. La sélection suit la tradition de la littérature géographique inspirée par les écoles philosophiques de la rhétorique grecque, en commençant par le De mundo du pseudo-Aristote à travers les Pères de l'Église grecque et syriaque et la traduction en arabe du De Mundo dans l'échange de lettres entre Aristote et Alexandre. La même tradition se trouve dans la section géographique de l'encyclopédie des Ikhwān al-Safa'.",
+      "bbox": {
+        "l": 71.21,
+        "t": 635.62,
+        "r": 432.88,
+        "b": 546.08
+      }
+    },
+    {
+      "label": "text",
+      "text": "***",
+      "bbox": {
+        "l": 240.69,
+        "t": 534.01,
+        "r": 260.32,
+        "b": 525.74
+      }
+    },
+    {
+      "label": "text",
+      "text": "Determinare quale sia la fonte ultima del Kitāh sürat al-ard di al-Hwarizmi è questione lungamente dibattuta. Nel presente contributo si sostiene la tesi di Nallino secondo la quale al-Hwarizmi avrebbe descritto nel suo libro una mappa del mondo già in possesso di al-Ma'mún. A questo punto la domanda dovrebbe essere posta nei seguenti termini: quali furono le fonti utilizzate per la mappa di al-Ma'mün? Gli argomenti discussi nel presente contributo cercano di dimostrare che la Geographike hyphegesis di Tolomeo servi da base per la mappa del mondo ma che vennero utilizzati anche nuovi materiali provenienti dalla lettura al-masālik wa'l-mamalik. Ad esempio i nomi di montagne e simili, provenienti dalla descrizione del mondo di Tolomeo, compaiono sulla mappa di al-Ma'mun, e di conseguenza nel libro di al-Hwärizmi, in una selezione basata su una traduzione siriaca. La selezione segue la tradizione della letteratura geografica di ispirazione filosofica propria delle scuole di retorica greche, cominciata con il De mundo dello pseudo-Aristotele e continuata dai Padri della chiesa greci e siriaci e dalla traduzione araba del De mundo nello scambio epistolare che sarebbe intercorso tra Aristotele e Alessandro. La medesima tradizione la si ritrova nella sezione geografica dell'enciclopedia filosofica degli Ihwān al-Șafa'.",
+      "bbox": {
+        "l": 73.19,
+        "t": 522.95,
+        "r": 432.96,
+        "b": 295.31
+      }
+    }
+  ],
+  "_page_sizes": {
+    "1": {
+      "w": 512.64,
+      "h": 699.48
+    },
+    "2": {
+      "w": 525.6,
+      "h": 707.76
+    },
+    "3": {
+      "w": 525.24,
+      "h": 707.76
+    },
+    "4": {
+      "w": 511.56,
+      "h": 701.28
+    },
+    "5": {
+      "w": 510.84,
+      "h": 701.28
+    },
+    "6": {
+      "w": 507.96,
+      "h": 702.0
+    },
+    "7": {
+      "w": 507.24,
+      "h": 702.0
+    },
+    "8": {
+      "w": 510.84,
+      "h": 701.28
+    },
+    "9": {
+      "w": 510.48,
+      "h": 701.28
+    },
+    "10": {
+      "w": 507.6,
+      "h": 699.84
+    },
+    "11": {
+      "w": 507.24,
+      "h": 699.84
+    },
+    "12": {
+      "w": 515.52,
+      "h": 700.56
+    },
+    "13": {
+      "w": 514.8,
+      "h": 700.56
+    },
+    "14": {
+      "w": 511.2,
+      "h": 710.64
+    }
+  }
+}

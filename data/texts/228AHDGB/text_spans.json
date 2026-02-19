@@ -1,0 +1,2478 @@
+{
+  "1": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.13.1 Origins",
+      "bbox": {
+        "l": 214.69,
+        "t": 394.94,
+        "r": 289.61,
+        "b": 405.94
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "saqf maḥfūẓ",
+      "bbox": {
+        "l": 389.66,
+        "t": 510.72,
+        "r": 430.92,
+        "b": 518.25
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "samāwāt",
+      "bbox": {
+        "l": 233.26,
+        "t": 532.5,
+        "r": 262.96,
+        "b": 542.25
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ṭarāʾiq",
+      "bbox": {
+        "l": 408.51,
+        "t": 534.72,
+        "r": 430.92,
+        "b": 543.72
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ḥadīth",
+      "bbox": {
+        "l": 336.21,
+        "t": 558.72,
+        "r": 357.16,
+        "b": 567.72
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "tafsīr",
+      "bbox": {
+        "l": 116.53,
+        "t": 568.5,
+        "r": 133.18,
+        "b": 578.25
+      }
+    }
+  ],
+  "2": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "siddhānta",
+      "bbox": {
+        "l": 390.04,
+        "t": 195.8,
+        "r": 422.43,
+        "b": 205.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "sindhind",
+      "bbox": {
+        "l": 321.49,
+        "t": 207.8,
+        "r": 350.58,
+        "b": 217.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 305.83,
+        "t": 291.82,
+        "r": 308.47,
+        "b": 301.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Megalē Syntaxis",
+      "bbox": {
+        "l": 205.64,
+        "t": 303.82,
+        "r": 266.23,
+        "b": 313.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Majisṭī",
+      "bbox": {
+        "l": 59.77,
+        "t": 318.02,
+        "r": 94.38,
+        "b": 327.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Almagest",
+      "bbox": {
+        "l": 245.53,
+        "t": 315.8,
+        "r": 278.3,
+        "b": 325.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "klimata",
+      "bbox": {
+        "l": 395.34,
+        "t": 327.8,
+        "r": 422.01,
+        "b": 337.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "klima",
+      "bbox": {
+        "l": 81.19,
+        "t": 339.8,
+        "r": 101.18,
+        "b": 349.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iqlīm",
+      "bbox": {
+        "l": 177.49,
+        "t": 351.8,
+        "r": 195.46,
+        "b": 361.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "aqālīm",
+      "bbox": {
+        "l": 212.46,
+        "t": 351.8,
+        "r": 236.11,
+        "b": 361.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Geography",
+      "bbox": {
+        "l": 305.52,
+        "t": 375.81,
+        "r": 343.95,
+        "b": 385.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Geography",
+      "bbox": {
+        "l": 155.27,
+        "t": 411.82,
+        "r": 193.71,
+        "b": 421.57
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "I.13.2 al-Khwārazmī and mathematical geography",
+      "bbox": {
+        "l": 123.11,
+        "t": 454.24,
+        "r": 363.82,
+        "b": 465.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Image of the Earth",
+      "bbox": {
+        "l": 74.27,
+        "t": 495.8,
+        "r": 140.94,
+        "b": 505.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Ṣūrat",
+      "bbox": {
+        "l": 143.5,
+        "t": 498.02,
+        "r": 162.44,
+        "b": 507.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-arḍ",
+      "bbox": {
+        "l": 164.74,
+        "t": 498.02,
+        "r": 186.14,
+        "b": 507.02
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ") by al-Khwārazmī ([d.",
+      "bbox": {
+        "l": 186.15,
+        "t": 495.8,
+        "r": 275.26,
+        "b": 505.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 274.87,
+        "t": 495.8,
+        "r": 277.52,
+        "b": 505.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "geōgraphia",
+      "bbox": {
+        "l": 191.35,
+        "t": 543.81,
+        "r": 227.32,
+        "b": 553.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Geography",
+      "bbox": {
+        "l": 254.29,
+        "t": 567.81,
+        "r": 291.56,
+        "b": 577.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Geogra­phy",
+      "bbox": {
+        "l": 396.98,
+        "t": 591.82,
+        "r": 72.43,
+        "b": 589.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 72.88,
+        "t": 603.82,
+        "r": 75.52,
+        "b": 613.57
+      }
+    }
+  ],
+  "3": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "bayt al-ḥikma",
+      "bbox": {
+        "l": 279.09,
+        "t": 246.02,
+        "r": 327.69,
+        "b": 253.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Image of the Earth",
+      "bbox": {
+        "l": 281.86,
+        "t": 267.8,
+        "r": 351.06,
+        "b": 277.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ṣūra maʾmūniyya",
+      "bbox": {
+        "l": 271.6,
+        "t": 294.02,
+        "r": 331.24,
+        "b": 301.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kishvar",
+      "bbox": {
+        "l": 406.1,
+        "t": 315.8,
+        "r": 430.49,
+        "b": 325.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "bayt al-ḥikma",
+      "bbox": {
+        "l": 217.48,
+        "t": 330.02,
+        "r": 265.15,
+        "b": 337.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Geography",
+      "bbox": {
+        "l": 241.93,
+        "t": 387.81,
+        "r": 279.58,
+        "b": 397.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kishvar",
+      "bbox": {
+        "l": 195.6,
+        "t": 435.8,
+        "r": 219.99,
+        "b": 445.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "qibla",
+      "bbox": {
+        "l": 304.31,
+        "t": 603.83,
+        "r": 320.67,
+        "b": 613.58
+      }
+    }
+  ],
+  "4": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "I.13.3 Ibn Khurradādhbih and administrative geography",
+      "bbox": {
+        "l": 108.19,
+        "t": 65.46,
+        "r": 378.74,
+        "b": 76.46
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kishvar",
+      "bbox": {
+        "l": 132.57,
+        "t": 107.02,
+        "r": 156.95,
+        "b": 116.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kishvar",
+      "bbox": {
+        "l": 202.7,
+        "t": 107.02,
+        "r": 227.08,
+        "b": 116.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kishvar",
+      "bbox": {
+        "l": 299.37,
+        "t": 119.03,
+        "r": 323.75,
+        "b": 128.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Īrānshahr",
+      "bbox": {
+        "l": 337.11,
+        "t": 119.03,
+        "r": 369.71,
+        "b": 128.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kishvar",
+      "bbox": {
+        "l": 248.31,
+        "t": 155.03,
+        "r": 272.69,
+        "b": 164.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iqlīm",
+      "bbox": {
+        "l": 179.5,
+        "t": 167.03,
+        "r": 197.08,
+        "b": 176.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dīwān al-barīd",
+      "bbox": {
+        "l": 137.79,
+        "t": 299.06,
+        "r": 187.63,
+        "b": 308.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Routes and Realms",
+      "bbox": {
+        "l": 385.3,
+        "t": 323.06,
+        "r": 85.67,
+        "b": 320.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Masālik wal-mamālik",
+      "bbox": {
+        "l": 90.9,
+        "t": 323.06,
+        "r": 176.2,
+        "b": 332.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Image of the Earth",
+      "bbox": {
+        "l": 358.28,
+        "t": 323.06,
+        "r": 422.21,
+        "b": 332.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Routes and Realms",
+      "bbox": {
+        "l": 118.74,
+        "t": 371.07,
+        "r": 186.48,
+        "b": 380.82
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "farsakh",
+      "bbox": {
+        "l": 132.15,
+        "t": 395.08,
+        "r": 156.62,
+        "b": 404.83
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mīl",
+      "bbox": {
+        "l": 250.32,
+        "t": 395.08,
+        "r": 261.49,
+        "b": 404.83
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dīwān al-barīd",
+      "bbox": {
+        "l": 160.45,
+        "t": 419.08,
+        "r": 210.9,
+        "b": 428.83
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "qibla",
+      "bbox": {
+        "l": 304.63,
+        "t": 527.1,
+        "r": 320.99,
+        "b": 536.85
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.13.4 Geography under the unitary caliphate and its immediate successors",
+      "bbox": {
+        "l": 72.97,
+        "t": 562.46,
+        "r": 413.8,
+        "b": 573.46
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "adīb",
+      "bbox": {
+        "l": 407.71,
+        "t": 628.03,
+        "r": 422.24,
+        "b": 637.78
+      }
+    }
+  ],
+  "5": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "littérateur",
+      "bbox": {
+        "l": 119.69,
+        "t": 63.8,
+        "r": 152.2,
+        "b": 73.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "adab",
+      "bbox": {
+        "l": 339.06,
+        "t": 63.8,
+        "r": 355.2,
+        "b": 73.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Routes and Realms",
+      "bbox": {
+        "l": 347.17,
+        "t": 135.81,
+        "r": 415.38,
+        "b": 145.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "adab",
+      "bbox": {
+        "l": 180.77,
+        "t": 171.82,
+        "r": 196.91,
+        "b": 181.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "adab",
+      "bbox": {
+        "l": 171.05,
+        "t": 255.8,
+        "r": 187.19,
+        "b": 265.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "adab",
+      "bbox": {
+        "l": 68.45,
+        "t": 327.8,
+        "r": 84.6,
+        "b": 337.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of the Land-tax and the Secretary’s Art",
+      "bbox": {
+        "l": 254.79,
+        "t": 387.8,
+        "r": 411.26,
+        "b": 397.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-kharāj wa-ṣināʿat al-kitāba",
+      "bbox": {
+        "l": 413.71,
+        "t": 402.02,
+        "r": 169.71,
+        "b": 397.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of the Land-tax",
+      "bbox": {
+        "l": 200.06,
+        "t": 411.8,
+        "r": 278.02,
+        "b": 421.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "thughūr al-Islām",
+      "bbox": {
+        "l": 307.35,
+        "t": 471.81,
+        "r": 364.8,
+        "b": 481.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "adab",
+      "bbox": {
+        "l": 354.35,
+        "t": 531.82,
+        "r": 370.5,
+        "b": 541.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "adab",
+      "bbox": {
+        "l": 217.82,
+        "t": 567.83,
+        "r": 233.97,
+        "b": 577.58
+      }
+    }
+  ],
+  "6": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "I.13.5 The ‘Balkhī School’",
+      "bbox": {
+        "l": 179.54,
+        "t": 106.24,
+        "r": 307.39,
+        "b": 117.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "littérateur",
+      "bbox": {
+        "l": 236.73,
+        "t": 267.83,
+        "r": 271.95,
+        "b": 277.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of the Image of the Earth",
+      "bbox": {
+        "l": 107.05,
+        "t": 279.83,
+        "r": 211.96,
+        "b": 289.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb Ṣūrat",
+      "bbox": {
+        "l": 217.11,
+        "t": 282.02,
+        "r": 257.95,
+        "b": 289.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-arḍ",
+      "bbox": {
+        "l": 260.15,
+        "t": 282.02,
+        "r": 281.56,
+        "b": 291.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Routes and Realms",
+      "bbox": {
+        "l": 66.45,
+        "t": 315.8,
+        "r": 164.77,
+        "b": 325.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-masālik wal-mamālik",
+      "bbox": {
+        "l": 170.53,
+        "t": 315.8,
+        "r": 277.14,
+        "b": 325.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Routes and Realms",
+      "bbox": {
+        "l": 246.22,
+        "t": 459.8,
+        "r": 314.98,
+        "b": 469.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Routes and Realms",
+      "bbox": {
+        "l": 400.66,
+        "t": 483.8,
+        "r": 102.5,
+        "b": 481.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Image of the Earth",
+      "bbox": {
+        "l": 173.59,
+        "t": 483.8,
+        "r": 242.73,
+        "b": 493.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Best Division for Know­ledge of the Climes",
+      "bbox": {
+        "l": 320.41,
+        "t": 555.8,
+        "r": 130.33,
+        "b": 553.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Aḥsan al-taqāsīm li-maʿrifat al-aqālīm",
+      "bbox": {
+        "l": 137.5,
+        "t": 558.02,
+        "r": 272.11,
+        "b": 565.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iqlīm",
+      "bbox": {
+        "l": 385.73,
+        "t": 615.81,
+        "r": 403.31,
+        "b": 625.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kishvar",
+      "bbox": {
+        "l": 397.83,
+        "t": 627.81,
+        "r": 422.22,
+        "b": 637.56
+      }
+    }
+  ],
+  "7": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iqlīm",
+      "bbox": {
+        "l": 111.73,
+        "t": 63.8,
+        "r": 132.02,
+        "b": 73.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iqlīm",
+      "bbox": {
+        "l": 206.71,
+        "t": 75.8,
+        "r": 224.29,
+        "b": 85.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "khilāfa",
+      "bbox": {
+        "l": 393.85,
+        "t": 99.8,
+        "r": 417.31,
+        "b": 109.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dār al-Islām",
+      "bbox": {
+        "l": 259.38,
+        "t": 111.81,
+        "r": 301.29,
+        "b": 121.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mamlakat al-Islām",
+      "bbox": {
+        "l": 71.4,
+        "t": 123.81,
+        "r": 137.66,
+        "b": 133.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Figure I.13.1",
+      "bbox": {
+        "l": 68.46,
+        "t": 596.57,
+        "r": 116.87,
+        "b": 605.32
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "Map of the Maghrib, from al-Iṣṭakhrī’s",
+      "bbox": {
+        "l": 120.75,
+        "t": 598.97,
+        "r": 255.55,
+        "b": 605.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Routes and Kingdoms",
+      "bbox": {
+        "l": 256.45,
+        "t": 596.57,
+        "r": 354.45,
+        "b": 605.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Source:",
+      "bbox": {
+        "l": 68.45,
+        "t": 622.57,
+        "r": 90.97,
+        "b": 631.32
+      }
+    }
+  ],
+  "8": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iqlīm",
+      "bbox": {
+        "l": 59.77,
+        "t": 87.8,
+        "r": 77.74,
+        "b": 97.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mamlakat al-Islām",
+      "bbox": {
+        "l": 99.61,
+        "t": 87.8,
+        "r": 167.64,
+        "b": 97.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Encircling Sea",
+      "bbox": {
+        "l": 306.54,
+        "t": 399.81,
+        "r": 357.03,
+        "b": 409.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-baḥr",
+      "bbox": {
+        "l": 363.12,
+        "t": 402.02,
+        "r": 388.36,
+        "b": 411.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-muḥīṭ",
+      "bbox": {
+        "l": 391.44,
+        "t": 402.02,
+        "r": 421.74,
+        "b": 411.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Sea of the Romans",
+      "bbox": {
+        "l": 357.92,
+        "t": 411.8,
+        "r": 427.54,
+        "b": 421.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Sea of the Persians",
+      "bbox": {
+        "l": 161.13,
+        "t": 423.8,
+        "r": 230.51,
+        "b": 433.55
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.13.6 Geography after the unitary caliphate",
+      "bbox": {
+        "l": 137.64,
+        "t": 532.24,
+        "r": 349.3,
+        "b": 543.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Regions of the World",
+      "bbox": {
+        "l": 164.0,
+        "t": 561.8,
+        "r": 239.68,
+        "b": 571.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Ḥudūd al-ʿālam",
+      "bbox": {
+        "l": 246.07,
+        "t": 564.02,
+        "r": 301.3,
+        "b": 571.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Routes and Realms",
+      "bbox": {
+        "l": 167.6,
+        "t": 585.8,
+        "r": 235.48,
+        "b": 595.55
+      }
+    }
+  ],
+  "9": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ṣūrat",
+      "bbox": {
+        "l": 132.9,
+        "t": 65.97,
+        "r": 149.56,
+        "b": 74.97
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Book of Curiosities of the Sciences and Marvels for the Eyes",
+      "bbox": {
+        "l": 119.11,
+        "t": 99.76,
+        "r": 344.99,
+        "b": 109.51
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb gharāʾib al-funūn wa-mulaḥ al-ʿuyūn",
+      "bbox": {
+        "l": 350.53,
+        "t": 113.97,
+        "r": 137.47,
+        "b": 109.5
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Curiosities",
+      "bbox": {
+        "l": 100.5,
+        "t": 255.78,
+        "r": 173.41,
+        "b": 265.53
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "maqāla",
+      "bbox": {
+        "l": 159.03,
+        "t": 267.78,
+        "r": 184.05,
+        "b": 277.53
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Geography",
+      "bbox": {
+        "l": 332.86,
+        "t": 279.78,
+        "r": 370.9,
+        "b": 289.53
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿajāʾib",
+      "bbox": {
+        "l": 177.25,
+        "t": 317.97,
+        "r": 197.83,
+        "b": 325.5
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Curiosities",
+      "bbox": {
+        "l": 224.91,
+        "t": 315.75,
+        "r": 292.66,
+        "b": 325.5
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Figure I.13.2",
+      "bbox": {
+        "l": 68.46,
+        "t": 603.81,
+        "r": 114.44,
+        "b": 612.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Curiosities",
+      "bbox": {
+        "l": 260.42,
+        "t": 603.81,
+        "r": 319.52,
+        "b": 612.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Source:",
+      "bbox": {
+        "l": 68.46,
+        "t": 629.82,
+        "r": 90.98,
+        "b": 638.57
+      }
+    }
+  ],
+  "10": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "I.13.7 al-Bīrūnī",
+      "bbox": {
+        "l": 202.54,
+        "t": 65.46,
+        "r": 284.39,
+        "b": 76.46
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Handbook for al-Masʿūd",
+      "bbox": {
+        "l": 254.39,
+        "t": 169.24,
+        "r": 341.46,
+        "b": 176.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Qānūn al-masʿūdī",
+      "bbox": {
+        "l": 347.7,
+        "t": 169.24,
+        "r": 421.83,
+        "b": 176.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 216.31,
+        "t": 227.03,
+        "r": 218.95,
+        "b": 236.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "azimuth",
+      "bbox": {
+        "l": 157.29,
+        "t": 263.04,
+        "r": 186.49,
+        "b": 272.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Sur­rounding Sea",
+      "bbox": {
+        "l": 409.07,
+        "t": 335.05,
+        "r": 105.13,
+        "b": 332.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "his Book of Instruction in Astrology",
+      "bbox": {
+        "l": 302.88,
+        "t": 347.05,
+        "r": 427.5,
+        "b": 356.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-Tafhīm li-ṣināʿat al-tanjīm",
+      "bbox": {
+        "l": 62.72,
+        "t": 361.24,
+        "r": 187.69,
+        "b": 368.77
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "I.13.8 al-Idrīsī",
+      "bbox": {
+        "l": 205.13,
+        "t": 407.46,
+        "r": 281.81,
+        "b": 418.46
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Curiosities",
+      "bbox": {
+        "l": 397.11,
+        "t": 497.03,
+        "r": 97.0,
+        "b": 494.78
+      }
+    }
+  ],
+  "11": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Book of Pleasant Journeys into Far­away Lands",
+      "bbox": {
+        "l": 273.73,
+        "t": 99.8,
+        "r": 128.73,
+        "b": 97.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb nuzhat al-mushtāq fī khtirāq al-āfāq",
+      "bbox": {
+        "l": 134.88,
+        "t": 99.8,
+        "r": 286.34,
+        "b": 109.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "(al-Idrīsī 1970, 1: 6–7)",
+      "bbox": {
+        "l": 329.35,
+        "t": 135.81,
+        "r": 418.17,
+        "b": 145.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "summa",
+      "bbox": {
+        "l": 111.23,
+        "t": 255.83,
+        "r": 135.91,
+        "b": 265.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Gardens of Delight and the Diversion of Souls",
+      "bbox": {
+        "l": 255.16,
+        "t": 303.84,
+        "r": 436.18,
+        "b": 313.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Rawḑ al-faraj wa-nuzhat al-muhaj",
+      "bbox": {
+        "l": 71.4,
+        "t": 318.02,
+        "r": 195.04,
+        "b": 325.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Pleasure Excursion",
+      "bbox": {
+        "l": 309.27,
+        "t": 315.8,
+        "r": 393.58,
+        "b": 325.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Gardens of Delight",
+      "bbox": {
+        "l": 107.74,
+        "t": 339.8,
+        "r": 192.89,
+        "b": 349.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iqlīm",
+      "bbox": {
+        "l": 311.11,
+        "t": 339.8,
+        "r": 328.69,
+        "b": 349.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Pleasure Excursion",
+      "bbox": {
+        "l": 286.36,
+        "t": 363.81,
+        "r": 368.99,
+        "b": 373.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Figure I.13.3",
+      "bbox": {
+        "l": 68.46,
+        "t": 593.81,
+        "r": 116.87,
+        "b": 602.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Book of Pleasant Journeys into Faraway Lands",
+      "bbox": {
+        "l": 141.48,
+        "t": 603.81,
+        "r": 305.28,
+        "b": 612.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb nuzhat al-mushtāq fī khtirāq al­āfāq",
+      "bbox": {
+        "l": 310.68,
+        "t": 613.81,
+        "r": 133.34,
+        "b": 612.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Source:",
+      "bbox": {
+        "l": 68.46,
+        "t": 629.82,
+        "r": 90.98,
+        "b": 638.57
+      }
+    }
+  ],
+  "12": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.13.9 Other developments",
+      "bbox": {
+        "l": 176.87,
+        "t": 155.24,
+        "r": 310.07,
+        "b": 166.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "geographical",
+      "bbox": {
+        "l": 102.2,
+        "t": 172.8,
+        "r": 144.66,
+        "b": 182.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "jughrāfiyā",
+      "bbox": {
+        "l": 294.38,
+        "t": 196.8,
+        "r": 329.59,
+        "b": 206.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ṣūrat",
+      "bbox": {
+        "l": 92.75,
+        "t": 211.02,
+        "r": 109.95,
+        "b": 220.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-arḑ",
+      "bbox": {
+        "l": 112.61,
+        "t": 211.02,
+        "r": 134.55,
+        "b": 220.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Wonders of Creation",
+      "bbox": {
+        "l": 126.37,
+        "t": 304.81,
+        "r": 200.9,
+        "b": 314.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿAjāʾib al-makhlūqāt",
+      "bbox": {
+        "l": 207.13,
+        "t": 307.02,
+        "r": 282.03,
+        "b": 314.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Dictionary of the Countries",
+      "bbox": {
+        "l": 377.07,
+        "t": 328.8,
+        "r": 108.73,
+        "b": 326.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Muʿjam al-buldān",
+      "bbox": {
+        "l": 114.79,
+        "t": 331.02,
+        "r": 180.16,
+        "b": 338.55
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Notes",
+      "bbox": {
+        "l": 229.17,
+        "t": 410.24,
+        "r": 257.53,
+        "b": 421.24
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Bibliography Sources",
+      "bbox": {
+        "l": 212.26,
+        "t": 503.24,
+        "r": 261.61,
+        "b": 490.24
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Balādhurī, Aḥmad ibn Yaḥyā. ed. de Goeje, M. J. 1866.",
+      "bbox": {
+        "l": 59.77,
+        "t": 521.97,
+        "r": 256.95,
+        "b": 528.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb Futūḥ al-buldān",
+      "bbox": {
+        "l": 256.73,
+        "t": 521.6,
+        "r": 326.38,
+        "b": 528.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Alberuni’s India",
+      "bbox": {
+        "l": 193.98,
+        "t": 539.57,
+        "r": 244.28,
+        "b": 548.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "BGA",
+      "bbox": {
+        "l": 359.05,
+        "t": 549.57,
+        "r": 377.37,
+        "b": 558.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "BGA 2",
+      "bbox": {
+        "l": 113.63,
+        "t": 569.57,
+        "r": 138.85,
+        "b": 578.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "BGA",
+      "bbox": {
+        "l": 71.77,
+        "t": 589.57,
+        "r": 90.09,
+        "b": 598.32
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "6. Ibn Rusta, Abū ʿAlī Aḥmad ibn ʿUmar. 1892. “al-Aʿlāq al-nafīsa [The Precious Gems],”",
+      "bbox": {
+        "l": 90.09,
+        "t": 601.97,
+        "r": 363.48,
+        "b": 598.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "BGA",
+      "bbox": {
+        "l": 362.6,
+        "t": 599.57,
+        "r": 380.93,
+        "b": 608.32
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "7. al-Idrīsī, Abū ʿAbdallāh Muḥammad. 1970–84.",
+      "bbox": {
+        "l": 380.93,
+        "t": 611.97,
+        "r": 218.23,
+        "b": 608.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Opus geographicum",
+      "bbox": {
+        "l": 217.71,
+        "t": 609.57,
+        "r": 278.26,
+        "b": 618.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "= Nuzhat al-mushtāq fī khtirāq al-āfāq",
+      "bbox": {
+        "l": 302.89,
+        "t": 609.57,
+        "r": 427.23,
+        "b": 618.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 419.45,
+        "t": 629.57,
+        "r": 77.33,
+        "b": 628.32
+      }
+    }
+  ],
+  "13": [
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "Bonner al-Iṣṭakhrī, Abū Isḥāq Ibrāhīm. 1870. A",
+      "bbox": {
+        "l": 433.45,
+        "t": 619.82,
+        "r": 203.12,
+        "b": 45.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "l-Masālik wa-l-mamālik",
+      "bbox": {
+        "l": 203.12,
+        "t": 63.79,
+        "r": 279.63,
+        "b": 72.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "BGA",
+      "bbox": {
+        "l": 125.52,
+        "t": 73.79,
+        "r": 143.84,
+        "b": 82.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "BGA",
+      "bbox": {
+        "l": 355.13,
+        "t": 83.79,
+        "r": 373.45,
+        "b": 92.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Ḥudūd al-ʿālam",
+      "bbox": {
+        "l": 176.64,
+        "t": 95.83,
+        "r": 225.33,
+        "b": 102.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "BGA",
+      "bbox": {
+        "l": 256.52,
+        "t": 113.79,
+        "r": 274.84,
+        "b": 122.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿAjāʾib al-makhlūqāt",
+      "bbox": {
+        "l": 293.35,
+        "t": 125.83,
+        "r": 358.09,
+        "b": 132.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-kharāj wa-ṣināʿat",
+      "bbox": {
+        "l": 236.45,
+        "t": 145.83,
+        "r": 317.63,
+        "b": 152.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-kitāba",
+      "bbox": {
+        "l": 319.98,
+        "t": 143.79,
+        "r": 349.92,
+        "b": 152.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "An Eleventh-Century Egyptian Guide to the Universe: The Book of Curiosities",
+      "bbox": {
+        "l": 259.93,
+        "t": 173.8,
+        "r": 155.71,
+        "b": 172.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 244.24,
+        "t": 183.79,
+        "r": 257.5,
+        "b": 192.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Taʾrīkh al-rusul wa-l-mulūk",
+      "bbox": {
+        "l": 305.55,
+        "t": 185.83,
+        "r": 392.82,
+        "b": 192.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Masālik al-abṣār fī mamālik al-amṣār",
+      "bbox": {
+        "l": 184.06,
+        "t": 205.83,
+        "r": 303.66,
+        "b": 212.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "BGA",
+      "bbox": {
+        "l": 414.6,
+        "t": 223.79,
+        "r": 435.88,
+        "b": 232.54
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "7. Yāqūt, Abū ʿAbdallāh Yaʿqūb al-Ḥamawī al-Rūmī. 1955.",
+      "bbox": {
+        "l": 80.45,
+        "t": 246.2,
+        "r": 266.72,
+        "b": 242.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Muʿjam al-buldān",
+      "bbox": {
+        "l": 267.19,
+        "t": 245.83,
+        "r": 326.83,
+        "b": 252.54
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Research literature",
+      "bbox": {
+        "l": 208.59,
+        "t": 283.46,
+        "r": 295.73,
+        "b": 294.46
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Bayt al-ḥikma",
+      "bbox": {
+        "l": 187.15,
+        "t": 301.83,
+        "r": 231.57,
+        "b": 308.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arabica",
+      "bbox": {
+        "l": 276.91,
+        "t": 299.79,
+        "r": 300.34,
+        "b": 308.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 220.17,
+        "t": 309.79,
+        "r": 233.44,
+        "b": 318.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "ZDMG",
+      "bbox": {
+        "l": 247.22,
+        "t": 319.79,
+        "r": 274.2,
+        "b": 328.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Construction of Knowledge in Islamic Civilization: Qudāma b. Jaʿfar and His",
+      "bbox": {
+        "l": 121.89,
+        "t": 331.83,
+        "r": 382.34,
+        "b": 338.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 369.09,
+        "t": 349.79,
+        "r": 382.32,
+        "b": 358.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Religion, Learning and Science in the ʿAbbāsid Period",
+      "bbox": {
+        "l": 404.78,
+        "t": 361.83,
+        "r": 218.24,
+        "b": 358.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Geographical Coordinates of Localities from Islamic Sources",
+      "bbox": {
+        "l": 234.67,
+        "t": 369.79,
+        "r": 431.19,
+        "b": 378.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arabskaya geograficheskaya literatura",
+      "bbox": {
+        "l": 159.34,
+        "t": 399.8,
+        "r": 275.94,
+        "b": 408.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Izbranniye sochineniya",
+      "bbox": {
+        "l": 281.87,
+        "t": 399.8,
+        "r": 354.18,
+        "b": 408.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Acta Orientalia",
+      "bbox": {
+        "l": 301.44,
+        "t": 419.79,
+        "r": 350.39,
+        "b": 428.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Analecta Orientalia",
+      "bbox": {
+        "l": 342.13,
+        "t": 429.79,
+        "r": 403.29,
+        "b": 438.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Analecta Orientalia",
+      "bbox": {
+        "l": 80.46,
+        "t": 459.8,
+        "r": 140.51,
+        "b": 468.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "GTISAS",
+      "bbox": {
+        "l": 292.28,
+        "t": 469.8,
+        "r": 323.08,
+        "b": 478.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "A History of Arab-Islamic Geography, 9th–16th Century AD",
+      "bbox": {
+        "l": 160.99,
+        "t": 479.8,
+        "r": 362.42,
+        "b": 488.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "EI-2",
+      "bbox": {
+        "l": 238.17,
+        "t": 499.8,
+        "r": 253.85,
+        "b": 508.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Mappae arabicae. Arabische Welt- und Länderkarten des 9–13 Jahrhunderts",
+      "bbox": {
+        "l": 181.7,
+        "t": 509.79,
+        "r": 431.16,
+        "b": 518.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "La géographie humaine du monde musulman jusqu’au milieu du 11e siècle",
+      "bbox": {
+        "l": 150.76,
+        "t": 529.95,
+        "r": 377.66,
+        "b": 535.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Geography",
+      "bbox": {
+        "l": 178.19,
+        "t": 559.8,
+        "r": 211.98,
+        "b": 568.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Raccolta di scritti editi e inediti",
+      "bbox": {
+        "l": 221.61,
+        "t": 559.8,
+        "r": 317.87,
+        "b": 568.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Medieval Islamic Maps: An Exploration",
+      "bbox": {
+        "l": 124.28,
+        "t": 579.8,
+        "r": 250.63,
+        "b": 588.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "1001 Inventions",
+      "bbox": {
+        "l": 80.46,
+        "t": 599.8,
+        "r": 132.79,
+        "b": 608.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 179.33,
+        "t": 599.8,
+        "r": 192.6,
+        "b": 608.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "A History of Muslim Historiography",
+      "bbox": {
+        "l": 138.14,
+        "t": 609.8,
+        "r": 252.93,
+        "b": 618.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Postal Systems in the Pre-Modern Islamic World",
+      "bbox": {
+        "l": 143.69,
+        "t": 619.8,
+        "r": 302.26,
+        "b": 628.55
+      }
+    }
+  ],
+  "14": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "GTISAS",
+      "bbox": {
+        "l": 302.65,
+        "t": 63.87,
+        "r": 333.45,
+        "b": 72.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "GTISAS",
+      "bbox": {
+        "l": 270.94,
+        "t": 73.87,
+        "r": 301.74,
+        "b": 82.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "GTISAS",
+      "bbox": {
+        "l": 264.6,
+        "t": 83.87,
+        "r": 295.4,
+        "b": 92.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Mapping Frontiers Across Medieval Islam: Geography, Translation and the ‘Abbasid Empire",
+      "bbox": {
+        "l": 121.78,
+        "t": 93.87,
+        "r": 422.54,
+        "b": 102.62
+      }
+    }
+  ]
+}

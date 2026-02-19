@@ -1,0 +1,1871 @@
+{
+  "_page_sizes": {
+    "1": {
+      "w": 740,
+      "h": 1046
+    },
+    "2": {
+      "w": 740,
+      "h": 1046
+    },
+    "3": {
+      "w": 740,
+      "h": 1046
+    },
+    "4": {
+      "w": 740,
+      "h": 1046
+    },
+    "5": {
+      "w": 740,
+      "h": 1046
+    },
+    "6": {
+      "w": 740,
+      "h": 1046
+    },
+    "7": {
+      "w": 740,
+      "h": 1046
+    },
+    "8": {
+      "w": 740,
+      "h": 1046
+    },
+    "9": {
+      "w": 740,
+      "h": 1046
+    },
+    "10": {
+      "w": 740,
+      "h": 1046
+    },
+    "11": {
+      "w": 740,
+      "h": 1046
+    },
+    "12": {
+      "w": 740,
+      "h": 1046
+    },
+    "13": {
+      "w": 740,
+      "h": 1046
+    },
+    "14": {
+      "w": 740,
+      "h": 1046
+    },
+    "15": {
+      "w": 740,
+      "h": 1046
+    },
+    "16": {
+      "w": 740,
+      "h": 1046
+    }
+  },
+  "1": [
+    {
+      "label": "text",
+      "text": "I.6",
+      "bbox": {
+        "l": 357,
+        "t": 908,
+        "r": 397,
+        "b": 882
+      },
+      "page": 1
+    },
+    {
+      "label": "section_header",
+      "text": "THE ASTRAL SCIENCES THROUGH THE 7TH / 13TH CENTURY",
+      "bbox": {
+        "l": 160,
+        "t": 860,
+        "r": 589,
+        "b": 756
+      },
+      "page": 1
+    },
+    {
+      "label": "section_header",
+      "text": "Attitudes , experts and practices",
+      "bbox": {
+        "l": 207,
+        "t": 732,
+        "r": 545,
+        "b": 705
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Sonja Brentjes",
+      "bbox": {
+        "l": 321,
+        "t": 671,
+        "r": 430,
+        "b": 654
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "This chapter discusses knowledge about the heavens as a whole , by attempting , as far as possible , to discuss astronomy and astrology together . It acknowledges that in certain periods the distance between astronomy and astrology was greater than in others . The chapter begins with a discus- sion of the classification of the astral sciences and then moves on to debates , mostly about theo- ries and to a lesser extent about practices . It concludes with a section on mathematical practices . It thus pays attention to several themes that previous surveys of the astral sciences in Islamicate societies ignored or marginalized and abstains from repeating summaries of astronomical themes found in previous surveys ( Rashed and Morelon 1996 [ CB ] ; Morrison 2013 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 596,
+        "r": 651,
+        "b": 457
+      },
+      "page": 1
+    },
+    {
+      "label": "section_header",
+      "text": "1.6.1 Introduction",
+      "bbox": {
+        "l": 308,
+        "t": 418,
+        "r": 446,
+        "b": 407
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Until recently , a more or less strict division between mathematical astronomy and predictive astrology was considered appropriate for the study of astral knowledge in all Islamicate societies after about 145/762 . Saliba ( 1982 ; reprint 1994 [ CB ] , 66 , 72 ) , for example , suggested that the emergence of the science of the configuration [ of the universe ] ( ilm al - hay'a ) was the result of scholars defending mathematical astronomy against attacks by religious scholars on astrology . The clearest expression of this trend is the separation of terminologies , concepts and practices in astronomy and astrology .",
+      "bbox": {
+        "l": 102,
+        "t": 392,
+        "r": 652,
+        "b": 268
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Aiming to avoid earlier overgeneralizations and essentializing judgments , Ragep ( 2009 ) iden- tified the motivations for practicing the astral sciences in Islamicate societies as practical , religious , philosophical and political . He argued that the rejection of astrology by various religious scholars was only one among the many reasons for the emergence of the science of the configuration [ of the universe ] and that this rejection took various forms . Moreover , according to my experiences in manuscript libraries and with manuscript catalogues , numerous treatises presenting themselves as books on the science of configuration ( ilm al - hay'a ) include chapters on astrological themes .",
+      "bbox": {
+        "l": 101,
+        "t": 264,
+        "r": 652,
+        "b": 142
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "In this handbook , we are also making a serious effort to avoid such overgeneralizations and modern classifications . I have encouraged contributors to use the term astral sciences and render the actors ' self - designation munajjimin as astral experts . Due to differences in opinion ,",
+      "bbox": {
+        "l": 102,
+        "t": 139,
+        "r": 651,
+        "b": 88
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "DOI : 10.4324 / 9781315170718-8",
+      "bbox": {
+        "l": 102,
+        "t": 63,
+        "r": 263,
+        "b": 53
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "80",
+      "bbox": {
+        "l": 636,
+        "t": 63,
+        "r": 650,
+        "b": 55
+      },
+      "page": 1
+    }
+  ],
+  "2": [
+    {
+      "label": "text",
+      "text": "The astral sciences up to the 13th century",
+      "bbox": {
+        "l": 257,
+        "t": 994,
+        "r": 472,
+        "b": 979
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "not everyone follows this approach ; some continue differentiating between astronomers and astrologers according to themes , methods and problems . The decision to treat astral knowledge as a unit despite the numerous differences between practitioners , periods and regions is based on five points : ( 1 ) the absence of a specialized actor - related terminology separating astronomers from astrologers , ( 2 ) the presence of shared theoretical and mathematical components in the two domains , ( 3 ) the representation of practices and goals by historical actors , ( 4 ) the engagement in astrology of many scholars considered by modern historians of sciences primarily as astronomers and ( 5 ) the existence of many works treating the astral sciences as a whole .",
+      "bbox": {
+        "l": 88,
+        "t": 949,
+        "r": 639,
+        "b": 809
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "One example will suffice to document such overlaps . Abū 1 - Şaqr al - Qabişi ( mid - 4th / 10th century ) was a court astrologer of Emir Sayf al - Dawla ( r . 333-356 / 945-967 ) in Aleppo . He studied Ptolemy's Almagest and probably other works on the mathematical sciences with another astrologer in his hometown of Mosul . Among his writings as a mature astral expert are a lost trea- tise , apparently on questions concerning mathematical astronomy , called Doubts on the Almagest ( Shukuk fil - Majisți ) , intended for testing people claiming astral expertise , a lost Book on the Rea- sons behind the Astronomical Handbooks ( Kitāb ilal al - zījāt ) , the extant Treatise on the Distances and ( Heavenly ) Bodies ( Risala fi l - ab'ad wa - l - ajram ) , the extant Book on the Introduction in the Science of the Judgment of the Stars ( Kitab al - Mudkhal ilā sina'at aḥkām al - nujum ) and the extant Treatise on the Testing of Those Who Call Themselves Astral Experts ( Risala fi imtihan al - munajjimin mimman huwa muttasim bi - hadha l - ism ) . These books show that al - Qabişi was trained in all fields of the astral sciences and practiced them at the Hamdanid court . He insisted that the complete astral expert had to be solidly qualified in both species of the astral sciences ; be able to solve all of their prob- lems \" through his own intelligence , \" not the mere repetition of texts or the use of an astrolabe ; to be capable of rational demonstrations and proofs ; and to be able to compile an astronomical handbook based on direct observations , not mere re - computations of data obtained from earlier scholars ( Burnett 2002 , 203-4 ; al - Qabīşi 2004 , 2-6 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 805,
+        "r": 642,
+        "b": 504
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "The content , fields and texts of the predictive parts of the astral sciences in Islamicate societies have been expertly summarized in a recent article on astrology by Burnett ( 2007 ) in the third edition of the Encyclopaedia of Islam . Ragep ( 2009 ) published an analogous summary of some other parts of the astral sciences . The interested reader should consult both of them in conjunc- tion with this chapter , although both articles contain several claims with which I disagree . A recent bibliographical survey of publications on the astral sciences in Islamicate societies until 1450 can be found on the website of the Ptolemaeus project at the Bavarian Academy of Science ( https://ptolemaeus.badw.de/astrobibl/section/G ) .",
+      "bbox": {
+        "l": 89,
+        "t": 500,
+        "r": 639,
+        "b": 359
+      },
+      "page": 2
+    },
+    {
+      "label": "section_header",
+      "text": "1.6.2 Classifications of the astral sciences",
+      "bbox": {
+        "l": 217,
+        "t": 332,
+        "r": 510,
+        "b": 315
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "The purpose of this section is to shed some light on the contributions of philosophers to the astral sciences , to point to some of the fundamental differences between philosophers and some of the astral experts and to stress that the adoption of Aristotelian natural philosophy and epis- temology as the foundations of the astral sciences was neither a simple , straightforward process nor an uncontested commitment .",
+      "bbox": {
+        "l": 88,
+        "t": 302,
+        "r": 639,
+        "b": 217
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Classifications of the astral sciences were manifold , contradictory and in continuous flux . Two main positions existed : ( 1 ) astral knowledge is one discipline with different species , and ( 2 ) astral knowledge belongs to two different sciences marked by different epistemological values . The non - prognosticating parts were understood as forming a mathematical discipline , which we call today astronomy . The prognosticating parts , which we call astrology , were defined in two ways : ( 1 ) a second component of the astral sciences as a mathematical discipline and ( 2 ) a subdiscipline or branch of natural philosophy . The subsequent issue was how to define the",
+      "bbox": {
+        "l": 88,
+        "t": 212,
+        "r": 639,
+        "b": 90
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "81",
+      "bbox": {
+        "l": 358,
+        "t": 62,
+        "r": 368,
+        "b": 55
+      },
+      "page": 2
+    }
+  ],
+  "3": [
+    {
+      "label": "text",
+      "text": "Sonja Brentjes",
+      "bbox": {
+        "l": 338,
+        "t": 992,
+        "r": 415,
+        "b": 979
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "relationship between the two species or sciences : Were both parts of equal standing , or were they in a hierarchical relationship , and if so , which one of the two should precede the other ? A third question asked whether one or both should be based on an epistemically higher discipline from which their principles and foundational proofs had to be derived . If affirmed , the higher discipline was natural philosophy . A fourth issue concerned the reliability of methods and the soundness of theories .",
+      "bbox": {
+        "l": 101,
+        "t": 949,
+        "r": 652,
+        "b": 848
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "The answers to the first two questions depended on views about the positions of the math- ematical sciences in the entire system of knowledge , the role of philosophy regarding revelation or religious law , and the classification of the philosophical disciplines . The answers to the third question usually depended on how scholars saw the role of Aristotelian epistemology as ela- borated in the Posterior Analytics in the system of the sciences . The positions taken in regard to the fourth question reflected religious beliefs , experiences with predicted results and the social status of practitioners ( Burnett 2002 ) . Behind these questions addressed to the astral sciences more general debates lurked that had emerged in antiquity : What were the status , objects and methods of the three theoretical parts of philosophy ( metaphysics , natural philosophy , the mathe- matical sciences ) , their interrelations and the character of their results ( conjectures or certain knowledge ) ? Among the ancient scholars who had grappled with these issues ( Bowen 2007 ; Feke 2014 , 2018 ) , three were certainly known through translations of parts of their works : Geminus ( c . 70 BCE ) , Hero ( 1st century ) and Ptolemy ( c . 100-170 ) . They reinterpreted the relationship and ranking between the three theoretical disciplines of philosophy in favor of the mathematical sciences , on the basis of the certainty of their proofs and hence the knowledge they engendered . It is , however , still unclear whether their opinions guided some of the debates briefly summarized in this section or inspired some of the deviating positions attributed to scholars mentioned below .",
+      "bbox": {
+        "l": 101,
+        "t": 841,
+        "r": 652,
+        "b": 524
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "The works of al - Kindi ( d . c . 256/870 ) and his associate Abū Ma'shar ( 171-272 / 787-886 ) marked out an important position . They agreed that contrary to common belief the science of the stars was not based on conjecture and guesswork but was firmly grounded on first principles . It worked with analogical reasoning and demonstrations on the basis of reliable observations and trustworthy experience ( Abū Ma'shar 2019 [ CB ] , 1 : 46-7 , 54-69 ) . Abū Ma'shar believed that this science consisted of two species . The first was the science of the universe . This was appa- rently a mathematical science , since it contained the science of quality and quantity of the higher spheres , and because its arguments were derived from arithmetic , geometry and the science of measurement . The second , the science of the judgments of the stars , was the knowledge of the natures of the planets , the powers of their movements and their impacts on the sublunar world . Hence , it was not a mathematical science but connected to natural philosophy . These two spe- cies were not on an equal footing , since the second species received its information from the first ( Abū Ma'shar 2019 , 52-5 ) . On the other hand , Abū Ma'shar affirmed that aspects of the second species that are not obvious and clear are \" inferred by means of clear analogies ( rational arguments ) from the science of the natures of things ( physics ) \" ( Abū Ma'shar 2019 , 1 : 55 ) . At the same time , the science of the stars was universal , like medicine , but higher and nobler than this discipline , because its objects belonged to the celestial realm ( Abū Ma'shar 2019 , 1 : 68-71 ) . According to Adamson , Abū Ma'shar defended this position through theological types of rea- soning following a precedent set by al - Kindi ( Adamson 2002 , 249-51 ) .",
+      "bbox": {
+        "l": 100,
+        "t": 517,
+        "r": 655,
+        "b": 179
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "In the 4th / 10th and 5th / 11th centuries , a number of authors with different intellectual affi- liations and standing wrote short texts on how to arrange , evaluate and define the various fields of knowledge . Most writers discussed the fields of knowledge as a whole . A few chose other approaches such as a classification by technical terminology or the practices of the people who engaged in such matters . Differences in goals and social contexts yielded differences in emphasis ,",
+      "bbox": {
+        "l": 102,
+        "t": 176,
+        "r": 652,
+        "b": 90
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "82",
+      "bbox": {
+        "l": 369,
+        "t": 63,
+        "r": 382,
+        "b": 56
+      },
+      "page": 3
+    }
+  ],
+  "4": [
+    {
+      "label": "section_header",
+      "text": "The astral sciences up to the 13th century",
+      "bbox": {
+        "l": 257,
+        "t": 995,
+        "r": 472,
+        "b": 977
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "style and evaluation . Al - Tawhidi ( d . 414/1023 ) , a secretary and litterateur , treated the astral sciences like the medical sciences , setting both up from the perspective of the practitioners and dividing both fields into two parts - knowledge ( ilm ) and action ( ' amal ) . While the description of medicine leaves little doubt that the practitioner should be well versed in both parts , the dis- cussion of those who contemplate the stars is more equivocal . The beginning of the description implies that the practitioner applies himself to both parts , the first part being the conditions of the stars , the differences between their ways and stations , their rising and setting , and the second being the exploration of the judgments of the stars regarding future matters . But after the enumeration of these content elements it becomes clear that it would be best to deal only with the first part . Not only are the tasks of the second part more demanding and less certain in their implementation , but the gains are also poor and the impact on society more damaging than ignorance ( which al - Tawhidi despised ) . Pursuing the first part leads directly to astonishment followed by an opening of the heart and an enlargement of the breast that reinforce belief in and veneration of God ( al - Tawhidi 1963-1964 , 267 , Arabic Pl . 2 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 949,
+        "r": 640,
+        "b": 702
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "In the late 3rd / 9th and early 4th / 10th centuries ( Callatay 2013 , 301 ) , a work ascribed to a group called the Brethren of Purity ( Ikhwan al - safa ) began to take shape . This group alle- gedly consisted of well - educated religious scholars . Their affiliation within Islam remains puzz- ling , although numerous features of their encyclopedia of 51 or 52 individual treatises ( Ikhwan al - Safa ' 1957 [ CB ] ) were believed to suggest an inclination toward several Shi'i denominations . Recently , De Vaulx d'Arcy proposed a different interpretation arguing for al - Kindi's student and later courtier Aḥmad ibn al - Tayyib al - Sarakhsī ( d . 286/899 ) as the sole author of this collection of treatises ( https://journals.openedition.org/mideo/3397?lang=ar ) . Whoever authored the col- lection took several stances in the epistles concerning classification , only one of which can be mentioned here as an example . At the beginning of their Third Epistle : On Astronomy ( al - Risala al - thalitha fi astrunumiya ) , they split the mathematical part of the science of stars into two species so that the whole discipline now encompassed three species : ( 1 ) the science of the configura- tion [ of the universe ] ( ilm al - hay'a ) , ( 2 ) the science of understanding astronomical handbooks , almanacs , calendars and ( 3 ) the science of judgments ( Ikhwan al - Safa ' 2015 , 25 ) . Within the epistle they only treated the first and third parts , mentioning the second part only in four brief sentences ( Ikhwan al - Safa ' 2015 , 59 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 697,
+        "r": 641,
+        "b": 414
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "The philosopher al - Fārābī ( d . 339 / 950-1 ) went in a different direction . He divided the sin- gle science of the stars into two different sciences , placing the science of the judgments of the stars before the mathematical science of the stars ( ilm al - nujum al - ta līmī ; al - Fārābī 1996 [ CB ] , 57 ) . Their contents differed only in minor details from the views of his predecessors ( al - Fārābī 1996 , 58-61 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 410,
+        "r": 638,
+        "b": 325
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Ibn Sīnā ( d . 428/1037 ) , himself a famous and highly influential philosopher , mixed Neo- platonic and Aristotelian perspectives in his classifications of the sciences , including the astral sciences . His oeuvre is , however , too rich to summarize here . As an example , a brief summary from his early Treatise on the Parts of the Rational Sciences ( Risala fi aqsam al - ' ulum al - ' aqliyya ) has to suffice . In this treatise , Ibn Sina presented his youthful understanding of the parts of Peripa- tetic philosophy as three theoretical sciences and three practical sciences . The astral sciences are discussed in the first two of the theoretical sciences : natural philosophy and the mathematical sciences . The second main part of the natural sciences encompasses knowledge about the main components of the universe such as the heavens , what they contain and the four elements , as established in Aristotle's On the Heavens ( Ibn Sinä 1298/1880 , 75 ) . Among the branches of the natural sciences , Ibn Sīnā lists first medicine , followed by the judgments of the stars ( Ibn Sīnā 1298/1880 , 75 ) . According to the Neoplatonic quadrivium , the science of the config- uration [ of the universe ] ( ilm al - hay'a ) is the third of the fundamental mathematical sciences .",
+      "bbox": {
+        "l": 88,
+        "t": 320,
+        "r": 639,
+        "b": 89
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "83",
+      "bbox": {
+        "l": 356,
+        "t": 63,
+        "r": 368,
+        "b": 55
+      },
+      "page": 4
+    }
+  ],
+  "5": [
+    {
+      "label": "text",
+      "text": "Sonja Brentjes",
+      "bbox": {
+        "l": 338,
+        "t": 992,
+        "r": 416,
+        "b": 979
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Its only subdiscipline concerns the compilation of astronomical handbooks and almanacs ( Ibn Sīnā 1298/1880 , 76 ) . While the placement of the judgments of the stars by Ibn Sina has often been interpreted by modern historians as downgrading them , this is questionable . At least , it was not a new position when compared with the debates in the Hellenistic period about the question of whether Babylonian horoscopic astrology was a science and , if so , where it should be placed ( Bowen 2007 ; Feke 2014 , 297-8 ) .",
+      "bbox": {
+        "l": 102,
+        "t": 950,
+        "r": 652,
+        "b": 847
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "As seen in the brief survey of earlier classifications , even those scholars who considered the judgment of the stars as a species within one single science and equal in position and relevance to the configuration [ of the universe ] , rarely saw the science of the judgments of the stars a field of mathe- matical knowledge . The breaking apart of the two species and the equalization of medicine and the astral sciences as disciplines of equal rank and structural composition , while already consid- ered by Abū Ma'shar , appear as classificatory principles only in the 4th / 10th century .",
+      "bbox": {
+        "l": 100,
+        "t": 842,
+        "r": 652,
+        "b": 737
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "In the late 6th / 12th century , the influential religious and philosophical scholar Fakhr al - Din al - Razi ( d . 606/1210 ) declared the judgment of the stars and other occult sciences to belong to the mathematical sciences ( Melvin - Koushki 2017 , 127 ) . Under his impact and that of the Breth- ren of Purity , as well as Ibn Sina , the identification of the parts of the astral sciences shifted back and forth between natural philosophy and mathematics . This remained a constant feature of the debates in Islamicate societies until the 12th / 18th century at the very least . A second significant feature of those debates consists in partitioning the astral sciences into an increasing number of disciplinary components , which were either portrayed as independent fields of knowledge or as subdisciplines . A third aspect is the relative instability of meaning and of relationships between such designations . Similarly , outside of treatises on classification , for instance in biographical dictionaries or historical chronicles , meanings and relationships between the content of subdis- ciplines remained unstable , as did the relationships to their practitioners .",
+      "bbox": {
+        "l": 101,
+        "t": 733,
+        "r": 653,
+        "b": 522
+      },
+      "page": 5
+    },
+    {
+      "label": "section_header",
+      "text": "1.6.3 Debates on astral theories and practices",
+      "bbox": {
+        "l": 216,
+        "t": 494,
+        "r": 538,
+        "b": 476
+      },
+      "page": 5
+    },
+    {
+      "label": "section_header",
+      "text": "1.6.3.1 Philosophical foundations",
+      "bbox": {
+        "l": 257,
+        "t": 456,
+        "r": 496,
+        "b": 440
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "A good number of the many ancient Greek texts translated into Arabic during the 2nd / 8th , 3rd / 9th and 4th / 10th centuries discussed the structure and properties of the universe . Among them were Plato's ( d . 348-347 BCE ) Timaios and Galen's ( 129-216 ) commentary on it , Aris- totle's ( 384-322 BCE ) On the Heavens and Alexander of Aphrodisias's ( late 2nd - early 3rd centu- ries ) commentary , John Philoponus's ( d . 574 ) and Aristotle's Meteorology and Theophrastus's ( c . 371-287 BCE ) texts on weather phenomena ( Lettinck 1999 ; Taub 2003 ) . Combined with claims and arguments from Ptolemy's Almagest and Planetary Hypotheses , these translations provided the astral sciences in Islamicate societies with theoretical foundations that remained largely operative from the 3rd / 9th until the 12th / 18th century , although different authors occasionally ques- tioned and critically discussed various components .",
+      "bbox": {
+        "l": 100,
+        "t": 428,
+        "r": 652,
+        "b": 250
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Practitioners of the astral sciences believed that the universe was spherical and without void , that the earth was spherical and immobile in its center and that the universe was divided into an immutable part and a mutable part . The immutable part was filled by the fifth element ether . It began with the orbs supporting the moon and ended with the outermost sphere . The mutable part was the constantly changing world below the moon . It was composed of earth , as the heavi- est element , followed in ascending order by water , air and fire . The eternal bodies made up from ether , from the moon outward , moved uniformly and in a circle around a center , preferably the center of the universe . The bodies of the sublunar world were as a rule composed of different parts of the four elements and characterized by different degrees of the two qualities ( hot , cold ;",
+      "bbox": {
+        "l": 101,
+        "t": 248,
+        "r": 653,
+        "b": 90
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "84",
+      "bbox": {
+        "l": 369,
+        "t": 62,
+        "r": 383,
+        "b": 55
+      },
+      "page": 5
+    }
+  ],
+  "6": [
+    {
+      "label": "section_header",
+      "text": "The astral sciences up to the 13th century",
+      "bbox": {
+        "l": 257,
+        "t": 994,
+        "r": 472,
+        "b": 979
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "wet , dry ) of each element that formed part of the mixture . They resulted from different processes of generation and decay . Their so - called natural motion ( a motion not caused by compulsion ) went in a straight line to their natural place according to the heaviness of each body , depending on the mixture of the two heavy ( earth , water ) and the two light elements ( air , fire ) that com- posed it . Heavy bodies moved downward , while light bodies moved upward .",
+      "bbox": {
+        "l": 88,
+        "t": 949,
+        "r": 639,
+        "b": 864
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "So far , there is no overarching study of the process that led to the adoption of those natural philosophical assumptions among experts in the mathematical sciences and , in particular , those who focused partly or entirely on the astral sciences . Based on existing research on specific texts and scholars , it seems likely that the scholars who were primarily responsible for the acceptance of this set of beliefs during the 3rd / 9th century were philosophers like al - Kindi , astrologers like Abū Ma'shar and physicians like Hunayn ibn Ishaq ( d . 260/873 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 860,
+        "r": 639,
+        "b": 755
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "Al - Kindi addressed many questions concerning the universe , studying them from different perspectives . He was most interested in elucidating the connections between the celestial and terrestrial realms . He asked , for instance , how the planets can initiate transformations in the bodies of the sublunar world , if they consist of a different element , ether . How can they emit light and heat , like the element fire , when they consist of such a profoundly different element ? Why is it proper to attribute specific effects to each planet when all of them consist of one and the same element ? As his fundamental position , al - Kindi declared that God is the cause for all that happens in the universe . However , God does not act directly but is the remote agent cause . In order to bring about change , the proximate agent causes are needed . These proximate agent causes are the planets . Al - Kindi established this position by using Aristotle's theories of the four causes ( material , agent , formal , final ) , the four qualities ( hot , dry , cold , wet ) and the four ele- ments ( Adamson and Pormann 2012 , 153-4 ) . On how they achieve these changes , he offered three different lines of argumentation in different treatises apparently written in different periods of his life . According to the earliest one , planets cause sublunar processes due to the heat and friction that their movements create according to their speeds , sizes and distances . In another account , perhaps formulated late in his life , al - Kindi argued that changes happen because both planets and elements emit rays . In a third account , he attributed the planetary effects to math- ematical proportions and symbolic analogies ( Adamson and Pormann 2012 , 154-5 , 162-4 ; Orthmann 2016 , 730 ; Adamson 2020 ) . The last treatise deals with weather forecasting , while the other two are cosmological and theological in orientation . These contradictory claims sug- gest that al - Kindi continued to reflect on the complex questions about the relationship between God , the celestial realm and the sublunar world , without achieving a coherent theory . But he did argue throughout that cosmological theories appropriated from ancient philosophy , in particular Aristotle , supported the fundamental Islamic beliefs in God's role in the world ( Adamson and Pormann 2012 , 155-6 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 752,
+        "r": 639,
+        "b": 307
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "Al - Kindi also shared some Platonic views , for example , that \" the planets were rational , ... spiritual beings capable of intelligence and speech , \" and hence the causes and administrators of everything in the sublunar world . Their activities followed the command of the Prime Creator who exercises through them control and providence over the sublunar world ( Saliba 1994 , 55 ; Adamson 2020 ) . In the 4th / 10th century al - Nawbakhti ( d . c . 307/920 ) rejected such a position in a treatise specifically dedicated to this subject , Physical Arguments , Drawn from the Books of Aristotle , Negating Those Who Have Claimed That the Heavenly Sphere is Living and Rational ( Hujaj tabi'iyya mustakhraja min kutub Arisṭātālis fi l - radd ' ala man za'ama anna l - falak bayy natiq ) .",
+      "bbox": {
+        "l": 88,
+        "t": 301,
+        "r": 642,
+        "b": 161
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "Al - Kindi's erstwhile opponent and later enthusiastic student Abū Ma'shar profited not only from his teacher's knowledge of astral matters but also from his studies of Aristotelian and Neo- platonic philosophy . Like him he explained planetary effects on the sublunar world as resulting from their differences in motion . He insisted on the existence of a First Cause that operates those",
+      "bbox": {
+        "l": 88,
+        "t": 157,
+        "r": 640,
+        "b": 90
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "85",
+      "bbox": {
+        "l": 356,
+        "t": 63,
+        "r": 368,
+        "b": 55
+      },
+      "page": 6
+    }
+  ],
+  "7": [
+    {
+      "label": "text",
+      "text": "Sonja Brentjes",
+      "bbox": {
+        "l": 338,
+        "t": 992,
+        "r": 416,
+        "b": 979
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "motions like a distant force and which he identified with God ( Orthmann 2016 , 730-1 ; Abū Ma'shar 2019 , 1 : 12 ) . The motions of the planets are the cause of the movement of the sublunar elements and allow their potentiality for change to actualize . This impact over a distance is only possible because the sublunar elements are inherently susceptible to it ( Abū Ma'shar 2019 , 1 : 11 ) . Abū Ma'shar combined these basically Aristotelian ideas with Platonic concepts such as the form that is the defining feature of each thing and operates like an artisan , while the four sublunary elements are its tools . The most powerful of all the planets is the sun ( Abū Ma'shar 2019 , 1:12 ) . While those and other concepts and claims serve to justify the reality and the scientific nature of the art of judgments ( astrology ) , the cause and regulator of all planetary activities and effects is God alone .",
+      "bbox": {
+        "l": 101,
+        "t": 950,
+        "r": 652,
+        "b": 777
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "Some scholars also challenged the philosophical assumptions summarized above either in part or as a whole . Among them were Thabit ibn Qurra ( d . 288/901 ) , al - Bīrūnī ( 362 - d . after 444 / 973 - d . after 1053 ) , ' Umar al - Khayyam ( 439 - c . 517 / 1048 - c . 1123 ) and perhaps also al - Kühi ( 2nd half 4th / 10th century ) and al - Isfizări ( [ late 5th - early 6th / 11th - early 12th centuries ; ] Rashed 2009 , 696-9 ) . These challenges may have emerged ( at least partly ) from some of the epistemo- logical views expressed by Hellenistic scholars , in particular Ptolemy . But there is not enough research to come to a definitive conclusion . Thabit ibn Qurra may have even questioned the entire physical doctrine of Aristotle ( Rashed 2009 , 676-7 ) . But we cannot be certain because not enough of his treatises on these issues have survived . The surviving fragments indicate his rejection of Aristotle's theories of natural place , the nonexistence of the void , the definition of time as a measure of celestial movement and some of the properties of movement . He also seems to have been indecisive about the role of the Prime Mover in the movements of the spheres ( Rashed 2009 , 683-99 ) . Al - Bīrūni is well known for his rejection of several Aristotelian natural philosophical doctrines in his letters to Ibn Sina ( al - Biruni and Ibn Sina 1970 ) . His letters express curiosity , challenge , criticism and dissatisfaction . But there are no studies yet of the philosophical positions he took in his later works . In general , this is also true for the overarching question of which philosophical positions astral experts held in different times and regions .",
+      "bbox": {
+        "l": 101,
+        "t": 769,
+        "r": 655,
+        "b": 467
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "As a whole , however , according to our current knowledge , Aristotelian natural philoso- phy formed a stable theoretical foundation on which the astral experts practiced their crafts whether mathematical or more speculative . Aristotelian doctrines were incorporated into manuals or synopses of astronomical matters , usually following the geometrical propositions , mostly taken from Euclid's ( 3rd century BCE ) Elements . An example is Athir al - Din al - Abhari's ( d . between 660/1263 and 663/1265 ) Concise [ Book ] on the Science of the Configuration [ of the Universe ] ( Mukhtaşar fi ilm al - hay'a ) . He opened the second chapter with the simple acknowledg- ment that natural philosophy provides the basis for astronomical knowledge :",
+      "bbox": {
+        "l": 101,
+        "t": 464,
+        "r": 653,
+        "b": 323
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "It has been established in the natural sciences that the celestial bodies are equal in their parts and natures , that their figures are spherical , that they move in circular ( forms ) , that there is no beginning in them for a straight inclination ; that the place of the earth is in the middle of the world .",
+      "bbox": {
+        "l": 128,
+        "t": 301,
+        "r": 624,
+        "b": 236
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "( MS Paris , BnF , Arabe 2515 , fol . 5b , 10-13 )",
+      "bbox": {
+        "l": 380,
+        "t": 231,
+        "r": 624,
+        "b": 214
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "The above mentioned author / s of the Treatises of the Bretren of Purity ( Rasa'il Ikhwan al - ṢŞafa ) treated natural philosophical doctrines as well - accepted underpinnings of the astral sciences . In their 3rd epistle titled Astronomy ( astrunumiya ) they confirm that the impact of the stars on the sublunar world is due to the movements of the planetary orbs and the planets , that the theory of the four qualities applies to the zodiacal signs and that all celestial orbs are spherical and move in circular motions . They also likened the planets to spirits and the zodiacal signs to bodies ( Ikhwan",
+      "bbox": {
+        "l": 101,
+        "t": 193,
+        "r": 654,
+        "b": 90
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "86",
+      "bbox": {
+        "l": 369,
+        "t": 63,
+        "r": 382,
+        "b": 55
+      },
+      "page": 7
+    }
+  ],
+  "8": [
+    {
+      "label": "section_header",
+      "text": "The astral sciences up to the 13th century",
+      "bbox": {
+        "l": 257,
+        "t": 994,
+        "r": 472,
+        "b": 979
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "al - Safa'2015 , 25 , 31-2 ) . They presupposed more specific beliefs about the material nature of the planets as round and luminous bodies and the orbs as spherical , transparent and hollowed - out bodies ( Ikhwan al - Safa'2015 , 25-6 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 950,
+        "r": 639,
+        "b": 900
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "Despite the substantial difference in mathematical content and overall religious outlook , this epistle has several features in common with al - Biruni's Book of Instruction on the Elements of the Art of Astrology ( Kitāb al - Tafhim li - awa'il şina'at al - tanjim ) , dedicated in 420/1029 to Rayḥāna , a young woman probably from Khwarazm ( al - Birūni 1934 ) . Both are teaching texts , both illus- trate concepts and claims with diagrams , and both simplify the access to scholarly matters by using comparisons with things from everyday life . The sphere of the moon encloses the lightest element air \" like the shell of an egg encloses its egg white \" ; the earth is compared to the yolk of the egg and the outermost , perpetually moving sphere is likened to a wheel ( Ikhwan al - Safa ' 2015 , 26-7 , 46 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 897,
+        "r": 639,
+        "b": 738
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "Historians of astronomy often argue that natural philosophy played its most important role in the development of non - Ptolemaic planetary models ( Chapter II.6 ) . Aristotle and his followers ascribed the discussion of the \" essence \" ( structure and properties ) of the universe as a whole to natural philosophy and not to the astral sciences . Also , no text specifically devoted to the meaning of natural philosophical teachings for the astral sciences is known to have been written by scholars of the early Abbasid caliphate . However , Morelon emphasized that several of their extant writings are concerned with this topic ( Morelon 1999 , 115 ) . He showed , for example , for the treatise of the Banu Mūsā ( 3rd / 9th century ) On the Solar Year ( Kitab fi sanat al - shams ) - falsely attributed to Thabit ibn Qurra ( d . 288/901 ) - that it interweaves natural philosophy and mathematical astronomy . An analogous point was made by Ragep in his discussion of al - Battani's ( 244-317 / 858-929 ) description and criticisms of ancient and contemporary theories , observa- tions and the philosophical groundings of celestial movements ( Ragep 1996 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 733,
+        "r": 640,
+        "b": 522
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "Independently from Morelon and Ragep , Orthmann , a historian of the Persianate world and the social impact of astrology , emphasized that models of the universe were questioned from philosophical , scientific and religious positions ( Orthmann 2016 ) . Major points concerned the structure and properties of the universe as a whole and its parts .",
+      "bbox": {
+        "l": 88,
+        "t": 517,
+        "r": 639,
+        "b": 450
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "One of those discussions concerned the existence of spheres beyond the sphere of the ecliptic ( the path of the mean sun , also called the sphere of the zodiac or the sphere of fixed stars ) , the eighth and perhaps outermost sphere . Following Aristotle , Ptolemy had declared the movements of the heavens to originate due to a Prime Mover situated in the sphere beyond the ecliptic . In the 3rd / 9th century , the Banu Mūsā rejected the existence of such a ninth sphere in their Book on the Motions of the Celestial Spheres ( Kitāb Harakat al - aflāk ) . The brothers explained the daily motion by the rotations of each single sphere from the moon to the fixed stars ( Casulleras 2007 , 1 : 93 ) . One of the them , Ahmad , reportedly delivered a geometrical proof against the existence of the ninth sphere ( Casulleras 2007 , 1 : 93 ) . In the following cen- turies , arguments for more spheres than eight were also offered due to other observational results . An important issue was the precession of the equinoxes . According to Ptolemy this slow movement along the ecliptic of the two points of intersection between the ecliptic and the celestial equator was due to the slow eastward rotation of the sphere of the fixed stars around the ecliptic poles . Another phenomenon seemingly requiring additional external spheres was the apparently changing obliquity of the ecliptic ( the angle of intersection between the ecliptic and the equatorial planes ) which was explained by increasingly complex theories of trepidation ( Ragep 1996 ) . Identifying in the 4th / 10th century the ancient divine Prime Mover or the First Cause with Allah , facilitated the model's spread beyond the circles of astral experts . Two cen- turies later , scholars engaged in planetary theory defined the ninth sphere as a fixed coordinate system ( Ragep 1996 , 286 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 445,
+        "r": 639,
+        "b": 90
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "87",
+      "bbox": {
+        "l": 356,
+        "t": 63,
+        "r": 369,
+        "b": 55
+      },
+      "page": 8
+    }
+  ],
+  "9": [
+    {
+      "label": "text",
+      "text": "Sonja Brentjes",
+      "bbox": {
+        "l": 338,
+        "t": 992,
+        "r": 415,
+        "b": 979
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "The position of Mercury and Venus with regard to the sun was apparently first formulated as a question of symmetry . In a letter on weather forecasting , a subfield of the astral sciences , al - Kindi argued that four spheres existed on each side of the sun ( al - Kindi 2000 , 245-6 ) . The upper spheres were those of Mars , Jupiter , Saturn and the fixed stars . The lower spheres consist , in addition to the sphere of the moon , of three single spheres for the following pairs : Venus and Mercury ; fire and air ; water and earth . Al - Kindi believed that Mercury and Venus were equidis- tant from the sun and hence should be placed in a single sphere together ( al - Kindi 2000 , 245-6 ) . His justification for putting water and earth , as well as fire and air , in single spheres reflects Aristotelian physics : water and earth are both cold and heavy , move downward to the center and do not form clearly ordered spheres , as earth rises above water in many places ( continents and islands ) . They were often treated as forming a composite sphere . Similarly , air and fire are both hot and light , move upward and may not be separated from each other by a simple geometrical boundary ( al - Kindi 2000 , 245 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 949,
+        "r": 652,
+        "b": 720
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Al - Kindi's statements resemble opinions already held in antiquity . They were particularly prominent among Roman writers ( Eastwood 2007 , 36-7 , 49 ) . We do not know if other scholars in Islamicate societies subscribed to al - Kindi's views . There are , however , some diagrams in Ara- bic and Persian texts that present at least the sublunar world in agreement with al - Kindi's model . A comment by Nasir al - Din al - Ṭūsi ( 597-672 / 1201-1274 ) , in his Recension of the Almagest ( Tabrir al - Majisti ) , also might point to a longer life of this view . He discussed earlier observations of the transits of Venus . Some of these are clearly spurious , but others are possibly correct . Using this evidence , he rejected the ideas that the two inferior planets are in the sphere of the sun and that the centers of their epicycles coincide with the center of the sun's body ( Mozaffari 2016 , 276 , no . 40 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 716,
+        "r": 653,
+        "b": 541
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Al - Kindi's placement of Mercury and Venus is a special form of one of the three opinions held by ancient and medieval scholars about where they move : both below the sun , both above the sun or Mercury below and Venus above the sun . According to Ptolemy , deciding this ques- tion with certainty was impossible due to a lack of observations , the difficulty of observing the occultation of a large body ( the sun ) by a much smaller body ( a planet ) and the long periods between the occurrence of such occultations ( as is the case for Venus ; Goldstein 1972 , 43 ) . Because of the accepted Aristotelian principle of the unchangeable celestial world , the observa- tion of any dark spot on the solar surface would have been ( mis ) taken for the transit of one of the two inner planets ( Goldstein 1972 , 44 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 536,
+        "r": 654,
+        "b": 378
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Although the worlds below and above the moon were rigidly separated doctrinally , natural philosophy delivered the basis for analogical arguments about the impact of the planets on the sublunar world . The sun was recognized as causing the seasons and the change between day and night , the moon as connected to rain and other forms of humidity , and the planets as contri- buting their shares to the temperatures during the seasons ( Abū Ma'shar 2019 , 9 , 225 , 257 , 259 ) . Discussions about tides linked them primarily to lunar movements . In particular , Abū Ma'shar's substantial deliberations in the Great Introduction to Astrology were picked up repeatedly by writers about terrestrial matters ( Abū Ma'shar 2019 , 5 , 19 , 263-86 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 373,
+        "r": 653,
+        "b": 234
+      },
+      "page": 9
+    },
+    {
+      "label": "section_header",
+      "text": "1.6.3.2 Debates on astronomical problems",
+      "bbox": {
+        "l": 229,
+        "t": 206,
+        "r": 523,
+        "b": 188
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Important theoretical work began as early as the 3rd / 9th century dealing with three big topics - the structure of the universe and the movement of the celestial bodies , the constructions of instruments and the solution of the three tasks related to the religious duties of Muslims ( first visibility of the crescent after New Moon , prayer times and prayer directions ) . These themes were picked up time and again until the end of the period covered in this chapter ( and beyond ) .",
+      "bbox": {
+        "l": 101,
+        "t": 176,
+        "r": 655,
+        "b": 89
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "88",
+      "bbox": {
+        "l": 369,
+        "t": 63,
+        "r": 381,
+        "b": 55
+      },
+      "page": 9
+    }
+  ],
+  "10": [
+    {
+      "label": "text",
+      "text": "The astral sciences up to the 13th century",
+      "bbox": {
+        "l": 257,
+        "t": 994,
+        "r": 472,
+        "b": 979
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "Here I focus on the first topic as it belongs in a narrower sense to the theoretical debates ( for the other two topics see Chapters IV.2 , IV.3 , V.4 , VI.2 ) .",
+      "bbox": {
+        "l": 89,
+        "t": 949,
+        "r": 638,
+        "b": 918
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "Almost all issues of the first topic were related to studies of Ptolemy's Almagest . A set of them concerned the observed changes of the obliquity of the ecliptic , the equinoctial points and the solar eccentricity , the definition and the determination of the length of the solar year and the motion of the solar apogee . The most important works on those subjects were written in Baghdad , Ghazna and Toledo . Their authors evaluated observations , recomputed astronomical magnitudes and devised qualitative or quantitative geometrical models .",
+      "bbox": {
+        "l": 88,
+        "t": 914,
+        "r": 639,
+        "b": 810
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "In the treatise on the Solar Year , the Banu Mūsā rejected Ptolemy's claim that the movements of the sun , the moon and the fixed stars were interconnected and hence his convention that the tropical year ( the time in which the sun travels all the way around the ecliptic ) could be taken as the standard year in astronomy and astrology . They argued for the sidereal year ( the time of one revolution of the sun with regard to the fixed stars , in modern terms about 1 h 20 m longer than the tropical year ) , which they considered of the same length as the anomalistic solar year ( the time of one revolution of the sun with regard to its apogee , in modern terms some 2 h 55 m shorter than the sidereal year ) . Their arguments went back and forth between natural philo- sophy , mathematical astronomy and observations . Their arguments made use of solar observations that the Banu Mūsā brothers had executed in Baghdad , together with what they perceived as the critical spirit of ancient Greek astronomy . They presented their own observations not merely as new observational results but as part of a history of observations , which included - as an impor- tant method - an explicit criticism of earlier observations by ancient scholars ( Neugebauer 1962 ; Morelon 1994 , 116 ; Chapter II.7 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 805,
+        "r": 641,
+        "b": 558
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "The observed variability of precession and the decrease of the value of the obliquity of the ecliptic motivated some scholars of the 3rd / 9th or 4th / 10th centuries to assume a periodicity of the two phenomena ( Neugebauer 1962 , 290 ) . In a treatise called On the Motion of the Eighth Sphere extant only in Latin translation ( Liber de motu de octaue sphere ) - also attributed falsely to Thabit ibn Qurra - these issues are represented in the first known qualitative geometrical model ( Neugebauer 1962 , 291-9 ; for possible authors of the Arabic treatise see Samsó 1994 , I : 15 , 2020 [ CB ] , 585 ) . The model resulted from and contributed to the continued discussion of what was called trepidation or the motion of accession and recession . The assumption , already formulated in late antiquity in Greek and Indian works but without geometrical models , was that the equinoctial points move forward and backward at a rate of 1 ° / 80 years along an arc of 8 ° . In the ancient mathematical model , the longitude of a star will decrease during the forward west - to - east movement ( accession ) . During the backward east - to - west movement ( recession ) it will increase again until it reaches its original value .",
+      "bbox": {
+        "l": 88,
+        "t": 553,
+        "r": 641,
+        "b": 323
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "Trepidation theory was significantly reinterpreted , although the beginnings are not well known ( Ragep 1996 , 283-8 ) . Al - Battānī ( 244-317 / 858-929 ) described the results of this pro- cess of reformulation in his astronomical handbook as a physical and cosmological interpretation of trepidation ( Ragep 1996 , 271 ) . According to this interpretation , the stars oscillate because of a movement of the ecliptic orb . This movement is described as occurring in addition to the west - east movement of the fixed stars ( precession ) . Al - Battani criticized trepidation because there are several consequences resulting from this version which are in conflict with Aristotelian celestial physics ( for a discussion , see Ragep 1996 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 320,
+        "r": 639,
+        "b": 179
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "Despite the work done in the East , trepidation theory became truly influential only in al - Andalus and the Maghrib from the 5th / 11th to the 8th / 14th century ( Comes 2001 ; Samsó 1994 , I ) . According to the historical records , the theory was picked up from a treatise written in Baghdad and further developed in the circle around Sa'id al - Andalusi ( 419-462 / 1029–1070 ) in Toledo . A later member , Ibn al - Zarqallu ( d . 493/1100 ) proposed three different trepidation",
+      "bbox": {
+        "l": 88,
+        "t": 176,
+        "r": 638,
+        "b": 90
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "89",
+      "bbox": {
+        "l": 356,
+        "t": 63,
+        "r": 367,
+        "b": 55
+      },
+      "page": 10
+    }
+  ],
+  "11": [
+    {
+      "label": "text",
+      "text": "Sonja Brentjes",
+      "bbox": {
+        "l": 338,
+        "t": 992,
+        "r": 416,
+        "b": 979
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "models in his Treatise on the Motion of the Fixed Stars ( Maqala fi barakat al - iqbal wa - l - idbar ) . They substantially shaped the further development of astronomical theory and handbooks among his successors in the West . Samsó's analysis of the three models brings to light the fact that Ibn al - Zarqallu privileged ancient and Abbasid scholars over Andalusians , and his own recomputed data over observational data ( for the details of the models and Samsó's analysis , see Samsó 2020 , 592-610 ) . In the 7th / 13th and later centuries , observations undertaken in the Maghrib con- tradicted values given in Andalusian astronomical handbooks based on a trepidation model . As a result , trepidation models were first criticized and then fell out of use in the Maghrib . This change was supported by the values for the obliquity of the ecliptic and the precession of the equinoxes found in material arriving in the Maghrib from Ayyubid and Mamluk Egypt and Syria ( Samsó 2020 , 610-41 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 949,
+        "r": 653,
+        "b": 756
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "Underlying many of the debates mentioned here and those going beyond the available scope of this chapter are two more general issues : ( 1 ) the relationship between observation , calculation and theoretical interpretation and ( 2 ) the necessity ( or not ) to engage critically with the practical and theoretical results of previous scholars back to antiquity . Time and again , scholars of the period under discussion formulated opinions on the merits as well as errors of previous results and their causes . In response , they offered new mathematical solutions , theoretical insights and verifications of observations , reinforcing the identity of the astral sciences and at times even changing their direction ( see , e.g. , Morelon 2009 , 613-17 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 752,
+        "r": 652,
+        "b": 611
+      },
+      "page": 11
+    },
+    {
+      "label": "section_header",
+      "text": "1.6.3.3 Is the science of the judgment of the stars a science ?",
+      "bbox": {
+        "l": 170,
+        "t": 585,
+        "r": 582,
+        "b": 570
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "The classification literature summarized earlier explained what kind of science astrology was either mathematical or physical and its status and rank . Other kinds of texts dealt with the larger question inherited from ancient scholars : whether it was a science at all , what characterized the true expert of the astral sciences and which people were acceptable practitioners as opposed to charlatans . Following Ptolemy , writers addressing these questions defended the scientific character of both species or fields of knowledge . They acknowledged epistemological differences between the mathematical and physical parts . The results of the mathematical parts were certain , due to infallible , rational proofs . But the conclusions of the physical part were at best conjectural , as they were drawn from observing the nature of planetary influences on the life on earth . In addition , some writers argued for the existence of possible knowledge ( not only of necessary knowledge ) , as well as the creation of know- ledge through methods of analogy and comparison ( Burnett 2002 , 206-10 ) . They promoted the application of tools from logic , the execution of careful , individual observations , and the reliance on long - term observational results from competent astral experts of the past ( Burnett 2002 , 212 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 557,
+        "r": 655,
+        "b": 291
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "Küshyār ibn Labban ( late 4th - early 5th / 10th - 11th centuries ) formulated these positions in favor of a nondeterministic science , also subscribed to by al - Kindi , Abū Ma'shar and al - Qabişi , as follows :",
+      "bbox": {
+        "l": 101,
+        "t": 287,
+        "r": 650,
+        "b": 239
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "The first division of the science of the stars is that for which there is geometrical proof ... the second is the science that is grasped by experience ... and analogy .... Most people reject the second science and claim that it concerns things that happen by accident and there is no demonstration in it . But we say that , so far as accidents are concerned , when it lasts long or occurs in most circumstances , then they have the force of demonstration .",
+      "bbox": {
+        "l": 128,
+        "t": 215,
+        "r": 625,
+        "b": 113
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "90",
+      "bbox": {
+        "l": 369,
+        "t": 63,
+        "r": 382,
+        "b": 54
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "( Burnett 2002 , 202 )",
+      "bbox": {
+        "l": 510,
+        "t": 107,
+        "r": 623,
+        "b": 92
+      },
+      "page": 11
+    }
+  ],
+  "12": [
+    {
+      "label": "text",
+      "text": "The astral sciences up to the 13th century",
+      "bbox": {
+        "l": 257,
+        "t": 994,
+        "r": 472,
+        "b": 979
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "The questions formulated by al - Qabişi for testing astral experts who approached his princely patron leave no doubt that the scientific character of both parts of the astral sciences depended on the relationship between them . An expert on the science of the judgments of the stars had to have mastered the Almagest , natural philosophy , instrumental techniques , geometry and arithmetic . In his refutation of ten kinds of criticisms against astrology , Abū Ma'shar explains that experts in mathematical astronomy are insufficiently trained if they do not know natural philosophy or practice the science of the judgments of the stars , because the latter is the fruit of astral knowledge ( Burnett 2002 , 209 ; al - Qabişi 2004 , 6-7 ) . This view on the connectedness of mathematical astronomy and astrology was still held in the early 9th / 15th century , when either the Timurid prince Iskandar Sultan or possibly one of his court astrologers wrote in the preface to an other- wise lost scientific summa that the science of the configuration [ of the universe ] is the foundation of the noble science of the stars and the latter the fruit of all the parts of mathematical astronomy ( Brentjes 2009 , 465 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 949,
+        "r": 641,
+        "b": 719
+      },
+      "page": 12
+    },
+    {
+      "label": "section_header",
+      "text": "1.6.3.4 Methods for houses , rays and progressions",
+      "bbox": {
+        "l": 191,
+        "t": 690,
+        "r": 536,
+        "b": 673
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "The most important discussions on astrological methods and their mathematical implementa- tion took place in astronomical handbooks and specialized treatises ( Kennedy and Krikorian 1972 , 3-4 ; Casulleras and Hogendijk 2012 ) . They concern three fundamental theories that historical actors considered interrelated : ( 1 ) the theory of houses , ( 2 ) the theory of aspects and ( 3 ) the theory of rays . Houses ( also translated as places ; not to be confused with the domiciles of the planets ) resulted from the division of the ecliptic circle or the zodiacal belt into 12 parts . They could either have fixed or mobile limits , often defined by the projection of divisions from an auxiliary great circle like the equator onto the ecliptic ( Kennedy 1996 ) . Similarly , there were different views on how to determine the seven astrological aspects , significant points of rays allegedly cast by a planet , and predictions for any given date by progressions . Casulleras and Hogendijk have traced nine methods for projecting rays and identified six methods for predictions made by progression ( Casulleras 2009 ; see Casulleras and Hogendijk 2012 for a survey of the older literature , editions and translations of primary sources and the details of the general themes , as well as their respective methods ) . They consider methods ( also called systems ) as different when their geometrical definitions are not mathematically equivalent ( Casulleras and Hogendijk 2012 , 37 ) . As a result , the computations employed can also differ . Some of the systems are mathematically interrelated , while others are indepen- dent . The applied mathematical practices are nontrivial and should thus be acknowledged as valuable contributions to the history of the mathematical sciences in Islamicate societies ( see , for instance , Hogendijk 2015 , 285 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 661,
+        "r": 641,
+        "b": 306
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "The fact that the different methods were unevenly distributed and evaluated in different areas of the Islamicate world points to locally specific developments and perspectives ( Casul- leras and Hogendijk 2012 , 45 , 73 , 77-8 , 82 ; Chapters V.3 , V.4 and VI.2 ) . The evaluation by practitioners concerned eight issues related to each other in different ways . The first four were the effectiveness , reliability and applicability of each of the methods for specific pla- netary and imagined celestial positions and the soundness of a method . These formed one complex . The relationship between methods and the possibility of extending a method to a more complex case reflect a second set of questions . The remaining two issues were the exact or approximate character of the computations and were related to a methodological problem also raised outside the astral sciences . This also applies to the question of which mistakes various authors had committed ( Casulleras and Hogendijk 2012 , 43 , 45 , 56-7 , 59 , 63-4 , 70 , 73 , 81 , 83 , 91 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 301,
+        "r": 639,
+        "b": 91
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "91",
+      "bbox": {
+        "l": 357,
+        "t": 62,
+        "r": 369,
+        "b": 55
+      },
+      "page": 12
+    }
+  ],
+  "13": [
+    {
+      "label": "text",
+      "text": "Sonja Brentjes",
+      "bbox": {
+        "l": 338,
+        "t": 992,
+        "r": 415,
+        "b": 980
+      },
+      "page": 13
+    },
+    {
+      "label": "section_header",
+      "text": "1.6.4 Mathematical practices",
+      "bbox": {
+        "l": 272,
+        "t": 949,
+        "r": 480,
+        "b": 933
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "The main mathematical skills people working on astral matters needed to possess began with the abilities to add , subtract , multiply , divide and extract roots in the sexagesimal system ( a positional system with basis 60 ) . They needed to know the relevant great and small circles , arcs and angles on the celestial and terrestrial spheres and how to do geometrical constructions with a ruler and a compass . They had to be able to transform verbal statements into plane or spherical diagrams and vice versa . In more advanced mathematics , they needed to handle proportions between numbers or geometrical magnitudes , work with trigonometric magnitudes and relations , trisect arcs or angles , to project elements of a spherical surface or a plane unto another plane and make a linear interpolation between two values . More rarely quadratic interpolations were used . Last , they had to be able to translate geometrical problems or procedures into arithmetical or algebraic ones and thus recognize equivalences between problems from different fields of the mathematical sciences , which allowed them to search for arithmetical or algebraic solutions ( Chapters 1.5 and 1.7 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 921,
+        "r": 652,
+        "b": 709
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "The more proficient experts among them knew how to make theoretical claims and prove them with methods taken from Arabic translations of Euclid's Elements and the Data ( Dedomena ) , Ptolemy's Almagest , the treatises on the sphere by Autolycus of Pitane ( d . c . 250 BCE ) , Theodosius ( late 2nd century BCE ) and Menelaus ( fl . 100 ) , as well as new trigonometric tools derived from translations of Sanskrit astral texts and their further elaborations in the 3rd / 9th and 4th / 10th centuries ( Chapters 1.5 , 1.7 , 1.8 ) . They executed complicated calculations and complex geome- trical constructions . They were also able to check the methods applied by other practitioners and point out their mistakes and theoretical or practical shortcomings . Sometimes scathing remarks of this kind permeate the works of several scholars of the astral sciences , among them al - Birūni and Ibn Mu'adh ( Casulleras 2004 , 387 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 705,
+        "r": 652,
+        "b": 529
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "An entire literary genre of this kind of critical engagement with the foundations and practices of the scholarly field developed in medicine , philosophy , some of the religious sciences ( Chapters 1.11 and 1.12 ) and in the astral sciences .",
+      "bbox": {
+        "l": 102,
+        "t": 525,
+        "r": 651,
+        "b": 475
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "Difficult mathematical problems and complex procedures to solve them were applied not only in those parts of the astral sciences that lacked astrological applications , but also in proce- dures needed for producing horoscopes , such as the projection or casting of rays , or the division of a chosen great circle for determining the houses with fixed or mobile limits ( Hogendijk 1989 , 2005 ; Casulleras and Hogendijk 2012 ; Casulleras 2020-2021 ) . The mathematical proce- dures used for such higher - level astrological practices were the same that the experts used for calculations and constructions in the mathematical part of the astral sciences ( astronomy ) . The same holds for proofs and demonstrations or the preference of exact solutions over approximate ones . Exact solutions occur primarily in discussions of theoretical problems of the astral sciences . Casulleras assumes that more complex formulations of theories and their procedures led to an increase in scholarly reputation , which in turn inspired the creation of more difficult theories involving efforts to find more sophisticated mathematical solutions ( Casulleras 2004 , 385-6 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 470,
+        "r": 652,
+        "b": 259
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "Approximate methods , on the other hand , seem to have dominated the daily practice of horo- scope casting , computation of astronomical and astrological tables and the determination of prayer times and prayer directions . Arithmetical procedures that required only the use of tables seem to have been preferred over geometrical methods ( Casulleras 2004 , 388 , 392-7 ; Casulleras and Hogendijk 2012 , 76 ) . Practicing astrologers could also work with astrolabes , which are effectively analog computers . Some specimens are known or described in texts that include special plates or plates with sets of lines for astrological tasks ( Hogendijk 2005 , 98-9 ; Casulleras 2013 ; Casulleras and Hogendijk 2012 , 50-3 , 55 et al .; see the latter for their reservations about the usability of some of those plates because of the agreement of the geometrical representation for several of the",
+      "bbox": {
+        "l": 101,
+        "t": 255,
+        "r": 654,
+        "b": 96
+      },
+      "page": 13
+    },
+    {
+      "label": "text",
+      "text": "92",
+      "bbox": {
+        "l": 369,
+        "t": 62,
+        "r": 383,
+        "b": 54
+      },
+      "page": 13
+    }
+  ],
+  "14": [
+    {
+      "label": "section_header",
+      "text": "The astral sciences up to the 13th century",
+      "bbox": {
+        "l": 257,
+        "t": 995,
+        "r": 472,
+        "b": 979
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "methods ) . The use of an armillary sphere , as well as a globe , was discussed by Jewish scholars at the court of Alfonso X of Castile ( [ r . 1252-1284 ] ; Casulleras and Hogendijk 2012 , 52 ) .",
+      "bbox": {
+        "l": 89,
+        "t": 949,
+        "r": 639,
+        "b": 918
+      },
+      "page": 14
+    },
+    {
+      "label": "section_header",
+      "text": "1.6.5 Final remarks",
+      "bbox": {
+        "l": 291,
+        "t": 888,
+        "r": 436,
+        "b": 876
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "This chapter has focused on themes that are only partly included in surveys of the history of astronomy in Islamicate societies . Astrology was excluded until very recently ( Burnett 2007 ; Morrison 2013 ) . A survey of the various complex and difficult mathematical methods used for predictions of the future still needs to be written . It is not possible to separate astrology from mathematical astronomy on the grounds that it is not considered a science today . If we did this , we would also have to abandon mathematical astronomy , since its natural philosophical founda- tions and its models are also faulty and equally contradict reality as understood today . The themes presented here indicate the fruitfulness of studying the different parts of the astral sciences as a unified field of knowledge interrelated by epistemological and natural philosophical issues of great importance , a broad range of mathematical methods and sociocultural contexts .",
+      "bbox": {
+        "l": 88,
+        "t": 860,
+        "r": 640,
+        "b": 683
+      },
+      "page": 14
+    },
+    {
+      "label": "section_header",
+      "text": "Note",
+      "bbox": {
+        "l": 346,
+        "t": 655,
+        "r": 379,
+        "b": 642
+      },
+      "page": 14
+    },
+    {
+      "label": "list_item",
+      "text": "1 Consolidated bibliography .",
+      "bbox": {
+        "l": 90,
+        "t": 631,
+        "r": 249,
+        "b": 615
+      },
+      "page": 14
+    },
+    {
+      "label": "section_header",
+      "text": "Bibliography Sources",
+      "bbox": {
+        "l": 318,
+        "t": 586,
+        "r": 409,
+        "b": 537
+      },
+      "page": 14
+    },
+    {
+      "label": "list_item",
+      "text": "al - Birūni , Abū 1 - Rayhan . tr . Wright , R. R. 1934. Kitab al - Tafhim li - awa'il sina'at al - tanjim [ The Book of Instruction in the Elements of the Art of Astrology ] ( Written in Ghaznah , 1029 A.D. ) . London : Luzac . Reproduced from British Museum MS . Or . 8349 .",
+      "bbox": {
+        "l": 89,
+        "t": 524,
+        "r": 640,
+        "b": 480
+      },
+      "page": 14
+    },
+    {
+      "label": "list_item",
+      "text": "al - Birūni and Ibn Sina . ed . Nasr , S. H. and Mohaghegh , M. 1970. Al - asila wa - l - ajwiba [ Questions and Answers ] . Tehran : Shūrai - yi ' äli - yi hunar u - farang .",
+      "bbox": {
+        "l": 89,
+        "t": 478,
+        "r": 638,
+        "b": 450
+      },
+      "page": 14
+    },
+    {
+      "label": "list_item",
+      "text": "Ikhwan al - Safa ' . ed . and tr . Ragep . E. J. and Mimura , T. 2015. On Astronomia : An Arabic Critical Edition and English Translation of Epistle 3. Epistles of the Brethren of Purity . Oxford : Oxford University Press . al - Kindi . ed . , tr . and com . Bos , G. and Burnett , C. 2000. Scientific Weather Forecasting in the Middle Ages : The Writings of Al - Kindi . London and New York : Kegan Paul International .",
+      "bbox": {
+        "l": 89,
+        "t": 448,
+        "r": 640,
+        "b": 390
+      },
+      "page": 14
+    },
+    {
+      "label": "list_item",
+      "text": "al - Qabişi . eds . and trs . Burnett , C. , Yamamoto , K. and Yano , M. 2004. Al - Qabisi ( Alcabitius ) : The Introduction to Astrology . Editions of the Arabic and Latin Texts and an English Translation . London and Turin : The War- burg Institute and Nino Aragno Editore .",
+      "bbox": {
+        "l": 89,
+        "t": 388,
+        "r": 639,
+        "b": 346
+      },
+      "page": 14
+    },
+    {
+      "label": "list_item",
+      "text": "al - Tawhidi , Abū Hayyan . ed . , tr . and ann . Bergé , M. 1963-1964 . \" Épitre sur les sciences ( Risāla fi l - ' ulum ) d'Abū Hayyan al - Tawhidi ( 310/922 ( ? ) - 414/1023 ) . Introduction , Traduction , Glossaire Technique , Manuscrit et Édition Critique , \" Bulletin d'études orientales 241-77 , 279-83 , 285-98 , 300 .",
+      "bbox": {
+        "l": 89,
+        "t": 345,
+        "r": 637,
+        "b": 299
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "MS London , BL , Or . 1992 .",
+      "bbox": {
+        "l": 89,
+        "t": 240,
+        "r": 233,
+        "b": 229
+      },
+      "page": 14
+    },
+    {
+      "label": "section_header",
+      "text": "Manuscripts",
+      "bbox": {
+        "l": 319,
+        "t": 265,
+        "r": 408,
+        "b": 250
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "MS New York , Pierpont Morgan Library , M. 788 .",
+      "bbox": {
+        "l": 89,
+        "t": 224,
+        "r": 353,
+        "b": 212
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "MS Paris , BnF , Arabe 2515 .",
+      "bbox": {
+        "l": 90,
+        "t": 211,
+        "r": 233,
+        "b": 198
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "MS Paris , BnF , Supplément Turc 242 .",
+      "bbox": {
+        "l": 89,
+        "t": 194,
+        "r": 286,
+        "b": 182
+      },
+      "page": 14
+    },
+    {
+      "label": "section_header",
+      "text": "Research literature",
+      "bbox": {
+        "l": 299,
+        "t": 151,
+        "r": 428,
+        "b": 139
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "Adamson , P. 2002. \" Abū Mašar , al - Kindi , and the Philosophical Defense of Astrology , \" Recherches de Théol- ogie et Philosophie médiévales 69 : 245-70 .",
+      "bbox": {
+        "l": 88,
+        "t": 126,
+        "r": 639,
+        "b": 98
+      },
+      "page": 14
+    },
+    {
+      "label": "text",
+      "text": "93",
+      "bbox": {
+        "l": 356,
+        "t": 63,
+        "r": 368,
+        "b": 55
+      },
+      "page": 14
+    }
+  ],
+  "15": [
+    {
+      "label": "text",
+      "text": "Sonja Brentjes",
+      "bbox": {
+        "l": 337,
+        "t": 992,
+        "r": 415,
+        "b": 980
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Adamson , P. 2006. Al - Kindi . New York : Oxford University Press .",
+      "bbox": {
+        "l": 102,
+        "t": 949,
+        "r": 444,
+        "b": 938
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Adamson , P. 2020. \" al - Kindi , \" in Zalta , E. N. , ed . Stanford Encyclopedia of Philosophy . Spring 2020 Edition . https://plato.stanford.edu/entries/al-kindi/#Cos .",
+      "bbox": {
+        "l": 102,
+        "t": 935,
+        "r": 650,
+        "b": 907
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Adamson , P. and Pormann , P. E. , trs . 2012. The Philosophical Works of al - Kindi . Karachi : Oxford University Press .",
+      "bbox": {
+        "l": 101,
+        "t": 904,
+        "r": 652,
+        "b": 880
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Bevilacqua , A. 2018. The Republic of Arabic Letters : Islam and the European Enlightenment . Cambridge , MA : Belnap Press .",
+      "bbox": {
+        "l": 102,
+        "t": 875,
+        "r": 651,
+        "b": 848
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Bowen , A. C. 2007. \" The Demarcation of Physical Theory and Astronomy by Geminus and Ptolemy , \" Perspectives on Science , 15.3 : 327-58 .",
+      "bbox": {
+        "l": 102,
+        "t": 846,
+        "r": 651,
+        "b": 817
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Brentjes , S. 2009. \" The Interplay of Science , Art and Literature in Islamic Societies before 1700 , \" in Dev , A. , ed . Science , Literature and Aesthetics . History of Science , Philosophy and Culture in Indian Civilization . Vol . XV.3 . New Delhi : PHISPC , Centre for Studies in Civilizations , 453-86 .",
+      "bbox": {
+        "l": 102,
+        "t": 815,
+        "r": 651,
+        "b": 773
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Brentjes , S. 2010. Travellers from Europe in the Ottoman and Safavid Empires , 16th - 17th Centuries . Seeking , Transforming , Discarding Knowledge . London : Routledge , Variorum .",
+      "bbox": {
+        "l": 102,
+        "t": 769,
+        "r": 649,
+        "b": 742
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Burnett , Ch . 2002. \" The Certitude of Astrology : The Scientific Methodology by al - Qabişi and Abū Ma'shar , \" Early Science and Medicine 7.3 : 198-213 .",
+      "bbox": {
+        "l": 102,
+        "t": 740,
+        "r": 650,
+        "b": 713
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Burnett , Ch . 2007. \" Astrology , \" in El - 3 , 2007-2 : 165-75 .",
+      "bbox": {
+        "l": 102,
+        "t": 709,
+        "r": 403,
+        "b": 698
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Callatay , G. de . 2013. \" Magia en al - Andalus : Rasail Ijuan al - Safa ' , Ruthat al - bakim y Gayat al - bakim ( Picatrix ) , \" al - Qantara 34.2 : 297-344 .",
+      "bbox": {
+        "l": 101,
+        "t": 696,
+        "r": 649,
+        "b": 667
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Casulleras , J. 2004. \" Ibn Mu'adh on the Astrological Rays , \" Suhayl 4 : 385-402 .",
+      "bbox": {
+        "l": 102,
+        "t": 665,
+        "r": 512,
+        "b": 652
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Casulleras , J. 2007. \" Banu Mūsa , \" in Hockey et al . , eds . [ CB ] , 1 : 92-4 .",
+      "bbox": {
+        "l": 102,
+        "t": 649,
+        "r": 466,
+        "b": 637
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Casulleras , J. 2009. \" Métodos para determinar las casas del horóscopo en la astrología medieval árabe [ Methods for Determining the Houses of the Horoscopes in Medieval Arab Astrology ] , \" Al - Qantara 30.1 : 41-67 . Casulleras , J. 2013. \" The Instruments and the Exercise of Astrology in the Medieval Arabic Tradition , \" Archives internationales d'histoire des sciences 63.170-1 : 517-40 .",
+      "bbox": {
+        "l": 102,
+        "t": 635,
+        "r": 651,
+        "b": 579
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Casulleras , J. 2020. \" Horoscope , \" in EI - 3 , 2020-1 : 50-6 .",
+      "bbox": {
+        "l": 102,
+        "t": 577,
+        "r": 396,
+        "b": 562
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Casulleras , J. and Hogendijk , J. P. 2012. \" Progressions , Rays and Houses in Medieval Islamic Astrology : A Mathematical Classification , \" Suhay ! 11 : 33-102 .",
+      "bbox": {
+        "l": 102,
+        "t": 561,
+        "r": 651,
+        "b": 533
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Comes , M. 2001. \" Ibn al - Ha'im's Trepidation Model , \" Suhayl 2 : 291-408 .",
+      "bbox": {
+        "l": 102,
+        "t": 529,
+        "r": 488,
+        "b": 517
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Eastwood , B. S. 2007. Ordering the Heavens . Roman Astronomy and Cosmology in the Carolingian Renaissance ( History of Science and Medicine Library 4 ) . Leiden and Boston : Brill .",
+      "bbox": {
+        "l": 102,
+        "t": 515,
+        "r": 652,
+        "b": 487
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Feke , J. 2014. \" Meta - mathematical rhetoric : Hero and Ptolemy against the philosophers , \" Historia Mathe- matica 41.3 : 216-76 .",
+      "bbox": {
+        "l": 102,
+        "t": 484,
+        "r": 651,
+        "b": 459
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Feke , J. 2018. Ptolemy's Philosophy . Mathematics as a Way of Life . Princeton : Princeton University Press ,. Goldstein , B. R. 1972. \" Theory and Observation in Medieval Astronomy , \" Isis 63.1 : 39-47 .",
+      "bbox": {
+        "l": 102,
+        "t": 455,
+        "r": 632,
+        "b": 427
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Hogendijk , J. P. 1989. \" The Mathematical Structure of Two Islamic Astronomical Tables for ' Casting the Rays , \" Centaurus 32 : 171-202 .",
+      "bbox": {
+        "l": 102,
+        "t": 426,
+        "r": 651,
+        "b": 398
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Hogendijk , J. P. 2005. \" Applied Mathematics in Eleventh Century Al - Andalus : Ibn Mu'adh al - Jayyani and Astrological Houses and Aspects , \" Centaurus 47 : 87-114 .",
+      "bbox": {
+        "l": 102,
+        "t": 395,
+        "r": 651,
+        "b": 367
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Hogendijk , J. P. 2015. \" Al - Biruni on the Computation of Primary Progression ( tasyir ) , \" in Burnett , C. and Greenbaum , D. G. , eds . From Masha'allah to Kepler : Theory and Practice in Medieval and Renaissance Astrology . Lampeter : Sophia Centre Press , 279-308 .",
+      "bbox": {
+        "l": 102,
+        "t": 366,
+        "r": 652,
+        "b": 321
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Kennedy , E. S. 1996. \" The Astrological Houses as Defined by Medieval Islamic Astronomers , \" in Casul- leras and Samsó , eds . [ CB ] , 2 : 535-78 ( Reprint : Astronomy and Astrology in the Medieval Islamic World . Aldershot : Variorum , XIX ) .",
+      "bbox": {
+        "l": 102,
+        "t": 321,
+        "r": 651,
+        "b": 277
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Kennedy , E. S. and Krikorian , H. 1972. \" The Astrological Doctrine of \" Projecting Rays ' , \" Al - Abbath 25 : 3-25 ( Reprint : Kennedy , E. S. et al . 1983. Studies in the Islamic Exact Sciences . Beirut : American Uni- versity of Beirut , 372-84 ) .",
+      "bbox": {
+        "l": 102,
+        "t": 275,
+        "r": 651,
+        "b": 233
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Lettinck , P. 1999. Aristotle's Meteorology and Its Reception in the Arab World : With an Edition and Translation of Ibn Suwär's Treatise on Meteorological Phenomena and Ibn Bajja's Commentary on the Meteorology . Leiden : Brill . Melvin - Koushki , M. 2017 , \" Powers of One : The Mathematicalization of the Occult Sciences in the High Persianate Tradition , \" Intellectual History in the Islamicate World 5 : 127-99 .",
+      "bbox": {
+        "l": 102,
+        "t": 230,
+        "r": 654,
+        "b": 172
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Morelon , R. 1994. \" Tabit b . Qurra and Arab Astronomy in the 9th Century , \" Arabic Sciences and Philosophy 4.1 : 111-39 .",
+      "bbox": {
+        "l": 102,
+        "t": 174,
+        "r": 652,
+        "b": 144
+      },
+      "page": 15
+    },
+    {
+      "label": "list_item",
+      "text": "Morelon , R. 1999. \" Astronomie physique et astronomie mathématique dans l'astronomie précopernici- enne , \" in Rashed , R. and Biard , J. , eds . Les doctrines de la science dans l'antiquité à l'âge classique . Leuven : Peeters , 105-29 .",
+      "bbox": {
+        "l": 102,
+        "t": 141,
+        "r": 651,
+        "b": 99
+      },
+      "page": 15
+    },
+    {
+      "label": "text",
+      "text": "94",
+      "bbox": {
+        "l": 369,
+        "t": 62,
+        "r": 382,
+        "b": 55
+      },
+      "page": 15
+    }
+  ],
+  "16": [
+    {
+      "label": "section_header",
+      "text": "The astral sciences up to the 13th century",
+      "bbox": {
+        "l": 257,
+        "t": 994,
+        "r": 472,
+        "b": 979
+      },
+      "page": 16
+    },
+    {
+      "label": "list_item",
+      "text": "Morelon , R. 2009. \" The Astronomy of Thabit ibn Qurra , \" in Rashed , R. , ed . Thabit ibn Qurra . Science and Philosophy in Ninth - Century Baghdad . Berlin and New York : Walter de Gruyter , 601-18 . Morrison , R. G. 2013. \" Islamic Astronomy , \" in Lindberg , D. C. and Shank , M. H. , eds . The Cambridge History of Science . 6 vols . Vol . 2 : Medieval Science . Cambridge : Cambridge University Press , 109-39 . Mozaffari , S. M. 2016. \" A Forgotten Solar Model , \" Archive for History of Exact Sciences 70 : 267-91 . Neugebauer , O. 1962. \" Thábit ben Qurra ' On the Solar Year ' and ' On the Motion of the Eighth Sphere \" , \" Proceedings of the American Philosophical Society 106.3 : 264-99 .",
+      "bbox": {
+        "l": 89,
+        "t": 949,
+        "r": 639,
+        "b": 848
+      },
+      "page": 16
+    },
+    {
+      "label": "list_item",
+      "text": "Orthmann , E. 2016. \" Philosophy and Natural Science , \" in Rudolph et al . , eds . [ CB ] , 727-33 . Plofker , K. 2007. \" Fazari : Muḥammad ibn Ibrahim al - Fazārī , \" in Hockey et al . , eds . , 1 : 362-3 .",
+      "bbox": {
+        "l": 89,
+        "t": 844,
+        "r": 575,
+        "b": 817
+      },
+      "page": 16
+    },
+    {
+      "label": "list_item",
+      "text": "Ptolemaeus Arabus et Latinus . \" AstroBibl . 3. Middle Ages ( 500-1450 ) . 3.3 . Islam / Arabic World , \" https : // ptolemaeus.badw.de/astrobibl/section/G",
+      "bbox": {
+        "l": 89,
+        "t": 815,
+        "r": 638,
+        "b": 787
+      },
+      "page": 16
+    },
+    {
+      "label": "list_item",
+      "text": "Ragep , F. J. 1996. \" al - Battānī , Cosmology , and the Early History of Trepidation in Islam , \" in Casulleras and Samsó , eds . , 1 : 267-98 .",
+      "bbox": {
+        "l": 89,
+        "t": 786,
+        "r": 638,
+        "b": 758
+      },
+      "page": 16
+    },
+    {
+      "label": "list_item",
+      "text": "Ragep , E. J. 2009. \" Astronomy , \" in El - 3 , 2009-1 : 120-50 .",
+      "bbox": {
+        "l": 89,
+        "t": 757,
+        "r": 388,
+        "b": 742
+      },
+      "page": 16
+    },
+    {
+      "label": "list_item",
+      "text": "Rashed , M. 2009. \" Thabit ibn Qurra , la Physique d'Aristote et le meilleur des mondes , \" in Rashed , R. , ed . Thabit ibn Qurra . Science and Philosophy in Ninth - Century Baghdad . Berlin : Walter de Gruyter , 675-714 . Russell , G. A. , ed . 1994. The ' Arabick ' Interest of the Natural Philosophers in Seventeenth Century England . Leiden : Brill .",
+      "bbox": {
+        "l": 88,
+        "t": 741,
+        "r": 637,
+        "b": 685
+      },
+      "page": 16
+    },
+    {
+      "label": "list_item",
+      "text": "Saliba , G. 1982. \" Astronomy / Astrology , Islamic , \" in Strayer , R. J. , ed . Dictionary of the Middle Ages . 13 vols . Vol . 1. New York : Scribner , 616-24 ( Reprint in Saliba 1994 [ CB ] , 66-84 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 681,
+        "r": 637,
+        "b": 651
+      },
+      "page": 16
+    },
+    {
+      "label": "list_item",
+      "text": "Samsó , J. 1994. \" Andalusian Astronomy : Its Main Characteristics and Influence in the Latin West , \" in Samsó , J. , Islamic Astronomy and Medieval Spain . Aldershot : Variorum , I.",
+      "bbox": {
+        "l": 89,
+        "t": 649,
+        "r": 637,
+        "b": 622
+      },
+      "page": 16
+    },
+    {
+      "label": "list_item",
+      "text": "Taub , L. 2003. Ancient Meteorology . New York : Routledge . URL https://journals.openedition.org/mideo/3397?lang=ar",
+      "bbox": {
+        "l": 89,
+        "t": 619,
+        "r": 406,
+        "b": 592
+      },
+      "page": 16
+    },
+    {
+      "label": "text",
+      "text": "95",
+      "bbox": {
+        "l": 356,
+        "t": 63,
+        "r": 370,
+        "b": 55
+      },
+      "page": 16
+    }
+  ]
+}

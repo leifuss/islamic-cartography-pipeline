@@ -1,0 +1,22 @@
+{
+  "key": "CR7CQJJ8",
+  "engines": [
+    "Tesseract-ara",
+    "Google Vision"
+  ],
+  "pages": [
+    {
+      "page": 3,
+      "engines": {
+        "Tesseract-ara": {
+          "score": 0.0,
+          "words": 64
+        },
+        "Google Vision": {
+          "score": 0.0,
+          "words": 50
+        }
+      }
+    }
+  ]
+}

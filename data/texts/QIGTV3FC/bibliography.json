@@ -1,0 +1,308 @@
+{
+  "key": "QIGTV3FC",
+  "title": "Ptolemy",
+  "refs": [
+    {
+      "id": "1",
+      "raw": "Original drawing from Piero della Francesca, De Prospectiva Pingendi, Edizione critica, ed. G. Nicco Fasola (Florence: Sansoni, 1942).",
+      "authors": [
+        "della Francesca, Piero",
+        "Nicco Fasola, G."
+      ],
+      "year": "1942",
+      "title": "De Prospectiva Pingendi, Edizione critica",
+      "venue": "Sansoni, Florence"
+    }
+  ],
+  "citations": [
+    {
+      "page": 1,
+      "marker": "1",
+      "context": "The Optics of Ptolemy was first published in Latin by Gilberto Govi in 1885"
+    },
+    {
+      "page": 1,
+      "marker": "2",
+      "context": "it remained unknown to historians of art and perspective until 1957, when Decio Gioseffi mentioned it"
+    },
+    {
+      "page": 2,
+      "marker": "3",
+      "context": "These same difficulties of interpretation were expressed by Albert Lejeune"
+    },
+    {
+      "page": 2,
+      "marker": "4",
+      "context": "and by A. Mark Smith, who spoke of a text difficult to penetrate"
+    },
+    {
+      "page": 2,
+      "marker": "5",
+      "context": "being so tortuous and confused that it is often incomprehensible"
+    },
+    {
+      "page": 2,
+      "marker": "6",
+      "context": "not unlike that of paleographers, when these scholars attempt to decipher deep layers of a palimpsest"
+    },
+    {
+      "page": 2,
+      "marker": "7",
+      "context": "to compare them in modern terms with the geometric theories of representation"
+    },
+    {
+      "page": 2,
+      "marker": "8",
+      "context": "naturally limiting our attention to an analysis of flat mirrors only"
+    },
+    {
+      "page": 3,
+      "marker": "9",
+      "context": "angles equal with the perpendicular line that exits from the very same point"
+    },
+    {
+      "page": 8,
+      "marker": "10",
+      "context": "to this latter we assign the direction that goes from the objective point A to the image A'"
+    },
+    {
+      "page": 8,
+      "marker": "11",
+      "context": "in conformity with the alignment of the origin of the visual ray"
+    },
+    {
+      "page": 10,
+      "marker": "12",
+      "context": "This is the paragraph that Decio Gioseffi translated and published in 1957."
+    },
+    {
+      "page": 11,
+      "marker": "13",
+      "context": "and that the perpendicular line, exiting from the point of reflection on the surface of the mirror, is the common distinction of all the different surfaces that form themselves around the reflection of the visual rays."
+    },
+    {
+      "page": 14,
+      "marker": "14",
+      "context": "There will be in fact a single and same angle because of the loss of one of the two rays on the mirror and because of the reflection of one of the two [rays] parting from the mirror."
+    },
+    {
+      "page": 14,
+      "marker": "15",
+      "context": "This unity, scientifically linked to the loss, in the reflection of the mirrors, of one of the two optical axes, becomes the conditio sine qua non."
+    },
+    {
+      "page": 15,
+      "marker": "16",
+      "context": "And consequently there will be a double and opposite view of the object in the dimension rendered and in characteristics."
+    },
+    {
+      "page": 18,
+      "marker": "17",
+      "context": "this image coincides also with the straightforward image of the virtual object."
+    },
+    {
+      "page": 19,
+      "marker": "18",
+      "context": "Though the Latin text presents evident interpretative difficulties and is not easy reading, as Lejeune himself affirms,"
+    },
+    {
+      "page": 19,
+      "marker": "19",
+      "context": "which is quoted in Lejeune twice. It is, in fact, part of paragraph 1 and of the entire following paragraph 13, as well as of the entire paragraph 60."
+    },
+    {
+      "page": 21,
+      "marker": "20",
+      "context": "after having maintained, for each of the two positions, the meta [destination point] of that which appears in the object to be observed correctly according to the proximity."
+    },
+    {
+      "page": 25,
+      "marker": "93",
+      "context": "B\" 93 The direct and the reverse seen on a plane."
+    },
+    {
+      "page": 26,
+      "marker": "22",
+      "context": "this is the true intent of what Ptolemy sets forth in paragraph 65. 22 The Latin says expressly"
+    },
+    {
+      "page": 26,
+      "marker": "23",
+      "context": "Thus, the purpose of the theory of flat mirrors consists, for Ptolemy and also for us, in constructing a straightforward image of that virtual one, under the conditions that we will now illustrate. At paragraph 66, 23 the premise is made"
+    },
+    {
+      "page": 26,
+      "marker": "24",
+      "context": "orthogonal to it, containing the visual ray and the refracted ray. In paragraph 67, 24 it is reiterated"
+    },
+    {
+      "page": 26,
+      "marker": "25",
+      "content": "Paragraph 68 25 describes the straight line ABG, which locates the surface of a flat mirror"
+    },
+    {
+      "page": 27,
+      "marker": "26",
+      "context": "the hypothesis is taken into consideration that there could be, absurdly, a second ray DZE, 26 which fractures at Z"
+    },
+    {
+      "page": 27,
+      "marker": "27",
+      "context": "something that cannot be because the ray DZ does not fracture along the line ZE at equal angles. The ray DZ 27 must have"
+    },
+    {
+      "page": 27,
+      "marker": "28",
+      "context": "extension, the line ZH, which is clearly distinct from ZE. In paragraph 71, 28 it is demonstrated that"
+    },
+    {
+      "page": 27,
+      "marker": "29",
+      "context": "ET and DB are lengthened, these will connect to each other at point K. Therefore, Ptolemy concludes at paragraph 72, 29 that the image"
+    },
+    {
+      "page": 27,
+      "marker": "30",
+      "context": "corresponds to that of point K. In paragraphs 73 30 and 74, 31 it is demonstrated that the"
+    },
+    {
+      "page": 27,
+      "marker": "31",
+      "context": "In paragraphs 73 30 and 74, 31 it is demonstrated that the distance of the objective point"
+    },
+    {
+      "page": 27,
+      "marker": "32",
+      "context": "virtual point H are equal (Fig. 95). In paragraph 75, 32 it is demonstrated that the entire"
+    },
+    {
+      "page": 27,
+      "marker": "33",
+      "context": "lines DB and BE taken together. In paragraph 76, 33 the conclusion is made that the images"
+    },
+    {
+      "page": 28,
+      "marker": "34",
+      "context": "length of the rays. 11. Lines in a Frontal Position In paragraph 77, 34 the appearance of lines"
+    },
+    {
+      "page": 28,
+      "marker": "35",
+      "context": "mirror is taken into consideration, lines that offer the possibility of seeing images similar to those which are real. In paragraph 78, 35 it is specified"
+    },
+    {
+      "page": 28,
+      "marker": "36",
+      "context": "falls onto the center of a segment forming with it two right angles. At paragraph 79, 36 Ptolemy takes into consideration"
+    },
+    {
+      "page": 28,
+      "marker": "37",
+      "context": "image of point Z corresponds to that of point L. At paragraph 80, 37 it is demonstrated that"
+    },
+    {
+      "page": 28,
+      "marker": "38",
+      "context": "angles around K and L are right angles. At paragraph 81, 38 it is deduced that EZ corresponds"
+    },
+    {
+      "page": 29,
+      "marker": "39",
+      "context": "EZ. At paragraph 82, 39 the conclusion is made that the reflected image of a real object"
+    },
+    {
+      "page": 29,
+      "marker": "40",
+      "context": "virtual object. 12. The Localization of the Images At paragraph 91, 40 the problem of the localization"
+    },
+    {
+      "page": 29,
+      "marker": "41",
+      "context": "of the image is posed. At paragraph 92, 41 the line ABG singles out the surface of a mirror"
+    },
+    {
+      "page": 30,
+      "marker": "42",
+      "context": "to the points E and Z. Let us extend DA and DB in straight lines, until they connect with the two perpendicular lines that are conducted from the points E and Z to the points H and T. Let us draw the line HT. Point E will be seen in point H, and point Z in point T. At paragraph 93, 42 the line EZ"
+    },
+    {
+      "page": 30,
+      "marker": "43",
+      "context": "which is perpendicular to the line AG. We have moved from T to L, and this movement has taken place on the equivalent side where the real object Z has been moved to K. At paragraph 94, 43 it is observed"
+    },
+    {
+      "page": 30,
+      "marker": "44",
+      "context": "upper part in respect to the eye (Fig. 99). The visual ray, in fact, sees farther above that which is higher up and farther below that which is lower down. At paragraph 95, 44 by turning one's gaze"
+    },
+    {
+      "page": 30,
+      "marker": "45",
+      "context": "right of B: therefore, a point that is on the right appears on the left and vice versa. Paragraph 96 45 notes that this is a deception"
+    },
+    {
+      "page": 31,
+      "marker": "46",
+      "context": "The Reflected Image of the Real Object and the Straightforward Image of the Virtual Object Coincide According to paragraph 97, 46 in the flat mirrors"
+    },
+    {
+      "page": 32,
+      "marker": "Source",
+      "context": "Original drawing from Piero della Francesca, De Prospectiva Pingendi, Edizione critica, ed. G. Nicco Fasola (Florence: Sansoni, 1942)."
+    },
+    {
+      "page": 33,
+      "marker": "Source",
+      "context": "Original drawing from Piero della Francesca, De Prospectiva Pingendi, Edizione critica, ed. G. Nicco Fasola (Florence: Sansoni, 1942)."
+    },
+    {
+      "page": 34,
+      "marker": "47",
+      "context": "position of the observer: a phrase that in Latin reads Hoc enim consueverunt homines facere, ut positio sit bene disposita et firma . 47 This position"
+    },
+    {
+      "page": 36,
+      "marker": "2",
+      "context": "projection of the terrestrial sphere from a point in space taken from the parallel plane of Syene. In Geographia, 48"
+    },
+    {
+      "page": 37,
+      "marker": "49",
+      "context": "The second projection corresponds to the 'planisphere,' 49 in which Ptolemy projects the celestial"
+    },
+    {
+      "page": 38,
+      "marker": "50",
+      "context": "the celestial sphere. 50 This time the center of projection is horizontal and passes through"
+    }
+  ],
+  "summary": {
+    "abstract": "This chapter examines Ptolemy's Optics, a foundational text on vision and reflection that survived only in a Latin translation from Arabic. The author addresses the notorious difficulties scholars have faced in interpreting this twice-translated work, building on earlier French and English translations by Albert Lejeune and A. Mark Smith. Through detailed analysis of the Third Book of the Optics, the chapter reconstructs Ptolemy's geometric principles governing mirror reflection, including the three foundational principles of flat mirrors, the fundamental operations of experimentation (tracing and observation), five geometric deductions, and the concept of monocular vision as essential to the theory. The study demonstrates that Ptolemy's account provides a rigorous mathematical foundation for understanding vision in classical antiquity, establishing principles of reflection and the unity of the optical axis central to perspective theory.",
+    "contents": [
+      {
+        "heading": "1. From the Greek into Arabic and from Arabic into Latin",
+        "page": 1
+      },
+      {
+        "heading": "2. The Three Principles Relative to the Science of Mirrors",
+        "page": 2
+      },
+      {
+        "heading": "3. The Fundamental Operations of Experimentation",
+        "page": 8
+      },
+      {
+        "heading": "4. The Five Geometric Deductions",
+        "page": 11
+      },
+      {
+        "heading": "5. Monocular Vision as Conditio Sine Qua Non",
+        "page": 13
+      },
+      {
+        "heading": "6. The Double and Opposite View, the Necessity of a Sign",
+        "page": 14
+      }
+    ]
+  }
+}

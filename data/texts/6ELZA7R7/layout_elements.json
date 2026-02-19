@@ -1,0 +1,1638 @@
+{
+  "_page_sizes": {
+    "1": {
+      "w": 740,
+      "h": 1046
+    },
+    "2": {
+      "w": 740,
+      "h": 1046
+    },
+    "3": {
+      "w": 740,
+      "h": 1046
+    },
+    "4": {
+      "w": 740,
+      "h": 1046
+    },
+    "5": {
+      "w": 740,
+      "h": 1046
+    },
+    "6": {
+      "w": 740,
+      "h": 1046
+    },
+    "7": {
+      "w": 740,
+      "h": 1046
+    },
+    "8": {
+      "w": 740,
+      "h": 1046
+    },
+    "9": {
+      "w": 740,
+      "h": 1046
+    },
+    "10": {
+      "w": 740,
+      "h": 1046
+    },
+    "11": {
+      "w": 740,
+      "h": 1046
+    },
+    "12": {
+      "w": 740,
+      "h": 1046
+    }
+  },
+  "1": [
+    {
+      "label": "text",
+      "text": "IV.2",
+      "bbox": {
+        "l": 347,
+        "t": 906,
+        "r": 403,
+        "b": 883
+      },
+      "page": 1
+    },
+    {
+      "label": "section_header",
+      "text": "THREE - DIMENSIONAL ASTRONOMY",
+      "bbox": {
+        "l": 190,
+        "t": 860,
+        "r": 562,
+        "b": 797
+      },
+      "page": 1
+    },
+    {
+      "label": "section_header",
+      "text": "Celestial globes and armillary spheres",
+      "bbox": {
+        "l": 173,
+        "t": 773,
+        "r": 579,
+        "b": 744
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Taha Yasin Arslan",
+      "bbox": {
+        "l": 307,
+        "t": 710,
+        "r": 446,
+        "b": 695
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Astronomical instruments are physical manifestations of knowledge about the heavens to which various disciplines contributed . They provide information on the development of three of the four fundamental mathematical sciences - number theory , geometry , and astronomy , and their branches . They are also evidence of scholarly influences and transmission , mastery of craftsmanship , artistic and religious preferences , and the social acknowledgment of astronomy and astrology as well as the patronage and institutionalization of knowledge . This chapter deals with two of these instruments : celestial globes and armillary spheres . Celestial globes carry evidence of arts and craftsmanship in their time and region through the depictions of the constellations , the wording of the maker's signature , the names of stars , constellations , lunar mansions , and the nature of the scales included . Their popularity , as well as records of dedications , reveals non - scholarly interests and the patronage of different elite circles for globe making , while records of dates and places may provide information on the transition of knowledge between regions and centuries . In contrast , only a few examples of armillary spheres survive , preventing us from making a broad assessment of the instrument's role in society . However , extant manuals on its construction and use shed some light on the devel- opment of the instrument .",
+      "bbox": {
+        "l": 101,
+        "t": 643,
+        "r": 653,
+        "b": 359
+      },
+      "page": 1
+    },
+    {
+      "label": "section_header",
+      "text": "IV.2.1 Celestial globes",
+      "bbox": {
+        "l": 295,
+        "t": 329,
+        "r": 459,
+        "b": 314
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "The celestial globe is an instrument that imitates the daily motion of the sky and is used for observations , calculations , or demonstrations . It is usually made of metal and occasionally of wood and papier - mâché . More than 200 globes are extant and almost all have a hollow metal body ( for a comprehensive description and a list of surviving celestial globes , see Savage - Smith 1990-1991 ) . Their sizes vary between 5cm and 35cm in diameter . This is one of the largest classes of surviving astronomical instruments made in the Islamicate world . During the construc- tion process , the first problem that had to be dealt with was how to produce a sphere . Unfortu- nately , no known text discusses this . A careful investigation of the extant instruments , however , gives us credible information on two types of metal spheres used as globes . First are two - piece globes , which consist of two identical hemispheres cast , joined by seams , and smoothed . Second are one - piece globes that were made by the lost - wax method , which involved casting a complete sphere and smoothing its surface , although this usually required plugs on the body to cover the",
+      "bbox": {
+        "l": 101,
+        "t": 301,
+        "r": 653,
+        "b": 88
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "DOI : 10.4324 / 9781315170718-43",
+      "bbox": {
+        "l": 102,
+        "t": 65,
+        "r": 268,
+        "b": 53
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "474",
+      "bbox": {
+        "l": 630,
+        "t": 62,
+        "r": 650,
+        "b": 54
+      },
+      "page": 1
+    }
+  ],
+  "2": [
+    {
+      "label": "section_header",
+      "text": "Three - dimensional astronomy",
+      "bbox": {
+        "l": 285,
+        "t": 995,
+        "r": 443,
+        "b": 980
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "hole required in the casting process ( Savage - Smith 1985 , 83-6 ) . Depending on the craftsman- ship , construction markings , plugs , or traces of seams may hardly be visible .",
+      "bbox": {
+        "l": 89,
+        "t": 949,
+        "r": 639,
+        "b": 918
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Almost all surviving globes from the Islamicate world share major similarities . A standard globe has the celestial equator and ecliptic drawn . The equator carries a scale of 360 ° , while the ecliptic has twelve scales of 30 ° . Both begin at the vernal equinox and are divided into intervals of 5º , 6º , or 10 ° , where the divisions are labeled with Arabic alphanumeric notation ( abjad ) and subdivided into intervals of 1 ° or 2 ° . The twelve scales of the ecliptic are inscribed with the corresponding names of the signs of the zodiac . The poles of the equator and the ecliptic are usually marked with circles and occasionally labeled . The globe is divided into twelve sec- tions by six great circles drawn at intervals of 30 ° between the ecliptic poles . One of these is a solstitial colure , which is a great circle through the celestial poles , the poles of the ecliptic , and the summer and winter solstices . None of the standard globes carries circles of ever - visible or ever - invisible stars . Depending on the type of globe , stars and the constellation figures may or may not be inscribed . When they are , the stars are usually shown in different sizes and shapes based on their brightness ( Figure IV.2.1 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 913,
+        "r": 639,
+        "b": 684
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "A standard globe has two rings , one for the meridian and another for the horizon . The globe is mounted in the meridian ring from the celestial poles and the ring is fixed within the horizon ring at the north - south axis , making it the prime meridian . The horizon ring sits on a stand . Because of this arrangement , manuscripts in the Islamicate world refer to the instrument as the sphere with a stand ( al - kura dhat al - kursi ) . Both rings carry either a scale of 360 ° , two scales of 180 ° , or four scales of 90 ° and are divided into intervals of 5 ° , 6 ° , or 10 ° , which are subdivided into intervals of 1 ° or 2 ° . Although standard globes do not have an attached ring or a gnomon",
+      "bbox": {
+        "l": 89,
+        "t": 680,
+        "r": 641,
+        "b": 558
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "الحمل",
+      "bbox": {
+        "l": 371,
+        "t": 355,
+        "r": 415,
+        "b": 323
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "الثور",
+      "bbox": {
+        "l": 314,
+        "t": 373,
+        "r": 345,
+        "b": 359
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Σ",
+      "bbox": {
+        "l": 278,
+        "t": 211,
+        "r": 290,
+        "b": 199
+      },
+      "page": 2
+    },
+    {
+      "label": "caption",
+      "text": "Figure IV.2.1 Model of a standard globe",
+      "bbox": {
+        "l": 89,
+        "t": 125,
+        "r": 303,
+        "b": 113
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Source : Taha Yasin Arslan , Istanbul",
+      "bbox": {
+        "l": 89,
+        "t": 100,
+        "r": 281,
+        "b": 89
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "475",
+      "bbox": {
+        "l": 353,
+        "t": 62,
+        "r": 373,
+        "b": 54
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "الحوت",
+      "bbox": {
+        "l": 450,
+        "t": 363,
+        "r": 488,
+        "b": 327
+      },
+      "page": 2
+    }
+  ],
+  "3": [
+    {
+      "label": "text",
+      "text": "Taha Arslan",
+      "bbox": {
+        "l": 344,
+        "t": 993,
+        "r": 409,
+        "b": 982
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "for measuring the altitude of the Sun and the stars , the manuals on the use of globes propose using a suitable object as gnomon and a detached quadrant with a 90 ° scale to find the altitude of celestial objects . Standard globes are divided into three groups for the number of stars they represent . Globes of the first group have around a thousand stars usually distributed among the images of the 48 classical constellations . Globes of the second group display only selected stars , usually those found on astrolabes . The third group contains specimens that carry only the great circles but no stars ( Savage - Smith 1985 , 61-2 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 949,
+        "r": 652,
+        "b": 827
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "In addition to those standard types , the works of Ptolemy ( c . 100-180 ) and Battānī ( d . 317 / 929–930 ) introduced two other designs to the Islamicate world . In the eighth book of the Almagest , Ptolemy describes a globe with a rotatable ecliptic ring ( Ptolemy 1998 [ CB ] , 2² 404-7 ) . The purpose of this modification is to allow for the deviation caused by the precession of the equinoxes over the years ( approximately 1 ° in 72.2 years in modern value ) . Al - Battani introduced a globe called an egg ( bayda ) , which was a common term for globes , with five rings ( al - Battāni 1977 [ CB ] , 210-13 [ fols 142a - 44b ] ) . The celestial equator and the ecliptic are drawn on the globe as usual . Additionally , there are two meridian rings , one is fixed and the other rotates , a horizon ring , a zenith ring , and the outer ring , which carries a movable and removable gnomon . Unlike the other examples , al - Battani's egg does not sit on a stand but is suspended . The second rotatable meridian ring serves for marking the star positions and making calculations accurately . The movable gnomon is used to mark the solar longitude and the altitude of the sun along with many other applications . Unfortunately , no example of these two ingenious devices has survived .",
+      "bbox": {
+        "l": 101,
+        "t": 824,
+        "r": 652,
+        "b": 593
+      },
+      "page": 3
+    },
+    {
+      "label": "section_header",
+      "text": "IV.2.1.1 Instructions for globe making",
+      "bbox": {
+        "l": 243,
+        "t": 566,
+        "r": 511,
+        "b": 547
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "Instructions of how to draw on globes are very limited in extant astronomical writings . This is particularly surprising given the large number of surviving objects . ' Abd al - Rahman al - Şūfi's ( 291-376 / 903-986 ) Book of the Constellations ( Kitab suwar al - kawakib al - thabita ) seems to be the only treatise that was used extensively all over the Islamicate world . Construction manuals for astrolabes and sundials , however , are much more common . They usually give precise values in ratios as pointers for engravings such as almucantars , azimuths , and seasonal hours on astrolabes and parabolas and hyperbolas of shadow lengths of various signs of the zodiac on sundials . On the other hand , globes require their users to consider only two parameters : ( 1 ) the obliquity of the ecliptic and ( 2 ) the precession of the equinoxes . While the value of the obliquity was calculated and given differently by various astronomers , the globe makers seem to have used approximate values such as 23.5 ° or 24 ° . Considering the small size of the instrument one should not expect a precision of more than half or a quarter of a degree . The value of the precession is more impor- tant since the makers usually used older catalogues for star positions ( i.e. , al - Şüfi's Book of the Constellations ) and needed to consider the positional changes of stars during the period between the preparation of the star catalogue and the construction of the globe .",
+      "bbox": {
+        "l": 101,
+        "t": 536,
+        "r": 652,
+        "b": 269
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "The scales , circles , and inscriptions all depend on the size of the instrument as well as the maker's initiative . The production process includes marking opposite points as poles , drawing great circles for the ecliptic and celestial equators and the three great circles through the poles of the ecliptic , as well as constructing scales with various intervals on some of these circles , and inscribing their values . Unlike the ones on an astrolabe , these circles do not require a table of radii ( jadwal ansaf al - aqtar ) but simple angular calculations since no type of projection is required on globes . For those tasks , the globe makers usually employed various tools , such as a quadrant with a scale of 90 ° ; compasses ; and engraving tools .",
+      "bbox": {
+        "l": 101,
+        "t": 265,
+        "r": 654,
+        "b": 126
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "There are two important works with detailed descriptions on how to draw on globes . The first one was introduced by al - Battani in the 7th chapter of his Book of Astronomical Tables ( Kitab al - Zij ) ,",
+      "bbox": {
+        "l": 102,
+        "t": 121,
+        "r": 652,
+        "b": 90
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "476",
+      "bbox": {
+        "l": 366,
+        "t": 63,
+        "r": 387,
+        "b": 55
+      },
+      "page": 3
+    }
+  ],
+  "4": [
+    {
+      "label": "section_header",
+      "text": "Three - dimensional astronomy",
+      "bbox": {
+        "l": 285,
+        "t": 994,
+        "r": 444,
+        "b": 980
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "where he proposed the egg ( al - Battāni 1977 , 210-13 [ fols 142a - 44b ] ) . According to al - Battānī , the maker needs to determine two points that are exactly opposite of each other on the globe , which will act as the celestial poles . However , he doesn't mention how this is done . Al - Battani's summary of the different steps for construction reflects the scholar's effort for providing globe makers ( craftsmen as well as scholars ) with the necessary skills . Using the poles , the globe maker is told to draw a great circle as the celestial equator and then to mark four equidistant points on it . The steady leg of a pair of compasses has to be fixed at one of these points , and the drawing leg is used to draw another great circle that passes through two points on the equator and the poles , making it the solstitial colure . In order to determine the positions of the ecliptic poles and to draw the ecliptic , the globe maker has to inscribe a quarter of the equator with a scale of 90 ° . Learning from al - Battani's text that the obliquity of the ecliptic is 23 ° 35 ' , the globe maker , using the scale , can now open the legs of the compasses as wide as the value of the obliquity . Then he fixes the steady leg at one of the celestial poles and rotates the drawing leg until it intersects with the solstitial colure . Wherever the tip of the leg touches on the colure he marks as an ecliptic pole . The same procedure is carried out for the second pole . Once the poles are marked , he can draw the ecliptic .",
+      "bbox": {
+        "l": 88,
+        "t": 949,
+        "r": 641,
+        "b": 666
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Determining and marking the stars ' positions is only possible after the ecliptic circle is divided into twelve scales of 30 ° . First , the globe maker needs to obtain the values for a star's longitude and latitude in ecliptic coordinates from either catalogues or observations . Using the scale of 90 ° that was previously prepared for finding the ecliptic poles , he then opens the compasses as wide as the value of the latitude of the star . Keeping the width fixed , the globe maker has now to place the steady leg on the corresponding degree of the zodiacal sign as its longitude . He is instructed to use the drawing leg to draw a small , concave arc for an approximate position . Depending on the direction of the star , he draws the arc either on the north or the south of the ecliptic but always eastward . To make the position more precise , he has to open the compasses exactly 90 ° and to place the steady leg on a point that is 90 ° west of the longitude of the star on the ecliptic circle . Now he can draw a second arc by using the drawing leg . The intersection of the two arcs gives the position of the star . All designations are approximate since the scales have only 1 ° intervals .",
+      "bbox": {
+        "l": 88,
+        "t": 662,
+        "r": 639,
+        "b": 450
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "The second example of instructions for how to make a globe is found in Abu ' Ali al - Hasan al - Marrākushi's ( 2nd half of the 7th / 13th century ) From A to Z : A Compendium of Timekeeping ( Jāmī al - mabadi wa - l - ghayat fi film al - mīgāt ) . In the fifth chapter of the second book , he gives details on how to construct celestial globes and armillary spheres ( MS Oxford , Bodleian Library , Marsh 154 , fols 2b - 5a ) . In the section on the globe , he first describes finding the diameter of a globe and proposes to make a quadrant with a scale of 90 ° and the same radius as the globe . He then introduces a method for precision drawing . According to this , one picks any point on the globe as the center , then places the steady leg of the compass on this center and draws a small circle with four equidistant points marked on it . After this , the quadrant , that was introduced while finding the diameter of the globe , is required . The quadrant is placed on the globe so that its rim touches any one of the four equidistant points while one of its ends remains fixed at the original center . Starting from the center , an arc is drawn along the rim of the quadrant . The other end of the arc marks one of the poles . Then the quadrant is rotated until its rim touches the opposite one of the equidistant points . A secondary arc is drawn to mark the second pole . After this , al - Marrākushi proposes that one should use a lathe to engrave the celestial equator . To do that , the globe should be held axially in the lathe so that it can be rotated about its poles . Then , using a point equidistant from each pole as the reference , one can engrave a great circle that also passes through the center and the two remaining points of the small circle .",
+      "bbox": {
+        "l": 88,
+        "t": 446,
+        "r": 639,
+        "b": 126
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Al - Marrākushi's introduction of the quadrant , which carries a scale of 90 ° , makes marking the star positions rather easy in comparison to al - Battani's method . One simply fixes one end",
+      "bbox": {
+        "l": 88,
+        "t": 121,
+        "r": 639,
+        "b": 90
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "477",
+      "bbox": {
+        "l": 353,
+        "t": 63,
+        "r": 372,
+        "b": 55
+      },
+      "page": 4
+    }
+  ],
+  "5": [
+    {
+      "label": "text",
+      "text": "Taha Arslan",
+      "bbox": {
+        "l": 344,
+        "t": 993,
+        "r": 409,
+        "b": 981
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "of the quadrant to the north or south ecliptic pole and rotates it to the corresponding degree of the ecliptic for the longitude . Then one measures the latitude of the star and marks its posi- tion . Although none of the extant globes resembles fully the types introduced by al - Battani or al - Marrākushi , determining whether the producers of the extant globes had indeed used any of their methods for drawing the circles and marking the star positions requires further research . ' Abd al - Rahman al - Şüfi was perhaps the scholar whose work had the greatest impact on the construction of globes . In his famous work , Book of the Star Constellations , he illustrates 48 constellations and marks 1025 stars from Ptolemy's star catalogue . He also offers the ecliptic coordinates ( longitude and latitude ) and the brightness of the stars in tables and gives detailed descriptions of the positions of the stars relative to their constellations . Each constellation is depicted as it is seen in the sky and on the globe . Al - Sufi's catalogue relies heavily on Ptolemy's values , but he adds 12 ° 42 ' to the longitude of each star to eliminate the difference caused by the precession of the equinoxes and occasionally changes some of the values to the ones he obtained through his own observations ( Dekker 2012 , 29-47 ) . Al - Şüfi's catalogue and , more importantly , his illustrations were helpful for preparing star catalogues and constructing globes . It was used until the 13th / 19th century .",
+      "bbox": {
+        "l": 101,
+        "t": 949,
+        "r": 654,
+        "b": 667
+      },
+      "page": 5
+    },
+    {
+      "label": "section_header",
+      "text": "IV.2.1.2 Uses of celestial globes",
+      "bbox": {
+        "l": 267,
+        "t": 638,
+        "r": 487,
+        "b": 619
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Once the globe is constructed , one can use it in any latitude . To use it in a specific locality , the meridian ring is rotated until the angular difference between the celestial pole and horizon agrees with the local latitude . This is rather easy since the meridian ring is attached to the globe at the celestial poles and carries a scale . Depending on the globe's type , the number of applications that can be performed with it differs . Moreover , the celestial globes , with the exception of those using an additional gnomon and a detached quadrant , are not destined for observations but for calcula- tions and demonstrations . Only a few examples of these additional tools survive ( Figure IV.2.2 ) . Therefore , we do not know whether many of the extant globes were indeed used for obser- vations . Before one uses the globe , one needs to obtain values such as the degree of the zodiacal",
+      "bbox": {
+        "l": 101,
+        "t": 607,
+        "r": 652,
+        "b": 450
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Great Circles that divides the ecliptic into 12 intervals",
+      "bbox": {
+        "l": 307,
+        "t": 430,
+        "r": 417,
+        "b": 412
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Meridian Ring",
+      "bbox": {
+        "l": 180,
+        "t": 384,
+        "r": 235,
+        "b": 375
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Celestial Equator",
+      "bbox": {
+        "l": 168,
+        "t": 357,
+        "r": 236,
+        "b": 346
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Ecliptic",
+      "bbox": {
+        "l": 206,
+        "t": 326,
+        "r": 236,
+        "b": 319
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Horizon Ring",
+      "bbox": {
+        "l": 184,
+        "t": 291,
+        "r": 235,
+        "b": 282
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "South Celestial Pole",
+      "bbox": {
+        "l": 183,
+        "t": 257,
+        "r": 236,
+        "b": 242
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Star",
+      "bbox": {
+        "l": 325,
+        "t": 398,
+        "r": 342,
+        "b": 392
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "North Ecliptic Pole",
+      "bbox": {
+        "l": 508,
+        "t": 377,
+        "r": 581,
+        "b": 370
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "North Celestial Pole",
+      "bbox": {
+        "l": 508,
+        "t": 356,
+        "r": 584,
+        "b": 349
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Star",
+      "bbox": {
+        "l": 508,
+        "t": 342,
+        "r": 525,
+        "b": 337
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Equinoctial Colure",
+      "bbox": {
+        "l": 508,
+        "t": 333,
+        "r": 580,
+        "b": 323
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Names of the Signs of the Zodiac",
+      "bbox": {
+        "l": 508,
+        "t": 315,
+        "r": 583,
+        "b": 298
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "Scales divided into 5 - degree intervals",
+      "bbox": {
+        "l": 508,
+        "t": 255,
+        "r": 580,
+        "b": 237
+      },
+      "page": 5
+    },
+    {
+      "label": "caption",
+      "text": "Figure IV.2.2 Muḥammad ibn Muayyad al - Din al - ' Urdi's ( 7th / 13th century ) celestial globe ( c . 687/1288 ) on a wooden stand , made from brass , with gold and silver inlay ; Mathematisch - Physikalischer Salon , Dresden , inv . no . E II 1 .",
+      "bbox": {
+        "l": 101,
+        "t": 156,
+        "r": 651,
+        "b": 113
+      },
+      "page": 5
+    },
+    {
+      "label": "caption",
+      "text": "Source : Mathematisch - Physikalischer Salon , Staatliche Kunstsammlungen , Dresden",
+      "bbox": {
+        "l": 102,
+        "t": 100,
+        "r": 541,
+        "b": 87
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "478",
+      "bbox": {
+        "l": 366,
+        "t": 63,
+        "r": 386,
+        "b": 54
+      },
+      "page": 5
+    }
+  ],
+  "6": [
+    {
+      "label": "section_header",
+      "text": "Three - dimensional astronomy",
+      "bbox": {
+        "l": 285,
+        "t": 995,
+        "r": 443,
+        "b": 979
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "sign for the intended day , the instantaneous altitudes of the sun , the moon and the stars and the ascendant . These values can be found in astronomical tables or through observations made with the globe or different instruments . When such parameters are known , a globe can be used for numerous calculations . Some are",
+      "bbox": {
+        "l": 89,
+        "t": 949,
+        "r": 639,
+        "b": 885
+      },
+      "page": 6
+    },
+    {
+      "label": "list_item",
+      "text": "finding the longest and shortest days and nights in a given latitude .",
+      "bbox": {
+        "l": 115,
+        "t": 860,
+        "r": 500,
+        "b": 845
+      },
+      "page": 6
+    },
+    {
+      "label": "list_item",
+      "text": "finding the maximum and minimum meridian altitude of the sun in a given latitude . finding the difference between the lengths of the different days in a given latitude .",
+      "bbox": {
+        "l": 115,
+        "t": 841,
+        "r": 604,
+        "b": 810
+      },
+      "page": 6
+    },
+    {
+      "label": "list_item",
+      "text": "finding the daytime arc of any star marked on the globe .",
+      "bbox": {
+        "l": 115,
+        "t": 805,
+        "r": 442,
+        "b": 792
+      },
+      "page": 6
+    },
+    {
+      "label": "list_item",
+      "text": "finding the azimuth of any star when it is rising or setting .",
+      "bbox": {
+        "l": 115,
+        "t": 787,
+        "r": 453,
+        "b": 774
+      },
+      "page": 6
+    },
+    {
+      "label": "list_item",
+      "text": "finding the declination of any star on the globe .",
+      "bbox": {
+        "l": 116,
+        "t": 769,
+        "r": 392,
+        "b": 756
+      },
+      "page": 6
+    },
+    {
+      "label": "list_item",
+      "text": "finding the distance between two stars on the globe .",
+      "bbox": {
+        "l": 115,
+        "t": 752,
+        "r": 419,
+        "b": 739
+      },
+      "page": 6
+    },
+    {
+      "label": "list_item",
+      "text": "finding the time of rising and setting of any star on the globe . finding ever - visible and ever - invisible stars for a given latitude . finding the azimuth of the direction of Mecca ( qibla ) .",
+      "bbox": {
+        "l": 115,
+        "t": 733,
+        "r": 477,
+        "b": 682
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "As a consequence of its wide array of use , several manuals on this topic were written , copied , and used for centuries . Of those , two were particularly influential : Qusta ibn Luqa's ( d . c . 300 / 912-913 ) Treatise on the Use of the Sphere with a Stand ( Risalat al - ' Amal bi - l - kura dhat al - kursi ) and al - Sufi's Commentary on the Use of the Globe ( Fi Sharb al - ' Amal bi - l - kura ) . These two works , compiled in the 3rd / 9th and 4th / 10th centuries , respectively , are the most comprehensive trea- tises on the subject . Qusta's work , on present evidence the more popular one of the two , consists of an introduction and 65 chapters . First , it gives information on the celestial sphere followed by a brief description of a globe with those stars that can be found on astrolabes ( chapters 1-5 ) . It continues with the instructions on many different applications both for observations and calculations ( chapters 6-65 ) . Al - Sufi's treatise is even more comprehensive . It deals with the problems of the use of globes in 157 chapters . Habash al - Hasib ( d . after 255/869 ) , al - Marrākushi , and Amin al - Din al - Abhari ( d . 733 / 1332-3 ) are among the few other scholars who wrote on the use of the celestial globe .",
+      "bbox": {
+        "l": 88,
+        "t": 661,
+        "r": 639,
+        "b": 431
+      },
+      "page": 6
+    },
+    {
+      "label": "section_header",
+      "text": "IV.2.1.3 A profile of the globe - making tradition",
+      "bbox": {
+        "l": 199,
+        "t": 401,
+        "r": 527,
+        "b": 386
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "For the surviving globes , knowing their makers , dates of construction , and places of origin allows us to create a profile for the globe - making tradition . For instance , most of the extant globes are of either Persian or Mughal Indian origin . Only a handful of globes are dated from the 3rd / 9th to the 10th / 16th centuries . The number of dated globes rises exponentially in the 11th / 14th century and the provenances shifted from the Middle East to Mughal India . The dates and signatures on the instruments provide proof of the continuous activity of families and individual specialists as instrument - making artisans . In comparison to other instruments such as astrolabes , quadrants , and sundials , relatively more non - scholarly artisans seem to be involved in the construction of globes . There were two noteworthy cities for instrument makers : Har- ran ( today in Turkey ) and Lahore ( today in Pakistan ) . Although little of their production has survived , the historical record indicates that Harran was a major center for the construction of astronomical instruments between the 3rd / 9th and the 5th / 11th centuries . ' Abd al - Rahman al - Şüfi states , for instance , that he has seen many globes made in Harran and that he disapproved of a globe made by Ali ibn Isa from Harran ( MS Paris , BnF , Arabe 5036 , fols 4b , 108b ) . Unfor- tunately , in the case of Harran , we lack details such as the list of makers , the sale records , and the number of workshops . We are better informed about a family who ran a workshop for",
+      "bbox": {
+        "l": 88,
+        "t": 373,
+        "r": 641,
+        "b": 90
+      },
+      "page": 6
+    },
+    {
+      "label": "text",
+      "text": "479",
+      "bbox": {
+        "l": 352,
+        "t": 62,
+        "r": 373,
+        "b": 53
+      },
+      "page": 6
+    }
+  ],
+  "7": [
+    {
+      "label": "section_header",
+      "text": "Taha Arslan",
+      "bbox": {
+        "l": 344,
+        "t": 993,
+        "r": 409,
+        "b": 983
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "instruments in Mughal Lahore during the 11th / 17th century over four generations : Shaykh Allāhdad Asturlābi Humayuni Lähūrī , his son Mulla ' Īsā , the latter's two sons Qa'im Muḥammad and Muḥammad Muqim , Qa'im's son Diya ' al - Din Muḥammad and Muqim's sons Hamid and Jamal al - Din ( Sarma 2019 ) . Of the astrolabes and globes they produced , 134 and 33 , respectively , are extant . They made these 33 globes in the seven decades between 1032/1623 and 1102/1691 , using the lost - wax method exclusively and successfully . They produced very accurate globes of every type . Although they were not the only instrument makers in Mughal India , this Lahore family constituted the frame of the Mughal globe - making tradition ( Figure IV.2.3 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 949,
+        "r": 654,
+        "b": 809
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "Figure IV.2.3 Cast and engraved celestial globe on a stand from the workshop in Lahore , Mughal India ,",
+      "bbox": {
+        "l": 102,
+        "t": 170,
+        "r": 651,
+        "b": 157
+      },
+      "page": 7
+    },
+    {
+      "label": "caption",
+      "text": "made in 1036 / 1626-7 . Height : 23 cm , Width : 17.5 cm . Inscriptions : ( 1 ) The work of the least of the servants Qaim Muḥammad ibn Isä ibn Allahdad Asturläbi Humayuni Lahūrī . ( 2 ) Twenty - second year of the reign of Jahangir . Museum no . M.828PART / 1-1928 .",
+      "bbox": {
+        "l": 179,
+        "t": 154,
+        "r": 651,
+        "b": 112
+      },
+      "page": 7
+    },
+    {
+      "label": "caption",
+      "text": "Source : Ⓒ Victoria and Albert Museum , London",
+      "bbox": {
+        "l": 102,
+        "t": 100,
+        "r": 352,
+        "b": 88
+      },
+      "page": 7
+    },
+    {
+      "label": "text",
+      "text": "480",
+      "bbox": {
+        "l": 366,
+        "t": 63,
+        "r": 385,
+        "b": 55
+      },
+      "page": 7
+    }
+  ],
+  "8": [
+    {
+      "label": "text",
+      "text": "Three - dimensional astronomy",
+      "bbox": {
+        "l": 285,
+        "t": 995,
+        "r": 443,
+        "b": 980
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "Celestial globe production in the Islamicate world continued for over a millennium . While the values for positioning the stars mostly remained true to the ones given by al - Şüfi , the style of wording and the images of the constellations varied from region to region during this period . Globe makers from Iran and Mughal India excelled at the lost - wax method around the 10th / 16th century . Afterward , it became the preferred method for globe construction . Almost none of the extant globes has its original rings ( the meridian ring and the horizon ring ) , but some have replacements . Noncontemporary replacements , in particular , indicate that these globes were in use for centuries .",
+      "bbox": {
+        "l": 88,
+        "t": 950,
+        "r": 639,
+        "b": 811
+      },
+      "page": 8
+    },
+    {
+      "label": "section_header",
+      "text": "IV.2.2 Armillary spheres",
+      "bbox": {
+        "l": 273,
+        "t": 783,
+        "r": 455,
+        "b": 764
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "Like celestial globes , armillary spheres imitate the daily motion of the sky . But , unlike globes , they do not have a solid spherical body to indicate the stars and the constellations . The circles that are astronomically significant , such as the meridian and the ecliptic , are represented by nested rings . They can be used both for demonstrations and observations . However , it seems that they were exclusively employed for observations in the Islamicate world . This is rather different from Europe where armillary spheres were often employed in demonstrations and teachings .",
+      "bbox": {
+        "l": 88,
+        "t": 752,
+        "r": 640,
+        "b": 648
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "Armillary spheres are made of wood or metal and constructed as large as possible in order to reach high accuracy in observations . Depending on the material and the craftsmanship , instru- ments were known to have been made in sizes between 1 and 6 meters in diameter . There were , however , certain limitations to size since parts can be deformed by expansion or bending . Unfortunately , only very few late examples survive from the 12th / 18th and the 13th / 19th cen- turies ( Sarma 2019 , 3261-80 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 644,
+        "r": 639,
+        "b": 539
+      },
+      "page": 8
+    },
+    {
+      "label": "section_header",
+      "text": "IV.2.2.1 The construction of an armillary sphere",
+      "bbox": {
+        "l": 195,
+        "t": 512,
+        "r": 533,
+        "b": 494
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "The armillary sphere is a Greek invention and is known in Arabic as dhat al - balaq ( the [ instru- ment ] with rings ) . The earliest record in the Islamicate world is ascribed to the 2nd / 8th - century astrologer Muḥammad ibn Ibrahim al - Fazārī because of his lost work Book on the Use of the Astro- labe Known as the Armillary Sphere ( Kitab al - ' Amal bi - l - asturlab wa - huwa dhat al - balaq ; Ibn al - Na- dim 1871-1872 [ CB ] , 2 : 273 ) . Although al - Fazari categorized the armillary sphere as a type of astrolabe , this was not followed by others , and it was usually treated as a different instrument . The armillary sphere became popular very early in the history of astronomy in the Islamicate world through the translations of Ptolemy's Almagest in the 2nd / 8th and 3rd / 9th centuries . In the fifth book of the Almagest , Ptolemy introduces an armillary sphere with six rings , as follows ( Ptolemy 1998 , 217-18 ) :",
+      "bbox": {
+        "l": 89,
+        "t": 482,
+        "r": 641,
+        "b": 306
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "Two rings of the same size , representing the ecliptic and the solstitial colure , are joined perpendicularly . Then the ecliptic poles are located on the colure and two pegs , one for the inner surface and the other for the outer surface , are attached at each pole . Two rotatable rings are fixed at these pegs . The outer one is the large longitude ring , and the inner one is the small longitude ring . The small longitude ring houses another ring with two sighting vanes . This ' observation ' ring is fitted so that it can only rotate parallel to and simultaneously with the small longitude ring . After measuring the angular difference between the ecliptic and celestial poles , positions of the latter are marked on the large longitude ring . One peg is attached to its outer surface at each pole . The outermost ring , which represents the meridian , is fixed at these pegs . The meridian ring is then fixed inside the horizontal plane as we have seen in globe making . The entire arrangement is carried by columns fitted under the horizon plane ( Figure IV.2.4 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 301,
+        "r": 640,
+        "b": 89
+      },
+      "page": 8
+    },
+    {
+      "label": "text",
+      "text": "481",
+      "bbox": {
+        "l": 353,
+        "t": 62,
+        "r": 372,
+        "b": 55
+      },
+      "page": 8
+    }
+  ],
+  "9": [
+    {
+      "label": "text",
+      "text": "3040",
+      "bbox": {
+        "l": 230,
+        "t": 853,
+        "r": 257,
+        "b": 833
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Taha Arslan",
+      "bbox": {
+        "l": 344,
+        "t": 993,
+        "r": 408,
+        "b": 982
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "20 15 10",
+      "bbox": {
+        "l": 376,
+        "t": 870,
+        "r": 407,
+        "b": 843
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "80 90 90 80/70",
+      "bbox": {
+        "l": 319,
+        "t": 866,
+        "r": 407,
+        "b": 815
+      },
+      "page": 9
+    },
+    {
+      "label": "caption",
+      "text": "Figure IV.2.4 Ptolemy's model of the armillary sphere",
+      "bbox": {
+        "l": 102,
+        "t": 553,
+        "r": 386,
+        "b": 541
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Source : Taha Yasin Arslan , Istanbul",
+      "bbox": {
+        "l": 102,
+        "t": 529,
+        "r": 292,
+        "b": 519
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "meridian ring",
+      "bbox": {
+        "l": 528,
+        "t": 874,
+        "r": 583,
+        "b": 863
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "large longitude ring",
+      "bbox": {
+        "l": 528,
+        "t": 836,
+        "r": 609,
+        "b": 826
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "small longitude ring",
+      "bbox": {
+        "l": 528,
+        "t": 802,
+        "r": 612,
+        "b": 790
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "horizon ring",
+      "bbox": {
+        "l": 528,
+        "t": 764,
+        "r": 579,
+        "b": 754
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "sighting ring",
+      "bbox": {
+        "l": 528,
+        "t": 728,
+        "r": 581,
+        "b": 717
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "ecliptic ring",
+      "bbox": {
+        "l": 527,
+        "t": 691,
+        "r": 578,
+        "b": 682
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "solstitial colure",
+      "bbox": {
+        "l": 528,
+        "t": 655,
+        "r": 591,
+        "b": 647
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "The types of this instrument used for demonstration and for observation are distinctively different . An armillary sphere for demonstration contains a small globe , representing the Earth at the center , and does not require sighting vanes or an observation ring . The armillary sphere for making observations does not have a globe at its center . It was rather more popular in the Islamicate world and arguably had more practical value . It could be used to find the latitudes and longitudes of the sun , the moon , the five planets and the stars , their meridian altitude , the time , and the angular differences between two or more celestial objects , all according to the ecliptic coordinate system .",
+      "bbox": {
+        "l": 101,
+        "t": 461,
+        "r": 653,
+        "b": 321
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "Ptolemy's description of an armillary sphere for making observations was used for centuries with some changes to the number and the function of the rings . For instance , the instrument maker and scholar Mu'ayyad al - Din al - ' Urdi ( d . 664/1266 ) switched the observation ring with an alidade ( a sighting unit ) by converting the small longitude ring into a hollowed disk so that the alidade could be fixed at its center . The Ottoman scholar Taqi al - Din ibn Ma'ruf ( d . 993/1585 ) , who headed the short - lived Istanbul Observatory between 984-987 / 1577-1580 , constructed an armillary sphere with six rings but removed the observation ring while adding another for the celestial equator ( MS Istanbul , Topkapı Library , Hazine 452 ) . The new ring is of the same size as the meridian ring and was connected to it perpendicularly . In this model , the sighting vanes are on the celestial equator ring ( Figure IV.2.5 ) .",
+      "bbox": {
+        "l": 101,
+        "t": 317,
+        "r": 652,
+        "b": 142
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "The construction of an armillary sphere does not necessitate sophisticated astronomical knowledge . Other than determining or obtaining the value of the obliquity of the ecliptic , one needs to execute only simple geometrical calculations to determine the sizes of the rings . There",
+      "bbox": {
+        "l": 102,
+        "t": 137,
+        "r": 651,
+        "b": 87
+      },
+      "page": 9
+    },
+    {
+      "label": "text",
+      "text": "482",
+      "bbox": {
+        "l": 366,
+        "t": 63,
+        "r": 385,
+        "b": 55
+      },
+      "page": 9
+    }
+  ],
+  "10": [
+    {
+      "label": "text",
+      "text": "Three - dimensional astronomy",
+      "bbox": {
+        "l": 285,
+        "t": 995,
+        "r": 444,
+        "b": 980
+      },
+      "page": 10
+    },
+    {
+      "label": "picture",
+      "text": "G",
+      "bbox": {
+        "l": 214,
+        "t": 686,
+        "r": 479,
+        "b": 459
+      },
+      "page": 10
+    },
+    {
+      "label": "caption",
+      "text": "Figure IV.2.5 A miniature of Taqi al - Din ibn Ma'ruf's armillary sphere . MS Istanbul , Istanbul University , Rare Works Library , F 1404 , fol . 56b .",
+      "bbox": {
+        "l": 89,
+        "t": 391,
+        "r": 637,
+        "b": 364
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "Source : Istanbul University , Rare Works Library , Istanbul",
+      "bbox": {
+        "l": 88,
+        "t": 352,
+        "r": 395,
+        "b": 339
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "is no astronomical significance in the proportions of the rings , the choice is based on aesthetics . However , constructing a flawless instrument , especially in large sizes as it was often done in the Islamicate world , is extremely hard . Metal rings may expand and contract due to temperature changes and both wood and metal rings may bend over time due to their own weight . Unskillful craftsmanship can also prevent free rotation of the rings . These become major problems since gathering systematic observations requires many years of application . However , making a large instrument creates advantages in terms of precision in the observations . Hence , instrument makers in the Islamicate world tried to perfect their designs with modifications of Ptolemy's model and constructed instruments as large as possible . In comparison to portable instruments like globes and astrolabes , these armillary spheres were rather heavy and quite expensive . That is why they were employed almost exclusively in observatories . Moreover , political struggles , wars , and the financial costs of maintenance shortened the lifespans of the observatories in the",
+      "bbox": {
+        "l": 88,
+        "t": 300,
+        "r": 639,
+        "b": 88
+      },
+      "page": 10
+    },
+    {
+      "label": "text",
+      "text": "483",
+      "bbox": {
+        "l": 352,
+        "t": 64,
+        "r": 371,
+        "b": 53
+      },
+      "page": 10
+    }
+  ],
+  "11": [
+    {
+      "label": "text",
+      "text": "Taha Arslan",
+      "bbox": {
+        "l": 344,
+        "t": 993,
+        "r": 409,
+        "b": 983
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "Islamicate world . For instance , the Samarqand observatory may have been active no longer than 30 years and the Istanbul observatory survived only four . These relatively short working lives did not help the survival of large instruments .",
+      "bbox": {
+        "l": 101,
+        "t": 949,
+        "r": 651,
+        "b": 900
+      },
+      "page": 11
+    },
+    {
+      "label": "section_header",
+      "text": "IV.2.2.2 The use of the armillary sphere",
+      "bbox": {
+        "l": 239,
+        "t": 872,
+        "r": 517,
+        "b": 852
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "The earliest known armillary spheres used in the Islamicate world are the two instruments made for the observatories in Baghdad and Damascus , respectively , between 213-14 / 828-829 and 216-217 / 831-832 . Both were made by Khalid ibn ' Abd al - Malik al - Marwarrūdhi ( 3rd / 9th century ) , an instrument maker of the Abbasid Caliph al - Ma'mun ( r . 198-218 / 813-833 ; Sayili 1960 [ 1988 ] [ CB ] , 57 ) . No further information about these instruments seems to have survived . Several centuries later , two firsthand records were written on armillary spheres used in the two most important observatories in the Islamicate world : Maragha and Samarqand . Al - ' Urḍi , Maragha's instrument maker , compiled The Epistle on How ( to Make ) Observations ( al - Risala fi kay- fiyyat al - arṣād ) . In it , he deals with several instruments , some of which were his own inventions . He also wrote a comprehensive section on the construction of a wooden armillary sphere with five rings and a diameter of approximately 160cm ( MS Istanbul , Süleymaniye Library , Nuruos- maniye 2971 , fols 76b - 82a ) . Al - ' Urdi gives measurements for the diameter , width , and thickness of each ring and detailed instructions on how to attach the rings , as well as how to preserve the instrument's condition . He shows why Ptolemy's ' observation ' ring is inconvenient and argues that an alidade is a better option for observations . In another text , Giyath al - Din al - Jamshid al - Kashi ( d . 832/1429 ) , who was the first director of the observatory in Samarqand , mentions an armillary sphere with seven rings that were employed in the observations ( Kennedy 1961 , 100 ) . It should be noted that both texts are derivations from Ptolemy's descriptions in the Almagest .",
+      "bbox": {
+        "l": 99,
+        "t": 842,
+        "r": 652,
+        "b": 521
+      },
+      "page": 11
+    },
+    {
+      "label": "section_header",
+      "text": "IV.2.3 Conclusion",
+      "bbox": {
+        "l": 308,
+        "t": 491,
+        "r": 444,
+        "b": 480
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "Celestial globes and armillary spheres are miniaturized versions of the celestial sphere as it is under- stood in classical astronomy and , depending on construction , could be used for demonstrations and observations . They are helpful educational tools when used for demonstrations , because they offer a direct representation of the sky , unlike projection - based instruments such as astrolabes and quadrants . They are universal in nature ; they can be used anywhere in the world . Due to chal- lenges with their construction , globes were relatively small and portable , whereas armillary spheres for stationary use were built as large as possible for accuracy . Both instruments provide ample evidence for scholarly activities , astronomical interests in the corresponding communities , and the transmission of astronomical knowledge through time . The many unique surviving instruments and the manuals on their construction and use deserve thorough investigation . Most of the dated and authored globes were produced for the courtly elites such as Ayyubids , Safavids , or Mughals . Armillary spheres , on the other hand , were occasionally depicted and illustrated in manuscripts like the Shahinshahnama by Sayyid Loqman dedicated to Murad III ( see Figure IV.2.5 ) . Moreover , the social aspects of the existence and use of these instruments within the Islamicate world have been ignored for too long and are in need of comprehensive study .",
+      "bbox": {
+        "l": 100,
+        "t": 464,
+        "r": 652,
+        "b": 198
+      },
+      "page": 11
+    },
+    {
+      "label": "section_header",
+      "text": "Notes",
+      "bbox": {
+        "l": 356,
+        "t": 167,
+        "r": 397,
+        "b": 156
+      },
+      "page": 11
+    },
+    {
+      "label": "footnote",
+      "text": "1 For more on their purpose see Charette ( 2006 , 123-38 ) ; and formore on the patronage , see Brentjes ( 2008 , 403-36 ) .",
+      "bbox": {
+        "l": 103,
+        "t": 142,
+        "r": 650,
+        "b": 114
+      },
+      "page": 11
+    },
+    {
+      "label": "footnote",
+      "text": "2 Consolidated bibliography .",
+      "bbox": {
+        "l": 102,
+        "t": 113,
+        "r": 255,
+        "b": 99
+      },
+      "page": 11
+    },
+    {
+      "label": "text",
+      "text": "484",
+      "bbox": {
+        "l": 365,
+        "t": 62,
+        "r": 386,
+        "b": 55
+      },
+      "page": 11
+    }
+  ],
+  "12": [
+    {
+      "label": "text",
+      "text": "Three - dimensional astronomy",
+      "bbox": {
+        "l": 285,
+        "t": 995,
+        "r": 443,
+        "b": 980
+      },
+      "page": 12
+    },
+    {
+      "label": "list_item",
+      "text": "3 For more on Marrākushi's work , see Charette ( 2003 ) . 4 For examples of its use , see Evans ( 1998 , 85-87 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 950,
+        "r": 381,
+        "b": 922
+      },
+      "page": 12
+    },
+    {
+      "label": "list_item",
+      "text": "5 For more details , see Samsó ( 2015 , 68-72 ) .",
+      "bbox": {
+        "l": 88,
+        "t": 919,
+        "r": 326,
+        "b": 907
+      },
+      "page": 12
+    },
+    {
+      "label": "section_header",
+      "text": "Bibliography",
+      "bbox": {
+        "l": 318,
+        "t": 878,
+        "r": 409,
+        "b": 860
+      },
+      "page": 12
+    },
+    {
+      "label": "section_header",
+      "text": "Manuscripts",
+      "bbox": {
+        "l": 320,
+        "t": 840,
+        "r": 406,
+        "b": 826
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "MS Istanbul , Süleymaniye Library , Hamidiye 1453 , fols 103b - 123a .",
+      "bbox": {
+        "l": 89,
+        "t": 817,
+        "r": 439,
+        "b": 801
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "MS Istanbul , Süleymaniye Library , Nuruosmaniye 2971 , fols 74b - 102a .",
+      "bbox": {
+        "l": 89,
+        "t": 799,
+        "r": 460,
+        "b": 787
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "MS Istanbul , Topkapı Library , Hazine 452 .",
+      "bbox": {
+        "l": 89,
+        "t": 784,
+        "r": 311,
+        "b": 772
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "MS Oxford , Bodleian Library , Marsh 154 .",
+      "bbox": {
+        "l": 89,
+        "t": 769,
+        "r": 309,
+        "b": 757
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "MS Paris , BnF , Arabe 5036 .",
+      "bbox": {
+        "l": 89,
+        "t": 754,
+        "r": 234,
+        "b": 743
+      },
+      "page": 12
+    },
+    {
+      "label": "section_header",
+      "text": "Research literature",
+      "bbox": {
+        "l": 299,
+        "t": 712,
+        "r": 428,
+        "b": 700
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Brentjes , S. 2008. \" Courtly Patronage of the Ancient Sciences in Post - Classical Islamic Societies , \" Al - Qantara 29.2 : 403-36 .",
+      "bbox": {
+        "l": 89,
+        "t": 689,
+        "r": 637,
+        "b": 658
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Brentjes , S. 2015. \" Sanctioning Knowledge , \" Al - Qantara 35.1 : 277-309 .",
+      "bbox": {
+        "l": 89,
+        "t": 655,
+        "r": 459,
+        "b": 643
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Dekker , E. 1999. Globes at Greenwich : A Catalogue of the Globes and Armillary Spheres in the National Maritime Museum , Greenwich . New York : Oxford University Press .",
+      "bbox": {
+        "l": 89,
+        "t": 641,
+        "r": 639,
+        "b": 614
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Dekker , E. 2012. Illustrating the Phaenomena . Oxford : Oxford University Press . http://doi.org/10.1093/acp rof : oso / 9780199609697.003.0004",
+      "bbox": {
+        "l": 88,
+        "t": 612,
+        "r": 639,
+        "b": 585
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Dekker , E. and Kunitzsch , P. 2008. \" An Early Islamic Tradition in Globe Making , \" ZGAIW 18 : 155-211 . Evans , J. 1998. The History and Practice of Ancient Astronomy . Oxford : Oxford University Press . Gillispie , C. C. ed . 1981. Dictionary of Scientific Biography . New York : Charles Scribner's Sons . Kennedy , E. S. 1961. \" Al - Kashi's Treatise on Astronomical Observational Instruments , \" Journal of Near Eastern Studies 20.2 : 98-108 .",
+      "bbox": {
+        "l": 89,
+        "t": 580,
+        "r": 639,
+        "b": 511
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Kunitzsch , P. 1959. Arabische Sternnamen In Europa . Wiesbaden : Otto Harrassowitz . Samsó , J. 2015. \" Qusta ibn Luqa and Alfonso X on the celestial globe , \" Suhay ! 5 : 63-79 .",
+      "bbox": {
+        "l": 88,
+        "t": 505,
+        "r": 544,
+        "b": 479
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Sarma , S. R. 2019. A Descriptive Catalogue of Indian Astronomical Instruments .",
+      "bbox": {
+        "l": 89,
+        "t": 475,
+        "r": 479,
+        "b": 462
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Edmonton : University of Alberta , Canada . https://srsarma.in/catalogue.php",
+      "bbox": {
+        "l": 89,
+        "t": 458,
+        "r": 485,
+        "b": 445
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Savage - Smith , E. 1985. Islamicate Celestial Globes : Their History , Construction , and Use , with a",
+      "bbox": {
+        "l": 89,
+        "t": 442,
+        "r": 562,
+        "b": 428
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Chapter on Iconography by Andrea P. A. Belloli . Washington , DC : Smithsonian Institution Press . Savage - Smith , E. 1990-1991 . \" The Classification of Islamic Celestial Globes",
+      "bbox": {
+        "l": 89,
+        "t": 425,
+        "r": 572,
+        "b": 396
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "in the Light of Recent Evidence , \" Der Globusfreund 38-9 : 23-9 .",
+      "bbox": {
+        "l": 89,
+        "t": 391,
+        "r": 419,
+        "b": 380
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Savage - Smith , E. 1992. \" Celestial Mapping , \" in GTISAS [ CB ] , 12-70 .",
+      "bbox": {
+        "l": 89,
+        "t": 376,
+        "r": 458,
+        "b": 364
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Savage - Smith , E. 1997. \" Islamic Celestial Globes and Related Instruments , \" in Maddison , F. and Sav- age - Smith , E. , eds . Science , Tools and Magic , Part One : Body and Spirit , Mapping the Universe ( Khalili",
+      "bbox": {
+        "l": 88,
+        "t": 361,
+        "r": 637,
+        "b": 334
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Collection XII ) . London and Oxford : Nour Foundation , Azimuth Editions , Oxford University Press , 168-84 .",
+      "bbox": {
+        "l": 107,
+        "t": 331,
+        "r": 637,
+        "b": 307
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "Worrel , W. H. 1944. \" Qusta ibn Luqa on the Use of the Celestial Globe , \" Isis 35.4 : 285–93 .",
+      "bbox": {
+        "l": 89,
+        "t": 301,
+        "r": 567,
+        "b": 289
+      },
+      "page": 12
+    },
+    {
+      "label": "text",
+      "text": "485",
+      "bbox": {
+        "l": 353,
+        "t": 63,
+        "r": 371,
+        "b": 55
+      },
+      "page": 12
+    }
+  ]
+}

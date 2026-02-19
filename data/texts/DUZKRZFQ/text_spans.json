@@ -1,0 +1,4252 @@
+{
+  "1": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.16.1 Introduction",
+      "bbox": {
+        "l": 202.45,
+        "t": 269.92,
+        "r": 301.85,
+        "b": 280.92
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zand",
+      "bbox": {
+        "l": 131.8,
+        "t": 431.51,
+        "r": 151.31,
+        "b": 441.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zand",
+      "bbox": {
+        "l": 136.97,
+        "t": 515.52,
+        "r": 156.48,
+        "b": 525.27
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zand",
+      "bbox": {
+        "l": 257.29,
+        "t": 599.49,
+        "r": 276.8,
+        "b": 609.24
+      }
+    }
+  ],
+  "2": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Table I.16.1",
+      "bbox": {
+        "l": 97.04,
+        "t": 63.87,
+        "r": 139.69,
+        "b": 72.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Avesta Old Avesta Eastern Iran 2nd/1st mill. bce",
+      "bbox": {
+        "l": 97.04,
+        "t": 84.46,
+        "r": 386.44,
+        "b": 90.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Younger Avesta",
+      "bbox": {
+        "l": 148.63,
+        "t": 100.53,
+        "r": 199.1,
+        "b": 109.28
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.16.2\t Designations of Zoroastrian and non-Zoroastrian scholars and their fields of knowledge before the 5th/11th century",
+      "bbox": {
+        "l": 67.47,
+        "t": 341.92,
+        "r": 352.8,
+        "b": 340.92
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Avesta",
+      "bbox": {
+        "l": 78.91,
+        "t": 359.48,
+        "r": 103.05,
+        "b": 369.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "aēthra-pati",
+      "bbox": {
+        "l": 132.99,
+        "t": 383.49,
+        "r": 174.38,
+        "b": 393.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hērbed",
+      "bbox": {
+        "l": 271.79,
+        "t": 383.49,
+        "r": 294.56,
+        "b": 393.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hērbed",
+      "bbox": {
+        "l": 346.39,
+        "t": 383.49,
+        "r": 369.17,
+        "b": 393.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Handarz",
+      "bbox": {
+        "l": 367.95,
+        "t": 395.49,
+        "r": 400.52,
+        "b": 405.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hērbed",
+      "bbox": {
+        "l": 116.31,
+        "t": 419.49,
+        "r": 139.09,
+        "b": 429.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Gāthās",
+      "bbox": {
+        "l": 356.38,
+        "t": 431.49,
+        "r": 382.58,
+        "b": 441.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "zaiṇti",
+      "bbox": {
+        "l": 161.59,
+        "t": 445.7,
+        "r": 181.94,
+        "b": 454.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "zand",
+      "bbox": {
+        "l": 230.35,
+        "t": 443.48,
+        "r": 248.47,
+        "b": 453.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "kēsh-dārān",
+      "bbox": {
+        "l": 136.79,
+        "t": 467.49,
+        "r": 175.79,
+        "b": 477.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 250.55,
+        "t": 467.49,
+        "r": 281.9,
+        "b": 477.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fīlasōfā",
+      "bbox": {
+        "l": 115.91,
+        "t": 479.49,
+        "r": 140.5,
+        "b": 489.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dānāī-dōst",
+      "bbox": {
+        "l": 246.99,
+        "t": 491.49,
+        "r": 284.26,
+        "b": 501.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dānāg",
+      "bbox": {
+        "l": 153.4,
+        "t": 503.49,
+        "r": 174.4,
+        "b": 513.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fīlasōfā",
+      "bbox": {
+        "l": 160.52,
+        "t": 527.5,
+        "r": 184.08,
+        "b": 537.25
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dānāg",
+      "bbox": {
+        "l": 317.93,
+        "t": 527.5,
+        "r": 338.35,
+        "b": 537.25
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dānāg <ud> shnāsag",
+      "bbox": {
+        "l": 176.9,
+        "t": 539.5,
+        "r": 251.09,
+        "b": 549.25
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "(Dēnkard 4: 108)",
+      "bbox": {
+        "l": 342.65,
+        "t": 551.5,
+        "r": 409.48,
+        "b": 561.25
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "frazānag",
+      "bbox": {
+        "l": 123.03,
+        "t": 575.51,
+        "r": 152.69,
+        "b": 585.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "fra-zan-",
+      "bbox": {
+        "l": 178.79,
+        "t": 575.51,
+        "r": 207.32,
+        "b": 585.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "šnāsag",
+      "bbox": {
+        "l": 228.84,
+        "t": 575.51,
+        "r": 250.88,
+        "b": 585.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "zaiṇti",
+      "bbox": {
+        "l": 340.41,
+        "t": 577.7,
+        "r": 360.08,
+        "b": 586.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "shnāsēnishn",
+      "bbox": {
+        "l": 59.77,
+        "t": 587.48,
+        "r": 100.91,
+        "b": 597.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dēn dānāgīh",
+      "bbox": {
+        "l": 185.2,
+        "t": 611.49,
+        "r": 226.75,
+        "b": 621.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dēn",
+      "bbox": {
+        "l": 341.44,
+        "t": 611.49,
+        "r": 353.64,
+        "b": 621.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "gōhr-shnāsag",
+      "bbox": {
+        "l": 371.66,
+        "t": 623.49,
+        "r": 416.04,
+        "b": 633.24
+      }
+    }
+  ],
+  "3": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "chihr-shnāsag",
+      "bbox": {
+        "l": 155.2,
+        "t": 63.8,
+        "r": 201.7,
+        "b": 73.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dānāg",
+      "bbox": {
+        "l": 246.23,
+        "t": 75.8,
+        "r": 269.35,
+        "b": 85.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Judgments of the Spirit of Wisdom",
+      "bbox": {
+        "l": 343.33,
+        "t": 87.8,
+        "r": 100.52,
+        "b": 85.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dādestān ī Mēnōg ī Khrad",
+      "bbox": {
+        "l": 103.09,
+        "t": 87.8,
+        "r": 195.91,
+        "b": 97.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dānāg",
+      "bbox": {
+        "l": 83.55,
+        "t": 99.8,
+        "r": 103.97,
+        "b": 109.55
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "in the introduction of Manūshchihr’s",
+      "bbox": {
+        "l": 103.97,
+        "t": 99.8,
+        "r": 252.29,
+        "b": 109.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Religious Judgments",
+      "bbox": {
+        "l": 252.48,
+        "t": 99.8,
+        "r": 322.93,
+        "b": 109.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dādestān ī dēnīg",
+      "bbox": {
+        "l": 328.77,
+        "t": 99.8,
+        "r": 388.1,
+        "b": 109.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "fl",
+      "bbox": {
+        "l": 396.48,
+        "t": 99.8,
+        "r": 401.15,
+        "b": 109.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "āsn-khrad",
+      "bbox": {
+        "l": 258.53,
+        "t": 135.81,
+        "r": 292.86,
+        "b": 145.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "cim",
+      "bbox": {
+        "l": 326.23,
+        "t": 135.81,
+        "r": 337.81,
+        "b": 145.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 106.78,
+        "t": 147.81,
+        "r": 137.26,
+        "b": 157.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "wāzag",
+      "bbox": {
+        "l": 127.17,
+        "t": 183.82,
+        "r": 149.36,
+        "b": 193.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Handarz",
+      "bbox": {
+        "l": 178.51,
+        "t": 183.82,
+        "r": 210.2,
+        "b": 193.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pahlavi Texts",
+      "bbox": {
+        "l": 318.1,
+        "t": 183.82,
+        "r": 364.94,
+        "b": 193.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 94.57,
+        "t": 195.82,
+        "r": 125.04,
+        "b": 205.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 189.77,
+        "t": 195.82,
+        "r": 220.24,
+        "b": 205.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dēn-dastwar ī dānāg",
+      "bbox": {
+        "l": 128.62,
+        "t": 219.83,
+        "r": 198.3,
+        "b": 229.58
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.16.3 Shifts and changes in Zoroastrian scholarship  since the 5th/11th century",
+      "bbox": {
+        "l": 127.99,
+        "t": 262.24,
+        "r": 313.17,
+        "b": 261.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 381.2,
+        "t": 375.82,
+        "r": 411.68,
+        "b": 385.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 402.93,
+        "t": 399.82,
+        "r": 436.12,
+        "b": 409.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 78.48,
+        "t": 411.82,
+        "r": 108.96,
+        "b": 421.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 277.67,
+        "t": 459.83,
+        "r": 280.31,
+        "b": 469.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 323.95,
+        "t": 459.83,
+        "r": 326.6,
+        "b": 469.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Kings",
+      "bbox": {
+        "l": 340.17,
+        "t": 471.83,
+        "r": 389.25,
+        "b": 481.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shāhnāme",
+      "bbox": {
+        "l": 394.39,
+        "t": 471.83,
+        "r": 430.94,
+        "b": 481.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "637 pārsīg",
+      "bbox": {
+        "l": 241.8,
+        "t": 579.82,
+        "r": 279.42,
+        "b": 589.57
+      }
+    }
+  ],
+  "4": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "rivāyat",
+      "bbox": {
+        "l": 227.18,
+        "t": 183.82,
+        "r": 250.11,
+        "b": 193.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 291.96,
+        "t": 255.83,
+        "r": 325.15,
+        "b": 265.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Rewāyat",
+      "bbox": {
+        "l": 357.62,
+        "t": 291.84,
+        "r": 387.66,
+        "b": 301.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Sanskrit Yasna",
+      "bbox": {
+        "l": 279.47,
+        "t": 459.87,
+        "r": 331.99,
+        "b": 469.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Yasna",
+      "bbox": {
+        "l": 181.53,
+        "t": 471.87,
+        "r": 202.08,
+        "b": 481.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Zarathustra",
+      "bbox": {
+        "l": 287.48,
+        "t": 579.89,
+        "r": 357.75,
+        "b": 589.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Zartusht-Nāma",
+      "bbox": {
+        "l": 363.43,
+        "t": 579.89,
+        "r": 419.26,
+        "b": 589.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mobed ī mobedān",
+      "bbox": {
+        "l": 203.73,
+        "t": 591.9,
+        "r": 265.05,
+        "b": 601.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Book of Ardā Wīrāz",
+      "bbox": {
+        "l": 198.55,
+        "t": 603.9,
+        "r": 276.12,
+        "b": 613.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Ardā Wīrāz Nāmag",
+      "bbox": {
+        "l": 279.58,
+        "t": 603.9,
+        "r": 352.63,
+        "b": 613.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dabīr",
+      "bbox": {
+        "l": 233.67,
+        "t": 615.9,
+        "r": 250.84,
+        "b": 625.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "adīb",
+      "bbox": {
+        "l": 287.57,
+        "t": 615.9,
+        "r": 302.1,
+        "b": 625.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hīrbed",
+      "bbox": {
+        "l": 135.6,
+        "t": 627.9,
+        "r": 156.63,
+        "b": 637.65
+      }
+    }
+  ],
+  "5": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Springtimes",
+      "bbox": {
+        "l": 189.38,
+        "t": 63.8,
+        "r": 230.05,
+        "b": 73.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Bahāriyat",
+      "bbox": {
+        "l": 235.45,
+        "t": 63.8,
+        "r": 269.53,
+        "b": 73.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nōrūz",
+      "bbox": {
+        "l": 307.04,
+        "t": 63.8,
+        "r": 330.51,
+        "b": 73.55
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.16.4 The authors of the Pahlavi literature (3rd/8th–8th/14th centuries)",
+      "bbox": {
+        "l": 82.54,
+        "t": 110.24,
+        "r": 421.76,
+        "b": 121.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "rad",
+      "bbox": {
+        "l": 131.03,
+        "t": 163.8,
+        "r": 141.71,
+        "b": 173.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pars",
+      "bbox": {
+        "l": 158.45,
+        "t": 163.8,
+        "r": 173.09,
+        "b": 173.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Kerman",
+      "bbox": {
+        "l": 192.97,
+        "t": 163.8,
+        "r": 221.25,
+        "b": 173.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Selected Scripts",
+      "bbox": {
+        "l": 118.32,
+        "t": 223.82,
+        "r": 171.54,
+        "b": 233.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Wizīdagīhā ī Zādspram",
+      "bbox": {
+        "l": 178.0,
+        "t": 223.82,
+        "r": 264.06,
+        "b": 233.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Taxonomy",
+      "bbox": {
+        "l": 396.72,
+        "t": 235.82,
+        "r": 436.12,
+        "b": 245.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tōhmag-ōshmurishnīh",
+      "bbox": {
+        "l": 71.4,
+        "t": 247.82,
+        "r": 148.63,
+        "b": 257.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "c",
+      "bbox": {
+        "l": 202.87,
+        "t": 259.82,
+        "r": 205.51,
+        "b": 269.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Historia Animalium",
+      "bbox": {
+        "l": 338.28,
+        "t": 259.82,
+        "r": 408.71,
+        "b": 269.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Structure of Human Beings",
+      "bbox": {
+        "l": 334.27,
+        "t": 283.83,
+        "r": 91.32,
+        "b": 281.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "abar passāzishn ī mardōmān",
+      "bbox": {
+        "l": 97.19,
+        "t": 283.83,
+        "r": 196.37,
+        "b": 293.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Nature of Man",
+      "bbox": {
+        "l": 301.07,
+        "t": 283.83,
+        "r": 382.95,
+        "b": 293.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Greater Bundahishn",
+      "bbox": {
+        "l": 101.15,
+        "t": 307.83,
+        "r": 176.05,
+        "b": 317.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Book of Kings",
+      "bbox": {
+        "l": 414.36,
+        "t": 331.84,
+        "r": 100.02,
+        "b": 329.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Khwadāyīh-nāmag",
+      "bbox": {
+        "l": 107.44,
+        "t": 331.84,
+        "r": 175.56,
+        "b": 341.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Greater Bundahishn",
+      "bbox": {
+        "l": 231.77,
+        "t": 379.85,
+        "r": 305.1,
+        "b": 389.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Greater Bundahishn",
+      "bbox": {
+        "l": 314.51,
+        "t": 403.85,
+        "r": 387.77,
+        "b": 413.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 368.02,
+        "t": 499.87,
+        "r": 401.2,
+        "b": 509.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Riwāyat",
+      "bbox": {
+        "l": 131.64,
+        "t": 511.87,
+        "r": 160.66,
+        "b": 521.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Mādayān ī Gizistag Abālish",
+      "bbox": {
+        "l": 243.05,
+        "t": 511.87,
+        "r": 342.69,
+        "b": 521.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dānāgān",
+      "bbox": {
+        "l": 238.34,
+        "t": 551.8,
+        "r": 267.29,
+        "b": 561.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "amīr ī mūmenīn",
+      "bbox": {
+        "l": 322.04,
+        "t": 587.81,
+        "r": 377.77,
+        "b": 597.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hudēnān pēšōbāy",
+      "bbox": {
+        "l": 165.07,
+        "t": 611.81,
+        "r": 224.25,
+        "b": 621.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "sic",
+      "bbox": {
+        "l": 374.01,
+        "t": 611.81,
+        "r": 381.94,
+        "b": 621.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "(Chacha 1936, 0.5–6)",
+      "bbox": {
+        "l": 332.39,
+        "t": 635.82,
+        "r": 418.17,
+        "b": 645.57
+      }
+    }
+  ],
+  "6": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Table I.16.2",
+      "bbox": {
+        "l": 59.77,
+        "t": 63.87,
+        "r": 102.42,
+        "b": 72.62
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Zurwāndād Farrbay ī Ashawahisht",
+      "bbox": {
+        "l": 59.76,
+        "t": 339.67,
+        "r": 110.62,
+        "b": 279.36
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Farrokhmard ī Wahrāmān",
+      "bbox": {
+        "l": 59.76,
+        "t": 458.82,
+        "r": 109.76,
+        "b": 456.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Mādayān ī Hazār Dādestān",
+      "bbox": {
+        "l": 107.76,
+        "t": 480.82,
+        "r": 119.28,
+        "b": 478.57
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Ādurbād ī *Jāwandān",
+      "bbox": {
+        "l": 148.24,
+        "t": 82.45,
+        "r": 234.96,
+        "b": 91.2
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Rōshn <ī Ādurfarrbay>",
+      "bbox": {
+        "l": 148.23,
+        "t": 173.52,
+        "r": 244.04,
+        "b": 182.27
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "niβə̄",
+      "bbox": {
+        "l": 223.46,
+        "t": 208.57,
+        "r": 237.48,
+        "b": 216.57
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Manushchihr ī Juwānjamān",
+      "bbox": {
+        "l": 148.24,
+        "t": 281.61,
+        "r": 198.66,
+        "b": 279.36
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Pārs ud Kirmān rad",
+      "bbox": {
+        "l": 148.24,
+        "t": 292.61,
+        "r": 210.66,
+        "b": 301.36
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dādestān ī dēnīg",
+      "bbox": {
+        "l": 148.24,
+        "t": 314.6,
+        "r": 203.58,
+        "b": 323.35
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "*Frāy-srōsh <ī Ashawahisht (?)> Ashawahisht ī Frāy-Srōsh <ī Ashawahisht (?)>",
+      "bbox": {
+        "l": 148.24,
+        "t": 386.75,
+        "r": 217.23,
+        "b": 337.42
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Farrbay/Frīy-Srōsh ī Wahrāmān",
+      "bbox": {
+        "l": 148.24,
+        "t": 458.82,
+        "r": 198.24,
+        "b": 456.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mōwbedān mōwbed",
+      "bbox": {
+        "l": 148.24,
+        "t": 469.82,
+        "r": 208.46,
+        "b": 478.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Riwāyat",
+      "bbox": {
+        "l": 176.64,
+        "t": 480.82,
+        "r": 202.69,
+        "b": 489.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pursishn",
+      "bbox": {
+        "l": 148.24,
+        "t": 491.82,
+        "r": 175.14,
+        "b": 500.57
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Ādurfarrbay ī Farrokhzādān",
+      "bbox": {
+        "l": 255.24,
+        "t": 93.45,
+        "r": 312.03,
+        "b": 91.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʾ",
+      "bbox": {
+        "l": 303.14,
+        "t": 106.49,
+        "r": 304.81,
+        "b": 114.49
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "mūn; first",
+      "bbox": {
+        "l": 304.8,
+        "t": 115.45,
+        "r": 270.78,
+        "b": 113.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hudēnān pēshōbāy",
+      "bbox": {
+        "l": 270.78,
+        "t": 115.45,
+        "r": 329.99,
+        "b": 124.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 300.92,
+        "t": 148.45,
+        "r": 330.7,
+        "b": 157.2
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Zartusht ī Ādurfarrbay",
+      "bbox": {
+        "l": 255.23,
+        "t": 173.53,
+        "r": 348.06,
+        "b": 182.28
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hudēnān pēshōbāy",
+      "bbox": {
+        "l": 255.23,
+        "t": 184.53,
+        "r": 312.01,
+        "b": 193.28
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Wāhramshād",
+      "bbox": {
+        "l": 255.23,
+        "t": 209.53,
+        "r": 307.97,
+        "b": 218.28
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hudēnān pēshōbāy",
+      "bbox": {
+        "l": 255.23,
+        "t": 220.53,
+        "r": 312.01,
+        "b": 229.28
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Juwānjam ī Shābuhrān",
+      "bbox": {
+        "l": 255.23,
+        "t": 234.53,
+        "r": 346.23,
+        "b": 243.28
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "ī Wāhramshād",
+      "bbox": {
+        "l": 267.78,
+        "t": 245.53,
+        "r": 322.59,
+        "b": 254.28
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hudēnān pēshbāy",
+      "bbox": {
+        "l": 255.23,
+        "t": 256.53,
+        "r": 310.98,
+        "b": 265.28
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Ashawahisht <ī J.>",
+      "bbox": {
+        "l": 255.23,
+        "t": 270.6,
+        "r": 331.54,
+        "b": 279.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hudēnān pēshbāy",
+      "bbox": {
+        "l": 290.0,
+        "t": 281.59,
+        "r": 343.13,
+        "b": 290.34
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Ēmēd ī Ashawahishtān",
+      "bbox": {
+        "l": 255.23,
+        "t": 328.67,
+        "r": 346.65,
+        "b": 337.42
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hudēnān pēshōbāy",
+      "bbox": {
+        "l": 255.23,
+        "t": 339.67,
+        "r": 312.01,
+        "b": 348.42
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Riwāyat",
+      "bbox": {
+        "l": 283.64,
+        "t": 350.67,
+        "r": 312.12,
+        "b": 359.42
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Ādurbād ī Ēmēdān",
+      "bbox": {
+        "l": 255.23,
+        "t": 364.75,
+        "r": 332.89,
+        "b": 373.5
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hudēnān",
+      "bbox": {
+        "l": 255.23,
+        "t": 375.74,
+        "r": 281.95,
+        "b": 384.49
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "pēshōbāy; editor of the",
+      "bbox": {
+        "l": 281.95,
+        "t": 386.74,
+        "r": 300.92,
+        "b": 384.49
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 300.92,
+        "t": 386.74,
+        "r": 330.7,
+        "b": 395.49
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Isfandyār ī Ādurbād ī Ēmēd",
+      "bbox": {
+        "l": 255.23,
+        "t": 411.74,
+        "r": 323.69,
+        "b": 409.49
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Mōwbed",
+      "bbox": {
+        "l": 289.67,
+        "t": 433.74,
+        "r": 316.29,
+        "b": 442.49
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "Zādsparam ī J.",
+      "bbox": {
+        "l": 356.05,
+        "t": 270.6,
+        "r": 416.77,
+        "b": 279.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Hērbed",
+      "bbox": {
+        "l": 356.05,
+        "t": 281.59,
+        "r": 378.48,
+        "b": 290.34
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Wizīdagīhā",
+      "bbox": {
+        "l": 369.43,
+        "t": 303.59,
+        "r": 406.71,
+        "b": 312.34
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 119.1,
+        "t": 515.8,
+        "r": 149.58,
+        "b": 525.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Doubt-Dispelling Explanation",
+      "bbox": {
+        "l": 317.02,
+        "t": 611.82,
+        "r": 427.48,
+        "b": 621.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shkand Gumānīg Wizār",
+      "bbox": {
+        "l": 62.72,
+        "t": 623.82,
+        "r": 153.02,
+        "b": 633.57
+      }
+    }
+  ],
+  "7": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shāyest-nē-shāyest",
+      "bbox": {
+        "l": 130.89,
+        "t": 87.8,
+        "r": 195.51,
+        "b": 97.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Pahlavi Vīdēvdād",
+      "bbox": {
+        "l": 217.14,
+        "t": 87.8,
+        "r": 280.78,
+        "b": 97.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Pahlavi Vīdēvdād",
+      "bbox": {
+        "l": 407.4,
+        "t": 99.8,
+        "r": 102.17,
+        "b": 97.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 233.6,
+        "t": 123.81,
+        "r": 264.08,
+        "b": 133.56
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "that are composed by Ādurfarrbay and of Ādurbād ī Jāwandān (or Ādurbād ī Jāwandād or Ādarpādiiāwaṇdą; see de Menasce 1945; 4.106–7, 9.1–3, 10.50–8, 1.38). Ādurbād ī Jāwandān was probably the teacher (",
+      "bbox": {
+        "l": 264.08,
+        "t": 147.8,
+        "r": 335.91,
+        "b": 133.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "bun-spās",
+      "bbox": {
+        "l": 335.91,
+        "t": 147.8,
+        "r": 366.23,
+        "b": 157.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 124.58,
+        "t": 171.8,
+        "r": 157.77,
+        "b": 181.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dānāg",
+      "bbox": {
+        "l": 307.71,
+        "t": 195.81,
+        "r": 328.12,
+        "b": 205.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Mēnōg ī Khrad",
+      "bbox": {
+        "l": 343.65,
+        "t": 195.81,
+        "r": 396.78,
+        "b": 205.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shkand Gumānīg Wizār",
+      "bbox": {
+        "l": 208.28,
+        "t": 231.82,
+        "r": 297.2,
+        "b": 241.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 376.05,
+        "t": 315.83,
+        "r": 406.53,
+        "b": 325.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shkand Gumānīg Wizār",
+      "bbox": {
+        "l": 68.46,
+        "t": 327.83,
+        "r": 157.3,
+        "b": 337.58
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "I.16.5 What can we know about Zoroastrian scholarship  before the 3rd/9th century?",
+      "bbox": {
+        "l": 118.59,
+        "t": 394.24,
+        "r": 315.89,
+        "b": 393.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shkand Gumānīg Wizār",
+      "bbox": {
+        "l": 173.71,
+        "t": 435.8,
+        "r": 265.14,
+        "b": 445.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 90.0,
+        "t": 459.81,
+        "r": 120.48,
+        "b": 469.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēn­kard",
+      "bbox": {
+        "l": 414.88,
+        "t": 471.81,
+        "r": 83.6,
+        "b": 469.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "nērōg ī mēnōyīg/paydāgīhēnīdārīh <ī> gētīyīg",
+      "bbox": {
+        "l": 158.6,
+        "t": 507.82,
+        "r": 324.39,
+        "b": 517.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mēnōg/gētīg",
+      "bbox": {
+        "l": 391.43,
+        "t": 519.82,
+        "r": 436.2,
+        "b": 529.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Bundahishn",
+      "bbox": {
+        "l": 243.35,
+        "t": 543.82,
+        "r": 285.07,
+        "b": 553.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Greater Bundahishn",
+      "bbox": {
+        "l": 332.21,
+        "t": 543.82,
+        "r": 405.54,
+        "b": 553.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Iranian Bundahishn",
+      "bbox": {
+        "l": 408.75,
+        "t": 555.83,
+        "r": 110.18,
+        "b": 553.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Indian Bundahishn",
+      "bbox": {
+        "l": 146.12,
+        "t": 555.83,
+        "r": 212.84,
+        "b": 565.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Greater Bundahishn",
+      "bbox": {
+        "l": 407.82,
+        "t": 567.83,
+        "r": 110.18,
+        "b": 565.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 195.64,
+        "t": 579.83,
+        "r": 228.48,
+        "b": 589.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Indian Bundahishn",
+      "bbox": {
+        "l": 266.62,
+        "t": 579.83,
+        "r": 334.25,
+        "b": 589.58
+      }
+    }
+  ],
+  "8": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zand",
+      "bbox": {
+        "l": 374.43,
+        "t": 111.81,
+        "r": 393.65,
+        "b": 121.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Pahlavi Vīdēvdād",
+      "bbox": {
+        "l": 399.35,
+        "t": 123.81,
+        "r": 92.81,
+        "b": 121.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Hērbedestān/Nērangestān",
+      "bbox": {
+        "l": 99.0,
+        "t": 123.81,
+        "r": 186.54,
+        "b": 133.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pahlavi Yasna",
+      "bbox": {
+        "l": 62.62,
+        "t": 135.81,
+        "r": 110.98,
+        "b": 145.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pahlavi Zand-e Khorde Avesta",
+      "bbox": {
+        "l": 116.19,
+        "t": 135.81,
+        "r": 223.28,
+        "b": 145.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zand",
+      "bbox": {
+        "l": 241.9,
+        "t": 147.81,
+        "r": 263.73,
+        "b": 157.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Mādayān ī Hazār Dādestān",
+      "bbox": {
+        "l": 202.97,
+        "t": 159.82,
+        "r": 298.8,
+        "b": 169.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shāyest-nē- shāyest",
+      "bbox": {
+        "l": 303.32,
+        "t": 159.82,
+        "r": 368.57,
+        "b": 169.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Zand ī Fragard ī Juddēwdād",
+      "bbox": {
+        "l": 373.2,
+        "t": 171.82,
+        "r": 102.28,
+        "b": 169.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Wizirgard ī dēnīg",
+      "bbox": {
+        "l": 305.74,
+        "t": 183.82,
+        "r": 366.65,
+        "b": 193.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "wisdom literature",
+      "bbox": {
+        "l": 91.63,
+        "t": 255.83,
+        "r": 151.4,
+        "b": 265.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Handarz",
+      "bbox": {
+        "l": 158.25,
+        "t": 255.83,
+        "r": 189.93,
+        "b": 265.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "khrad",
+      "bbox": {
+        "l": 337.5,
+        "t": 303.84,
+        "r": 357.11,
+        "b": 313.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 59.77,
+        "t": 315.85,
+        "r": 90.25,
+        "b": 325.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pahlavi Text",
+      "bbox": {
+        "l": 193.32,
+        "t": 315.85,
+        "r": 238.34,
+        "b": 325.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Handarz",
+      "bbox": {
+        "l": 293.32,
+        "t": 327.85,
+        "r": 327.72,
+        "b": 337.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Wehzād Farrokh Pērōz",
+      "bbox": {
+        "l": 340.95,
+        "t": 327.85,
+        "r": 427.47,
+        "b": 337.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Brih-Nask",
+      "bbox": {
+        "l": 200.56,
+        "t": 351.85,
+        "r": 238.38,
+        "b": 361.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 244.16,
+        "t": 351.85,
+        "r": 274.64,
+        "b": 361.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "handarz",
+      "bbox": {
+        "l": 346.63,
+        "t": 351.85,
+        "r": 375.37,
+        "b": 361.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "āsn <ud> srūd khrad",
+      "bbox": {
+        "l": 59.77,
+        "t": 363.85,
+        "r": 133.98,
+        "b": 373.6
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Gnomes",
+      "bbox": {
+        "l": 349.59,
+        "t": 399.86,
+        "r": 378.54,
+        "b": 409.61
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Wāzagīhā",
+      "bbox": {
+        "l": 383.76,
+        "t": 399.86,
+        "r": 419.34,
+        "b": 409.61
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Zand ī Wahman Yasn",
+      "bbox": {
+        "l": 290.09,
+        "t": 411.86,
+        "r": 368.32,
+        "b": 421.61
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shāyest-nē-shāyest",
+      "bbox": {
+        "l": 70.09,
+        "t": 435.87,
+        "r": 134.71,
+        "b": 445.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 70.32,
+        "t": 447.87,
+        "r": 100.8,
+        "b": 457.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Shāyest-nē-shāyest",
+      "bbox": {
+        "l": 131.24,
+        "t": 447.87,
+        "r": 195.86,
+        "b": 457.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dēnkard",
+      "bbox": {
+        "l": 278.0,
+        "t": 447.87,
+        "r": 308.47,
+        "b": 457.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Handarz",
+      "bbox": {
+        "l": 59.77,
+        "t": 519.88,
+        "r": 91.46,
+        "b": 529.63
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Bibliography Sources",
+      "bbox": {
+        "l": 212.26,
+        "t": 582.24,
+        "r": 261.61,
+        "b": 569.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arda Viraf Nama-ye Manzum e Zartusht Bahram e Pazhdo",
+      "bbox": {
+        "l": 128.44,
+        "t": 598.57,
+        "r": 324.07,
+        "b": 607.32
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Book of the Mainyo-i-Khard, also an Old Fragment of the Bundehesh",
+      "bbox": {
+        "l": 144.52,
+        "t": 618.57,
+        "r": 377.79,
+        "b": 627.32
+      }
+    }
+  ],
+  "9": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zand-Ākāsīh. Iranian or Greater Bundahišn. Transliteration and Translation in English",
+      "bbox": {
+        "l": 151.99,
+        "t": 63.87,
+        "r": 431.15,
+        "b": 72.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Bûndahishn. Being a Facsimile of the TD Manuscript No.2 Brought from Persia by Dastur Tîrandâz and Now Preserved in the Late Ervad Tahmuras’ Library",
+      "bbox": {
+        "l": 178.17,
+        "t": 93.87,
+        "r": 350.82,
+        "b": 92.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zend-Avesta: Ouvrage de Zoroastre I-II",
+      "bbox": {
+        "l": 194.18,
+        "t": 113.88,
+        "r": 321.38,
+        "b": 122.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Historia animalium",
+      "bbox": {
+        "l": 178.64,
+        "t": 123.88,
+        "r": 240.31,
+        "b": 132.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Selections from Codices K7 and K25 (Vispered and Frahang I Pahlavīk) and Tracings of the Avesta Codex K1",
+      "bbox": {
+        "l": 165.45,
+        "t": 153.88,
+        "r": 157.2,
+        "b": 152.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Codices Avestici et Pahlavici Bibliothecae Universitatis Hafniensis XII",
+      "bbox": {
+        "l": 162.18,
+        "t": 153.88,
+        "r": 379.7,
+        "b": 162.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Collected Sanskrit Writings of the Parsis: Old Translations of Avestâ and Pahl­avi-Pâzend Books as Well as Other Original Compositions; with Various Readings and Notes",
+      "bbox": {
+        "l": 184.98,
+        "t": 183.89,
+        "r": 373.86,
+        "b": 182.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Commentaire sur le Yaçna l’un des livres lithurgiques des Parses",
+      "bbox": {
+        "l": 134.61,
+        "t": 203.89,
+        "r": 332.78,
+        "b": 212.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Zand ī Wahman Yasn. A Zoroastrian Apocalypse",
+      "bbox": {
+        "l": 136.67,
+        "t": 213.89,
+        "r": 305.99,
+        "b": 222.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "An 18th Century Account of Parsi History. The Qesse-ye Zartoštiān-e Hendustān",
+      "bbox": {
+        "l": 210.24,
+        "t": 243.89,
+        "r": 114.73,
+        "b": 242.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Gajastak Abālish. Pahlavi Text with Transliteration, English Translation, Notes and Glossary",
+      "bbox": {
+        "l": 139.28,
+        "t": 253.89,
+        "r": 431.19,
+        "b": 262.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Pahlavi Codices K20 & K20b. Containing Ardāgh Vīrāz-Nāmagh, Bundahishn, etc",
+      "bbox": {
+        "l": 146.95,
+        "t": 273.9,
+        "r": 431.16,
+        "b": 282.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Codices Avestici et Pahlavici Bibliothecae Universitatis Hafniensis",
+      "bbox": {
+        "l": 118.73,
+        "t": 283.9,
+        "r": 330.61,
+        "b": 292.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Pahlavi Codex K 43. First part. Containing a Fragment of the Great Bundahishn, the Dādhastān ī Mēnōghēkhradh, some Parts of the Dēnkard, and the Vahman Yasht",
+      "bbox": {
+        "l": 160.69,
+        "t": 313.9,
+        "r": 341.85,
+        "b": 312.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Codices Avestici et Pahlavici Bibliothecae Universitatis Hafniensis",
+      "bbox": {
+        "l": 346.5,
+        "t": 323.9,
+        "r": 193.85,
+        "b": 322.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Avesta Codex K5. Containing the Yasna with Its Pahlavi Translation and Commentary",
+      "bbox": {
+        "l": 183.8,
+        "t": 343.91,
+        "r": 121.43,
+        "b": 342.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "3 Parts. With an Introduction by K. Barr",
+      "bbox": {
+        "l": 126.7,
+        "t": 343.91,
+        "r": 261.12,
+        "b": 352.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Codices Avestici et Pahlavici Bibliothecae Universitatis Hafniensis",
+      "bbox": {
+        "l": 303.93,
+        "t": 353.91,
+        "r": 154.77,
+        "b": 352.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Avesta codices K 3a, K 3b and K 1, containing portions of the Venidad with its Pahlavi translation and commentary. 2, Containing the facsimile of K 1 (Vendidad chapters 9.1–22.26 and the colophon)",
+      "bbox": {
+        "l": 169.9,
+        "t": 383.91,
+        "r": 121.33,
+        "b": 372.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Codices Avestici et Pahlavici Bibliothecae Universitatis Hafniensis",
+      "bbox": {
+        "l": 126.39,
+        "t": 383.91,
+        "r": 332.72,
+        "b": 392.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Le Zend-Avesta. Traduction nouvelle avec commentaire historique et philologique",
+      "bbox": {
+        "l": 176.23,
+        "t": 403.91,
+        "r": 431.2,
+        "b": 412.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Une apologétique mazdéenne du 9. siecle. Škand-Gumānīk vičār. La solution décisive des doutes. Texte Pazend-pehlevi transcrit, traduit et commenté",
+      "bbox": {
+        "l": 145.56,
+        "t": 433.92,
+        "r": 266.53,
+        "b": 432.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Persian Rivayats of Hormazyar Framarz and Others. Their version with Introduction and Notes",
+      "bbox": {
+        "l": 154.69,
+        "t": 463.92,
+        "r": 112.52,
+        "b": 462.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Francisci Arretini ad Pium Pont. Maximum in Diogenes Epistolas Proe­mium",
+      "bbox": {
+        "l": 206.65,
+        "t": 483.92,
+        "r": 98.51,
+        "b": 482.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Dēnkart. A Pahlavi Text. Facsimile Edition of the Manuscript B of the K. R. Cama Oriental Institute Bombay",
+      "bbox": {
+        "l": 142.03,
+        "t": 503.93,
+        "r": 133.95,
+        "b": 502.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Parsi Religion",
+      "bbox": {
+        "l": 371.86,
+        "t": 513.93,
+        "r": 431.21,
+        "b": 522.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Kisseh-i Sanjan",
+      "bbox": {
+        "l": 142.39,
+        "t": 533.93,
+        "r": 192.5,
+        "b": 542.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Avesta. The Sacred Books of the Parsis.",
+      "bbox": {
+        "l": 167.09,
+        "t": 543.93,
+        "r": 291.41,
+        "b": 552.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Yasna",
+      "bbox": {
+        "l": 317.76,
+        "t": 543.93,
+        "r": 336.21,
+        "b": 552.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Vispered and Khorda Avesta",
+      "bbox": {
+        "l": 392.63,
+        "t": 553.93,
+        "r": 127.15,
+        "b": 552.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Vendīdād",
+      "bbox": {
+        "l": 186.42,
+        "t": 553.93,
+        "r": 215.92,
+        "b": 562.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Hippocrates",
+      "bbox": {
+        "l": 299.53,
+        "t": 563.93,
+        "r": 335.46,
+        "b": 572.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Vendidād. Avesta Text with Pahlavi Translation and Commentary, and Glossarial Index",
+      "bbox": {
+        "l": 142.69,
+        "t": 583.94,
+        "r": 430.99,
+        "b": 592.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Texts",
+      "bbox": {
+        "l": 261.03,
+        "t": 593.94,
+        "r": 294.71,
+        "b": 602.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arda Viraf Nameh. The Original Pahlavi Text with an Introduction, Notes, Gujarati Trans­lation, and Persian Version of Zartosht Behram in Verse",
+      "bbox": {
+        "l": 144.73,
+        "t": 623.94,
+        "r": 255.89,
+        "b": 622.69
+      }
+    }
+  ],
+  "10": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Shikand-Gûmânîk Vijâr. The Pazand-Sanskrit Text Together with a Fragment of the Pahlavi",
+      "bbox": {
+        "l": 208.34,
+        "t": 73.87,
+        "r": 146.44,
+        "b": 72.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Pahlavi Texts",
+      "bbox": {
+        "l": 154.25,
+        "t": 83.87,
+        "r": 212.71,
+        "b": 92.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Khorda Avesta and Yăst Codex E1. Facsimile edition",
+      "bbox": {
+        "l": 189.95,
+        "t": 103.88,
+        "r": 379.17,
+        "b": 112.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Rechtskasuistik und Gerichtspraxis zu Beginn des siebenten Jahrhunderts in Iran. Die Rechts­sammlung des Farroḫmard i Wahrāmān",
+      "bbox": {
+        "l": 127.75,
+        "t": 135.91,
+        "r": 195.43,
+        "b": 132.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Le troisième livre du Dēnkart. Traduit du pehlevi",
+      "bbox": {
+        "l": 133.81,
+        "t": 143.87,
+        "r": 287.72,
+        "b": 152.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Ancient Manuscript of the Yasna with its Pahlavi Translation (A.D. 1323), Generally Quoted as J2 (Bodleian Library/Oxford)",
+      "bbox": {
+        "l": 128.22,
+        "t": 163.87,
+        "r": 200.34,
+        "b": 162.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Qisseh-i Zartûshtiân-i Hindûstân va Bayān-i Âtash Behrâm-i Naosari",
+      "bbox": {
+        "l": 118.43,
+        "t": 173.88,
+        "r": 339.37,
+        "b": 182.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pausanias’ Description of Greece",
+      "bbox": {
+        "l": 254.18,
+        "t": 193.88,
+        "r": 354.83,
+        "b": 202.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Kisse-i Sanjân",
+      "bbox": {
+        "l": 141.93,
+        "t": 213.88,
+        "r": 188.03,
+        "b": 222.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Book of Zoroaster Zarātusht Nāma by Zartusht Bahrâm Son of Pajdû",
+      "bbox": {
+        "l": 132.4,
+        "t": 223.88,
+        "r": 369.77,
+        "b": 232.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Dînkard. The Original Pahlavi Text; the Same Transliterated in Zend Characters; Translations of the Text in the Gujarati and English Languages; a Commentary and a Glossary of Select Terms",
+      "bbox": {
+        "l": 143.32,
+        "t": 253.89,
+        "r": 422.56,
+        "b": 252.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Kârnâmê î Artakhshîr î Pâpakân, being the Oldest Surviving Records of the Zoroastrian Emperor Ardashîr Bâbakân, the Founder of the Sâsânian Dynasty in Irân. The Original Pahlavi Text edited for the first time with a Transliteration in Roman Characters, Translations into the English and Gujerati Languages, with Explanatory and Philological Notes, an Introduction, and Appendix",
+      "bbox": {
+        "l": 122.16,
+        "t": 303.89,
+        "r": 303.35,
+        "b": 282.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Wisdom of the Sasanian Sages. (Dēnkard VI) by Aturpāt-i Ēmētān",
+      "bbox": {
+        "l": 124.84,
+        "t": 323.89,
+        "r": 353.74,
+        "b": 332.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Šāyast-nē-šayast. A Pahlavi Text on Religious Customs, Edited, Transliterated and Translated with Introduction and Notes",
+      "bbox": {
+        "l": 129.85,
+        "t": 353.9,
+        "r": 159.67,
+        "b": 352.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Dârâb Hormazyâr’s Rivâyat",
+      "bbox": {
+        "l": 146.56,
+        "t": 363.9,
+        "r": 235.88,
+        "b": 372.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Collection of Colophons of Manuscripts Bearing on Zoroastrianism in some Libraries of Europe",
+      "bbox": {
+        "l": 129.13,
+        "t": 383.9,
+        "r": 422.54,
+        "b": 392.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Book of the Mainyō-i-Khard or the Spirit of Wisdom. The Pazand and Sanskrit Texts as Arranged in the Fifteenth Century by Neriosengh Dhaval. Edited in Roman Characters from Various Manuscripts, with an English Translation, an Introduction, Notes, a Glossary of the Pazand Text, with Sanskrit, Persian and Pahlavi Equivalents, and a Sketch of Pazand Grammar",
+      "bbox": {
+        "l": 125.61,
+        "t": 433.91,
+        "r": 245.52,
+        "b": 412.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "India Antiquary",
+      "bbox": {
+        "l": 259.02,
+        "t": 443.91,
+        "r": 310.09,
+        "b": 452.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "India Antiquary",
+      "bbox": {
+        "l": 336.08,
+        "t": 453.91,
+        "r": 386.53,
+        "b": 462.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pahlavi Texts",
+      "bbox": {
+        "l": 129.09,
+        "t": 463.91,
+        "r": 171.75,
+        "b": 472.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "The Dādistān-ī Dīnīk and the Epistles of Mānūśkīhar",
+      "bbox": {
+        "l": 201.92,
+        "t": 463.91,
+        "r": 373.01,
+        "b": 472.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pahlavi Texts",
+      "bbox": {
+        "l": 127.18,
+        "t": 483.91,
+        "r": 170.35,
+        "b": 492.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Dīnā-ī Maīnög-ī Khirad, Sikand-Gümānīk Vigār, Sad Dar",
+      "bbox": {
+        "l": 202.04,
+        "t": 483.91,
+        "r": 394.42,
+        "b": 492.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zendavesta or the Religious Books of the Zoroastrians",
+      "bbox": {
+        "l": 170.91,
+        "t": 503.92,
+        "r": 340.57,
+        "b": 512.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Zend Texts",
+      "bbox": {
+        "l": 370.9,
+        "t": 503.92,
+        "r": 422.51,
+        "b": 512.67
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Research literature",
+      "bbox": {
+        "l": 199.91,
+        "t": 547.54,
+        "r": 287.05,
+        "b": 558.54
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "Āmūzgār, Ž. 1989. “Bahrām Paždū,” in",
+      "bbox": {
+        "l": 59.77,
+        "t": 563.87,
+        "r": 198.26,
+        "b": 572.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "eIr",
+      "bbox": {
+        "l": 198.26,
+        "t": 563.87,
+        "r": 206.47,
+        "b": 572.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zoroastrian Problems in the Ninth-Century Books",
+      "bbox": {
+        "l": 130.01,
+        "t": 573.87,
+        "r": 288.84,
+        "b": 582.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Die Zendhandschriften der K. Hof- und Staatsbibliothek in München",
+      "bbox": {
+        "l": 149.13,
+        "t": 583.87,
+        "r": 387.54,
+        "b": 592.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zur Kenntnis der mitteliranischen Mundarten III",
+      "bbox": {
+        "l": 141.61,
+        "t": 603.88,
+        "r": 295.44,
+        "b": 612.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Handbuch der Orientalistik",
+      "bbox": {
+        "l": 228.12,
+        "t": 613.88,
+        "r": 314.11,
+        "b": 622.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "A History of Zoroastrianism",
+      "bbox": {
+        "l": 120.24,
+        "t": 623.88,
+        "r": 209.39,
+        "b": 632.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Early Period",
+      "bbox": {
+        "l": 239.38,
+        "t": 623.88,
+        "r": 293.94,
+        "b": 632.63
+      }
+    }
+  ],
+  "11": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zoroastrians. Their Religious Beliefs and Practices",
+      "bbox": {
+        "l": 128.93,
+        "t": 63.87,
+        "r": 284.9,
+        "b": 72.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "A History of Zoroastrianism",
+      "bbox": {
+        "l": 128.93,
+        "t": 73.87,
+        "r": 218.07,
+        "b": 82.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Under the Achaemenians",
+      "bbox": {
+        "l": 248.07,
+        "t": 73.87,
+        "r": 326.58,
+        "b": 82.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "A History of Zoroastrianism",
+      "bbox": {
+        "l": 185.69,
+        "t": 83.87,
+        "r": 277.54,
+        "b": 92.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zoroastrianism under Macedonian and Roman Rule",
+      "bbox": {
+        "l": 310.24,
+        "t": 93.87,
+        "r": 121.26,
+        "b": 92.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "A Literary History of Persia",
+      "bbox": {
+        "l": 143.6,
+        "t": 103.88,
+        "r": 232.39,
+        "b": 112.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "From the Earliest Times Until Firdousí",
+      "bbox": {
+        "l": 263.0,
+        "t": 103.88,
+        "r": 387.25,
+        "b": 112.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Studien zur Pahlavi-Übersetzung des Avesta",
+      "bbox": {
+        "l": 132.82,
+        "t": 123.88,
+        "r": 273.33,
+        "b": 132.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Studia Iranica",
+      "bbox": {
+        "l": 80.45,
+        "t": 143.88,
+        "r": 124.1,
+        "b": 152.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "La Letteratura Pahlavi. Introduzione ai testi con riferimento alla storia degli studi e alla tradizione manoscritta",
+      "bbox": {
+        "l": 136.05,
+        "t": 163.88,
+        "r": 115.3,
+        "b": 162.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 415.81,
+        "t": 173.88,
+        "r": 428.84,
+        "b": 182.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Varia Iranica",
+      "bbox": {
+        "l": 96.01,
+        "t": 183.89,
+        "r": 135.82,
+        "b": 192.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Religious Texts in Iranian Languages",
+      "bbox": {
+        "l": 168.45,
+        "t": 203.89,
+        "r": 285.04,
+        "b": 212.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Symposium Held in Copenhagen May 2002",
+      "bbox": {
+        "l": 289.72,
+        "t": 203.89,
+        "r": 431.2,
+        "b": 212.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "eIr",
+      "bbox": {
+        "l": 251.3,
+        "t": 223.89,
+        "r": 259.51,
+        "b": 232.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Iranier – Aramäer – Hebräer – Hellenen. Iranische Religionen und ihre Westbeziehungen. Einzelstudien und Versuch einer Zusammenschau",
+      "bbox": {
+        "l": 333.77,
+        "t": 253.89,
+        "r": 431.2,
+        "b": 252.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Cambridge History of Iran",
+      "bbox": {
+        "l": 384.6,
+        "t": 283.9,
+        "r": 126.42,
+        "b": 282.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Period from the Arab Invasion to the Saljuks",
+      "bbox": {
+        "l": 155.66,
+        "t": 283.9,
+        "r": 308.32,
+        "b": 292.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Cambridge History of Iran",
+      "bbox": {
+        "l": 330.52,
+        "t": 303.9,
+        "r": 431.22,
+        "b": 312.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Seleucid, Parthian and Sasanid Periods",
+      "bbox": {
+        "l": 112.3,
+        "t": 313.9,
+        "r": 250.05,
+        "b": 322.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Sir J. J. Zarthoshti Madressa Centenary Volume",
+      "bbox": {
+        "l": 231.32,
+        "t": 323.9,
+        "r": 381.35,
+        "b": 332.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Grundriss der Iranischen Phi­lologie",
+      "bbox": {
+        "l": 340.74,
+        "t": 353.91,
+        "r": 99.78,
+        "b": 352.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "La controverse religioeuse et ses forms",
+      "bbox": {
+        "l": 357.25,
+        "t": 373.91,
+        "r": 115.52,
+        "b": 372.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Khwadāynāmag. The Middle Persian Book of Kings.",
+      "bbox": {
+        "l": 158.47,
+        "t": 383.91,
+        "r": 324.79,
+        "b": 392.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Studies in Parsi History",
+      "bbox": {
+        "l": 145.4,
+        "t": 393.91,
+        "r": 220.22,
+        "b": 402.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Ātaš-e dorun. The Fire Within. Jamshid Soroush Soroushian Memorial Volume 2",
+      "bbox": {
+        "l": 121.43,
+        "t": 413.91,
+        "r": 380.08,
+        "b": 422.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Persia, Past and Present",
+      "bbox": {
+        "l": 152.49,
+        "t": 433.92,
+        "r": 227.82,
+        "b": 442.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Transmission of the Avesta",
+      "bbox": {
+        "l": 93.37,
+        "t": 453.92,
+        "r": 191.79,
+        "b": 462.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Oriental Treasures Being a Condensed Tabular Descriptive Statement of Over a Thousand Manuscripts and of Their Colophons Written in Iranian and Indian Languages and Lying in Private Libraries of Parsis in Different Centres of Gujarat",
+      "bbox": {
+        "l": 139.83,
+        "t": 483.92,
+        "r": 198.39,
+        "b": 472.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "History of Iranian Literature",
+      "bbox": {
+        "l": 409.95,
+        "t": 503.93,
+        "r": 143.22,
+        "b": 502.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Zand ī Fragard ī Juddēvdād",
+      "bbox": {
+        "l": 201.4,
+        "t": 513.93,
+        "r": 292.5,
+        "b": 522.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Ancient and Middle Iranian Studies. Proceedings of the 6th European Conference of Iranian Studies, Held in Vienna, 18–22 September 2007",
+      "bbox": {
+        "l": 171.15,
+        "t": 533.93,
+        "r": 263.37,
+        "b": 532.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Didaktisches Erzählen. Formen Literarischer Belehrung in Orient und Okzident (Interd­isziplinäre Tagung Berlin 9./10. Oktober 2009)",
+      "bbox": {
+        "l": 153.63,
+        "t": 563.93,
+        "r": 235.05,
+        "b": 562.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Estudios de Iran y Turan",
+      "bbox": {
+        "l": 406.92,
+        "t": 583.94,
+        "r": 129.67,
+        "b": 582.68
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Quarterly Journal of Language and Inscription. Dedicated to Professor Mansour Shaki",
+      "bbox": {
+        "l": 97.06,
+        "t": 603.94,
+        "r": 365.46,
+        "b": 612.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Iran and the Caucasus",
+      "bbox": {
+        "l": 361.29,
+        "t": 613.94,
+        "r": 431.24,
+        "b": 622.69
+      }
+    }
+  ],
+  "12": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "A Thousand Judgements",
+      "bbox": {
+        "l": 258.38,
+        "t": 73.87,
+        "r": 336.81,
+        "b": 82.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Festschrift Maria Macuch",
+      "bbox": {
+        "l": 342.1,
+        "t": 73.87,
+        "r": 422.49,
+        "b": 82.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Quand les dualistes polémiquaient Zoroastriens et Manichéen",
+      "bbox": {
+        "l": 197.86,
+        "t": 103.88,
+        "r": 390.15,
+        "b": 112.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": ", Actes du colloque international, 12–13 juin 2015, Collège de France",
+      "bbox": {
+        "l": 392.79,
+        "t": 113.88,
+        "r": 259.85,
+        "b": 112.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Religious Plurality and lnterreligious Contacts in the Middle Ages",
+      "bbox": {
+        "l": 273.53,
+        "t": 143.88,
+        "r": 123.16,
+        "b": 142.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Imaging the End: Visions of Apocalypse from the Ancient Middle East to Modern America",
+      "bbox": {
+        "l": 87.42,
+        "t": 193.89,
+        "r": 372.62,
+        "b": 202.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Literature of Pre-Islamic Iran. Companion Volume 1 to A History of Persian Literature",
+      "bbox": {
+        "l": 338.61,
+        "t": 223.89,
+        "r": 259.9,
+        "b": 222.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Early Islamic Iran",
+      "bbox": {
+        "l": 71.78,
+        "t": 243.89,
+        "r": 127.75,
+        "b": 252.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Idea of Iran",
+      "bbox": {
+        "l": 132.83,
+        "t": 243.89,
+        "r": 169.06,
+        "b": 252.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Das iranische Nationalepos",
+      "bbox": {
+        "l": 125.55,
+        "t": 253.89,
+        "r": 210.26,
+        "b": 262.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "A Manual of Pahlavi",
+      "bbox": {
+        "l": 131.18,
+        "t": 263.9,
+        "r": 196.77,
+        "b": 272.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Ideograms, Glossary, Abbreviations, Index, Grammatical Survey, Corrigenda to Part 1",
+      "bbox": {
+        "l": 225.3,
+        "t": 273.9,
+        "r": 137.13,
+        "b": 272.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "ZDMG",
+      "bbox": {
+        "l": 159.67,
+        "t": 293.9,
+        "r": 186.65,
+        "b": 302.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Iranische Beiträge I",
+      "bbox": {
+        "l": 140.27,
+        "t": 303.9,
+        "r": 199.75,
+        "b": 312.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Iranica Antiqua",
+      "bbox": {
+        "l": 326.46,
+        "t": 313.9,
+        "r": 375.49,
+        "b": 322.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Archiv Orientálni",
+      "bbox": {
+        "l": 354.04,
+        "t": 323.9,
+        "r": 410.72,
+        "b": 332.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Denkart",
+      "bbox": {
+        "l": 321.34,
+        "t": 343.91,
+        "r": 347.49,
+        "b": 352.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Archiv Orientálni",
+      "bbox": {
+        "l": 354.82,
+        "t": 343.91,
+        "r": 411.1,
+        "b": 352.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Iran ancien: Actes du XXIXe Congrès international",
+      "bbox": {
+        "l": 412.08,
+        "t": 373.87,
+        "r": 218.46,
+        "b": 372.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Archiv Orientálni",
+      "bbox": {
+        "l": 368.3,
+        "t": 383.87,
+        "r": 427.16,
+        "b": 392.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "eIr",
+      "bbox": {
+        "l": 170.07,
+        "t": 403.88,
+        "r": 178.28,
+        "b": 412.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "eIr",
+      "bbox": {
+        "l": 249.65,
+        "t": 413.88,
+        "r": 257.86,
+        "b": 422.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "eIr",
+      "bbox": {
+        "l": 266.24,
+        "t": 423.88,
+        "r": 274.45,
+        "b": 432.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Kratylos",
+      "bbox": {
+        "l": 208.03,
+        "t": 443.88,
+        "r": 234.19,
+        "b": 452.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Die Medizin des Zādsparam. Anatomie, Physiologie und Psychologie in den Wizīdagīhā ī Zād­sparam, einer zoroastrisch-mittelperischen Anthologie aus dem frühislamischen Iran des neunten Jahrhunderts",
+      "bbox": {
+        "l": 113.8,
+        "t": 463.88,
+        "r": 422.51,
+        "b": 462.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Einleitung in die traditionellen Schriften der Parsen. 2 Teile",
+      "bbox": {
+        "l": 154.76,
+        "t": 483.89,
+        "r": 338.21,
+        "b": 492.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Die Religion Zarathushtras. Geschichte – Gegenwart – Rituale",
+      "bbox": {
+        "l": 133.45,
+        "t": 503.89,
+        "r": 335.83,
+        "b": 512.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Die Religion Zarathushtras. Geschichte – Gegenwart – Rituale",
+      "bbox": {
+        "l": 128.52,
+        "t": 523.89,
+        "r": 317.91,
+        "b": 532.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Soziale Typenbegriffe im alten Griechenland VII",
+      "bbox": {
+        "l": 182.62,
+        "t": 543.89,
+        "r": 333.03,
+        "b": 552.64
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "et al",
+      "bbox": {
+        "l": 191.55,
+        "t": 573.9,
+        "r": 204.82,
+        "b": 582.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Augustine and Manichaeism in the Latin West",
+      "bbox": {
+        "l": 227.36,
+        "t": 573.9,
+        "r": 374.07,
+        "b": 582.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Zabān-i Pahlawī adabīyāt wa dastūr-i ān",
+      "bbox": {
+        "l": 148.65,
+        "t": 593.9,
+        "r": 277.82,
+        "b": 602.65
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ". Tehran: Tihrān Nashr-i Muʿīn. Tafażżoli, A. 1982. “Abāliš,” in",
+      "bbox": {
+        "l": 277.82,
+        "t": 603.87,
+        "r": 168.66,
+        "b": 602.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "eIr",
+      "bbox": {
+        "l": 168.66,
+        "t": 603.87,
+        "r": 176.87,
+        "b": 612.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Review",
+      "bbox": {
+        "l": 133.68,
+        "t": 613.87,
+        "r": 156.74,
+        "b": 622.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Orientalistische Literaturzeitung",
+      "bbox": {
+        "l": 376.89,
+        "t": 623.87,
+        "r": 121.84,
+        "b": 622.62
+      }
+    }
+  ],
+  "13": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "ZDMG",
+      "bbox": {
+        "l": 329.39,
+        "t": 63.87,
+        "r": 356.37,
+        "b": 72.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Die mittelpersische Sprache und Literatur der Zarathustrier",
+      "bbox": {
+        "l": 138.52,
+        "t": 73.87,
+        "r": 321.35,
+        "b": 82.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "The Persian Revāyats. A Bibliographic Reconnaissance",
+      "bbox": {
+        "l": 136.5,
+        "t": 83.87,
+        "r": 306.08,
+        "b": 92.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Grundriss der Iranischen Philologie",
+      "bbox": {
+        "l": 355.09,
+        "t": 113.88,
+        "r": 110.81,
+        "b": 112.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Die Religionen Irans",
+      "bbox": {
+        "l": 145.01,
+        "t": 123.88,
+        "r": 210.24,
+        "b": 132.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Zoroastrian Myth of Migration from Iran and Settlement in the Indian Diaspora. Text, Translation and Analysis of the 16th Century Qesse-ye Sanjān ‘The Story of Sanjan’",
+      "bbox": {
+        "l": 137.84,
+        "t": 143.88,
+        "r": 350.75,
+        "b": 142.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zurvan. A Zoroastrian Dilemma",
+      "bbox": {
+        "l": 146.3,
+        "t": 153.88,
+        "r": 251.14,
+        "b": 162.63
+      }
+    }
+  ]
+}

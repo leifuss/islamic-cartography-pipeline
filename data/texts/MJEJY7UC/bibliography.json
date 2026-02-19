@@ -1,0 +1,38 @@
+{
+  "key": "MJEJY7UC",
+  "title": "Die Überlieferung der ältesten arabischen Handschrift von Pseudo-Aristoteles 'De Mundo'",
+  "refs": [
+    {"id": "1", "raw": "Stern, S. M. (1964). The Arabic Translations of the Pseudo-Aristotelian treatise De Mundo. Le Muséon 77: 187-204.", "authors": ["Stern, S. M."], "year": "1964", "title": "The Arabic Translations of the Pseudo-Aristotelian treatise De Mundo", "venue": "Le Muséon 77", "pages": "187-204"},
+    {"id": "2", "raw": "Walzer, R. (1962). Greek into Arabic. [Oxford: Bruno Cassirer], p. 139f.", "authors": ["Walzer, R."], "year": "1962", "title": "Greek into Arabic", "venue": "[Oxford: Bruno Cassirer]", "pages": "139"},
+    {"id": "3", "raw": "Stern, S. M. (1965). The Third Arabic Translation of the Pseudo-Aristotelian Treatise De Mundo. Le Muséon 78: 381-393.", "authors": ["Stern, S. M."], "year": "1965", "title": "The Third Arabic Translation of the Pseudo-Aristotelian Treatise De Mundo", "venue": "Le Muséon 78", "pages": "381-393"},
+    {"id": "4", "raw": "de Lagarde, P. (1858; repr. 1967). Analecta Syriaca. [Leipzig], pp. 134-158.", "authors": ["de Lagarde, P."], "year": "1858", "title": "Analecta Syriaca", "venue": "[Leipzig]", "pages": "134-158"},
+    {"id": "5", "raw": "Baumstark, A. (1922). Geschichte der Syrischen Literatur. [Bonn: A. Marcus und E. Weber], p. 168.", "authors": ["Baumstark, A."], "year": "1922", "title": "Geschichte der Syrischen Literatur", "venue": "[Bonn: A. Marcus und E. Weber]", "pages": "168"},
+    {"id": "6", "raw": "Lorimer, W. L. (1924). The Text Tradition of Pseudo-Aristotle De Mundo. [Oxford], pp. 48,17f.", "authors": ["Lorimer, W. L."], "year": "1924", "title": "The Text Tradition of Pseudo-Aristotle De Mundo", "venue": "[Oxford]", "pages": "48"},
+    {"id": "7", "raw": "Lorimer, W. L. (1925). Some Notes on the Text of Pseudo-Aristotle De Mundo. [Oxford], pp. 74-78.", "authors": ["Lorimer, W. L."], "year": "1925", "title": "Some Notes on the Text of Pseudo-Aristotle De Mundo", "venue": "[Oxford]", "pages": "74-78"},
+    {"id": "8", "raw": "Bergsträsser, G. (1913). Hunain ibn Ishaq und seine Schule. [Leiden: Brill].", "authors": ["Bergsträsser, G."], "year": "1913", "title": "Hunain ibn Ishaq und seine Schule", "venue": "[Leiden: Brill]", "pages": ""},
+    {"id": "9", "raw": "Corbin, H. (ed.) (1961). Trilogie Ismaélienne. Tehran/Paris: Département d'Iranologie de l'Institut Franco-Iranien, p. 107.", "authors": ["Corbin, H."], "year": "1961", "title": "Trilogie Ismaélienne", "venue": "Tehran/Paris: Département d'Iranologie de l'Institut Franco-Iranien", "pages": "107"},
+    {"id": "10", "raw": "Mehren, M. A. F. (ed.) (1866). [al-Dimashqī, Shams al-Dīn, Kitāb Nukhbat al-dahr fī ʿajāʾib al-barr wa-l-baḥr]. p. 9.", "authors": ["Mehren, M. A. F."], "year": "1866", "title": "[al-Dimashqī cosmographic work, Nukhbat al-dahr]", "venue": "", "pages": "9"},
+    {"id": "11", "raw": "Festugière, P. (1949). La Révélation d'Hermès Trismégiste. Vol. 2. Paris: Gabalda, pp. 460ff.", "authors": ["Festugière, P."], "year": "1949", "title": "La Révélation d'Hermès Trismégiste", "venue": "Paris: Gabalda", "pages": "460"}
+  ],
+  "citations": [
+    {"page": 1, "marker": "1", "context": "S. M. Stern hat an dieser Stelle eine sehr gründliche Studie über die arabischen Übersetzungen von «De mundo» veröffentlicht"},
+    {"page": 1, "marker": "2", "context": "R. Walzer hat diese Handschrift beschrieben in: R. Walzer, Greek into Arabic, 1962, S. 139f."},
+    {"page": 1, "marker": "3", "context": "S. M. Stern, a.a.O., S. 193"},
+    {"page": 2, "marker": "4", "context": "In einer später veröffentlichten Studie zog Stern einen dritten Textzeugen heran"},
+    {"page": 2, "marker": "5", "context": "es scheint, daß unsere Übersetzung, wie die beiden anderen, aus dem Syrischen hergestellt worden ist"},
+    {"page": 2, "marker": "6", "context": "das Prooemium der arabischen Übersetzung hat nichts mit demjenigen der syrischen Version gemeinsam"},
+    {"page": 4, "marker": "7", "context": "W. L. Lorimer, The Text Tradition of Pseudo-Aristotle De Mundo, 1924, S. 48,17f."},
+    {"page": 4, "marker": "8", "context": "Lorimer, Some Notes on the Text of Pseudo-Aristotle De Mundo, 1925, S. 75-78"},
+    {"page": 4, "marker": "9", "context": "Lorimer (1925), S. 74f."},
+    {"page": 5, "marker": "10", "context": "Vgl. G. Bergsträsser, Hunain ibn Ishaq und seine Schule, 1913, passim"},
+    {"page": 5, "marker": "11", "context": "Ed. H. Corbin, Trilogie Ismaélienne, 1961, S. 107"},
+    {"page": 5, "marker": "12", "context": "ed. M. A. F. Mehren, 1866, S. 9, wo es natürlich «muhh» und nicht «muḥḥ» heißen muß"},
+    {"page": 6, "marker": "13", "context": "P. Festugière, La Révélation d'Hermès Trismégiste, Bd. 2 (1949), S. 460 ff. und die dort angegebene Literatur"}
+  ],
+  "summary": {
+    "abstract": "This short article in German by Felix Klein-Franke investigates the transmission history of the oldest Arabic manuscript of Pseudo-Aristotle's De Mundo, housed in Istanbul as MS Köprülü 1608 (fols. 182b–189b), part of Hunain ibn Ishaq's Nawādir al-falāsifa collection. Through textual comparison of variant readings against the Greek, Syriac, and other Arabic manuscript traditions, the author argues that this translation was made directly from a Greek exemplar—not from a Syriac intermediary as previously assumed by S. M. Stern. The article also concludes that Hunain ibn Ishaq was not himself the translator, based on stylistic evidence, vocabulary, and the late-8th-/early-9th-century dating of the translation.",
+    "contents": [
+      {"heading": "Die Überlieferung der ältesten arabischen Handschrift von Pseudo-Aristoteles 'De Mundo'", "page": 1}
+    ]
+  }
+}

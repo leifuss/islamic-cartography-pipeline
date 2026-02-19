@@ -1,0 +1,106 @@
+120
+CHAPTER SIX
+PTOLEMY
+1. FROM THE GREEK INTO ARABIC AND
+FROM ARABIC INTO LATIN
+The Optics of Ptolemy was first published in Latin by Gilberto
+Govi in 1885,¹ but it remained unknown to historians of art
+and perspective until 1957, when Decio Gioseffi mentioned it
+for the first time.² However, this scholar limited his analysis to
+just a few lines of paragraph 4 of book III, a paragraph that will
+also be analyzed in this chapter. From that point on, Ptolemy's
+Optics has not, as far as I know, been taken into consideration
+by historians of art and perspective.
+The principal reason that scholars have abstained from
+studying Ptolemy's Optics is especially because of the diffi-
+culty of the Latin language in which the work has come down
+to us. The admiral Eugenius of Sicily, who lived in the second
+half of the twelfth century at the court of the Norman kings in
+Palermo, translated Ptolemy's Optics from Arabic into Latin; the
+Arabic version was, in its turn, a translation from the Greek, the
+language in which Ptolemy, living in the first half of the second
+century A.D., had written the work. Govi was the first to rightly
+underscore that the Latin is quite often obscure because it was a
+literal translation from Arabic and that the geometric concepts
+https://doi.org/10.1017/CBO9781139198905.007 Published online by Cambridge University Press
+
+PTOLEMY
+are often improper as a result of the translator's ignorance of
+the correct expressions needed to be able to translate them from
+Arabic into Latin. There is no known documentation regarding
+the existence of the Arabic text from which the Latin is derived,
+nor is there any information regarding the original Greek text
+from which the Arabic is derived.
+These same difficulties of interpretation were expressed by
+Albert Lejeune,³ who spoke of a translation of a translation,
+such that it could discourage any reader in good faith, and by
+A. Mark Smith, who spoke of a text difficult to penetrate, being
+so tortuous and confused that it is often incomprehensible.5
+Again, it is worth noting that both Lejeune and Smith, in
+providing their first translations in French and in English, took
+upon themselves an onerous task, not unlike that of paleogra-
+phers, when these scholars attempt to decipher deep layers of
+a palimpsest. For this reason, Lejeune and Smith were forced
+to adhere scrupulously to an exegetic reconstruction of a very
+difficult text.
+My task, however, has been first of all to take a look at the
+entire reconstructed work of the Ptolemaic text by Lejeune
+and Smith, then successively to go beyond it in an attempt to
+specifically illustrate some passages of the Optics with draw-
+ings, and finally to compare them in modern terms with the
+geometric theories of representation."
+Let us begin with Sermo Tertius De Opticis Tholomei, that is to
+say "The Third Speech on the Optics of Ptolemy" - also known
+as "The Third Book (or Sermon)" on the Optics, according to
+how we prefer to translate the Latin word Sermo naturally
+limiting our attention to an analysis of flat mirrors only.
+2. THE THREE PRINCIPLES RELATIVE
+TO THE SCIENCE OF MIRRORS
+We begin with paragraph 3:
+Since, therefore, in every field in which one turns to science
+there is the necessity of a number of general principles, that is
+https://doi.org/10.1017/CBO9781139198905.007 Published online by Cambridge University Press
+@
+121
+
+122
+PERSPECTIVe in VisuaL CULTURE OF CLASSICAL ANTIQUITY
+to say, how the objects place themselves, in an unfailing and
+indisputable manner, in front of us, effectively as well as cor-
+rectly, from the demonstrations of which one can make deduc-
+tions, we must say that the principles that one requires for
+the science of mirrors are specifically three, and that these are
+primary elements of knowledge that are possible to learn by
+oneself. The first [principle] is that by which one recognizes
+that the objects, which can be seen in mirrors, appear in con-
+formity with the direction of the visual ray, which falls upon
+the objects by means of its own reflection. This [reflection]
+is verified in conformity with the position of the pupil with
+respect to the mirror. The second [principle], without a doubt,
+is that by which one recognizes that the single [points] that
+one sees in the mirrors appear on the perpendicular line that
+falls from the object that is seen onto the surface of the mir-
+ror and penetrates it. The third [principle], instead, is that by
+which one recognizes that the position of the bent ray, which
+is found between the pupil and the mirror and between the
+mirror and the thing that is to be seen, is such that each of
+these two [segments] arrives at the point in respect to which
+the break occurs, while they contain, parting from the mirror,
+angles equal with the perpendicular line that exits from the
+very same point.⁹
+Here the general principles relative to the science of flat
+mirrors are described, and it is specified that they are pri-
+mary notions that one can verify by oneself. The first thing
+that stands out as evident is that the mirrors constitute a
+field in which one may turn to science. This is an authentic
+invitation to experimental verification as to how objects are
+distributed in front of us in an unfailing and indisputable
+manner.
+In order to better illustrate and render visible what we have
+to say (Fig. 83), we begin by assigning:
+a. A vertical flat mirror
+b. The position O of our pupil, or of our eye, which orthogo-
+nally fixes the mirror at point O' (the principal point)
+c. The real object
+d. The reflected image of the real object
+https://doi.org/10.1017/CBO9781139198905.007 Published online by Cambridge University Press

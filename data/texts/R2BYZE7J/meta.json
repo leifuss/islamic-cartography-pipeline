@@ -1,0 +1,16 @@
+{
+  "key": "R2BYZE7J",
+  "title": "An Unknown Source of al-Khwārizmī’s Kitāb ṣūrat al-arḍ.",
+  "authors": "Straface; De Angelo; Manzo; Maróth",
+  "year": "2015",
+  "page_count": 14,
+  "confidence": 0.9,
+  "method": "docling",
+  "do_ocr": true,
+  "extracted_at": "2026-02-19T04:16:06",
+  "chars_per_page": 2511.4,
+  "pua_ratio": 0.0,
+  "replacement_ratio": 0.0,
+  "empty_pages": 0,
+  "text_quality": "good"
+}

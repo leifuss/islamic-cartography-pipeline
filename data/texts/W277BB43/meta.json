@@ -1,0 +1,16 @@
+{
+  "key": "W277BB43",
+  "title": "Le roman épistolaire classique conservé dans la version de Salim Ab l-'Ala",
+  "authors": "Grignaschi",
+  "year": "1967",
+  "page_count": 56,
+  "confidence": 0.9,
+  "method": "docling",
+  "do_ocr": true,
+  "extracted_at": "2026-02-18T16:13:56",
+  "chars_per_page": 2390.9,
+  "pua_ratio": 0.0,
+  "replacement_ratio": 0.0,
+  "empty_pages": 0,
+  "text_quality": "good"
+}

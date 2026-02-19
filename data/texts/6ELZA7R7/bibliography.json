@@ -1,0 +1,61 @@
+{
+  "key": "6ELZA7R7",
+  "title": "Three-Dimensional Astronomy: Celestial globes and armillary spheres",
+  "refs": [
+    {"id": "MS1", "raw": "MS Istanbul, Süleymaniye Library, Hamidiye 1453, fols 103b-123a.", "authors": [], "year": "", "title": "MS Istanbul, Süleymaniye Library, Hamidiye 1453", "venue": "", "pages": "103b-123a"},
+    {"id": "MS2", "raw": "MS Istanbul, Süleymaniye Library, Nuruosmaniye 2971, fols 74b-102a.", "authors": [], "year": "", "title": "MS Istanbul, Süleymaniye Library, Nuruosmaniye 2971", "venue": "", "pages": "74b-102a"},
+    {"id": "MS3", "raw": "MS Istanbul, Topkapı Library, Hazine 452.", "authors": [], "year": "", "title": "MS Istanbul, Topkapı Library, Hazine 452", "venue": "", "pages": ""},
+    {"id": "MS4", "raw": "MS Oxford, Bodleian Library, Marsh 154.", "authors": [], "year": "", "title": "MS Oxford, Bodleian Library, Marsh 154", "venue": "", "pages": ""},
+    {"id": "MS5", "raw": "MS Paris, BnF, Arabe 5036.", "authors": [], "year": "", "title": "MS Paris, BnF, Arabe 5036", "venue": "", "pages": ""},
+    {"id": "1", "raw": "Brentjes, S. 2008. 'Courtly Patronage of the Ancient Sciences in Post-Classical Islamic Societies,' Al-Qanṭara 29.2: 403-36.", "authors": ["Brentjes, S."], "year": "2008", "title": "Courtly Patronage of the Ancient Sciences in Post-Classical Islamic Societies", "venue": "Al-Qanṭara 29(2)", "pages": "403-36"},
+    {"id": "2", "raw": "Brentjes, S. 2015. 'Sanctioning Knowledge,' Al-Qanṭara 35.1: 277-309.", "authors": ["Brentjes, S."], "year": "2015", "title": "Sanctioning Knowledge", "venue": "Al-Qanṭara 35(1)", "pages": "277-309"},
+    {"id": "3", "raw": "Dekker, E. 1999. Globes at Greenwich: A Catalogue of the Globes and Armillary Spheres in the National Maritime Museum, Greenwich. New York: Oxford University Press.", "authors": ["Dekker, E."], "year": "1999", "title": "Globes at Greenwich: A Catalogue of the Globes and Armillary Spheres in the National Maritime Museum, Greenwich", "venue": "New York: Oxford University Press", "pages": ""},
+    {"id": "4", "raw": "Dekker, E. 2012. Illustrating the Phaenomena. Oxford: Oxford University Press. http://doi.org/10.1093/acprof:oso/9780199609697.003.0004", "authors": ["Dekker, E."], "year": "2012", "title": "Illustrating the Phaenomena", "venue": "Oxford: Oxford University Press", "pages": ""},
+    {"id": "5", "raw": "Dekker, E. and Kunitzsch, P. 2008. 'An Early Islamic Tradition in Globe Making,' ZGAIW 18: 155-211.", "authors": ["Dekker, E.", "Kunitzsch, P."], "year": "2008", "title": "An Early Islamic Tradition in Globe Making", "venue": "ZGAIW 18", "pages": "155-211"},
+    {"id": "6", "raw": "Evans, J. 1998. The History and Practice of Ancient Astronomy. Oxford: Oxford University Press.", "authors": ["Evans, J."], "year": "1998", "title": "The History and Practice of Ancient Astronomy", "venue": "Oxford: Oxford University Press", "pages": ""},
+    {"id": "7", "raw": "Gillispie, C. C. ed. 1981. Dictionary of Scientific Biography. New York: Charles Scribner's Sons.", "authors": ["Gillispie, C. C."], "year": "1981", "title": "Dictionary of Scientific Biography", "venue": "New York: Charles Scribner's Sons", "pages": ""},
+    {"id": "8", "raw": "Kennedy, E. S. 1961. 'Al-Kāshī's Treatise on Astronomical Observational Instruments,' Journal of Near Eastern Studies 20.2: 98-108.", "authors": ["Kennedy, E. S."], "year": "1961", "title": "Al-Kāshī's Treatise on Astronomical Observational Instruments", "venue": "Journal of Near Eastern Studies 20(2)", "pages": "98-108"},
+    {"id": "9", "raw": "Kunitzsch, P. 1959. Arabische Sternnamen In Europa. Wiesbaden: Otto Harrassowitz.", "authors": ["Kunitzsch, P."], "year": "1959", "title": "Arabische Sternnamen In Europa", "venue": "Wiesbaden: Otto Harrassowitz", "pages": ""},
+    {"id": "10", "raw": "Samsó, J. 2015. 'Qusṭa ibn Lūqā and Alfonso X on the celestial globe,' Suhayl 5: 63-79.", "authors": ["Samsó, J."], "year": "2015", "title": "Qusṭa ibn Lūqā and Alfonso X on the celestial globe", "venue": "Suhayl 5", "pages": "63-79"},
+    {"id": "11", "raw": "Sarma, S. R. 2019. A Descriptive Catalogue of Indian Astronomical Instruments. Edmonton: University of Alberta, Canada. https://srsarma.in/catalogue.php", "authors": ["Sarma, S. R."], "year": "2019", "title": "A Descriptive Catalogue of Indian Astronomical Instruments", "venue": "Edmonton: University of Alberta, Canada", "pages": ""},
+    {"id": "12", "raw": "Savage-Smith, E. 1985. Islamicate Celestial Globes: Their History, Construction, and Use, with a Chapter on Iconography by Andrea P. A. Belloli. Washington, DC: Smithsonian Institution Press.", "authors": ["Savage-Smith, E."], "year": "1985", "title": "Islamicate Celestial Globes: Their History, Construction, and Use", "venue": "Washington, DC: Smithsonian Institution Press", "pages": ""},
+    {"id": "13", "raw": "Savage-Smith, E. 1990-1991. 'The Classification of Islamic Celestial Globes in the Light of Recent Evidence,' Der Globusfreund 38-9: 23-9.", "authors": ["Savage-Smith, E."], "year": "1990", "title": "The Classification of Islamic Celestial Globes in the Light of Recent Evidence", "venue": "Der Globusfreund 38-9", "pages": "23-9"},
+    {"id": "14", "raw": "Savage-Smith, E. 1992. 'Celestial Mapping,' in GTISAS [CB], 12-70.", "authors": ["Savage-Smith, E."], "year": "1992", "title": "Celestial Mapping", "venue": "GTISAS", "pages": "12-70"},
+    {"id": "15", "raw": "Savage-Smith, E. 1997. 'Islamic Celestial Globes and Related Instruments,' in Maddison, F. and Savage-Smith, E., eds. Science, Tools and Magic, Part One: Body and Spirit, Mapping the Universe (Khalili Collection XII). London and Oxford: Nour Foundation, Azimuth Editions, Oxford University Press, 168-84.", "authors": ["Savage-Smith, E.", "Maddison, F."], "year": "1997", "title": "Islamic Celestial Globes and Related Instruments", "venue": "Science, Tools and Magic, Part One (Khalili Collection XII). London and Oxford: Nour Foundation, Azimuth Editions, Oxford University Press", "pages": "168-84"},
+    {"id": "16", "raw": "Worrel, W. H. 1944. 'Qusta ibn Luqa on the Use of the Celestial Globe,' Isis 35.4: 285-93.", "authors": ["Worrel, W. H."], "year": "1944", "title": "Qusta ibn Luqa on the Use of the Celestial Globe", "venue": "Isis 35(4)", "pages": "285-93"}
+  ],
+  "citations": [
+    {"page": 1, "marker": "Savage-Smith 1990-1991", "context": "for a comprehensive description and a list of surviving celestial globes, see Savage-Smith 1990-1991"},
+    {"page": 1, "marker": "Charette 2006, 123-38", "context": "For more on their purpose see Charette (2006, 123-38)"},
+    {"page": 1, "marker": "Brentjes 2008, 403-36", "context": "and for more on the patronage, see Brentjes (2008, 403-36)"},
+    {"page": 2, "marker": "Savage-Smith 1985, 83-6", "context": "this usually required plugs on the body to cover the hole required in the casting process (Savage-Smith 1985, 83-6)"},
+    {"page": 2, "marker": "Savage-Smith 1985, 61-2", "context": "The third group contains specimens that carry only the great circles but no stars (Savage-Smith 1985, 61-2)"},
+    {"page": 2, "marker": "Ptolemy 1998[CB], 404-7", "context": "Ptolemy describes a globe with a rotatable ecliptic ring (Ptolemy 1998[CB], 404-7)"},
+    {"page": 2, "marker": "al-Battānī 1977[CB], 210-13", "context": "Al-Battānī introduced a globe called an egg (bayḍa)...with five rings (al-Battānī 1977[CB], 210-13 [fols 142a-44b])"},
+    {"page": 3, "marker": "al-Battānī 1977, 210-13", "context": "where he proposed the egg (al-Battānī 1977, 210-13 [fols 142a-44b])"},
+    {"page": 3, "marker": "Charette 2003", "context": "For more on Marrākushī's work, see Charette (2003)"},
+    {"page": 4, "marker": "Evans 1998, 85-87", "context": "For examples of its use, see Evans (1998, 85-87)"},
+    {"page": 4, "marker": "Dekker 2012, 29-47", "context": "he adds 12° 42′ to the longitude of each star...occasionally changes some of the values (Dekker 2012, 29-47)"},
+    {"page": 5, "marker": "Samsó 2015, 68-72", "context": "For more details, see Samsó (2015, 68-72)"},
+    {"page": 7, "marker": "Sarma 2019", "context": "Of the astrolabes and globes they produced, 134 and 33, respectively, are extant (Sarma 2019)"},
+    {"page": 9, "marker": "Sarma 2019, 3261-80", "context": "only very few late examples survive from the 12th/18th and the 13th/19th centuries (Sarma 2019, 3261-80)"},
+    {"page": 10, "marker": "Kennedy 1961, 100", "context": "mentions an armillary sphere with seven rings that were employed in the observations (Kennedy 1961, 100)"},
+    {"page": 10, "marker": "Ptolemy 1998, 217-18", "context": "Ptolemy introduces an armillary sphere with six rings, as follows (Ptolemy 1998, 217-18)"}
+  ],
+  "summary": {
+    "abstract": "This chapter examines two three-dimensional astronomical instruments in the Islamicate world: celestial globes and armillary spheres. Celestial globes, of which over 200 survive, were used for astronomical observations, calculations, and demonstrations, with their construction influenced by the star catalogues of al-Ṣūfī and the theoretical works of Ptolemy and al-Battānī. The globe-making tradition flourished over a millennium, peaking in Mughal India, especially through the Lahore workshop of the Allāhdād family during the 11th/17th century. Armillary spheres, by contrast, were primarily used for observations in the Islamicate world, constructed as large as possible within major observatory complexes at Baghdad, Damascus, Maragha, and Samarqand. Both instrument types bear evidence of scholarly transmission, patronage networks, and the social institutionalization of astronomy from the 2nd/8th through the 13th/19th centuries.",
+    "contents": [
+      {"heading": "THREE-DIMENSIONAL ASTRONOMY / Celestial globes and armillary spheres", "page": 1},
+      {"heading": "IV.2.1 Celestial globes", "page": 1},
+      {"heading": "IV.2.1.1 Instructions for globe making", "page": 3},
+      {"heading": "IV.2.1.2 Uses of celestial globes", "page": 5},
+      {"heading": "IV.2.1.3 A profile of the globe-making tradition", "page": 6},
+      {"heading": "IV.2.2 Armillary spheres", "page": 8},
+      {"heading": "IV.2.2.1 The construction of an armillary sphere", "page": 8},
+      {"heading": "IV.2.2.2 The use of the armillary sphere", "page": 10},
+      {"heading": "IV.2.3 Conclusion", "page": 11},
+      {"heading": "Notes", "page": 12},
+      {"heading": "Bibliography", "page": 12}
+    ]
+  }
+}

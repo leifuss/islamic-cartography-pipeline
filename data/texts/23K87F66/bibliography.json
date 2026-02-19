@@ -1,0 +1,46 @@
+{
+  "key": "23K87F66",
+  "title": "Description of the Earth in the Works of Arabic Geographers from IX to XII Century",
+  "refs": [
+    {"id": "1", "raw": "Al-Idrisi: Kitab Nuzhat al-Musqat fi Ihtiraq al-Afaq, Bejrut 1989.", "authors": ["Al-Idrisi"], "year": "1989", "title": "Kitab Nuzhat al-Musqat fi Ihtiraq al-Afaq", "venue": "Bejrut", "pages": ""},
+    {"id": "2", "raw": "Al-Istakhri: Via regnorum, descriptio ditionis moslemicae, in: BGA, ed. De Goeje, Lugduni-Batavorum (Leiden), 1870.", "authors": ["Al-Istakhri", "De Goeje"], "year": "1870", "title": "Via regnorum, descriptio ditionis moslemicae", "venue": "BGA. Leiden", "pages": ""},
+    {"id": "3", "raw": "Al-Masudi: Kitāb at-Tanbih Wa'l-Ischrāb in: BGA, ed. De Goeje, Lugduni-Batavorum (Leiden) 1894.", "authors": ["Al-Masudi", "De Goeje"], "year": "1894", "title": "Kitāb at-Tanbih Wa'l-Ischrāb", "venue": "BGA. Leiden", "pages": ""},
+    {"id": "4", "raw": "Al-Masudi: Murūj adh-dhahab wa ma'ādin al-jawāhir, Beirut 2005.", "authors": ["Al-Masudi"], "year": "2005", "title": "Murūj adh-dhahab wa ma'ādin al-jawāhir", "venue": "Beirut", "pages": ""},
+    {"id": "5", "raw": "Bagrow, L.: Die geschichte der kartographie, Berlin 1951.", "authors": ["Bagrow, L."], "year": "1951", "title": "Die geschichte der kartographie", "venue": "Berlin", "pages": ""},
+    {"id": "6", "raw": "Brockelmann, C.: Geschichte der arabischen Litteratur, Leipzig 1909.", "authors": ["Brockelmann, C."], "year": "1909", "title": "Geschichte der arabischen Litteratur", "venue": "Leipzig", "pages": ""},
+    {"id": "7", "raw": "Brockelmann, C.: Semitistik, Leiden 1954.", "authors": ["Brockelmann, C."], "year": "1954", "title": "Semitistik", "venue": "Leiden", "pages": ""},
+    {"id": "8", "raw": "Cuntz, O.: Die geographie des Ptolemaeus, Berlin 1923.", "authors": ["Cuntz, O."], "year": "1923", "title": "Die geographie des Ptolemaeus", "venue": "Berlin", "pages": ""},
+    {"id": "9", "raw": "The Encyclopedia of Islam, vol. VII, ed. C.E. Bosworth, E. Van Donzel, W.P. Heinrichs, Ch. Pellat, Leiden - New York 1993.", "authors": ["Bosworth, C.E.", "Van Donzel, E.", "Heinrichs, W.P.", "Pellat, Ch."], "year": "1993", "title": "The Encyclopedia of Islam, vol. VII", "venue": "Leiden - New York", "pages": ""},
+    {"id": "10", "raw": "The Encyclopedia of Islam, vol. VI, ed. C.E. Bosworth, E. van Donzel, B. Lewis, Ch. Pellat, Leiden 1991.", "authors": ["Bosworth, C.E.", "van Donzel, E.", "Lewis, B.", "Pellat, Ch."], "year": "1991", "title": "The Encyclopedia of Islam, vol. VI", "venue": "Leiden", "pages": ""},
+    {"id": "11", "raw": "The Encyclopedia of Islam, vol. III, ed. B. Lewis, V.L. Ménage, Ch. Pellat, J. Schacht, Leiden, London 1986.", "authors": ["Lewis, B.", "Ménage, V.L.", "Pellat, Ch.", "Schacht, J."], "year": "1986", "title": "The Encyclopedia of Islam, vol. III", "venue": "Leiden, London", "pages": ""},
+    {"id": "12", "raw": "Gibb, H. A. R.: Arabic Literature, Oxford 1963.", "authors": ["Gibb, H. A. R."], "year": "1963", "title": "Arabic Literature", "venue": "Oxford", "pages": ""},
+    {"id": "13", "raw": "Ibn Haukal: Via et regna, descriptio ditionis moslemicae, in: BGA, ed. De Goeje, Lugduni-Batavorum (Leiden), 1897.", "authors": ["Ibn Haukal", "De Goeje"], "year": "1897", "title": "Via et regna, descriptio ditionis moslemicae", "venue": "BGA. Leiden", "pages": ""},
+    {"id": "14", "raw": "Ibn Rosteh: Kitab al-a'lāk An-Nafisa VII, in: BGA, ed. De Goeje, Lugduni-Batavorum (Leiden) 1892.", "authors": ["Ibn Rosteh", "De Goeje"], "year": "1892", "title": "Kitab al-a'lāk An-Nafisa VII", "venue": "BGA. Leiden", "pages": ""},
+    {"id": "15", "raw": "Leithauser, J. G.: Mappae mundi, Berlin 1958.", "authors": ["Leithauser, J. G."], "year": "1958", "title": "Mappae mundi", "venue": "Berlin", "pages": ""},
+    {"id": "16", "raw": "Pellat, C.: Langue et littérature Arabes, Paris 1970.", "authors": ["Pellat, C."], "year": "1970", "title": "Langue et littérature Arabes", "venue": "Paris", "pages": ""},
+    {"id": "17", "raw": "Tolmacheva, M.: The Medieval Arabic Geographers and the Beginings of Modern Orientalism, International Journal of Middle East Studies, Vol. 27, No. 2. (May, 1995), pp. 141-156.", "authors": ["Tolmacheva, M."], "year": "1995", "title": "The Medieval Arabic Geographers and the Beginings of Modern Orientalism", "venue": "International Journal of Middle East Studies 27(2)", "pages": "141-156"},
+    {"id": "18", "raw": "Wiet, G.: Introduction a la littérature arabe, Paris 1966.", "authors": ["Wiet, G."], "year": "1966", "title": "Introduction a la littérature arabe", "venue": "Paris", "pages": ""}
+  ],
+  "citations": [
+    {"page": 1, "marker": "1", "context": "Ibn Rosteh... is a Persian geographer who wrote in Arabic. 1 In his work Kitab ala'lak An-Nafisa VII"},
+    {"page": 1, "marker": "2", "context": "he gave a particularly beautiful description of Constantinople, Byzantine provinces, the land of Slavs, Bulgars, Russians and Khazars. 2"},
+    {"page": 2, "marker": "3", "context": "published it under his name in 976/7 under the title Al-Masalik w'al-Mamalik... 3"},
+    {"page": 2, "marker": "4", "context": "Ibn Haukal was the best representative of geographers that wrote on the basis of their own trips and direct observations. 4"},
+    {"page": 2, "marker": "5", "context": "With this map he gave a description of Kiev, mentioned the road of Volga Bulgars and Khazars. 5"},
+    {"page": 2, "marker": "6", "context": "Al-Masudi... has introduced a thematic method of writing by Arabs. 6"},
+    {"page": 2, "marker": "7", "context": "Instead of writing about events in chronological order, he has grouped them around dynasties, kings and nations. 7"},
+    {"page": 3, "marker": "8", "context": "Akhbar az-zaman (History of time) in thirty volumes, but there is only one that is preserved in Vienna. 8"},
+    {"page": 3, "marker": "9", "context": "Muruj adh-dhahab wa ma'adin al-jawahir (Golden meadows and mines of precious stones). 9"},
+    {"page": 3, "marker": "10", "context": "He was famous geographer and cartographer on the court of Norman king Roger II of Sicily... 10"},
+    {"page": 3, "marker": "11", "context": "His work Kitab nuzhat al-musqat fi ihtiraq al-afaq was ordered by the king. 11"},
+    {"page": 3, "marker": "12", "context": "His book was the first geographical work edited in Europe in 1154., under the title Kitab nuzhat al-Musqat... 12"},
+    {"page": 5, "marker": "13", "context": "by the order of the king. 13"}
+  ],
+  "summary": {
+    "abstract": "This article surveys five major Arabic geographers from the 9th to 12th centuries—Ibn Rosteh, al-Istakhri, Ibn Haukal, al-Masudi, and al-Idrisi—and their contributions to describing the shape, size, and peoples of the Earth. The Arabic geographical tradition drew on Greek astronomical knowledge, particularly Ptolemy's cartographic framework, while developing distinctive world maps that divided the known world into seven climatic zones. Al-Masudi's historical-geographical synthesis and al-Idrisi's Tabula Rogeriana, created for the Norman king Roger II of Sicily, represent high points of the tradition. The medieval Arabic astronomers preserved Greek knowledge during the European Dark Ages and made original contributions to cartographic method.",
+    "contents": [
+      {"heading": "DESCRIPTION OF THE EARTH IN THE WORKS OF ARABIC GEOGRAPHERS FROM IX TO XII CENTURY", "page": 1},
+      {"heading": "Bibliography", "page": 5}
+    ]
+  }
+}

@@ -1,0 +1,656 @@
+{
+  "1": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Rapid #: -21368416",
+      "bbox": {
+        "l": 30.0,
+        "t": 75.23,
+        "r": 209.98,
+        "b": 95.23
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "4649252260007446",
+      "bbox": {
+        "l": 150.0,
+        "t": 115.16,
+        "r": 274.54,
+        "b": 129.16
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "UUM (University of Utah) :: Marriott Library",
+      "bbox": {
+        "l": 150.0,
+        "t": 143.16,
+        "r": 435.24,
+        "b": 157.16
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "EZ9 (University of Exeter) :: Electronic",
+      "bbox": {
+        "l": 150.0,
+        "t": 171.16,
+        "r": 404.94,
+        "b": 185.16
+      }
+    }
+  ],
+  "2": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "en",
+      "bbox": {
+        "l": 46.56,
+        "t": 279.74,
+        "r": 55.02,
+        "b": 293.74
+      }
+    }
+  ],
+  "3": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "TheArabicTranslati0n80/thePseudo-AristoteliantreatiseDeMundo,LtMuawn",
+      "bbox": {
+        "l": 80.4,
+        "t": 470.73,
+        "r": 50.16,
+        "b": 468.17
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "I",
+      "bbox": {
+        "l": 24.72,
+        "t": 483.86,
+        "r": 27.39,
+        "b": 488.86
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "GreekintoArabic,",
+      "bbox": {
+        "l": 259.92,
+        "t": 481.53,
+        "r": 322.1,
+        "b": 489.53
+      }
+    }
+  ],
+  "4": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "TheThirdArabicTranslation01thePseudo·AristotelianTreatiseDeMundo,LeMuseon",
+      "bbox": {
+        "l": 49.44,
+        "t": 521.25,
+        "r": 52.21,
+        "b": 518.45
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "AnaleaaSyriaca,",
+      "bbox": {
+        "l": 94.08,
+        "t": 542.61,
+        "r": 153.4,
+        "b": 550.61
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "GeechichiederSyrischenLiteratur,",
+      "bbox": {
+        "l": 42.0,
+        "t": 553.41,
+        "r": 157.62,
+        "b": 561.41
+      }
+    }
+  ],
+  "5": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": ",:r",
+      "bbox": {
+        "l": 192.48,
+        "t": 110.57,
+        "r": 202.26,
+        "b": 121.57
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": ",:r~~",
+      "bbox": {
+        "l": 251.28,
+        "t": 130.73,
+        "r": 312.18,
+        "b": 141.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "desMitleids(",
+      "bbox": {
+        "l": 75.12,
+        "t": 187.06,
+        "r": 132.12,
+        "b": 196.06
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "warm.",
+      "bbox": {
+        "l": 192.24,
+        "t": 287.24,
+        "r": 213.39,
+        "b": 294.24
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "aA.€€£v6s,",
+      "bbox": {
+        "l": 15.6,
+        "t": 329.86,
+        "r": 48.0,
+        "b": 338.86
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "xaAata£",
+      "bbox": {
+        "l": 164.64,
+        "t": 355.78,
+        "r": 188.94,
+        "b": 364.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "gepriesen(",
+      "bbox": {
+        "l": 36.96,
+        "t": 425.21,
+        "r": 74.42,
+        "b": 433.21
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "IIoAAaK£S",
+      "bbox": {
+        "l": 36.96,
+        "t": 464.02,
+        "r": 70.17,
+        "b": 473.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "TWVU€AaWV",
+      "bbox": {
+        "l": 96.48,
+        "t": 464.02,
+        "r": 146.09,
+        "b": 473.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "p,evE7T£P,€V€£1TAdovaXp6vov,",
+      "bbox": {
+        "l": 169.2,
+        "t": 464.02,
+        "r": 286.49,
+        "b": 473.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "1Tapaxpfjp,aU",
+      "bbox": {
+        "l": 36.96,
+        "t": 477.22,
+        "r": 96.22,
+        "b": 486.22
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "vvV",
+      "bbox": {
+        "l": 111.36,
+        "t": 477.22,
+        "r": 127.81,
+        "b": 486.22
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "at,",
+      "bbox": {
+        "l": 136.8,
+        "t": 479.58,
+        "r": 149.35,
+        "b": 485.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "ufJ€VVVTa£",
+      "bbox": {
+        "l": 160.08,
+        "t": 551.14,
+        "r": 197.34,
+        "b": 560.14
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "U€fJ€Ta£",
+      "bbox": {
+        "l": 292.08,
+        "t": 551.14,
+        "r": 321.24,
+        "b": 560.14
+      }
+    }
+  ],
+  "6": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "da8Absperren(",
+      "bbox": {
+        "l": 312.0,
+        "t": 133.45,
+        "r": 78.02,
+        "b": 130.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "TOVTOtS7TOTUp,WVEKPOUt,",
+      "bbox": {
+        "l": 88.32,
+        "t": 170.1,
+        "r": 197.78,
+        "b": 179.1
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "v",
+      "bbox": {
+        "l": 257.04,
+        "t": 170.1,
+        "r": 260.44,
+        "b": 179.1
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "t",
+      "bbox": {
+        "l": 270.0,
+        "t": 170.1,
+        "r": 272.13,
+        "b": 179.1
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "U",
+      "bbox": {
+        "l": 288.48,
+        "t": 172.46,
+        "r": 293.29,
+        "b": 178.46
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "t",
+      "bbox": {
+        "l": 301.68,
+        "t": 170.1,
+        "r": 303.81,
+        "b": 179.1
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "dasA'ulwogen",
+      "bbox": {
+        "l": 196.56,
+        "t": 186.49,
+        "r": 245.15,
+        "b": 194.49
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Stuep6potsepwvu'is...p,tuvapp,ovtuv",
+      "bbox": {
+        "l": 234.96,
+        "t": 370.5,
+        "r": 70.04,
+        "b": 366.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "KepuvvvvTWV",
+      "bbox": {
+        "l": 120.0,
+        "t": 370.5,
+        "r": 165.04,
+        "b": 379.5
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "app,ovtu",
+      "bbox": {
+        "l": 34.08,
+        "t": 396.18,
+        "r": 60.64,
+        "b": 405.18
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "p,EVavayijv",
+      "bbox": {
+        "l": 84.96,
+        "t": 526.02,
+        "r": 136.33,
+        "b": 535.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "dvepevyop,Evo£S",
+      "bbox": {
+        "l": 244.08,
+        "t": 526.02,
+        "r": 297.82,
+        "b": 535.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "8cfAuuuuv",
+      "bbox": {
+        "l": 16.08,
+        "t": 538.74,
+        "r": 48.8,
+        "b": 547.74
+      }
+    }
+  ],
+  "7": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "(avaAtO'Kof'EVOS",
+      "bbox": {
+        "l": 152.88,
+        "t": 182.1,
+        "r": 204.89,
+        "b": 191.1
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "f'EO'T}V",
+      "bbox": {
+        "l": 240.96,
+        "t": 350.34,
+        "r": 265.3,
+        "b": 359.34
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "f'EO'OV,",
+      "bbox": {
+        "l": 296.88,
+        "t": 350.34,
+        "r": 321.33,
+        "b": 359.34
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "(f'EO'T}V),",
+      "bbox": {
+        "l": 290.88,
+        "t": 363.06,
+        "r": 321.4,
+        "b": 372.06
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "(f'EO'OV).",
+      "bbox": {
+        "l": 232.08,
+        "t": 375.78,
+        "r": 261.02,
+        "b": 384.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "TheTextTraditionofPaetulo.Ari8totle.DeMundo.,",
+      "bbox": {
+        "l": 89.76,
+        "t": 533.05,
+        "r": 263.06,
+        "b": 541.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "SomeNotesontheTextofPaeudo·Ari8totle.DeMundo.,",
+      "bbox": {
+        "l": 48.48,
+        "t": 543.85,
+        "r": 241.7,
+        "b": 551.85
+      }
+    }
+  ],
+  "8": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": ".:r~~",
+      "bbox": {
+        "l": 120.0,
+        "t": 481.82,
+        "r": 162.46,
+        "b": 496.82
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": ".~~cr:.:r.r-\"..J",
+      "bbox": {
+        "l": 215.52,
+        "t": 521.9,
+        "r": 315.35,
+        "b": 536.9
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "IJunainibnIslj,alpundseineSchule,",
+      "bbox": {
+        "l": 119.76,
+        "t": 541.85,
+        "r": 243.41,
+        "b": 549.85
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "pa8sim.",
+      "bbox": {
+        "l": 267.12,
+        "t": 541.85,
+        "r": 292.23,
+        "b": 549.85
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "TrilogieIsmaelienne.",
+      "bbox": {
+        "l": 93.12,
+        "t": 552.65,
+        "r": 163.3,
+        "b": 560.65
+      }
+    }
+  ],
+  "9": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "_DE",
+      "bbox": {
+        "l": 140.16,
+        "t": 13.61,
+        "r": 153.91,
+        "b": 21.61
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "LaRevelationd'HermeaTrismegiBte,",
+      "bbox": {
+        "l": 90.96,
+        "t": 541.85,
+        "r": 219.91,
+        "b": 549.85
+      }
+    }
+  ]
+}

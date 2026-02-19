@@ -1,0 +1,1418 @@
+{
+  "key": "MJEJY7UC",
+  "source_language": "de",
+  "target_language": "en",
+  "model": "claude-opus-4-5",
+  "translated_at": "2026-02-18T19:34:58+00:00",
+  "page_texts": {
+    "1": "Rapid #: -21368416 CROSS REF ID: 4649252260007446 LENDER: UUM (University of Utah) :: Marriott Library BORROWER: EZ9 (University of Exeter) :: Electronic TYPE: Article CC:CCL JOURNAL TITLE: Le Muséon USER JOURNAL TITLE: Le Museon ARTICLE TITLE: Die Überlieferung der ältesten arabischen Handschrift von Pseudo-Aristoteles 'De Mundo' ARTICLE AUTHOR: Felix Klein-Franke VOLUME: 87 ISSUE: MONTH: YEAR: 1974 PAGES: 59 - 65 ISSN: 0771-6494 OCLC #: Processed by RapidX: 10/3/2023 11:01:49 AM The copyright law of the United States (Title 17, United States Code) governs the making of photocopies or other reproductions of copyrighted materials. Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the photocopy or reproduction is not to be \"used for any purpose other than private study, scholarship, or research\". If a user makes a request for, or later uses, a photocopy or reproduction for purposes in excess of \"fair use\", that user may be liable for copyright infringement. This institution reserves the right to refuse to accept a copying order if, in its judgment, fulfillment of the order would involve violation of copyright law.",
+    "2": "October 3, 2023 Call #: ARC DS1 .M87 v.87 1974 Borrower: RAPID:EZ9 Notes: Lending String: Journal/Book Title: Le Muse6n Billing Category: Exempt Maxcost: Volume: 87 Issue: MonthlY ear: 1974 Pages: 59 - 65 Delivery Method: Send via Odyssey email: EMAIL: Article Author: Felix Klein-Franke Article Title: Die Oberlieferung der altesten arabischen Handschrift von Pseudo-Aristoteles 'De Mundo' Shipping Address: NEW: Electronic ILL Number: -21368416 1111111111111111111111111111111111111111111111111111111 lIll NOTICE WARNING CONCERNING COPYRIGHT RESTRICTIONS The copyright law of the United States [Title 17, United States Code] governs the making of photocopies or the other reproductions of copyrighted material. Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the reproduction is not to be used for any purpose other than private study, scholarship, or research. If a user makes a request for, or later uses, a photocopy or reproduction for purposes in excess of fair use, that use may be liable for copyright infringement. This institution reserves the right to refuse to accept a copying order if, in its judgment, fulfillment of the order would involve violation of copyright law. No further reproduction and distribution of this copy is permitted by transmission or any other means.",
+    "3": "THE TRANSMISSION OF THE OLDEST ARABIC MANUSCRIPT OF PSEUDO-ARISTOTLE'S «DE MUNDO»\n\nThe Arabic catalogues of Aristotelian writings by Ibn al-Nadīm (d. 990), Ibn al-Qifṭī (1172–1248), and Ibn Abī Uṣaybiʿa (1194–1269) contain a large number of works attributed to the Stagirite that were in all probability never actually known to the Arabs. Such titles derive from Syriac catalogues of writings and were incorporated into their own lists by the Arabic pinakographers for the sake of completeness. But the reverse case is also attested: that an Arabic translation of an Aristotelian work existed which was not mentioned by name in the Arabic catalogues. This applies to Ps.-Aristotle's De Mundo; for this work was not known to the Arabs as a separate treatise, but as part of an extensive correspondence between Aristotle and his pupil Alexander the Great, and was included among the letters of Aristotle. For this reason, the Arabic translations of De Mundo were recognised only very late, while the Syriac, Armenian and Latin versions had long been known.\n\nS. M. Stern published at this point a very thorough study of the Arabic translations of De mundo, which far beyond the scope of a text-critical investigation makes an important contribution to the literary tradition of the Arabic Alexander Romance 1. His study is based on two manuscripts: Istanbul, Fātiḥ 5323 (dated 1316/7) 2 and Princeton University, Yahuda 308. Both manuscripts go back to a Syriac translation; in the case of Ms. Princeton this is attested by a note in the colophon 3; regarding the Istanbul manuscript Stern established the proof through a comparison of the Syriac and Arabic versions with the Greek original.\n\n1 S. M. STERN, The Arabic Translations of the Pseudo-Aristotelian treatise De Mundo, Le Muséon 77 (1964), pp. 187–204.\nI R. Walzer described this manuscript in: R. WALZER, Greek into Arabic, 1962, pp. 139 f.\na S. M. STERN, op. cit., p. 193.",
+    "4": "In a subsequently published study 4 Stern adduced a third witness to the text. I came across this third Arabic manuscript independently of Stern's study, and in my examination of this manuscript arrived at conclusions that in part differ significantly from those of Stern. This oldest Arabic version of De mundo is found in the Istanbul manuscript Köprülü 1608, foll. 182b–189b, which contains the Nawādir al-falāsifa of Ḥunayn ibn Isḥāq. This once again confirms the suspicion that Ḥunayn ibn Isḥāq included in his collection chiefly pseudepigraphical works.\n\nStill under the impression of the first two manuscripts, Stern was inclined to assume that this third manuscript too had arisen from a Syriac intermediary translation. A spot check from the first page of the text confirmed him in this view: «A more detailed examination of the text would give a certain answer to the question (scil. whether the Arabic translation arose from a Syriac intermediary translation); it seems that our translation, like the other two, was made from the Syriac» 5. The Arabic translations that go back to a Syriac intermediary translation predominate in number over those Arabic versions that derive directly from the Greek original text. Those represent the normal case. All the more interesting are the rarer Arabic translations from the Greek. Their number is therefore much smaller, because only few Arabic translators were masters of Greek. It can be demonstrated, I believe, without doubt, that this third manuscript was translated directly from the Greek. It therefore gains greatly in significance, both for the Orientalist and for the Classical Philologist. In what follows I shall attempt to answer the question of the nature of the translation and its Vorlage, as well as whether Ḥunayn ibn Isḥāq (808–873), who included the text in his collection, is the possible translator.\n\nAgainst Stern's assumption an external consideration already speaks: the prooemium of the Arabic translation has nothing in common with that of the Syriac version 6. One could however object that there may have been other Syriac translations of De mundo\n\n4 Id., The Third Arabic Translation of the Pseudo-Aristotelian Treatise De Mundo, Le Muséon 78 (1965), pp. 381–393.\n5 Ibid., p. 387.\n6 P. DE LAGARDE, Analecta Syriaca, 1858 (repr. 1967), pp. 134–158; A. BAUMSTARK, Geschichte der syrischen Literatur, 1922, p. 168.",
+    "5": "that may have had a prooemium that served as the Vorlage for the Arabic version. Yet it can at least be established that the only known Syriac version is in no case the Vorlage of our Arabic rendering. But let us now turn to the text itself. Fol. 184a 13f. reads:\n\n* ~L,;. L,.2i (im Text lS~l) ~1.JrJI ,:r etl,W1 jJ ~l ~I Ll9 ~.J etl,W1 ~.J ,:r ~ ~\n\nAs this sentence stands, it is barely intelligible and must in its main structure read approximately: «The element that adjoins the celestial sphere is made of air... it ignites on account of the heat and the compassion (!) of the celestial sphere».\n\nThe sentence reads in the Greek original (ed. I. Bekker 392b 5–8):\n\nEçûs dè Tavins ó ảnp inokéxural, Sowins йх кай пауєтибу, daupópós тє зієта каї á levós.\n\nBelow this the air spreads out, which by nature is dark and icy; on account of movement it lights up, however, and simultaneously catches fire and thereby becomes more radiant and warm.\n\nThe completely misplaced word «'atf» (= compassion) of the Arabic version can only go back to a Greek Vorlage in which not ἀλεεινός but ἐλεεινός stood. The Syriac version (op. cit. p. 138, 6) has the normal ~~. I would even venture to assume that the Arabic «ḥalaqa» represents the transliteration of χαλάσαι (l. 11). – Fol. 186b 14f. reads: lpL ~ L ~.J (im Text l:yb) ~ There are shooting stars that persist for a while, and others that are immediately praised (!).",
+    "6": "(= «yuhmad») was corrupted. The Syriac text (op. cit. p. 145, 9) has the correct reading ~ 1. Fol. 189a 11f.\n\noJ? S.r:0~ l.&-!J (im Text S~I) c.L,.gJ1111:. J 0~ c.~'J J~l ~JJ~~I\n\nThere are many things in this air (?), such as the course of the rivers and the blocking (!) of the seas.\n\nThe Greek text reads (399a 26f.):\n\nE7TOVTUt SE TOVTOtS 7TOTUp,WV EKPOUt, 8UAcfuu1]s d v 0 t S ~ U e t S ... Following these comes the outflowing of the rivers, the surging of the sea...\n\nThe meaningless word «ḥabs» (= blocking) of the Arabic version can only be explained from a Greek text in which instead of ἀνοίδησις stood ἀνάδυσις. The Syriac text (op. cit. p. 153, 14) has the correct reading ~,. The singular θαλάσσης stands opposite the plural forms; on the basis of such agreements between the Syriac and Arabic texts, however, a dependence cannot yet be established.\n\nAnother type of error in the Arabic translation does not go back to corruptions in the Greek text, but to the misinterpretation of the translator. As an example: the author of De mundo compares God with a choirmaster and the stars with a choir of men and women ἐν διαφόροις φωναῖς ... μίαν ἁρμονίαν ἐμμελῆ κεράννυντων (399a 16f.), i.e. those who blend with different voices a single, melodious harmony. The ἁρμονία ἐμμελής was an unknown musical concept for the Arabic translator; he translated «harmony» metaphorically by «heart» (fol. 189a 3f.), i.e. «like a group of men and their wives with a single heart».\n\nCases should also be mentioned in which the Arabic version offers a reading that differs both from the Syriac translation and from the Greek textus receptus. In describing the earth, the author of De mundo divides the rivers into those that wind across the earth and those that empty into the sea: τοῖς μὲν ἀνὰ γῆν ἑλιττομένοις, τοῖς δὲ ἀνερευγομένοις εἰς θάλασσαν (392b 16f.). The Arabic translator writes (fol. 184b 3): i.e. «some of them (scil. the rivers)",
+    "7": "are destroyed, others wind about». The word «mutlaf» (= destroyed) is problematic: it can be explained as a scribal error, easily corrected by transposing two letters into «multaff». Another explanation is however also conceivable: the author of the medieval Latin «Versio Manfrediana» translates this passage «his quidem a terra sorptis, aliis in mare intrantibus» 7: «some of the rivers are swallowed up by the earth, others empty into the sea». Lorimer 8 assumed that the Greek Vorlage of the «Versio Manfrediana» did not read ἑλιττομένοις or ἀνελιττομένοις (as in Stobaeus), but ἀναλισκομένοις. Lorimer's ingenious conjecture receives plausible support from the reading of the Arabic version (ἀναλισκομένος = ~~). The Syriac translation, on the other hand, has a corrupt reading that does not help us further.\n\nThis brings us to the second question, of what nature the Greek Vorlage of our Arabic translation was. That it was corrupted in many places we may surmise on the basis of the examples just cited. It was probably a late Byzantine copy. But let us once again consult the Arabic text. There we read fol. 183b 6f.:\n\n.h....., J d)\"11.., l..,Jl)\\) ~)J I J I .JJ u JJ l5' )YO-J I ..::..:! f) ..:.:.L tI ~ u\n\nWhen you look carefully, you see that the axis (of the universe) penetrates as it were into the two sides (of the universe), and that the earth is in the middle.\n\nThe Greek manuscripts divide between the readings μέσην and μέσον, i.e.: the celestial axis passes through the middle of the earth (μέσην), or the earth lies at the centre of the universe (μέσον). The latter reading is supported by a number of manuscripts, among them the Syriac translation and both Latin translations by Apuleius and Nicholaus Siculus 9. The same reading was also supported, as we see, by the Greek Vorlage of our Arabic translation.\n\nThe same manuscript tradition also confronts us in the geographical chapter of our work. In the enumeration of the seven islands (393a 12), our Arabic version, together with Stobaeus, Apuleius and the Syriac translation, forms a common group that includes the Peloponnese among the seven islands. In the remaining manuscripts the Peloponnese is absent from the island\n\n7 W. L. LORIMER, The Text Tradition of Pseudo-Aristotle. De Mundo., 1924, p. 48, 17f.\n8 Id., Some Notes on the Text of Pseudo-Aristotle. De Mundo., 1925, pp. 75–78.\n9 LORIMER (1925), p. 74f.",
+    "8": "catalogue (Ptolemy already mentions the Peloponnese – Geog. VII.5.11).\n\nIn summary, it can be stated that the Arabic translation of De mundo in the Istanbul manuscript Köprülü 1608 was translated from a Greek manuscript which, despite many corruptions, reveals a relationship to Stobaeus and the source used by Apuleius. Since the Syriac translation and the Latin versions of the Middle Ages are in contact with the same recension, agreements occasionally arise.\n\nFrom the foregoing the answer to the third question already follows of itself: whether Ḥunayn ibn Isḥāq can be the translator of our Arabic version. Ḥunayn, this master translator, would neither have been guilty of such erroneous translations, nor would he have chosen such a corrupt manuscript as his source. Stern has already pointed out that this Arabic translation already existed towards the end of the 8th century or at the beginning of the 9th century; Ḥunayn therefore found it already completed. The fact that he himself did not produce a translation of De mundo shows that he considered the work to be pseudepigraphical. The style as well as the choice of words also speak against the assumption that Ḥunayn was the translator. The broad, pleonastic expression, the frequent use of hendiadys, words such as «kilā-» + suffix, etc., do not belong to Ḥunayn's mode of expression 10.\n\nThe Arabic translator has included a not inconsiderable number of additions in his translation, which are not without significance for the assessment of the manuscript. In the description of the celestial sphere we read (fol. 183b 4f.):\n\nIt is like a pearl that rotates, and the earth within it is like the yolk in an egg.\n\nWe encounter the same image again in the Risālat al-mabdaʾ wa-l-maʿād of the Ismāʿīlī Sayyidunā al-Ḥusayn ibn ʿAlī ibn Muḥammad ibn al-Walīd, the VIII. dāʿī in Yemen (d. 667/1268) 11:\n\n.:r ~ ~ .h.....J J\ndJ~I..J ,~~ ~ ~I JL,.,..J ~I ~-,j 'WI <\\J.k.,;.\"..J1 . ~I ~I ,...(' J..b....\n\n10 Cf. G. BERGSTRÄSSER, Ḥunain ibn Isḥāq und seine Schule, 1913, passim.\n11 Ed. H. CORBIN, Trilogie Ismaélienne, 1961, p. 107.",
+    "9": "She (scil. the earth) stands at the centre of the celestial sphere; the sphere surrounds it on all sides, and the earth and everything upon it stands at its centre like the yellow egg yolk surrounded on all sides by the egg white and the shell 12.\n\nThe similarity between Pseudo-Aristotle and this Ismāʿīlī text is, however, now only a distant one: the aether, for example, has sunk from its elevated position as the fifth element in the Ismāʿīlī's account to one of the four elements 13.\n\nJerusalem, The Hebrew University, Institute of Asian and African Studies.\n\nFelix KLEIN-FRANKE.\n\n12 The same image is also used by Shams al-Dīn Abū ʿAbdallāh Muḥammad al-Dimashqī (d. 727/1327) in his cosmographical work (ed. M. A. F. MEHREN, 1866, p. 9, where of course it should read «mukhkh» and not «mukh»).\n13 Regarding the Greek text of Ps-Aristotle I refer particularly to P. FESTUGIÈRE, La Révélation d'Hermès Trismégiste, vol. 2 (1949), pp. 460 ff. and the literature cited there."
+  },
+  "elements": {
+    "1": [
+      {
+        "label": "picture",
+        "text": "",
+        "bbox": {
+          "l": 28.71,
+          "t": 763.77,
+          "r": 96.4,
+          "b": 721.98
+        }
+      },
+      {
+        "label": "section_header",
+        "text": "Rapid #: -21368416",
+        "bbox": {
+          "l": 30.0,
+          "t": 715.31,
+          "r": 209.98,
+          "b": 697.66
+        }
+      },
+      {
+        "label": "text",
+        "text": "CROSS REF ID:",
+        "bbox": {
+          "l": 30.0,
+          "t": 675.83,
+          "r": 133.33,
+          "b": 663.46
+        }
+      },
+      {
+        "label": "text",
+        "text": "4649252260007446",
+        "bbox": {
+          "l": 150.0,
+          "t": 675.82,
+          "r": 274.54,
+          "b": 663.47
+        }
+      },
+      {
+        "label": "text",
+        "text": "LENDER:",
+        "bbox": {
+          "l": 30.0,
+          "t": 647.83,
+          "r": 90.63,
+          "b": 635.46
+        }
+      },
+      {
+        "label": "text",
+        "text": "UUM (University of Utah) :: Marriott Library",
+        "bbox": {
+          "l": 150.0,
+          "t": 647.82,
+          "r": 435.24,
+          "b": 635.47
+        }
+      },
+      {
+        "label": "text",
+        "text": "BORROWER:",
+        "bbox": {
+          "l": 30.0,
+          "t": 619.83,
+          "r": 117.81,
+          "b": 607.46
+        }
+      },
+      {
+        "label": "text",
+        "text": "EZ9 (University of Exeter) :: Electronic",
+        "bbox": {
+          "l": 150.0,
+          "t": 619.82,
+          "r": 404.94,
+          "b": 607.47
+        }
+      },
+      {
+        "label": "text",
+        "text": "TYPE:",
+        "bbox": {
+          "l": 30.0,
+          "t": 592.17,
+          "r": 58.85,
+          "b": 583.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "Article CC:CCL",
+        "bbox": {
+          "l": 150.0,
+          "t": 592.17,
+          "r": 217.74,
+          "b": 583.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "JOURNAL TITLE:",
+        "bbox": {
+          "l": 30.0,
+          "t": 572.17,
+          "r": 108.83,
+          "b": 563.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "Le Muséon",
+        "bbox": {
+          "l": 150.0,
+          "t": 572.17,
+          "r": 199.46,
+          "b": 563.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "USER JOURNAL TITLE:",
+        "bbox": {
+          "l": 30.0,
+          "t": 552.17,
+          "r": 139.36,
+          "b": 543.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "Le Museon",
+        "bbox": {
+          "l": 150.0,
+          "t": 552.17,
+          "r": 199.46,
+          "b": 543.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "ARTICLE TITLE:",
+        "bbox": {
+          "l": 30.0,
+          "t": 532.17,
+          "r": 104.56,
+          "b": 523.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "Die Überlieferung der ältesten arabischen Handschrift von Pseudo-Aristoteles 'De Mundo'",
+        "bbox": {
+          "l": 150.0,
+          "t": 532.17,
+          "r": 546.32,
+          "b": 523.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "ARTICLE AUTHOR:",
+        "bbox": {
+          "l": 30.0,
+          "t": 512.17,
+          "r": 119.19,
+          "b": 503.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "Felix Klein-Franke",
+        "bbox": {
+          "l": 150.0,
+          "t": 512.17,
+          "r": 230.53,
+          "b": 503.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "VOLUME:",
+        "bbox": {
+          "l": 30.0,
+          "t": 492.17,
+          "r": 74.97,
+          "b": 483.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "87",
+        "bbox": {
+          "l": 150.0,
+          "t": 492.17,
+          "r": 161.12,
+          "b": 483.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "ISSUE:",
+        "bbox": {
+          "l": 30.0,
+          "t": 472.17,
+          "r": 62.74,
+          "b": 463.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "MONTH:",
+        "bbox": {
+          "l": 30.0,
+          "t": 452.17,
+          "r": 69.41,
+          "b": 443.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "YEAR:",
+        "bbox": {
+          "l": 30.0,
+          "t": 432.17,
+          "r": 59.97,
+          "b": 423.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "1974",
+        "bbox": {
+          "l": 150.0,
+          "t": 432.17,
+          "r": 172.24,
+          "b": 423.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "PAGES:",
+        "bbox": {
+          "l": 30.0,
+          "t": 412.17,
+          "r": 66.44,
+          "b": 403.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "59 - 65",
+        "bbox": {
+          "l": 150.0,
+          "t": 412.17,
+          "r": 181.11,
+          "b": 403.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "ISSN:",
+        "bbox": {
+          "l": 30.0,
+          "t": 392.17,
+          "r": 56.08,
+          "b": 383.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "0771-6494",
+        "bbox": {
+          "l": 150.0,
+          "t": 392.17,
+          "r": 197.81,
+          "b": 383.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "OCLC #:",
+        "bbox": {
+          "l": 30.0,
+          "t": 372.17,
+          "r": 68.87,
+          "b": 363.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "Processed by RapidX:",
+        "bbox": {
+          "l": 30.0,
+          "t": 332.17,
+          "r": 128.88,
+          "b": 323.33
+        }
+      },
+      {
+        "label": "text",
+        "text": "10/3/2023 11:01:49 AM",
+        "bbox": {
+          "l": 150.0,
+          "t": 332.17,
+          "r": 252.6,
+          "b": 323.33
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "The copyright law of the United States (Title 17, United States Code) governs the making of photocopies or other reproductions of copyrighted materials. Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the photocopy or reproduction is not to be \"used for any purpose other than private study, scholarship, or research\". If a user makes a request for, or later uses, a photocopy or reproduction for purposes in excess of \"fair use\", that user may be liable for copyright infringement. This institution reserves the right to refuse to accept a copying order if, in its judgment, fulfillment of the order would involve violation of copyright law.",
+        "bbox": {
+          "l": 30.0,
+          "t": 307.17,
+          "r": 577.17,
+          "b": 238.33
+        }
+      }
+    ],
+    "2": [
+      {
+        "label": "picture",
+        "text": "",
+        "bbox": {
+          "l": 62.97,
+          "t": 683.94,
+          "r": 82.33,
+          "b": 557.49
+        }
+      },
+      {
+        "label": "text",
+        "text": "October 3, 2023",
+        "bbox": {
+          "l": 99.84,
+          "t": 745.5,
+          "r": 186.72,
+          "b": 737.18
+        }
+      },
+      {
+        "label": "text",
+        "text": "Call #:",
+        "bbox": {
+          "l": 338.4,
+          "t": 744.89,
+          "r": 367.44,
+          "b": 737.96
+        }
+      },
+      {
+        "label": "text",
+        "text": "ARC DS1 .M87 v.87 1974",
+        "bbox": {
+          "l": 373.68,
+          "t": 746.7,
+          "r": 513.65,
+          "b": 738.38
+        }
+      },
+      {
+        "label": "text",
+        "text": "Borrower:",
+        "bbox": {
+          "l": 100.08,
+          "t": 718.14,
+          "r": 152.09,
+          "b": 709.82
+        }
+      },
+      {
+        "label": "text",
+        "text": "RAPID:EZ9",
+        "bbox": {
+          "l": 161.04,
+          "t": 718.14,
+          "r": 223.06,
+          "b": 709.82
+        }
+      },
+      {
+        "label": "text",
+        "text": "Notes:",
+        "bbox": {
+          "l": 338.64,
+          "t": 721.13,
+          "r": 367.54,
+          "b": 714.2
+        }
+      },
+      {
+        "label": "text",
+        "text": "Lending String:",
+        "bbox": {
+          "l": 100.08,
+          "t": 690.41,
+          "r": 170.26,
+          "b": 683.48
+        }
+      },
+      {
+        "label": "text",
+        "text": "Journal/Book Title:",
+        "bbox": {
+          "l": 99.36,
+          "t": 667.37,
+          "r": 187.75,
+          "b": 660.44
+        }
+      },
+      {
+        "label": "text",
+        "text": "Le Muse6n",
+        "bbox": {
+          "l": 193.68,
+          "t": 667.37,
+          "r": 242.93,
+          "b": 660.44
+        }
+      },
+      {
+        "label": "text",
+        "text": "Billing Category:",
+        "bbox": {
+          "l": 338.64,
+          "t": 686.09,
+          "r": 418.71,
+          "b": 679.16
+        }
+      },
+      {
+        "label": "text",
+        "text": "Exempt",
+        "bbox": {
+          "l": 429.12,
+          "t": 686.09,
+          "r": 463.02,
+          "b": 679.16
+        }
+      },
+      {
+        "label": "text",
+        "text": "Maxcost:",
+        "bbox": {
+          "l": 338.64,
+          "t": 673.13,
+          "r": 378.65,
+          "b": 666.2
+        }
+      },
+      {
+        "label": "text",
+        "text": "Volume:",
+        "bbox": {
+          "l": 99.36,
+          "t": 644.09,
+          "r": 136.04,
+          "b": 637.16
+        }
+      },
+      {
+        "label": "text",
+        "text": "87",
+        "bbox": {
+          "l": 144.72,
+          "t": 644.09,
+          "r": 155.84,
+          "b": 637.16
+        }
+      },
+      {
+        "label": "text",
+        "text": "Issue:",
+        "bbox": {
+          "l": 100.08,
+          "t": 632.57,
+          "r": 126.76,
+          "b": 625.64
+        }
+      },
+      {
+        "label": "text",
+        "text": "MonthlY ear:",
+        "bbox": {
+          "l": 100.08,
+          "t": 621.05,
+          "r": 156.67,
+          "b": 614.12
+        }
+      },
+      {
+        "label": "text",
+        "text": "1974",
+        "bbox": {
+          "l": 166.56,
+          "t": 621.05,
+          "r": 188.8,
+          "b": 614.12
+        }
+      },
+      {
+        "label": "text",
+        "text": "Pages:",
+        "bbox": {
+          "l": 100.08,
+          "t": 609.53,
+          "r": 131.21,
+          "b": 602.6
+        }
+      },
+      {
+        "label": "text",
+        "text": "59 - 65",
+        "bbox": {
+          "l": 138.24,
+          "t": 609.53,
+          "r": 169.04,
+          "b": 602.6
+        }
+      },
+      {
+        "label": "text",
+        "text": "Delivery Method:",
+        "bbox": {
+          "l": 338.64,
+          "t": 649.37,
+          "r": 420.85,
+          "b": 642.44
+        }
+      },
+      {
+        "label": "text",
+        "text": "Send via Odyssey",
+        "bbox": {
+          "l": 430.32,
+          "t": 649.37,
+          "r": 514.82,
+          "b": 642.44
+        }
+      },
+      {
+        "label": "text",
+        "text": "email:",
+        "bbox": {
+          "l": 338.4,
+          "t": 624.89,
+          "r": 365.07,
+          "b": 617.96
+        }
+      },
+      {
+        "label": "text",
+        "text": "EMAIL:",
+        "bbox": {
+          "l": 338.64,
+          "t": 613.37,
+          "r": 371.43,
+          "b": 606.44
+        }
+      },
+      {
+        "label": "text",
+        "text": "Article Author:",
+        "bbox": {
+          "l": 99.36,
+          "t": 586.97,
+          "r": 165.92,
+          "b": 580.04
+        }
+      },
+      {
+        "label": "text",
+        "text": "Felix Klein-Franke",
+        "bbox": {
+          "l": 175.68,
+          "t": 586.97,
+          "r": 256.36,
+          "b": 580.04
+        }
+      },
+      {
+        "label": "text",
+        "text": "Article Title:",
+        "bbox": {
+          "l": 99.36,
+          "t": 563.93,
+          "r": 155.11,
+          "b": 557.0
+        }
+      },
+      {
+        "label": "text",
+        "text": "Die Oberlieferung der altesten",
+        "bbox": {
+          "l": 163.68,
+          "t": 563.93,
+          "r": 296.38,
+          "b": 557.0
+        }
+      },
+      {
+        "label": "text",
+        "text": "arabischen Handschrift von Pseudo-Aristoteles 'De Mundo'",
+        "bbox": {
+          "l": 99.6,
+          "t": 552.41,
+          "r": 325.49,
+          "b": 533.48
+        }
+      },
+      {
+        "label": "text",
+        "text": "Shipping Address:",
+        "bbox": {
+          "l": 338.4,
+          "t": 543.05,
+          "r": 423.46,
+          "b": 536.12
+        }
+      },
+      {
+        "label": "text",
+        "text": "NEW: Electronic",
+        "bbox": {
+          "l": 338.88,
+          "t": 531.53,
+          "r": 412.06,
+          "b": 524.6
+        }
+      },
+      {
+        "label": "text",
+        "text": "ILL Number:",
+        "bbox": {
+          "l": 100.32,
+          "t": 494.46,
+          "r": 167.93,
+          "b": 486.14
+        }
+      },
+      {
+        "label": "text",
+        "text": "-21368416",
+        "bbox": {
+          "l": 174.24,
+          "t": 494.29,
+          "r": 226.24,
+          "b": 486.19
+        }
+      },
+      {
+        "label": "text",
+        "text": "1111111111111111111111111111111111111111111111111111111",
+        "bbox": {
+          "l": 100.08,
+          "t": 471.58,
+          "r": 237.69,
+          "b": 465.35
+        }
+      },
+      {
+        "label": "text",
+        "text": "lIll",
+        "bbox": {
+          "l": 239.79,
+          "t": 482.4,
+          "r": 252.47,
+          "b": 466.24
+        }
+      },
+      {
+        "label": "picture",
+        "text": "",
+        "bbox": {
+          "l": 98.7,
+          "t": 494.29,
+          "r": 253.6,
+          "b": 463.0
+        }
+      },
+      {
+        "label": "section_header",
+        "text": "NOTICE WARNING CONCERNING COPYRIGHT RESTRICTIONS",
+        "bbox": {
+          "l": 168.96,
+          "t": 238.25,
+          "r": 432.29,
+          "b": 232.85
+        }
+      },
+      {
+        "label": "text",
+        "text": "The copyright law of the United States [Title 17, United States Code] governs the making of photocopies or the other reproductions of copyrighted material.",
+        "bbox": {
+          "l": 35.28,
+          "t": 218.92,
+          "r": 561.58,
+          "b": 201.86
+        }
+      },
+      {
+        "label": "text",
+        "text": "Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the reproduction is not to be used for any purpose other than private study, scholarship, or research. If a user makes a request for, or later uses, a photocopy or reproduction for purposes in excess of fair use, that use may be liable for copyright infringement.",
+        "bbox": {
+          "l": 35.76,
+          "t": 189.64,
+          "r": 570.72,
+          "b": 153.14
+        }
+      },
+      {
+        "label": "text",
+        "text": "This institution reserves the right to refuse to accept a copying order if, in its judgment, fulfillment of the order would involve violation of copyright law. No further reproduction and distribution of this copy is permitted by transmission or any other means.",
+        "bbox": {
+          "l": 35.52,
+          "t": 140.68,
+          "r": 553.75,
+          "b": 125.3
+        }
+      }
+    ],
+    "3": [
+      {
+        "label": "section_header",
+        "text": "THE TRANSMISSION",
+        "bbox": {
+          "l": 109.68,
+          "t": 535.23,
+          "r": 221.18,
+          "b": 528.48
+        }
+      },
+      {
+        "label": "section_header",
+        "text": "OF THE OLDEST ARABIC MANUSCRIPT OF PSEUDO-ARISTOTLE'S «DE MUNDO»",
+        "bbox": {
+          "l": 48.96,
+          "t": 515.79,
+          "r": 282.4,
+          "b": 490.34
+        }
+      },
+      {
+        "label": "text",
+        "text": "The Arabic catalogues of Aristotelian writings by Ibn al-Nadīm (d. 990), Ibn al-Qifṭī (1172–1248), and Ibn Abī Uṣaybiʿa (1194–1269) contain a large number of works attributed to the Stagirite that were in all probability never actually known to the Arabs. Such titles derive from Syriac catalogues of writings and were incorporated into their own lists by the Arabic pinakographers for the sake of completeness. But the reverse case is also attested: that an Arabic translation of an Aristotelian work existed which was not mentioned by name in the Arabic catalogues. This applies to Ps.-Aristotle's De Mundo; for this work was not known to the Arabs as a separate treatise, but as part of an extensive correspondence between Aristotle and his pupil Alexander the Great, and was included among the letters of Aristotle. For this reason, the Arabic translations of De Mundo were recognised only very late, while the Syriac, Armenian and Latin versions had long been known.",
+        "bbox": {
+          "l": 14.4,
+          "t": 465.39,
+          "r": 323.26,
+          "b": 253.7
+        }
+      },
+      {
+        "label": "text",
+        "text": "S. M. Stern published at this point a very thorough study of the Arabic translations of De mundo, which far beyond the scope of a text-critical investigation makes an important contribution to the literary tradition of the Arabic Alexander Romance 1. His study is based on two manuscripts: Istanbul, Fātiḥ 5323 (dated 1316/7) 2 and Princeton University, Yahuda 308. Both manuscripts go back to a Syriac translation; in the case of Ms. Princeton this is attested by a note in the colophon 3; regarding the Istanbul manuscript Stern established the proof through a comparison of the Syriac and Arabic versions with the Greek original.",
+        "bbox": {
+          "l": 14.88,
+          "t": 247.71,
+          "r": 323.5,
+          "b": 113.04
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "1 S. M. STERN, The Arabic Translations of the Pseudo-Aristotelian treatise De Mundo, Le Muséon 77 (1964), pp. 187–204.",
+        "bbox": {
+          "l": 14.64,
+          "t": 91.47,
+          "r": 322.02,
+          "b": 73.73
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "I R. Walzer described this manuscript in: R. WALZER, Greek into Arabic, 1962, pp. 139 f.",
+        "bbox": {
+          "l": 15.36,
+          "t": 68.33,
+          "r": 322.1,
+          "b": 52.12
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "a S. M. STERN, op. cit., p. 193.",
+        "bbox": {
+          "l": 24.48,
+          "t": 47.21,
+          "r": 129.2,
+          "b": 41.81
+        }
+      }
+    ],
+    "4": [
+      {
+        "label": "text",
+        "text": "In a subsequently published study 4 Stern adduced a third witness to the text. I came across this third Arabic manuscript independently of Stern's study, and in my examination of this manuscript arrived at conclusions that in part differ significantly from those of Stern. This oldest Arabic version of De mundo is found in the Istanbul manuscript Köprülü 1608, foll. 182b–189b, which contains the Nawādir al-falāsifa of Ḥunayn ibn Isḥāq. This once again confirms the suspicion that Ḥunayn ibn Isḥāq included in his collection chiefly pseudepigraphical works.",
+        "bbox": {
+          "l": 15.36,
+          "t": 537.39,
+          "r": 327.06,
+          "b": 415.68
+        }
+      },
+      {
+        "label": "text",
+        "text": "Still under the impression of the first two manuscripts, Stern was inclined to assume that this third manuscript too had arisen from a Syriac intermediary translation. A spot check from the first page of the text confirmed him in this view: «A more detailed examination of the text would give a certain answer to the question; it seems that our translation, like the other two, was made from the Syriac» 5. The Arabic translations that go back to a Syriac intermediary translation predominate in number over those that derive directly from the Greek original text. It can be demonstrated, I believe, without doubt, that this third manuscript was translated directly from the Greek.",
+        "bbox": {
+          "l": 15.12,
+          "t": 409.47,
+          "r": 330.86,
+          "b": 133.92
+        }
+      },
+      {
+        "label": "text",
+        "text": "Against Stern's assumption an external consideration already speaks: the prooemium of the Arabic translation has nothing in common with that of the Syriac version 6.",
+        "bbox": {
+          "l": 15.36,
+          "t": 127.95,
+          "r": 325.15,
+          "b": 82.12
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "4 Id., The Third Arabic Translation of the Pseudo-Aristotelian Treatise De Mundo, Le Muséon 78 (1965), pp. 381–393.",
+        "bbox": {
+          "l": 15.6,
+          "t": 66.41,
+          "r": 322.02,
+          "b": 50.21
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "5 Ibid., p. 387.",
+        "bbox": {
+          "l": 25.44,
+          "t": 45.05,
+          "r": 77.84,
+          "b": 39.0
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "6 P. DE LAGARDE, Analecta Syriaca, 1858 (repr. 1967), pp. 134–158; A. BAUMSTARK, Geschichte der syrischen Literatur, 1922, p. 168.",
+        "bbox": {
+          "l": 15.6,
+          "t": 34.25,
+          "r": 324.0,
+          "b": 17.62
+        }
+      }
+    ],
+    "5": [
+      {
+        "label": "text",
+        "text": "that may have had a prooemium that served as the Vorlage for the Arabic version. Yet it can at least be established that the only known Syriac version is in no case the Vorlage of our Arabic rendering.",
+        "bbox": {
+          "l": 15.12,
+          "t": 536.43,
+          "r": 323.5,
+          "b": 478.07
+        }
+      },
+      {
+        "label": "text",
+        "text": "*",
+        "bbox": {
+          "l": 69.6,
+          "t": 469.33,
+          "r": 74.79,
+          "b": 458.94
+        }
+      },
+      {
+        "label": "text",
+        "text": "~L,;. L,.2i (im Text lS~l) ~1.JrJI ,:r etl,W1 jJ ~l ~I Ll9 ~.J etl,W1 ~.J ,:r ~ ~",
+        "bbox": {
+          "l": 15.6,
+          "t": 466.62,
+          "r": 320.89,
+          "b": 437.54
+        }
+      },
+      {
+        "label": "text",
+        "text": "As this sentence stands, it is barely intelligible and must in its main structure read approximately: «The element that adjoins the celestial sphere is made of air... it ignites on account of the heat and the compassion (!) of the celestial sphere».",
+        "bbox": {
+          "l": 15.12,
+          "t": 428.19,
+          "r": 324.01,
+          "b": 382.79
+        }
+      },
+      {
+        "label": "text",
+        "text": "The sentence reads in the Greek original (ed. I. Bekker 392b 5–8):",
+        "bbox": {
+          "l": 25.2,
+          "t": 376.83,
+          "r": 324.86,
+          "b": 370.08
+        }
+      },
+      {
+        "label": "text",
+        "text": "Eçûs dè Tavins ó ảnp inokéxural, Sowins йх кай пауєтибу, daupópós тє зієта каї á levós.",
+        "bbox": {
+          "l": 35.98,
+          "t": 354.46,
+          "r": 324.61,
+          "b": 317.48
+        }
+      },
+      {
+        "label": "text",
+        "text": "Below this the air spreads out, which by nature is dark and icy; on account of movement it lights up, however, and simultaneously catches fire and thereby becomes more radiant and warm.",
+        "bbox": {
+          "l": 36.24,
+          "t": 310.49,
+          "r": 323.48,
+          "b": 283.72
+        }
+      },
+      {
+        "label": "text",
+        "text": "The completely misplaced word «'atf» (= compassion) of the Arabic version can only go back to a Greek Vorlage in which not ἀλεεινός but ἐλεεινός stood.",
+        "bbox": {
+          "l": 14.64,
+          "t": 273.71,
+          "r": 323.26,
+          "b": 214.1
+        }
+      },
+      {
+        "label": "text",
+        "text": "The completely misplaced word «'atf» of the Arabic version can only go back to a Greek Vorlage in which not ἀλεεινός but ἐλεεινός stood. The Syriac version has the normal reading.",
+        "bbox": {
+          "l": 24.96,
+          "t": 201.87,
+          "r": 112.15,
+          "b": 195.12
+        }
+      },
+      {
+        "label": "text",
+        "text": "reads:",
+        "bbox": {
+          "l": 116.16,
+          "t": 201.87,
+          "r": 130.94,
+          "b": 195.12
+        }
+      },
+      {
+        "label": "text",
+        "text": "lpL ~ L ~.J (im Text l:yb) ~",
+        "bbox": {
+          "l": 16.08,
+          "t": 180.44,
+          "r": 208.99,
+          "b": 172.58
+        }
+      },
+      {
+        "label": "text",
+        "text": "There are shooting stars that persist for a while, and others that are immediately praised (!).",
+        "bbox": {
+          "l": 36.72,
+          "t": 161.45,
+          "r": 322.85,
+          "b": 145.0
+        }
+      },
+      {
+        "label": "text",
+        "text": "In the Greek original it reads (395b 9f.):",
+        "bbox": {
+          "l": 15.36,
+          "t": 134.19,
+          "r": 213.98,
+          "b": 127.44
+        }
+      },
+      {
+        "label": "text",
+        "text": "Se Tn Tn Se",
+        "bbox": {
+          "l": 83.76,
+          "t": 118.18,
+          "r": 324.1,
+          "b": 106.25
+        }
+      },
+      {
+        "label": "text",
+        "text": "IIoAAaK£S TWV U€AaWV p,ev E7T£P,€V€£1TAdova Xp6vov, 1Tapaxpfjp,a U fJ € v v V T a t ,",
+        "bbox": {
+          "l": 36.96,
+          "t": 111.94,
+          "r": 286.49,
+          "b": 92.02
+        }
+      },
+      {
+        "label": "text",
+        "text": "Some rays of light linger often for a longer time, others however are extinguished at once.",
+        "bbox": {
+          "l": 36.48,
+          "t": 80.33,
+          "r": 322.68,
+          "b": 64.37
+        }
+      },
+      {
+        "label": "text",
+        "text": "The meaningless «yuhmad» of the Arabic translation at this point indicates that the Vorlage was the Greek text, in which the correct form ὐβέννυται was probably corrupted into ὐβέται.",
+        "bbox": {
+          "l": 15.12,
+          "t": 51.15,
+          "r": 322.77,
+          "b": 18.74
+        }
+      }
+    ],
+    "6": [
+      {
+        "label": "text",
+        "text": "(= «yuhmad») was corrupted. The Syriac text (op. cit. p. 145, 9) has the correct reading.",
+        "bbox": {
+          "l": 14.64,
+          "t": 538.59,
+          "r": 324.41,
+          "b": 506.4
+        }
+      },
+      {
+        "label": "text",
+        "text": "oJ?",
+        "bbox": {
+          "l": 272.16,
+          "t": 498.27,
+          "r": 294.82,
+          "b": 486.79
+        }
+      },
+      {
+        "label": "text",
+        "text": "S.r:0~ l.&-!J (im Text S~I) c.L,.gJ1111:. J 0~ c.~'J J~l ~JJ~~I",
+        "bbox": {
+          "l": 15.12,
+          "t": 495.59,
+          "r": 316.32,
+          "b": 464.87
+        }
+      },
+      {
+        "label": "text",
+        "text": "There are many things in this air (?), such as the course of the rivers and the blocking (!) of the seas.",
+        "bbox": {
+          "l": 36.24,
+          "t": 455.32,
+          "r": 323.21,
+          "b": 438.76
+        }
+      },
+      {
+        "label": "text",
+        "text": "The Greek text reads (399a 26f.):",
+        "bbox": {
+          "l": 15.12,
+          "t": 427.95,
+          "r": 195.74,
+          "b": 421.2
+        }
+      },
+      {
+        "label": "text",
+        "text": "E7TOVTUt SE TOVTOtS 7TOTUp,WV EKPOUt, 8UAcfuu1]s d v 0 t S ~ U e t S ... Diesen folgt das HervorflieBen der Fliisse, das A'ulwogen des Moores...",
+        "bbox": {
+          "l": 36.72,
+          "t": 407.86,
+          "r": 320.52,
+          "b": 385.97
+        }
+      },
+      {
+        "label": "text",
+        "text": "The meaningless «ḥabs» (= blocking) of the Arabic version can only be explained from a Greek text in which instead of ἀνοίδησις stood ἀνάδυσις. The Syriac text has the correct reading.",
+        "bbox": {
+          "l": 15.36,
+          "t": 374.91,
+          "r": 323.15,
+          "b": 278.4
+        }
+      },
+      {
+        "label": "text",
+        "text": "Another type of error in the Arabic translation does not go back to corruptions in the Greek text, but to the misinterpretation of the translator.",
+        "bbox": {
+          "l": 14.88,
+          "t": 272.43,
+          "r": 323.48,
+          "b": 122.88
+        }
+      },
+      {
+        "label": "text",
+        "text": "Cases should also be mentioned in which the Arabic version offers a reading that differs both from the Syriac translation and from the Greek textus receptus.",
+        "bbox": {
+          "l": 14.64,
+          "t": 116.91,
+          "r": 325.1,
+          "b": 19.91
+        }
+      }
+    ],
+    "7": [
+      {
+        "label": "text",
+        "text": "are destroyed, others wind about. The word «mutlaf» (= destroyed) is problematic: it can be explained as a scribal error, easily corrected into «multaff» by transposing two letters.",
+        "bbox": {
+          "l": 14.88,
+          "t": 537.39,
+          "r": 324.12,
+          "b": 364.32
+        }
+      },
+      {
+        "label": "text",
+        "text": "This brings us to the second question, of what nature the Greek Vorlage of our Arabic translation was.",
+        "bbox": {
+          "l": 15.36,
+          "t": 358.59,
+          "r": 324.18,
+          "b": 287.52
+        }
+      },
+      {
+        "label": "section_header",
+        "text": ".h....., J d)\"11.., l..,Jl)\\) ~)J I J I .JJ u JJ l5' )YO-J I ..::..:! f) ..:.:.L tI ~ u",
+        "bbox": {
+          "l": 15.36,
+          "t": 279.46,
+          "r": 325.39,
+          "b": 266.93
+        }
+      },
+      {
+        "label": "text",
+        "text": "When you look carefully, you see that the axis (of the universe) penetrates as it were into the two sides (of the universe), and that the earth is in the middle.",
+        "bbox": {
+          "l": 36.96,
+          "t": 255.77,
+          "r": 320.92,
+          "b": 239.81
+        }
+      },
+      {
+        "label": "text",
+        "text": "The Greek manuscripts divide between the readings μέσην and μέσον.",
+        "bbox": {
+          "l": 15.6,
+          "t": 228.51,
+          "r": 323.16,
+          "b": 144.96
+        }
+      },
+      {
+        "label": "text",
+        "text": "The same manuscript tradition also confronts us in the geographical chapter of our work.",
+        "bbox": {
+          "l": 15.84,
+          "t": 138.75,
+          "r": 324.73,
+          "b": 68.16
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "7 W. L. LORIMER, The Text Tradition of Pseudo-Aristotle. De Mundo., 1924, p. 48, 17f.",
+        "bbox": {
+          "l": 26.16,
+          "t": 44.92,
+          "r": 325.11,
+          "b": 38.98
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "8 Id., Some Notes on the Text of Pseudo-Aristotle. De Mundo., 1925, pp. 75–78.",
+        "bbox": {
+          "l": 26.4,
+          "t": 34.01,
+          "r": 300.02,
+          "b": 27.96
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "9 LORIMER (1925), p. 74f.",
+        "bbox": {
+          "l": 26.16,
+          "t": 23.45,
+          "r": 116.0,
+          "b": 17.62
+        }
+      }
+    ],
+    "8": [
+      {
+        "label": "text",
+        "text": "catalogue (Ptolemy already mentions the Peloponnese – Geog. VII.5.11).",
+        "bbox": {
+          "l": 14.88,
+          "t": 535.71,
+          "r": 320.99,
+          "b": 528.96
+        }
+      },
+      {
+        "label": "text",
+        "text": "In summary, it can be stated that the Arabic translation was translated from a Greek manuscript which, despite many corruptions, reveals a relationship to Stobaeus and the source used by Apuleius.",
+        "bbox": {
+          "l": 15.12,
+          "t": 522.75,
+          "r": 324.32,
+          "b": 426.72
+        }
+      },
+      {
+        "label": "text",
+        "text": "From the foregoing the answer to the third question already follows of itself: whether Ḥunayn ibn Isḥāq can be the translator of our Arabic version.",
+        "bbox": {
+          "l": 14.88,
+          "t": 420.51,
+          "r": 323.61,
+          "b": 246.58
+        }
+      },
+      {
+        "label": "text",
+        "text": "The Arabic translator has included a not inconsiderable number of additions in his translation.",
+        "bbox": {
+          "l": 15.12,
+          "t": 241.23,
+          "r": 322.0,
+          "b": 196.08
+        }
+      },
+      {
+        "label": "text",
+        "text": "It is like a pearl that rotates, and the earth within it is like the yolk in an egg.",
+        "bbox": {
+          "l": 36.48,
+          "t": 164.33,
+          "r": 323.21,
+          "b": 148.85
+        }
+      },
+      {
+        "label": "text",
+        "text": "We encounter the same image again in the Risālat al-mabdaʾ wa-l-maʿād of the Ismāʿīlī Sayyidunā al-Ḥusayn ibn ʿAlī ibn Muḥammad ibn al-Walīd, the VIII. dāʿī in Yemen (d. 667/1268) 11:",
+        "bbox": {
+          "l": 15.12,
+          "t": 137.31,
+          "r": 320.73,
+          "b": 104.66
+        }
+      },
+      {
+        "label": "text",
+        "text": ".:r ~ ~ .h.....J J",
+        "bbox": {
+          "l": 120.0,
+          "t": 94.93,
+          "r": 294.49,
+          "b": 83.3
+        }
+      },
+      {
+        "label": "text",
+        "text": "dJ~I..J ,~~ ~ ~I JL,.,..J ~I ~-,j 'WI <\\J.k.,;.\"..J1 . ~I ~I ,...(' J..b.... ·:utl I. I~ L 1/ ...... ~ \". ~~ !.J(.j ..J~ ~ 1.':1.-... ~q .~~ cr: .:r.r-\"..J",
+        "bbox": {
+          "l": 15.6,
+          "t": 91.31,
+          "r": 322.48,
+          "b": 44.46
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "10 Cf. G. BERGSTRÄSSER, Ḥunain ibn Isḥāq und seine Schule, 1913, passim.",
+        "bbox": {
+          "l": 25.2,
+          "t": 34.01,
+          "r": 292.23,
+          "b": 28.18
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "11 Ed. H. CORBIN, Trilogie Ismaélienne, 1961, p. 107.",
+        "bbox": {
+          "l": 24.96,
+          "t": 23.21,
+          "r": 163.3,
+          "b": 17.38
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "1961, p. 107.",
+        "bbox": {
+          "l": 168.72,
+          "t": 23.21,
+          "r": 213.9,
+          "b": 17.81
+        }
+      }
+    ],
+    "9": [
+      {
+        "label": "text",
+        "text": "She (scil. the earth) stands at the centre of the celestial sphere; the sphere surrounds it on all sides, and the earth and everything upon it stands at its centre like the yellow egg yolk surrounded on all sides by the egg white and the shell 12.",
+        "bbox": {
+          "l": 35.28,
+          "t": 536.09,
+          "r": 322.46,
+          "b": 498.34
+        }
+      },
+      {
+        "label": "text",
+        "text": "The similarity between Pseudo-Aristotle and this Ismāʿīlī text is, however, now only a distant one: the aether, for example, has sunk from its elevated position as the fifth element in the Ismāʿīlī's account to one of the four elements 13.",
+        "bbox": {
+          "l": 14.16,
+          "t": 487.71,
+          "r": 322.64,
+          "b": 441.24
+        }
+      },
+      {
+        "label": "text",
+        "text": "Jerusalem,",
+        "bbox": {
+          "l": 24.24,
+          "t": 423.39,
+          "r": 66.73,
+          "b": 416.64
+        }
+      },
+      {
+        "label": "text",
+        "text": "The Hebrew University, Institute of Asian and African Studies.",
+        "bbox": {
+          "l": 24.0,
+          "t": 410.57,
+          "r": 167.99,
+          "b": 394.61
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "12 The same image is also used by Shams al-Dīn Abū ʿAbdallāh Muḥammad al-Dimashqī (d. 727/1327) in his cosmographical work (ed. M. A. F. MEHREN, 1866, p. 9, where it should of course read «mukhkh» and not «mukh»).",
+        "bbox": {
+          "l": 15.6,
+          "t": 76.97,
+          "r": 324.22,
+          "b": 50.66
+        }
+      },
+      {
+        "label": "footnote",
+        "text": "13 Regarding the Greek text of Ps-Aristotle I refer particularly to P. FESTUGIÈRE, La Révélation d'Hermès Trismégiste, vol. 2 (1949), pp. 460 ff. and the literature cited there.",
+        "bbox": {
+          "l": 15.6,
+          "t": 44.81,
+          "r": 325.11,
+          "b": 17.81
+        }
+      },
+      {
+        "label": "text",
+        "text": "Felix KLEIN-FRANKE.",
+        "bbox": {
+          "l": 217.44,
+          "t": 420.96,
+          "r": 310.52,
+          "b": 416.23
+        }
+      }
+    ]
+  }
+}

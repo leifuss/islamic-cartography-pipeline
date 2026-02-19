@@ -1,0 +1,16 @@
+{
+  "key": "QIGTV3FC",
+  "title": "Ptolemy",
+  "authors": "Sinisgalli",
+  "year": "2012",
+  "page_count": 39,
+  "confidence": 0.9,
+  "method": "docling",
+  "do_ocr": true,
+  "extracted_at": "2026-02-18T16:07:37",
+  "chars_per_page": 1275.7,
+  "pua_ratio": 0.0,
+  "replacement_ratio": 0.0,
+  "empty_pages": 0,
+  "text_quality": "good"
+}

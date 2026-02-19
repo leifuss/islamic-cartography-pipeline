@@ -1,0 +1,95 @@
+{
+  "key": "PRZTK6C7",
+  "engines": [
+    "Tesseract-eng",
+    "Google Vision",
+    "EasyOCR-en"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "engines": {
+        "Tesseract-eng": {
+          "score": 0.8489,
+          "words": 162
+        },
+        "Google Vision": {
+          "score": 0.8846,
+          "words": 163
+        },
+        "EasyOCR-en": {
+          "score": 0.8167,
+          "words": 162
+        }
+      }
+    },
+    {
+      "page": 2,
+      "engines": {
+        "Tesseract-eng": {
+          "score": 0.8363,
+          "words": 257
+        },
+        "Google Vision": {
+          "score": 0.8845,
+          "words": 252
+        },
+        "EasyOCR-en": {
+          "score": 0.8436,
+          "words": 255
+        }
+      }
+    },
+    {
+      "page": 3,
+      "engines": {
+        "Tesseract-eng": {
+          "score": 0.8646,
+          "words": 239
+        },
+        "Google Vision": {
+          "score": 0.9027,
+          "words": 233
+        },
+        "EasyOCR-en": {
+          "score": 0.8665,
+          "words": 238
+        }
+      }
+    },
+    {
+      "page": 4,
+      "engines": {
+        "Tesseract-eng": {
+          "score": 0.8719,
+          "words": 230
+        },
+        "Google Vision": {
+          "score": 0.8973,
+          "words": 233
+        },
+        "EasyOCR-en": {
+          "score": 0.8711,
+          "words": 235
+        }
+      }
+    },
+    {
+      "page": 5,
+      "engines": {
+        "Tesseract-eng": {
+          "score": 0.8982,
+          "words": 193
+        },
+        "Google Vision": {
+          "score": 0.9077,
+          "words": 200
+        },
+        "EasyOCR-en": {
+          "score": 0.8855,
+          "words": 203
+        }
+      }
+    }
+  ]
+}

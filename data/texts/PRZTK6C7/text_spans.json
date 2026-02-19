@@ -1,0 +1,7124 @@
+{
+  "1": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Cosmology and Cosmic Order in Islamic Astronomy",
+      "bbox": {
+        "l": 56.68,
+        "t": 97.38,
+        "r": 382.31,
+        "b": 113.38
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Robert G. Morrison",
+      "bbox": {
+        "l": 90.7,
+        "t": 128.11,
+        "r": 168.22,
+        "b": 139.11
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "rgmorris@bowdoin.edu",
+      "bbox": {
+        "l": 90.7,
+        "t": 155.78,
+        "r": 177.7,
+        "b": 165.78
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Abstract",
+      "bbox": {
+        "l": 90.7,
+        "t": 195.47,
+        "r": 127.8,
+        "b": 206.47
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "ho kósmos",
+      "bbox": {
+        "l": 138.79,
+        "t": 276.96,
+        "r": 177.13,
+        "b": 286.96
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 194.47,
+        "t": 303.88,
+        "r": 237.14,
+        "b": 313.88
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "Keywords",
+      "bbox": {
+        "l": 90.7,
+        "t": 357.05,
+        "r": 133.16,
+        "b": 368.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-kalām",
+      "bbox": {
+        "l": 217.08,
+        "t": 384.77,
+        "r": 266.33,
+        "b": 394.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 275.45,
+        "t": 384.77,
+        "r": 318.81,
+        "b": 394.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ṣūfī",
+      "bbox": {
+        "l": 190.21,
+        "t": 518.66,
+        "r": 205.25,
+        "b": 529.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Oxford Handbook of Islamic Theology",
+      "bbox": {
+        "l": 158.06,
+        "t": 587.81,
+        "r": 301.1,
+        "b": 596.81
+      }
+    }
+  ],
+  "2": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Encyclopedia of Religion",
+      "bbox": {
+        "l": 56.7,
+        "t": 60.73,
+        "r": 159.81,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Encyclopaedia of Islam",
+      "bbox": {
+        "l": 82.63,
+        "t": 101.13,
+        "r": 176.74,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Second Edition",
+      "bbox": {
+        "l": 178.94,
+        "t": 101.13,
+        "r": 240.97,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 149.03,
+        "t": 114.59,
+        "r": 172.2,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "qur’ān",
+      "bbox": {
+        "l": 226.48,
+        "t": 154.98,
+        "r": 253.04,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-kalām",
+      "bbox": {
+        "l": 92.49,
+        "t": 168.45,
+        "r": 146.38,
+        "b": 179.45
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ṣūfī",
+      "bbox": {
+        "l": 188.92,
+        "t": 181.91,
+        "r": 205.96,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ishrāqī",
+      "bbox": {
+        "l": 294.01,
+        "t": 181.91,
+        "r": 322.55,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 67.52,
+        "t": 276.16,
+        "r": 117.66,
+        "b": 287.16
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 205.71,
+        "t": 303.09,
+        "r": 256.87,
+        "b": 314.09
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Ibn ʿArabî: time and cosmology",
+      "bbox": {
+        "l": 152.38,
+        "t": 334.81,
+        "r": 262.29,
+        "b": 343.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Mediaeval Ismaʿili history and thought,",
+      "bbox": {
+        "l": 295.91,
+        "t": 356.81,
+        "r": 112.78,
+        "b": 354.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Mishkāt al-anwār,",
+      "bbox": {
+        "l": 116.53,
+        "t": 367.81,
+        "r": 176.84,
+        "b": 376.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Avicenna and his legacy: a golden age of science and philosophy",
+      "bbox": {
+        "l": 272.41,
+        "t": 378.8,
+        "r": 163.86,
+        "b": 376.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Journal of Islamic Studies",
+      "bbox": {
+        "l": 324.59,
+        "t": 400.8,
+        "r": 94.79,
+        "b": 398.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Court cultures in the Muslim world: seventh to nineteenth centuries",
+      "bbox": {
+        "l": 116.18,
+        "t": 422.8,
+        "r": 335.37,
+        "b": 431.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Encyclopedia of Religion",
+      "bbox": {
+        "l": 289.31,
+        "t": 444.79,
+        "r": 371.9,
+        "b": 453.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Encyclopaedia of Islam, Second Edition",
+      "bbox": {
+        "l": 277.43,
+        "t": 488.78,
+        "r": 92.21,
+        "b": 486.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Early Science and Medicine",
+      "bbox": {
+        "l": 214.05,
+        "t": 510.78,
+        "r": 308.12,
+        "b": 519.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Journal for History of Astronomy",
+      "bbox": {
+        "l": 216.17,
+        "t": 565.77,
+        "r": 325.81,
+        "b": 574.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Cambridge History of Science",
+      "bbox": {
+        "l": 84.94,
+        "t": 587.77,
+        "r": 182.89,
+        "b": 596.77
+      }
+    }
+  ],
+  "3": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 220.63,
+        "t": 60.73,
+        "r": 271.14,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 270.09,
+        "t": 128.05,
+        "r": 320.57,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 347.96,
+        "t": 141.52,
+        "r": 369.86,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Tadhkira",
+      "bbox": {
+        "l": 248.77,
+        "t": 195.37,
+        "r": 285.81,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 224.16,
+        "t": 208.84,
+        "r": 274.16,
+        "b": 219.84
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 101.52,
+        "t": 222.3,
+        "r": 151.84,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 242.49,
+        "t": 249.23,
+        "r": 292.44,
+        "b": 260.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 171.41,
+        "t": 276.16,
+        "r": 221.6,
+        "b": 287.16
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 140.05,
+        "t": 343.48,
+        "r": 163.95,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 340.74,
+        "t": 383.87,
+        "r": 362.64,
+        "b": 394.87
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 164.44,
+        "t": 444.81,
+        "r": 205.41,
+        "b": 453.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Encyclopaedia of Islam, THREE",
+      "bbox": {
+        "l": 79.36,
+        "t": 466.81,
+        "r": 188.74,
+        "b": 475.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa al-basīṭa",
+      "bbox": {
+        "l": 269.93,
+        "t": 477.81,
+        "r": 342.11,
+        "b": 486.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ilm al-hayʾa",
+      "bbox": {
+        "l": 110.68,
+        "t": 510.8,
+        "r": 150.01,
+        "b": 519.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Method, Structure, and Development in al-Fārābī’s Cosmology",
+      "bbox": {
+        "l": 134.35,
+        "t": 521.8,
+        "r": 349.96,
+        "b": 530.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Hay’a",
+      "bbox": {
+        "l": 79.36,
+        "t": 554.79,
+        "r": 100.07,
+        "b": 563.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Bulletin of the Royal Institute for Inter-Faith Studies",
+      "bbox": {
+        "l": 137.17,
+        "t": 554.79,
+        "r": 306.06,
+        "b": 563.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Tadhkira",
+      "bbox": {
+        "l": 207.01,
+        "t": 565.79,
+        "r": 237.32,
+        "b": 574.79
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "of Naṣīr al-Dīn al-Ṭūsī” (dissertation, Har-vard University, 1982).10 Naṣīr al-Dīn Muḥammad b. Muḥammad al-Ṭūsī,",
+      "bbox": {
+        "l": 237.32,
+        "t": 587.79,
+        "r": 246.85,
+        "b": 574.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Naṣīr al-Dīn al-Ṭūsī’s Memoir on Astron-",
+      "bbox": {
+        "l": 247.19,
+        "t": 587.79,
+        "r": 382.69,
+        "b": 596.79
+      }
+    }
+  ],
+  "4": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 335.93,
+        "t": 60.73,
+        "r": 357.83,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 168.23,
+        "t": 101.13,
+        "r": 218.59,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "ho kósmos",
+      "bbox": {
+        "l": 135.2,
+        "t": 141.52,
+        "r": 177.23,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 326.19,
+        "t": 141.52,
+        "r": 349.36,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 75.05,
+        "t": 154.98,
+        "r": 102.86,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 224.33,
+        "t": 181.91,
+        "r": 247.49,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 269.55,
+        "t": 181.91,
+        "r": 295.35,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 306.94,
+        "t": 195.37,
+        "r": 330.1,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 56.71,
+        "t": 235.77,
+        "r": 86.84,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 192.16,
+        "t": 316.55,
+        "r": 243.14,
+        "b": 327.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 163.05,
+        "t": 330.01,
+        "r": 213.46,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "kalām",
+      "bbox": {
+        "l": 255.45,
+        "t": 356.94,
+        "r": 281.2,
+        "b": 367.94
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 69.39,
+        "t": 424.26,
+        "r": 120.01,
+        "b": 435.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 80.91,
+        "t": 464.65,
+        "r": 131.33,
+        "b": 475.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 56.71,
+        "t": 505.05,
+        "r": 107.32,
+        "b": 516.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "omy:",
+      "bbox": {
+        "l": 79.38,
+        "t": 543.81,
+        "r": 97.09,
+        "b": 552.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Post-Avicennian Philosophical Tradition and Islamic Orthodoxy. Philosophical and Theological Summae in Context",
+      "bbox": {
+        "l": 144.25,
+        "t": 576.81,
+        "r": 251.52,
+        "b": 574.81
+      }
+    }
+  ],
+  "5": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 231.57,
+        "t": 60.73,
+        "r": 279.99,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "1 Introduction: The Greek Semantic Background and the Semantic Range of the Arabic Translations",
+      "bbox": {
+        "l": 56.68,
+        "t": 128.1,
+        "r": 232.03,
+        "b": 125.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 260.41,
+        "t": 154.99,
+        "r": 290.54,
+        "b": 165.99
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 185.78,
+        "t": 195.38,
+        "r": 235.75,
+        "b": 206.38
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 174.09,
+        "t": 208.85,
+        "r": 197.26,
+        "b": 219.85
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 328.61,
+        "t": 208.85,
+        "r": 358.73,
+        "b": 219.85
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 215.75,
+        "t": 222.31,
+        "r": 245.88,
+        "b": 233.31
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Encyclopaedia of Islam, Second Edition",
+      "bbox": {
+        "l": 251.72,
+        "t": 249.24,
+        "r": 86.24,
+        "b": 246.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Fī Mabādi’ al-kull",
+      "bbox": {
+        "l": 275.54,
+        "t": 262.7,
+        "r": 350.48,
+        "b": 273.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Cosmos",
+      "bbox": {
+        "l": 200.04,
+        "t": 276.17,
+        "r": 261.82,
+        "b": 287.17
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kós-mos",
+      "bbox": {
+        "l": 366.29,
+        "t": 289.63,
+        "r": 73.56,
+        "b": 287.17
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Fī Mabādi’ al-kull",
+      "bbox": {
+        "l": 248.82,
+        "t": 303.1,
+        "r": 320.64,
+        "b": 314.1
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Caelo",
+      "bbox": {
+        "l": 266.12,
+        "t": 330.02,
+        "r": 304.03,
+        "b": 341.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 207.27,
+        "t": 424.27,
+        "r": 237.4,
+        "b": 435.27
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 56.68,
+        "t": 451.2,
+        "r": 86.81,
+        "b": 462.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Alexander of Aphrodisias on the Cosmos",
+      "bbox": {
+        "l": 167.97,
+        "t": 488.81,
+        "r": 307.62,
+        "b": 497.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Caelo",
+      "bbox": {
+        "l": 174.87,
+        "t": 510.81,
+        "r": 204.2,
+        "b": 519.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Heaven",
+      "bbox": {
+        "l": 208.74,
+        "t": 510.81,
+        "r": 257.22,
+        "b": 519.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Greek Thought",
+      "bbox": {
+        "l": 188.33,
+        "t": 521.81,
+        "r": 238.02,
+        "b": 530.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arabic Culture",
+      "bbox": {
+        "l": 242.06,
+        "t": 521.81,
+        "r": 291.32,
+        "b": 530.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Caelo",
+      "bbox": {
+        "l": 297.36,
+        "t": 532.8,
+        "r": 327.98,
+        "b": 541.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Caelo",
+      "bbox": {
+        "l": 347.52,
+        "t": 532.8,
+        "r": 378.13,
+        "b": 541.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 314.49,
+        "t": 554.8,
+        "r": 355.38,
+        "b": 563.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Caelo",
+      "bbox": {
+        "l": 229.64,
+        "t": 565.8,
+        "r": 259.42,
+        "b": 574.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Caelo",
+      "bbox": {
+        "l": 373.62,
+        "t": 576.8,
+        "r": 98.17,
+        "b": 574.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Heavens",
+      "bbox": {
+        "l": 301.66,
+        "t": 576.8,
+        "r": 354.83,
+        "b": 585.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arabic Sciences and Philosophy",
+      "bbox": {
+        "l": 360.39,
+        "t": 587.79,
+        "r": 160.22,
+        "b": 585.8
+      }
+    }
+  ],
+  "6": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Politics",
+      "bbox": {
+        "l": 168.92,
+        "t": 114.59,
+        "r": 198.02,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 202.2,
+        "t": 114.59,
+        "r": 232.32,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmoi",
+      "bbox": {
+        "l": 270.53,
+        "t": 128.05,
+        "r": 299.39,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 78.66,
+        "t": 141.52,
+        "r": 108.78,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Timaeus",
+      "bbox": {
+        "l": 304.36,
+        "t": 141.52,
+        "r": 339.66,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 130.71,
+        "t": 195.37,
+        "r": 160.84,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 314.27,
+        "t": 208.84,
+        "r": 344.39,
+        "b": 219.84
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Planetary Hypotheses",
+      "bbox": {
+        "l": 289.62,
+        "t": 222.3,
+        "r": 380.5,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "kósmou dé gínetai mía peristrophḗ",
+      "bbox": {
+        "l": 128.03,
+        "t": 235.77,
+        "r": 281.71,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "wa-l-ʿālam yadūr dawran wāḥidan",
+      "bbox": {
+        "l": 186.95,
+        "t": 249.24,
+        "r": 322.08,
+        "b": 256.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "A Greek-English Lexicon",
+      "bbox": {
+        "l": 217.12,
+        "t": 301.81,
+        "r": 298.22,
+        "b": 310.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 82.07,
+        "t": 323.81,
+        "r": 106.72,
+        "b": 332.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Odyssey",
+      "bbox": {
+        "l": 79.38,
+        "t": 334.81,
+        "r": 106.53,
+        "b": 343.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Odyssey",
+      "bbox": {
+        "l": 177.87,
+        "t": 334.81,
+        "r": 219.21,
+        "b": 343.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Genuine Works of Hippocrates",
+      "bbox": {
+        "l": 236.41,
+        "t": 345.8,
+        "r": 358.12,
+        "b": 354.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The Histories,",
+      "bbox": {
+        "l": 119.97,
+        "t": 378.8,
+        "r": 166.05,
+        "b": 387.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Politics",
+      "bbox": {
+        "l": 113.28,
+        "t": 400.79,
+        "r": 137.09,
+        "b": 409.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Aristote et la question du monde",
+      "bbox": {
+        "l": 106.9,
+        "t": 466.78,
+        "r": 214.39,
+        "b": 475.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Timaeus,",
+      "bbox": {
+        "l": 100.37,
+        "t": 477.78,
+        "r": 132.59,
+        "b": 486.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Claudii Ptolemaei opera quae exstant omnia",
+      "bbox": {
+        "l": 110.24,
+        "t": 488.78,
+        "r": 256.43,
+        "b": 497.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Opera astronomica minora",
+      "bbox": {
+        "l": 124.09,
+        "t": 499.78,
+        "r": 215.77,
+        "b": 508.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": ",",
+      "bbox": {
+        "l": 274.28,
+        "t": 510.77,
+        "r": 276.08,
+        "b": 519.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Transactions of the American Philosophical Society",
+      "bbox": {
+        "l": 278.77,
+        "t": 521.77,
+        "r": 149.29,
+        "b": 519.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-Hay’a",
+      "bbox": {
+        "l": 333.59,
+        "t": 532.77,
+        "r": 382.62,
+        "b": 541.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 107.13,
+        "t": 543.77,
+        "r": 126.08,
+        "b": 552.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "qawlihim",
+      "bbox": {
+        "l": 82.3,
+        "t": 554.77,
+        "r": 113.48,
+        "b": 563.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-ʿālam",
+      "bbox": {
+        "l": 160.04,
+        "t": 554.77,
+        "r": 187.89,
+        "b": 563.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-falak al-aṭlas",
+      "bbox": {
+        "l": 155.94,
+        "t": 576.76,
+        "r": 208.75,
+        "b": 585.76
+      }
+    }
+  ],
+  "7": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 221.73,
+        "t": 87.66,
+        "r": 251.86,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Theologoumena Arithmeticae",
+      "bbox": {
+        "l": 117.41,
+        "t": 114.59,
+        "r": 238.9,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 107.38,
+        "t": 128.05,
+        "r": 137.51,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Planetary Hypotheses",
+      "bbox": {
+        "l": 294.14,
+        "t": 154.98,
+        "r": 382.66,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 367.23,
+        "t": 195.37,
+        "r": 89.45,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hḗ táxis",
+      "bbox": {
+        "l": 107.3,
+        "t": 208.84,
+        "r": 140.79,
+        "b": 219.84
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Caelo",
+      "bbox": {
+        "l": 56.68,
+        "t": 222.3,
+        "r": 92.44,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "táxis",
+      "bbox": {
+        "l": 100.73,
+        "t": 235.77,
+        "r": 120.68,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 130.6,
+        "t": 289.62,
+        "r": 160.73,
+        "b": 300.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 291.5,
+        "t": 289.62,
+        "r": 321.63,
+        "b": 300.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Cae-lo",
+      "bbox": {
+        "l": 351.24,
+        "t": 316.55,
+        "r": 64.14,
+        "b": 314.09
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Timaeus",
+      "bbox": {
+        "l": 99.82,
+        "t": 316.55,
+        "r": 135.12,
+        "b": 327.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 107.91,
+        "t": 343.48,
+        "r": 138.04,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "táxis",
+      "bbox": {
+        "l": 382.68,
+        "t": 370.41,
+        "r": 76.63,
+        "b": 367.94
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Kósmos",
+      "bbox": {
+        "l": 56.68,
+        "t": 397.33,
+        "r": 88.39,
+        "b": 408.33
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 245.97,
+        "t": 397.33,
+        "r": 269.13,
+        "b": 408.33
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Mundo",
+      "bbox": {
+        "l": 96.1,
+        "t": 410.8,
+        "r": 138.7,
+        "b": 421.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Dhahabiyya fī ṣifat al-ʿālam wa-annahā aḥsan min bayt al-dhahab al-mushāhad fī bilād al-Hind",
+      "bbox": {
+        "l": 314.47,
+        "t": 437.73,
+        "r": 77.12,
+        "b": 421.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 201.76,
+        "t": 488.81,
+        "r": 220.71,
+        "b": 497.81
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ". See Mu’ayyad al-Dīn al-ʿUrḍī,",
+      "bbox": {
+        "l": 220.71,
+        "t": 488.81,
+        "r": 323.94,
+        "b": 497.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "The Astronomical Work of Mu’ayyad al-Dīn al-ʿUrḍī",
+      "bbox": {
+        "l": 323.69,
+        "t": 499.81,
+        "r": 189.3,
+        "b": 497.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 185.1,
+        "t": 510.81,
+        "r": 209.75,
+        "b": 519.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ḥaly",
+      "bbox": {
+        "l": 223.11,
+        "t": 510.81,
+        "r": 237.66,
+        "b": 519.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "zīna",
+      "bbox": {
+        "l": 257.0,
+        "t": 510.81,
+        "r": 271.61,
+        "b": 519.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Oneirocritica",
+      "bbox": {
+        "l": 338.82,
+        "t": 510.81,
+        "r": 382.69,
+        "b": 519.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "zīna",
+      "bbox": {
+        "l": 127.51,
+        "t": 521.81,
+        "r": 142.12,
+        "b": 530.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ḥaly",
+      "bbox": {
+        "l": 212.37,
+        "t": 521.81,
+        "r": 226.92,
+        "b": 530.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Rhetoric",
+      "bbox": {
+        "l": 79.36,
+        "t": 532.8,
+        "r": 107.41,
+        "b": 541.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-tazyīn aw al-tazyīq",
+      "bbox": {
+        "l": 131.49,
+        "t": 532.8,
+        "r": 203.68,
+        "b": 541.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Greek-English Lexicon",
+      "bbox": {
+        "l": 163.83,
+        "t": 554.8,
+        "r": 237.85,
+        "b": 563.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Theologoumena Arithmeticae",
+      "bbox": {
+        "l": 181.31,
+        "t": 565.8,
+        "r": 282.01,
+        "b": 574.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Theologoumena Arithmeticae,",
+      "bbox": {
+        "l": 79.36,
+        "t": 576.8,
+        "r": 182.33,
+        "b": 585.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 346.34,
+        "t": 576.8,
+        "r": 370.99,
+        "b": 585.8
+      }
+    }
+  ],
+  "8": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Risālat Arisṭūṭālīs ilā Iskandar fī l-ʿālam wa-l-makhlūqāt",
+      "bbox": {
+        "l": 296.68,
+        "t": 87.66,
+        "r": 201.03,
+        "b": 85.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 56.7,
+        "t": 114.59,
+        "r": 78.6,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 283.14,
+        "t": 128.05,
+        "r": 313.27,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arithmetic",
+      "bbox": {
+        "l": 169.98,
+        "t": 154.98,
+        "r": 213.76,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 217.31,
+        "t": 154.98,
+        "r": 247.44,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 315.63,
+        "t": 154.98,
+        "r": 343.43,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Compendium of the",
+      "bbox": {
+        "l": 115.56,
+        "t": 168.45,
+        "r": 199.16,
+        "b": 179.45
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Timaeus",
+      "bbox": {
+        "l": 201.63,
+        "t": 168.45,
+        "r": 236.93,
+        "b": 179.45
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 289.94,
+        "t": 168.45,
+        "r": 313.11,
+        "b": 179.45
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 56.69,
+        "t": 181.91,
+        "r": 86.82,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 345.51,
+        "t": 181.91,
+        "r": 368.68,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Compendi-um of the Timaeus",
+      "bbox": {
+        "l": 337.75,
+        "t": 208.84,
+        "r": 133.03,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Timaeus",
+      "bbox": {
+        "l": 198.94,
+        "t": 208.84,
+        "r": 234.24,
+        "b": 219.84
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ḥudūth",
+      "bbox": {
+        "l": 173.96,
+        "t": 235.77,
+        "r": 204.0,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-ʿālam",
+      "bbox": {
+        "l": 268.13,
+        "t": 235.77,
+        "r": 302.17,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ghayr muʿtadala",
+      "bbox": {
+        "l": 135.01,
+        "t": 249.23,
+        "r": 205.64,
+        "b": 260.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "lā niẓām la-hā wa-lā tartīb",
+      "bbox": {
+        "l": 374.8,
+        "t": 262.69,
+        "r": 157.63,
+        "b": 260.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Compendium",
+      "bbox": {
+        "l": 224.28,
+        "t": 289.62,
+        "r": 279.73,
+        "b": 300.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 325.7,
+        "t": 289.62,
+        "r": 348.87,
+        "b": 300.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 176.55,
+        "t": 303.09,
+        "r": 202.36,
+        "b": 314.09
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Compendium",
+      "bbox": {
+        "l": 241.91,
+        "t": 303.09,
+        "r": 297.36,
+        "b": 314.09
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ghayr mun-taẓama",
+      "bbox": {
+        "l": 334.32,
+        "t": 330.01,
+        "r": 88.11,
+        "b": 327.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "The",
+      "bbox": {
+        "l": 152.31,
+        "t": 378.81,
+        "r": 164.85,
+        "b": 387.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arabic",
+      "bbox": {
+        "l": 166.57,
+        "t": 378.81,
+        "r": 190.49,
+        "b": 387.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "An Edition with Translation and Commentary",
+      "bbox": {
+        "l": 230.57,
+        "t": 378.81,
+        "r": 382.69,
+        "b": 387.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": ",",
+      "bbox": {
+        "l": 172.39,
+        "t": 400.81,
+        "r": 175.83,
+        "b": 409.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Risālat Arisṭūṭālīs ilā al-Iskandar b. Fīlūbis al-Yūnānī (fī bayt al-dhahab).",
+      "bbox": {
+        "l": 271.74,
+        "t": 411.81,
+        "r": 211.42,
+        "b": 409.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Tābit b. Qurra’s arabische Übersetzung der Arithmetike Eisagoge des Nikomachos von Gerasa zum ersten Mal herausgegeben",
+      "bbox": {
+        "l": 142.15,
+        "t": 444.81,
+        "r": 265.21,
+        "b": 442.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Plato Arabus",
+      "bbox": {
+        "l": 151.54,
+        "t": 455.81,
+        "r": 195.68,
+        "b": 464.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Galeni Compendium Timaei Platonis",
+      "bbox": {
+        "l": 382.67,
+        "t": 466.8,
+        "r": 207.15,
+        "b": 464.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Brill’s New Pauly",
+      "bbox": {
+        "l": 96.52,
+        "t": 488.8,
+        "r": 151.94,
+        "b": 497.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "physikḗ",
+      "bbox": {
+        "l": 262.09,
+        "t": 521.79,
+        "r": 286.94,
+        "b": 530.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 179.32,
+        "t": 532.79,
+        "r": 203.97,
+        "b": 541.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "phýsis",
+      "bbox": {
+        "l": 266.09,
+        "t": 532.79,
+        "r": 286.86,
+        "b": 541.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "harmóttein",
+      "bbox": {
+        "l": 192.97,
+        "t": 565.79,
+        "r": 230.66,
+        "b": 574.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Galeni Compendium,",
+      "bbox": {
+        "l": 120.16,
+        "t": 587.78,
+        "r": 190.97,
+        "b": 596.78
+      }
+    }
+  ],
+  "9": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Plan-etary Hypotheses",
+      "bbox": {
+        "l": 360.9,
+        "t": 114.59,
+        "r": 126.44,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "táxis",
+      "bbox": {
+        "l": 186.98,
+        "t": 114.59,
+        "r": 208.78,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hḗ te táxis homoū́ kaí hē diaphorá tōn kinḗseōn",
+      "bbox": {
+        "l": 311.39,
+        "t": 128.05,
+        "r": 175.59,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām al-ḥarakāt wa-fuṣūlihā wa-l-ikhtilāfāt",
+      "bbox": {
+        "l": 186.94,
+        "t": 141.52,
+        "r": 372.42,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 289.39,
+        "t": 168.45,
+        "r": 319.52,
+        "b": 179.45
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 241.03,
+        "t": 222.3,
+        "r": 264.19,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 341.38,
+        "t": 222.3,
+        "r": 371.51,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "tó pān",
+      "bbox": {
+        "l": 56.68,
+        "t": 235.77,
+        "r": 82.62,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "tó pān",
+      "bbox": {
+        "l": 119.78,
+        "t": 249.23,
+        "r": 145.84,
+        "b": 260.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 159.01,
+        "t": 249.23,
+        "r": 182.18,
+        "b": 260.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 86.94,
+        "t": 262.69,
+        "r": 110.11,
+        "b": 273.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 359.51,
+        "t": 276.16,
+        "r": 382.68,
+        "b": 287.16
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "tó pān",
+      "bbox": {
+        "l": 97.99,
+        "t": 289.62,
+        "r": 124.89,
+        "b": 300.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-ʿālam",
+      "bbox": {
+        "l": 247.4,
+        "t": 289.62,
+        "r": 281.43,
+        "b": 300.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 97.6,
+        "t": 316.55,
+        "r": 123.41,
+        "b": 327.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hḗ táxis",
+      "bbox": {
+        "l": 315.68,
+        "t": 316.55,
+        "r": 347.32,
+        "b": 327.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hē",
+      "bbox": {
+        "l": 70.54,
+        "t": 330.01,
+        "r": 80.25,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "harmoníā",
+      "bbox": {
+        "l": 82.43,
+        "t": 330.01,
+        "r": 125.3,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Mundo",
+      "bbox": {
+        "l": 182.54,
+        "t": 330.01,
+        "r": 225.08,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Poetics",
+      "bbox": {
+        "l": 56.67,
+        "t": 343.48,
+        "r": 84.94,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "harmoníā",
+      "bbox": {
+        "l": 151.63,
+        "t": 343.48,
+        "r": 192.5,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "naẓm",
+      "bbox": {
+        "l": 131.72,
+        "t": 356.94,
+        "r": 155.08,
+        "b": 367.94
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 272.64,
+        "t": 356.94,
+        "r": 297.81,
+        "b": 367.94
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "nẓm",
+      "bbox": {
+        "l": 77.69,
+        "t": 370.41,
+        "r": 97.76,
+        "b": 381.41
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 256.08,
+        "t": 370.41,
+        "r": 286.21,
+        "b": 381.41
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "táxis",
+      "bbox": {
+        "l": 305.76,
+        "t": 370.41,
+        "r": 328.96,
+        "b": 381.41
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 135.51,
+        "t": 397.33,
+        "r": 185.75,
+        "b": 408.33
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Claudii Ptolemaei opera,",
+      "bbox": {
+        "l": 186.1,
+        "t": 444.81,
+        "r": 269.26,
+        "b": 453.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Galeni Compendium,",
+      "bbox": {
+        "l": 119.53,
+        "t": 477.8,
+        "r": 190.04,
+        "b": 486.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 306.75,
+        "t": 477.8,
+        "r": 325.71,
+        "b": 486.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "tó pān",
+      "bbox": {
+        "l": 359.87,
+        "t": 477.8,
+        "r": 380.87,
+        "b": 486.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 114.36,
+        "t": 488.8,
+        "r": 133.32,
+        "b": 497.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos.",
+      "bbox": {
+        "l": 168.1,
+        "t": 488.8,
+        "r": 194.46,
+        "b": 497.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arabic",
+      "bbox": {
+        "l": 112.58,
+        "t": 521.8,
+        "r": 136.5,
+        "b": 530.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 286.71,
+        "t": 521.8,
+        "r": 307.83,
+        "b": 530.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Harmoniā",
+      "bbox": {
+        "l": 117.92,
+        "t": 554.79,
+        "r": 152.7,
+        "b": 563.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Analecta orientalia ad Poeticam Aristoteleam",
+      "bbox": {
+        "l": 308.11,
+        "t": 565.79,
+        "r": 156.29,
+        "b": 563.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ta⁠ʾlīf",
+      "bbox": {
+        "l": 239.35,
+        "t": 565.79,
+        "r": 254.5,
+        "b": 574.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Analecta orientalia",
+      "bbox": {
+        "l": 352.64,
+        "t": 576.79,
+        "r": 112.08,
+        "b": 574.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "naghma",
+      "bbox": {
+        "l": 140.37,
+        "t": 576.79,
+        "r": 168.7,
+        "b": 585.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "harmoniā",
+      "bbox": {
+        "l": 238.58,
+        "t": 576.79,
+        "r": 272.02,
+        "b": 585.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "lektikēs",
+      "bbox": {
+        "l": 274.8,
+        "t": 576.79,
+        "r": 299.44,
+        "b": 585.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Analecta orientalia",
+      "bbox": {
+        "l": 352.66,
+        "t": 587.78,
+        "r": 112.08,
+        "b": 585.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-ta⁠ʾlīf al-jadalī.",
+      "bbox": {
+        "l": 140.56,
+        "t": 587.78,
+        "r": 196.6,
+        "b": 596.78
+      }
+    }
+  ],
+  "10": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 215.23,
+        "t": 74.2,
+        "r": 238.39,
+        "b": 85.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 258.31,
+        "t": 74.2,
+        "r": 288.44,
+        "b": 85.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 91.92,
+        "t": 87.66,
+        "r": 117.72,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Lisān al-ʿarab",
+      "bbox": {
+        "l": 207.59,
+        "t": 101.13,
+        "r": 266.01,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "(by Ibn Manẓūr, d. 1312) and",
+      "bbox": {
+        "l": 266.0,
+        "t": 101.13,
+        "r": 384.9,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Qāmūs al-muḥīṭ",
+      "bbox": {
+        "l": 56.71,
+        "t": 114.59,
+        "r": 136.7,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "(of al-Fayrūzabādī; d. 1414) defined",
+      "bbox": {
+        "l": 136.65,
+        "t": 114.59,
+        "r": 283.81,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 283.77,
+        "t": 114.59,
+        "r": 306.93,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Lisān al-ʿarab",
+      "bbox": {
+        "l": 303.49,
+        "t": 128.05,
+        "r": 359.71,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 151.64,
+        "t": 141.52,
+        "r": 176.8,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 102.58,
+        "t": 168.45,
+        "r": 125.74,
+        "b": 179.45
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 68.09,
+        "t": 181.91,
+        "r": 98.22,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "khalq",
+      "bbox": {
+        "l": 112.18,
+        "t": 181.91,
+        "r": 135.18,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Encyclopaedia of Islam, Second Edition",
+      "bbox": {
+        "l": 88.75,
+        "t": 195.37,
+        "r": 258.31,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 263.13,
+        "t": 208.84,
+        "r": 286.3,
+        "b": 219.84
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 196.5,
+        "t": 222.3,
+        "r": 222.31,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Compen-dium",
+      "bbox": {
+        "l": 345.75,
+        "t": 235.77,
+        "r": 78.2,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Timaeus",
+      "bbox": {
+        "l": 162.13,
+        "t": 235.77,
+        "r": 197.43,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 193.67,
+        "t": 262.69,
+        "r": 219.47,
+        "b": 273.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "naẓama",
+      "bbox": {
+        "l": 241.81,
+        "t": 262.69,
+        "r": 275.58,
+        "b": 273.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Qāmūs",
+      "bbox": {
+        "l": 261.22,
+        "t": 276.16,
+        "r": 301.73,
+        "b": 287.16
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Lisān al-ʿarab",
+      "bbox": {
+        "l": 323.43,
+        "t": 276.16,
+        "r": 380.47,
+        "b": 287.16
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Qāmūs al-Muḥīṭ",
+      "bbox": {
+        "l": 176.97,
+        "t": 330.01,
+        "r": 255.13,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Naẓm",
+      "bbox": {
+        "l": 262.47,
+        "t": 330.01,
+        "r": 286.9,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "manẓūm",
+      "bbox": {
+        "l": 246.87,
+        "t": 343.48,
+        "r": 283.75,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "naẓama",
+      "bbox": {
+        "l": 164.9,
+        "t": 370.41,
+        "r": 198.67,
+        "b": 381.41
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "naẓẓama",
+      "bbox": {
+        "l": 214.2,
+        "t": 383.87,
+        "r": 252.35,
+        "b": 394.87
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "silk",
+      "bbox": {
+        "l": 171.35,
+        "t": 397.33,
+        "r": 185.07,
+        "b": 408.33
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "intaẓama",
+      "bbox": {
+        "l": 295.2,
+        "t": 397.33,
+        "r": 334.71,
+        "b": 408.33
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "tanaẓẓama",
+      "bbox": {
+        "l": 102.47,
+        "t": 410.8,
+        "r": 149.03,
+        "b": 421.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "intaẓama",
+      "bbox": {
+        "l": 216.25,
+        "t": 410.8,
+        "r": 255.75,
+        "b": 421.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "ikhtallah",
+      "bbox": {
+        "l": 102.71,
+        "t": 424.26,
+        "r": 139.51,
+        "b": 435.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 187.26,
+        "t": 424.26,
+        "r": 213.07,
+        "b": 435.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓāmā",
+      "bbox": {
+        "l": 161.69,
+        "t": 437.73,
+        "r": 192.78,
+        "b": 448.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "inẓāmāhumā",
+      "bbox": {
+        "l": 92.18,
+        "t": 451.19,
+        "r": 147.43,
+        "b": 462.19
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kasra",
+      "bbox": {
+        "l": 182.36,
+        "t": 451.19,
+        "r": 206.95,
+        "b": 462.19
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "unẓūmatāhumā",
+      "bbox": {
+        "l": 60.31,
+        "t": 464.65,
+        "r": 127.05,
+        "b": 475.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ḍamma",
+      "bbox": {
+        "l": 160.09,
+        "t": 464.65,
+        "r": 192.24,
+        "b": 475.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Lisān al-ʿarab al-muḥīṭ",
+      "bbox": {
+        "l": 122.66,
+        "t": 510.81,
+        "r": 199.1,
+        "b": 519.81
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "vol. 4, 871-872. See also Majd al-Dīn Muḥammad b. Yaʿqūb al-Fīrūzābādī,",
+      "bbox": {
+        "l": 335.2,
+        "t": 521.81,
+        "r": 288.98,
+        "b": 519.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Qāmūs al-muḥīṭ",
+      "bbox": {
+        "l": 290.67,
+        "t": 521.81,
+        "r": 356.07,
+        "b": 530.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 152.18,
+        "t": 543.81,
+        "r": 178.47,
+        "b": 552.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "khalq",
+      "bbox": {
+        "l": 186.95,
+        "t": 543.81,
+        "r": 205.77,
+        "b": 552.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Placita",
+      "bbox": {
+        "l": 265.16,
+        "t": 543.81,
+        "r": 288.53,
+        "b": 552.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Qāmūs",
+      "bbox": {
+        "l": 151.51,
+        "t": 576.8,
+        "r": 177.34,
+        "b": 585.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "wa-thalātha kawākib min al-jawzāʾ waʿ (?) wa-l-thurayyā wa-l-dabarān",
+      "bbox": {
+        "l": 222.8,
+        "t": 587.8,
+        "r": 157.02,
+        "b": 585.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "maʿa al-thurayyā",
+      "bbox": {
+        "l": 247.78,
+        "t": 587.8,
+        "r": 305.16,
+        "b": 596.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "waʿ wa-l-thurayyā",
+      "bbox": {
+        "l": 318.47,
+        "t": 587.8,
+        "r": 378.34,
+        "b": 596.8
+      }
+    }
+  ],
+  "11": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Lisān al-ʿarab",
+      "bbox": {
+        "l": 157.77,
+        "t": 60.73,
+        "r": 215.03,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 347.14,
+        "t": 60.73,
+        "r": 372.95,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 298.28,
+        "t": 74.2,
+        "r": 324.09,
+        "b": 85.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mutaʿallaq",
+      "bbox": {
+        "l": 247.71,
+        "t": 87.66,
+        "r": 292.13,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 174.6,
+        "t": 101.13,
+        "r": 200.41,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": true,
+      "text": "2 Cosmic Order in Muʾayyad al-Dīn al-ʿUrḍī’s Astronomy",
+      "bbox": {
+        "l": 56.68,
+        "t": 235.81,
+        "r": 325.02,
+        "b": 246.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 167.51,
+        "t": 276.17,
+        "r": 217.53,
+        "b": 287.17
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 242.46,
+        "t": 289.63,
+        "r": 295.07,
+        "b": 300.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-Hayʾa",
+      "bbox": {
+        "l": 260.24,
+        "t": 303.1,
+        "r": 320.79,
+        "b": 314.1
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Hayʾa",
+      "bbox": {
+        "l": 56.68,
+        "t": 316.56,
+        "r": 80.23,
+        "b": 327.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "dawriyya",
+      "bbox": {
+        "l": 104.1,
+        "t": 356.95,
+        "r": 141.79,
+        "b": 367.95
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "al-kura",
+      "bbox": {
+        "l": 91.35,
+        "t": 370.42,
+        "r": 121.22,
+        "b": 381.42
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "aslas",
+      "bbox": {
+        "l": 212.82,
+        "t": 370.42,
+        "r": 233.74,
+        "b": 381.42
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "bi-l-ḥarī",
+      "bbox": {
+        "l": 308.04,
+        "t": 397.35,
+        "r": 341.4,
+        "b": 408.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-Hayʾa",
+      "bbox": {
+        "l": 246.46,
+        "t": 410.81,
+        "r": 305.7,
+        "b": 421.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Planetary Hypotheses",
+      "bbox": {
+        "l": 214.65,
+        "t": 424.27,
+        "r": 304.27,
+        "b": 435.27
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "manshūrāt",
+      "bbox": {
+        "l": 257.52,
+        "t": 437.74,
+        "r": 303.12,
+        "b": 448.74
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iʿtimād",
+      "bbox": {
+        "l": 156.76,
+        "t": 478.13,
+        "r": 185.82,
+        "b": 489.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "manshūrāt",
+      "bbox": {
+        "l": 265.02,
+        "t": 478.13,
+        "r": 310.63,
+        "b": 489.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-amr al-awlā wa-l-ashbah",
+      "bbox": {
+        "l": 354.39,
+        "t": 505.06,
+        "r": 140.19,
+        "b": 502.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "bi-mā yuʿtaqad",
+      "bbox": {
+        "l": 274.14,
+        "t": 505.06,
+        "r": 336.26,
+        "b": 516.06
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Lisān al-ʿarab",
+      "bbox": {
+        "l": 123.11,
+        "t": 546.28,
+        "r": 169.28,
+        "b": 555.28
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Arabic Sciences and Philosophy",
+      "bbox": {
+        "l": 79.36,
+        "t": 568.27,
+        "r": 189.76,
+        "b": 577.27
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 243.27,
+        "t": 579.27,
+        "r": 261.19,
+        "b": 588.27
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "but not through logic. 42 ʿUrḍī,",
+      "bbox": {
+        "l": 261.19,
+        "t": 590.27,
+        "r": 98.35,
+        "b": 588.27
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Astronomical Work,",
+      "bbox": {
+        "l": 98.35,
+        "t": 590.27,
+        "r": 165.78,
+        "b": 599.27
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿUrḍī",
+      "bbox": {
+        "l": 206.43,
+        "t": 601.27,
+        "r": 223.31,
+        "b": 610.27
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-hayʾa",
+      "bbox": {
+        "l": 229.6,
+        "t": 601.27,
+        "r": 276.34,
+        "b": 610.27
+      }
+    }
+  ],
+  "12": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 325.59,
+        "t": 154.98,
+        "r": 377.19,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "faḥwā",
+      "bbox": {
+        "l": 282.15,
+        "t": 181.91,
+        "r": 307.29,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iʿtiqāduhum",
+      "bbox": {
+        "l": 130.91,
+        "t": 195.37,
+        "r": 181.16,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 253.58,
+        "t": 195.37,
+        "r": 279.38,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mujānib",
+      "bbox": {
+        "l": 333.96,
+        "t": 316.55,
+        "r": 368.25,
+        "b": 327.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "uṣūl",
+      "bbox": {
+        "l": 155.37,
+        "t": 330.01,
+        "r": 172.65,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ḥāla muntaẓama",
+      "bbox": {
+        "l": 83.9,
+        "t": 343.48,
+        "r": 156.05,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "al-amr al-mustamirr",
+      "bbox": {
+        "l": 280.43,
+        "t": 343.48,
+        "r": 367.03,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 89.09,
+        "t": 370.41,
+        "r": 110.99,
+        "b": 381.41
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mustabʿada",
+      "bbox": {
+        "l": 330.86,
+        "t": 410.8,
+        "r": 379.12,
+        "b": 421.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 218.84,
+        "t": 424.26,
+        "r": 240.74,
+        "b": 435.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Almagest",
+      "bbox": {
+        "l": 197.7,
+        "t": 437.73,
+        "r": 236.44,
+        "b": 448.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Planetary Hypotheses",
+      "bbox": {
+        "l": 117.25,
+        "t": 451.19,
+        "r": 207.21,
+        "b": 462.19
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "(al-Iqtiṣāṣ), through which this winding [",
+      "bbox": {
+        "l": 207.21,
+        "t": 464.65,
+        "r": 60.47,
+        "b": 462.19
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "iltifāf",
+      "bbox": {
+        "l": 60.47,
+        "t": 464.65,
+        "r": 82.22,
+        "b": 475.65
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "niẓām",
+      "bbox": {
+        "l": 139.74,
+        "t": 478.12,
+        "r": 165.55,
+        "b": 489.12
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "tartīb",
+      "bbox": {
+        "l": 249.74,
+        "t": 478.12,
+        "r": 272.84,
+        "b": 489.12
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "uṣūl",
+      "bbox": {
+        "l": 159.92,
+        "t": 579.28,
+        "r": 175.7,
+        "b": 588.28
+      }
+    }
+  ],
+  "13": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ṭarīqunā",
+      "bbox": {
+        "l": 175.62,
+        "t": 74.2,
+        "r": 211.81,
+        "b": 85.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-hayʾa",
+      "bbox": {
+        "l": 312.04,
+        "t": 87.66,
+        "r": 369.49,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "wa-intaẓama amruhā",
+      "bbox": {
+        "l": 175.34,
+        "t": 128.05,
+        "r": 265.23,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-ṭabīʿa al-samāwiyya",
+      "bbox": {
+        "l": 201.15,
+        "t": 141.52,
+        "r": 294.88,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-Hayʾa",
+      "bbox": {
+        "l": 232.8,
+        "t": 208.84,
+        "r": 293.52,
+        "b": 219.84
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "uṣūl",
+      "bbox": {
+        "l": 337.99,
+        "t": 303.09,
+        "r": 355.27,
+        "b": 314.09
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "badīhiyya",
+      "bbox": {
+        "l": 295.15,
+        "t": 316.55,
+        "r": 335.52,
+        "b": 327.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "uṣūl",
+      "bbox": {
+        "l": 141.62,
+        "t": 370.41,
+        "r": 158.9,
+        "b": 381.41
+      }
+    }
+  ],
+  "14": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "furūʿ",
+      "bbox": {
+        "l": 146.21,
+        "t": 101.13,
+        "r": 165.54,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "min amr al-hayʾa",
+      "bbox": {
+        "l": 306.33,
+        "t": 181.91,
+        "r": 376.86,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "bāṭila",
+      "bbox": {
+        "l": 130.91,
+        "t": 222.3,
+        "r": 154.9,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "min ghayr baḥth",
+      "bbox": {
+        "l": 366.48,
+        "t": 249.23,
+        "r": 129.63,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "tasṭīḥ",
+      "bbox": {
+        "l": 188.9,
+        "t": 262.69,
+        "r": 212.31,
+        "b": 273.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-muḥaqqiqīn",
+      "bbox": {
+        "l": 318.06,
+        "t": 356.94,
+        "r": 379.09,
+        "b": 367.94
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "taqlīd",
+      "bbox": {
+        "l": 258.85,
+        "t": 451.19,
+        "r": 282.94,
+        "b": 462.19
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "maʿrifa",
+      "bbox": {
+        "l": 95.09,
+        "t": 464.66,
+        "r": 124.96,
+        "b": 475.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "radda",
+      "bbox": {
+        "l": 162.54,
+        "t": 491.58,
+        "r": 187.48,
+        "b": 502.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ilā juḥūdihā",
+      "bbox": {
+        "l": 328.21,
+        "t": 531.98,
+        "r": 379.06,
+        "b": 542.98
+      }
+    }
+  ],
+  "15": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-muḥaqqiqūn",
+      "bbox": {
+        "l": 96.18,
+        "t": 195.37,
+        "r": 160.0,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "3 Quṭb al-Dīn al-Shīrāzī’s Different Understanding of Cosmic Order",
+      "bbox": {
+        "l": 56.68,
+        "t": 303.13,
+        "r": 373.89,
+        "b": 314.13
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿUrḍī’s",
+      "bbox": {
+        "l": 56.68,
+        "t": 330.03,
+        "r": 85.38,
+        "b": 341.03
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-hayʾa",
+      "bbox": {
+        "l": 85.9,
+        "t": 330.03,
+        "r": 143.53,
+        "b": 341.03
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Tuḥfa al-shāhiyya",
+      "bbox": {
+        "l": 113.39,
+        "t": 343.49,
+        "r": 197.27,
+        "b": 354.49
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 56.68,
+        "t": 424.27,
+        "r": 80.76,
+        "b": 435.27
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Journal for the History of Arabic Science",
+      "bbox": {
+        "l": 79.36,
+        "t": 477.81,
+        "r": 212.12,
+        "b": 486.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Islamic Science and the Making of the European Renaissance",
+      "bbox": {
+        "l": 131.13,
+        "t": 488.81,
+        "r": 337.62,
+        "b": 497.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Faʿaltu fa-lā talum",
+      "bbox": {
+        "l": 319.9,
+        "t": 499.8,
+        "r": 382.69,
+        "b": 508.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nihāyat al-Idrāk",
+      "bbox": {
+        "l": 262.72,
+        "t": 510.8,
+        "r": 318.5,
+        "b": 519.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Tuḥfa al-shāhiyya",
+      "bbox": {
+        "l": 223.62,
+        "t": 532.8,
+        "r": 292.48,
+        "b": 541.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "istiqrāʾ",
+      "bbox": {
+        "l": 243.51,
+        "t": 543.8,
+        "r": 266.59,
+        "b": 552.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "burhān",
+      "bbox": {
+        "l": 82.31,
+        "t": 554.79,
+        "r": 107.12,
+        "b": 563.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Nazariyat",
+      "bbox": {
+        "l": 174.14,
+        "t": 587.79,
+        "r": 207.37,
+        "b": 596.79
+      }
+    }
+  ],
+  "16": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-ʿālam al-jismānī",
+      "bbox": {
+        "l": 236.92,
+        "t": 60.73,
+        "r": 314.19,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 56.7,
+        "t": 87.66,
+        "r": 79.87,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 208.06,
+        "t": 101.13,
+        "r": 232.14,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "mabda⁠ʾ",
+      "bbox": {
+        "l": 337.63,
+        "t": 128.05,
+        "r": 368.9,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "intaẓamat",
+      "bbox": {
+        "l": 234.34,
+        "t": 141.52,
+        "r": 277.01,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "wa-mā iḍṭarabat",
+      "bbox": {
+        "l": 81.33,
+        "t": 154.98,
+        "r": 150.02,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Fī Mabādiʾ al-kull",
+      "bbox": {
+        "l": 148.52,
+        "t": 195.37,
+        "r": 219.59,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Fī Mabādiʾ al-kull",
+      "bbox": {
+        "l": 273.86,
+        "t": 235.77,
+        "r": 345.42,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 105.91,
+        "t": 330.01,
+        "r": 129.99,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Osiris",
+      "bbox": {
+        "l": 335.02,
+        "t": 356.81,
+        "r": 354.24,
+        "b": 365.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 106.67,
+        "t": 378.81,
+        "r": 126.37,
+        "b": 387.81
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ", 4a. See also Shīrāzī,",
+      "bbox": {
+        "l": 126.37,
+        "t": 378.81,
+        "r": 197.85,
+        "b": 387.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nihāyat al-idrāk fī dirāyat al-aflāk,",
+      "bbox": {
+        "l": 197.82,
+        "t": 378.81,
+        "r": 314.21,
+        "b": 387.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nihāyat al-idrāk",
+      "bbox": {
+        "l": 201.48,
+        "t": 389.81,
+        "r": 256.67,
+        "b": 398.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 106.7,
+        "t": 422.8,
+        "r": 126.4,
+        "b": 431.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Alexander of Aphrodisias",
+      "bbox": {
+        "l": 123.7,
+        "t": 444.8,
+        "r": 209.37,
+        "b": 453.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On the Cosmos",
+      "bbox": {
+        "l": 278.34,
+        "t": 444.8,
+        "r": 328.73,
+        "b": 453.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Caelo",
+      "bbox": {
+        "l": 157.84,
+        "t": 466.79,
+        "r": 188.44,
+        "b": 475.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Aristote,",
+      "bbox": {
+        "l": 79.38,
+        "t": 488.79,
+        "r": 107.42,
+        "b": 497.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "De Caelo",
+      "bbox": {
+        "l": 157.19,
+        "t": 488.79,
+        "r": 188.34,
+        "b": 497.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "On Astronomia",
+      "bbox": {
+        "l": 149.8,
+        "t": 499.79,
+        "r": 202.56,
+        "b": 508.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 107.13,
+        "t": 543.78,
+        "r": 126.83,
+        "b": 552.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nihāya",
+      "bbox": {
+        "l": 79.37,
+        "t": 565.77,
+        "r": 103.54,
+        "b": 574.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "li-yantaẓima amruhu",
+      "bbox": {
+        "l": 340.03,
+        "t": 587.77,
+        "r": 106.72,
+        "b": 585.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nihāya",
+      "bbox": {
+        "l": 353.02,
+        "t": 587.77,
+        "r": 377.19,
+        "b": 596.77
+      }
+    }
+  ],
+  "17": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 149.77,
+        "t": 60.73,
+        "r": 200.31,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "all",
+      "bbox": {
+        "l": 77.62,
+        "t": 86.94,
+        "r": 88.05,
+        "b": 97.94
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Hayʾa",
+      "bbox": {
+        "l": 136.81,
+        "t": 86.94,
+        "r": 160.36,
+        "b": 97.94
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 192.29,
+        "t": 139.34,
+        "r": 214.19,
+        "b": 150.34
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 365.32,
+        "t": 152.44,
+        "r": 84.93,
+        "b": 150.34
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 198.11,
+        "t": 165.54,
+        "r": 222.19,
+        "b": 176.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "uṣūl",
+      "bbox": {
+        "l": 282.41,
+        "t": 165.54,
+        "r": 301.7,
+        "b": 176.54
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fī nafs al-amr",
+      "bbox": {
+        "l": 128.7,
+        "t": 257.61,
+        "r": 183.49,
+        "b": 268.61
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "uṣūl",
+      "bbox": {
+        "l": 75.73,
+        "t": 297.28,
+        "r": 93.01,
+        "b": 308.28
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 347.98,
+        "t": 336.58,
+        "r": 372.06,
+        "b": 347.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ghayr muntaẓama",
+      "bbox": {
+        "l": 142.43,
+        "t": 362.78,
+        "r": 218.74,
+        "b": 373.78
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fī nafs al-amr",
+      "bbox": {
+        "l": 87.02,
+        "t": 388.99,
+        "r": 144.21,
+        "b": 399.99
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fī nafs al-amr",
+      "bbox": {
+        "l": 239.2,
+        "t": 428.29,
+        "r": 294.8,
+        "b": 439.29
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 155.84,
+        "t": 497.35,
+        "r": 196.89,
+        "b": 506.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 88.32,
+        "t": 519.35,
+        "r": 127.28,
+        "b": 528.35
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "in Shīrāzī’s earlier",
+      "bbox": {
+        "l": 127.28,
+        "t": 519.35,
+        "r": 191.82,
+        "b": 528.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nihāyat al-idrāk",
+      "bbox": {
+        "l": 191.82,
+        "t": 519.35,
+        "r": 246.76,
+        "b": 528.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Journal for the History of Arabic Science",
+      "bbox": {
+        "l": 346.5,
+        "t": 541.34,
+        "r": 177.5,
+        "b": 539.35
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "13 (2005), 21-140, 39. See Shīrāzī,",
+      "bbox": {
+        "l": 177.5,
+        "t": 541.34,
+        "r": 294.59,
+        "b": 550.34
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nihāya",
+      "bbox": {
+        "l": 295.37,
+        "t": 541.34,
+        "r": 319.54,
+        "b": 550.34
+      }
+    }
+  ],
+  "18": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 184.09,
+        "t": 74.2,
+        "r": 233.61,
+        "b": 85.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 271.18,
+        "t": 87.66,
+        "r": 319.7,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Nafs al-amr",
+      "bbox": {
+        "l": 74.82,
+        "t": 114.59,
+        "r": 124.32,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 157.69,
+        "t": 181.91,
+        "r": 181.77,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb al-Hayʾa",
+      "bbox": {
+        "l": 85.72,
+        "t": 195.37,
+        "r": 144.8,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ", Shīrāzī’s use of the term",
+      "bbox": {
+        "l": 144.8,
+        "t": 195.37,
+        "r": 253.11,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 253.43,
+        "t": 195.37,
+        "r": 301.35,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "4 Ṣadr al-Sharīʿa al-Bukhārī’s Denial of an Order Inherent in the Cosmos",
+      "bbox": {
+        "l": 56.7,
+        "t": 262.74,
+        "r": 124.71,
+        "b": 260.27
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "Shīrāzī’s use of",
+      "bbox": {
+        "l": 56.7,
+        "t": 289.63,
+        "r": 121.28,
+        "b": 300.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 121.53,
+        "t": 289.63,
+        "r": 171.38,
+        "b": 300.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 236.47,
+        "t": 316.56,
+        "r": 258.37,
+        "b": 327.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 152.89,
+        "t": 330.02,
+        "r": 174.79,
+        "b": 341.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 142.58,
+        "t": 397.35,
+        "r": 191.4,
+        "b": 408.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Risālat Nafs al-amr",
+      "bbox": {
+        "l": 177.05,
+        "t": 508.35,
+        "r": 247.68,
+        "b": 517.35
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ",” in Muḥammad Mudarrisī Zanjānī,",
+      "bbox": {
+        "l": 247.68,
+        "t": 508.35,
+        "r": 384.45,
+        "b": 517.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Sarguzasht wa ʿaqāʿid-i falsafī-yi Khwājah Naṣīr al-Dīn",
+      "bbox": {
+        "l": 79.38,
+        "t": 519.35,
+        "r": 269.67,
+        "b": 528.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Aḥwāl va athār",
+      "bbox": {
+        "l": 173.44,
+        "t": 530.35,
+        "r": 224.39,
+        "b": 539.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Muḥammad b. Muḥammad b. al-Ḥasan al-Ṭūsī",
+      "bbox": {
+        "l": 226.05,
+        "t": 530.35,
+        "r": 384.33,
+        "b": 539.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 144.69,
+        "t": 552.34,
+        "r": 183.79,
+        "b": 561.34
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Ankara Üniver-sitesi Dil ve Tarih-Coğrafya Fakültesi Araştırma Dergisi",
+      "bbox": {
+        "l": 331.33,
+        "t": 563.34,
+        "r": 261.75,
+        "b": 561.34
+      }
+    }
+  ],
+  "19": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾāt",
+      "bbox": {
+        "l": 60.45,
+        "t": 60.73,
+        "r": 85.52,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 76.99,
+        "t": 114.59,
+        "r": 130.13,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "kay-fiyyāt",
+      "bbox": {
+        "l": 365.32,
+        "t": 128.05,
+        "r": 79.3,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "). Shīrāzī, in the",
+      "bbox": {
+        "l": 79.3,
+        "t": 128.05,
+        "r": 148.3,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 148.63,
+        "t": 128.05,
+        "r": 172.71,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "yuʿrafu bih",
+      "bbox": {
+        "l": 353.55,
+        "t": 141.52,
+        "r": 69.69,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Taʿdīl al-aflāk",
+      "bbox": {
+        "l": 274.18,
+        "t": 195.37,
+        "r": 330.14,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ", Dallal drew a contrast with Ṭūsī’s and Shīrāzī’s positions by noting that, according to Ṣadr al-Sharīʿa,",
+      "bbox": {
+        "l": 330.14,
+        "t": 222.3,
+        "r": 100.24,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 99.93,
+        "t": 222.3,
+        "r": 149.89,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr.",
+      "bbox": {
+        "l": 209.65,
+        "t": 370.41,
+        "r": 258.47,
+        "b": 381.41
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 111.37,
+        "t": 397.34,
+        "r": 134.54,
+        "b": 408.34
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 270.4,
+        "t": 410.8,
+        "r": 321.16,
+        "b": 421.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "An Islamic Response to Greek Astronomy:",
+      "bbox": {
+        "l": 134.31,
+        "t": 521.81,
+        "r": 278.51,
+        "b": 530.81
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "Kitāb Taʿdīl Hayʾat al-Aflāk",
+      "bbox": {
+        "l": 279.5,
+        "t": 521.81,
+        "r": 375.37,
+        "b": 530.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "of Ṣadr al-Sharīʿa,",
+      "bbox": {
+        "l": 376.44,
+        "t": 532.81,
+        "r": 132.75,
+        "b": 530.81
+      }
+    }
+  ],
+  "20": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 112.98,
+        "t": 87.66,
+        "r": 163.58,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 353.14,
+        "t": 141.52,
+        "r": 377.21,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "falsafa",
+      "bbox": {
+        "l": 67.64,
+        "t": 249.23,
+        "r": 95.45,
+        "b": 260.23
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "5",
+      "bbox": {
+        "l": 56.7,
+        "t": 289.67,
+        "r": 63.66,
+        "b": 300.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": true,
+      "foreign": false,
+      "text": "Nafs al-Amr",
+      "bbox": {
+        "l": 90.71,
+        "t": 289.67,
+        "r": 142.11,
+        "b": 300.67
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "and Cosmic Order",
+      "bbox": {
+        "l": 142.11,
+        "t": 289.67,
+        "r": 222.72,
+        "b": 300.67
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 306.24,
+        "t": 316.56,
+        "r": 359.52,
+        "b": 327.56
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 315.19,
+        "t": 330.03,
+        "r": 362.54,
+        "b": 341.03
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 351.46,
+        "t": 356.95,
+        "r": 73.96,
+        "b": 354.49
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nahj",
+      "bbox": {
+        "l": 208.88,
+        "t": 397.35,
+        "r": 227.44,
+        "b": 408.35
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ") of Ibn Sīnā’s",
+      "bbox": {
+        "l": 227.44,
+        "t": 397.35,
+        "r": 291.67,
+        "b": 408.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Ishārāt wa-l-tanbīhāt",
+      "bbox": {
+        "l": 293.45,
+        "t": 397.35,
+        "r": 382.68,
+        "b": 408.35
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Islam, Science, and the Challenge of History",
+      "bbox": {
+        "l": 129.46,
+        "t": 455.81,
+        "r": 272.23,
+        "b": 464.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "An Islamic Response",
+      "bbox": {
+        "l": 272.75,
+        "t": 466.81,
+        "r": 345.2,
+        "b": 475.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "kalām.",
+      "bbox": {
+        "l": 116.85,
+        "t": 510.8,
+        "r": 139.71,
+        "b": 519.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "An Islamic Response",
+      "bbox": {
+        "l": 206.29,
+        "t": 510.8,
+        "r": 274.7,
+        "b": 519.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Tadhkira",
+      "bbox": {
+        "l": 229.3,
+        "t": 521.8,
+        "r": 259.61,
+        "b": 530.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Islam, Science",
+      "bbox": {
+        "l": 270.21,
+        "t": 543.8,
+        "r": 317.73,
+        "b": 552.8
+      }
+    }
+  ],
+  "21": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "al-nasab",
+      "bbox": {
+        "l": 371.86,
+        "t": 74.2,
+        "r": 104.34,
+        "b": 71.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 231.62,
+        "t": 74.2,
+        "r": 279.44,
+        "b": 85.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ḥukm",
+      "bbox": {
+        "l": 126.36,
+        "t": 87.66,
+        "r": 149.88,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "limma",
+      "bbox": {
+        "l": 317.31,
+        "t": 101.13,
+        "r": 344.01,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "inna",
+      "bbox": {
+        "l": 143.34,
+        "t": 222.3,
+        "r": 162.18,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fī nafs al-amr",
+      "bbox": {
+        "l": 188.23,
+        "t": 262.69,
+        "r": 244.72,
+        "b": 273.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-taṣdīq",
+      "bbox": {
+        "l": 56.68,
+        "t": 289.62,
+        "r": 92.94,
+        "b": 300.62
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 241.2,
+        "t": 303.09,
+        "r": 289.02,
+        "b": 314.09
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Pointers",
+      "bbox": {
+        "l": 318.48,
+        "t": 303.09,
+        "r": 351.74,
+        "b": 314.09
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 365.33,
+        "t": 343.48,
+        "r": 84.91,
+        "b": 341.02
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Risāla fī nafs al-amr",
+      "bbox": {
+        "l": 90.68,
+        "t": 343.48,
+        "r": 173.55,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 310.25,
+        "t": 343.48,
+        "r": 357.84,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-ṣinfayn al-madh kūrayn",
+      "bbox": {
+        "l": 256.81,
+        "t": 518.51,
+        "r": 366.0,
+        "b": 529.51
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "sabab",
+      "bbox": {
+        "l": 177.21,
+        "t": 554.81,
+        "r": 198.94,
+        "b": 563.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nasab",
+      "bbox": {
+        "l": 213.84,
+        "t": 554.81,
+        "r": 234.28,
+        "b": 563.81
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "are similar.82 Ibn Sīnā,",
+      "bbox": {
+        "l": 234.28,
+        "t": 565.81,
+        "r": 111.72,
+        "b": 563.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Ishārāt wa-l-tanbīhāt",
+      "bbox": {
+        "l": 112.04,
+        "t": 565.81,
+        "r": 192.88,
+        "b": 574.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "maʿa sharḥ Naṣīr al-Dīn al-Ṭūsī",
+      "bbox": {
+        "l": 194.97,
+        "t": 565.81,
+        "r": 300.29,
+        "b": 574.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Tadhkira",
+      "bbox": {
+        "l": 232.74,
+        "t": 576.81,
+        "r": 263.05,
+        "b": 585.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "innī",
+      "bbox": {
+        "l": 149.66,
+        "t": 587.81,
+        "r": 164.53,
+        "b": 596.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "limmī",
+      "bbox": {
+        "l": 179.42,
+        "t": 587.81,
+        "r": 200.72,
+        "b": 596.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Ishārāt",
+      "bbox": {
+        "l": 340.35,
+        "t": 587.81,
+        "r": 364.73,
+        "b": 596.81
+      }
+    }
+  ],
+  "22": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "bi-mā fī nafs al-amr",
+      "bbox": {
+        "l": 241.13,
+        "t": 114.59,
+        "r": 322.56,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "bi-l-fi‘l",
+      "bbox": {
+        "l": 82.98,
+        "t": 154.98,
+        "r": 108.82,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "awwal al-awwāʾil",
+      "bbox": {
+        "l": 201.99,
+        "t": 208.84,
+        "r": 272.29,
+        "b": 219.84
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 226.73,
+        "t": 235.77,
+        "r": 275.41,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿaql al-kull",
+      "bbox": {
+        "l": 276.75,
+        "t": 316.55,
+        "r": 319.45,
+        "b": 327.55
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Qurʾān",
+      "bbox": {
+        "l": 130.92,
+        "t": 330.01,
+        "r": 159.31,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-lawḥ al-maḥfūẓ",
+      "bbox": {
+        "l": 352.05,
+        "t": 343.48,
+        "r": 121.63,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-kitāb al-mubīn",
+      "bbox": {
+        "l": 283.37,
+        "t": 343.48,
+        "r": 355.94,
+        "b": 354.48
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fī nafs al-amr",
+      "bbox": {
+        "l": 137.72,
+        "t": 437.73,
+        "r": 194.11,
+        "b": 448.73
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fī nafs al-amr",
+      "bbox": {
+        "l": 208.18,
+        "t": 478.12,
+        "r": 264.74,
+        "b": 489.12
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-wujūd al-dhihnī",
+      "bbox": {
+        "l": 158.82,
+        "t": 505.05,
+        "r": 235.5,
+        "b": 516.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 331.89,
+        "t": 505.05,
+        "r": 380.49,
+        "b": 516.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Risāla fī ithbāt jawhar mufāraq",
+      "bbox": {
+        "l": 195.99,
+        "t": 518.51,
+        "r": 324.8,
+        "b": 529.51
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 92.21,
+        "t": 531.98,
+        "r": 141.12,
+        "b": 542.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "kitāb mubīn",
+      "bbox": {
+        "l": 329.74,
+        "t": 576.81,
+        "r": 370.14,
+        "b": 585.81
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ").”85 Ṭūsī, “Risāla,” 466-467.",
+      "bbox": {
+        "l": 370.14,
+        "t": 587.81,
+        "r": 157.22,
+        "b": 585.81
+      }
+    }
+  ],
+  "23": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 246.46,
+        "t": 74.2,
+        "r": 295.13,
+        "b": 85.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 195.2,
+        "t": 87.66,
+        "r": 245.86,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-ʿālam",
+      "bbox": {
+        "l": 60.29,
+        "t": 101.13,
+        "r": 94.32,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 157.17,
+        "t": 114.59,
+        "r": 204.94,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 334.8,
+        "t": 128.05,
+        "r": 382.7,
+        "b": 139.05
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Nafs al-amr",
+      "bbox": {
+        "l": 68.02,
+        "t": 154.98,
+        "r": 117.41,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 367.2,
+        "t": 168.45,
+        "r": 89.45,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 240.08,
+        "t": 168.45,
+        "r": 287.57,
+        "b": 179.45
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-Tadhkira fī ʿilm al-hayʾa",
+      "bbox": {
+        "l": 96.13,
+        "t": 181.91,
+        "r": 208.6,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ", but Shīrāzī’s student, Niẓām al-Dīn al-Nīsābūrī (d. ca. 1330), in his own commentary on the",
+      "bbox": {
+        "l": 208.6,
+        "t": 195.37,
+        "r": 274.14,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Tadhkira",
+      "bbox": {
+        "l": 273.63,
+        "t": 195.37,
+        "r": 310.68,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "limmī",
+      "bbox": {
+        "l": 301.3,
+        "t": 222.3,
+        "r": 325.32,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "propter quid",
+      "bbox": {
+        "l": 327.52,
+        "t": 222.3,
+        "r": 382.72,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fī nafs al-amr",
+      "bbox": {
+        "l": 56.69,
+        "t": 262.69,
+        "r": 114.12,
+        "b": 273.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "uṣūl",
+      "bbox": {
+        "l": 234.8,
+        "t": 276.16,
+        "r": 252.09,
+        "b": 287.16
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nihāya",
+      "bbox": {
+        "l": 163.41,
+        "t": 303.09,
+        "r": 194.96,
+        "b": 314.09
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr.",
+      "bbox": {
+        "l": 92.61,
+        "t": 383.87,
+        "r": 141.66,
+        "b": 394.87
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 307.2,
+        "t": 410.8,
+        "r": 354.49,
+        "b": 421.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs",
+      "bbox": {
+        "l": 270.15,
+        "t": 424.26,
+        "r": 287.53,
+        "b": 435.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "al-amr",
+      "bbox": {
+        "l": 289.36,
+        "t": 424.26,
+        "r": 317.6,
+        "b": 435.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 260.38,
+        "t": 455.81,
+        "r": 299.24,
+        "b": 464.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Aristote",
+      "bbox": {
+        "l": 138.15,
+        "t": 477.81,
+        "r": 164.39,
+        "b": 486.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tawḍīḥ",
+      "bbox": {
+        "l": 112.04,
+        "t": 510.8,
+        "r": 136.53,
+        "b": 519.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "barāhīn",
+      "bbox": {
+        "l": 337.74,
+        "t": 510.8,
+        "r": 364.5,
+        "b": 519.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 220.87,
+        "t": 521.8,
+        "r": 260.58,
+        "b": 530.8
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ". Al-ʿAllāma al-Ḥillī (d. 1325), in his",
+      "bbox": {
+        "l": 260.58,
+        "t": 521.8,
+        "r": 384.49,
+        "b": 530.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Jawhar al-naḍīd",
+      "bbox": {
+        "l": 79.36,
+        "t": 532.8,
+        "r": 134.0,
+        "b": 541.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fī sharḥ Manṭiq al-tajrīd",
+      "bbox": {
+        "l": 136.37,
+        "t": 532.8,
+        "r": 219.09,
+        "b": 541.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "limmī",
+      "bbox": {
+        "l": 342.11,
+        "t": 532.8,
+        "r": 361.76,
+        "b": 541.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 239.24,
+        "t": 543.8,
+        "r": 277.91,
+        "b": 552.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "innī",
+      "bbox": {
+        "l": 321.21,
+        "t": 543.8,
+        "r": 334.44,
+        "b": 552.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 221.07,
+        "t": 565.79,
+        "r": 261.13,
+        "b": 574.79
+      }
+    }
+  ],
+  "24": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 207.35,
+        "t": 74.2,
+        "r": 256.27,
+        "b": 85.2
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 351.86,
+        "t": 101.13,
+        "r": 73.96,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "aʿamm min al-khārij",
+      "bbox": {
+        "l": 227.34,
+        "t": 101.13,
+        "r": 311.84,
+        "b": 112.13
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 210.06,
+        "t": 114.59,
+        "r": 261.18,
+        "b": 125.59
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "sawād",
+      "bbox": {
+        "l": 60.31,
+        "t": 141.52,
+        "r": 86.59,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "fī nafsih",
+      "bbox": {
+        "l": 284.66,
+        "t": 141.52,
+        "r": 318.17,
+        "b": 152.52
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 86.4,
+        "t": 195.37,
+        "r": 137.36,
+        "b": 206.37
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ḥukm",
+      "bbox": {
+        "l": 303.57,
+        "t": 208.84,
+        "r": 327.09,
+        "b": 219.84
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "dhihn",
+      "bbox": {
+        "l": 60.31,
+        "t": 222.3,
+        "r": 84.44,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 178.88,
+        "t": 222.3,
+        "r": 226.8,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Kashf al-Ẓunūn",
+      "bbox": {
+        "l": 252.38,
+        "t": 222.3,
+        "r": 316.58,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 151.38,
+        "t": 235.77,
+        "r": 199.2,
+        "b": 246.77
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "dhihn",
+      "bbox": {
+        "l": 60.31,
+        "t": 249.23,
+        "r": 84.44,
+        "b": 260.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 225.76,
+        "t": 249.23,
+        "r": 272.96,
+        "b": 260.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 196.25,
+        "t": 330.01,
+        "r": 243.76,
+        "b": 341.01
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 148.91,
+        "t": 410.8,
+        "r": 198.51,
+        "b": 421.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "al-muḥādhāh",
+      "bbox": {
+        "l": 82.99,
+        "t": 451.19,
+        "r": 139.35,
+        "b": 462.19
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 114.71,
+        "t": 491.58,
+        "r": 163.57,
+        "b": 502.58
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 368.43,
+        "t": 532.81,
+        "r": 104.12,
+        "b": 530.81
+      }
+    }
+  ],
+  "25": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 123.39,
+        "t": 154.98,
+        "r": 171.81,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 56.68,
+        "t": 181.91,
+        "r": 106.27,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 165.19,
+        "t": 222.3,
+        "r": 212.81,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 332.81,
+        "t": 222.3,
+        "r": 380.43,
+        "b": 233.3
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Mawāqif",
+      "bbox": {
+        "l": 108.34,
+        "t": 262.69,
+        "r": 144.43,
+        "b": 273.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "yanḍabiṭ",
+      "bbox": {
+        "l": 113.89,
+        "t": 370.41,
+        "r": 150.58,
+        "b": 381.41
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 56.68,
+        "t": 424.26,
+        "r": 105.23,
+        "b": 435.26
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 107.4,
+        "t": 488.81,
+        "r": 127.1,
+        "b": 497.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Zeitschrift für Geschichte der arabisch-islamischen Wissenschaften",
+      "bbox": {
+        "l": 79.36,
+        "t": 587.79,
+        "r": 301.5,
+        "b": 596.79
+      }
+    }
+  ],
+  "26": [
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 177.04,
+        "t": 87.66,
+        "r": 201.12,
+        "b": 98.66
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "ordered",
+      "bbox": {
+        "l": 194.62,
+        "t": 154.98,
+        "r": 226.17,
+        "b": 165.98
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "Al-magest",
+      "bbox": {
+        "l": 370.8,
+        "t": 181.91,
+        "r": 86.52,
+        "b": 179.45
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": ", Nīsābūrī (d. ca. 1330) had written that",
+      "bbox": {
+        "l": 86.52,
+        "t": 181.91,
+        "r": 249.5,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 249.41,
+        "t": 181.91,
+        "r": 271.31,
+        "b": 192.91
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "yatafakkurūn",
+      "bbox": {
+        "l": 134.63,
+        "t": 249.23,
+        "r": 190.27,
+        "b": 260.23
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ta’ammalū",
+      "bbox": {
+        "l": 321.47,
+        "t": 262.69,
+        "r": 365.6,
+        "b": 273.69
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "dhāt al-ḥalaq",
+      "bbox": {
+        "l": 274.86,
+        "t": 303.09,
+        "r": 330.53,
+        "b": 314.09
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 56.7,
+        "t": 397.33,
+        "r": 109.2,
+        "b": 408.33
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tawḍīḥ al-Tadhkira",
+      "bbox": {
+        "l": 89.38,
+        "t": 444.81,
+        "r": 155.06,
+        "b": 453.81
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 139.11,
+        "t": 510.8,
+        "r": 157.03,
+        "b": 519.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "hayʾa",
+      "bbox": {
+        "l": 300.1,
+        "t": 510.8,
+        "r": 318.02,
+        "b": 519.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Niẓām al-Dīn al-Nīsābūrī, Sharḥ Taḥrīr al-Majisṭī",
+      "bbox": {
+        "l": 274.29,
+        "t": 532.8,
+        "r": 134.83,
+        "b": 530.8
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Islam and Science: The Intellectual Career of Niẓām al-Dīn al-Nīsābūrī",
+      "bbox": {
+        "l": 348.63,
+        "t": 543.79,
+        "r": 277.6,
+        "b": 541.8
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "(Abingdon, 2007), 30.100 Shīrāzī,",
+      "bbox": {
+        "l": 277.6,
+        "t": 554.79,
+        "r": 106.69,
+        "b": 552.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Tuḥfa",
+      "bbox": {
+        "l": 106.69,
+        "t": 554.79,
+        "r": 126.39,
+        "b": 563.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": ",",
+      "bbox": {
+        "l": 95.11,
+        "t": 565.79,
+        "r": 98.55,
+        "b": 574.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "yalūḥ bi-l-ta’ammul li-l-fāṭin",
+      "bbox": {
+        "l": 107.76,
+        "t": 587.79,
+        "r": 202.04,
+        "b": 596.79
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": ",",
+      "bbox": {
+        "l": 237.5,
+        "t": 587.79,
+        "r": 240.94,
+        "b": 596.79
+      }
+    }
+  ],
+  "27": [
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "6 Conclusion",
+      "bbox": {
+        "l": 56.68,
+        "t": 114.63,
+        "r": 140.16,
+        "b": 125.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 328.75,
+        "t": 154.99,
+        "r": 379.07,
+        "b": 165.99
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "nafs al-amr",
+      "bbox": {
+        "l": 252.22,
+        "t": 195.38,
+        "r": 300.39,
+        "b": 206.38
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 198.58,
+        "t": 208.85,
+        "r": 252.18,
+        "b": 219.85
+      }
+    },
+    {
+      "italic": false,
+      "bold": false,
+      "foreign": true,
+      "text": "texts, beginning with Shīrāzī’s",
+      "bbox": {
+        "l": 253.54,
+        "t": 208.85,
+        "r": 384.87,
+        "b": 219.85
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "Nihāya",
+      "bbox": {
+        "l": 56.68,
+        "t": 222.31,
+        "r": 86.23,
+        "b": 233.31
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 139.93,
+        "t": 262.7,
+        "r": 170.06,
+        "b": 273.7
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿālam",
+      "bbox": {
+        "l": 164.27,
+        "t": 289.63,
+        "r": 187.44,
+        "b": 300.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": false,
+      "text": "kósmos",
+      "bbox": {
+        "l": 350.36,
+        "t": 289.63,
+        "r": 380.49,
+        "b": 300.63
+      }
+    },
+    {
+      "italic": true,
+      "bold": false,
+      "foreign": true,
+      "text": "ʿilm al-hayʾa",
+      "bbox": {
+        "l": 214.69,
+        "t": 330.02,
+        "r": 265.02,
+        "b": 341.02
+      }
+    },
+    {
+      "italic": false,
+      "bold": true,
+      "foreign": false,
+      "text": "7 Acknowledgments",
+      "bbox": {
+        "l": 56.68,
+        "t": 383.92,
+        "r": 171.61,
+        "b": 394.92
+      }
+    }
+  ]
+}

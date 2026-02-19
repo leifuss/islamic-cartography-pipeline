@@ -1,0 +1,121 @@
+Armenia, Caucaso e Asia Centrale
+Ricerche 2018
+a cura di Carlo Frappi e Aldo Ferrari
+Tradition and Innovation in the Cosmology
+of Anania Širakac'i
+Stephanie Pambakian
+(University of St Andrews, Scotland)
+Abstract Anania Širakac‘i was a 7th century AD Armenian mathematician trained in the Byzantine
+Empire whose works embrace treatises in various fields of science. Of the almost 30 texts attrib-
+uted to him, most await investigation. His Cosmology is the focus of our research, and we highlight
+its elements of similarity with Greek tradition, in particular with St Basil's Hexameron, and in the
+Armenian tradition, to which Anania brings novelty especially in his deeper understanding of astro-
+nomical phenomena. We suggest that this work, like Isidore's De Natura Rerum, represents a new
+genre of Christian literature, and attempts to understand it through the meaning of Cosmos found
+in Aristotle's De Mundo.
+Summary 1 Introduction. – 2 The Autobiography and Anania's Alexandrian Formation. – 3 The Corpus
+of Anania's Works. - 4 The Cosmology. - 4.1 The Text. - 4.2 A Possible Dedicatee- 4.3 Sources. - 4.4 From
+the Land of the Greeks... to Armenian Literature. – 4.5 A New Genre. – 4.6 Methodology. - 5 Conclusion.
+Keywords Anania Širakac‘i. Armenia. Cosmology. Tradition and innovation. 7th century AD.
+1 Introduction
+Anania Širakac'i, also known as Anania of Širak or Anania Širakuni, is
+regarded within the Armenian tradition as the father of mathematical
+sciences. Active in the 7th century AD, he is considered the first Armenian
+scholar to have imported a set of scientific notions, and examples of
+their applications, from the Greek-speaking schools into ‘early Medieval'
+Armenia. Writings attributed to him cover a vast array of subjects, including
+amongst others, arithmetic, computation, astronomy, astrology and natural
+philosophy. According to tradition, his writings and teachings are the heart
+of the autonomous development of these fields in the Armenian language,
+and, significantly, statues of him have been erected in prominent public
+spaces in the Armenian capital, Yerevan. Nevertheless, studies on this
+scholar are still at a relatively early stage: the exact form and breadth
+of his works is not yet established with certainty despite the survival of
+a large number of manuscripts carrying texts attributed to him. As it
+Eurasiatica 11 ISSN [online] 2610-9433 | ISSN [print] 2610-8879
+DOI 10.30687/978-88-6969-279-6/004 | Submitted: 2018-05-21 | Accepted: 2018-06-03
+ISBN [ebook] 978-88-6969-279-6 | ISBN [print] 978-88-6969-280-2
+© 2018 | Creative Commons Attribution 4.0 International Public License
+9
+
+Armenia, Caucaso e Asia Centrale, 9-24
+is often the case with Armenian codices, surviving copies are late and
+miscellaneous, adding difficulty to the already arduous identification of a
+homogeneous body of works.
+After a small introduction of what is known about Anania Širakac'i's
+education and scholarly formation, we shall give a brief account of the
+information we have been able to gather on his known attributed works,
+warning the reader that we have relied on secondary literature and do not
+wish to make claims over the texts' authorship, but rather to report data as
+it stands at the moment. Once this background is set, we shall move on to
+the main focus of this paper, the Tiezeragitut'iwn (Shuqtɲuqhup) or
+Cosmology attributed to Anania Širakacʻi, with a special emphasis on the
+aspects of this work which belong to a traceable tradition and those that
+might represent an innovation, especially in regard to Armenian science.
+We shall also point to some elements of this work that deserve deeper
+examination.
+2 The Autobiography and Anania's Alexandrian formation
+Anania's Autobiography (Þûpâшччûùшqɲníðþíù) Ink‘nakensagrut'iwn
+offers information - about his development as a scholar and about his
+career - which helps to date his active period. It is a first-hand account
+of a mathematician's education in the seventh century, and his formation
+in the Byzantine Empire, where this Armenian scholar sought a suitable
+teacher. Anania himself tells us:
+I desired to pursue philosophy. I was particularly lacking in the science
+of mathematics, since I reckoned that nothing could be worked out
+without numbers, esteeming [this science] the mother of all knowledge.
+(Transl. Greenwood 2011, 138)¹
+What features most prominently is information relevant to his studies and
+education, so that we are told of his first instruction on Armenian literature
+and the Scriptures.
+Since no-one could be found in this country of Armenia who knew philoso-
+phy, and not even books of the sciences could be found anywhere, [...] I
+made my way to the country of the Greeks. (Transl. Greenwood 2011, 138)
+In Theodosiopolis, Anania was advised to find a mathematician named
+K'ristosatur, but only six months later he decided to look for a more sat-
+1 Greenwood's addition to the text.
+10
+Pambakian. Tradition and Innovation in the Cosmology of Anania Širakac'i
+
+Armenia, Caucaso e Asia Centrale, 9-24
+isfactory teacher, and headed to Constantinople. On his way, he crossed
+paths with some friends of his who recommended that he go to Trebizond,
+where a master could accept him as a student.
+Here this Autobiography includes another story, that of the life and
+curriculum of Tychicos, Anania's instructor for eight years. We are in-
+formed that he could speak and write in Armenian, a skill he acquired
+while campaigning in Armenia under a Byzantine general. He then trav-
+elled to Jerusalem in search of science and learning, spent three years in
+Alexandria, some time in Rome, and finally lived and studied many years
+in Constantinople. Says Anania of Tychicos:
+[In Constantinople] he encountered a celebrated figure, a master from
+Athens, city of philosophers. [...] a few years later the master died and
+none of his pupils were found to be of the same level in order to succeed
+to his position. They begged the much-missed Tychikos to come and take
+his place. (transl. Greenwood 2011, 141)
+The identity of this most revered master is uncertain. Greenwood discusses
+the possibility that this scholar may be Stephanos of Alexandria, based
+on the hypothesis argued by Wolska-Conus that a certain Stephanos of
+Athens should be identified with the same Stephanos of Alexandria, in-
+vited to Constantinople by the emperor Heraclius to revive the teaching
+of mathematical sciences (Greenwood 2011, 149; Wolska-Conus 1989).
+The importance of this possible connection with Alexandria should not
+be underestimated, for it might help position this scholar within the broad-
+er context of scientific teaching in Western Europe, where the Alexandrian
+techniques for calendrical computations were being adopted or rejected
+to different degrees (see Warntjes 2010, xxx-xxxiii). We thus expect Ana-
+nia's writings on astronomical tables and computations of religious feasts
+to be especially significant to our understanding of these mathematical
+sciences and their application in this period. We are equally hopeful that
+comparisons of works on natural philosophy shall bear interesting fruit
+and enhance our understanding of the transmission of ideas in this cen-
+tury. However, a careful re-assessment and analysis of Anania's attributed
+corpus has to be addressed one item at a time.
+3 The Corpus of Anania's works
+A formidable reputation as a polymath is unsurprisingly bestowed on Ana-
+nia Širakac'i, due to the array of topics covered by the surviving works
+attributed to him. Although our present paper is only going to focus on
+the Cosmology, we shall very briefly to assess the state of philological
+research on this author. The most extensive assessment of his work was
+Pambakian. Tradition and Innovation in the Cosmology of Anania Širakac'i
+11

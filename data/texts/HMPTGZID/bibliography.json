@@ -1,0 +1,1415 @@
+{
+  "key": "HMPTGZID",
+  "title": "Against Ptolemy? Cosmography in Early Kalām (2022)",
+  "refs": [
+    {
+      "id": "218",
+      "raw": "Imām al-Ḥaramayn al-Juwaynī's Kitāb al-Irshād ilā qawāṭi /uni02BF uni02BFtiqād , ed. M. Y. Mūsā and /uni02BF A. /uni02BF A. /uni02BF Abd al-Ḥamīd (Cairo: Maktabat al-Khānjī, 1369/1950)",
+      "authors": [
+        "al-Juwaynī, Imām al-Ḥaramayn"
+      ],
+      "year": "1950",
+      "title": "Kitāb al-Irshād ilā qawāṭi /uni02BF al-adilla fī uṣūl al-i /uni02BF tiqād",
+      "venue": "Maktabat al-Khānjī"
+    },
+    {
+      "id": "218",
+      "raw": "Abū al-Qāsim al-Anṣārī's (d. 512/1118) Sharḥ al-Irshād , ed. K. al/uni02BF Adwānī, 3 vols. (Kuwait: Dār al-Ḍiyā ʾ , 1443/2022)",
+      "authors": [
+        "al-Anṣārī, Abū al-Qāsim"
+      ],
+      "year": "2022",
+      "title": "Sharḥ al-Irshād",
+      "venue": "Dār al-Ḍiyā ʾ",
+      "pages": "1: 404-7"
+    },
+    {
+      "id": "219",
+      "raw": "A. Shihadeh, 'From al-Ghazālī to al-Rāzī: 6th/12th Century Developments in Muslim Philosophical Theology,' ASP 15.1 (2005): 141-79",
+      "authors": [
+        "Shihadeh, A."
+      ],
+      "year": "2005",
+      "title": "From al-Ghazālī to al-Rāzī: 6th/12th Century Developments in Muslim Philosophical Theology",
+      "venue": "Arabic Sciences and Philosophy",
+      "pages": "141-79"
+    },
+    {
+      "id": "221",
+      "raw": "J. Walbridge, God and Logic in Islam: The Caliphate of Reason (New York: Cambridge Univ. Press, 2011)",
+      "authors": [
+        "Walbridge, J."
+      ],
+      "year": "2011",
+      "title": "God and Logic in Islam: The Caliphate of Reason",
+      "venue": "Cambridge University Press"
+    },
+    {
+      "id": "221",
+      "raw": "M. Ali, 'A Statistical Portrait of the Resistance to Logic by Sunni Muslim Scholars Based on the Works of Jalāl al-Dīn al-Suyūṭī (849-909/1448-1505),' Islamic Law and Society 15 (2008): 250-67",
+      "authors": [
+        "Ali, M."
+      ],
+      "year": "2008",
+      "title": "A Statistical Portrait of the Resistance to Logic by Sunni Muslim Scholars Based on the Works of Jalāl al-Dīn al-Suyūṭī (849-909/1448-1505)",
+      "venue": "Islamic Law and Society",
+      "pages": "250-67"
+    },
+    {
+      "id": "220",
+      "raw": "al-Ghazālī, The Incoherence of the Philosophers , tr. M. Marmura (Provo: Brigham Young Univ. Press, 2000)",
+      "authors": [
+        "al-Ghazālī"
+      ],
+      "year": "2000",
+      "title": "The Incoherence of the Philosophers",
+      "venue": "Brigham Young University Press",
+      "pages": "6-7"
+    },
+    {
+      "id": "220",
+      "raw": "al-Ghazali's Path to Sufism: His Deliverance from Error, al-Munqidh min al-Dalal, tr. R. J. McCarthy (Louisville: Fons Vitae, 2000)",
+      "authors": [
+        "al-Ghazālī"
+      ],
+      "year": "2000",
+      "title": "Al-Ghazali's Path to Sufism: His Deliverance from Error, al-Munqidh min al-Dalal",
+      "venue": "Fons Vitae",
+      "pages": "32-33"
+    },
+    {
+      "id": "224",
+      "raw": "al-Ṭabarī, Jāmi /uni02BF al-bayān , 16: 264-67",
+      "authors": [
+        "al-Ṭabarī"
+      ],
+      "year": null,
+      "title": "Jāmi /uni02BF al-bayān",
+      "venue": null,
+      "pages": "16: 264-67"
+    },
+    {
+      "id": "223",
+      "raw": "Al-Ṭabarī renders this 'a carpet you can walk on, and a settling place for you to rest on.' Jāmi /uni02BF al-bayān , 1: 387",
+      "authors": [
+        "al-Ṭabarī"
+      ],
+      "year": null,
+      "title": "Jāmi /uni02BF al-bayān",
+      "venue": null,
+      "pages": "1: 387"
+    },
+    {
+      "id": "223",
+      "raw": "M. Sh. al-Ālūsī's (d. 1924) Mā dalla /uni02BF alayhi al-Qur ʾ ān mimmā ya /uni02BF ḍud al-hay ʾ a al-jadīda al-qawīma al-burhān , ed. M. Z. al-Shāwīsh (Beirut: al-Maktab al-Islāmī, 1997)",
+      "authors": [
+        "al-Ālūsī, M. Sh."
+      ],
+      "year": "1997",
+      "title": "Mā dalla /uni02BF alayhi al-Qur ʾ ān mimmā ya /uni02BF ḍud al-hay ʾ a al-jadīda al-qawīma al-burhān",
+      "venue": "al-Maktab al-Islāmī"
+    },
+    {
+      "id": "225",
+      "raw": "Ibid., 19: 390-92",
+      "authors": null,
+      "year": null,
+      "title": null,
+      "venue": null,
+      "pages": "19: 390-92"
+    },
+    {
+      "id": "227",
+      "raw": "Ibn /uni02BF Abd Rabbih, Dīwān Ibn /uni02BF Abd Rabbih , ed. M. R. al-Dāya (Beirut: Mu ʾ assasat al-Risāla, 1399/1979)",
+      "authors": [
+        "Ibn /uni02BF Abd Rabbih"
+      ],
+      "year": "1979",
+      "title": "Dīwān Ibn /uni02BF Abd Rabbih",
+      "venue": "Mu ʾ assasat al-Risāla",
+      "pages": "138-39"
+    },
+    {
+      "id": "227",
+      "raw": "I. J. Boullata, The Unique Necklace: al/uni02BF Iqd al-Farīd , vol. 1 (Reading: Garnet, 2006)",
+      "authors": [
+        "Boullata, I. J."
+      ],
+      "year": "2006",
+      "title": "The Unique Necklace: al/uni02BF Iqd al-Farīd",
+      "venue": "Garnet"
+    },
+    {
+      "id": "227",
+      "raw": "A. P. Hámori, art. Ibn /uni02BF Abd Rabbih, EI 3, online (accessed July, 31, 2020)",
+      "authors": [
+        "Hámori, A. P."
+      ],
+      "year": "2020",
+      "title": "Ibn /uni02BF Abd Rabbih",
+      "venue": "Encyclopaedia of Islam 3"
+    },
+    {
+      "id": "229",
+      "raw": "al-Andalusī, Tabaqāt al-umam , 65",
+      "authors": [
+        "al-Andalusī"
+      ],
+      "year": null,
+      "title": "Tabaqāt al-umam",
+      "venue": null,
+      "pages": "65"
+    },
+    {
+      "id": "228",
+      "raw": "D. A. King, 'The Enigmatic Orientation of the Great Mosque of Córdoba,' Suhayl 16-17 (2018-19): 33-111",
+      "authors": [
+        "King, D. A."
+      ],
+      "year": "2018-19",
+      "title": "The Enigmatic Orientation of the Great Mosque of Córdoba",
+      "venue": "Suhayl",
+      "pages": "33-111"
+    },
+    {
+      "id": "228",
+      "raw": "D. A. King, 'Folk Astronomy in the Service of Religion: The Case of Islam,' in Astronomies and Cultures: Papers Derived from the Third 'Oxford' International Symposium on Archaeoastronomy, St. Andrews, UK, September 1990 , ed. C. L. N. Ruggles and N. J. Saunders (Boulder: Univ. Press of Colorado, 1993)",
+      "authors": [
+        "King, D. A."
+      ],
+      "year": "1993",
+      "title": "Folk Astronomy in the Service of Religion: The Case of Islam",
+      "venue": "Astronomies and Cultures: Papers Derived from the Third 'Oxford' International Symposium on Archaeoastronomy",
+      "pages": "124-38"
+    },
+    {
+      "id": "222",
+      "raw": "F. Coşkun, 'An Ottoman Preacher's Perception of a Medieval Cosmography: Maḥmūd al-Haṭīb's Translation of Kharīdat al/uni02BF Ajā ʾ ib wa Farīḍat al-Gharā ʾ ib ,' Al-Masaq 23 (2011): 53-66",
+      "authors": [
+        "Coşkun, F."
+      ],
+      "year": "2011",
+      "title": "An Ottoman Preacher's Perception of a Medieval Cosmography: Maḥmūd al-Haṭīb's Translation of Kharīdat al/uni02BF Ajā ʾ ib wa Farīḍat al-Gharā ʾ ib",
+      "venue": "Al-Masaq",
+      "pages": "53-66"
+    }
+  ],
+  "citations": [
+    {
+      "page": 1,
+      "marker": "1",
+      "context": "Aḥmad b. Ḥanbal (d. 241/855) was hauled before the caliphal confidante Isḥāq b. Ibrāhīm (d. 235/850) for interrogation (i.e., miḥna)."
+    },
+    {
+      "page": 1,
+      "marker": "2",
+      "context": "'I know nothing about it,' he protested, 'I do not know what this is (mā adrī mā hādhā)'."
+    },
+    {
+      "page": 1,
+      "marker": "3",
+      "context": "cosmography-ideas concerning the physical structure of the cosmos"
+    },
+    {
+      "page": 1,
+      "marker": "4",
+      "context": "It is not clear why cosmography featured in this reported encounter between theological 'rationalism' and 'traditionalism.'"
+    },
+    {
+      "page": 2,
+      "marker": "5",
+      "context": "We also know that this period marked the apogee of the Translation Movement, which brought the corpus of late ancient learning"
+    },
+    {
+      "page": 2,
+      "marker": "6",
+      "context": "We also know that this period marked the apogee of the Translation Movement, which brought the corpus of late ancient learning, including astronomy, into Arabic."
+    },
+    {
+      "page": 2,
+      "marker": "7",
+      "context": "One wonders which vision of the cosmos Ibn Ḥanbal's Muʿtazili persecutors subscribed to, traditionalist or Aristotelian-Ptolemaic."
+    },
+    {
+      "page": 2,
+      "marker": "8",
+      "content": "Later sources suggest that the rationalist mutakallimūn were typically hostile to the Aristotelian-Ptolemaic 'science of the stars'"
+    },
+    {
+      "page": 2,
+      "marker": "9",
+      "context": "this system had long been established as the regnant 'scientific' paradigm in the Near East."
+    },
+    {
+      "page": 2,
+      "marker": "10",
+      "context": "We are relatively well informed about the traditionalist cosmography and its sources, but know far less about the relevant views of the mutakallimūn."
+    },
+    {
+      "page": 3,
+      "marker": "11",
+      "context": "developments.' 11 In this article I aim to remedy the deficit, focusing not on atomism"
+    },
+    {
+      "page": 3,
+      "marker": "12",
+      "context": "Basran and Baghdad Mu'tazilis, Ash'aris, and Maturidis). 12 Josef van Ess collected some"
+    },
+    {
+      "page": 3,
+      "marker": "13",
+      "context": "interlocutors in later centuries, Muslim or otherwise. 13 Notwithstanding their divergences,"
+    },
+    {
+      "page": 3,
+      "marker": "14",
+      "context": "circular motion of the heavens.' 14 These fundamental features of the Aristotelian-Ptolemaic"
+    },
+    {
+      "page": 3,
+      "marker": "15",
+      "context": "down to modernity, 15 and for this reason I choose to present them as a single model"
+    },
+    {
+      "page": 3,
+      "marker": "16",
+      "context": "cosmographical opinion. 16 That is to say, one can find Basran"
+    },
+    {
+      "page": 4,
+      "marker": "17",
+      "content": "less interested in exploring questions of cosmography in a kalām context. 17 With these qualifications,"
+    },
+    {
+      "page": 4,
+      "marker": "18",
+      "context": "facilitate such an accommodation. 18 To make my case, I draw on the published"
+    },
+    {
+      "page": 4,
+      "marker": "19",
+      "context": "al-Hay'a al-saniyya of al-Suyūṭī (d. 911/1505). 19 While 'cosmology' is broader than"
+    },
+    {
+      "page": 4,
+      "marker": "20",
+      "context": "place of humans within it,' 20 and 'cosmography' has no clear parallel in the traditionalist"
+    },
+    {
+      "page": 5,
+      "marker": "21",
+      "context": "I regard it, following David King, as appropriate."
+    },
+    {
+      "page": 5,
+      "marker": "22",
+      "context": "the problem of disaggregating astrology and astronomy, which needs still to be treated systematically in its Islamicate context."
+    },
+    {
+      "page": 5,
+      "marker": "23",
+      "context": "surviving only in quotation (especially by later Twelver authors, because of their Mu'tazili commitments)."
+    },
+    {
+      "page": 5,
+      "marker": "24",
+      "context": "including the five-volume series Mawsū'at tafāsīr al-mu'tazila and the recently published encyclopaedic al-Tahdhīb fī al-tafsīr of al-Ḥākim al-Jishumī (d. 494/1101), both published in Beirut."
+    },
+    {
+      "page": 5,
+      "marker": "25",
+      "context": "theories that the seven heavens of Babylonian mythology were the (ultimate) source of Muslim belief on this point,"
+    },
+    {
+      "page": 6,
+      "marker": "26",
+      "context": "that one cannot speak of 'scientific' interest in the cosmos among Muslims until more than a century after the death of the Prophet,"
+    },
+    {
+      "page": 6,
+      "marker": "27",
+      "context": "that a relationship between the pre-Islamic Arabian star lore of the rising and setting of asterisms (anwā') and knowledge of the lunar stations (manāzil al-qamar) is doubtful."
+    },
+    {
+      "page": 6,
+      "marker": "28",
+      "context": "The quranic cosmography has been described as scientifically 'naïve,'"
+    },
+    {
+      "page": 6,
+      "marker": "29",
+      "content": "containing no reflection of the late ancient debate between supporters of the biblical and Aristotelian-Ptolemaic models of the universe,"
+    },
+    {
+      "page": 6,
+      "marker": "30",
+      "context": "'evidently already familiar in its rough outline to the ancient peoples of the Near East,'"
+    },
+    {
+      "page": 6,
+      "marker": "31",
+      "context": "featuring seven heavens and seven earths (Q 65:12),"
+    },
+    {
+      "page": 6,
+      "marker": "32",
+      "context": "above which is God's throne, a solid edifice (e.g., Q 69:17)."
+    },
+    {
+      "page": 6,
+      "marker": "33",
+      "context": "There is some disagreement about the place of the kursī ('footstool,' Q 2:255) in this arrangement, or indeed whether it is a discrete physical structure at all."
+    },
+    {
+      "page": 6,
+      "marker": "34",
+      "context": "There is also some dispute about the shape of the firmament according to the Quran—are the seven heavens flat or dome-shaped?"
+    },
+    {
+      "page": 6,
+      "marker": "35",
+      "context": "held up 'without pillars that you [can] see' (bi-ghayri 'amadin tarawnahā, Q 13:2),"
+    },
+    {
+      "page": 6,
+      "marker": "36",
+      "context": "which prevent it from collapsing onto the earth, by God's leave (Q 22:65)."
+    },
+    {
+      "page": 7,
+      "marker": "37",
+      "context": "Heavenly ropes or cords (e.g., Q 40:37) run along the top of this edifice, allowing it to be 'traversed physically by people who arrive at them.'"
+    },
+    {
+      "page": 7,
+      "marker": "38",
+      "context": "A plain-sense reading of the quranic text renders the earth as flat (e.g., Q 88:20)"
+    },
+    {
+      "page": 7,
+      "marker": "39",
+      "content": "the seven flat earths are (implicitly) piled atop one another like 'a stack of plates.'"
+    },
+    {
+      "page": 7,
+      "marker": "40",
+      "context": "All of these details were debated by Muslims, but it is important to distinguish later opinion from the content of the Quran itself."
+    },
+    {
+      "page": 7,
+      "marker": "41",
+      "context": "Ibn 'Abbās (d. 68/687) and his circle, among other early Muslims credited for their activities in tafsīr."
+    },
+    {
+      "page": 7,
+      "marker": "42",
+      "context": "Much cosmographical material is also attributed to transmitters of the so-called Isrā'īliyyāt"
+    },
+    {
+      "page": 7,
+      "marker": "43",
+      "context": "I shall adduce Muqātil's tafsīr as evidence of the early date of various features of this cosmography."
+    },
+    {
+      "page": 7,
+      "marker": "44",
+      "context": "The Sīra of Ibn Isḥāq (d. 150/767) is known to have originally consisted of three parts, the first of which, al-Mubtada', addressed origins"
+    },
+    {
+      "page": 7,
+      "marker": "45",
+      "context": "As such, it is extremely likely to have included cosmographical traditions."
+    },
+    {
+      "page": 7,
+      "marker": "46",
+      "context": "Unfortunately, owing to the transmission of the Sīra, reconstructing this element of the text is likely to prove very challenging."
+    },
+    {
+      "page": 8,
+      "marker": "47",
+      "context": "Their views are found in compilations of hadith, works of theology, and Quran commentaries"
+    },
+    {
+      "page": 8,
+      "marker": "48",
+      "context": "Their views are found in compilations of hadith, works of theology, and Quran commentaries"
+    },
+    {
+      "page": 8,
+      "marker": "49",
+      "context": "Their views are found in compilations of hadith, works of theology, and Quran commentaries"
+    },
+    {
+      "page": 8,
+      "marker": "50",
+      "context": "widely reported by geographers, historians, and encyclopaedists"
+    },
+    {
+      "page": 8,
+      "marker": "51",
+      "context": "including the postclassical al-Hay'a al-saniyya of al-Suyūṭī, 'the most important systematization of this worldview,'"
+    },
+    {
+      "page": 8,
+      "marker": "52",
+      "context": "based largely on much earlier material, from the third and fourth Islamic centuries"
+    },
+    {
+      "page": 9,
+      "marker": "53",
+      "context": "of Jewish provenance. 53 Other hadith suggest lesser distances"
+    },
+    {
+      "page": 9,
+      "marker": "54",
+      "context": "lesser distances, and in the third century traditionalist theologians made attempts to reconcile these divergences. 54"
+    },
+    {
+      "page": 9,
+      "marker": "55",
+      "context": "traditionalists' hearts. 55 It raised the question of the locus of God"
+    },
+    {
+      "page": 9,
+      "marker": "56",
+      "context": "theologian' in the full and proper sense' 56 -seem to have been"
+    },
+    {
+      "page": 9,
+      "marker": "57",
+      "context": "non-Muslim influence. 57 Various hadith add further detail to our"
+    },
+    {
+      "page": 9,
+      "marker": "58",
+      "context": "traditionalist account. 58 There was also occasional discussion of the Milky Way"
+    },
+    {
+      "page": 9,
+      "marker": "59",
+      "context": "Islamic century (reporting much earlier material). 59 The earth was understood"
+    },
+    {
+      "page": 9,
+      "marker": "60",
+      "context": "range, Qāf. 60 The"
+    },
+    {
+      "page": 10,
+      "marker": "61",
+      "context": "or, not infrequently, as layers of hell. 61 Paradise was located"
+    },
+    {
+      "page": 10,
+      "marker": "62",
+      "context": "throne. 62 The traditionalist cosmography, broadly shared by the early"
+    },
+    {
+      "page": 10,
+      "marker": "63",
+      "context": "early Shi'a, 63 is in all of its various iterations thus"
+    },
+    {
+      "page": 10,
+      "marker": "64",
+      "context": "to ascend, 64 and to defy him is to be"
+    },
+    {
+      "page": 10,
+      "marker": "65",
+      "context": "into hell. 65 The traditionalists occasionally expressed their hostility"
+    },
+    {
+      "page": 10,
+      "marker": "66",
+      "context": "scientific curiosity, but this is something of a stretch. 66 Because"
+    },
+    {
+      "page": 10,
+      "marker": "67",
+      "context": "perspectives. 67 The nature of this relationship requires further study"
+    },
+    {
+      "page": 10,
+      "marker": "68",
+      "context": "cosmos, since it frees them from being completely derived from the works of foreigners, or non-Muslims.' 68 On"
+    },
+    {
+      "page": 10,
+      "marker": "69",
+      "context": "harmony with their religion.' 69"
+    },
+    {
+      "page": 10,
+      "marker": "70",
+      "context": "kalām disputation no less than Aristotelian-Ptolemaic cosmography). 70 Ṣā'id"
+    },
+    {
+      "page": 10,
+      "marker": "71",
+      "context": "roundness of the earth, among other related errors. 71 Another Iberian"
+    },
+    {
+      "page": 11,
+      "marker": "72",
+      "context": "theologian Abd Allāh b. Muḥammad al-Qaḥṭānī (d. 383/993), denounces the same doctrine in his versified creed."
+    },
+    {
+      "page": 11,
+      "marker": "73",
+      "context": "it seem s reasonable to conclude that the traditionalists did more than assert th eir own cosmography. At least some of the time they actively challenged the alternative s."
+    },
+    {
+      "page": 11,
+      "marker": "74",
+      "context": "The earliest opinions on the subject from mutakallimūn , preserved in later doxographies and other sources, already reflect familiarity with Aristotle, as noted by Josef van Ess."
+    },
+    {
+      "page": 11,
+      "marker": "75",
+      "context": "Hishām b. al-Ḥakam (d. 179/795f.), a disciple of the Shi i Imam Ja far al-Ṣādiq (d. 148/765), played the leading role in introducing cosmographical questions to kalām"
+    },
+    {
+      "page": 11,
+      "marker": "76",
+      "content": "cosmography belonged firmly to the former domain and generated disagreement from the outset."
+    },
+    {
+      "page": 12,
+      "marker": "77",
+      "context": "He is reported to have refuted the opinion that the earth extends infinitely in all directions, which Aristotle attributes (with some variation) to Xenophanes of Colophon."
+    },
+    {
+      "page": 12,
+      "marker": "78",
+      "context": "Hishām is claimed to have taught that the earth rests on a body with a tendency t o ascend ( jism ṣa /uni02BF/uni02BF ād ), which counter acts the earth's tendency to fall"
+    },
+    {
+      "page": 12,
+      "marker": "79",
+      "context": "Hishām is also reported to have persuaded a Zoroastrian priest ( mūbadh ) that there is nothing beyond the (finite) cosmos"
+    },
+    {
+      "page": 12,
+      "marker": "80",
+      "context": "he was associated with corporealism, fam ously advocating God as the possessor of 'a body unlike bodies,' located above t he throne."
+    },
+    {
+      "page": 12,
+      "marker": "81",
+      "context": "Abū al-Hudhayl seems to have been the first mutakallim to refute the claim that the earth plummets downward p erpetually."
+    },
+    {
+      "page": 12,
+      "marker": "82",
+      "context": "His argument closely recalls De Caelo : a stone dropped to the ground lands there."
+    },
+    {
+      "page": 12,
+      "marker": "83",
+      "context": "Abū al-Hudhayl also con tended that the earth is held in place by divine fiat , without the support of ascending bodies"
+    },
+    {
+      "page": 12,
+      "marker": "84",
+      "context": "al-Naẓẓām, whom the Mu tazili biographical literature suggests was both junior to and partly dependent on Hishām and Abū al-Hudhayl."
+    },
+    {
+      "page": 13,
+      "marker": "85",
+      "context": "opinion on the shape of the earth. Like his contemporaries, al-Naẓẓām's opinions reflect awareness of Aristotle"
+    },
+    {
+      "page": 13,
+      "marker": "86",
+      "context": "awareness of Aristotle, whose books he is improbably claimed to have memorized. His student al-Jāḥiẓ"
+    },
+    {
+      "page": 13,
+      "marker": "87",
+      "context": "preserves most of the relevant material in Kitāb al-Ḥayawān, advocates the earth's roundness in his al-Tarbī"
+    },
+    {
+      "page": 13,
+      "marker": "88",
+      "context": "According to some later sources, al-Naẓẓām explained the earth's immobility (sukūn) as a function of the absence"
+    },
+    {
+      "page": 13,
+      "marker": "89",
+      "content": "result of his extreme scepticism toward hadith and other transmitted material, which he may have felt were beneath his attention."
+    },
+    {
+      "page": 13,
+      "marker": "90",
+      "context": "the possible reasons for this apparent lack of engagement with traditionalism are less straightforward. The absence may be simply"
+    },
+    {
+      "page": 14,
+      "marker": "91",
+      "context": "Abū al-Qāsim al-Kabī, the discussion of cosmography attains a high degree of sophistication."
+    },
+    {
+      "page": 14,
+      "marker": "92",
+      "context": "for which we are not dependent on fragments and later doxographies comes from Kitāb al-Dalīl al-kabīr of the Zaydi Imam"
+    },
+    {
+      "page": 14,
+      "marker": "93",
+      "context": "al-Rassī spent most of his career in the cultural backwater of Medina, far removed from the cutting-edge developments"
+    },
+    {
+      "page": 14,
+      "marker": "94",
+      "context": "rejects cosmographical traditionalism, condemning the proto-Sunnis (ḥashw hādhihi al-umma) for their belief that the earth rests"
+    },
+    {
+      "page": 14,
+      "marker": "95",
+      "context": "dismissing the alternatives that the earth is, variously, the foundation of the cosmos, that it floats on a cosmic sea"
+    },
+    {
+      "page": 14,
+      "marker": "96",
+      "context": "Kitāb al-Dalīl al-kabīr contains nothing on the shape of the earth, but it is not unlikely that al-Rassī pondered"
+    },
+    {
+      "page": 14,
+      "marker": "97",
+      "context": "al-Ḥusayn, known as al-Hādī ilā al-Ḥaqq (d. 298/911), shared his disdain for the proto-Sunnis (i.e., mushabbiha), but recognized"
+    },
+    {
+      "page": 14,
+      "marker": "98",
+      "context": "He reports the 'five hundred years' hadith in order to promote a sense of God's manifest greatness in his"
+    },
+    {
+      "page": 14,
+      "marker": "99",
+      "context": "the seven heavens and earths are held in midair (fī al-hawā'), without physical support, by virtue of divine fiat"
+    },
+    {
+      "page": 15,
+      "marker": "100",
+      "context": "the mutakallim al-Ḥasan b. Mūsā al-Nawbakhtī (d. 300/912 and 310/922) is known to have 'adopted several theses of the Mu'tazilī theological school.'"
+    },
+    {
+      "page": 15,
+      "marker": "101",
+      "context": "he enjoyed privileged access to the cosmographical knowledge of late antiquity through his residence in Baghdad and his association 'with a group of translators of Greek philosophical works.'"
+    },
+    {
+      "page": 15,
+      "marker": "102",
+      "context": "His views on astronomy and astrology have been carefully reconstructed by Wilferd Madelung based on later texts."
+    },
+    {
+      "page": 15,
+      "marker": "103",
+      "content": "Al-Nawbakhtī is known to have written against Abū 'Alī al-Jubbā'ī's critique of the science of the stars."
+    },
+    {
+      "page": 15,
+      "marker": "104",
+      "context": "He produced an early account of the divergent views on the subject among Muslims and non-Muslims that demonstrates extensive firsthand knowledge, including of Aristotle's De Caelo and its commentaries."
+    },
+    {
+      "page": 15,
+      "marker": "105",
+      "context": "Al-Nawbakhtī is not always consistent in naming some of the mutakallimūn associated with particular cosmographical opinions."
+    },
+    {
+      "page": 15,
+      "marker": "106",
+      "context": "He ascribes the opinion that the earth rests 'on the back of a fish [. . .] on the horn of a bull [. . .] standing on the ground (tharā)' to a group among the proto-Sunnis"
+    },
+    {
+      "page": 15,
+      "marker": "107",
+      "context": "Like Abū al-Hudhayl, al-Nawbakhtī refutes the perpetual downward fall of the earth by appealing to the example of an object dropped to the ground"
+    },
+    {
+      "page": 15,
+      "marker": "108",
+      "context": "he remained 'in outlook a Muslim kalām theologian, not a philosopher,' and shared 'the basic rationalist principles of the Mu'tazila.'"
+    },
+    {
+      "page": 15,
+      "marker": "109",
+      "context": "His wide-ranging criticisms of the astronomers and astrologers was to prove a valuable source for later theologians of disparate tendencies, including the idiosyncratic Hanbali Ibn al-Jawzī"
+    },
+    {
+      "page": 16,
+      "marker": "110",
+      "context": "the sun does not literally set into a body of water, but only appears to from afar"
+    },
+    {
+      "page": 16,
+      "marker": "111",
+      "context": "and may have inaugurated this tradition of understanding the verse"
+    },
+    {
+      "page": 16,
+      "marker": "112",
+      "context": "This interpretation contradicts both the plain-sense meaning of the Quran and the widely reported hadith of the Companion Abū Dharr al-Ghifārī"
+    },
+    {
+      "page": 16,
+      "marker": "113",
+      "context": "He is also known to have advocated the flatness of the earth against those learned in the science of the stars, apparently on quranic grounds."
+    },
+    {
+      "page": 16,
+      "marker": "114",
+      "context": "Abū 'Alī also rejects the view that the sky is held up by pillars; were this the case, they would have to be 'massive bodies (ajsāman ghilāẓān)'"
+    },
+    {
+      "page": 16,
+      "marker": "115",
+      "context": "He similarly eschews most of the standard kalām explanations for the immobility of the earth on the grounds that weight is not an accident but a quality"
+    },
+    {
+      "page": 16,
+      "marker": "116",
+      "context": "Abū 'Alī affirms the existence of seven earths (as per Q 65:12)"
+    },
+    {
+      "page": 16,
+      "marker": "117",
+      "context": "and denies (in one report) that any distance, gaps (sg. khalal), or clefts (futūq) separate the subterranean levels from our own."
+    },
+    {
+      "page": 16,
+      "marker": "118",
+      "context": "He also refuses to identify the seven heavens (samāwāt) of the Quran with the celestial spheres, whose motion he implicitly concedes."
+    },
+    {
+      "page": 16,
+      "marker": "119",
+      "context": "His general hostility to the Aristotelian-Ptolemaic view is claimed by al-Shaykh al-Mufīd"
+    },
+    {
+      "page": 16,
+      "marker": "120",
+      "context": "He is independently minded and discards popular interpretations of the Quran, or hadith, when they seem to contradict his sense of what is rational."
+    },
+    {
+      "page": 16,
+      "marker": "121",
+      "context": "On many issues, including cosmography, they fail to see eye to eye; they are even said to have anathematized one another"
+    },
+    {
+      "page": 17,
+      "marker": "122",
+      "context": "its roundness), and as accepting the equal possibility of it being either round or flat."
+    },
+    {
+      "page": 17,
+      "marker": "123",
+      "context": "The view that the earth is comprised of two halves, one with the tendency to ascend and the other with the tendency to fall"
+    },
+    {
+      "page": 17,
+      "marker": "124",
+      "context": "unambiguously affirmed the earth's roundness."
+    },
+    {
+      "page": 17,
+      "marker": "125",
+      "context": "along with many of the 'ancients.'"
+    },
+    {
+      "page": 17,
+      "marker": "126",
+      "context": "unique among theologians of his generation, including his view on the cause of the earth's suspension"
+    },
+    {
+      "page": 17,
+      "marker": "127",
+      "context": "arguing that the sun is much larger than the earth, so cannot set into any part of it."
+    },
+    {
+      "page": 17,
+      "marker": "128",
+      "context": "He also denies the existence of intra- and extracosmic void,"
+    },
+    {
+      "page": 17,
+      "marker": "129",
+      "context": "continues the tradition of his Mu'tazili forebears in refuting the infinitude of the cosmos."
+    },
+    {
+      "page": 17,
+      "marker": "130",
+      "context": "denied that the sky is held up by pillars."
+    },
+    {
+      "page": 18,
+      "marker": "131",
+      "context": "one cannot speak of Ash'ari or Maturidi 'schools' until well after their deaths."
+    },
+    {
+      "page": 18,
+      "marker": "132",
+      "context": "traditionally dated to the (significant) year 300/912f.,"
+    },
+    {
+      "page": 18,
+      "marker": "133",
+      "context": "retained much of the subject matter, rationalist methodology, and cosmology of the Mu'tazilis.'"
+    },
+    {
+      "page": 18,
+      "marker": "134",
+      "context": "in his Maqālāt al-islāmiyyīn, and important material is also reported from him in Ibn Fūrak's Mujarrad."
+    },
+    {
+      "page": 18,
+      "marker": "135",
+      "context": "Maqālāt al-islāmiyyīn was written in stages, some predating al-Ash'ari's conversion."
+    },
+    {
+      "page": 18,
+      "marker": "136",
+      "context": "James Weaver argues for the dependence of al-Ash'ari on al-Ka'bī, while van Ess suggests that they both relied on a common source."
+    },
+    {
+      "page": 19,
+      "marker": "137",
+      "context": "Ess's thesis. Al-Ash'arī's presentation of the competing views of the mutakallimūn on the subject is dispassionate"
+    },
+    {
+      "page": 19,
+      "marker": "138",
+      "context": "Ibn Furāk provides the necessary information. He notes that al-Ash'arī held that 'there is no reason for the suspension'"
+    },
+    {
+      "page": 19,
+      "marker": "139",
+      "context": "this corresponds most closely to the view, attributed to Abū al-Hudhayl, that the earth does not rest on a body."
+    },
+    {
+      "page": 19,
+      "marker": "140",
+      "content": "ṭabāʾi (the four elemental qualities)"
+    },
+    {
+      "page": 19,
+      "marker": "141",
+      "context": "renders the mobile bodies thereon immobile, by his will.' Similarly, in al-Ash'arī's Risāla ilā ahl al-thaghr"
+    },
+    {
+      "page": 19,
+      "marker": "142",
+      "context": "it is God alone who prevents the firmament from collapsing on to the earth (echoing Q 22:65)."
+    },
+    {
+      "page": 19,
+      "marker": "143",
+      "context": "and, like Hishām b. al-Ḥakam, he denied that one could stretch a hand beyond the cosmos."
+    },
+    {
+      "page": 19,
+      "marker": "144",
+      "context": "God instead re-creates the accident of motionlessness (fiʾl al-sukūn) in it every instant."
+    },
+    {
+      "page": 19,
+      "marker": "145",
+      "context": "bottom surface (al-ṣafīḥa al-suflā) of the earth cannot be described as either immobile or moving, al-Ash'arī points out"
+    },
+    {
+      "page": 20,
+      "marker": "146",
+      "context": "where the earth's perpetual falling is attributed to the Sumaniyya."
+    },
+    {
+      "page": 20,
+      "marker": "153",
+      "context": "According to Jean-Claude Vadet, his theology was 'more pietistic and more popular, more in accordance with his Shāfiʾī ideas"
+    },
+    {
+      "page": 20,
+      "marker": "147",
+      "context": "site of Muʾtazili cosmographical intervention since at least the time of Abū ʾAlī al-Jubbāʾī-al-Māturīdī limits himself to mentioning variae lectiones"
+    },
+    {
+      "page": 20,
+      "marker": "148",
+      "context": "the world-encompassing mountain range (made of green or red ruby), but suggests that this cannot be the correct interpretation"
+    },
+    {
+      "page": 20,
+      "marker": "149",
+      "context": "these 'earths' are in fact seven continents (jazāʾir);"
+    },
+    {
+      "page": 20,
+      "marker": "150",
+      "context": "We have no need to know the nature, modality, or number of [the earths], because there is no legal ruling"
+    },
+    {
+      "page": 20,
+      "marker": "151",
+      "context": "al-Māturīdī only affirms figurative interpretations of cosmographical data when the proper understanding of God's attributes is at stake"
+    },
+    {
+      "page": 20,
+      "marker": "152",
+      "context": "He does mention the possibility that the firmament is not held up by pillars, but this view is also reported by the contemporaneous al-Ṭabarī"
+    },
+    {
+      "page": 21,
+      "marker": "154",
+      "context": "the sun 'actually sets into a muddy spring, in accordance with the plain-sense meaning ( ẓāhir ) of the Quran.' 154"
+    },
+    {
+      "page": 21,
+      "marker": "155",
+      "context": "in good Talmudic fashion. 155"
+    },
+    {
+      "page": 21,
+      "marker": "156",
+      "context": "'usually leading the way, [or] almost always at least keeping pace.' 156"
+    },
+    {
+      "page": 21,
+      "marker": "157",
+      "context": "disciplines gen erally. 157"
+    },
+    {
+      "page": 21,
+      "marker": "158",
+      "context": "'frequent polemical encounters between members of the various groups.' 158"
+    },
+    {
+      "page": 22,
+      "marker": "163",
+      "context": "d. ca. 370/980f.), taught the major theologians of the next generation of the school: al-Bāqillānī, Ibn Fūrak, and Abū Isḥāq al-Isfarā ʾ īnī. 163"
+    },
+    {
+      "page": 22,
+      "marker": "164",
+      "context": "and refutes their claim that the stars influence sublu nar events,   164"
+    },
+    {
+      "page": 22,
+      "marker": "165",
+      "content": "Of al-Isfarā ʾ īnī's corpus, we possess only fragments. 165"
+    },
+    {
+      "page": 22,
+      "marker": "166",
+      "context": "question-and-answer format and inconsistent in its engagement of theological points. 166"
+    },
+    {
+      "page": 22,
+      "marker": "167",
+      "context": "suggesting a certain deference to th e views of the astronomers. 167"
+    },
+    {
+      "page": 22,
+      "marker": "159",
+      "context": "as did his student Ibn Mujāhid al-Baṣrī (d. 370/980f.). 159"
+    },
+    {
+      "page": 22,
+      "marker": "160",
+      "context": "made the same journey. 160"
+    },
+    {
+      "page": 22,
+      "marker": "161",
+      "context": "and the vizier Ibn /uni02BF Abbād 161 (d. 385/995)"
+    },
+    {
+      "page": 22,
+      "marker": "162",
+      "context": "was a major figure in the early history of the school. 162"
+    },
+    {
+      "page": 23,
+      "marker": "168",
+      "context": "points to Q 65:12 as the only quranic evidence for the existence of seven earths, and mentions the possibility that Q 68:1 refers to the cosmic fish"
+    },
+    {
+      "page": 23,
+      "marker": "169",
+      "context": "Contemporaneously operating with these three in the polemically charged context of Baghdad, al-Shaykh al-Mufīd is known to have met and exchanged views"
+    },
+    {
+      "page": 23,
+      "marker": "170",
+      "content": "Al-Mufīd has typically been understood to have made major contributions to the adoption of Mu'tazili theology in the Twelver school, paving the way"
+    },
+    {
+      "page": 23,
+      "marker": "171",
+      "context": "None of the dubious reports about the angelic bearers of the throne, he notes, is widely transmitted"
+    },
+    {
+      "page": 23,
+      "marker": "172",
+      "context": "Al-Mufīd defines the cosmos in two places as 'the sky and the earth, whatever they contain'"
+    },
+    {
+      "page": 23,
+      "marker": "173",
+      "context": "This location at the center is the cause of the earth's immobility-contra al-Jubbā'ī père et fils"
+    },
+    {
+      "page": 23,
+      "marker": "174",
+      "context": "Much like al-Balkhī in a previous generation, al-Mufīd's views align very closely with the advocates"
+    },
+    {
+      "page": 23,
+      "marker": "175",
+      "context": "Like al-Balkhī-distinctively among the Baghdad Mu'tazilis-al-Mufīd denies the existence of intracosmic void"
+    },
+    {
+      "page": 23,
+      "marker": "176",
+      "context": "Al-Mufīd's inclination toward the cosmographical views of the munajjimūn was echoed by his student Abū al-Fatḥ al-Karājikī"
+    },
+    {
+      "page": 24,
+      "marker": "177",
+      "context": "Mattawayh). Cosmography hardly features in the extant volumes and fragments of his voluminous al-Mughnī"
+    },
+    {
+      "page": 24,
+      "marker": "178",
+      "context": "Cosmography hardly features in the extant volumes and fragments of his voluminous al-Mughnī fī abwāb al-tawḥīd"
+    },
+    {
+      "page": 24,
+      "marker": "179",
+      "context": "Like previous Mu'tazilis, 'Abd al-Jabbār refutes the dualist belief in the infinitude of the cosmos"
+    },
+    {
+      "page": 24,
+      "marker": "180",
+      "context": "In his Tanzīh al-Qur'ān 'an al-maṭā'in, an apologetic work written against the text's critics"
+    },
+    {
+      "page": 24,
+      "marker": "181",
+      "context": "Al-Jishumī reports 'Abd al-Jabbār as suspending judgment on the shape of the earth, which suggests"
+    },
+    {
+      "page": 24,
+      "marker": "182",
+      "context": "This period marked the almost complete assimilation of the heritage of late antiquity in textual form, a development powerfully evidenced by the career of the greatest of the philosophers, Ibn Sīnā"
+    },
+    {
+      "page": 24,
+      "marker": "183",
+      "context": "'Abd al-Jabbār's student Ibn Mattawayh produced the most extensive extant account of kalām physics in al-Tadhkira"
+    },
+    {
+      "page": 24,
+      "marker": "184",
+      "context": "Ibn Mattawayh affirms the immobility of the heavens and the earth, based on Q 35:41"
+    },
+    {
+      "page": 24,
+      "marker": "185",
+      "context": "He notes three views on the cause of the earth's immobility, and refutes the notion that it is kept in place"
+    },
+    {
+      "page": 24,
+      "marker": "186",
+      "context": "Ibn Mattawayh argues that the firmament does not encompass the earth from all sides, contra al-Balkhī"
+    },
+    {
+      "page": 25,
+      "marker": "187",
+      "context": "an obvious absurdity. 187 Among the Ash'aris of this generation"
+    },
+    {
+      "page": 25,
+      "marker": "188",
+      "context": "al-Isfarāʾīnī (alongside whom he was buried), 188 condemns their views"
+    },
+    {
+      "page": 25,
+      "marker": "189",
+      "context": "on which it is evidently based. 189 In the course of his survey"
+    },
+    {
+      "page": 25,
+      "marker": "190",
+      "context": "Menelaus of Alexandria (Mīlāwūsh, d. 140 ce). 190 Muslims, Jews, and Christians"
+    },
+    {
+      "page": 25,
+      "marker": "191",
+      "content": "is the earth that moves and the firmament that is fixed, contra the munajjimūn. 191 Following al-Ash'ari"
+    },
+    {
+      "page": 25,
+      "marker": "192",
+      "context": "nor by means of the air that encompasses it.' 192 In a later chapter"
+    },
+    {
+      "page": 25,
+      "marker": "193",
+      "context": "against the astronomers, who claim that the firmament is a sphere. 193 He insists"
+    },
+    {
+      "page": 25,
+      "marker": "194",
+      "context": "and is even more strident on these points in his heresiography, al-Farq bayn al-firaq. 194 In his recently"
+    },
+    {
+      "page": 25,
+      "marker": "195",
+      "context": "the earth [...]. 195 187. Ibid."
+    },
+    {
+      "page": 26,
+      "marker": "196",
+      "context": "man of letters al-Sharīf al-Murtaḍā was keen to refute astrology. 196 Crucially"
+    },
+    {
+      "page": 26,
+      "marker": "197",
+      "context": "of their claims. 197 As a student of al-Mufīd (and leader"
+    },
+    {
+      "page": 26,
+      "marker": "198",
+      "context": "community after his death), 198 al-Murtaḍā unsurprisingly endorses the roundness"
+    },
+    {
+      "page": 26,
+      "marker": "199",
+      "context": "reads Q 18:86 figuratively. 199 Hussein Abdulsater characterizes al-Murtaḍā"
+    },
+    {
+      "page": 26,
+      "marker": "200",
+      "context": "school of ʿAbd al-Jabbār. 200 Unlike al-Mufīd, however, he"
+    },
+    {
+      "page": 26,
+      "marker": "201",
+      "context": "remain legion. 201 Abū Rashīd al-Naysābūrī was also"
+    },
+    {
+      "page": 26,
+      "marker": "202",
+      "context": "Bahshami school. 202 Al-Naysābūrī had defected from the Baghdad"
+    },
+    {
+      "page": 26,
+      "marker": "203",
+      "context": "Ptolemy's Almagest. 203 Al-Naysābūrī produces three main arguments"
+    },
+    {
+      "page": 26,
+      "marker": "204",
+      "context": "daily cycle. 204 Furthermore, bodies of water would not"
+    },
+    {
+      "page": 26,
+      "marker": "205",
+      "context": "daḥāhā) following its creation. 205 While al-Naysābūrī does note"
+    },
+    {
+      "page": 26,
+      "marker": "206",
+      "context": "al-Murtaḍā), he does not ultimately agree. 206 He does not express"
+    },
+    {
+      "page": 27,
+      "marker": "207",
+      "context": "earth's flatness is 'the position closest to the truth ( aqrab ),' much as a jurist would say of a disputed point of law."
+    },
+    {
+      "page": 27,
+      "marker": "213",
+      "context": "The aggressively anti-Shi'i stance of the Saljuqs radically constrained their opportunities to attract patronage."
+    },
+    {
+      "page": 27,
+      "marker": "214",
+      "context": "Abū Shakūr al-Sālimī's (d. after 460/1068) al-Tamhīd fī bayān al-tawḥīd focuses its critique of the munajjimūn on astrology"
+    },
+    {
+      "page": 27,
+      "marker": "215",
+      "context": "Baḥr al-kalām of Abū al-Mu'īn al-Nasafī denounces the astronomers' belief that the lowermost of the heavens contains only the moon"
+    },
+    {
+      "page": 27,
+      "marker": "208",
+      "context": "Baghdad was to remain the 'intellectual center for kalām among the Imāmīs [. . .] until the Saljuq invasion of the city in 447/1056.'"
+    },
+    {
+      "page": 27,
+      "marker": "209",
+      "context": "Like most of the leading Twelver theologians of his generation, al-Ṭūsī had studied under al-Mufīd as well as al-Murtaḍā."
+    },
+    {
+      "page": 27,
+      "marker": "210",
+      "context": "Al-Ṭūsī concurs with Abū 'Alī al-Jubbā'ī that the firmament is not held up by pillars"
+    },
+    {
+      "page": 27,
+      "marker": "211",
+      "context": "refuses to identify the quranic heavens with the spheres of the astronomers, on the grounds that the former are immobile."
+    },
+    {
+      "page": 27,
+      "marker": "212",
+      "content": "Al-Ṭūsī also affirms the existence of the seven earths, but implies that six are uninhabited."
+    },
+    {
+      "page": 28,
+      "marker": "216",
+      "context": "Al-Jishūmī's Quran commentary, written toward the end of the period, makes the extent of the Mu'tazili disagreement clear. Unfortunately, his own opinions are frustratingly hard to pin down."
+    },
+    {
+      "page": 28,
+      "marker": "217",
+      "context": "'Abd al-Qāhir al-Baghdādī comes closest to adopting the traditionalist view of the cosmos, but owing to the paucity of the sources, it is impossible to state how far exactly this agreement extends."
+    },
+    {
+      "page": 28,
+      "marker": "218",
+      "context": "Imām al-Ḥaramayn reiterates the standard Ash'ari view on the immobility of the earth against some of the ancients, without further comment."
+    },
+    {
+      "page": 28,
+      "marker": "219",
+      "context": "I would like to suggest in parting that al-Ghazālī made a significant contribution toward facilitating the rehabilitation of the Aristotelian-Ptolemaic view"
+    },
+    {
+      "page": 28,
+      "marker": "220",
+      "context": "Judging from the evidence of its citation history, the material on the cause of eclipses in his al-Munqidh and Tahāfut seems to have exercised broad influence."
+    },
+    {
+      "page": 28,
+      "marker": "221",
+      "context": "beginning on the margins of theological discourse before working their way into the disciplinary toolkit of postclassical religious learned culture."
+    },
+    {
+      "page": 29,
+      "marker": "222",
+      "context": "be widely read, copied, and translated from Arabic. 222 The circulation of such literature"
+    },
+    {
+      "page": 29,
+      "marker": "223",
+      "context": "earth a bed [outspread] for you, 223 and the sky an edifice"
+    },
+    {
+      "page": 29,
+      "marker": "224",
+      "context": "each coursing through the sky ( fī falakin yasbaḥūn ); 224"
+    },
+    {
+      "page": 29,
+      "marker": "225",
+      "context": "lest they fall away ( an tazūlā ); 225 and if they"
+    },
+    {
+      "page": 29,
+      "marker": "226",
+      "context": "Nūn ; 226"
+    },
+    {
+      "page": 29,
+      "marker": "222",
+      "context": "I thank Feray Coşkun for kindly sharing with me a draft"
+    },
+    {
+      "page": 29,
+      "marker": "224",
+      "context": "For this and alternative interpretations, see al-Ṭabarī, Jāmi"
+    },
+    {
+      "page": 29,
+      "marker": "223",
+      "context": "Al-Ṭabarī renders this 'a carpet you can walk on"
+    },
+    {
+      "page": 29,
+      "marker": "225",
+      "content": "Ibid., 19: 390-92"
+    },
+    {
+      "page": 30,
+      "marker": "227",
+      "context": "Ibn ʻAbd Rabbih 227 criticizes al-Balansī on five points"
+    },
+    {
+      "page": 30,
+      "marker": "228",
+      "context": "resistance in Iberia (and presumably elsewhere), as noted by David King. 228"
+    },
+    {
+      "page": 30,
+      "marker": "229",
+      "context": "Just as Ibn Mūsā 229 persists in his waywardness, until"
+    },
+    {
+      "page": 30,
+      "marker": "227",
+      "context": "Ibn ʻAbd Rabbih, Dīwān Ibn ʻAbd Rabbih , ed."
+    },
+    {
+      "page": 30,
+      "marker": "228",
+      "context": "D. A. King, 'The Enigmatic Orientation of the Great Mosque"
+    },
+    {
+      "page": 31,
+      "marker": "230",
+      "context": "Inform Muʻāwiya, 230 who pays heed to their opinions"
+    },
+    {
+      "page": 31,
+      "marker": "231",
+      "context": "renounced their opinions and works! 231"
+    },
+    {
+      "page": 31,
+      "marker": "230",
+      "context": "A Qurashī genealogist; ibid. 230"
+    },
+    {
+      "page": 31,
+      "marker": "231",
+      "context": "I thank Tariq al-Timimi for his help with translating"
+    }
+  ],
+  "summary": {
+    "abstract": "This article examines how early Islamic theologians (mutakallimūn) engaged with competing cosmographical models—traditionalist Qur'anic and Aristotelian-Ptolemaic—from the second/eighth through sixth/twelfth centuries. Drawing on kalām texts, Qur'anic commentaries, and hadith compilations, the author demonstrates that disagreements among mutakallimūn on cosmographical questions paralleled late ancient Christian debates, and that some Mu'tazilis rejected the plain-sense reading of Qur'anic cosmography in favor of Aristotelian doctrine. The article challenges the historiographical neglect of cosmography in Islamic intellectual history and argues that traditionalist cosmography, rather than scientific ignorance, represented a deliberate theological position against which rationalist theologians defined themselves.",
+    "contents": [
+      {
+        "heading": "Against Ptolemy? Cosmography in Early Kalām",
+        "page": 1
+      },
+      {
+        "heading": "I. The Qur'anic and Traditionalist Cosmographies",
+        "page": 5
+      },
+      {
+        "heading": "II. Cosmography in Early Kalām: First Contact",
+        "page": 11
+      },
+      {
+        "heading": "III. The Beginnings of Systematization: The Long Third/Ninth Century",
+        "page": 13
+      }
+    ]
+  }
+}

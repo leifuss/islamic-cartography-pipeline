@@ -1,0 +1,738 @@
+{
+  "_page_sizes": {
+    "1": {
+      "w": 918,
+      "h": 1188
+    },
+    "2": {
+      "w": 918,
+      "h": 1188
+    },
+    "3": {
+      "w": 918,
+      "h": 1188
+    },
+    "4": {
+      "w": 918,
+      "h": 1188
+    },
+    "5": {
+      "w": 918,
+      "h": 1188
+    }
+  },
+  "1": [
+    {
+      "label": "text",
+      "text": "Publ . Astron . Obs . Belgrade No. 91 ( 2012 ) , 371-375",
+      "bbox": {
+        "l": 196,
+        "t": 1056,
+        "r": 581,
+        "b": 1042
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Poster",
+      "bbox": {
+        "l": 678,
+        "t": 1056,
+        "r": 718,
+        "b": 1045
+      },
+      "page": 1
+    },
+    {
+      "label": "section_header",
+      "text": "DESCRIPTION OF THE EARTH IN THE WORKS OF ARABIC GEOGRAPHERS FROM IX TO XII CENTURY",
+      "bbox": {
+        "l": 243,
+        "t": 894,
+        "r": 670,
+        "b": 858
+      },
+      "page": 1
+    },
+    {
+      "label": "section_header",
+      "text": "I. CVIJANOVIĆ",
+      "bbox": {
+        "l": 407,
+        "t": 827,
+        "r": 504,
+        "b": 812
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Institute of History , Knez Mihailova 36 , 11000 Belgrade Frana Levstika 12 , 11000 Belgrade E - mail : irena.cvijanovic@yahoo.com",
+      "bbox": {
+        "l": 295,
+        "t": 807,
+        "r": 619,
+        "b": 762
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Abstract . The works of Arabic writers provide data about shape , position and size of the Earth , planets and zodiac signs . They include preserved maps of Ibn Haukal , Al - Masudi and Al - Idrisi . Al - Masudi ( 871-956 / 7 ) made a map of the world and wrote that the Earth is round , before the Christians in Europe were ready to accept that idea . The famous geographer and cartographer Al - Idrisi ( IX / X . , died in 903/913 . ) has lived on the court of Norman king Roger II of Sicily , and after his death on the court of his son William I on Sicily , where he obtained the data from European and Arabic geographers . On the basis of this data he wrote a work known entitled Roger's book . Besides this important work he made a celestial globe and a map of the world in the shape of a silver disk . The lines that marked the borders of seven regions of the inhabited world were engraved on this disk . The Arabs had excellent knowledge of Greek astronomy and accepted their division of the world in seven climatic zones .",
+      "bbox": {
+        "l": 195,
+        "t": 746,
+        "r": 718,
+        "b": 581
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "First Arabic maps were made according to the map of Ptolemy , a classical as- tronomer , geographer and mathematician from Alexandria . During the reign of Theo- dosius and Justinian , the interpretation that the Earth is round and that it represents only a small part of the Universe was forbidden . Early medieval Arabic writers in- cluded in their maps of the world the Arabic lands in Asia and North Arfica , than Byzantine Empire , lands of Francs , Gals , Langobards , land of Slavs , Russians , Bul- gars , Turks , Alans , Hazars , as well as lands from Persia to India and China . For them , well known part of the world ended with the Atlantic Ocean , ie . West Sea and the Pacific , ie . Big Sea . Idrisi , Ibn Rosteh , Ibn Haukal and Al - Masudi gave a division on seven climatic zones .",
+      "bbox": {
+        "l": 196,
+        "t": 540,
+        "r": 718,
+        "b": 376
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "Ibn Rosteh , Abu ' Ali Ahmed ibn Umar ibn Rosta Isfahani , ( IX / X century , died in 903/913 . ) , is a Persian geographer who wrote in Arabic . In his work Kitab al- a'lak An - Nafisa VII he gave a particularly beautiful description of Constantinople , Byzantine provinces , the land of Slavs , Bulgars , Russians and Khazars . He probably wrote from 290-300 / 903-13 . From his detailed work , which could be classified in short",
+      "bbox": {
+        "l": 196,
+        "t": 371,
+        "r": 718,
+        "b": 290
+      },
+      "page": 1
+    },
+    {
+      "label": "footnote",
+      "text": "1C . Pellat , Langue et littérature Arabes , Paris 1970 , 154-155 .",
+      "bbox": {
+        "l": 212,
+        "t": 274,
+        "r": 530,
+        "b": 263
+      },
+      "page": 1
+    },
+    {
+      "label": "footnote",
+      "text": "2Ibn Rosteh , Kitab al - a'lák An - Nafisa VII , in : BGA , ed . De Goeje , Lugduni - Batavorum ( Leiden ) 1892 ; S. Maqbul Ahmad , in : The Encyclopedia of Islam , vol . III , ed . B. Lewis , V.L. Ménage , Ch . Pellat , J. Schacht , Leiden , London 1986 , 92 .",
+      "bbox": {
+        "l": 196,
+        "t": 261,
+        "r": 717,
+        "b": 223
+      },
+      "page": 1
+    },
+    {
+      "label": "text",
+      "text": "371",
+      "bbox": {
+        "l": 446,
+        "t": 211,
+        "r": 466,
+        "b": 202
+      },
+      "page": 1
+    }
+  ],
+  "2": [
+    {
+      "label": "text",
+      "text": "I. CVIJANOVIĆ",
+      "bbox": {
+        "l": 418,
+        "t": 1057,
+        "r": 493,
+        "b": 1047
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "encyclopedia of history and geography , it can be seen that the author was very well educated and talented in writing . In the first chapters he deals with the shape of the Earth , signs of the zodiac , planets , position of the Earth and its size . He further on deals with mathematics and astronomical geography , and cites his sources . A description of the Earth , nations and roads follows after introduction . Ibn Rosteh wrote that the Earth is a sphere and that the Ocean takes up to 24.000 miles , in other words that it is a big circle , a diameter of approximately 7.636 miles , and that there are exactly 21.600 towns in the world .",
+      "bbox": {
+        "l": 196,
+        "t": 1021,
+        "r": 719,
+        "b": 889
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Al - Istakhri , Abu Ishak Ibrahim ibn Muhamad al - Farisi al - Istakhri , ( X century , born around 900 ) was famous only for one of his works . He wrote mostly about Islamic lands and the Mediterranean with a description of added maps ( fig . 1 ) . His work Kitâb al - masâlik wa'l mamálik ( The Book of roads and kingdoms ) , can be dated only on the basis of the described events about 950/1 ( 934 ) . It has become very popular . There are few early and shortened editions , as well as a translation to Persian , that are quite different .",
+      "bbox": {
+        "l": 195,
+        "t": 885,
+        "r": 718,
+        "b": 771
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Ibn Haukal , Abu'l - Kasim ibn ' Ali al - Nasibi ( ibn Mumamad ? ) ibn Haukal , ( X century , died after 977. ) is an Arabic geographer and chronicler . He was born in Nisibis ( Nasibin ) in Mesopotamia . By request of Al - Istakhri , he has edited his geo- graphical maps , enlargened the text , and published it under his name in 976/7 under the title Al - Masâlik w'al - Mamâlik ( Roads and kingdoms ) , known also under the ti- tle Kitāb Surat al - ard ( The Book about description of the Earth ) .3 Ibn Haukal was the best representative of geographers that wrote on the basis of their own trips and direct observations . His descriptions were precise and very useful for travelers . The map Surat al - Ardh ( Picture of the Earth ) , includes detailed description of Muslim Spain , Italy , Byzantine Empire ( fig . 2 ) . With this map he gave a description of Kiev , mentioned the road of Volga Bulgars and Khazars.5 The main difference between the work of Ibn Haukal and Al - Istakhri is that he describes Islamic lands of West Europe and North Africa . The authors did not copy maps , but they made them indepen- dently . Ibn Haukal , in contrast to his predecessor , has added a description of a map in the chapter about each region . Besides Ibn Haukal's work published by M. J. De Goeje in 1873. , we know of one more abridged edition of an anonymous author from 1233 .",
+      "bbox": {
+        "l": 196,
+        "t": 768,
+        "r": 718,
+        "b": 486
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "Al - Masudi , Abul Hasan Ali ibn Husain Ali al - Masudi , ( IX / X century , 871-956 / 7 . ) has introduced a thematic method of writing by Arabs . Instead of writing about events in chronological order , he has grouped them around dynasties , kings and nations . He was born in Baghdad , where he spent his youth . He was one of the most educated Arabs of his time . Al - Masudi knew history , geography , astronomy , zo- ology and sciences related to Islam . Searching for a new knowledge he left his native town for a trip through Asiatic and African countries to the east and Spain on the west . In the book Kitâb at - Tanbih wa'l - Ischrâf he has explained his philosophy about minerals , plants and animals . Unfortunately , only a part of this book is preserved .",
+      "bbox": {
+        "l": 196,
+        "t": 479,
+        "r": 718,
+        "b": 330
+      },
+      "page": 2
+    },
+    {
+      "label": "footnote",
+      "text": "3C . Brockelmann , Geschichte der arabischen Litteratur , Leipzig 1909 , 114 .",
+      "bbox": {
+        "l": 210,
+        "t": 315,
+        "r": 604,
+        "b": 302
+      },
+      "page": 2
+    },
+    {
+      "label": "footnote",
+      "text": "4A . Miquel , in : The Encyclopedia of Islam , vol . III , ed . B. Lewis , V. L. Ménage , Ch . Pellat , J. Schacht , Leiden - London 1986 , 786-788 .",
+      "bbox": {
+        "l": 196,
+        "t": 301,
+        "r": 717,
+        "b": 277
+      },
+      "page": 2
+    },
+    {
+      "label": "footnote",
+      "text": "5A . Miquel , in : The Encyclopedia of Islam , vol . VII , ed . C.E. Bosworth , E. Van Donzel , W.P. Heinrichs , Ch . Pellat , Leiden New York 1993 , 492-493 .",
+      "bbox": {
+        "l": 196,
+        "t": 275,
+        "r": 716,
+        "b": 250
+      },
+      "page": 2
+    },
+    {
+      "label": "footnote",
+      "text": "6H.A.R. Gibb , Arabic Literature , Oxford 1963 , 81-83 .",
+      "bbox": {
+        "l": 212,
+        "t": 247,
+        "r": 493,
+        "b": 237
+      },
+      "page": 2
+    },
+    {
+      "label": "footnote",
+      "text": "7G . Wiet , Introduction a la littérature arabe , Paris 1966 , 120-121 .",
+      "bbox": {
+        "l": 212,
+        "t": 234,
+        "r": 556,
+        "b": 222
+      },
+      "page": 2
+    },
+    {
+      "label": "text",
+      "text": "372",
+      "bbox": {
+        "l": 445,
+        "t": 212,
+        "r": 465,
+        "b": 202
+      },
+      "page": 2
+    }
+  ],
+  "3": [
+    {
+      "label": "text",
+      "text": "DESCRIPTION OF THE EARTH IN THE WORKS OF ARABIC GEOGRAPHERS FROM IX TO XII CENTURY",
+      "bbox": {
+        "l": 196,
+        "t": 1057,
+        "r": 717,
+        "b": 1049
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "In one part of this work he mentiones Christian authors that he knew and comments their works . He made a map of the world and wrote that the Earth is round , before the Christians in Europe were ready to accept that idea ( fig . 5 ) . He wrote the ency- clopedia of the world history , Akhbar az - zaman ( History of time ) in thirty volumes , but there is only one that is preserved in Vienna.8 There is one incomplete copy of this work , prepared by Burkgardart , in the library of St. Sofia in Istanbul , which consists of 20 big volumes . At the begining of this work it can be seen that at least 10 copies are missing . In Bodlean library in Oxford there is a manuscript , supposed to be one volume of Al - Masudi's history . He has prepared an addition under the title Kitab al - Awsat in which he explained historical events in chronological order . His- tory of time has come to us in abridged edition under the title Muruj adh - dhahab wa ma'ādin al - jawāhir ( Golden meadows and mines of precious stones ) . According to the words of the author the work got this name because it includes traditions , history and all other fields of science . For the first time one Arabic author has combined history and geography in his work . He has used at least sixty five written sources for this historical - geographical work including , as an addition to the Arabic text , a translation of Plato , Aristotle and Ptolemy . The first edition of this book was edited in 943. , than he has finished a new one in Basra in 947. and the last one in 956 .",
+      "bbox": {
+        "l": 195,
+        "t": 1021,
+        "r": 719,
+        "b": 721
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "Al - Idrisi , Abu ' Abdallah Muhammad ibn Muhammad ibn ' Abdallah ibn Idris ( middle of XII century , 1099 / 1100-1164 / 5 / 6 ) , the best known Arabic geographer , was born in Ceuta , as a son of Spanish - Arabic parents . After studies in Cordova , in Muslim Spain , he spent several years traveling through North Africa , Middle East , Europe , and arrived to Palermo in 1138. , invited by the king of Sicily . He was famous geographer and cartographer on the court of Norman king Roger II of Sicily , and after his death of his son , William I.10 His work Kitab nuzhat al - mušqat fi ihtiraq al - afaq was ordered by the king . 11 He wrote on the basis of the data of observers that were sent from different countries and on the basis of the impressions from his own trips . Besides this important work , he has constructed a celestial sphere and a map of the world in the shape of a silver disk for his sponsor Roger II ( fig . 3,6 ) . There are lines engraved on the disk , that marked the borders of seven regions of the inhabited world . Barons from Sicily have raised against William in 1169 , and burned many documents and books including new Latin edition of Idrisi's book . The map and the silver disk disapeared . His book was the first geographical work edited in Europe in 1154. ( 1192 ? ) , under the title Kitab nuzhat al - Mušqat fi dhikr al - amsar wa - l - aqtar wa - l - buldan wa - l - juzur wa - l - mada'in wa - l - afaq ( The book for those who want to read descriptions of metropolis , regions , countries , islands , towns and regions ) . 12 It was included in the cathalog as De geographia universalis , but without a text in Latin . It is known under the title Al - Kitab al - Rudjar ( Roger's book ) , because it was written",
+      "bbox": {
+        "l": 196,
+        "t": 717,
+        "r": 718,
+        "b": 383
+      },
+      "page": 3
+    },
+    {
+      "label": "footnote",
+      "text": "8Ch . Pellat , in : The Encyclopedia of Islam , vol . VI , ed . C.E. Bosworth , E. van Donzel , B. Lewis , Ch . Pellat , Leiden 1991 , 784-789 .",
+      "bbox": {
+        "l": 197,
+        "t": 368,
+        "r": 717,
+        "b": 343
+      },
+      "page": 3
+    },
+    {
+      "label": "footnote",
+      "text": "\" C. Brockelmann , Semitistik , Leiden 1954 , 287-288 .",
+      "bbox": {
+        "l": 210,
+        "t": 340,
+        "r": 482,
+        "b": 330
+      },
+      "page": 3
+    },
+    {
+      "label": "footnote",
+      "text": "10M . Tolmacheva , The Medieval Arabic Geographers and the Beginings of Modern Orientalism , International Journal of Middle East Studies , Vol . 27 , No. 2. ( May , 1995 ) , pp . 141-156 .",
+      "bbox": {
+        "l": 196,
+        "t": 328,
+        "r": 717,
+        "b": 302
+      },
+      "page": 3
+    },
+    {
+      "label": "footnote",
+      "text": "11 The Encyclopedia of Islam , vol . III , ed . B. Lewis , V.L. Ménage , J. Schacht , Leiden , London",
+      "bbox": {
+        "l": 207,
+        "t": 301,
+        "r": 718,
+        "b": 288
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "1986 , 1032 .",
+      "bbox": {
+        "l": 197,
+        "t": 286,
+        "r": 254,
+        "b": 278
+      },
+      "page": 3
+    },
+    {
+      "label": "footnote",
+      "text": "12 Al - Idrisi , Kitab Nuzhat al - Mušqat fi Ihtiraq al - Afaq , Bejrut 1989 ; In Latin title was Oblectatio disiderantis in descriptione civitatum principalium et tractum et provinciarum et insularum et ur- bium et plagarum mundi ( Rome : Typografia Medici , 1952 ) . B. Baldi has translated it on Italian in 1600. , and incomplete edition is now at the University in Montpellier .",
+      "bbox": {
+        "l": 196,
+        "t": 274,
+        "r": 718,
+        "b": 222
+      },
+      "page": 3
+    },
+    {
+      "label": "text",
+      "text": "373",
+      "bbox": {
+        "l": 445,
+        "t": 212,
+        "r": 466,
+        "b": 202
+      },
+      "page": 3
+    }
+  ],
+  "4": [
+    {
+      "label": "text",
+      "text": "I. CVIJANOVIĆ",
+      "bbox": {
+        "l": 419,
+        "t": 1057,
+        "r": 494,
+        "b": 1047
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Figure 1 : Al - Istakhri's world map .",
+      "bbox": {
+        "l": 233,
+        "t": 822,
+        "r": 428,
+        "b": 809
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Figure 2 : Ibn Haukal's world map , oriented with South at the top .",
+      "bbox": {
+        "l": 504,
+        "t": 822,
+        "r": 701,
+        "b": 793
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Figure 3 : Al - Idrisi's Tabula Rogeriana , oriented with South at the top .",
+      "bbox": {
+        "l": 219,
+        "t": 626,
+        "r": 442,
+        "b": 595
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Figure 4 : Ibn Haukal's world map , Mediterranean area only .",
+      "bbox": {
+        "l": 507,
+        "t": 625,
+        "r": 704,
+        "b": 593
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Figure 5 : Mas'udi's world map , reconstruction .",
+      "bbox": {
+        "l": 230,
+        "t": 338,
+        "r": 410,
+        "b": 311
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "374",
+      "bbox": {
+        "l": 445,
+        "t": 211,
+        "r": 466,
+        "b": 202
+      },
+      "page": 4
+    },
+    {
+      "label": "text",
+      "text": "Figure 6 : Al - Idrisi's world map , oriented with South at the top .",
+      "bbox": {
+        "l": 497,
+        "t": 338,
+        "r": 679,
+        "b": 309
+      },
+      "page": 4
+    }
+  ],
+  "5": [
+    {
+      "label": "text",
+      "text": "DESCRIPTION OF THE EARTH IN THE WORKS OF ARABIC GEOGRAPHERS FROM IX TO XII CENTURY",
+      "bbox": {
+        "l": 196,
+        "t": 1057,
+        "r": 718,
+        "b": 1049
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "by the order of the king . 13",
+      "bbox": {
+        "l": 196,
+        "t": 1024,
+        "r": 359,
+        "b": 1007
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "The medieval Arabic astronomers wrote that the Earth is round , before the Chris- tians in Europe were ready to accept that idea . They have preserved the works of Greek astronomers during Dark Ages .",
+      "bbox": {
+        "l": 196,
+        "t": 1003,
+        "r": 720,
+        "b": 957
+      },
+      "page": 5
+    },
+    {
+      "label": "section_header",
+      "text": "Bibliography",
+      "bbox": {
+        "l": 411,
+        "t": 929,
+        "r": 502,
+        "b": 913
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Al - Idrisi : Kitab Nuzhat al - Mušqat fi Ihtiraq al - Afaq , Bejrut 1989 .",
+      "bbox": {
+        "l": 195,
+        "t": 902,
+        "r": 592,
+        "b": 888
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Al - Istakhri : Via regnorum , descriptio ditionis moslemicae , in : BGA , ed . De Goeje , Lugduni - Batavorum ( Leiden ) , 1870 .",
+      "bbox": {
+        "l": 196,
+        "t": 887,
+        "r": 717,
+        "b": 861
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Al - Masudi : Kitâb at - Tanbih Wa'l - Ischrab in : BGA , ed . De Goeje , Lugduni - Batavorum ( Leiden ) 1894 .",
+      "bbox": {
+        "l": 195,
+        "t": 861,
+        "r": 716,
+        "b": 832
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Al - Masudi : Muruj adh - dhahab wa ma'adin al - jawahir , Beirut 2005 .",
+      "bbox": {
+        "l": 196,
+        "t": 832,
+        "r": 599,
+        "b": 818
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Bagrow , L .: Die geschichte der kartographie , Berlin 1951 .",
+      "bbox": {
+        "l": 196,
+        "t": 818,
+        "r": 537,
+        "b": 804
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Brockelmann , C .: Geschichte der arabischen Litteratur , Leipzig 1909 .",
+      "bbox": {
+        "l": 196,
+        "t": 803,
+        "r": 609,
+        "b": 791
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Brockelmann , C .: Semitistik , Leiden 1954 .",
+      "bbox": {
+        "l": 196,
+        "t": 791,
+        "r": 442,
+        "b": 777
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Cuntz , O .: Die geographie des Ptolemaeus , Berlin 1923 .",
+      "bbox": {
+        "l": 196,
+        "t": 775,
+        "r": 527,
+        "b": 762
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "The Encyclopedia of Islam , vol . VII , ed . C.E. Bosworth , E. Van Donzel , W.P. Heinrichs , Ch . Pellat , Leiden - New York 1993 .",
+      "bbox": {
+        "l": 197,
+        "t": 763,
+        "r": 717,
+        "b": 737
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "The Encyclopedia of Islam , vol . VI , ed . C.E. Bosworth , E. van Donzel , B. Lewis , Ch . Pellat , Leiden 1991 .",
+      "bbox": {
+        "l": 197,
+        "t": 737,
+        "r": 717,
+        "b": 707
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "The Encyclopedia of Islam , vol . III , ed . B. Lewis , V.L. Ménage , Ch . Pellat , J. Schacht , Leiden , London 1986 .",
+      "bbox": {
+        "l": 197,
+        "t": 708,
+        "r": 717,
+        "b": 680
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Gibb , H. A. R .: Arabic Literature , Oxford 1963 .",
+      "bbox": {
+        "l": 196,
+        "t": 678,
+        "r": 479,
+        "b": 666
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Ibn Haukal : Via et regna , descriptio ditionis moslemicae , in : BGA , ed . De Goeje , Lugduni - Batavorum ( Leiden ) , 1897 .",
+      "bbox": {
+        "l": 196,
+        "t": 664,
+        "r": 717,
+        "b": 635
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Ibn Rosteh : Kitab al - a'lák An - Nafisa VII , in : BGA , ed . De Goeje , Lugduni - Batavorum ( Leiden ) 1892 .",
+      "bbox": {
+        "l": 196,
+        "t": 638,
+        "r": 716,
+        "b": 608
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Leithäuser , J. G .: Mappae mundi , Berlin 1958 .",
+      "bbox": {
+        "l": 196,
+        "t": 608,
+        "r": 469,
+        "b": 595
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Pellat , C .: Langue et littérature Arabes , Paris 1970 .",
+      "bbox": {
+        "l": 196,
+        "t": 595,
+        "r": 502,
+        "b": 580
+      },
+      "page": 5
+    },
+    {
+      "label": "list_item",
+      "text": "Tolmacheva , M .: The Medieval Arabic Geographers and the Beginings of Modern Oriental- ism , International Journal of Middle East Studies , Vol . 27 , No. 2. ( May , 1995 ) . Wiet , G .: Introduction a la littérature arabe , Paris 1966 .",
+      "bbox": {
+        "l": 196,
+        "t": 579,
+        "r": 716,
+        "b": 539
+      },
+      "page": 5
+    },
+    {
+      "label": "footnote",
+      "text": "13 The Encyclopedia of Islam , vol . III , ed . B. Lewis , V.L. Ménage , J. Schacht , Leiden , London",
+      "bbox": {
+        "l": 207,
+        "t": 248,
+        "r": 717,
+        "b": 235
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "1986 , 1035 .",
+      "bbox": {
+        "l": 197,
+        "t": 232,
+        "r": 254,
+        "b": 224
+      },
+      "page": 5
+    },
+    {
+      "label": "text",
+      "text": "375",
+      "bbox": {
+        "l": 445,
+        "t": 212,
+        "r": 466,
+        "b": 203
+      },
+      "page": 5
+    }
+  ]
+}
