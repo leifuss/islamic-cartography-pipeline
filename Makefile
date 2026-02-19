@@ -2,6 +2,9 @@
 ## Islamic Cartography Pipeline — Task Runner
 ##
 ## Usage:
+##   make stage            Copy PDFs from Zotero → data/pdfs/{key}.pdf (with provenance)
+##   make stage-dry        Preview staging without copying
+##   make lfs-setup        One-time: install Git LFS and track data/pdfs/*.pdf
 ##   make extract          Run robust extraction in background (fire and forget)
 ##   make extract-dry      Preview what would be extracted (no writes)
 ##   make extract-vision   Extraction with Google Vision fallback enabled
@@ -112,6 +115,25 @@ ps-extract:  ## Show running extraction processes
 .PHONY: kill-extract
 kill-extract:  ## Kill any running extraction processes
 	@pkill -f '05b_extract_robust' && echo "Killed." || echo "No process found."
+
+# ── Inventory & bibliography ───────────────────────────────────────────────────
+
+# ── PDF staging ───────────────────────────────────────────────────────────────
+
+.PHONY: stage
+stage:  ## Copy PDFs from Zotero/downloads → data/pdfs/{key}.pdf with provenance
+	$(PYTHON) scripts/00_stage_pdfs.py
+
+.PHONY: stage-dry
+stage-dry:  ## Preview PDF staging without copying
+	$(PYTHON) scripts/00_stage_pdfs.py --dry-run
+
+.PHONY: lfs-setup
+lfs-setup:  ## One-time: install Git LFS and track data/pdfs/*.pdf
+	git lfs install
+	git lfs track "data/pdfs/*.pdf"
+	git add .gitattributes
+	@echo "Git LFS configured. Now run 'make stage' then 'git add data/pdfs/' to push PDFs."
 
 # ── Inventory & bibliography ───────────────────────────────────────────────────
 

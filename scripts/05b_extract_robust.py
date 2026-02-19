@@ -344,7 +344,11 @@ def extract_document(item: dict, use_vision: bool = False,
     """
     key      = item["key"]
     title    = item.get("title", key)
-    pdf_path = item.get("pdf_path", "")
+    # Prefer staged path (data/pdfs/{key}.pdf) over original Zotero path
+    pdf_path = (item.get("pdf_staged_path") or item.get("pdf_path") or "")
+    # Resolve relative staged paths against repo root
+    if pdf_path and not Path(pdf_path).is_absolute():
+        pdf_path = str(_ROOT / pdf_path)
     doc_type = item.get("doc_type", "unknown")
     language = item.get("language") or "en"
 
