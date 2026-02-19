@@ -98,8 +98,20 @@ class ZoteroLibrary:
             # Try to find collection and get its items
             coll_key = self._find_collection_key(self.collection_name)
             if coll_key:
-                # Get all items from collection
-                items = self.client.collection_items(coll_key)
+                # Use everything() to paginate through all collection items
+                items = self.client.everything(
+                    self.client.collection_items(coll_key)
+                )
+                if not items:
+                    # Collection exists but is empty — items are probably
+                    # top-level in the group library, not assigned to the
+                    # collection.  Fall back to fetching everything.
+                    import logging
+                    logging.getLogger(__name__).warning(
+                        f"Collection '{self.collection_name}' ({coll_key}) "
+                        f"returned 0 items — falling back to all top-level items"
+                    )
+                    items = self.client.everything(self.client.top())
             else:
                 # Collection not found - raise error with helpful message
                 available = list(self._get_collections().keys())
@@ -109,7 +121,7 @@ class ZoteroLibrary:
                 )
         else:
             # Get all top-level items from library
-            items = self.client.all_top()
+            items = self.client.everything(self.client.top())
 
         return items
 
