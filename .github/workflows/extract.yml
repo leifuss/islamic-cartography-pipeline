@@ -144,6 +144,29 @@ jobs:
           [ -n "$FAILED" ] && echo "Failed keys:$FAILED" || echo "All keys succeeded."
           exit 0   # never fail the step — results are logged above
 
+      # ── Commit extraction results BEFORE Heron so Modal can find page_texts.json
+      - name: Commit extraction results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          python scripts/00_update_inventory_flags.py
+          git add data/texts/ data/inventory.json
+
+          if git diff --staged --quiet; then
+            echo "Nothing new to commit from extraction."
+          else
+            CHANGED=$(git diff --staged --name-only | grep page_texts.json | wc -l)
+            git commit -m "extract(05b): ${CHANGED} doc(s) [skip ci]
+
+          Keys: ${{ inputs.keys || 'all-unextracted' }}
+          Vision: ${{ inputs.use_vision }}
+          Run: ${{ github.run_id }}"
+            git pull --rebase origin main   # avoid reject if commits landed during extraction
+            git push
+            echo "✓ Extraction results committed for ${CHANGED} doc(s)."
+          fi
+
       # ── Run layout enrichment (05c) via Modal T4 GPU ────────────────────────
       - name: Run Heron layout enrichment (Modal GPU)
         if: ${{ inputs.run_layout }}
@@ -192,29 +215,6 @@ jobs:
           echo "Dispatching Heron to Modal T4 GPU for keys: $KEYS"
           echo "(Modal will clone the repo, run Heron, commit results, and push back)"
           modal run scripts/modal_heron.py --keys "$KEYS"
-
-      # ── Commit extraction results immediately (before slow Heron step) ─────────
-      - name: Commit extraction results
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          python scripts/00_update_inventory_flags.py
-          git add data/texts/ data/inventory.json
-
-          if git diff --staged --quiet; then
-            echo "Nothing new to commit from extraction."
-          else
-            CHANGED=$(git diff --staged --name-only | grep page_texts.json | wc -l)
-            git commit -m "extract(05b): ${CHANGED} doc(s) [skip ci]
-
-          Keys: ${{ inputs.keys || 'all-unextracted' }}
-          Vision: ${{ inputs.use_vision }}
-          Run: ${{ github.run_id }}"
-            git pull --rebase origin main   # avoid reject if commits landed during extraction
-            git push
-            echo "✓ Extraction results committed for ${CHANGED} doc(s)."
-          fi
 
       # ── Commit layout results after Heron ────────────────────────────────────
       # Modal already commits+pushes from inside its container, so this step is

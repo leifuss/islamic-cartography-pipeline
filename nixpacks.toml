@@ -1,0 +1,6 @@
+# Nixpacks config for Railway deployment (RAG server only)
+# Overrides auto-detected requirements.txt with slim requirements-rag.txt
+# Full pipeline deps (torch, docling etc.) are NOT needed for serving
+
+[phases.install]
+cmds = ["pip install -r requirements-rag.txt"]
