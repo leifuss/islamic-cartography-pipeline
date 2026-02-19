@@ -133,26 +133,21 @@ def sync(dry_run: bool = False) -> dict:
     if library.collection_name:
         log.info(f"  Collection filter: {library.collection_name!r}")
 
-    items = library.get_all_items()
-    log.info(f"  {len(items)} items in Zotero")
+    # Fetch parents and children in one paginated call (avoids N+1 requests)
+    items, children_by_parent = library.get_all_items_with_children()
+    log.info(f"  {len(items)} items in Zotero ({sum(len(v) for v in children_by_parent.values())} child objects)")
 
-    # Fetch notes for items that have children
+    # Extract notes from the already-fetched children
     notes_by_key = {}
-    for item in items:
-        num_children = item.get('meta', {}).get('numChildren', 0)
-        if num_children > 0:
-            try:
-                children = library.client.children(item['key'])
-                item_notes = []
-                for child in (children or []):
-                    if child['data'].get('itemType') == 'note':
-                        note_text = _strip_html(child['data'].get('note', ''))
-                        if note_text:
-                            item_notes.append(note_text)
-                if item_notes:
-                    notes_by_key[item['key']] = item_notes
-            except Exception:
-                pass
+    for parent_key, children in children_by_parent.items():
+        item_notes = []
+        for child in children:
+            if child['data'].get('itemType') == 'note':
+                note_text = _strip_html(child['data'].get('note', ''))
+                if note_text:
+                    item_notes.append(note_text)
+        if item_notes:
+            notes_by_key[parent_key] = item_notes
 
     # Load existing inventory
     inv_path = _ROOT / 'data' / 'inventory.json'

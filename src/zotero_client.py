@@ -87,18 +87,13 @@ class ZoteroLibrary:
             return self._collection_key
         return None
 
-    def get_all_items(self) -> List[Dict]:
-        """
-        Retrieve all items, optionally filtered by collection.
+    def _fetch_all(self, include_children: bool = False) -> List[Dict]:
+        """Fetch all items from the library or collection, with collection fallback."""
+        fetch = self.client.items if include_children else self.client.top
 
-        Returns:
-            List of item dicts with metadata and attachments
-        """
         if self.collection_name:
-            # Try to find collection and get its items
             coll_key = self._find_collection_key(self.collection_name)
             if coll_key:
-                # Use everything() to paginate through all collection items
                 items = self.client.everything(
                     self.client.collection_items(coll_key)
                 )
@@ -109,21 +104,48 @@ class ZoteroLibrary:
                     import logging
                     logging.getLogger(__name__).warning(
                         f"Collection '{self.collection_name}' ({coll_key}) "
-                        f"returned 0 items — falling back to all top-level items"
+                        f"returned 0 items — falling back to all items"
                     )
-                    items = self.client.everything(self.client.top())
+                    items = self.client.everything(fetch())
             else:
-                # Collection not found - raise error with helpful message
                 available = list(self._get_collections().keys())
                 raise ValueError(
                     f"Collection '{self.collection_name}' not found. "
                     f"Available collections: {available}"
                 )
         else:
-            # Get all top-level items from library
-            items = self.client.everything(self.client.top())
+            items = self.client.everything(fetch())
 
         return items
+
+    def get_all_items(self) -> List[Dict]:
+        """
+        Retrieve all top-level items, optionally filtered by collection.
+
+        Returns:
+            List of item dicts (no child notes/attachments)
+        """
+        return self._fetch_all(include_children=False)
+
+    def get_all_items_with_children(self) -> tuple:
+        """
+        Fetch all items (parents + children) in one paginated call.
+
+        Returns a tuple of (top_level_items, children_by_parent_key) so
+        callers can access notes/attachments without N+1 HTTP requests.
+        """
+        all_items = self._fetch_all(include_children=True)
+
+        top_items = []
+        children_by_parent: Dict[str, List[Dict]] = {}
+        for item in all_items:
+            parent = item.get('data', {}).get('parentItem')
+            if parent:
+                children_by_parent.setdefault(parent, []).append(item)
+            else:
+                top_items.append(item)
+
+        return top_items, children_by_parent
 
     def get_attachment_path(self, item: Dict) -> Optional[Path]:
         """
