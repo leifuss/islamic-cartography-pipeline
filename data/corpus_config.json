@@ -9,5 +9,34 @@
     "reader":    { "label": "📖 Reader",     "href": "reader.html"   },
     "chat":      { "label": "💬 Chat",       "href": "chat.html"     },
     "status":    { "label": "⚙️ Status",     "href": "status.html"   }
+  },
+
+  "_source_note": "Configure one of the source types below to drive inventory.json generation.",
+  "source": {
+    "type": "zotero_local",
+
+    "zotero_local": {
+      "library_id": null,
+      "collection_name": null,
+      "_note": "Reads Zotero's local SQLite DB. Requires Zotero desktop running. Set ZOTERO_LIBRARY_ID and COLLECTION_NAME in .env."
+    },
+
+    "zotero_api": {
+      "library_id": null,
+      "library_type": "user",
+      "collection_key": null,
+      "_note": "Reads from Zotero web API. No desktop app required. Set ZOTERO_LIBRARY_ID and ZOTERO_API_KEY in .env."
+    },
+
+    "bibtex": {
+      "path": "data/bibliography.bib",
+      "_note": "Converts a BibTeX export to inventory.json. Run: python scripts/00_import_bibtex.py (planned)"
+    },
+
+    "csv": {
+      "path": "data/bibliography.csv",
+      "key_column": "key",
+      "_note": "Converts a CSV export to inventory.json. Required columns: key, title, author, year."
+    }
   }
 }
