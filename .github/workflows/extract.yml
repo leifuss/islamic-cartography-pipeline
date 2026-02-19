@@ -144,13 +144,25 @@ jobs:
           [ -n "$FAILED" ] && echo "Failed keys:$FAILED" || echo "All keys succeeded."
           exit 0   # never fail the step — results are logged above
 
-      # ── Run layout enrichment (05c) — one process per key for memory isolation ─
-      - name: Run Heron layout enrichment
+      # ── Run layout enrichment (05c) via Modal T4 GPU ────────────────────────
+      - name: Run Heron layout enrichment (Modal GPU)
         if: ${{ inputs.run_layout }}
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set +e   # don't abort on segfault — we handle failures per-key
+          # Fail loudly if Modal credentials not configured
+          if [ -z "$MODAL_TOKEN_ID" ] || [ -z "$MODAL_TOKEN_SECRET" ]; then
+            echo "⚠ MODAL_TOKEN_ID / MODAL_TOKEN_SECRET not set in repo secrets."
+            echo "  Add them at: Settings → Secrets → Actions"
+            echo "  Get tokens at: https://modal.com/settings"
+            exit 1
+          fi
 
-          # Build list of keys — only those with page_texts.json (i.e. 05b succeeded)
+          pip install modal --quiet
+
+          # Build list of keys that have page_texts.json (i.e. 05b succeeded)
           if [ -n "${{ inputs.keys }}" ]; then
             RAW_KEYS="${{ inputs.keys }}"
           else
@@ -162,7 +174,6 @@ jobs:
           ")
           fi
 
-          # Filter to keys that actually have page_texts.json
           KEYS=""
           for KEY in $RAW_KEYS; do
             if [ -f "data/texts/$KEY/page_texts.json" ]; then
@@ -171,29 +182,16 @@ jobs:
               echo "⏭ Skipping $KEY — no page_texts.json (05b may have failed)"
             fi
           done
+          KEYS=$(echo $KEYS | xargs)   # trim leading/trailing whitespace
 
-          echo "Layout keys to process: $KEYS"
-          FAILED=""
+          if [ -z "$KEYS" ]; then
+            echo "No keys to enrich — skipping Modal run."
+            exit 0
+          fi
 
-          for KEY in $KEYS; do
-            echo ""
-            echo "════════════════════════════════════════"
-            echo "Layout: $KEY"
-            echo "════════════════════════════════════════"
-            python scripts/05c_layout_heron.py \
-              --batch 1 \
-              --keys "$KEY"
-            EXIT=$?
-            if [ $EXIT -ne 0 ]; then
-              echo "⚠ $KEY layout failed (exit $EXIT) — continuing"
-              FAILED="$FAILED $KEY"
-            fi
-          done
-
-          echo ""
-          echo "All layout keys attempted."
-          [ -n "$FAILED" ] && echo "Failed keys:$FAILED" || echo "All keys succeeded."
-          exit 0   # never fail the step
+          echo "Dispatching Heron to Modal T4 GPU for keys: $KEYS"
+          echo "(Modal will clone the repo, run Heron, commit results, and push back)"
+          modal run scripts/modal_heron.py --keys "$KEYS"
 
       # ── Commit extraction results immediately (before slow Heron step) ─────────
       - name: Commit extraction results
@@ -218,7 +216,9 @@ jobs:
           fi
 
       # ── Commit layout results after Heron ────────────────────────────────────
-      - name: Commit layout results
+      # Modal already commits+pushes from inside its container, so this step is
+      # normally a no-op.  It acts as a safety net if Modal ran without a token.
+      - name: Commit layout results (fallback)
         if: ${{ inputs.run_layout }}
         run: |
           git config user.name  "github-actions[bot]"

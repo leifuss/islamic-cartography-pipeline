@@ -65,7 +65,7 @@ REPO_DIR = Path("/repo")
     timeout=3600,          # 1 hour — generous for large batches
     secrets=[modal.Secret.from_name("islamic-cartography")],
 )
-def run_heron(keys: list[str] | None = None):
+def run_heron(keys: list[str] | None = None, github_token: str = ""):
     import json
     import os
     import subprocess
@@ -105,7 +105,7 @@ def run_heron(keys: list[str] | None = None):
             failed.append(key)
 
     # Commit results back using a deploy token if set, else skip
-    github_token = os.environ.get("GITHUB_TOKEN")
+    github_token = github_token or os.environ.get("GITHUB_TOKEN", "")
     if github_token:
         remote = f"https://x-access-token:{github_token}@github.com/leifuss/islamic-cartography-pipeline.git"
         subprocess.run(["git", "remote", "set-url", "origin", remote], cwd=REPO_DIR, check=True)
@@ -133,7 +133,12 @@ def main(keys: str = ""):
 
     Args:
         --keys: Space-separated doc keys. Leave blank for all unenriched.
+
+    GITHUB_TOKEN is read from the local environment (set automatically in
+    GitHub Actions, or set manually when running locally with a PAT).
     """
+    import os
     key_list = keys.split() if keys.strip() else None
-    result = run_heron.remote(key_list)
+    github_token = os.environ.get("GITHUB_TOKEN", "")
+    result = run_heron.remote(key_list, github_token=github_token)
     print(f"\nResult: {result}")
