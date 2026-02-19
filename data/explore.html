@@ -380,6 +380,87 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
 
 .loading-msg { text-align: center; padding: 60px 24px; color: var(--muted); font-size: 14px; }
+
+/* ── Tag badges ── */
+.b-tag {
+  background: #1a2020; color: #88bbaa; border: 1px solid #1a4a3a;
+}
+
+/* ── Document info side panel ── */
+#doc-info-panel {
+  position: fixed; top: 0; right: -420px; width: 420px; height: 100vh;
+  background: var(--panel); border-left: 1px solid var(--border);
+  z-index: 2000; display: flex; flex-direction: column;
+  transition: right .25s ease;
+  box-shadow: -4px 0 20px rgba(0,0,0,.4);
+}
+#doc-info-panel.open { right: 0; }
+.dip-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 20px; border-bottom: 1px solid var(--border);
+  background: #0d0d0d; flex-shrink: 0;
+}
+.dip-header h2 { font-size: 14px; color: #fff; flex: 1; font-weight: 600; }
+.dip-close {
+  background: none; border: none; color: var(--muted); font-size: 18px;
+  cursor: pointer; padding: 0 4px; line-height: 1;
+}
+.dip-close:hover { color: #fff; }
+.dip-body {
+  flex: 1; overflow-y: auto; padding: 20px;
+}
+.dip-title {
+  font-size: 16px; font-weight: 600; color: #fff; line-height: 1.4;
+  margin-bottom: 8px;
+}
+.dip-title a { color: inherit; text-decoration: none; }
+.dip-title a:hover { color: var(--accent); }
+.dip-pub {
+  font-size: 12px; font-style: italic; color: #888; margin-bottom: 14px;
+}
+.dip-row {
+  display: flex; gap: 10px; padding: 6px 0;
+  border-bottom: 1px solid var(--border); font-size: 12px;
+}
+.dip-row:last-child { border-bottom: none; }
+.dip-label { min-width: 85px; color: var(--muted); font-weight: 600; flex-shrink: 0; }
+.dip-value { color: var(--text); flex: 1; word-break: break-word; }
+.dip-value a { color: var(--link); }
+.dip-badges { display: flex; gap: 4px; flex-wrap: wrap; margin: 12px 0; }
+.dip-tags { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
+.dip-section {
+  font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase;
+  letter-spacing: .04em; margin: 16px 0 6px; padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.dip-abstract {
+  font-size: 13px; color: var(--text); line-height: 1.6; margin: 6px 0;
+}
+.dip-notes {
+  font-size: 12px; color: #aaa; line-height: 1.5; margin-bottom: 6px;
+  padding: 8px 10px; background: #161616; border-radius: 4px;
+  border-left: 3px solid var(--border);
+}
+.dip-actions {
+  display: flex; gap: 8px; margin-top: 16px; padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.dip-actions a {
+  font-size: 12px; padding: 6px 14px; border-radius: 6px;
+  background: var(--accent); color: #fff; text-decoration: none;
+  transition: filter .15s;
+}
+.dip-actions a:hover { filter: brightness(1.2); color: #fff; text-decoration: none; }
+.dip-actions a.secondary {
+  background: #222; border: 1px solid var(--border); color: var(--text);
+}
+
+/* Overlay behind side panel */
+#doc-info-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,.4);
+  z-index: 1999; display: none;
+}
+#doc-info-overlay.open { display: block; }
 </style>
 </head>
 <body>
@@ -436,6 +517,11 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
       <option value="ar">Arabic</option>
       <option value="de">German</option>
       <option value="fr">French</option>
+    </select>
+  </label>
+  <label>Tag:
+    <select id="fTag" onchange="applyFilters()">
+      <option value="">All tags</option>
     </select>
   </label>
   <label>Period:
@@ -506,6 +592,16 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
       <p class="loading-msg">Loading inventory&hellip;</p>
     </div>
   </div>
+</div>
+
+<!-- ── DOCUMENT INFO SIDE PANEL ── -->
+<div id="doc-info-overlay" onclick="closeDocInfo()"></div>
+<div id="doc-info-panel">
+  <div class="dip-header">
+    <h2 id="dip-heading">Document Information</h2>
+    <button class="dip-close" onclick="closeDocInfo()" title="Close">&times;</button>
+  </div>
+  <div class="dip-body" id="dip-body"></div>
 </div>
 
 <script>
@@ -659,6 +755,16 @@ function init(inventory) {
   document.getElementById('subtitle').textContent =
     `${DATA.length} items \u00b7 ${withYear} with date \u00b7 ${withPlace} with place`;
 
+  // Populate tag filter dropdown from inventory data
+  const allTags = new Set();
+  DATA.forEach(r => (r.tags || []).forEach(t => allTags.add(t)));
+  const tagSel = document.getElementById('fTag');
+  [...allTags].sort().forEach(t => {
+    const o = document.createElement('option');
+    o.value = t; o.textContent = t;
+    tagSel.appendChild(o);
+  });
+
   filtered = DATA.slice();
   applyFilters();
 }
@@ -725,6 +831,7 @@ function applyFilters() {
   const fPdf    = document.getElementById('fPdf').value;
   const fDoc    = document.getElementById('fDoc').value;
   const fLang   = document.getElementById('fLang').value;
+  const fTag    = document.getElementById('fTag').value;
   const fPeriod = document.getElementById('fPeriod').value;
 
   filtered = DATA.filter(r => {
@@ -733,6 +840,7 @@ function applyFilters() {
     if (fPdf    && r.pdf_status !== fPdf)    return false;
     if (fDoc    && r.doc_type   !== fDoc)    return false;
     if (fLang   && r.language   !== fLang)   return false;
+    if (fTag    && !(r.tags || []).includes(fTag)) return false;
     if (fPeriod && periodOf(r.year) !== fPeriod) return false;
     return true;
   });
@@ -1030,7 +1138,7 @@ function renderList() {
     grid.innerHTML = sorted.map(r => {
       const titleHtml = itemLink(r, r.title);
       const pubHtml   = r.pub_title ? `<div class="row-pub">${esc(r.pub_title)}</div>` : '';
-      return `<div class="row-item">
+      return `<div class="row-item" onclick="showDocInfo('${r.key}')" style="cursor:pointer">
         <div><div class="row-title">${titleHtml}${r.has_reader ? ' \ud83d\udcd6' : ''}</div>${pubHtml}</div>
         <div class="row-author">${esc((r.authors||'').split(';')[0])}</div>
         <div class="row-year">${esc(r.year||'\u2014')}</div>
@@ -1047,7 +1155,8 @@ function renderList() {
       const pubHtml  = r.pub_title ? `<div class="card-pub">${esc(r.pub_title)}</div>` : '';
       const meta = [(r.authors||'').split(';')[0], r.year, r.place].filter(Boolean).join(' \u00b7 ');
       const tq   = r.text_quality;
-      return `<div class="card">
+      const tagHtml = (r.tags || []).map(t => badge('b-tag', t)).join('');
+      return `<div class="card" onclick="showDocInfo('${r.key}')" style="cursor:pointer">
         <div class="card-title">${titleHtml}</div>
         ${pubHtml}
         <div class="card-meta">${esc(meta)}</div>
@@ -1058,10 +1167,100 @@ function renderList() {
           ${badge('b-itype', r.item_type || '')}
           ${tq ? qualityBadge(tq) : ''}
           ${readerBadge}
+          ${tagHtml}
         </div>
       </div>`;
     }).join('');
   }
+}
+
+// ─── Document info side panel ─────────────────────────────────────────────────
+function showDocInfo(key) {
+  const r = DATA.find(d => d.key === key);
+  if (!r) return;
+
+  const panel   = document.getElementById('doc-info-panel');
+  const overlay = document.getElementById('doc-info-overlay');
+  const body    = document.getElementById('dip-body');
+
+  // Metadata rows
+  const rows = [
+    r.authors    && ['Authors',    esc(r.authors)],
+    r.year       && ['Year',       esc(r.year)],
+    r.item_type  && ['Type',       esc(r.item_type.replace(/([A-Z])/g,' $1').trim())],
+    r.pub_title  && ['Publication', `<em>${esc(r.pub_title)}</em>`],
+    r.place      && ['Place',      esc(r.place)],
+    r.publisher  && ['Publisher',  esc(r.publisher)],
+    r.pages      && ['Pages',      esc(r.pages)],
+    r.language   && ['Language',   r.language.toUpperCase()],
+    r.page_count && ['PDF pages',  r.page_count],
+    r.pdf_status && ['PDF status', esc(r.pdf_status)],
+    r.doc_type && r.doc_type !== 'unknown' && ['Doc type', esc(r.doc_type)],
+    r.quality_score != null && ['Quality',   r.quality_score.toFixed(2)],
+    r.url        && ['URL',        `<a href="${esc(r.url)}" target="_blank" rel="noopener">${r.url.length > 45 ? esc(r.url.slice(0,45)) + '\u2026' : esc(r.url)}</a>`],
+    r.key        && ['Key',        `<code style="font-size:11px;color:var(--muted)">${r.key}</code>`],
+  ].filter(Boolean);
+
+  let html = '';
+
+  // Title
+  const titleLink = itemHref(r);
+  html += `<div class="dip-title">${titleLink ? `<a href="${esc(titleLink)}"${r.has_reader ? '' : ' target="_blank"'}>${esc(r.title)}</a>` : esc(r.title)}</div>`;
+  if (r.pub_title) html += `<div class="dip-pub">${esc(r.pub_title)}</div>`;
+
+  // Badges
+  html += `<div class="dip-badges">
+    ${pdfBadge(r.pdf_status)}
+    ${typeBadge(r.doc_type)}
+    ${r.language ? badge('b-lang', r.language) : ''}
+    ${badge('b-itype', r.item_type || '')}
+    ${r.text_quality ? qualityBadge(r.text_quality) : ''}
+    ${r.has_reader ? badge('b-stored', '\ud83d\udcd6 Reader') : ''}
+  </div>`;
+
+  // Tags
+  const tags = r.tags || [];
+  if (tags.length) {
+    html += `<div class="dip-tags">${tags.map(t => badge('b-tag', t)).join('')}</div>`;
+  }
+
+  // Metadata table
+  html += '<div class="dip-section">Details</div>';
+  html += rows.map(([label, val]) =>
+    `<div class="dip-row"><span class="dip-label">${label}</span><span class="dip-value">${val}</span></div>`
+  ).join('');
+
+  // Abstract
+  if (r.abstract) {
+    html += '<div class="dip-section">Abstract</div>';
+    html += `<div class="dip-abstract">${esc(r.abstract)}</div>`;
+  }
+
+  // Notes
+  const notes = r.notes || [];
+  if (notes.length) {
+    html += '<div class="dip-section">Zotero Notes</div>';
+    html += notes.map(n => `<div class="dip-notes">${esc(typeof n === 'string' ? n : (n.note || ''))}</div>`).join('');
+  }
+
+  // Action buttons
+  html += '<div class="dip-actions">';
+  if (r.has_reader) {
+    html += `<a href="reader.html?key=${r.key}">Open Reader</a>`;
+  }
+  if (r.url) {
+    html += `<a href="${esc(r.url)}" target="_blank" rel="noopener" class="secondary">Open URL</a>`;
+  }
+  html += '</div>';
+
+  body.innerHTML = html;
+  panel.classList.add('open');
+  overlay.classList.add('open');
+}
+
+function closeDocInfo() {
+  document.getElementById('doc-info-panel').classList.remove('open');
+  document.getElementById('doc-info-overlay').classList.remove('open');
 }
 </script>
 </body>
