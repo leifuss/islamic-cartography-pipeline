@@ -48,7 +48,7 @@ jobs:
         run: |
           git lfs pull --include="data/pdfs/**"
           echo "PDFs available:"
-          ls data/pdfs/*.pdf 2>/dev/null | wc -l || echo "0 PDFs found"
+          find data/pdfs -name "*.pdf" | wc -l
 
       # ── Python setup ─────────────────────────────────────────────────────────
       - name: Set up Python 3.11
