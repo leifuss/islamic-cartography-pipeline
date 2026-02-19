@@ -3,4 +3,4 @@
 # Full pipeline deps (torch, docling etc.) are NOT needed for serving
 
 [phases.install]
-cmds = ["pip install -r requirements-rag.txt"]
+cmds = ["python -m venv --copies /opt/venv && . /opt/venv/bin/activate && pip install -r requirements-rag.txt"]
