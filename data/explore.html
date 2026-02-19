@@ -288,6 +288,8 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
   transition: border-color .15s;
 }
 .card:hover { border-color: #444; }
+.card.has-reader { border-left: 3px solid var(--good); background: #141a16; }
+.card.extracted  { border-left: 3px solid #2a4a3a; }
 .card-title {
   font-size: 13px;
   font-weight: 500;
@@ -348,6 +350,8 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
   transition: background .1s;
 }
 .row-item:hover { background: #181818; }
+.row-item.has-reader { border-left: 3px solid var(--good); background: #121a14; }
+.row-item.extracted  { border-left: 3px solid #2a4a3a; }
 .row-title { font-size: 13px; font-weight: 500; color: #fff; line-height: 1.3; }
 .row-title a { color: inherit; text-decoration: none; }
 .row-title a:hover { color: var(--accent); }
@@ -466,11 +470,12 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 <body>
 
 <header>
-  <h1>Corpus Explorer</h1>
+  <h1 id="headerTitle">Corpus Explorer</h1>
   <span class="sub" id="subtitle">Loading inventory&hellip;</span>
   <nav class="site-nav">
-    <a href="dashboard.html">Dashboard</a>
-    <a href="explore.html" class="active">Explorer</a>
+    <a href="index.html" id="navCollections">Collections</a>
+    <a id="navDashboard" href="dashboard.html">Dashboard</a>
+    <a id="navExplorer" href="explore.html" class="active">Explorer</a>
   </nav>
 </header>
 
@@ -605,6 +610,56 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 </div>
 
 <script>
+// ─── Collection resolution ────────────────────────────────────────────────────
+// Read ?collection= param, look up path in collections.json, derive basePath.
+// basePath is used to prefix all data fetches (inventory.json, texts/…).
+// If no param given, basePath = '.' (backward compatible).
+const _urlParams     = new URLSearchParams(location.search);
+const _collectionSlug = _urlParams.get('collection') || '';
+let   BASE_PATH      = '.';  // default: same directory
+
+// Query string suffix to propagate collection to other pages
+function collectionQS(prefix) {
+  return _collectionSlug ? prefix + 'collection=' + encodeURIComponent(_collectionSlug) : '';
+}
+
+// Resolve basePath from collections.json, then boot the app
+(async function resolveCollection() {
+  if (_collectionSlug) {
+    try {
+      const resp = await fetch('collections.json');
+      if (resp.ok) {
+        const data = await resp.json();
+        const coll = (data.collections || []).find(c => c.slug === _collectionSlug);
+        if (coll && coll.path) {
+          BASE_PATH = coll.path === '.' ? '.' : coll.path;
+        }
+        // Update header with collection name
+        if (coll && coll.name) {
+          document.getElementById('headerTitle').textContent = coll.name + ' — Explorer';
+          document.title = coll.name + ' — Corpus Explorer';
+        }
+      }
+    } catch (e) {
+      console.warn('Could not load collections.json, using default path', e);
+    }
+  }
+  // Update nav links to carry the collection param
+  const qs = collectionQS('?');
+  document.getElementById('navDashboard').href = 'dashboard.html' + qs;
+  document.getElementById('navExplorer').href   = 'explore.html' + qs;
+
+  // Now load inventory from the resolved basePath
+  const invUrl = BASE_PATH === '.' ? 'inventory.json' : BASE_PATH + '/inventory.json';
+  fetch(invUrl)
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(init)
+    .catch(err => {
+      document.getElementById('card-grid').innerHTML =
+        `<p class="loading-msg">Failed to load inventory.json: ${err.message}</p>`;
+    });
+})();
+
 // ─── City → [lat, lng] lookup for map dots ──────────────────────────────────
 // Covers the main academic publication centres for Islamic studies / history of
 // science.  Keys are normalised lower-case with common variants.
@@ -735,14 +790,7 @@ let listSort    = 'title';
 let listSortAsc = true;
 let listView    = 'cards';
 
-// ─── Load inventory ──────────────────────────────────────────────────────────
-fetch('inventory.json')
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(init)
-  .catch(err => {
-    document.getElementById('card-grid').innerHTML =
-      `<p class="loading-msg">Failed to load inventory.json: ${err.message}</p>`;
-  });
+// ─── Load inventory (handled by resolveCollection above) ─────────────────────
 
 function init(inventory) {
   DATA      = inventory;
@@ -776,7 +824,7 @@ function esc(s) {
 
 /** Return the best link for an item: reader > URL > null */
 function itemHref(r) {
-  if (r.has_reader) return `reader.html?key=${r.key}`;
+  if (r.has_reader) return `reader.html?key=${r.key}${collectionQS('&')}`;
   if (r.url)        return r.url;
   return null;
 }
@@ -1138,7 +1186,8 @@ function renderList() {
     grid.innerHTML = sorted.map(r => {
       const titleHtml = itemLink(r, r.title);
       const pubHtml   = r.pub_title ? `<div class="row-pub">${esc(r.pub_title)}</div>` : '';
-      return `<div class="row-item" onclick="showDocInfo('${r.key}')" style="cursor:pointer">
+      const rowCls = r.has_reader ? 'has-reader' : r.extracted ? 'extracted' : '';
+      return `<div class="row-item ${rowCls}" onclick="showDocInfo('${r.key}')" style="cursor:pointer">
         <div><div class="row-title">${titleHtml}${r.has_reader ? ' \ud83d\udcd6' : ''}</div>${pubHtml}</div>
         <div class="row-author">${esc((r.authors||'').split(';')[0])}</div>
         <div class="row-year">${esc(r.year||'\u2014')}</div>
@@ -1156,7 +1205,8 @@ function renderList() {
       const meta = [(r.authors||'').split(';')[0], r.year, r.place].filter(Boolean).join(' \u00b7 ');
       const tq   = r.text_quality;
       const tagHtml = (r.tags || []).map(t => badge('b-tag', t)).join('');
-      return `<div class="card" onclick="showDocInfo('${r.key}')" style="cursor:pointer">
+      const cardCls = r.has_reader ? 'has-reader' : r.extracted ? 'extracted' : '';
+      return `<div class="card ${cardCls}" onclick="showDocInfo('${r.key}')" style="cursor:pointer">
         <div class="card-title">${titleHtml}</div>
         ${pubHtml}
         <div class="card-meta">${esc(meta)}</div>
@@ -1246,7 +1296,7 @@ function showDocInfo(key) {
   // Action buttons
   html += '<div class="dip-actions">';
   if (r.has_reader) {
-    html += `<a href="reader.html?key=${r.key}">Open Reader</a>`;
+    html += `<a href="reader.html?key=${r.key}${collectionQS('&')}">Open Reader</a>`;
   }
   if (r.url) {
     html += `<a href="${esc(r.url)}" target="_blank" rel="noopener" class="secondary">Open URL</a>`;

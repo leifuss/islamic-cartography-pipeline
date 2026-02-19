@@ -644,7 +644,7 @@ footer {
 
 <div id="app" style="display:none; flex-direction:column; flex:1; overflow:hidden;">
   <header>
-    <a href="explore.html" class="back-link">← Explorer</a>
+    <a href="explore.html" class="back-link" id="backLink">← Explorer</a>
     <span id="docTitle">…</span>
     <span id="docMeta"></span>
     <span id="translBadge" style="display:none;font-size:11px;background:#1a3a2a;color:#5fba7d;border:1px solid #2a5a2a;border-radius:4px;padding:2px 8px;flex-shrink:0">🌐 EN translation</span>
@@ -743,6 +743,17 @@ footer {
 // ── URL param ──────────────────────────────────────────────────────────────────
 const params = new URLSearchParams(location.search);
 const KEY    = params.get('key');
+const _collectionSlug = params.get('collection') || '';
+let   BASE_PATH       = '.';  // resolved from collections.json
+
+function collectionQS(prefix) {
+  return _collectionSlug ? prefix + 'collection=' + encodeURIComponent(_collectionSlug) : '';
+}
+
+/** Return a fetch URL for a file relative to the collection root */
+function collPath(relPath) {
+  return BASE_PATH === '.' ? relPath : BASE_PATH + '/' + relPath;
+}
 
 // ── State ─────────────────────────────────────────────────────────────────────
 let cur            = 0;
@@ -762,45 +773,65 @@ let docTOC         = [];   // [{heading, page}, …] built from section_headers
 let fitPage        = true; // default to fit-page view
 let pgOffset       = 0;    // printed page = (cur + 1) + pgOffset
 
-// ── Init ──────────────────────────────────────────────────────────────────────
-if (location.protocol === 'file:') {
-  document.getElementById('loading').innerHTML =
-    '<div style="max-width:480px;text-align:left;line-height:1.7">' +
-    '<strong style="color:#fff">⚠ reader.html must be served over HTTP</strong><br><br>' +
-    'You opened this file directly from disk (<code>file://</code>). ' +
-    'Browsers block network requests from <code>file://</code> pages, so the ' +
-    'text and metadata cannot load.<br><br>' +
-    '<strong>Fix:</strong> start the dev server and open via localhost:<br>' +
-    '<code style="display:block;margin:8px 0;padding:8px;background:#222;border-radius:4px">' +
-    'python -m http.server 8001 --directory data</code>' +
-    'Then visit: <a href="http://localhost:8001/reader.html' + location.search + '" ' +
-    'style="color:#5ba3f5">http://localhost:8001/reader.html' + location.search + '</a>' +
-    '</div>';
-} else if (!KEY) {
-  document.getElementById('loading').textContent =
-    'No document key specified. Use: reader.html?key=XXXX';
-} else {
-  loadDocument(KEY);
-}
+// ── Init (resolve collection, then load document) ─────────────────────────────
+(async function initReader() {
+  // Resolve collection path
+  if (_collectionSlug) {
+    try {
+      const resp = await fetch('collections.json');
+      if (resp.ok) {
+        const data = await resp.json();
+        const coll = (data.collections || []).find(c => c.slug === _collectionSlug);
+        if (coll && coll.path) {
+          BASE_PATH = coll.path === '.' ? '.' : coll.path;
+        }
+      }
+    } catch (e) {
+      console.warn('Could not load collections.json, using default path', e);
+    }
+  }
+  // Update back-link to carry collection param
+  document.getElementById('backLink').href = 'explore.html' + collectionQS('?');
+
+  if (location.protocol === 'file:') {
+    document.getElementById('loading').innerHTML =
+      '<div style="max-width:480px;text-align:left;line-height:1.7">' +
+      '<strong style="color:#fff">⚠ reader.html must be served over HTTP</strong><br><br>' +
+      'You opened this file directly from disk (<code>file://</code>). ' +
+      'Browsers block network requests from <code>file://</code> pages, so the ' +
+      'text and metadata cannot load.<br><br>' +
+      '<strong>Fix:</strong> start the dev server and open via localhost:<br>' +
+      '<code style="display:block;margin:8px 0;padding:8px;background:#222;border-radius:4px">' +
+      'python -m http.server 8001 --directory data</code>' +
+      'Then visit: <a href="http://localhost:8001/reader.html' + location.search + '" ' +
+      'style="color:#5ba3f5">http://localhost:8001/reader.html' + location.search + '</a>' +
+      '</div>';
+  } else if (!KEY) {
+    document.getElementById('loading').textContent =
+      'No document key specified. Use: reader.html?key=XXXX';
+  } else {
+    loadDocument(KEY);
+  }
+})();
 
 async function loadDocument(key) {
   const loadEl = document.getElementById('loading');
   try {
     // Fetch all document data in parallel
     const [metaResp, textsResp, mdResp, layoutResp, spansResp, bibResp, invResp, translResp] = await Promise.all([
-      fetch(`texts/${key}/reader_meta.json`).catch(() => null),
-      fetch(`texts/${key}/page_texts.json`).catch(() => null),
-      fetch(`texts/${key}/docling.md`).catch(() => null),
-      fetch(`texts/${key}/layout_elements.json`).catch(() => null),
-      fetch(`texts/${key}/text_spans.json`).catch(() => null),
-      fetch(`texts/${key}/bibliography.json`).catch(() => null),
-      fetch(`inventory.json`).catch(() => null),
-      fetch(`texts/${key}/translation.json`).catch(() => null),
+      fetch(collPath(`texts/${key}/reader_meta.json`)).catch(() => null),
+      fetch(collPath(`texts/${key}/page_texts.json`)).catch(() => null),
+      fetch(collPath(`texts/${key}/docling.md`)).catch(() => null),
+      fetch(collPath(`texts/${key}/layout_elements.json`)).catch(() => null),
+      fetch(collPath(`texts/${key}/text_spans.json`)).catch(() => null),
+      fetch(collPath(`texts/${key}/bibliography.json`)).catch(() => null),
+      fetch(collPath(`inventory.json`)).catch(() => null),
+      fetch(collPath(`texts/${key}/translation.json`)).catch(() => null),
     ]);
 
     // Fall back to extraction meta.json if reader_meta.json doesn't exist
     const metaFinal = (metaResp && metaResp.ok) ? metaResp
-      : await fetch(`texts/${key}/meta.json`).catch(() => null);
+      : await fetch(collPath(`texts/${key}/meta.json`)).catch(() => null);
 
     const meta = (metaFinal && metaFinal.ok) ? await metaFinal.json() : {};
     pageTexts       = (textsResp  && textsResp.ok)  ? await textsResp.json()  : {};
@@ -984,7 +1015,7 @@ function goTo(n) {
     // Re-render picture crops now that image dimensions are known
     if (mode === 'elements') renderPictureCropsForPage(pk);
   };
-  img.src = `texts/${KEY}/pages/${padded}.jpg`;
+  img.src = collPath(`texts/${KEY}/pages/${padded}.jpg`);
 
   // Scroll PDF pane to top
   document.getElementById('pdfPane').scrollTop = 0;
@@ -1214,7 +1245,7 @@ async function renderFullDoc() {
 
   el.innerHTML = '<em style="color:#666">Loading full document…</em>';
   try {
-    const resp = await fetch(`texts/${KEY}/docling.md`);
+    const resp = await fetch(collPath(`texts/${KEY}/docling.md`));
     if (!resp.ok) throw new Error('not found');
     fullMd = await resp.text();
     el.innerHTML = '<div class="text-inner">' + buildFullDocHtml(fullMd) + '</div>';

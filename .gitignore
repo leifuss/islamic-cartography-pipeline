@@ -23,6 +23,11 @@ data/pipeline_status.json
 !data/corpus_config.json
 !data/city_coords.json
 !data/inventory.json
+!data/collections.json
+!data/index.html
+
+# Embedding cache (generated at runtime)
+data/.embedding_cache.npz
 
 *.db
 *.sqlite
