@@ -839,7 +839,7 @@ async function loadDocument(key) {
     textSpans       = (spansResp  && spansResp.ok)  ? await spansResp.json()  : {};
     bibliography    = (bibResp    && bibResp.ok)    ? await bibResp.json()    : null;
     translationData = (translResp && translResp.ok) ? await translResp.json() : null;
-    translMode      = false;  // always start in original language
+    translMode      = !!translationData;  // default to translation when available
 
     // Find this document's inventory entry
     if (invResp && invResp.ok) {
@@ -866,12 +866,16 @@ async function loadDocument(key) {
     // Show/hide References button
     const hasRefs = bibliography && (bibliography.refs || []).length > 0;
     document.getElementById('btnBib').style.display = hasRefs ? '' : 'none';
-    // Show/hide Translation button
+    // Show/hide Translation button; default to translation-on when available
     document.getElementById('btnTranslate').style.display = translationData ? '' : 'none';
     if (translationData) {
       const srcLang = (translationData.source_language || '').toUpperCase();
-      document.getElementById('btnTranslate').title =
-        `Toggle English translation (source: ${srcLang})`;
+      const btn   = document.getElementById('btnTranslate');
+      const badge = document.getElementById('translBadge');
+      btn.title = `Toggle English translation (source: ${srcLang})`;
+      btn.classList.add('active');
+      btn.textContent = '📄 Original';
+      if (badge) badge.style.display = '';
     }
     // Update info button
     document.getElementById('btnInfo').style.display = docInventory ? '' : 'none';

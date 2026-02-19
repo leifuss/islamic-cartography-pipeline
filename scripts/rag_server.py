@@ -41,9 +41,9 @@ EMB_CACHE  = ROOT / "data" / ".embedding_cache.npz"
 
 CHUNK_WORDS   = 350   # target words per chunk (fixed-window fallback)
 CHUNK_OVERLAP = 50    # words of overlap between chunks
-TOP_K         = 6     # chunks to retrieve per query
-MIN_SCORE     = 0.0   # minimum hybrid score threshold
-MAX_CTX_WORDS = 3000  # max words sent to Claude
+TOP_K         = 20    # max chunks to retrieve (actual count filtered by MIN_SCORE)
+MIN_SCORE     = 0.25  # minimum hybrid score — drop irrelevant noise
+MAX_CTX_WORDS = 5000  # max words sent to Claude (more sources = more context)
 
 # Hybrid search weights (must sum to 1.0)
 BM25_WEIGHT = 0.35
@@ -386,6 +386,15 @@ def _short_label(h: dict) -> str:
     return label
 
 
+def _make_snippet(text: str, max_chars: int = 200) -> str:
+    """Trim chunk text to a readable snippet, breaking at word boundary."""
+    text = " ".join(text.split())  # normalise whitespace
+    if len(text) <= max_chars:
+        return text
+    cut = text[:max_chars].rsplit(" ", 1)[0]
+    return cut + "…"
+
+
 def format_context(hits: list[dict], max_words: int = MAX_CTX_WORDS) -> str:
     parts = []
     total = 0
@@ -411,15 +420,21 @@ You are a research assistant specialising in Islamic cartography, historical geo
 and medieval Arabic/Persian geographical literature. Answer questions using ONLY the
 provided corpus excerpts.
 
+Write a substantial paragraph (or two) that synthesises the relevant sources into a
+coherent answer. Focus on contextualising the sources: explain what each cited work
+contributes to answering the question, note agreements or tensions between sources,
+and highlight the most significant passages. The user will see the full source list
+separately, so your job is to weave them into a scholarly narrative.
+
 CITATION RULES:
 - Cite sources inline using the EXACT label shown in square brackets before each excerpt,
   e.g. if the excerpt is labelled [Tibbetts, 1992, p.14] cite it as (Tibbetts, 1992, p.14).
 - NEVER cite Zotero keys (alphanumeric codes like QIGTV3FC). Always use the human-readable
   author/title and page number from the excerpt labels.
 - Keep citations in parentheses: (Author, Year, p.N).
+- Cite as many of the provided sources as are relevant — do not limit yourself to one or two.
 
-If the excerpts do not contain enough information to answer, say so clearly.
-Be concise but scholarly."""
+If the excerpts do not contain enough information to answer, say so clearly."""
 
 
 def _load_env_key(var: str) -> str:
@@ -444,7 +459,7 @@ def _stream_gemini(user_msg: str) -> Iterator[str]:
         contents=user_msg,
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
-            max_output_tokens=1024,
+            max_output_tokens=2048,
         ),
     ):
         if chunk.text:
@@ -489,7 +504,8 @@ def stream_llm(query: str, context: str, sources: list[dict]) -> Iterator[str]:
                     "authors": (h.get("authors") or "").split(";")[0].strip(),
                     "year": h.get("year", ""),
                     "label": _short_label(h),
-                    "score": round(h["score"], 3)}
+                    "score": round(h["score"], 3),
+                    "snippet": _make_snippet(h.get("text", ""), 200)}
                    for h in sources]
     yield f"data: {json.dumps({'type': 'sources', 'sources': source_list})}\n\n"
 

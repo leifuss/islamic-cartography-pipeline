@@ -76,10 +76,12 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 }
 .sources-title { font-weight: 600; color: #a08060; margin-bottom: 6px; }
 .source-item {
-  display: flex; gap: 8px; align-items: baseline;
-  padding: 2px 0; border-bottom: 1px solid #221a0a;
+  padding: 6px 0; border-bottom: 1px solid #221a0a;
 }
 .source-item:last-child { border-bottom: none; }
+.source-header {
+  display: flex; gap: 8px; align-items: baseline;
+}
 .source-key {
   font-weight: 600; color: #c09050; font-family: monospace; font-size: 10px;
   text-decoration: none; white-space: nowrap;
@@ -87,6 +89,10 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 .source-key:hover { color: var(--accent); }
 .source-title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .source-score { color: #444; font-size: 10px; white-space: nowrap; }
+.source-snippet {
+  margin-top: 3px; font-size: 11px; color: #8a7a68; line-height: 1.5;
+  padding-left: 2px;
+}
 
 /* ── Input area ── */
 #inputArea {
@@ -276,14 +282,18 @@ function renderSources(sources) {
   const items = sources.map(s => {
     const url = `reader.html?key=${s.key}&page=${s.page}`;
     const ref  = harvardRef(s);
+    const snippet = s.snippet ? `<div class="source-snippet">${esc(s.snippet)}</div>` : '';
     return `<div class="source-item">
-      <a class="source-key" href="${url}" target="_blank">${ref}</a>
-      <span class="source-title">${esc(s.title || s.key)}</span>
-      <span class="source-score">score: ${s.score}</span>
+      <div class="source-header">
+        <a class="source-key" href="${url}" target="_blank">${ref}</a>
+        <span class="source-title">${esc(s.title || s.key)}</span>
+        <span class="source-score">${s.score}</span>
+      </div>
+      ${snippet}
     </div>`;
   }).join('');
   return `<div class="sources">
-    <div class="sources-title">📚 Sources retrieved</div>
+    <div class="sources-title">📚 Sources (${sources.length})</div>
     ${items}
   </div>`;
 }
