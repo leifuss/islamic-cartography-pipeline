@@ -41,7 +41,9 @@ jobs:
           ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}
           ZOTERO_LIBRARY_ID=${{ secrets.ZOTERO_LIBRARY_ID }}
           ZOTERO_LIBRARY_TYPE=group
-          COLLECTION_NAME=Islamic Cartography
+          # The Zotero *group* is "Islamic Cartography", but the collection
+          # inside it was auto-named by a CambridgeCore batch import.
+          COLLECTION_NAME=CambridgeCore_Citation_04Nov2025
           EOF
 
       - name: Sync Zotero → inventory.json

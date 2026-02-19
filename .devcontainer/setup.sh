@@ -39,7 +39,8 @@ echo "→ Writing .env..."
 cat > .env << EOF
 ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
 GEMINI_API_KEY=${GEMINI_API_KEY:-}
-COLLECTION_NAME=Islamic Cartography
+# Zotero group = "Islamic Cartography"; collection auto-named by CambridgeCore import
+COLLECTION_NAME=CambridgeCore_Citation_04Nov2025
 EOF
 
 # ── Verify environment ────────────────────────────────────────────────────────
