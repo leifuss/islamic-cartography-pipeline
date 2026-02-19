@@ -54,14 +54,15 @@ class ZoteroLibrary:
             # Connect via web API
             api_key = os.getenv('ZOTERO_API_KEY')
             library_id = os.getenv('ZOTERO_LIBRARY_ID')
+            library_type = os.getenv('ZOTERO_LIBRARY_TYPE', 'user')
             if not api_key or not library_id:
                 raise ValueError("ZOTERO_API_KEY and ZOTERO_LIBRARY_ID required for web API")
             self.client = pyzotero_module.Zotero(
                 library_id=library_id,
-                library_type='user',
+                library_type=library_type,
                 api_key=api_key
             )
-            self.library_type = 'user'
+            self.library_type = library_type
             self.library_id = library_id
 
         # Cache for collections (lazy-loaded)

@@ -1,0 +1,81 @@
+name: Zotero sync
+
+# ── Triggers ──────────────────────────────────────────────────────────────────
+# Polls Zotero every 6 hours for new items added to the collection.
+# Also supports manual trigger via GitHub UI or CLI:
+#   gh workflow run zotero-sync.yml
+on:
+  schedule:
+    - cron: '15 */6 * * *'      # :15 past every 6th hour (00:15, 06:15, 12:15, 18:15 UTC)
+  workflow_dispatch:              # manual trigger
+
+permissions:
+  contents: write
+  actions: write                  # needed to trigger downstream extract workflow
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install pyzotero python-dotenv
+
+      - name: Create .env
+        run: |
+          cat > .env << EOF
+          ZOTERO_LOCAL=false
+          ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}
+          ZOTERO_LIBRARY_ID=${{ secrets.ZOTERO_LIBRARY_ID }}
+          ZOTERO_LIBRARY_TYPE=group
+          COLLECTION_NAME=Islamic Cartography
+          EOF
+
+      - name: Sync Zotero → inventory.json
+        id: sync
+        run: python scripts/zotero_sync.py --trigger-extract
+
+      - name: Commit updated inventory
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/inventory.json
+
+          if git diff --staged --quiet; then
+            echo "No inventory changes."
+          else
+            ADDED=$(python3 -c "
+          import json
+          inv = json.load(open('data/inventory.json'))
+          print(len(inv))
+          ")
+            git commit -m "sync(zotero): update inventory (${ADDED} items) [skip ci]"
+            git pull --rebase origin main
+            git push
+            echo "committed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Trigger extraction for new items
+        if: steps.sync.outputs.has_new == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "New keys from Zotero: ${{ steps.sync.outputs.new_keys }}"
+          echo "Triggering extraction workflow…"
+          gh workflow run extract.yml \
+            -f keys="${{ steps.sync.outputs.new_keys }}" \
+            -f run_layout=true
