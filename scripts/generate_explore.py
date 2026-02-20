@@ -132,7 +132,7 @@ def build_decade_data(inventory: list) -> list:
     return result
 
 
-def build_html(inventory: list, data_dir: Path = None) -> str:
+def build_html(inventory: list, data_dir: Path = None, corpus_name: str = 'My Research Library') -> str:
     # ── Pre-compute derived data for JS ───────────────────────────────────────
     # Tag items that already have a generated reader HTML
     if data_dir is None:
@@ -179,7 +179,7 @@ def build_html(inventory: list, data_dir: Path = None) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Cartography — Corpus Explorer</title>
+<title>{corpus_name} — Explorer</title>
 
 <!-- Leaflet for the map view -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
@@ -1110,7 +1110,35 @@ function renderList() {{
 }}
 
 // ─── Init ─────────────────────────────────────────────────────────────────────
-applyFilters();
+
+// Empty-state: show setup prompt when there are no items yet
+if (DATA.length === 0) {{
+  document.querySelector('.tabs').style.display = 'none';
+  document.querySelector('.toolbar').style.display = 'none';
+  document.getElementById('content').innerHTML = `
+    <div style="text-align:center; padding:80px 24px; color:#888;">
+      <h2 style="font-size:22px; color:#fff; margin-bottom:16px; font-weight:600;">
+        Your library is empty
+      </h2>
+      <p style="margin-bottom:8px; max-width:480px; margin-left:auto; margin-right:auto; line-height:1.6;">
+        No items have been imported yet. Run the <strong>First-time setup</strong>
+        workflow to connect your Zotero library and import your bibliography.
+      </p>
+      <p style="margin-bottom:32px; max-width:480px; margin-left:auto; margin-right:auto;
+          font-size:13px; color:#555;">
+        Go to the <strong>Actions</strong> tab in your GitHub repository →
+        <strong>First-time setup</strong> → <strong>Run workflow</strong>
+      </p>
+      <a href="../../actions" target="_top"
+         style="background:#0071e3; color:#fff; padding:12px 28px;
+                border-radius:8px; text-decoration:none; font-size:14px; font-weight:600;
+                display:inline-block;">
+        Open Actions tab
+      </a>
+    </div>`;
+}} else {{
+  applyFilters();
+}}
 </script>
 </body>
 </html>"""
@@ -1129,8 +1157,17 @@ def main():
     inventory = json.loads(inv_path.read_text(encoding='utf-8'))
     print(f"  {len(inventory)} items")
 
+    # Load corpus name from config
+    config_path = inv_path.parent / 'corpus_config.json'
+    corpus_name = 'My Research Library'
+    if config_path.exists():
+        try:
+            corpus_name = json.loads(config_path.read_text(encoding='utf-8')).get('name', corpus_name)
+        except Exception:
+            pass
+
     print("Building explore.html…")
-    html = build_html(inventory, data_dir=inv_path.parent)
+    html = build_html(inventory, data_dir=inv_path.parent, corpus_name=corpus_name)
     out_path.write_text(html, encoding='utf-8')
 
     size_kb = out_path.stat().st_size // 1024
