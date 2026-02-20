@@ -42,7 +42,7 @@ EMB_CACHE  = ROOT / "data" / ".embedding_cache.npz"
 CHUNK_WORDS   = 350   # target words per chunk (fixed-window fallback)
 CHUNK_OVERLAP = 50    # words of overlap between chunks
 TOP_K         = 20    # max chunks to retrieve (actual count filtered by MIN_SCORE)
-MIN_SCORE     = 0.25  # minimum hybrid score — drop irrelevant noise
+MIN_SCORE     = 0.12  # minimum hybrid score — drop irrelevant noise
 MAX_CTX_WORDS = 5000  # max words sent to Claude (more sources = more context)
 
 # Hybrid search weights (must sum to 1.0)
@@ -471,7 +471,7 @@ def _stream_openai(user_msg: str) -> Iterator[str]:
     client = OpenAI(api_key=_load_env_key("OPENAI_API_KEY"))
     with client.chat.completions.create(
         model="gpt-4o-mini",
-        max_tokens=1024,
+        max_tokens=2048,
         stream=True,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
@@ -489,7 +489,7 @@ def _stream_anthropic(user_msg: str) -> Iterator[str]:
     client = anthropic.Anthropic(api_key=_load_env_key("ANTHROPIC_API_KEY"))
     with client.messages.stream(
         model="claude-haiku-4-5",
-        max_tokens=1024,
+        max_tokens=2048,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_msg}],
     ) as stream:
@@ -597,7 +597,8 @@ def chat(body: dict):
     query = body.get("query", "").strip()
     if not query:
         return {"error": "empty query"}
-    hits    = retrieve(query, CHUNKS, BM25_INDEX, EMBEDDINGS)
+    k       = int(body.get("k", TOP_K))
+    hits    = retrieve(query, CHUNKS, BM25_INDEX, EMBEDDINGS, k=k)
     context = format_context(hits)
     return StreamingResponse(
         stream_llm(query, context, hits),

@@ -2,26 +2,25 @@
 ## Islamic Cartography Pipeline — Task Runner
 ##
 ## Usage:
-##   make stage            Copy PDFs from Zotero → data/pdfs/{key}.pdf (with provenance)
-##   make stage-dry        Preview staging without copying
-##   make lfs-setup        One-time: install Git LFS and track data/pdfs/*.pdf
-##   make extract          Run robust extraction in background (fire and forget)
-##   make extract-dry      Preview what would be extracted (no writes)
-##   make extract-vision   Extraction with Google Vision fallback enabled
-##   make translate        Translate non-English docs (background)
-##   make status           Show pipeline status (tail of log + status JSON)
-##   make status-web       Open status.html in browser
-##   make inventory        Re-scan Zotero and regenerate dashboard.html
-##   make bibliography     Extract bibliography from all extracted docs
-##   make rag              Start the RAG chat server on port 8001
-##   make layout           Enrich layout_elements.json with Heron (background)
-##   make layout-dry       Preview which docs need layout enrichment
-##   make clean-locks      Remove stale .extract.lock files
-##   make commit           Git add all and commit with a timestamp message
+##   make fetch-pdfs        Download PDFs from Zotero cloud → data/pdfs/{key}.pdf
+##   make fetch-pdfs-dry    Preview which PDFs would be downloaded
+##   make extract           Run robust extraction in background (fire and forget)
+##   make extract-dry       Preview what would be extracted (no writes)
+##   make extract-vision    Extraction with Google Vision fallback enabled
+##   make translate         Translate non-English docs (background)
+##   make status            Show pipeline status (tail of log + status JSON)
+##   make status-web        Open status.html in browser
+##   make inventory         Re-scan Zotero and regenerate inventory.json
+##   make bibliography      Extract bibliography from all extracted docs
+##   make rag               Start the RAG chat server on port 8001
+##   make layout            Enrich layout_elements.json with Heron (background)
+##   make layout-dry        Preview which docs need layout enrichment
+##   make clean-locks       Remove stale .extract.lock files
+##   make commit            Git add all and commit with a timestamp message
 ##
 ## Multi-collection workflow:
-##   make discover         Discover all your Zotero libraries & collections
-##   make select           Interactively pick which collections to process
+##   make discover          Discover all your Zotero libraries & collections
+##   make select            Interactively pick which collections to process
 ##   make build-collection SLUG=x   Build one collection (sync + explorer)
 ##   make build-all-collections     Build all selected collections
 ##
@@ -105,8 +104,8 @@ docs = s.get('docs', {}); \
 ok  = sum(1 for d in docs.values() if d.get('state') == 'ok'); \
 err = sum(1 for d in docs.values() if d.get('state') == 'error'); \
 run = sum(1 for d in docs.values() if d.get('state') == 'in_progress'); \
-print(f'  ✓ OK: {ok}  ✗ Error: {err}  ⟳ Running: {run}'); \
-[print(f'  ✗ {k}: {v.get(\"error\",\"?\")[:80]}') for k,v in docs.items() if v.get('state')=='error'] \
+print(f'  OK: {ok}  Error: {err}  Running: {run}'); \
+[print(f'  {k}: {v.get(\"error\",\"?\")[:80]}') for k,v in docs.items() if v.get('state')=='error'] \
 " 2>/dev/null || echo "  No status file yet."
 	@echo ""
 	@echo "=== Extract Log (last 20 lines) ==="
@@ -124,24 +123,15 @@ ps-extract:  ## Show running extraction processes
 kill-extract:  ## Kill any running extraction processes
 	@pkill -f '05b_extract_robust' && echo "Killed." || echo "No process found."
 
-# ── Inventory & bibliography ───────────────────────────────────────────────────
+# ── PDF fetching ──────────────────────────────────────────────────────────────
 
-# ── PDF staging ───────────────────────────────────────────────────────────────
-
-.PHONY: stage
-stage:  ## Copy PDFs from Zotero/downloads → data/pdfs/{key}.pdf with provenance
+.PHONY: fetch-pdfs
+fetch-pdfs:  ## Download PDFs from Zotero cloud → data/pdfs/{key}.pdf
 	$(PYTHON) scripts/00_stage_pdfs.py
 
-.PHONY: stage-dry
-stage-dry:  ## Preview PDF staging without copying
+.PHONY: fetch-pdfs-dry
+fetch-pdfs-dry:  ## Preview which PDFs would be downloaded from Zotero
 	$(PYTHON) scripts/00_stage_pdfs.py --dry-run
-
-.PHONY: lfs-setup
-lfs-setup:  ## One-time: install Git LFS and track data/pdfs/*.pdf
-	git lfs install
-	git lfs track "data/pdfs/*.pdf"
-	git add .gitattributes
-	@echo "Git LFS configured. Now run 'make stage' then 'git add data/pdfs/' to push PDFs."
 
 # ── Inventory & bibliography ───────────────────────────────────────────────────
 
@@ -150,7 +140,7 @@ flags:  ## Sync extracted/has_reader flags from disk into inventory.json
 	$(PYTHON) scripts/00_update_inventory_flags.py
 
 .PHONY: inventory
-inventory:  ## Re-scan Zotero and regenerate dashboard.html
+inventory:  ## Re-scan Zotero and regenerate inventory.json
 	$(PYTHON) scripts/03_inventory.py
 	$(PYTHON) scripts/00_update_inventory_flags.py
 
@@ -218,11 +208,11 @@ clean-locks:  ## Remove stale lock files
 
 .PHONY: check
 check:  ## Verify environment (pypdfium2, tesseract, optional Vision)
-	@$(PYTHON) -c "import pypdfium2; print('✓ pypdfium2', pypdfium2.__version__)" 2>/dev/null || echo "✗ pypdfium2 missing"
-	@$(PYTHON) -c "import pytesseract; print('✓ pytesseract', pytesseract.get_tesseract_version())" 2>/dev/null || echo "✗ pytesseract/tesseract missing"
-	@$(PYTHON) -c "from google.cloud import vision; print('✓ google-cloud-vision')" 2>/dev/null || echo "– google-cloud-vision not installed (optional)"
-	@$(PYTHON) -c "from rank_bm25 import BM25Okapi; print('✓ rank-bm25')" 2>/dev/null || echo "✗ rank-bm25 missing (needed for RAG)"
-	@$(PYTHON) -c "import fastapi; print('✓ fastapi', fastapi.__version__)" 2>/dev/null || echo "✗ fastapi missing (needed for RAG server)"
+	@$(PYTHON) -c "import pypdfium2; print('pypdfium2', pypdfium2.__version__)" 2>/dev/null || echo "pypdfium2 missing"
+	@$(PYTHON) -c "import pytesseract; print('pytesseract', pytesseract.get_tesseract_version())" 2>/dev/null || echo "pytesseract/tesseract missing"
+	@$(PYTHON) -c "from google.cloud import vision; print('google-cloud-vision')" 2>/dev/null || echo "google-cloud-vision not installed (optional)"
+	@$(PYTHON) -c "from rank_bm25 import BM25Okapi; print('rank-bm25')" 2>/dev/null || echo "rank-bm25 missing (needed for RAG)"
+	@$(PYTHON) -c "import fastapi; print('fastapi', fastapi.__version__)" 2>/dev/null || echo "fastapi missing (needed for RAG server)"
 
 .PHONY: commit
 commit:  ## Commit all changes with a timestamp

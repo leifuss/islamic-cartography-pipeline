@@ -389,6 +389,8 @@ async function sendQuery() {
           if (msg.type === 'sources') {
             sources    = msg.sources;
             sourcesDiv = renderSources(sources);
+            botBody.innerHTML = '<p style="color:#666;font-size:12px;margin-bottom:8px">Synthesising answer…</p>' + sourcesDiv;
+            scrollToBottom();
           } else if (msg.type === 'token') {
             fullText += msg.text;
             botBody.innerHTML = linkifyCitations(renderMarkdown(fullText), sources) + sourcesDiv;
