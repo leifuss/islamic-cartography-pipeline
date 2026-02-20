@@ -1,8 +1,13 @@
 """
-Wrapper around pyzotero for consistent local Zotero library access.
+Wrapper around pyzotero for Zotero web-API access.
+
+All access goes through the Zotero web API (api.zotero.org).
+Required env vars: ZOTERO_API_KEY, ZOTERO_LIBRARY_ID.
+Optional: ZOTERO_LIBRARY_TYPE (default 'group').
 """
 from typing import List, Dict, Optional
 import os
+import logging
 from pathlib import Path
 
 try:
@@ -11,59 +16,40 @@ except ImportError:
     print("ERROR: pyzotero not installed. Run: pip install pyzotero")
     raise
 
+log = logging.getLogger(__name__)
+
 
 class ZoteroLibrary:
-    """Interface to local Zotero library."""
+    """Interface to Zotero via the web API."""
 
     def __init__(self, collection_name: Optional[str] = None):
         """
-        Initialize connection to Zotero.
+        Initialize connection to Zotero web API.
+
+        Requires ZOTERO_API_KEY and ZOTERO_LIBRARY_ID environment variables.
 
         Args:
             collection_name: Filter to specific collection (e.g., "Islamic Cartography")
         """
-        self.use_local = os.getenv('ZOTERO_LOCAL', 'true').lower() == 'true'
         self.collection_name = collection_name or os.getenv('COLLECTION_NAME')
 
-        if self.use_local:
-            # Connect to local Zotero instance
-            # Check if we should use a group library
-            group_id = os.getenv('ZOTERO_GROUP_ID')
+        api_key = os.getenv('ZOTERO_API_KEY')
+        library_id = os.getenv('ZOTERO_LIBRARY_ID')
+        self.library_type = os.getenv('ZOTERO_LIBRARY_TYPE', 'group')
 
-            if group_id:
-                # Connect to group library
-                self.client = pyzotero_module.Zotero(
-                    library_id=int(group_id),
-                    library_type='group',
-                    local=True
-                )
-                self.library_type = 'group'
-                self.library_id = int(group_id)
-            else:
-                # Connect to user library (default)
-                # Local access requires library_id=0, library_type='user', local=True
-                # This connects to the logged-in user's library (typically userID 0 locally)
-                self.client = pyzotero_module.Zotero(
-                    library_id=0,
-                    library_type='user',
-                    local=True
-                )
-                self.library_type = 'user'
-                self.library_id = 0
-        else:
-            # Connect via web API
-            api_key = os.getenv('ZOTERO_API_KEY')
-            library_id = os.getenv('ZOTERO_LIBRARY_ID')
-            library_type = os.getenv('ZOTERO_LIBRARY_TYPE', 'user')
-            if not api_key or not library_id:
-                raise ValueError("ZOTERO_API_KEY and ZOTERO_LIBRARY_ID required for web API")
-            self.client = pyzotero_module.Zotero(
-                library_id=library_id,
-                library_type=library_type,
-                api_key=api_key
+        if not api_key or not library_id:
+            raise ValueError(
+                "ZOTERO_API_KEY and ZOTERO_LIBRARY_ID are required.\n"
+                "  1. Create an API key at https://www.zotero.org/settings/keys\n"
+                "  2. Set both in your .env file (see .env.template)"
             )
-            self.library_type = library_type
-            self.library_id = library_id
+
+        self.library_id = library_id
+        self.client = pyzotero_module.Zotero(
+            library_id=library_id,
+            library_type=self.library_type,
+            api_key=api_key,
+        )
 
         # Cache for collections (lazy-loaded)
         self._collections = None
@@ -101,8 +87,7 @@ class ZoteroLibrary:
                     # Collection exists but is empty — items are probably
                     # top-level in the group library, not assigned to the
                     # collection.  Fall back to fetching everything.
-                    import logging
-                    logging.getLogger(__name__).warning(
+                    log.warning(
                         f"Collection '{self.collection_name}' ({coll_key}) "
                         f"returned 0 items — falling back to all items"
                     )
@@ -147,62 +132,54 @@ class ZoteroLibrary:
 
         return top_items, children_by_parent
 
-    def get_attachment_path(self, item: Dict) -> Optional[Path]:
+    def get_attachment_info(self, item_key: str,
+                           children: Optional[List[Dict]] = None) -> Optional[Dict]:
         """
-        Get filesystem path to primary PDF/image attachment.
+        Find the primary PDF attachment for an item via the API.
 
         Args:
-            item: Zotero item dict
+            item_key: The parent item key.
+            children: Pre-fetched children list (avoids an extra API call).
 
         Returns:
-            Path to attachment file, or None if no attachment
+            Dict with 'key', 'filename', 'content_type' — or None.
         """
-        # Check if item has children (attachments)
-        num_children = item.get('meta', {}).get('numChildren', 0)
-        if num_children == 0:
-            return None
+        if children is None:
+            try:
+                children = self.client.children(item_key)
+            except Exception:
+                return None
 
-        # Get children (attachments)
-        try:
-            children = self.client.children(item['key'])
-        except Exception:
-            return None
+        preferred = ('application/pdf', 'image/png', 'image/jpeg', 'image/tiff')
 
-        if not children:
-            return None
-
-        # Look for PDF attachments first, then images
-        preferred_types = [
-            ('application/pdf', '.pdf'),
-            ('image/png', '.png'),
-            ('image/jpeg', '.jpg'),
-            ('image/tiff', '.tiff'),
-        ]
-
-        for child in children:
+        for child in (children or []):
             if child['data'].get('itemType') != 'attachment':
                 continue
-
-            content_type = child['data'].get('contentType', '')
-            # Check if this is a preferred attachment type
-            for pref_type, _ in preferred_types:
-                if content_type == pref_type:
-                    # Try to get the file path
-                    path_str = child['data'].get('path', '')
-                    if path_str and path_str.startswith('/'):
-                        path = Path(path_str)
-                        if path.exists():
-                            return path
-                    # Also try filename
-                    filename = child['data'].get('filename', '')
-                    if filename:
-                        # Check in Zotero storage directory
-                        # Local storage is typically in ~/Zotero/storage/{item_key}/{filename}
-                        storage_path = Path.home() / 'Zotero' / 'storage' / child['key'] / filename
-                        if storage_path.exists():
-                            return storage_path
-
+            ct = child['data'].get('contentType', '')
+            if ct in preferred:
+                return {
+                    'key': child['key'],
+                    'filename': child['data'].get('filename', ''),
+                    'content_type': ct,
+                    'link_mode': child['data'].get('linkMode', ''),
+                }
         return None
+
+    def download_attachment(self, attachment_key: str) -> Optional[bytes]:
+        """
+        Download the file content for an attachment from Zotero's cloud.
+
+        Args:
+            attachment_key: The Zotero key of the attachment item.
+
+        Returns:
+            File bytes, or None on failure.
+        """
+        try:
+            return self.client.file(attachment_key)
+        except Exception as e:
+            log.warning(f"Failed to download attachment {attachment_key}: {e}")
+            return None
 
     def verify_connection(self) -> bool:
         """
@@ -214,7 +191,7 @@ class ZoteroLibrary:
         try:
             items = self.get_all_items()
             return len(items) > 0
-        except Exception as e:
+        except Exception:
             return False
 
 
@@ -225,24 +202,23 @@ def main():
 
     library = ZoteroLibrary()
     lib_display = f"{library.library_type} library (ID: {library.library_id})"
-    print(f"Connecting to Zotero ({lib_display})...")
+    print(f"Connecting to Zotero web API ({lib_display})...")
 
     if library.verify_connection():
         items = library.get_all_items()
-        print(f"✓ Successfully connected: {len(items)} items found")
+        print(f"Connected: {len(items)} items found")
 
         if library.collection_name:
             print(f"  Collection: {library.collection_name}")
 
         if items:
-            # Show first few items as examples
             print(f"\nFirst 3 items:")
             for i, item in enumerate(items[:3], 1):
                 key = item.get('key', 'N/A')
                 title = item.get('data', {}).get('title', 'N/A')[:70]
                 print(f"  {i}. [{key}] {title}")
     else:
-        print("✗ Connection failed")
+        print("Connection failed")
 
 
 if __name__ == '__main__':

@@ -37,12 +37,11 @@ jobs:
       - name: Create .env
         run: |
           cat > .env << EOF
-          ZOTERO_LOCAL=false
           ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}
           ZOTERO_LIBRARY_ID=${{ secrets.ZOTERO_LIBRARY_ID }}
           ZOTERO_LIBRARY_TYPE=group
-          # The Zotero *group* is "Islamic Cartography", but the collection
-          # inside it was auto-named by a CambridgeCore batch import.
+          # The Zotero *group* is "Islamic Cartography"; the collection inside it
+          # was auto-named by a CambridgeCore batch import.
           COLLECTION_NAME=CambridgeCore_Citation_04Nov2025
           EOF
 

@@ -3,10 +3,12 @@
 Inventory all Zotero items and write data/inventory.json.
 
 For each item:
-  - PDF status: stored / url_only / no_attachment
-  - Doc type:   embedded / scanned / unknown
+  - PDF status: has_attachment / url_only / no_attachment
+  - Doc type:   embedded / scanned / unknown  (if PDF already fetched)
   - Language detection from text sample
   - Cross-referenced with extraction results if available
+
+All Zotero access is via the web API (no local desktop required).
 
 Outputs:
   data/inventory.json   – raw inventory data
@@ -121,33 +123,24 @@ def classify_pdf(path: Path) -> dict:
     return result
 
 
-# ── Attachment status ──────────────────────────────────────────────────────────
+# ── Attachment status via API ─────────────────────────────────────────────────
 
-def get_attachment_status(library: ZoteroLibrary, item: dict) -> dict:
+def get_attachment_status(library: ZoteroLibrary, item: dict,
+                          children: list | None = None) -> dict:
     """
+    Check attachment availability via the Zotero web API.
+
     Returns:
-      { 'status': 'stored'|'url_only'|'no_attachment',
-        'pdf_path': str|None,
-        'url': str|None,
+      { 'status': 'has_attachment'|'url_only'|'no_attachment',
         'attachment_key': str|None,
-        'notes': [str, …]   # text content of Zotero note children
+        'filename': str|None,
+        'url': str|None,
+        'notes': [str, ...]
       }
     """
-    num_children = item.get('meta', {}).get('numChildren', 0)
-    item_url     = item.get('data', {}).get('url', '')
+    item_url = item.get('data', {}).get('url', '')
 
-    if num_children == 0:
-        status = 'url_only' if item_url else 'no_attachment'
-        return {'status': status, 'pdf_path': None, 'url': item_url or None,
-                'attachment_key': None, 'notes': []}
-
-    try:
-        children = library.client.children(item['key'])
-    except Exception:
-        return {'status': 'error', 'pdf_path': None, 'url': item_url or None,
-                'attachment_key': None, 'notes': []}
-
-    # Collect note children (Zotero annotations / research notes)
+    # Collect note children
     notes = []
     for child in (children or []):
         if child['data'].get('itemType') == 'note':
@@ -155,33 +148,30 @@ def get_attachment_status(library: ZoteroLibrary, item: dict) -> dict:
             if note_text:
                 notes.append(note_text)
 
-    for child in (children or []):
-        if child['data'].get('itemType') != 'attachment':
-            continue
+    # Look for a PDF/image attachment in the pre-fetched children
+    att_info = library.get_attachment_info(item.get('key', ''), children=children)
+    if att_info:
+        # Check if already fetched to data/pdfs/
+        staged_path = _ROOT / 'data' / 'pdfs' / f"{item.get('key', '')}.pdf"
+        status = 'stored' if staged_path.exists() else 'has_attachment'
+        return {
+            'status': status,
+            'pdf_path': str(staged_path.relative_to(_ROOT)) if staged_path.exists() else None,
+            'attachment_key': att_info['key'],
+            'filename': att_info['filename'],
+            'url': item_url or None,
+            'notes': notes,
+        }
 
-        content_type = child['data'].get('contentType', '')
-        if content_type not in ('application/pdf', 'image/png', 'image/jpeg', 'image/tiff'):
-            continue
-
-        # Try explicit path
-        path_str = child['data'].get('path', '')
-        if path_str and path_str.startswith('/') and Path(path_str).exists():
-            return {'status': 'stored', 'pdf_path': path_str,
-                    'url': item_url or None, 'attachment_key': child['key'],
-                    'notes': notes}
-
-        # Try Zotero storage convention
-        filename     = child['data'].get('filename', '')
-        storage_path = Path.home() / 'Zotero' / 'storage' / child['key'] / filename
-        if filename and storage_path.exists():
-            return {'status': 'stored', 'pdf_path': str(storage_path),
-                    'url': item_url or None, 'attachment_key': child['key'],
-                    'notes': notes}
-
-    # Children exist but no local file found
-    status = 'url_only' if item_url else 'attachment_missing'
-    return {'status': status, 'pdf_path': None, 'url': item_url or None,
-            'attachment_key': None, 'notes': notes}
+    status = 'url_only' if item_url else 'no_attachment'
+    return {
+        'status': status,
+        'pdf_path': None,
+        'attachment_key': None,
+        'filename': None,
+        'url': item_url or None,
+        'notes': notes,
+    }
 
 
 # ── Cross-reference with extraction results ────────────────────────────────────
@@ -214,9 +204,13 @@ def load_extraction_results(path: Path) -> dict:
 
 def build_inventory(classify: bool = True) -> list:
     library = ZoteroLibrary()
-    print("Fetching items from Zotero...", flush=True)
-    items = library.get_all_items()
-    print(f"  {len(items)} items found\n")
+    print(f"Fetching items from Zotero web API ({library.library_type} library, "
+          f"ID {library.library_id})...")
+
+    # Fetch all items + children in one paginated call (no N+1)
+    items, children_by_parent = library.get_all_items_with_children()
+    print(f"  {len(items)} items, "
+          f"{sum(len(v) for v in children_by_parent.values())} child objects\n")
 
     extraction = load_extraction_results(_ROOT / 'data' / 'test_results.json')
     downloads  = load_download_results(_ROOT / 'data' / 'download_results.json')
@@ -233,39 +227,40 @@ def build_inventory(classify: bool = True) -> list:
         itype   = data.get('itemType', '')
         url     = data.get('url', '')
 
+        # Skip child items that leaked through
+        if itype in ('attachment', 'note'):
+            continue
+
         creators  = data.get('creators', [])
         authors   = '; '.join(
             c.get('lastName', c.get('name', ''))
             for c in creators
             if c.get('creatorType') in ('author', 'editor')
         )[:80]
-        place     = data.get('place', '')          # place of publication (books)
-        publisher = data.get('publisher', '')       # publisher name
-        abstract  = data.get('abstractNote', '')    # Zotero abstract field
+        place     = data.get('place', '')
+        publisher = data.get('publisher', '')
+        abstract  = data.get('abstractNote', '')
 
-        # Publication/container title varies by item type
         pub_title = (
-            data.get('bookTitle', '')          or  # bookSection
-            data.get('publicationTitle', '')   or  # journalArticle, magazineArticle
-            data.get('proceedingsTitle', '')   or  # conferencePaper
-            data.get('encyclopediaTitle', '')  or  # encyclopediaArticle
-            data.get('university', '')         or  # thesis
-            data.get('institution', '')        or  # report
+            data.get('bookTitle', '')          or
+            data.get('publicationTitle', '')   or
+            data.get('proceedingsTitle', '')   or
+            data.get('encyclopediaTitle', '')  or
+            data.get('university', '')         or
+            data.get('institution', '')        or
             ''
         )
 
-        # Page range for articles / book chapters (e.g. "83-121")
-        pages = data.get('pages', '')   # Zotero 'pages' field
-
-        # Tags: list of tag name strings
+        pages = data.get('pages', '')
         tags = [t.get('tag', '') for t in data.get('tags', []) if t.get('tag')]
 
         print(f"\r  [{idx:3d}/{n}] {title[:55]:<55}", end="", flush=True)
 
-        att = get_attachment_status(library, item)
+        children = children_by_parent.get(key, [])
+        att = get_attachment_status(library, item, children=children)
         pdf_path = att['pdf_path']
 
-        # Fall back to locally downloaded file if Zotero has no attachment
+        # Fall back to locally downloaded file if it exists
         if not pdf_path and key in downloads:
             dl_path = downloads[key].get('pdf_path')
             if dl_path and Path(dl_path).exists():
@@ -274,7 +269,8 @@ def build_inventory(classify: bool = True) -> list:
 
         pdf_info = {}
         if classify and pdf_path and att['status'] in ('stored', 'downloaded'):
-            pdf_info = classify_pdf(Path(pdf_path))
+            pdf_info = classify_pdf(Path(pdf_path) if Path(pdf_path).is_absolute()
+                                    else _ROOT / pdf_path)
 
         ext = extraction.get(key, {})
         quality  = ext.get('quality', {})
@@ -330,7 +326,7 @@ def main():
 
     classify = not args.no_classify
     if not _PDFIUM and classify:
-        print("⚠ pypdfium2 not available — running in fast mode (no PDF classification)")
+        print("pypdfium2 not available — running in fast mode (no PDF classification)")
         classify = False
 
     inventory = build_inventory(classify=classify)
@@ -339,23 +335,25 @@ def main():
     inv_path.parent.mkdir(parents=True, exist_ok=True)
     with open(inv_path, 'w', encoding='utf-8') as f:
         json.dump(inventory, f, indent=2, ensure_ascii=False)
-    print(f"✓ Inventory saved → {inv_path}")
+    print(f"Inventory saved -> {inv_path}")
 
     # Quick summary
     total    = len(inventory)
     stored   = sum(1 for r in inventory if r['pdf_status'] == 'stored')
+    has_att  = sum(1 for r in inventory if r['pdf_status'] == 'has_attachment')
     url_only = sum(1 for r in inventory if r['pdf_status'] == 'url_only')
     embedded = sum(1 for r in inventory if r['doc_type'] == 'embedded')
     scanned  = sum(1 for r in inventory if r['doc_type'] == 'scanned')
 
     print(f"\nSummary:")
-    print(f"  Total items:    {total}")
-    print(f"  PDF stored:     {stored}")
-    print(f"  URL only:       {url_only}")
-    print(f"  No attachment:  {total - stored - url_only}")
-    print(f"  Embedded fonts: {embedded}")
-    print(f"  Scanned:        {scanned}")
-    print(f"  Unknown:        {total - embedded - scanned}")
+    print(f"  Total items:        {total}")
+    print(f"  PDF fetched:        {stored}")
+    print(f"  PDF in Zotero:      {has_att}  (run 'make fetch-pdfs' to download)")
+    print(f"  URL only:           {url_only}")
+    print(f"  No attachment:      {total - stored - has_att - url_only}")
+    print(f"  Embedded fonts:     {embedded}")
+    print(f"  Scanned:            {scanned}")
+    print(f"  Unknown:            {total - embedded - scanned}")
 
 
 if __name__ == '__main__':
