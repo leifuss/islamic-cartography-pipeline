@@ -5,7 +5,14 @@
       "slug": "islamic-cartography",
       "name": "Islamic Cartography",
       "description": "Medieval Islamic maps and geographical literature",
-      "path": "."
+      "path": ".",
+      "source": {
+        "library_type": "group",
+        "library_id": "5166884",
+        "collection_key": null,
+        "collection_name": "CambridgeCore_Citation_04Nov2025"
+      },
+      "status": "readers_ready"
     }
   ]
 }

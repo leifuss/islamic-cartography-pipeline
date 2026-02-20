@@ -110,7 +110,24 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
   margin-top: 4px;
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 }
+.collection-card .card-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+.collection-card .badge {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.b-items   { background: #1a2a3a; color: #5a9fd4; border: 1px solid #1a4a6a; }
+.b-status  { background: #1a3a1a; color: #5fba7d; border: 1px solid #2a5a2a; }
+.b-pending { background: #2a2000; color: #d4b05a; border: 1px solid #4a3800; }
+.b-source  { background: #222;    color: #999;    border: 1px solid #333; }
 .collection-card .card-arrow {
   font-size: 12px;
   color: var(--accent);
@@ -174,12 +191,29 @@ fetch('collections.json')
 
     grid.innerHTML = collections.map(c => {
       const href = `explore.html?collection=${encodeURIComponent(c.slug)}`;
+      const src = c.source || {};
+      const srcLabel = src.library_type === 'group'
+        ? `group ${src.library_id}` : src.library_type === 'user' ? 'personal library' : '';
+      const itemCount = c.num_items ? `${c.num_items} items` : '';
+      const statusMap = {
+        pending: ['Pending', 'b-pending'],
+        synced:  ['Synced', 'b-status'],
+        built:   ['Dashboard ready', 'b-status'],
+        readers_ready: ['Readers ready', 'b-status'],
+      };
+      const [statusLabel, statusCls] = statusMap[c.status] || ['', ''];
+      const builtAt = c.built_at ? `Built ${c.built_at.slice(0,10)}` : '';
+
       return `<a class="collection-card" href="${esc(href)}">
         <div class="card-name">${esc(c.name)}</div>
         <div class="card-desc">${esc(c.description || '')}</div>
+        <div class="card-badges">
+          ${itemCount ? `<span class="badge b-items">${esc(itemCount)}</span>` : ''}
+          ${statusLabel ? `<span class="badge ${statusCls}">${esc(statusLabel)}</span>` : ''}
+          ${srcLabel ? `<span class="badge b-source">${esc(srcLabel)}</span>` : ''}
+        </div>
         <div class="card-meta">
-          <span>${esc(c.slug)}</span>
-          <span>path: ${esc(c.path)}</span>
+          ${builtAt ? `<span>${esc(builtAt)}</span>` : ''}
         </div>
         <div class="card-arrow">Open collection &rarr;</div>
       </a>`;

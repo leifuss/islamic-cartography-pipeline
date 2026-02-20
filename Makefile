@@ -19,6 +19,12 @@
 ##   make clean-locks      Remove stale .extract.lock files
 ##   make commit           Git add all and commit with a timestamp message
 ##
+## Multi-collection workflow:
+##   make discover         Discover all your Zotero libraries & collections
+##   make select           Interactively pick which collections to process
+##   make build-collection SLUG=x   Build one collection (sync + explorer)
+##   make build-all-collections     Build all selected collections
+##
 
 PYTHON  = venv/bin/python
 LOG_DIR = /tmp/ic_pipeline
@@ -180,6 +186,28 @@ rag-bg: $(LOG_DIR)  ## Start RAG server in background
 	@nohup $(PYTHON) scripts/rag_server.py --port 8001 \
 	  > $(LOG_DIR)/rag.log 2>&1 &
 	@echo "RAG server PID $$! — http://localhost:8001"
+
+# ── Multi-collection workflow ──────────────────────────────────────────────
+
+.PHONY: discover
+discover:  ## Discover all Zotero libraries & collections (needs ZOTERO_API_KEY)
+	$(PYTHON) scripts/discover_collections.py
+
+.PHONY: select
+select:  ## Interactively select which collections to process
+	$(PYTHON) scripts/select_collections.py
+
+.PHONY: build-collection
+build-collection:  ## Build a collection: make build-collection SLUG=my-collection
+	$(PYTHON) scripts/build_collection.py --slug $(SLUG)
+
+.PHONY: build-collection-meta
+build-collection-meta:  ## Build metadata only (Phase 1): make build-collection-meta SLUG=my-coll
+	$(PYTHON) scripts/build_collection.py --slug $(SLUG) --phase 1
+
+.PHONY: build-all-collections
+build-all-collections:  ## Build all selected collections (metadata + reader prep)
+	$(PYTHON) scripts/build_collection.py --all
 
 # ── Maintenance ────────────────────────────────────────────────────────────────
 
