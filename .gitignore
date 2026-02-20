@@ -20,6 +20,8 @@ data/pipeline_status.json
 !data/dashboard.html
 !data/chat.html
 !data/status.html
+!data/import_dashboard.html
+!data/import_status.json
 !data/corpus_config.json
 !data/city_coords.json
 !data/inventory.json

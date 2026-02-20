@@ -1,0 +1,92 @@
+name: Scan PDF availability
+
+# ── Triggers ──────────────────────────────────────────────────────────────────
+# Run manually from Actions tab to check which PDFs in your Zotero library
+# are openly accessible, restricted, or unavailable.
+# Results are written to data/import_status.json and committed to the repo,
+# so import_dashboard.html updates automatically (polled every 10 s).
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-scan items that were already scanned"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60   # URL checks only — no downloads
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install requests python-dotenv pyzotero
+
+      - name: Create .env
+        run: |
+          python3 - << 'PYEOF'
+          import json, os
+          c = json.load(open('data/corpus_config.json'))
+          z = c.get('source', {}).get('zotero_api', {})
+          with open('.env', 'w') as f:
+              f.write(f"ZOTERO_API_KEY={os.environ.get('ZOTERO_API_KEY', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_ID={z.get('library_id', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_TYPE={z.get('library_type', 'user')}\n")
+              col = z.get('collection_name', '') or ''
+              f.write(f"COLLECTION_NAME={col}\n")
+          PYEOF
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+
+      - name: Scan availability
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          python scripts/import_scan.py $FORCE_FLAG
+
+      - name: Commit import_status.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/import_status.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to import_status.json."
+          else
+            STORED=$(python3 -c "
+          import json
+          s = json.load(open('data/import_status.json'))
+          items = s.get('items', {})
+          counts = {}
+          for v in items.values():
+              av = v.get('availability', 'unknown')
+              counts[av] = counts.get(av, 0) + 1
+          print('  '.join(f'{k}:{v}' for k, v in sorted(counts.items())))
+          " 2>/dev/null || echo "")
+            git commit -m "import-scan: availability updated [skip ci]
+
+          ${STORED}
+          Run: ${{ github.run_id }}"
+            git pull --rebase origin main
+            git push
+            echo "import_status.json committed."
+          fi

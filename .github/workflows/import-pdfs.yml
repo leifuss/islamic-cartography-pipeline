@@ -1,0 +1,164 @@
+name: Import PDFs
+
+# ── Triggers ──────────────────────────────────────────────────────────────────
+# Download PDFs for items in your Zotero library.
+#
+# Modes:
+#   available   — download all open-access items (< 100 pages) in one go
+#   single      — download one specific item by key
+#   fetch_url   — server fetches a direct PDF URL you provide
+#                 (public URLs only — use Upload PDF on the dashboard for
+#                 paywalled content where you have institutional access)
+#
+# Progress is committed to data/import_status.json every 5 items so
+# import_dashboard.html can show live progress.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Import mode"
+        type: choice
+        options:
+          - available
+          - single
+          - fetch_url
+        default: available
+        required: true
+      item_key:
+        description: "Item key — required for single / fetch_url modes (copy from dashboard)"
+        required: false
+        default: ""
+      pdf_url:
+        description: "Direct PDF URL — required for fetch_url mode (must be publicly accessible)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360   # generous — large batches can take hours
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install requests python-dotenv pyzotero PyPDF2
+
+      - name: Configure git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create .env
+        run: |
+          python3 - << 'PYEOF'
+          import json, os
+          c = json.load(open('data/corpus_config.json'))
+          z = c.get('source', {}).get('zotero_api', {})
+          with open('.env', 'w') as f:
+              f.write(f"ZOTERO_API_KEY={os.environ.get('ZOTERO_API_KEY', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_ID={z.get('library_id', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_TYPE={z.get('library_type', 'user')}\n")
+              col = z.get('collection_name', '') or ''
+              f.write(f"COLLECTION_NAME={col}\n")
+          PYEOF
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+
+      - name: Validate inputs
+        run: |
+          MODE="${{ inputs.mode }}"
+          KEY="${{ inputs.item_key }}"
+          URL="${{ inputs.pdf_url }}"
+          if [ "$MODE" = "single" ] && [ -z "$KEY" ]; then
+            echo "ERROR: item_key is required for single mode"
+            exit 1
+          fi
+          if [ "$MODE" = "fetch_url" ] && [ -z "$KEY" ]; then
+            echo "ERROR: item_key is required for fetch_url mode"
+            exit 1
+          fi
+          if [ "$MODE" = "fetch_url" ] && [ -z "$URL" ]; then
+            echo "ERROR: pdf_url is required for fetch_url mode"
+            exit 1
+          fi
+          echo "Mode: $MODE  Key: ${KEY:-n/a}  URL: ${URL:-n/a}"
+
+      - name: Import PDFs
+        run: |
+          MODE="${{ inputs.mode }}"
+          KEY="${{ inputs.item_key }}"
+          URL="${{ inputs.pdf_url }}"
+
+          ARGS="--mode $MODE"
+          [ -n "$KEY" ] && ARGS="$ARGS --key $KEY"
+          [ -n "$URL" ] && ARGS="$ARGS --url $URL"
+
+          python scripts/import_pdfs.py $ARGS
+
+      - name: Final commit (safety net)
+        # The Python script commits periodically; this catches any leftover changes
+        if: always()
+        run: |
+          git add data/import_status.json data/pdfs/ 2>/dev/null || true
+
+          if git diff --staged --quiet; then
+            echo "Nothing further to commit."
+          else
+            DONE=$(python3 -c "
+          import json, os
+          s = json.load(open('data/import_status.json'))
+          done   = sum(1 for v in s.get('items', {}).values() if v.get('import_status') == 'done')
+          triage = sum(1 for v in s.get('items', {}).values() if v.get('import_status') == 'triage')
+          print(f'done:{done}  triage:{triage}')
+          " 2>/dev/null || echo "")
+            git commit -m "import: final state [skip ci]
+
+          Mode: ${{ inputs.mode }}  Key: ${{ inputs.item_key || 'n/a' }}
+          ${DONE}
+          Run: ${{ github.run_id }}"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          python3 - << 'PYEOF'
+          import json, os
+          p = 'data/import_status.json'
+          if not os.path.exists(p):
+              print("No import_status.json found.")
+          else:
+              s = json.load(open(p))
+              items = s.get('items', {})
+              counts = {}
+              for v in items.values():
+                  st = v.get('import_status', 'unknown')
+                  counts[st] = counts.get(st, 0) + 1
+              print("=== Import summary ===")
+              for k, n in sorted(counts.items()):
+                  print(f"  {k:<15} {n}")
+              triage = [
+                  (k, v.get('failure_reason', '?'))
+                  for k, v in items.items()
+                  if v.get('import_status') == 'triage'
+              ]
+              if triage:
+                  print("\n  Triage items:")
+                  for k, r in triage[:20]:
+                      print(f"    {k}: {r[:80]}")
+          PYEOF
