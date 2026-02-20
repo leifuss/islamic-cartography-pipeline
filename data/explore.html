@@ -1206,7 +1206,10 @@ function renderList() {
         : '';
       const titleHtml = itemLink(r, r.title);
       const pubHtml  = r.pub_title ? `<div class="card-pub">${esc(r.pub_title)}</div>` : '';
-      const meta = [(r.authors||'').split(';')[0], r.year, r.place].filter(Boolean).join(' \u00b7 ');
+      const metaParts = [(r.authors||'').split(';')[0], r.year, r.place];
+      if (r.pages) metaParts.push('pp.\u00a0' + r.pages);
+      const meta = metaParts.filter(Boolean).join(' \u00b7 ');
+      const needsPages = ['bookSection','journalArticle','encyclopediaArticle'].includes(r.item_type) && !r.pages;
       const tq   = r.text_quality;
       const tagHtml = (r.tags || []).map(t => tagBadge(t)).join('');
       const cardCls = r.has_reader ? 'has-reader' : r.extracted ? 'extracted' : '';
@@ -1221,6 +1224,7 @@ function renderList() {
           ${badge('b-itype', r.item_type || '')}
           ${tq ? qualityBadge(tq) : ''}
           ${readerBadge}
+          ${needsPages ? '<span class="badge b-garbled" title="Missing page range in Zotero">\u26a0 No pages</span>' : ''}
           ${tagHtml}
         </div>
       </div>`;

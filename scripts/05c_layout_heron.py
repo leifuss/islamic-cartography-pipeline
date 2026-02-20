@@ -81,6 +81,7 @@ HERON_MODEL = "docling-project/docling-layout-heron"
 DEFAULT_THRESHOLD = 0.6    # Heron confidence threshold
 DEFAULT_BATCH     = 4      # Pages per inference batch
 TESSERACT_TIMEOUT = 120    # seconds per page for Tesseract OCR
+OVERSIZED_RATIO   = 1.10   # PDF page_count / expected pages — 10% tolerance
 
 # Heron label map: class index → label name compatible with reader.html
 HERON_LABELS: dict[int, str] = {
@@ -102,6 +103,74 @@ HERON_LABELS: dict[int, str] = {
     15: "form",
     16: "key_value",
 }
+
+# ── Preflight: page-count sanity check ────────────────────────────────────
+
+import re as _re
+
+def _parse_page_range(pages_str: str) -> Optional[int]:
+    """
+    Parse a Zotero 'pages' field into an expected page count.
+
+    Handles formats like:
+      "120-158"       → 39
+      "9-24"          → 16
+      "pp. 120–158"   → 39  (en-dash)
+      "540-713"       → 174
+      "14, 29, 42"    → 3   (discrete page list)
+      "4"             → 1
+      ""              → None
+    """
+    if not pages_str or not pages_str.strip():
+        return None
+
+    s = pages_str.strip()
+
+    # Try range: digits–digits (hyphen or en-dash)
+    m = _re.search(r'(\d+)\s*[-–]\s*(\d+)', s)
+    if m:
+        lo, hi = int(m.group(1)), int(m.group(2))
+        if hi >= lo:
+            return hi - lo + 1
+
+    # Try comma-separated list: "14, 29, 42, 60"
+    parts = [p.strip() for p in s.split(',') if p.strip()]
+    if len(parts) > 1 and all(_re.fullmatch(r'\d+', p) for p in parts):
+        return len(parts)
+
+    # Single number
+    if _re.fullmatch(r'\d+', s):
+        return 1
+
+    return None
+
+
+def preflight_check(item: dict) -> dict:
+    """
+    Compare Zotero page range to PDF page count.
+
+    Returns:
+        {"ok": True} or
+        {"ok": False, "expected": N, "actual": M, "ratio": float, "pages_field": str}
+    """
+    pages_field = item.get("pages") or ""
+    page_count  = item.get("page_count")
+
+    expected = _parse_page_range(pages_field)
+    if expected is None or page_count is None:
+        return {"ok": True}  # can't check — allow through
+
+    ratio = page_count / expected
+    if ratio > OVERSIZED_RATIO:
+        return {
+            "ok":          False,
+            "expected":    expected,
+            "actual":      page_count,
+            "ratio":       round(ratio, 1),
+            "pages_field": pages_field,
+        }
+    return {"ok": True}
+
 
 # ── Lazy model singleton ───────────────────────────────────────────────────────
 
@@ -500,6 +569,10 @@ def main():
                         help=f"Pages per inference batch (default {DEFAULT_BATCH})")
     parser.add_argument("--limit",     type=int, default=0,
                         help="Stop after N docs (0 = all)")
+    parser.add_argument("--skip-oversized", action="store_true", default=True,
+                        help="Skip docs where PDF page count far exceeds Zotero page range (default: on)")
+    parser.add_argument("--no-skip-oversized", action="store_false", dest="skip_oversized",
+                        help="Process oversized docs anyway")
     parser.add_argument("--inventory", default="data/inventory.json")
     args = parser.parse_args()
 
@@ -550,14 +623,36 @@ def main():
             print(f"  {r['key']}  {n_imgs} pages  {r.get('title','')[:55]}")
         return
 
-    ok_count   = 0
-    err_count  = 0
-    skip_count = 0
+    ok_count       = 0
+    err_count      = 0
+    skip_count     = 0
+    oversized_keys = []
 
     for n, item in enumerate(candidates, 1):
         key   = item["key"]
         title = item.get("title", key)
         print(f"\n  ⟳  [{n}/{total}] {key}  {title[:55]}", flush=True)
+
+        # ── Preflight: page-count sanity check ────────────────────────────
+        pf = preflight_check(item)
+        if not pf["ok"]:
+            if args.skip_oversized:
+                oversized_keys.append(key)
+                skip_count += 1
+                print(
+                    f"  ⚠  OVERSIZED — Zotero pages={pf['pages_field']!r} "
+                    f"→ {pf['expected']} expected, PDF has {pf['actual']} "
+                    f"({pf['ratio']}x). Skipping.",
+                    flush=True,
+                )
+                continue
+            else:
+                print(
+                    f"  ⚠  OVERSIZED — Zotero pages={pf['pages_field']!r} "
+                    f"→ {pf['expected']} expected, PDF has {pf['actual']} "
+                    f"({pf['ratio']}x). Processing anyway (--no-skip-oversized).",
+                    flush=True,
+                )
 
         t0     = time.time()
         result = enrich_document(
@@ -584,9 +679,16 @@ def main():
             print(f"  ✗  {key}  ERROR: {result.get('error','')[:100]}")
 
     print("\n" + "=" * 60)
-    print(f"✓ Enriched: {ok_count}")
-    print(f"✗ Errors:   {err_count}")
-    print(f"– Skipped:  {skip_count}")
+    print(f"✓ Enriched:  {ok_count}")
+    print(f"✗ Errors:    {err_count}")
+    print(f"– Skipped:   {skip_count}")
+    if oversized_keys:
+        print(f"⚠ Oversized: {len(oversized_keys)}  (PDF >> Zotero page range)")
+        for k in oversized_keys:
+            it = next((r for r in inventory if r["key"] == k), {})
+            print(f"    {k}  pages={it.get('pages','?')!r}  "
+                  f"pdf={it.get('page_count','?')}pp  {it.get('title','')[:45]}")
+        print("  → To process anyway: --no-skip-oversized")
     if ok_count:
         print(f"\nTexts → {TEXTS_ROOT}/")
         print("Commit with: git add data/texts/ && git commit -m 'layout: Heron enrichment'")
