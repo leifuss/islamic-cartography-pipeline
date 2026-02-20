@@ -23,7 +23,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 1275.7
+    "chars_per_page": 1275.7,
+    "pages": "120-158"
   },
   {
     "key": "GWSRUUU9",
@@ -75,7 +76,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "159-172"
   },
   {
     "key": "5FBQAZ7C",
@@ -103,7 +105,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 2522.5
+    "chars_per_page": 2522.5,
+    "pages": "9-24"
   },
   {
     "key": "CPZ7FNY4",
@@ -127,7 +130,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "323-330"
   },
   {
     "key": "TXXX6Q9Y",
@@ -151,7 +155,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "121-142"
   },
   {
     "key": "46ZPP8LT",
@@ -375,7 +380,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 2991.3
+    "chars_per_page": 2991.3,
+    "pages": "537-549"
   },
   {
     "key": "HU7JWYFK",
@@ -707,7 +713,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 4161.7
+    "chars_per_page": 4161.7,
+    "pages": "414-427"
   },
   {
     "key": "BKPDGDRL",
@@ -735,7 +742,8 @@
       "Subject: http://syriaca.org/work/9723"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "481-483"
   },
   {
     "key": "9I2TFSDC",
@@ -847,7 +855,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 4558.5
+    "chars_per_page": 4558.5,
+    "pages": "851-881"
   },
   {
     "key": "23K87F66",
@@ -873,7 +882,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 2572.2
+    "chars_per_page": 2572.2,
+    "pages": "371-375"
   },
   {
     "key": "ANLFTXVL",
@@ -980,7 +990,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "32-103"
   },
   {
     "key": "D9KQH3RS",
@@ -1124,7 +1135,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "163-180"
   },
   {
     "key": "FXG9S57V",
@@ -1303,7 +1315,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 1974.8
+    "chars_per_page": 1974.8,
+    "pages": "59-65"
   },
   {
     "key": "W277BB43",
@@ -1332,7 +1345,8 @@
     "notes": [],
     "has_reader": true,
     "text_quality": "good",
-    "chars_per_page": 2390.9
+    "chars_per_page": 2390.9,
+    "pages": "211-264"
   },
   {
     "key": "NIE76AUD",
@@ -1444,7 +1458,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "20-57"
   },
   {
     "key": "WDPWYM23",
@@ -1549,7 +1564,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "161"
   },
   {
     "key": "V78L72HS",
@@ -1584,7 +1600,8 @@
       "surrat al-ar -navel of the earth"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "273-290"
   },
   {
     "key": "6UNLR5DR",
@@ -1747,7 +1764,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "108-128"
   },
   {
     "key": "LNP4E8TG",
@@ -1912,7 +1930,8 @@
       "History & Culture"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "201-234"
   },
   {
     "key": "9RW3JDS8",
@@ -1941,7 +1960,8 @@
       "History & Culture"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "29-60"
   },
   {
     "key": "7GZ3JTRK",
@@ -2093,7 +2113,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "246-262"
   },
   {
     "key": "XI94AH9K",
@@ -2120,7 +2141,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "103-123"
   },
   {
     "key": "JF2HM2W4",
@@ -2147,7 +2169,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "97-125"
   },
   {
     "key": "CRQ8WR9R",
@@ -2347,7 +2370,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "483-492"
   },
   {
     "key": "KABL5YB2",
@@ -2371,7 +2395,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "195-259"
   },
   {
     "key": "ESE9SRE7",
@@ -2395,7 +2420,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "90-91"
   },
   {
     "key": "8AV9EKAW",
@@ -2445,7 +2471,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "7-83"
   },
   {
     "key": "K6L7V6IN",
@@ -2532,7 +2559,8 @@
       "Greek & Latin Literature"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "319-350"
   },
   {
     "key": "M8G2YBZL",
@@ -2566,7 +2594,8 @@
       "Medieval Philosophy"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "224-343"
   },
   {
     "key": "D3D2J3NQ",
@@ -2600,7 +2629,8 @@
       "Medieval Philosophy"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "540-713"
   },
   {
     "key": "3V5JDK6Y",
@@ -2892,7 +2922,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "77-84"
   },
   {
     "key": "HNB3QHNW",
@@ -3332,7 +3363,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "9-105"
   },
   {
     "key": "LVKJY3RN",
@@ -3356,7 +3388,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "393-400"
   },
   {
     "key": "YCS79Q7W",
@@ -3458,7 +3491,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "357-372"
   },
   {
     "key": "7PNEZWRA",
@@ -3485,7 +3519,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "132-151"
   },
   {
     "key": "VD97NEBR",
@@ -3509,7 +3544,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "35-69"
   },
   {
     "key": "BMHZCXPD",
@@ -3533,7 +3569,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "1-45"
   },
   {
     "key": "V2F25JKB",
@@ -3557,7 +3594,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "123-177"
   },
   {
     "key": "LUNHZBUZ",
@@ -3581,7 +3619,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "246-262"
   },
   {
     "key": "64X97FGE",
@@ -3713,7 +3752,8 @@
       "Encyclopedias"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "20-57"
   },
   {
     "key": "SMCFIBW5",
@@ -3742,7 +3782,8 @@
       "Encyclopedias"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "20-57"
   },
   {
     "key": "IVP8MU9S",
@@ -3773,7 +3814,8 @@
     "notes": [
       "v. 1. Astronomy, theoretical and applied -- v. 2. Mathematics and the physical sciences -- v. 3. Technology, alchemy, and life sciences"
     ],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "185-201"
   },
   {
     "key": "5BRKR8G9",
@@ -3976,7 +4018,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "62-82"
   },
   {
     "key": "GM87FIXS",
@@ -4010,7 +4053,8 @@
       "Comparative Studies & World Literature"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "189-196"
   },
   {
     "key": "5VZIASKP",
@@ -4044,7 +4088,8 @@
       "Comparative Studies & World Literature"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "113-136"
   },
   {
     "key": "I6QEKUQM",
@@ -4078,7 +4123,8 @@
       "Comparative Studies & World Literature"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "74-90"
   },
   {
     "key": "9YMS8JFA",
@@ -4309,7 +4355,8 @@
       "History & Culture"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "142-167"
   },
   {
     "key": "LS75YY3B",
@@ -4333,7 +4380,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "203-218"
   },
   {
     "key": "GDHSVTDM",
@@ -5076,7 +5124,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "61-234"
   },
   {
     "key": "W9BNB9XA",
@@ -5156,7 +5205,8 @@
       "géographie médiévale"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "15-27"
   },
   {
     "key": "GU4XBHXQ",
@@ -5362,7 +5412,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "27-72"
   },
   {
     "key": "L9TF6AII",
@@ -5390,7 +5441,8 @@
     "notes": [
       "see page 11 for comments on relationship to Alexander and Persians [but note that initial translation is under the ummayads?]"
     ],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "1-26"
   },
   {
     "key": "AAEQG5XA",
@@ -5414,7 +5466,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "1-53"
   },
   {
     "key": "EWCWLI4Q",
@@ -5551,7 +5604,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "121-142"
   },
   {
     "key": "VG65YCB8",
@@ -5603,7 +5657,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "609-626"
   },
   {
     "key": "DAKPWREF",
@@ -5660,7 +5715,8 @@
       "islam"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "359-360"
   },
   {
     "key": "79M6NSRB",
@@ -6303,7 +6359,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "1-57"
   },
   {
     "key": "BSKSCHJ3",
@@ -6355,7 +6412,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "47-80"
   },
   {
     "key": "KNIUHDKM",
@@ -6381,7 +6439,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "113-131"
   },
   {
     "key": "M7HF3VXK",
@@ -6566,7 +6625,8 @@
       "primary source"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "333-410"
   },
   {
     "key": "ZRYBKK5E",
@@ -6965,7 +7025,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "59-70"
   },
   {
     "key": "TSW8LVZP",
@@ -7013,7 +7074,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "399-400"
   },
   {
     "key": "SK5GVA3B",
@@ -7037,7 +7099,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "42-58"
   },
   {
     "key": "KQHTBY5Q",
@@ -7227,7 +7290,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "17-28"
   },
   {
     "key": "WFXUZA6K",
@@ -7251,7 +7315,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "11-23"
   },
   {
     "key": "7Q6B7YZB",
@@ -7275,7 +7340,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "81-92"
   },
   {
     "key": "7L4DVXMP",
@@ -7299,7 +7365,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "32-43"
   },
   {
     "key": "SUWQGYPB",
@@ -7323,7 +7390,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "9-15"
   },
   {
     "key": "4JKDF8DI",
@@ -7347,7 +7415,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "153-156"
   },
   {
     "key": "CKPRXRHI",
@@ -7371,7 +7440,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "141-156"
   },
   {
     "key": "CGLV6I75",
@@ -7395,7 +7465,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "7-24"
   },
   {
     "key": "LSLQQX6R",
@@ -7467,7 +7538,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "317-352"
   },
   {
     "key": "3UKXG592",
@@ -7491,7 +7563,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "111-118"
   },
   {
     "key": "9Y3W35EL",
@@ -7515,7 +7588,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "231-315"
   },
   {
     "key": "ICWKFJG5",
@@ -7548,7 +7622,8 @@
       "supralunary"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "33-61"
   },
   {
     "key": "GEVRTGKV",
@@ -7620,7 +7695,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "89-106"
   },
   {
     "key": "HASB6P26",
@@ -7644,7 +7720,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "153-168"
   },
   {
     "key": "7673Q8EI",
@@ -7673,7 +7750,8 @@
       "Ancient History"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "121-138"
   },
   {
     "key": "MVLNXFLW",
@@ -7697,7 +7775,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "209-227"
   },
   {
     "key": "KCK4ANHK",
@@ -7723,7 +7802,8 @@
     "notes": [
       "available at forum library"
     ],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "206-208"
   },
   {
     "key": "CNP8D68S",
@@ -7747,7 +7827,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "156-174"
   },
   {
     "key": "79H77QYC",
@@ -7771,7 +7852,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "137-155"
   },
   {
     "key": "KLU4EMEJ",
@@ -7795,7 +7877,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "108-136"
   },
   {
     "key": "JT3DG5WY",
@@ -7819,7 +7902,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "71-88"
   },
   {
     "key": "6PTUQX67",
@@ -7843,7 +7927,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "12-70"
   },
   {
     "key": "KYMZRGMG",
@@ -7867,7 +7952,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "3-11"
   },
   {
     "key": "C2M2JZYQ",
@@ -7891,7 +7977,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "90-106"
   },
   {
     "key": "PQ2GRRN3",
@@ -7939,7 +8026,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "455-457"
   },
   {
     "key": "IA8PPL8T",
@@ -7974,7 +8062,8 @@
       "Pytheas"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "80-120"
   },
   {
     "key": "WVQZUC9U",
@@ -8009,7 +8098,8 @@
     "notes": [
       "Includes additional bibliography from Thom version"
     ],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "496-512"
   },
   {
     "key": "XZCZ2RDP",
@@ -8033,7 +8123,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "383-403"
   },
   {
     "key": "DA6KW4AG",
@@ -8059,7 +8150,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "405-415"
   },
   {
     "key": "YCB6J2NM",
@@ -8107,7 +8199,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "151-191"
   },
   {
     "key": "A2USGZMM",
@@ -8131,7 +8224,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "383-403"
   },
   {
     "key": "2BEURR8U",
@@ -8155,7 +8249,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "139-149"
   },
   {
     "key": "L6HLT3H5",
@@ -8181,7 +8276,8 @@
       "key"
     ],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "131-138"
   },
   {
     "key": "MLRG5XH7",
@@ -8205,7 +8301,8 @@
     "recommendation": "",
     "tags": [],
     "notes": [],
-    "has_reader": false
+    "has_reader": false,
+    "pages": "93-96"
   },
   {
     "key": "WE4GTRB2",

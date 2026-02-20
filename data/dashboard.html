@@ -157,10 +157,11 @@
   <th data-col="6" onclick="sortTable(6)">Item Type<span class="sort-arrow">&#8597;</span></th>
   <th data-col="7" onclick="sortTable(7)">PDF Status<span class="sort-arrow">&#8597;</span></th>
   <th data-col="8" onclick="sortTable(8)">Doc Type<span class="sort-arrow">&#8597;</span></th>
-  <th data-col="9" onclick="sortTable(9)">Pages<span class="sort-arrow">&#8597;</span></th>
-  <th data-col="10" onclick="sortTable(10)">Lang<span class="sort-arrow">&#8597;</span></th>
-  <th data-col="11" onclick="sortTable(11)">Quality<span class="sort-arrow">&#8597;</span></th>
-  <th data-col="12" onclick="sortTable(12)">Result<span class="sort-arrow">&#8597;</span></th>
+  <th data-col="9" onclick="sortTable(9)">PDF pp<span class="sort-arrow">&#8597;</span></th>
+  <th data-col="10" onclick="sortTable(10)">Pages<span class="sort-arrow">&#8597;</span></th>
+  <th data-col="11" onclick="sortTable(11)">Lang<span class="sort-arrow">&#8597;</span></th>
+  <th data-col="12" onclick="sortTable(12)">Quality<span class="sort-arrow">&#8597;</span></th>
+  <th data-col="13" onclick="sortTable(13)">Result<span class="sort-arrow">&#8597;</span></th>
 </tr>
 </thead>
 <tbody id="tbody">
@@ -307,6 +308,7 @@ function renderRow(r, idx) {
     <td>${pdfBadge(r.pdf_status)}</td>
     <td>${typeBadge(r.doc_type)}</td>
     <td class="num">${r.page_count !== null && r.page_count !== undefined ? r.page_count : '\u2014'}</td>
+    <td>${r.pages ? escHtml(r.pages) : (['bookSection','journalArticle','encyclopediaArticle'].includes(r.item_type) ? '<span style="color:#d45a5a" title="Missing page range">\u26a0</span>' : '\u2014')}</td>
     <td>${escHtml(r.language||'\u2014')}</td>
     <td class="num">${q}</td>
     <td>${recBadge(r.recommendation)}</td>

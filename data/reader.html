@@ -909,8 +909,9 @@ async function loadDocument(key) {
     document.getElementById('docTitle').textContent = meta.title || key;
     const pubTitle  = docInventory && docInventory.pub_title ? docInventory.pub_title : null;
     const placeStr  = docInventory && docInventory.place     ? docInventory.place     : null;
+    const pagesStr  = docInventory && docInventory.pages    ? 'pp.\u00a0' + docInventory.pages : null;
     document.getElementById('docMeta').innerHTML =
-      [meta.authors, meta.year, placeStr].filter(Boolean).join(' · ') +
+      [meta.authors, meta.year, placeStr, pagesStr].filter(Boolean).join(' · ') +
       (pubTitle ? `<span style="font-style:italic;opacity:.6"> · ${escWithGlyphs(pubTitle)}</span>` : '');
 
     // Wire up page input
