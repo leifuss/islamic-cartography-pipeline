@@ -1,0 +1,362 @@
+name: First-time setup
+
+# ── Purpose ────────────────────────────────────────────────────────────────────
+# Run this workflow once after forking the Scholion template to connect your
+# Zotero library and deploy your research library to GitHub Pages.
+#
+# Prerequisites (before running this workflow):
+#   1. Add your Zotero API key as a repository secret:
+#      GitHub repo → Settings → Secrets and variables → Actions → New secret
+#      Name: ZOTERO_API_KEY
+#      Value: your key from https://www.zotero.org/settings/keys
+#
+#   2. Find your Zotero library ID:
+#      Go to https://www.zotero.org/settings/keys — the library ID is shown
+#      next to each key (personal: your user ID; group: the group ID)
+
+on:
+  workflow_dispatch:
+    inputs:
+      zotero_library_id:
+        description: "Zotero library ID (shown at zotero.org/settings/keys)"
+        required: true
+      zotero_library_type:
+        description: "Library type"
+        required: true
+        default: "user"
+        type: choice
+        options:
+          - user
+          - group
+      collection_name:
+        description: "Zotero collection name to sync (leave blank for entire library)"
+        required: false
+        default: ""
+      corpus_name:
+        description: "Name for your research library (shown in the explorer UI)"
+        required: false
+        default: "My Research Library"
+      research_scope:
+        description: "Brief description of your research project (1–3 sentences, optional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  issues: write
+  id-token: write
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.pages_url.outputs.url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install pyzotero python-dotenv requests
+
+      # ── Step 1: Validate Zotero credentials ─────────────────────────────────
+      - name: Validate Zotero credentials
+        id: validate
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+        run: |
+          python3 - << 'PYEOF'
+          import os, sys, json
+          import urllib.request, urllib.error
+
+          api_key = os.environ.get('ZOTERO_API_KEY', '').strip()
+          library_id = '${{ inputs.zotero_library_id }}'.strip()
+          library_type = '${{ inputs.zotero_library_type }}'.strip()
+
+          # Check API key is set
+          if not api_key:
+              print("ERROR: ZOTERO_API_KEY secret is not set.")
+              print("")
+              print("To fix this:")
+              print("  1. Go to https://www.zotero.org/settings/keys and create a new API key")
+              print("     with read+write access to your library.")
+              print("  2. In your GitHub repo, go to:")
+              print("     Settings → Secrets and variables → Actions → New repository secret")
+              print("  3. Name: ZOTERO_API_KEY  |  Value: your key from Zotero")
+              print("  4. Re-run this workflow.")
+              sys.exit(1)
+
+          # Check library ID is numeric
+          if not library_id.isdigit():
+              print(f"ERROR: Library ID '{library_id}' does not look correct.")
+              print("The library ID should be a number (e.g. 12345678).")
+              print("Find it at https://www.zotero.org/settings/keys next to your API key.")
+              sys.exit(1)
+
+          # Test API call — fetch up to 1 item to verify credentials work
+          if library_type == 'user':
+              url = f"https://api.zotero.org/users/{library_id}/items?limit=1&format=json"
+          else:
+              url = f"https://api.zotero.org/groups/{library_id}/items?limit=1&format=json"
+
+          req = urllib.request.Request(url, headers={
+              'Zotero-API-Key': api_key,
+              'Zotero-API-Version': '3',
+          })
+
+          try:
+              with urllib.request.urlopen(req, timeout=30) as resp:
+                  data = json.loads(resp.read())
+                  total = resp.headers.get('Total-Results', '?')
+                  print(f"Zotero credentials valid. Library has {total} items.")
+          except urllib.error.HTTPError as e:
+              if e.code == 403:
+                  print("ERROR: Zotero API key was rejected (HTTP 403 Forbidden).")
+                  print("Possible causes:")
+                  print("  - The key does not have read access to this library.")
+                  print("  - The library ID is wrong (check: user vs. group).")
+                  print("  - The key has been deleted.")
+                  print(f"  - API URL tried: {url}")
+              elif e.code == 404:
+                  print(f"ERROR: Library not found (HTTP 404). Library ID: {library_id}, type: {library_type}")
+                  print("Check that the library ID and library type (user/group) are correct.")
+              else:
+                  print(f"ERROR: Zotero API returned HTTP {e.code}: {e.reason}")
+              sys.exit(1)
+          except Exception as e:
+              print(f"ERROR: Could not connect to Zotero API: {e}")
+              print("Check your internet connection and try again.")
+              sys.exit(1)
+          PYEOF
+
+      # ── Step 2: Update corpus_config.json ───────────────────────────────────
+      - name: Update corpus configuration
+        run: |
+          python3 - << 'PYEOF'
+          import json
+
+          config_path = 'data/corpus_config.json'
+          c = json.load(open(config_path))
+
+          corpus_name = '${{ inputs.corpus_name }}'.strip() or 'My Research Library'
+          library_id = '${{ inputs.zotero_library_id }}'.strip()
+          library_type = '${{ inputs.zotero_library_type }}'.strip()
+          collection_name = '${{ inputs.collection_name }}'.strip() or None
+
+          c['name'] = corpus_name
+          c['description'] = f'Personal research library: {corpus_name}'
+          c['source']['type'] = 'zotero_api'
+          c['source']['zotero_api']['library_id'] = int(library_id)
+          c['source']['zotero_api']['library_type'] = library_type
+          c['source']['zotero_api']['collection_name'] = collection_name
+
+          with open(config_path, 'w') as f:
+              json.dump(c, f, indent=2, ensure_ascii=False)
+              f.write('\n')
+
+          print(f"Updated corpus_config.json:")
+          print(f"  name:            {corpus_name}")
+          print(f"  library_id:      {library_id}")
+          print(f"  library_type:    {library_type}")
+          print(f"  collection_name: {collection_name or '(entire library)'}")
+          PYEOF
+
+      # ── Step 3: Write research scope ────────────────────────────────────────
+      - name: Write research scope
+        run: |
+          python3 - << 'PYEOF'
+          import json
+
+          scope_text = '''${{ inputs.research_scope }}'''.strip()
+
+          scope = {
+              "scope": scope_text,
+              "questions": [],
+              "keywords": []
+          }
+
+          with open('data/research_scope.json', 'w') as f:
+              json.dump(scope, f, indent=2, ensure_ascii=False)
+              f.write('\n')
+
+          if scope_text:
+              print(f"Research scope saved: {scope_text[:80]}...")
+          else:
+              print("No research scope provided — saved empty placeholder.")
+              print("You can edit data/research_scope.json later to add your scope.")
+          PYEOF
+
+      # ── Step 4: Ensure annotations.json exists ──────────────────────────────
+      - name: Initialise annotations file
+        run: |
+          if [ ! -f data/annotations.json ]; then
+            echo '{}' > data/annotations.json
+            echo "Created data/annotations.json"
+          else
+            echo "data/annotations.json already exists — leaving it unchanged."
+          fi
+
+      # ── Step 5: Run initial Zotero sync ─────────────────────────────────────
+      - name: Create .env for sync
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+        run: |
+          python3 - << 'PYEOF'
+          import json, os
+          c = json.load(open('data/corpus_config.json'))
+          z = c.get('source', {}).get('zotero_api', {})
+          with open('.env', 'w') as f:
+              f.write(f"ZOTERO_API_KEY={os.environ.get('ZOTERO_API_KEY', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_ID={z.get('library_id', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_TYPE={z.get('library_type', 'user')}\n")
+              col = z.get('collection_name', '') or ''
+              f.write(f"COLLECTION_NAME={col}\n")
+          PYEOF
+
+      - name: Sync Zotero library → inventory.json
+        id: sync
+        run: |
+          python scripts/zotero_sync.py
+          echo "Sync complete."
+
+          # Count items imported
+          ITEM_COUNT=$(python3 -c "import json; print(len(json.load(open('data/inventory.json'))))")
+          echo "item_count=${ITEM_COUNT}" >> $GITHUB_OUTPUT
+          echo "Imported ${ITEM_COUNT} items from Zotero."
+
+      # ── Step 6: Generate explore.html ───────────────────────────────────────
+      - name: Generate explorer
+        run: python scripts/generate_explore.py
+
+      # ── Step 7: Commit all changes ──────────────────────────────────────────
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/corpus_config.json data/research_scope.json \
+                  data/annotations.json data/inventory.json data/explore.html
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            ITEM_COUNT=${{ steps.sync.outputs.item_count }}
+            git commit -m "setup: initialise Scholion — ${ITEM_COUNT} items from Zotero [skip ci]"
+            git pull --rebase origin main
+            git push
+            echo "Changes committed."
+          fi
+
+      # ── Step 8: Enable GitHub Pages ─────────────────────────────────────────
+      - name: Enable GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPO="${{ github.repository }}"
+
+          # Try to enable Pages with GitHub Actions as the deployment source.
+          # This may fail if Pages is already enabled (that's fine) or if the
+          # repo is private and the account doesn't have GitHub Pro/Education.
+          gh api "repos/${REPO}/pages" \
+            --method POST \
+            -f build_type=workflow \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            2>/dev/null && echo "GitHub Pages enabled." \
+            || echo "GitHub Pages may already be enabled — continuing."
+
+          # Trigger a Pages deployment now
+          gh workflow run deploy-pages.yml 2>/dev/null \
+            && echo "Deploy workflow triggered." \
+            || echo "Could not trigger deploy workflow — it will run on next push."
+
+      # ── Compute Pages URL ────────────────────────────────────────────────────
+      - name: Get Pages URL
+        id: pages_url
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPO="${{ github.repository }}"
+          OWNER=$(echo "$REPO" | cut -d/ -f1)
+          REPO_NAME=$(echo "$REPO" | cut -d/ -f2)
+
+          # Try the GitHub Pages API first
+          URL=$(gh api "repos/${REPO}/pages" --jq '.html_url' 2>/dev/null || true)
+
+          # Fall back to the standard GitHub Pages URL pattern
+          if [ -z "$URL" ]; then
+            URL="https://${OWNER}.github.io/${REPO_NAME}/"
+          fi
+
+          echo "url=${URL}" >> $GITHUB_OUTPUT
+          echo "Pages URL: ${URL}"
+
+      # ── Step 9: Create welcome issue ────────────────────────────────────────
+      - name: Create welcome issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ITEM_COUNT=${{ steps.sync.outputs.item_count }}
+          PAGES_URL=${{ steps.pages_url.outputs.url }}
+          CORPUS_NAME="${{ inputs.corpus_name }}"
+
+          gh issue create \
+            --title "Your Scholion library is live — ${ITEM_COUNT} items imported" \
+            --body "## Welcome to Scholion!
+
+          Your personal research library **${CORPUS_NAME}** is set up and live.
+
+          ### What just happened
+
+          - ✅ **${ITEM_COUNT} items** imported from your Zotero library
+          - ✅ **Interactive explorer** generated at your GitHub Pages site
+          - ✅ **Automatic sync** will update your library every 6 hours
+
+          ### Your library
+
+          🌐 **[Open your library → ${PAGES_URL}](${PAGES_URL})**
+
+          *(It may take 1–2 minutes for GitHub Pages to finish deploying. If the link gives a 404, wait a moment and refresh.)*
+
+          ### Keeping your library up to date
+
+          Your library syncs automatically from Zotero every 6 hours. To sync manually:
+
+          Go to **Actions → Zotero sync → Run workflow**
+
+          ### Next steps
+
+          - **Add more items** to your Zotero library — they'll appear here automatically
+          - **[Stage 2: Explore](docs/guide-stage2.md)** — timeline, map, tag visualisations
+          - **[Stage 3: Read](docs/plan-stage3-pdf-processing.md)** — searchable PDFs in the browser
+
+          ---
+          *This issue was created automatically by the First-time setup workflow.*
+          *You can close it when you're done reading.*" \
+            --label "" 2>/dev/null || \
+          echo "Could not create issue (label may not exist — issue creation still succeeded)"
+
+      - name: Setup complete
+        run: |
+          echo ""
+          echo "════════════════════════════════════════════════════════"
+          echo "  Scholion setup complete!"
+          echo ""
+          echo "  Items imported: ${{ steps.sync.outputs.item_count }}"
+          echo "  Pages URL:      ${{ steps.pages_url.outputs.url }}"
+          echo ""
+          echo "  Your library will be live at the Pages URL above"
+          echo "  (allow 1–2 minutes for Pages to finish deploying)."
+          echo "════════════════════════════════════════════════════════"

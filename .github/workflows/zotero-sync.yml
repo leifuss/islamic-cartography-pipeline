@@ -34,22 +34,39 @@ jobs:
       - name: Install dependencies
         run: pip install pyzotero python-dotenv
 
-      - name: Create .env
+      - name: Check secrets configured
         run: |
-          cat > .env << EOF
-          ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}
-          ZOTERO_LIBRARY_ID=${{ secrets.ZOTERO_LIBRARY_ID }}
-          ZOTERO_LIBRARY_TYPE=group
-          # The Zotero *group* is "Islamic Cartography"; the collection inside it
-          # was auto-named by a CambridgeCore batch import.
-          COLLECTION_NAME=CambridgeCore_Citation_04Nov2025
-          EOF
+          if [ -z "${{ secrets.ZOTERO_API_KEY }}" ]; then
+            echo "::notice::ZOTERO_API_KEY secret is not set."
+            echo "To set up Scholion, go to: Actions → First-time setup → Run workflow"
+            echo "skipped=true" >> $GITHUB_OUTPUT
+          fi
+        id: check_secrets
+
+      - name: Create .env
+        if: steps.check_secrets.outputs.skipped != 'true'
+        run: |
+          python3 - << 'PYEOF'
+          import json, os
+          c = json.load(open('data/corpus_config.json'))
+          z = c.get('source', {}).get('zotero_api', {})
+          with open('.env', 'w') as f:
+              f.write(f"ZOTERO_API_KEY={os.environ.get('ZOTERO_API_KEY', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_ID={z.get('library_id', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_TYPE={z.get('library_type', 'user')}\n")
+              col = z.get('collection_name', '') or ''
+              f.write(f"COLLECTION_NAME={col}\n")
+          PYEOF
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
 
       - name: Sync Zotero → inventory.json
         id: sync
+        if: steps.check_secrets.outputs.skipped != 'true'
         run: python scripts/zotero_sync.py --trigger-extract
 
       - name: Commit updated inventory
+        if: steps.check_secrets.outputs.skipped != 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -71,7 +88,7 @@ jobs:
           fi
 
       - name: Trigger extraction for new items
-        if: steps.sync.outputs.has_new == 'true'
+        if: steps.check_secrets.outputs.skipped != 'true' && steps.sync.outputs.has_new == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

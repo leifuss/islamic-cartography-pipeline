@@ -84,14 +84,23 @@ jobs:
       # ── Set up .env for the pipeline ─────────────────────────────────────────
       - name: Create .env
         run: |
-          cat > .env << EOF
-          ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}
-          ZOTERO_LIBRARY_ID=${{ secrets.ZOTERO_LIBRARY_ID }}
-          ZOTERO_LIBRARY_TYPE=group
-          COLLECTION_NAME=CambridgeCore_Citation_04Nov2025
-          GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
-          EOF
+          python3 - << 'PYEOF'
+          import json, os
+          c = json.load(open('data/corpus_config.json'))
+          z = c.get('source', {}).get('zotero_api', {})
+          with open('.env', 'w') as f:
+              f.write(f"ZOTERO_API_KEY={os.environ.get('ZOTERO_API_KEY', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_ID={z.get('library_id', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_TYPE={z.get('library_type', 'user')}\n")
+              col = z.get('collection_name', '') or ''
+              f.write(f"COLLECTION_NAME={col}\n")
+              f.write(f"GEMINI_API_KEY={os.environ.get('GEMINI_API_KEY', '')}\n")
+              f.write(f"ANTHROPIC_API_KEY={os.environ.get('ANTHROPIC_API_KEY', '')}\n")
+          PYEOF
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       # ── Fetch PDFs from Zotero cloud ─────────────────────────────────────────
       - name: Fetch PDFs from Zotero

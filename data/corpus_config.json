@@ -1,31 +1,22 @@
 {
-  "name": "Islamic Cartography",
-  "description": "A research corpus of Islamic cartographic and geographical texts",
-  "rag_api": "https://web-production-e9c9.up.railway.app/api",
+  "name": "My Research Library",
+  "description": "A personal research library powered by Scholion",
   "texts_dir": "texts/",
   "nav": {
-    "dashboard": { "label": "📋 Dashboard", "href": "dashboard.html" },
-    "explorer":  { "label": "🔭 Explorer",  "href": "explore.html"  },
-    "reader":    { "label": "📖 Reader",     "href": "reader.html"   },
-    "chat":      { "label": "💬 Chat",       "href": "chat.html"     },
-    "status":    { "label": "⚙️ Status",     "href": "status.html"   }
+    "explorer":  { "label": "Explorer",  "href": "explore.html"  },
+    "reader":    { "label": "Reader",    "href": "reader.html"   },
+    "status":    { "label": "Status",    "href": "status.html"   }
   },
 
   "_source_note": "Configure one of the source types below to drive inventory.json generation.",
   "source": {
-    "type": "zotero_local",
-
-    "zotero_local": {
-      "library_id": null,
-      "collection_name": null,
-      "_note": "Reads Zotero's local SQLite DB. Requires Zotero desktop running. Set ZOTERO_LIBRARY_ID and COLLECTION_NAME in .env."
-    },
+    "type": "zotero_api",
 
     "zotero_api": {
       "library_id": null,
       "library_type": "user",
-      "collection_key": null,
-      "_note": "Reads from Zotero web API. No desktop app required. Set ZOTERO_LIBRARY_ID and ZOTERO_API_KEY in .env."
+      "collection_name": null,
+      "_note": "Reads from Zotero web API. No desktop app required. Set ZOTERO_API_KEY as a repo secret (Settings → Secrets → Actions). Run the First-time setup workflow to configure library_id and other settings."
     },
 
     "bibtex": {
