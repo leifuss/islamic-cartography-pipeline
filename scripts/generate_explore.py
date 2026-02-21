@@ -185,6 +185,10 @@ def build_html(inventory: list, data_dir: Path = None, corpus_name: str = 'My Re
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{corpus_name} — Explorer</title>
 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 <!-- Leaflet for the map view -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -561,11 +565,22 @@ header .sub {{ font-size: 12px; color: var(--muted); flex: 1; }}
 ::-webkit-scrollbar {{ width: 5px; height: 5px; }}
 ::-webkit-scrollbar-track {{ background: transparent; }}
 ::-webkit-scrollbar-thumb {{ background: #333; border-radius: 3px; }}
+
+/* ── Scholion brand ── */
+.scholion-logo {{
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px; font-weight: 600; color: #fff;
+  letter-spacing: .04em; text-decoration: none; line-height: 1; flex-shrink: 0;
+}}
+.scholion-logo:hover {{ color: #ccc; }}
+.header-divider {{ color: #444; font-size: 14px; flex-shrink: 0; }}
 </style>
 </head>
 <body>
 
 <header>
+  <a href="index.html" class="scholion-logo">Scholion</a>
+  <span class="header-divider">·</span>
   <h1>{corpus_name} — Explorer</h1>
   <span class="sub">
     {total} items

@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Corpus Chat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #0f0f0f; --surface: #161616; --border: #2a2a2a;
@@ -17,8 +20,15 @@ body { background: var(--bg); color: var(--text); font-family: system-ui, sans-s
 /* ── Header ── */
 header {
   background: #0a0a0a; border-bottom: 1px solid var(--border);
-  padding: 14px 24px; display: flex; align-items: center; gap: 20px; flex-shrink: 0;
+  padding: 14px 24px; display: flex; align-items: center; gap: 16px; flex-shrink: 0;
 }
+.scholion-logo {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px; font-weight: 600; color: #fff;
+  letter-spacing: .04em; text-decoration: none; line-height: 1; flex-shrink: 0;
+}
+.scholion-logo:hover { color: #ccc; }
+.header-divider { color: #333; font-size: 14px; flex-shrink: 0; }
 header h1 { font-size: 16px; font-weight: 600; color: #fff; }
 header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 .site-nav { display: flex; gap: 12px; margin-left: auto; }
@@ -144,7 +154,9 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 <body>
 
 <header>
-  <h1>💬 Corpus Chat</h1>
+  <a href="index.html" class="scholion-logo">Scholion</a>
+  <span class="header-divider">·</span>
+  <h1>💬 Chat</h1>
   <span class="sub" id="chat-sub">Ask questions about the corpus — answers grounded in the processed documents</span>
   <nav class="site-nav">
     <a href="dashboard.html">📋 Dashboard</a>

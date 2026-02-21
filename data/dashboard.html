@@ -4,12 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Corpus Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: system-ui, -apple-system, sans-serif; font-size: 13px;
          background: #f5f5f7; color: #1d1d1f; }
   header { background: #1c1c1e; color: #fff; padding: 14px 24px;
-            display: flex; align-items: center; gap: 20px; }
+            display: flex; align-items: center; gap: 16px; }
+  .scholion-logo {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 20px; font-weight: 600; color: #fff;
+    letter-spacing: .04em; text-decoration: none; line-height: 1; flex-shrink: 0;
+  }
+  .scholion-logo:hover { color: #ccc; }
+  .header-divider { color: #555; font-size: 14px; flex-shrink: 0; }
   header h1 { font-size: 16px; font-weight: 600; }
   header p  { font-size: 12px; color: #98989d; margin-top: 2px; flex: 1; }
   .site-nav { display: flex; gap: 12px; margin-left: auto; }
@@ -81,11 +91,34 @@
   #count-label { font-size: 12px; color: #6e6e73; }
 
   .loading { text-align: center; padding: 60px 24px; color: #6e6e73; font-size: 14px; }
+
+  /* ── Workflow action buttons ── */
+  .actions-bar {
+    display: flex; gap: 8px; align-items: center;
+    padding: 8px 24px; background: #fff;
+    border-bottom: 1px solid #e0e0e5; flex-wrap: wrap;
+  }
+  .actions-label { font-size: 11px; color: #6e6e73; font-weight: 500;
+                   text-transform: uppercase; letter-spacing: .05em; }
+  .btn-workflow {
+    padding: 5px 13px; border-radius: 6px; font-size: 12px; font-weight: 500;
+    cursor: pointer; border: 1px solid #d2d2d7; background: #f5f5f7;
+    color: #1d1d1f; transition: background .15s, border-color .15s, color .15s;
+  }
+  .btn-workflow:hover:not(:disabled) { background: #e8e8ed; border-color: #0071e3; color: #0071e3; }
+  .btn-workflow:disabled { opacity: .5; cursor: default; }
+  .actions-gh-link {
+    font-size: 11px; color: #0071e3; text-decoration: none; margin-left: 4px; display: none;
+  }
+  .actions-gh-link:hover { text-decoration: underline; }
+  .actions-note { font-size: 11px; color: #6e6e73; }
 </style>
 </head>
 <body>
 
 <header>
+  <a href="index.html" class="scholion-logo">Scholion</a>
+  <span class="header-divider">·</span>
   <div>
     <h1 id="page-title">Corpus Dashboard</h1>
     <p id="subtitle">Loading inventory&hellip;</p>
@@ -107,6 +140,24 @@
   <div class="stat"><div class="val" id="stat-embedded">&mdash;</div><div class="lbl">Embedded fonts</div></div>
   <div class="stat"><div class="val" id="stat-scanned">&mdash;</div><div class="lbl">Scanned</div></div>
   <div class="stat"><div class="val" id="stat-extracted">&mdash;</div><div class="lbl">Text extracted</div></div>
+</div>
+
+<div class="actions-bar">
+  <span class="actions-label">Run</span>
+  <button class="btn-workflow" id="btnScan"
+    onclick="triggerWorkflow('import-scan.yml', {collection_slug: _collectionSlug}, this, 'Scan started')">
+    ↺ Scan availability
+  </button>
+  <button class="btn-workflow" id="btnFetch"
+    onclick="triggerWorkflow('import-pdfs.yml', {collection_slug: _collectionSlug, mode: 'available'}, this, 'PDF fetch started')">
+    ↓ Fetch PDFs
+  </button>
+  <button class="btn-workflow" id="btnExtract"
+    onclick="triggerWorkflow('extract.yml', {collection_slug: _collectionSlug}, this, 'Extraction started')">
+    ⬡ Extract text
+  </button>
+  <a class="actions-gh-link" id="actionsGhLink" target="_blank">View in Actions →</a>
+  <span class="actions-note" id="actionsNote"></span>
 </div>
 
 <div class="controls">
@@ -382,6 +433,93 @@ function applySort() {
       : String(vb).localeCompare(String(va));
   });
   renderTable();
+}
+
+// ── GitHub Actions: trigger workflows directly ────────────────────────────────
+
+let GITHUB_URL = '';
+(function () {
+  const m = window.location.hostname.match(/^([^.]+)\.github\.io$/);
+  if (m) {
+    const owner = m[1];
+    const repo  = window.location.pathname.split('/').filter(Boolean)[0] || '';
+    GITHUB_URL  = 'https://github.com/' + owner + '/' + repo;
+  }
+})();
+
+function getGithubToken() {
+  let token = localStorage.getItem('scholion_gh_pat');
+  if (token) return token;
+  token = prompt(
+    'Enter a GitHub Personal Access Token with Actions write permission.\n' +
+    'Fine-grained: Actions → Read & write (this repo only).\n' +
+    'Your token is saved in this browser\'s localStorage only.'
+  );
+  if (token && token.trim()) {
+    localStorage.setItem('scholion_gh_pat', token.trim());
+    return token.trim();
+  }
+  return null;
+}
+
+function clearGithubToken() { localStorage.removeItem('scholion_gh_pat'); }
+
+function triggerWorkflow(workflow, inputs, btn, successMsg) {
+  if (!GITHUB_URL) {
+    alert('Cannot determine the GitHub repository URL.\nBrowse this page via GitHub Pages (owner.github.io/repo) to enable workflow triggers.');
+    return;
+  }
+  const token = getGithubToken();
+  if (!token) return;
+
+  const origText = btn.textContent.trim();
+  btn.disabled   = true;
+  btn.textContent = 'Triggering\u2026';
+
+  const apiUrl = GITHUB_URL
+    .replace('https://github.com/', 'https://api.github.com/repos/')
+    + '/actions/workflows/' + workflow + '/dispatches';
+
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer ' + token,
+      'Accept':        'application/vnd.github+json',
+      'Content-Type':  'application/json',
+    },
+    body: JSON.stringify({ ref: 'main', inputs: inputs }),
+  })
+  .then(function (r) {
+    if (r.status === 204) {
+      btn.textContent       = '\u2713 ' + successMsg;
+      btn.style.color       = '#1a7f37';
+      btn.style.borderColor = '#34c759';
+      const note = document.getElementById('actionsNote');
+      if (note) note.textContent = 'Workflow running \u2014 results appear after Pages redeploys (~2\u20133 min).';
+      const al = document.getElementById('actionsGhLink');
+      if (al) { al.href = GITHUB_URL + '/actions'; al.style.display = ''; }
+    } else if (r.status === 401) {
+      clearGithubToken();
+      btn.textContent = origText;
+      btn.disabled    = false;
+      alert('Token rejected (401) \u2014 may be expired. Token cleared; click again to re-enter.');
+    } else if (r.status === 403) {
+      clearGithubToken();
+      btn.textContent = origText;
+      btn.disabled    = false;
+      alert('Permission denied (403).\nEnsure your token has Actions:Read\u00a0&\u00a0write scope.\nToken cleared; click again to re-enter.');
+    } else {
+      r.text().then(function (t) {
+        btn.textContent = 'Error ' + r.status + ' \u2014 retry';
+        btn.title       = t;
+        btn.disabled    = false;
+      });
+    }
+  })
+  .catch(function () {
+    btn.textContent = 'Network error \u2014 retry';
+    btn.disabled    = false;
+  });
 }
 </script>
 </body>
