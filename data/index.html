@@ -35,9 +35,10 @@ header {
   align-items: center;
   gap: 20px;
   flex-shrink: 0;
+  flex-wrap: wrap;
 }
 header h1 { font-size: 16px; font-weight: 600; color: #fff; }
-header .sub { font-size: 12px; color: var(--muted); flex: 1; }
+header .sub { font-size: 12px; color: var(--muted); flex: 1; min-width: 120px; }
 
 /* ── Main content ── */
 .main {
@@ -285,6 +286,10 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 <header>
   <h1>Corpus Collections</h1>
   <span class="sub" id="subtitle">Loading collections&hellip;</span>
+  <a id="header-discover-btn" class="btn-action" href="#" target="_blank" rel="noopener"
+     title="Scan your Zotero account for all available libraries and collections">
+    &#8599;&nbsp;Discover Collections
+  </a>
 </header>
 
 <div class="main">
@@ -334,8 +339,10 @@ function workflowUrl(filename) {
   return GITHUB_URL + '/actions/workflows/' + filename;
 }
 
-// Wire up the Discover Collections button now so it works even if JS fails later
-document.getElementById('discover-btn').href = workflowUrl('discover-collections.yml');
+// Wire up the Discover Collections buttons (header + section) now, before any fetch
+var _discoverUrl = workflowUrl('discover-collections.yml');
+document.getElementById('discover-btn').href        = _discoverUrl;
+document.getElementById('header-discover-btn').href = _discoverUrl;
 
 // ── Utilities ────────────────────────────────────────────────────────────────
 function esc(s) {
@@ -481,17 +488,25 @@ function loadDiscoverSection() {
     .then(function (r) {
       if (r.status === 404) {
         // State A: discovery data not available yet
+        var discoverLink = GITHUB_URL
+          ? '<p style="margin-top:18px"><a class="btn-action" href="' +
+            esc(workflowUrl('discover-collections.yml')) +
+            '" target="_blank" rel="noopener">&#8599; Run Discover Collections workflow</a></p>'
+          : '';
         container.innerHTML =
           '<div class="notice-box">' +
-            '<p>No discovery data yet.</p>' +
-            '<p>Click <strong>"&#8599; Discover Collections"</strong> above to scan your Zotero account ' +
-            '(runs in ~30 s via GitHub Actions).</p>' +
-            '<p>Refresh this page after the workflow completes to see all available libraries and collections.</p>' +
-            (GITHUB_URL
-              ? '<p style="margin-top:16px"><a class="btn-action btn-secondary" href="' +
-                esc(workflowUrl('discover-collections.yml')) +
-                '" target="_blank" rel="noopener">&#8599; Open Discover Workflow on GitHub</a></p>'
-              : '') +
+            '<p><strong style="color:#fff">Your Zotero account has not been scanned yet.</strong></p>' +
+            '<p style="margin-top:10px">Click the button above (<strong>↗ Discover Collections</strong>) ' +
+            'or the button below to scan your Zotero account via GitHub Actions. ' +
+            'The workflow reads your <code style="background:#222;padding:1px 5px;border-radius:3px">ZOTERO_API_KEY</code> ' +
+            'secret and enumerates every library and collection you have access to.</p>' +
+            '<p style="margin-top:10px">After the workflow finishes (~30 s), refresh this page to see ' +
+            'all your libraries and collections as cards you can add.</p>' +
+            discoverLink +
+            '<p style="margin-top:14px;font-size:12px;color:#555">' +
+            'If you have not set the <code style="background:#222;padding:1px 5px;border-radius:3px">ZOTERO_API_KEY</code> ' +
+            'secret yet, go to your repository &rarr; Settings &rarr; Secrets and variables &rarr; Actions and add it.' +
+            '</p>' +
           '</div>';
         return null;
       }
