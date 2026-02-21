@@ -19,9 +19,7 @@ import sys
 import re
 import json
 import time
-import datetime
 import argparse
-import importlib.util
 from pathlib import Path
 
 _ROOT = Path(__file__).parent.parent
@@ -36,19 +34,10 @@ except ImportError:
     print("ERROR: requests not installed.  Run: pip install requests")
     sys.exit(1)
 
-# ── Load helpers from 04_download_pdfs.py (avoids duplication) ───────────────
-
-_spec = importlib.util.spec_from_file_location(
-    "download_pdfs", Path(__file__).parent / "04_download_pdfs.py"
+from pdf_finder import (
+    PAYWALL_DOMAINS, HTML_DOMAINS,
+    make_session, host, resolve_archive_org,
 )
-_dl = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(_dl)
-
-PAYWALL_DOMAINS = _dl.PAYWALL_DOMAINS
-HTML_DOMAINS    = _dl.HTML_DOMAINS
-make_session    = _dl.make_session
-host            = _dl.host
-resolve_archive_org = _dl.resolve_archive_org
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 
@@ -62,7 +51,8 @@ UNPAYWALL   = 'https://api.unpaywall.org/v2/{doi}?email=scholion-bot@noreply.git
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def now_iso() -> str:
-    return datetime.datetime.utcnow().isoformat(timespec='seconds') + 'Z'
+    from datetime import datetime, timezone
+    return datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 
 
 def load_status() -> dict:
@@ -241,7 +231,9 @@ def scan(force: bool = False) -> None:
                 else:
                     print('unavailable (no url)')
 
-        status['items'][key] = entry
+        status['items'][key]  = entry
+        status['progress_n']  = sum(1 for v in status['items'].values() if v.get('availability'))
+        status['progress_total'] = total
         save_status(status)
         time.sleep(0.3)
 

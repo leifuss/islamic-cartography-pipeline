@@ -36,7 +36,7 @@ jobs:
           cache: pip
 
       - name: Install dependencies
-        run: pip install requests python-dotenv pyzotero
+        run: pip install requests python-dotenv PyPDF2
 
       - name: Create .env
         run: |
