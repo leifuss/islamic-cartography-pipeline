@@ -5,7 +5,7 @@
       "slug": "islamic-cartography",
       "name": "Islamic Cartography",
       "description": "Medieval Islamic maps and geographical literature",
-      "path": ".",
+      "path": "collections/islamic-cartography",
       "source": {
         "library_type": "group",
         "library_id": "5166884",
@@ -13,7 +13,9 @@
         "collection_name": "CambridgeCore_Citation_04Nov2025",
         "collection_ancestors": []
       },
-      "status": "readers_ready"
+      "num_items": 20,
+      "status": "built",
+      "built_at": "2026-02-21T13:00:00"
     },
     {
       "slug": "vicarellobeakers",

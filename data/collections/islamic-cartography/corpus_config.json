@@ -1,0 +1,21 @@
+{
+  "name": "Islamic Cartography",
+  "description": "Medieval Islamic maps and geographical literature",
+  "texts_dir": "texts/",
+  "nav": {
+    "dashboard": {
+      "label": "Dashboard",
+      "href": "../../explore.html?collection=islamic-cartography"
+    },
+    "explorer": {
+      "label": "Explorer",
+      "href": "../../explore.html?collection=islamic-cartography"
+    }
+  },
+  "source": {
+    "library_type": "group",
+    "library_id": "5166884",
+    "collection_key": null,
+    "collection_name": "CambridgeCore_Citation_04Nov2025"
+  }
+}
