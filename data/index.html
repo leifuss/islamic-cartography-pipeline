@@ -240,10 +240,13 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; min-width: 120px; }
   border-radius: 5px;
   background: transparent;
   white-space: nowrap;
-  transition: background .15s;
+  transition: background .15s, color .15s;
   flex-shrink: 0;
+  cursor: pointer;
+  font-family: inherit;
 }
 .btn-add-link:hover { background: #0d1f30; }
+.btn-add-link:disabled { cursor: default; opacity: .8; }
 
 /* ── Info / notice boxes ── */
 .notice-box {
@@ -448,10 +451,72 @@ function isActive(libType, libId, collKey) {
   return false;
 }
 
-function selectUrl(sel) {
-  if (!GITHUB_URL) return '#';
-  return workflowUrl('select-collection.yml') +
-    '?query=' + encodeURIComponent('{"selector":"' + sel + '"}');
+// ── GitHub API: trigger select-collection workflow directly ──────────────────
+
+function getGithubToken() {
+  var token = localStorage.getItem('scholion_gh_pat');
+  if (token) return token;
+  token = prompt(
+    'To add collections directly from this page, enter a GitHub\n' +
+    'Personal Access Token with "Actions: Read and write" permission.\n\n' +
+    'Create a fine-grained token at:\n' +
+    'https://github.com/settings/tokens?type=beta\n\n' +
+    'The token is stored in your browser\'s localStorage only.'
+  );
+  if (token && token.trim()) {
+    token = token.trim();
+    localStorage.setItem('scholion_gh_pat', token);
+    return token;
+  }
+  return null;
+}
+
+function clearGithubToken() {
+  localStorage.removeItem('scholion_gh_pat');
+}
+
+function triggerAdd(selector, btn) {
+  if (!GITHUB_URL) { alert('Cannot determine repository URL.'); return; }
+  var token = getGithubToken();
+  if (!token) return;
+
+  btn.disabled = true;
+  btn.textContent = 'Adding\u2026';
+
+  var apiUrl = GITHUB_URL
+    .replace('https://github.com/', 'https://api.github.com/repos/') +
+    '/actions/workflows/select-collection.yml/dispatches';
+
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer ' + token,
+      'Accept': 'application/vnd.github+v3+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ ref: 'main', inputs: { selector: selector } })
+  })
+  .then(function (r) {
+    if (r.status === 204) {
+      btn.textContent = '\u2713 Workflow triggered \u2014 refresh in ~30 s';
+      btn.style.color = '#5fba7d';
+      btn.style.borderColor = '#2a5a2a';
+    } else if (r.status === 401 || r.status === 403) {
+      clearGithubToken();
+      btn.textContent = 'Auth failed \u2014 click to retry';
+      btn.disabled = false;
+    } else {
+      r.text().then(function (t) {
+        btn.textContent = 'Error ' + r.status;
+        btn.title = t;
+        btn.disabled = false;
+      });
+    }
+  })
+  .catch(function () {
+    btn.textContent = 'Network error \u2014 click to retry';
+    btn.disabled = false;
+  });
 }
 
 function renderDiscoverCard(libType, libId, libName, collKey, collName, numItems) {
@@ -463,8 +528,6 @@ function renderDiscoverCard(libType, libId, libName, collKey, collName, numItems
     ? 'group ' + esc(String(libId))
     : 'personal library';
   const countStr = numItems != null ? numItems + ' items' : '';
-  const addLink = workflowUrl('select-collection.yml');
-
   return '<div class="discover-card">' +
     '<div class="card-name">' + displayName + '</div>' +
     '<div class="card-badges" style="margin-top:0">' +
@@ -474,9 +537,7 @@ function renderDiscoverCard(libType, libId, libName, collKey, collName, numItems
     '<div class="selector-row">' +
       '<span class="selector-chip">' + esc(sel) + '</span>' +
       '<button class="btn-copy" onclick="copySelector(this, \'' + sel.replace(/'/g,"\\'") + '\')" type="button">Copy selector</button>' +
-      (addLink !== '#'
-        ? '<a class="btn-add-link" href="' + esc(addLink) + '" target="_blank" rel="noopener">&#8599; Add via GitHub Actions</a>'
-        : '') +
+      '<button class="btn-add-link" onclick="triggerAdd(\'' + sel.replace(/'/g,"\\'") + '\', this)" type="button">+ Add Collection</button>' +
     '</div>' +
   '</div>';
 }
