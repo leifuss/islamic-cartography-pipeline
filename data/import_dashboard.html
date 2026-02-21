@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Import Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; font-size: 13px;
+         background: #111; color: #d8d8d8; }
+
+  /* ── Header ── */
+  header { background: #1a1a1a; border-bottom: 1px solid #2e2e2e;
+           padding: 14px 24px; display: flex; align-items: center; gap: 16px; }
+  header h1 { font-size: 16px; font-weight: 600; color: #fff; }
+  header p  { font-size: 12px; color: #666; margin-top: 2px; }
+  .site-nav { display: flex; gap: 10px; margin-left: auto; }
+  .site-nav a { font-size: 12px; color: #888; text-decoration: none;
+    padding: 4px 10px; border-radius: 6px; border: 1px solid #333;
+    transition: color .15s, border-color .15s; }
+  .site-nav a:hover { color: #fff; border-color: #666; }
+  .site-nav a.active { color: #fff; border-color: #0071e3; }
+
+  .content { padding: 20px 24px; max-width: 1400px; }
+
+  /* ── Stats bar ── */
+  .stats { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .stat { background: #1a1a1a; border: 1px solid #2e2e2e; border-radius: 10px;
+           padding: 12px 16px; min-width: 100px; }
+  .stat .val { font-size: 26px; font-weight: 700; color: #0071e3; }
+  .stat .lbl { font-size: 11px; color: #666; margin-top: 2px; }
+  .stat.s-oa      .val { color: #34c759; }
+  .stat.s-restr   .val { color: #ff9f0a; }
+  .stat.s-unavail .val { color: #555; }
+  .stat.s-large   .val { color: #bf5af2; }
+  .stat.s-stored  .val { color: #30d158; }
+  .stat.s-done    .val { color: #0071e3; }
+  .stat.s-triage  .val { color: #ff3b30; }
+
+  /* ── Actions panel ── */
+  .actions-panel { background: #1a1a1a; border: 1px solid #2e2e2e;
+                   border-radius: 10px; padding: 16px 20px; margin-bottom: 18px; }
+  .actions-panel h2 { font-size: 13px; font-weight: 600; color: #fff;
+                       margin-bottom: 12px; }
+  .action-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .btn { display: inline-flex; align-items: center; gap: 6px;
+         padding: 8px 16px; border-radius: 8px; font-size: 12px; font-weight: 600;
+         text-decoration: none; border: none; cursor: pointer;
+         transition: opacity .15s; }
+  .btn:hover { opacity: .85; }
+  .btn-primary  { background: #0071e3; color: #fff; }
+  .btn-success  { background: #34c759; color: #000; }
+  .btn-warning  { background: #ff9f0a; color: #000; }
+  .btn-ghost    { background: transparent; color: #888; border: 1px solid #333; }
+  .btn-ghost:hover { color: #fff; border-color: #666; }
+  .action-note { font-size: 11px; color: #555; }
+
+  /* ── Progress banner ── */
+  #progress-banner { display: none; background: #1a1a1a; border: 1px solid #2e2e2e;
+                      border-radius: 10px; padding: 16px 20px; margin-bottom: 18px; }
+  #progress-banner.visible { display: block; }
+  .prog-title { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 8px;
+                 white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .prog-counts { font-size: 12px; color: #888; margin-bottom: 10px; }
+  .prog-bar-wrap { background: #2e2e2e; border-radius: 6px; height: 8px;
+                    overflow: hidden; margin-bottom: 10px; }
+  .prog-bar { height: 100%; border-radius: 6px; background: #0071e3;
+               transition: width 0.6s ease; width: 0%; }
+  .prog-staleness { font-size: 11px; color: #555; }
+  .prog-staleness.warn  { color: #ff9f0a; }
+  .prog-staleness.stall { color: #ff3b30; }
+
+  /* ── Tabs ── */
+  .tabs { display: flex; gap: 2px; margin-bottom: 16px; flex-wrap: wrap; }
+  .tab { padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 500;
+          cursor: pointer; color: #666; border: 1px solid transparent;
+          transition: all .15s; }
+  .tab:hover { color: #fff; }
+  .tab.active { color: #fff; background: #222; border-color: #333; }
+  .tab .count { font-size: 11px; color: #555; margin-left: 4px; }
+  .tab.active .count { color: #888; }
+
+  /* ── Table ── */
+  .table-wrap { background: #1a1a1a; border: 1px solid #2e2e2e;
+                 border-radius: 10px; overflow: hidden; }
+  table { border-collapse: collapse; width: 100%; }
+  th { background: #222; padding: 8px 10px; text-align: left; font-size: 11px;
+        font-weight: 600; color: #555; border-bottom: 1px solid #2e2e2e;
+        white-space: nowrap; }
+  td { padding: 7px 10px; border-bottom: 1px solid #1e1e1e; vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #1e1e1e; }
+  .col-title { max-width: 360px; }
+  .col-title .title-text { color: #d8d8d8; font-size: 12px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    max-width: 340px; display: block; }
+  .col-title .meta { font-size: 11px; color: #555; margin-top: 2px; }
+  .col-num { text-align: right; font-variant-numeric: tabular-nums; color: #555;
+              white-space: nowrap; }
+  .col-actions { white-space: nowrap; }
+  .col-actions a, .col-actions span { display: inline-block; }
+
+  /* badges */
+  .badge { display: inline-block; padding: 2px 7px; border-radius: 4px;
+            font-size: 11px; font-weight: 500; white-space: nowrap; }
+  .b-oa      { background: #0d2d1a; color: #34c759; }
+  .b-restr   { background: #2d1f0d; color: #ff9f0a; }
+  .b-unavail { background: #1e1e1e; color: #555; }
+  .b-stored  { background: #0d2020; color: #30d158; }
+  .b-large   { background: #220d2d; color: #bf5af2; }
+  .b-done    { background: #0d1a2d; color: #0071e3; }
+  .b-triage  { background: #2d0d0d; color: #ff3b30; }
+  .b-import  { background: #2d2000; color: #ffd60a; }
+  .b-pending { background: #1e1e1e; color: #555; }
+
+  /* ── Collection picker ── */
+  .coll-panel { background: #1a1a1a; border: 1px solid #2e2e2e;
+                border-radius: 10px; padding: 12px 20px;
+                margin-bottom: 16px; display: flex; align-items: center;
+                gap: 10px; flex-wrap: wrap; }
+  .coll-label { font-size: 11px; color: #555; font-weight: 600;
+                text-transform: uppercase; letter-spacing: .05em;
+                white-space: nowrap; }
+  .coll-chip  { padding: 5px 12px; border-radius: 6px; font-size: 12px;
+                font-weight: 500; cursor: pointer; border: 1px solid #333;
+                color: #888; background: transparent; transition: all .15s;
+                white-space: nowrap; }
+  .coll-chip:hover  { color: #fff; border-color: #666; }
+  .coll-chip.active { color: #fff; background: #222; border-color: #0071e3; }
+  .coll-chip .chip-status { font-size: 10px; opacity: .55; margin-left: 5px; }
+  .btn-disabled { opacity: .35; pointer-events: none; cursor: not-allowed; }
+
+  /* ── Collections summary panel ── */
+  .colls-summary { background: #1a1a1a; border: 1px solid #2e2e2e;
+                   border-radius: 10px; margin-bottom: 16px; overflow: hidden; }
+  .colls-summary-hdr { display: flex; align-items: center; justify-content: space-between;
+                        padding: 10px 20px; cursor: pointer; user-select: none; }
+  .colls-summary-hdr:hover { background: #1e1e1e; }
+  .colls-summary-hdr h3 { font-size: 12px; font-weight: 600; color: #666;
+                           text-transform: uppercase; letter-spacing: .04em; }
+  .colls-summary-toggle { font-size: 12px; color: #555; }
+  .colls-summary-body { border-top: 1px solid #2e2e2e; }
+  .cs-row { display: flex; align-items: center; gap: 10px; padding: 8px 20px;
+             border-bottom: 1px solid #1e1e1e; cursor: pointer; transition: background .1s; }
+  .cs-row:last-child { border-bottom: none; }
+  .cs-row:hover { background: #1e1e1e; }
+  .cs-row.cs-active { background: #161e30; }
+  .cs-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+  .cs-dot.grey  { background: #3a3a3a; }
+  .cs-dot.amber { background: #ff9f0a; box-shadow: 0 0 5px #ff9f0a55; }
+  .cs-dot.green { background: #34c759; box-shadow: 0 0 5px #34c75955; }
+  .cs-name { font-size: 12px; font-weight: 500; color: #d8d8d8; flex: 1;
+              min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cs-meta { font-size: 11px; color: #555; white-space: nowrap; }
+
+  /* action buttons in table */
+  .tbl-btn { display: inline-block; padding: 3px 9px; border-radius: 5px;
+              font-size: 11px; font-weight: 500; text-decoration: none;
+              border: 1px solid #333; color: #888; cursor: pointer;
+              transition: all .15s; margin-right: 4px; }
+  .tbl-btn:hover { color: #fff; border-color: #666; }
+  .tbl-btn.open-url { color: #0071e3; border-color: #0d2d4d; }
+  .tbl-btn.open-url:hover { background: #0d2d4d; }
+  .tbl-btn.upload   { color: #34c759; border-color: #0d2d1a; }
+  .tbl-btn.upload:hover { background: #0d2d1a; }
+  .tbl-btn.workflow { color: #bf5af2; border-color: #220d2d; }
+  .tbl-btn.workflow:hover { background: #220d2d; }
+
+  /* key chip */
+  .key-chip { font-family: monospace; font-size: 10px; color: #444;
+               background: #222; padding: 1px 5px; border-radius: 3px;
+               user-select: all; cursor: text; }
+
+  /* empty state */
+  .empty { text-align: center; padding: 60px 24px; color: #555; }
+  .empty h2 { font-size: 18px; color: #888; margin-bottom: 10px; }
+  .empty p { max-width: 480px; margin: 0 auto 20px; line-height: 1.6; }
+
+  /* last-updated bar */
+  .refresh-bar { font-size: 11px; color: #444; margin-bottom: 10px; }
+  .refresh-bar a { color: #555; cursor: pointer; text-decoration: underline; }
+  .refresh-bar a:hover { color: #888; }
+
+  /* scan-needed notice */
+  .scan-notice { background: #1a1a1a; border: 1px solid #2e2e2e;
+                  border-radius: 10px; padding: 20px 24px; margin-bottom: 18px;
+                  text-align: center; }
+  .scan-notice p { color: #666; margin-bottom: 12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Import Dashboard</h1>
+    <p>Scan your Zotero library for available PDFs and import them into the corpus</p>
+  </div>
+  <nav class="site-nav">
+    <a href="explore.html">Explorer</a>
+    <a href="dashboard.html">Library</a>
+    <a href="status.html">Status</a>
+    <a href="import_dashboard.html" class="active">Import</a>
+  </nav>
+</header>
+
+<div class="content">
+
+  <!-- Collection picker (populated from data/collections.json) -->
+  <div class="coll-panel" id="coll-panel">
+    <span class="coll-label">Collection:</span>
+    <span id="coll-chips" style="display:flex;gap:8px;flex-wrap:wrap">
+      <span style="color:#444;font-size:12px">Loading…</span>
+    </span>
+  </div>
+
+  <!-- Collections summary (collapsible, populated after collections load) -->
+  <div class="colls-summary" id="colls-summary" style="display:none">
+    <div class="colls-summary-hdr" onclick="toggleSummary()">
+      <h3>Collections Overview</h3>
+      <span class="colls-summary-toggle" id="summary-toggle">▴</span>
+    </div>
+    <div class="colls-summary-body" id="summary-body">
+      <!-- rows inserted by renderCollectionsSummary() -->
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="stats" id="stats">
+    <div class="stat">         <div class="val" id="s-total">—</div>  <div class="lbl">Total items</div></div>
+    <div class="stat s-stored"><div class="val" id="s-stored">—</div> <div class="lbl">Already stored</div></div>
+    <div class="stat s-oa">    <div class="val" id="s-oa">—</div>     <div class="lbl">Open access</div></div>
+    <div class="stat s-restr"> <div class="val" id="s-restr">—</div>  <div class="lbl">Restricted</div></div>
+    <div class="stat s-unavail"><div class="val" id="s-unavail">—</div><div class="lbl">Unavailable</div></div>
+    <div class="stat s-large"> <div class="val" id="s-large">—</div>  <div class="lbl">Large (&gt;100pp)</div></div>
+    <div class="stat s-done">  <div class="val" id="s-done">—</div>   <div class="lbl">Imported</div></div>
+    <div class="stat s-triage"><div class="val" id="s-triage">—</div> <div class="lbl">Triage</div></div>
+  </div>
+
+  <!-- Actions panel -->
+  <div class="actions-panel">
+    <h2>Workflow Actions</h2>
+    <div class="action-row">
+      <a id="link-discover" class="btn btn-ghost"   href="#" target="_blank">
+        ↗ Discover Collections
+      </a>
+      <a id="link-scan"     class="btn btn-primary" href="#" target="_blank">
+        ↗ Scan Availability
+      </a>
+      <a id="link-import"   class="btn btn-success" href="#" target="_blank">
+        ↗ Import Available
+      </a>
+      <a id="link-single"   class="btn btn-ghost"   href="#" target="_blank">
+        ↗ Import single item…
+      </a>
+      <a class="btn btn-warning btn-disabled"
+         title="Import All is disabled during testing — use Import Available for the selected collection">
+        ↗ Import All Collections
+      </a>
+      <span class="action-note" id="action-note">
+        Loading repository info…
+      </span>
+    </div>
+  </div>
+
+  <!-- Scan-needed notice (shown before first scan) -->
+  <div class="scan-notice" id="scan-notice" style="display:none">
+    <p>No availability scan has been run yet. Click <strong>Run: Scan Availability</strong> above to check which PDFs are accessible.</p>
+  </div>
+
+  <!-- Progress banner (shown while import_running) -->
+  <div id="progress-banner">
+    <div class="prog-title" id="prog-title">Importing…</div>
+    <div class="prog-counts" id="prog-counts"></div>
+    <div class="prog-bar-wrap"><div class="prog-bar" id="prog-bar"></div></div>
+    <div class="prog-staleness" id="prog-stale"></div>
+  </div>
+
+  <div class="refresh-bar" id="refresh-bar">
+    Last updated: <span id="last-updated">—</span> &nbsp;·&nbsp;
+    <a onclick="load()">Refresh now</a>
+    &nbsp;·&nbsp; Auto-refreshes every 10 s
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs" id="tabs">
+    <div class="tab active" onclick="setTab('all')">   All        <span class="count" id="tc-all"></span></div>
+    <div class="tab"        onclick="setTab('oa')">    Open Access <span class="count" id="tc-oa"></span></div>
+    <div class="tab"        onclick="setTab('restr')"> Restricted  <span class="count" id="tc-restr"></span></div>
+    <div class="tab"        onclick="setTab('unavail')">Unavailable<span class="count" id="tc-unavail"></span></div>
+    <div class="tab"        onclick="setTab('large')"> Large       <span class="count" id="tc-large"></span></div>
+    <div class="tab"        onclick="setTab('done')">  Imported    <span class="count" id="tc-done"></span></div>
+    <div class="tab"        onclick="setTab('triage')">Triage      <span class="count" id="tc-triage"></span></div>
+  </div>
+
+  <!-- Table -->
+  <div class="table-wrap">
+    <table id="main-table">
+      <thead>
+        <tr>
+          <th style="width:38%">Title</th>
+          <th>Year</th>
+          <th>Pages</th>
+          <th>Availability</th>
+          <th>Import status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr><td colspan="6" class="empty"><p>Loading…</p></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div><!-- /content -->
+
+<script>
+'use strict';
+
+// ── Repo URL derivation ──────────────────────────────────────────────────────
+// Works for standard GitHub Pages: https://{owner}.github.io/{repo}/
+let GITHUB_URL = '';
+let ACTIONS_URL = '';
+
+(function() {
+  const h = window.location.hostname;
+  const m = h.match(/^([^.]+)\.github\.io$/);
+  if (m) {
+    const owner = m[1];
+    const repo  = window.location.pathname.split('/').filter(Boolean)[0] || '';
+    if (repo) {
+      GITHUB_URL  = `https://github.com/${owner}/${repo}`;
+      ACTIONS_URL = `${GITHUB_URL}/actions`;
+      document.getElementById('link-discover').href =
+        `${GITHUB_URL}/actions/workflows/discover-collections.yml`;
+      document.getElementById('link-scan').href   =
+        `${GITHUB_URL}/actions/workflows/import-scan.yml`;
+      document.getElementById('link-import').href =
+        `${GITHUB_URL}/actions/workflows/import-pdfs.yml`;
+      document.getElementById('link-single').href =
+        `${GITHUB_URL}/actions/workflows/import-pdfs.yml`;
+    }
+  } else {
+    // Local / custom domain fallback
+    ['link-discover','link-scan','link-import','link-single'].forEach(id => {
+      document.getElementById(id).removeAttribute('href');
+      document.getElementById(id).style.opacity = '0.4';
+      document.getElementById(id).style.pointerEvents = 'none';
+    });
+    document.getElementById('action-note').textContent =
+      'Open GitHub → Actions to run workflows.';
+  }
+})();
+
+// ── State ─────────────────────────────────────────────────────────────────────
+let INVENTORY          = [];    // from inventory.json
+let IMP_STATUS         = null;  // from import_status.json
+let MERGED             = [];    // combined rows
+let CURRENT_TAB        = 'all';
+let POLL_TIMER         = null;
+let COLLECTIONS         = [];   // from collections.json
+let SELECTED_COLLECTION = null; // currently active collection object
+let COLL_STATUSES       = {};   // keyed by slug → false (404) | status object
+let SUMMARY_OPEN        = true; // collapsible panel state
+const POLL_MS           = 10000;
+
+// ── Collection URL helpers ────────────────────────────────────────────────────
+function collBasePath() {
+  const path = SELECTED_COLLECTION?.path || '.';
+  return path === '.' ? '' : path + '/';
+}
+function getInvUrl()    { return collBasePath() + 'inventory.json?_='      + Date.now(); }
+function getStatusUrl() { return collBasePath() + 'import_status.json?_='  + Date.now(); }
+
+// ── Collection summary helpers ────────────────────────────────────────────────
+function collStatusUrl(c) {
+  const p = c.path || '.';
+  return (p === '.' ? '' : p + '/') + 'import_status.json?_=' + Date.now();
+}
+
+function collColor(slug) {
+  const data = COLL_STATUSES[slug];
+  if (!data) return 'grey';
+  const items   = Object.values(data.items || {});
+  const scanned = items.filter(i => i.availability).length;
+  if (scanned === 0) return 'grey';
+  const done      = items.filter(i => i.import_status === 'done').length;
+  if (done === 0) return 'grey';
+  const oaPending = items.filter(i =>
+    i.availability === 'open_access' &&
+    (!i.import_status || i.import_status === 'pending')
+  ).length;
+  return oaPending > 0 ? 'amber' : 'green';
+}
+
+function collMeta(slug) {
+  const data = COLL_STATUSES[slug];
+  if (data === undefined) return '…';
+  if (!data) return 'not scanned';
+  const items   = Object.values(data.items || {});
+  const scanned = items.filter(i => i.availability).length;
+  if (scanned === 0) return 'not scanned';
+  const oa   = items.filter(i => i.availability === 'open_access').length;
+  const done = items.filter(i => i.import_status === 'done').length;
+  return `${done} imported · ${oa} open access · ${items.length} total`;
+}
+
+async function loadCollectionsSummary() {
+  if (!COLLECTIONS.length) return;
+  // Mark all as loading
+  COLLECTIONS.forEach(c => { if (COLL_STATUSES[c.slug] === undefined) COLL_STATUSES[c.slug] = undefined; });
+  const results = await Promise.allSettled(
+    COLLECTIONS.map(c => fetch(collStatusUrl(c)))
+  );
+  for (let i = 0; i < COLLECTIONS.length; i++) {
+    const c = COLLECTIONS[i];
+    const r = results[i];
+    if (r.status === 'fulfilled' && r.value.ok) {
+      COLL_STATUSES[c.slug] = await r.value.json();
+    } else {
+      COLL_STATUSES[c.slug] = false;
+    }
+  }
+  renderCollectionsSummary();
+  renderCollectionPicker(); // refresh chips with dots
+}
+
+function renderCollectionsSummary() {
+  const panel = document.getElementById('colls-summary');
+  if (!COLLECTIONS.length) { panel.style.display = 'none'; return; }
+  panel.style.display = '';
+  const body = document.getElementById('summary-body');
+  body.innerHTML = COLLECTIONS.map(c => {
+    const color    = collColor(c.slug);
+    const meta     = collMeta(c.slug);
+    const isActive = SELECTED_COLLECTION?.slug === c.slug;
+    return `<div class="cs-row${isActive ? ' cs-active' : ''}" onclick="selectCollection('${esc(c.slug)}')" title="Switch to ${esc(c.name)}">
+      <span class="cs-dot ${color}"></span>
+      <span class="cs-name">${esc(c.name)}</span>
+      <span class="cs-meta">${meta}</span>
+    </div>`;
+  }).join('');
+}
+
+function toggleSummary() {
+  SUMMARY_OPEN = !SUMMARY_OPEN;
+  document.getElementById('summary-body').style.display = SUMMARY_OPEN ? '' : 'none';
+  document.getElementById('summary-toggle').textContent  = SUMMARY_OPEN ? '▴' : '▾';
+}
+
+// ── Collection picker ─────────────────────────────────────────────────────────
+async function loadCollections() {
+  try {
+    const res = await fetch('collections.json?_=' + Date.now());
+    if (!res.ok) return;
+    const data = await res.json();
+    COLLECTIONS = data.collections || [];
+    const defaultSlug = data.default;
+    // Select the default collection (or first if no default)
+    SELECTED_COLLECTION = COLLECTIONS.find(c => c.slug === defaultSlug)
+                       || COLLECTIONS[0]
+                       || null;
+    renderCollectionPicker();
+    renderCollectionsSummary();
+    updateActionNote();
+    loadCollectionsSummary(); // runs in background, re-renders when done
+  } catch(e) {
+    console.warn('Could not load collections.json', e);
+  }
+}
+
+function renderCollectionPicker() {
+  const container = document.getElementById('coll-chips');
+  if (!COLLECTIONS.length) {
+    container.innerHTML =
+      '<span style="color:#444;font-size:12px">No collections — run Discover Collections, then select_collections.py</span>';
+    return;
+  }
+  const DOT_COLOR = { grey: '#3a3a3a', amber: '#ff9f0a', green: '#34c759' };
+  container.innerHTML = COLLECTIONS.map(c => {
+    const active  = SELECTED_COLLECTION?.slug === c.slug ? ' active' : '';
+    const color   = COLL_STATUSES[c.slug] !== undefined ? collColor(c.slug) : 'grey';
+    const dotBg   = DOT_COLOR[color] || '#3a3a3a';
+    const dot     = `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${dotBg};margin-right:5px;vertical-align:middle;flex-shrink:0"></span>`;
+    const hint    = c.status === 'discovered' ? '(not yet synced)' :
+                    c.status === 'pending'    ? '(pending)'        : '';
+    return `<span class="coll-chip${active}" onclick="selectCollection('${esc(c.slug)}')" title="${esc(c.description || c.name)}">
+      ${dot}${esc(c.name)}<span class="chip-status">${hint}</span>
+    </span>`;
+  }).join('');
+}
+
+function selectCollection(slug) {
+  SELECTED_COLLECTION = COLLECTIONS.find(c => c.slug === slug) || null;
+  renderCollectionPicker();
+  renderCollectionsSummary();
+  updateActionNote();
+  load();
+}
+
+function updateActionNote() {
+  const slug = SELECTED_COLLECTION?.slug;
+  document.getElementById('action-note').textContent = GITHUB_URL
+    ? (slug
+        ? `Workflow input — collection_slug: "${slug}"`
+        : 'Workflow results appear here within ~10 s of a commit.')
+    : 'Open GitHub → Actions to run workflows.';
+}
+
+// ── Load ──────────────────────────────────────────────────────────────────────
+async function load() {
+  try {
+    const [invRes, stRes] = await Promise.all([
+      fetch(getInvUrl()),
+      fetch(getStatusUrl()),
+    ]);
+    if (invRes.ok) INVENTORY = await invRes.json();
+    if (stRes.ok)  IMP_STATUS = await stRes.json();
+
+    merge();
+    renderStats();
+    renderProgress();
+    renderTable();
+
+    const lu = IMP_STATUS?.last_updated;
+    document.getElementById('last-updated').textContent =
+      lu ? relTime(lu) : 'never';
+  } catch(e) {
+    console.error('Load error', e);
+  }
+}
+
+// ── Merge inventory + import_status ──────────────────────────────────────────
+function merge() {
+  const statusMap = IMP_STATUS?.items || {};
+  MERGED = INVENTORY.map(item => ({
+    key:            item.key,
+    title:          item.title || item.key,
+    year:           item.year  || '',
+    url:            item.url   || '',
+    pdf_status:     item.pdf_status || '',
+    availability:   statusMap[item.key]?.availability  || '',
+    import_status:  statusMap[item.key]?.import_status || 'pending',
+    pdf_url:        statusMap[item.key]?.pdf_url       || '',
+    page_count:     statusMap[item.key]?.page_count    || null,
+    large_flag:     statusMap[item.key]?.large_flag    || false,
+    failure_reason: statusMap[item.key]?.failure_reason|| '',
+  }));
+}
+
+// ── Stats ─────────────────────────────────────────────────────────────────────
+function renderStats() {
+  const total   = INVENTORY.length;
+  const stored  = MERGED.filter(r => r.availability === 'stored').length;
+  const oa      = MERGED.filter(r => r.availability === 'open_access').length;
+  const restr   = MERGED.filter(r => r.availability === 'restricted').length;
+  const unavail = MERGED.filter(r => r.availability === 'unavailable').length;
+  const large   = MERGED.filter(r => r.large_flag).length;
+  const done    = MERGED.filter(r => r.import_status === 'done').length;
+  const triage  = MERGED.filter(r => r.import_status === 'triage').length;
+
+  setText('s-total',   total   || '—');
+  setText('s-stored',  stored  || (IMP_STATUS ? '0' : '—'));
+  setText('s-oa',      oa      || (IMP_STATUS ? '0' : '—'));
+  setText('s-restr',   restr   || (IMP_STATUS ? '0' : '—'));
+  setText('s-unavail', unavail || (IMP_STATUS ? '0' : '—'));
+  setText('s-large',   large   || (IMP_STATUS ? '0' : '—'));
+  setText('s-done',    done    || (IMP_STATUS ? '0' : '—'));
+  setText('s-triage',  triage  || (IMP_STATUS ? '0' : '—'));
+
+  // Tab counts
+  const tabData = filtered('oa');
+  setText('tc-all',    MERGED.length);
+  setText('tc-oa',     MERGED.filter(r => r.availability === 'open_access').length);
+  setText('tc-restr',  restr);
+  setText('tc-unavail',unavail);
+  setText('tc-large',  large);
+  setText('tc-done',   done);
+  setText('tc-triage', triage);
+
+  // Show scan notice if no scan run yet
+  const hasScan = IMP_STATUS && (IMP_STATUS.last_scan || Object.keys(IMP_STATUS.items||{}).length > 0);
+  document.getElementById('scan-notice').style.display = hasScan ? 'none' : 'block';
+}
+
+// ── Progress banner ───────────────────────────────────────────────────────────
+function renderProgress() {
+  if (!IMP_STATUS) return;
+  const banner = document.getElementById('progress-banner');
+
+  if (!IMP_STATUS.import_running && !IMP_STATUS.current_item) {
+    banner.classList.remove('visible');
+    return;
+  }
+
+  banner.classList.add('visible');
+
+  const n      = IMP_STATUS.progress_n   || 0;
+  const total  = IMP_STATUS.progress_total || 0;
+  const key    = IMP_STATUS.current_item;
+  const title  = key
+    ? (MERGED.find(r => r.key === key)?.title || key)
+    : 'Preparing…';
+  const pct    = total > 0 ? Math.round((n / total) * 100) : 0;
+
+  document.getElementById('prog-title').textContent  = `Importing: "${title}"`;
+  document.getElementById('prog-counts').textContent = `${n} of ${total} items`;
+  document.getElementById('prog-bar').style.width    = pct + '%';
+
+  // Stall detection
+  const lu  = IMP_STATUS.last_updated;
+  const age = lu ? Math.floor((Date.now() - new Date(lu)) / 1000) : 0;
+  const el  = document.getElementById('prog-stale');
+  if (!lu) {
+    el.textContent = '';
+  } else if (age > 300) {
+    el.className   = 'prog-staleness stall';
+    el.textContent = `⚠ Last update ${fmtAge(age)} ago — process may be stalled. Check the Actions log.`;
+  } else if (age > 120) {
+    el.className   = 'prog-staleness warn';
+    el.textContent = `Last update ${fmtAge(age)} ago — still running or may have stalled`;
+  } else {
+    el.className   = 'prog-staleness';
+    el.textContent = `Last update: ${fmtAge(age)} ago`;
+  }
+}
+
+// ── Table ─────────────────────────────────────────────────────────────────────
+function filtered(tab) {
+  tab = tab || CURRENT_TAB;
+  switch (tab) {
+    case 'oa':     return MERGED.filter(r => r.availability === 'open_access');
+    case 'restr':  return MERGED.filter(r => r.availability === 'restricted');
+    case 'unavail':return MERGED.filter(r => r.availability === 'unavailable');
+    case 'large':  return MERGED.filter(r => r.large_flag);
+    case 'done':   return MERGED.filter(r => r.import_status === 'done');
+    case 'triage': return MERGED.filter(r => r.import_status === 'triage');
+    default:       return MERGED;
+  }
+}
+
+function renderTable() {
+  const rows = filtered();
+  const tbody = document.getElementById('table-body');
+
+  if (rows.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="6">
+      <div class="empty">
+        <h2>No items</h2>
+        <p>${CURRENT_TAB === 'all'
+          ? 'Run the Zotero sync workflow to populate your inventory, then scan for availability.'
+          : 'No items in this category yet.'}</p>
+      </div>
+    </td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = rows.map(row => `
+    <tr>
+      <td class="col-title">
+        <span class="title-text" title="${esc(row.title)}">${esc(row.title)}</span>
+        <span class="meta">
+          <span class="key-chip" title="Copy key for workflow dispatch">${esc(row.key)}</span>
+        </span>
+      </td>
+      <td class="col-num">${esc(row.year)}</td>
+      <td class="col-num">${row.page_count != null ? row.page_count + 'pp' : '—'}</td>
+      <td>${availBadge(row)}</td>
+      <td>${statusBadge(row)}</td>
+      <td class="col-actions">${actions(row)}</td>
+    </tr>
+  `).join('');
+}
+
+function availBadge(row) {
+  switch (row.availability) {
+    case 'open_access':  return '<span class="badge b-oa">open access</span>';
+    case 'restricted':   return '<span class="badge b-restr">restricted</span>';
+    case 'unavailable':  return '<span class="badge b-unavail">unavailable</span>';
+    case 'stored':       return '<span class="badge b-stored">stored</span>';
+    default:             return '<span class="badge b-pending">not scanned</span>';
+  }
+}
+
+function statusBadge(row) {
+  switch (row.import_status) {
+    case 'done':      return '<span class="badge b-done">imported</span>';
+    case 'importing': return '<span class="badge b-import">importing…</span>';
+    case 'triage':    return `<span class="badge b-triage" title="${esc(row.failure_reason)}">triage</span>`;
+    case 'skipped':   return '<span class="badge b-unavail">skipped</span>';
+    default:          return '<span class="badge b-pending">pending</span>';
+  }
+}
+
+function actions(row) {
+  const parts = [];
+
+  // Open URL (whenever we have one)
+  const linkUrl = row.pdf_url || row.url;
+  if (linkUrl) {
+    parts.push(`<a class="tbl-btn open-url" href="${esc(linkUrl)}" target="_blank" title="Open URL">Open URL</a>`);
+  }
+
+  // Upload PDF (for restricted / unavailable / triage)
+  if (['restricted', 'unavailable', 'triage'].includes(row.availability)
+      || row.import_status === 'triage') {
+    const uploadUrl = GITHUB_URL
+      ? `${GITHUB_URL}/upload/main/data/pdfs/${row.key}`
+      : '#';
+    if (uploadUrl !== '#') {
+      parts.push(`<a class="tbl-btn upload" href="${uploadUrl}" target="_blank" title="Upload PDF to this path">Upload PDF ↗</a>`);
+    }
+  }
+
+  // Workflow link (for single import / re-import)
+  if (['open_access', 'large_flag', 'triage'].includes(row.availability)
+      || row.large_flag || row.import_status === 'triage') {
+    const wfUrl = GITHUB_URL
+      ? `${GITHUB_URL}/actions/workflows/import-pdfs.yml`
+      : '#';
+    if (wfUrl !== '#') {
+      parts.push(`<a class="tbl-btn workflow" href="${wfUrl}" target="_blank"
+        title="Run import-pdfs.yml workflow for this item (key: ${esc(row.key)})">↗ Workflow</a>`);
+    }
+  }
+
+  return parts.join(' ') || '<span style="color:#444">—</span>';
+}
+
+// ── Tab switching ─────────────────────────────────────────────────────────────
+function setTab(tab) {
+  CURRENT_TAB = tab;
+  document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+  const tabMap = {all:0, oa:1, restr:2, unavail:3, large:4, done:5, triage:6};
+  document.querySelectorAll('.tab')[tabMap[tab] ?? 0].classList.add('active');
+  renderTable();
+}
+
+// ── Utility ───────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s || '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+
+function setText(id, val) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = val;
+}
+
+function relTime(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return iso;
+  const ago = Math.floor((Date.now() - d) / 1000);
+  if (ago < 60)   return `${ago}s ago`;
+  if (ago < 3600) return `${Math.floor(ago/60)}m ago`;
+  return d.toLocaleString();
+}
+
+function fmtAge(sec) {
+  if (sec < 60) return `${sec}s`;
+  return `${Math.floor(sec/60)}m ${sec%60}s`;
+}
+
+// ── Polling ───────────────────────────────────────────────────────────────────
+function startPolling() {
+  if (POLL_TIMER) clearInterval(POLL_TIMER);
+  POLL_TIMER = setInterval(load, POLL_MS);
+}
+
+// Update staleness counter every second without re-fetching
+setInterval(() => { if (IMP_STATUS) renderProgress(); }, 1000);
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    clearInterval(POLL_TIMER);
+  } else {
+    load();
+    startPolling();
+  }
+});
+
+loadCollections().then(() => { load(); startPolling(); });
+</script>
+</body>
+</html>

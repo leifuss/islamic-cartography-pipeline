@@ -1,0 +1,82 @@
+name: Discover Collections
+
+# ── Triggers ──────────────────────────────────────────────────────────────────
+# Run manually to enumerate all Zotero libraries and collections accessible
+# with your API key.  Results are written to data/discovered_collections.json
+# and committed so you can inspect them.
+#
+# After reviewing the output, use select_collections.py (locally) or the
+# Select Collection workflow to add entries to data/collections.json, which
+# powers the Import Dashboard collection picker.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install pyzotero python-dotenv
+
+      - name: Discover collections
+        run: python scripts/discover_collections.py
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+
+      - name: Commit discovered_collections.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/discovered_collections.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to discovered_collections.json."
+          else
+            COUNT=$(python3 -c "
+          import json
+          d = json.load(open('data/discovered_collections.json'))
+          libs = d.get('libraries', [])
+          total = sum(1 for _ in libs)
+          print(f'{total} libraries')
+          " 2>/dev/null || echo "?")
+            git commit -m "discover-collections: ${COUNT} [skip ci]
+
+          Run: ${{ github.run_id }}"
+            git pull --rebase origin main
+            git push
+            echo "discovered_collections.json committed."
+          fi
+
+      - name: Tip — how to select collections
+        run: |
+          echo ""
+          echo "=== Next steps ==="
+          echo "Review the discovery output above, then add collections to"
+          echo "data/collections.json using select_collections.py:"
+          echo ""
+          echo "  # Interactive (run locally):"
+          echo "  python scripts/select_collections.py"
+          echo ""
+          echo "  # Non-interactive (useful if you know the selector):"
+          echo "  python scripts/select_collections.py --add G:<group_id>:<collection_key>"
+          echo "  python scripts/select_collections.py --add G:<group_id>:  # entire group library"
+          echo ""
+          echo "Then push data/collections.json — the Import Dashboard will show the picker."
