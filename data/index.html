@@ -483,11 +483,15 @@ function getGithubToken() {
   var token = localStorage.getItem('scholion_gh_pat');
   if (token) return token;
   token = prompt(
-    'To add collections directly from this page, enter a GitHub\n' +
-    'Personal Access Token with "Actions: Read and write" permission.\n\n' +
-    'Create a fine-grained token at:\n' +
-    'https://github.com/settings/tokens?type=beta\n\n' +
-    'The token is stored in your browser\'s localStorage only.'
+    'Enter a GitHub Personal Access Token to trigger workflows.\n\n' +
+    'Fine-grained token (recommended):\n' +
+    '  github.com/settings/tokens?type=beta\n' +
+    '  → Repository access: select this repo\n' +
+    '  → Permissions → Actions: Read and write\n\n' +
+    'Classic token (simpler):\n' +
+    '  github.com/settings/tokens/new\n' +
+    '  → Scopes: tick "workflow"\n\n' +
+    'The token is stored only in your browser\'s localStorage.'
   );
   if (token && token.trim()) {
     token = token.trim();
@@ -517,7 +521,7 @@ function triggerAdd(selector, btn) {
     method: 'POST',
     headers: {
       'Authorization': 'Bearer ' + token,
-      'Accept': 'application/vnd.github+v3+json',
+      'Accept': 'application/vnd.github+json',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ ref: 'main', inputs: { selector: selector } })
@@ -534,10 +538,16 @@ function triggerAdd(selector, btn) {
         'the workflow finishes (~1 min) and GitHub Pages redeploys (~1\u20132 min). ' +
         'Refresh this page in about <strong>2\u20133 minutes</strong>.';
       btn.parentNode.appendChild(notice);
-    } else if (r.status === 401 || r.status === 403) {
+    } else if (r.status === 401) {
       clearGithubToken();
-      btn.textContent = 'Auth failed \u2014 click to retry';
+      btn.textContent = '+ Add Collection';
       btn.disabled = false;
+      alert('Token rejected (401) \u2014 it may be expired or mistyped. Token cleared; click again to re-enter.');
+    } else if (r.status === 403) {
+      clearGithubToken();
+      btn.textContent = '+ Add Collection';
+      btn.disabled = false;
+      alert('Permission denied (403).\nEnsure your token has:\n\u2022 Fine-grained: Actions \u2192 Read and write, with this repo selected\n\u2022 Classic: "workflow" scope\nToken cleared; click again to re-enter.');
     } else {
       r.text().then(function (t) {
         btn.textContent = 'Error ' + r.status;
@@ -578,7 +588,7 @@ function triggerResync(selector, btn) {
     method: 'POST',
     headers: {
       'Authorization': 'Bearer ' + token,
-      'Accept': 'application/vnd.github+v3+json',
+      'Accept': 'application/vnd.github+json',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ ref: 'main', inputs: { selector: selector } })
@@ -593,11 +603,16 @@ function triggerResync(selector, btn) {
       notice.innerHTML = 'Collection will update after the workflow finishes (~1 min) and Pages redeploys (~1\u20132 min). ' +
         'Refresh in about <strong>2\u20133 minutes</strong>.';
       btn.parentNode.appendChild(notice);
-    } else if (r.status === 401 || r.status === 403) {
+    } else if (r.status === 401) {
       clearGithubToken();
       btn.textContent = '\u21bb Resync from Zotero';
       btn.disabled = false;
-      alert('Auth failed \u2014 token cleared. Click Resync again to re-enter your token.');
+      alert('Token rejected (401) \u2014 it may be expired or mistyped. Token cleared; click again to re-enter.');
+    } else if (r.status === 403) {
+      clearGithubToken();
+      btn.textContent = '\u21bb Resync from Zotero';
+      btn.disabled = false;
+      alert('Permission denied (403).\nEnsure your token has:\n\u2022 Fine-grained: Actions \u2192 Read and write, with this repo selected\n\u2022 Classic: "workflow" scope\nToken cleared; click again to re-enter.');
     } else {
       r.text().then(function (t) {
         btn.textContent = 'Error ' + r.status + ' \u2014 click to retry';
