@@ -162,6 +162,31 @@ header {
 .btn-resync:hover { border-color: var(--accent); color: var(--accent); }
 .btn-resync:disabled { opacity: .5; cursor: default; }
 
+/* ── Scan status on collection cards ── */
+.card-scan {
+  font-size: 11px;
+  color: #555;
+  margin-top: -2px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.card-scan.scan-needed { color: #b08040; }
+.scan-bar-wrap {
+  height: 3px;
+  background: #2a2a2a;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 100%;
+}
+.scan-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width .4s;
+}
+.scan-bar-text { font-size: 10px; color: #666; }
+
 .collection-card {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -420,6 +445,15 @@ function esc(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
+function fmtDate(iso) {
+  if (!iso) return '';
+  try {
+    var d = new Date(iso);
+    return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) +
+           ' ' + d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+  } catch (e) { return iso.slice(0, 16).replace('T', ' '); }
+}
+
 function makeSelector(libType, libId, collKey) {
   const prefix = libType === 'group' ? 'G:' + libId + ':' : 'U::';
   return prefix + (collKey || '');
@@ -458,8 +492,8 @@ function computeInvStats(inv) {
   return { total: inv.length, stored: stored, extracted: extracted, readers: readers };
 }
 
-function renderCollectionCard(c, stats) {
-  var href = 'explore.html?collection=' + encodeURIComponent(c.slug);
+function renderCollectionCard(c, stats, statusData) {
+  var href = 'dashboard.html?collection=' + encodeURIComponent(c.slug);
   var src  = c.source || {};
   var srcLabel = src.library_type === 'group'
     ? 'group ' + src.library_id
@@ -491,6 +525,26 @@ function renderCollectionCard(c, stats) {
     statsHtml = '<div class="card-stats">' + itemCount + ' items</div>';
   }
 
+  // Scan / import progress status
+  var scanHtml = '';
+  if (statusData) {
+    if (statusData.import_running) {
+      var n   = statusData.progress_n     || 0;
+      var tot = statusData.progress_total || 0;
+      var pct = tot ? Math.round(n / tot * 100) : 0;
+      scanHtml = '<div class="card-scan">' +
+        '<div class="scan-bar-wrap"><div class="scan-bar-fill" style="width:' + pct + '%"></div></div>' +
+        '<span class="scan-bar-text">Fetching PDFs: ' + n + '\u202f/\u202f' + tot + '\u2002(' + pct + '%)</span>' +
+        '</div>';
+    } else if (!statusData.scan_complete && statusData.last_scan) {
+      scanHtml = '<div class="card-scan">Scanning\u2026 (started ' + fmtDate(statusData.last_scan) + ')</div>';
+    } else if (statusData.last_scan) {
+      scanHtml = '<div class="card-scan">Scanned ' + fmtDate(statusData.last_scan) + '</div>';
+    } else {
+      scanHtml = '<div class="card-scan scan-needed">Not yet scanned \u2014 run Scan in the dashboard</div>';
+    }
+  }
+
   var card = '<a class="collection-card" href="' + esc(href) + '">' +
     (breadcrumb ? '<div class="card-breadcrumb">' + esc(breadcrumb) + '</div>' : '') +
     '<div class="card-name">' + esc(c.name) + '</div>' +
@@ -500,10 +554,11 @@ function renderCollectionCard(c, stats) {
       (srcLabel ? '<span class="badge b-source">'      + esc(srcLabel) + '</span>' : '') +
     '</div>' +
     statsHtml +
+    scanHtml +
     '<div class="card-meta">' +
       (builtAt ? '<span>' + esc(builtAt) + '</span>' : '') +
     '</div>' +
-    '<div class="card-arrow">Open collection &rarr;</div>' +
+    '<div class="card-arrow">Open dashboard &rarr;</div>' +
   '</a>';
 
   var resyncBtn = sel
@@ -529,24 +584,27 @@ fetch('collections.json')
       return;
     }
 
-    // Show cards immediately with metadata, then enrich with live inventory stats
+    // Show cards immediately with collection metadata (no stats yet)
     grid.innerHTML = ACTIVE_COLLECTIONS.map(function (c) {
-      return renderCollectionCard(c, null);
+      return renderCollectionCard(c, null, null);
     }).join('');
 
-    // Fetch each collection's inventory.json in parallel for live stats
+    // Fetch inventory.json + import_status.json per collection in parallel
+    var ts = '?_=' + Date.now();
     var fetches = ACTIVE_COLLECTIONS.map(function (c) {
-      var invPath = (c.path === '.' || !c.path)
-        ? 'inventory.json'
-        : c.path + '/inventory.json';
-      return fetch(invPath + '?_=' + Date.now())
+      var base = (c.path === '.' || !c.path) ? '' : c.path + '/';
+      var invFetch = fetch(base + 'inventory.json' + ts)
         .then(function (r) { return r.ok ? r.json() : []; })
         .catch(function () { return []; });
+      var stFetch  = fetch(base + 'import_status.json' + ts)
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .catch(function () { return null; });
+      return Promise.all([invFetch, stFetch]);
     });
 
-    Promise.all(fetches).then(function (inventories) {
+    Promise.all(fetches).then(function (results) {
       grid.innerHTML = ACTIVE_COLLECTIONS.map(function (c, i) {
-        return renderCollectionCard(c, computeInvStats(inventories[i]));
+        return renderCollectionCard(c, computeInvStats(results[i][0]), results[i][1]);
       }).join('');
     });
 
