@@ -498,9 +498,16 @@ function triggerAdd(selector, btn) {
   })
   .then(function (r) {
     if (r.status === 204) {
-      btn.textContent = '\u2713 Workflow triggered \u2014 refresh in ~30 s';
+      btn.textContent = '\u2713 Workflow triggered';
       btn.style.color = '#5fba7d';
       btn.style.borderColor = '#2a5a2a';
+      // Add a visible notice below the button's card
+      var notice = document.createElement('div');
+      notice.style.cssText = 'font-size:12px;color:#d4b05a;margin-top:8px;line-height:1.5';
+      notice.innerHTML = 'The collection will appear under <strong>Your Collections</strong> after ' +
+        'the workflow finishes (~1 min) and GitHub Pages redeploys (~1\u20132 min). ' +
+        'Refresh this page in about <strong>2\u20133 minutes</strong>.';
+      btn.parentNode.appendChild(notice);
     } else if (r.status === 401 || r.status === 403) {
       clearGithubToken();
       btn.textContent = 'Auth failed \u2014 click to retry';

@@ -1,11 +1,13 @@
 name: Select Collection
 
 # ── Triggers ──────────────────────────────────────────────────────────────────
-# Run manually to add a Zotero library or collection to data/collections.json.
+# Run manually to add a Zotero library or collection to data/collections.json,
+# then automatically build Phase 1 (metadata sync + explorer) so the collection
+# is immediately browsable.
 #
 # First run "Discover Collections" to generate data/discovered_collections.json,
 # then copy the selector string from the index.html discovery cards and paste it
-# here.
+# here — or use the one-click "Add Collection" button on index.html.
 #
 # Selector format:
 #   G:<group_id>:                  entire group library (e.g. G:5166884:)
@@ -27,7 +29,7 @@ permissions:
 jobs:
   select:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
@@ -68,15 +70,38 @@ jobs:
             exit 1
           fi
 
-      - name: Add collection
-        run: python scripts/select_collections.py --add "${{ inputs.selector }}"
+      - name: Add collection to collections.json
+        id: add
+        run: |
+          python scripts/select_collections.py --add "${{ inputs.selector }}"
 
-      - name: Commit collections.json
+          # Extract the slug of the newly added collection for the build step
+          SLUG=$(python3 -c "
+          import json
+          d = json.load(open('data/collections.json'))
+          cols = d.get('collections', [])
+          # The most recently added collection is the last one
+          if cols:
+              print(cols[-1]['slug'])
+          ")
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "Collection slug: $SLUG"
+
+      - name: Build Phase 1 (metadata sync + explorer)
+        if: steps.add.outputs.slug != ''
+        run: |
+          echo "Building Phase 1 for: ${{ steps.add.outputs.slug }}"
+          python scripts/build_collection.py --slug "${{ steps.add.outputs.slug }}" --phase 1
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+
+      - name: Commit all collection files
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add data/collections.json
+          git add data/collections/ || true
 
           if git diff --staged --quiet; then
             echo "No changes — collection may already be in collections.json."
@@ -86,10 +111,10 @@ jobs:
           d = json.load(open('data/collections.json'))
           print(len(d.get('collections', [])))
           " 2>/dev/null || echo "?")
-            git commit -m "select-collection: added ${{ inputs.selector }} (${COUNT} total)
+            git commit -m "select-collection: added ${{ inputs.selector }} (${COUNT} total, built phase 1)
 
           Run: ${{ github.run_id }}"
             git pull --rebase origin main
             git push
-            echo "collections.json committed with new collection."
+            echo "Collection added and built. Pages will redeploy automatically."
           fi
