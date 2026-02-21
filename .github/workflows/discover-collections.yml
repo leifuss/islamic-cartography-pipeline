@@ -73,7 +73,7 @@ jobs:
           total = sum(1 for _ in libs)
           print(f'{total} libraries')
           " 2>/dev/null || echo "?")
-            git commit -m "discover-collections: ${COUNT} [skip ci]
+            git commit -m "discover-collections: ${COUNT}
 
           Run: ${{ github.run_id }}"
             git pull --rebase origin main
