@@ -4,10 +4,14 @@ on:
   push:
     branches: [main]
   workflow_dispatch:   # allow manual trigger from GitHub UI
-  workflow_run:        # also re-deploy when discover or select commits data
+  workflow_run:        # re-deploy after any workflow that commits data
     workflows:
       - "Discover Collections"
       - "Select Collection"
+      - "Scan PDF availability"
+      - "Import PDFs"
+      - "Extract PDF batch"
+      - "Zotero sync"
     types: [completed]
     branches: [main]
 
