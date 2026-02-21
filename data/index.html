@@ -111,6 +111,25 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; min-width: 120px; }
   width: 100%;
 }
 
+.collection-card-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.btn-resync {
+  align-self: flex-start;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 11px;
+  padding: 4px 10px;
+  transition: border-color .2s, color .2s;
+}
+.btn-resync:hover { border-color: var(--accent); color: var(--accent); }
+.btn-resync:disabled { opacity: .5; cursor: default; }
+
 .collection-card {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -410,8 +429,9 @@ fetch('collections.json')
       };
       const sm = statusMap[c.status] || ['', ''];
       const builtAt = c.built_at ? 'Built ' + c.built_at.slice(0,10) : '';
+      const sel = buildSelector(src);
 
-      return '<a class="collection-card" href="' + esc(href) + '">' +
+      const card = '<a class="collection-card" href="' + esc(href) + '">' +
         '<div class="card-name">' + esc(c.name) + '</div>' +
         '<div class="card-desc">' + esc(c.description || '') + '</div>' +
         '<div class="card-badges">' +
@@ -424,6 +444,12 @@ fetch('collections.json')
         '</div>' +
         '<div class="card-arrow">Open collection &rarr;</div>' +
       '</a>';
+
+      const resyncBtn = sel
+        ? '<button class="btn-resync" onclick="triggerResync(\'' + sel.replace(/'/g, "\\'") + '\', this)" type="button">\u21bb Resync from Zotero</button>'
+        : '';
+
+      return '<div class="collection-card-wrap">' + card + resyncBtn + '</div>';
     }).join('');
 
     // Once active collections are known, render discover section
@@ -515,6 +541,66 @@ function triggerAdd(selector, btn) {
     } else {
       r.text().then(function (t) {
         btn.textContent = 'Error ' + r.status;
+        btn.title = t;
+        btn.disabled = false;
+      });
+    }
+  })
+  .catch(function () {
+    btn.textContent = 'Network error \u2014 click to retry';
+    btn.disabled = false;
+  });
+}
+
+// Reconstruct the selector string from a collection's stored source object.
+function buildSelector(src) {
+  if (!src || !src.library_type) return null;
+  if (src.library_type === 'group')
+    return 'G:' + src.library_id + ':' + (src.collection_key || '');
+  if (src.library_type === 'user')
+    return 'U::' + (src.collection_key || '');
+  return null;
+}
+
+function triggerResync(selector, btn) {
+  if (!GITHUB_URL) { alert('Cannot determine repository URL.'); return; }
+  var token = getGithubToken();
+  if (!token) return;
+
+  btn.disabled = true;
+  btn.textContent = 'Resyncing\u2026';
+
+  var apiUrl = GITHUB_URL
+    .replace('https://github.com/', 'https://api.github.com/repos/') +
+    '/actions/workflows/select-collection.yml/dispatches';
+
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer ' + token,
+      'Accept': 'application/vnd.github+v3+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ ref: 'main', inputs: { selector: selector } })
+  })
+  .then(function (r) {
+    if (r.status === 204) {
+      btn.textContent = '\u2713 Resync triggered';
+      btn.style.color = '#5fba7d';
+      btn.style.borderColor = '#2a5a2a';
+      var notice = document.createElement('div');
+      notice.style.cssText = 'font-size:11px;color:#d4b05a;margin-top:4px;line-height:1.5';
+      notice.innerHTML = 'Collection will update after the workflow finishes (~1 min) and Pages redeploys (~1\u20132 min). ' +
+        'Refresh in about <strong>2\u20133 minutes</strong>.';
+      btn.parentNode.appendChild(notice);
+    } else if (r.status === 401 || r.status === 403) {
+      clearGithubToken();
+      btn.textContent = '\u21bb Resync from Zotero';
+      btn.disabled = false;
+      alert('Auth failed \u2014 token cleared. Click Resync again to re-enter your token.');
+    } else {
+      r.text().then(function (t) {
+        btn.textContent = 'Error ' + r.status + ' \u2014 click to retry';
         btn.title = t;
         btn.disabled = false;
       });
