@@ -27,6 +27,21 @@
       },
       "num_items": 0,
       "status": "pending"
+    },
+    {
+      "slug": "general-case-studies",
+      "name": "General Case studies",
+      "description": "",
+      "path": "collections/general-case-studies",
+      "source": {
+        "library_type": "user",
+        "library_id": "21499",
+        "collection_key": "7EQNGTXE",
+        "collection_name": "General Case studies"
+      },
+      "num_items": 6,
+      "status": "built",
+      "built_at": "2026-02-21T12:37:44"
     }
   ]
 }

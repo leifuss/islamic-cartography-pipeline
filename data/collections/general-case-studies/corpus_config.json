@@ -1,0 +1,21 @@
+{
+  "name": "General Case studies",
+  "description": "",
+  "texts_dir": "texts/",
+  "nav": {
+    "dashboard": {
+      "label": "Dashboard",
+      "href": "../../explore.html?collection=general-case-studies"
+    },
+    "explorer": {
+      "label": "Explorer",
+      "href": "../../explore.html?collection=general-case-studies"
+    }
+  },
+  "source": {
+    "library_type": "user",
+    "library_id": "21499",
+    "collection_key": "7EQNGTXE",
+    "collection_name": "General Case studies"
+  }
+}
