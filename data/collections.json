@@ -42,6 +42,21 @@
       "num_items": 6,
       "status": "built",
       "built_at": "2026-02-21T12:37:44"
+    },
+    {
+      "slug": "vicarellobeakers-2",
+      "name": "VicarelloBeakers",
+      "description": "",
+      "path": "collections/vicarellobeakers-2",
+      "source": {
+        "library_type": "group",
+        "library_id": "225417",
+        "collection_key": "E74VK2Q5",
+        "collection_name": "VicarelloBeakers"
+      },
+      "num_items": 6,
+      "status": "built",
+      "built_at": "2026-02-21T13:01:30"
     }
   ]
 }

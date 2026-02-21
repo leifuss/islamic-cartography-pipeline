@@ -1,0 +1,21 @@
+{
+  "name": "VicarelloBeakers",
+  "description": "",
+  "texts_dir": "texts/",
+  "nav": {
+    "dashboard": {
+      "label": "Dashboard",
+      "href": "../../explore.html?collection=vicarellobeakers-2"
+    },
+    "explorer": {
+      "label": "Explorer",
+      "href": "../../explore.html?collection=vicarellobeakers-2"
+    }
+  },
+  "source": {
+    "library_type": "group",
+    "library_id": "225417",
+    "collection_key": "E74VK2Q5",
+    "collection_name": "VicarelloBeakers"
+  }
+}
