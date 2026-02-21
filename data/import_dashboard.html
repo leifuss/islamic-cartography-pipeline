@@ -130,6 +130,29 @@
   .coll-chip .chip-status { font-size: 10px; opacity: .55; margin-left: 5px; }
   .btn-disabled { opacity: .35; pointer-events: none; cursor: not-allowed; }
 
+  /* ── Collections summary panel ── */
+  .colls-summary { background: #1a1a1a; border: 1px solid #2e2e2e;
+                   border-radius: 10px; margin-bottom: 16px; overflow: hidden; }
+  .colls-summary-hdr { display: flex; align-items: center; justify-content: space-between;
+                        padding: 10px 20px; cursor: pointer; user-select: none; }
+  .colls-summary-hdr:hover { background: #1e1e1e; }
+  .colls-summary-hdr h3 { font-size: 12px; font-weight: 600; color: #666;
+                           text-transform: uppercase; letter-spacing: .04em; }
+  .colls-summary-toggle { font-size: 12px; color: #555; }
+  .colls-summary-body { border-top: 1px solid #2e2e2e; }
+  .cs-row { display: flex; align-items: center; gap: 10px; padding: 8px 20px;
+             border-bottom: 1px solid #1e1e1e; cursor: pointer; transition: background .1s; }
+  .cs-row:last-child { border-bottom: none; }
+  .cs-row:hover { background: #1e1e1e; }
+  .cs-row.cs-active { background: #161e30; }
+  .cs-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+  .cs-dot.grey  { background: #3a3a3a; }
+  .cs-dot.amber { background: #ff9f0a; box-shadow: 0 0 5px #ff9f0a55; }
+  .cs-dot.green { background: #34c759; box-shadow: 0 0 5px #34c75955; }
+  .cs-name { font-size: 12px; font-weight: 500; color: #d8d8d8; flex: 1;
+              min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cs-meta { font-size: 11px; color: #555; white-space: nowrap; }
+
   /* action buttons in table */
   .tbl-btn { display: inline-block; padding: 3px 9px; border-radius: 5px;
               font-size: 11px; font-weight: 500; text-decoration: none;
@@ -188,6 +211,17 @@
     <span id="coll-chips" style="display:flex;gap:8px;flex-wrap:wrap">
       <span style="color:#444;font-size:12px">Loading…</span>
     </span>
+  </div>
+
+  <!-- Collections summary (collapsible, populated after collections load) -->
+  <div class="colls-summary" id="colls-summary" style="display:none">
+    <div class="colls-summary-hdr" onclick="toggleSummary()">
+      <h3>Collections Overview</h3>
+      <span class="colls-summary-toggle" id="summary-toggle">▴</span>
+    </div>
+    <div class="colls-summary-body" id="summary-body">
+      <!-- rows inserted by renderCollectionsSummary() -->
+    </div>
   </div>
 
   <!-- Stats bar -->
@@ -323,9 +357,11 @@ let IMP_STATUS         = null;  // from import_status.json
 let MERGED             = [];    // combined rows
 let CURRENT_TAB        = 'all';
 let POLL_TIMER         = null;
-let COLLECTIONS        = [];    // from collections.json
+let COLLECTIONS         = [];   // from collections.json
 let SELECTED_COLLECTION = null; // currently active collection object
-const POLL_MS          = 10000;
+let COLL_STATUSES       = {};   // keyed by slug → false (404) | status object
+let SUMMARY_OPEN        = true; // collapsible panel state
+const POLL_MS           = 10000;
 
 // ── Collection URL helpers ────────────────────────────────────────────────────
 function collBasePath() {
@@ -334,6 +370,82 @@ function collBasePath() {
 }
 function getInvUrl()    { return collBasePath() + 'inventory.json?_='      + Date.now(); }
 function getStatusUrl() { return collBasePath() + 'import_status.json?_='  + Date.now(); }
+
+// ── Collection summary helpers ────────────────────────────────────────────────
+function collStatusUrl(c) {
+  const p = c.path || '.';
+  return (p === '.' ? '' : p + '/') + 'import_status.json?_=' + Date.now();
+}
+
+function collColor(slug) {
+  const data = COLL_STATUSES[slug];
+  if (!data) return 'grey';
+  const items   = Object.values(data.items || {});
+  const scanned = items.filter(i => i.availability).length;
+  if (scanned === 0) return 'grey';
+  const done      = items.filter(i => i.import_status === 'done').length;
+  if (done === 0) return 'grey';
+  const oaPending = items.filter(i =>
+    i.availability === 'open_access' &&
+    (!i.import_status || i.import_status === 'pending')
+  ).length;
+  return oaPending > 0 ? 'amber' : 'green';
+}
+
+function collMeta(slug) {
+  const data = COLL_STATUSES[slug];
+  if (data === undefined) return '…';
+  if (!data) return 'not scanned';
+  const items   = Object.values(data.items || {});
+  const scanned = items.filter(i => i.availability).length;
+  if (scanned === 0) return 'not scanned';
+  const oa   = items.filter(i => i.availability === 'open_access').length;
+  const done = items.filter(i => i.import_status === 'done').length;
+  return `${done} imported · ${oa} open access · ${items.length} total`;
+}
+
+async function loadCollectionsSummary() {
+  if (!COLLECTIONS.length) return;
+  // Mark all as loading
+  COLLECTIONS.forEach(c => { if (COLL_STATUSES[c.slug] === undefined) COLL_STATUSES[c.slug] = undefined; });
+  const results = await Promise.allSettled(
+    COLLECTIONS.map(c => fetch(collStatusUrl(c)))
+  );
+  for (let i = 0; i < COLLECTIONS.length; i++) {
+    const c = COLLECTIONS[i];
+    const r = results[i];
+    if (r.status === 'fulfilled' && r.value.ok) {
+      COLL_STATUSES[c.slug] = await r.value.json();
+    } else {
+      COLL_STATUSES[c.slug] = false;
+    }
+  }
+  renderCollectionsSummary();
+  renderCollectionPicker(); // refresh chips with dots
+}
+
+function renderCollectionsSummary() {
+  const panel = document.getElementById('colls-summary');
+  if (!COLLECTIONS.length) { panel.style.display = 'none'; return; }
+  panel.style.display = '';
+  const body = document.getElementById('summary-body');
+  body.innerHTML = COLLECTIONS.map(c => {
+    const color    = collColor(c.slug);
+    const meta     = collMeta(c.slug);
+    const isActive = SELECTED_COLLECTION?.slug === c.slug;
+    return `<div class="cs-row${isActive ? ' cs-active' : ''}" onclick="selectCollection('${esc(c.slug)}')" title="Switch to ${esc(c.name)}">
+      <span class="cs-dot ${color}"></span>
+      <span class="cs-name">${esc(c.name)}</span>
+      <span class="cs-meta">${meta}</span>
+    </div>`;
+  }).join('');
+}
+
+function toggleSummary() {
+  SUMMARY_OPEN = !SUMMARY_OPEN;
+  document.getElementById('summary-body').style.display = SUMMARY_OPEN ? '' : 'none';
+  document.getElementById('summary-toggle').textContent  = SUMMARY_OPEN ? '▴' : '▾';
+}
 
 // ── Collection picker ─────────────────────────────────────────────────────────
 async function loadCollections() {
@@ -348,7 +460,9 @@ async function loadCollections() {
                        || COLLECTIONS[0]
                        || null;
     renderCollectionPicker();
+    renderCollectionsSummary();
     updateActionNote();
+    loadCollectionsSummary(); // runs in background, re-renders when done
   } catch(e) {
     console.warn('Could not load collections.json', e);
   }
@@ -361,12 +475,16 @@ function renderCollectionPicker() {
       '<span style="color:#444;font-size:12px">No collections — run Discover Collections, then select_collections.py</span>';
     return;
   }
+  const DOT_COLOR = { grey: '#3a3a3a', amber: '#ff9f0a', green: '#34c759' };
   container.innerHTML = COLLECTIONS.map(c => {
-    const active = SELECTED_COLLECTION?.slug === c.slug ? ' active' : '';
-    const hint   = c.status === 'discovered' ? '(not yet synced)' :
-                   c.status === 'pending'    ? '(pending)'        : '';
+    const active  = SELECTED_COLLECTION?.slug === c.slug ? ' active' : '';
+    const color   = COLL_STATUSES[c.slug] !== undefined ? collColor(c.slug) : 'grey';
+    const dotBg   = DOT_COLOR[color] || '#3a3a3a';
+    const dot     = `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${dotBg};margin-right:5px;vertical-align:middle;flex-shrink:0"></span>`;
+    const hint    = c.status === 'discovered' ? '(not yet synced)' :
+                    c.status === 'pending'    ? '(pending)'        : '';
     return `<span class="coll-chip${active}" onclick="selectCollection('${esc(c.slug)}')" title="${esc(c.description || c.name)}">
-      ${esc(c.name)}<span class="chip-status">${hint}</span>
+      ${dot}${esc(c.name)}<span class="chip-status">${hint}</span>
     </span>`;
   }).join('');
 }
@@ -374,6 +492,7 @@ function renderCollectionPicker() {
 function selectCollection(slug) {
   SELECTED_COLLECTION = COLLECTIONS.find(c => c.slug === slug) || null;
   renderCollectionPicker();
+  renderCollectionsSummary();
   updateActionNote();
   load();
 }
