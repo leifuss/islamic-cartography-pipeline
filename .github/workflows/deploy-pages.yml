@@ -4,6 +4,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:   # allow manual trigger from GitHub UI
+  workflow_run:        # also re-deploy when discover or select commits data
+    workflows:
+      - "Discover Collections"
+      - "Select Collection"
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read

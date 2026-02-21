@@ -86,7 +86,7 @@ jobs:
           d = json.load(open('data/collections.json'))
           print(len(d.get('collections', [])))
           " 2>/dev/null || echo "?")
-            git commit -m "select-collection: added ${{ inputs.selector }} (${COUNT} total) [skip ci]
+            git commit -m "select-collection: added ${{ inputs.selector }} (${COUNT} total)
 
           Run: ${{ github.run_id }}"
             git pull --rebase origin main
