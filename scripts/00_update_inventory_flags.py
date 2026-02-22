@@ -3,10 +3,12 @@
 Sync inventory.json with what's actually on disk.
 
 For each doc in inventory, checks data/texts/{key}/ and updates:
-  extracted     — True if page_texts.json exists
-  has_reader    — True if pages/001.jpg exists (rendered pages available)
-  text_quality  — from meta.json if available
-  page_count    — from meta.json if available (overrides inventory value)
+  extracted          — True if page_texts.json exists
+  has_reader         — True if pages/001.jpg exists (rendered pages available)
+  text_quality       — from meta.json if available
+  page_count         — from meta.json if available (overrides inventory value)
+  extraction_method  — 'google_vision', 'docling', or 'tesseract'; fallback to
+                       'tesseract' for extracted items where meta.json has no method
 
 Also generates reader_meta.json for any doc that has page images but is
 missing the file (needed by the reader SPA for title/author display).
@@ -48,10 +50,11 @@ def check_doc(key: str, texts_root: Path = None) -> dict:
     """Return dict of flags to update in inventory for this key."""
     if texts_root is None:
         texts_root = TEXTS_ROOT
-    doc_dir    = texts_root / key
-    pt_path    = doc_dir / "page_texts.json"
-    meta_path  = doc_dir / "meta.json"
-    page1_path = doc_dir / "pages" / "001.jpg"
+    doc_dir         = texts_root / key
+    pt_path         = doc_dir / "page_texts.json"
+    meta_path       = doc_dir / "meta.json"
+    page1_path      = doc_dir / "pages" / "001.jpg"
+    vision_bak_path = doc_dir / "page_texts.docling.json"
 
     flags: dict = {}
 
@@ -60,6 +63,7 @@ def check_doc(key: str, texts_root: Path = None) -> dict:
     flags["extracted"]  = extracted
     flags["has_reader"] = has_reader
 
+    method = None
     if meta_path.exists():
         try:
             meta = json.loads(meta_path.read_text("utf-8"))
@@ -69,8 +73,17 @@ def check_doc(key: str, texts_root: Path = None) -> dict:
                 flags["chars_per_page"] = meta["chars_per_page"]
             if meta.get("page_count"):
                 flags["page_count"] = meta["page_count"]
+            method = meta.get("method")  # 'docling' or 'tesseract'
         except Exception:
             pass
+
+    # Determine extraction method; Vision API leaves a backup of the original output
+    if vision_bak_path.exists():
+        flags["extraction_method"] = "google_vision"
+    elif method:
+        flags["extraction_method"] = method
+    elif extracted:
+        flags["extraction_method"] = "tesseract"  # default for pre-method items
 
     return flags
 

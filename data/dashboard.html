@@ -78,10 +78,10 @@
   .col-lang    { width: 45px; }
   .col-action  { width: 95px; }
 
-  tr.row-stored-emb td:first-child { border-left: 3px solid #34c759; }
-  tr.row-stored-scan td:first-child { border-left: 3px solid #ff9f0a; }
-  tr.row-url td:first-child  { border-left: 3px solid #636366; }
-  tr.row-none td:first-child { border-left: 3px solid #ff3b30; }
+  tr.row-quality-good    td:first-child { border-left: 3px solid #34c759; }
+  tr.row-quality-suspect td:first-child { border-left: 3px solid #ff9f0a; }
+  tr.row-quality-garbled td:first-child { border-left: 3px solid #ff3b30; }
+  tr.row-quality-none    td:first-child { border-left: 3px solid #d1d1d6; }
 
   .badge { display: inline-block; padding: 2px 7px; border-radius: 4px;
             font-size: 11px; font-weight: 500; white-space: nowrap; }
@@ -243,22 +243,22 @@
 
 <div class="controls">
   <input type="text" id="search" placeholder="Search title, author, key&hellip;" oninput="filterTable()">
-  <label>PDF:
+  <label>PDF source:
     <select id="filter-pdf" onchange="filterTable()">
       <option value="">All</option>
-      <option value="stored">Stored (Zotero)</option>
-      <option value="downloaded">Downloaded</option>
+      <option value="stored">Zotero</option>
+      <option value="downloaded">External</option>
       <option value="url_only">URL only</option>
       <option value="no_attachment">No attachment</option>
       <option value="attachment_missing">Missing</option>
     </select>
   </label>
-  <label>Type:
-    <select id="filter-type" onchange="filterTable()">
+  <label>Quality:
+    <select id="filter-quality" onchange="filterTable()">
       <option value="">All</option>
-      <option value="embedded">Embedded</option>
-      <option value="scanned">Scanned</option>
-      <option value="unknown">Unknown</option>
+      <option value="good">Good</option>
+      <option value="suspect">Suspect</option>
+      <option value="garbled">Garbled</option>
     </select>
   </label>
   <label>Lang:
@@ -292,9 +292,9 @@
   <th class="col-title"   data-col="0" onclick="sortTable(0)">Title<span class="sort-arrow">&#8597;</span></th>
   <th class="col-year"    data-col="1" onclick="sortTable(1)">Year<span class="sort-arrow">&#8597;</span></th>
   <th class="col-authors" data-col="2" onclick="sortTable(2)">Authors<span class="sort-arrow">&#8597;</span></th>
-  <th class="col-pdf"     data-col="3" onclick="sortTable(3)">PDF<span class="sort-arrow">&#8597;</span></th>
+  <th class="col-pdf"     data-col="3" onclick="sortTable(3)">PDF source<span class="sort-arrow">&#8597;</span></th>
   <th class="col-avail"   data-col="4" onclick="sortTable(4)">Avail<span class="sort-arrow">&#8597;</span></th>
-  <th class="col-type"    data-col="5" onclick="sortTable(5)">Type<span class="sort-arrow">&#8597;</span></th>
+  <th class="col-type"    data-col="5" onclick="sortTable(5)">Quality<span class="sort-arrow">&#8597;</span></th>
   <th class="col-pp"      data-col="6" onclick="sortTable(6)">pp<span class="sort-arrow">&#8597;</span></th>
   <th class="col-lang"    data-col="7" onclick="sortTable(7)">Lang<span class="sort-arrow">&#8597;</span></th>
   <th class="col-action"  style="cursor:default"></th>
@@ -408,8 +408,8 @@ function makeDonut(title, segments) {
 function renderDonuts(data) {
   var cnt=function(fn){var n=0;for(var i=0;i<data.length;i++) if(fn(data[i])) n++;return n;};
   document.getElementById('donut-pdf').innerHTML = makeDonut('PDF Coverage',[
-    {label:'Stored',count:cnt(function(r){return r.pdf_status==='stored'}),color:'#34c759'},
-    {label:'Downloaded',count:cnt(function(r){return r.pdf_status==='downloaded'}),color:'#30b0c7'},
+    {label:'Zotero',count:cnt(function(r){return r.pdf_status==='stored'}),color:'#34c759'},
+    {label:'External',count:cnt(function(r){return r.pdf_status==='downloaded'}),color:'#30b0c7'},
     {label:'URL only',count:cnt(function(r){return r.pdf_status==='url_only'}),color:'#8e8e93'},
     {label:'No PDF',count:cnt(function(r){return r.pdf_status==='no_attachment'||r.pdf_status==='attachment_missing'}),color:'#ff3b30'},
   ]);
@@ -461,8 +461,8 @@ function init(inventory, statusData) {
 
 /* ---- Badge helpers ---- */
 function pdfBadge(s) {
-  if (s==='stored')             return '<span class="badge b-stored">&#10003; Stored</span>';
-  if (s==='downloaded')         return '<span class="badge b-stored">&#11015; Downloaded</span>';
+  if (s==='stored')             return '<span class="badge b-stored">&#10003; Zotero</span>';
+  if (s==='downloaded')         return '<span class="badge b-stored">&#11015; External</span>';
   if (s==='url_only')           return '<span class="badge b-url">URL only</span>';
   if (s==='no_attachment')      return '<span class="badge b-missing">None</span>';
   if (s==='attachment_missing') return '<span class="badge b-missing">Missing</span>';
@@ -493,10 +493,10 @@ function recBadge(s) {
   return '<span class="badge b-manual">'+escHtml(s)+'</span>';
 }
 function rowClass(r) {
-  if ((r.pdf_status==='stored'||r.pdf_status==='downloaded')&&r.doc_type==='embedded') return 'row-stored-emb';
-  if ((r.pdf_status==='stored'||r.pdf_status==='downloaded')&&r.doc_type==='scanned')  return 'row-stored-scan';
-  if (r.pdf_status==='url_only') return 'row-url';
-  return 'row-none';
+  if (r.text_quality === 'good')    return 'row-quality-good';
+  if (r.text_quality === 'suspect') return 'row-quality-suspect';
+  if (r.text_quality === 'garbled') return 'row-quality-garbled';
+  return 'row-quality-none';
 }
 function shortAuthors(s) {
   if (!s) return '\u2014';
@@ -516,7 +516,7 @@ function renderRow(r, idx) {
     +'<td>'+shortAuthors(r.authors)+'</td>'
     +'<td>'+pdfBadge(r.pdf_status)+'</td>'
     +'<td>'+availBadge(r._availability)+'</td>'
-    +'<td>'+typeBadge(r.doc_type)+'</td>'
+    +'<td>'+(qualityBadge(r.text_quality||'')||'<span style="color:#d1d1d6">\u2014</span>')+'</td>'
     +'<td class="num">'+(r.page_count!=null?r.page_count:'\u2014')+'</td>'
     +'<td>'+escHtml(r.language||'\u2014')+'</td>'
     +'<td style="white-space:nowrap">'+btn+'</td>'
@@ -529,16 +529,16 @@ var sortCol = -1;
 var sortAsc = true;
 
 function filterTable() {
-  var q     = document.getElementById('search').value.toLowerCase();
-  var pdf   = document.getElementById('filter-pdf').value;
-  var type  = document.getElementById('filter-type').value;
-  var lang  = document.getElementById('filter-lang').value;
-  var avail = document.getElementById('filter-avail').value;
-  var ext   = document.getElementById('filter-ext').value;
+  var q       = document.getElementById('search').value.toLowerCase();
+  var pdf     = document.getElementById('filter-pdf').value;
+  var quality = document.getElementById('filter-quality').value;
+  var lang    = document.getElementById('filter-lang').value;
+  var avail   = document.getElementById('filter-avail').value;
+  var ext     = document.getElementById('filter-ext').value;
   currentData = DATA.filter(function(r){
     if (q && !((r.title||'').toLowerCase().indexOf(q)>=0||(r.authors||'').toLowerCase().indexOf(q)>=0||(r.key||'').toLowerCase().indexOf(q)>=0)) return false;
-    if (pdf  && r.pdf_status !== pdf)  return false;
-    if (type && r.doc_type   !== type) return false;
+    if (pdf     && r.pdf_status    !== pdf)     return false;
+    if (quality && r.text_quality  !== quality) return false;
     if (lang && r.language   !== lang) return false;
     if (avail) {
       if (r._availability!==avail && !(avail==='restricted'&&r._availability==='unknown')) return false;
@@ -556,7 +556,7 @@ function renderTable() {
 }
 
 /* ---- Sort ---- */
-var COL_KEYS = ['title','year','authors','pdf_status','_availability','doc_type','page_count','language'];
+var COL_KEYS = ['title','year','authors','pdf_status','_availability','text_quality','page_count','language'];
 
 function sortTable(col) {
   if (sortCol===col) sortAsc=!sortAsc; else { sortCol=col; sortAsc=true; }
@@ -594,7 +594,8 @@ var FIELD_TIPS = {
   'Pages':'Page range within the publication (e.g. 1\u201315), from Zotero; often blank',
   'PDF pages':'Number of pages in the downloaded PDF',
   'Language':'Detected language of the extracted text',
-  'PDF Status':'Whether a PDF has been obtained: Stored = in Zotero; Downloaded = fetched separately',
+  'PDF Status':'Whether a PDF has been obtained: Zotero = stored in Zotero; External = fetched from the web',
+  'Extraction':'System used to extract text: Docling (native text layer), Tesseract (OCR), or Google Vision API (cloud OCR)',
   'Doc Type':'How the PDF\u2019s text was produced: Embedded = native text; Scanned = image requiring OCR',
   'Text Quality':'Automated quality rating of extracted text (good / suspect / garbled)',
   'Quality Score':'Numerical extraction quality (0\u20131) based on character density; blank until extraction runs',
@@ -665,6 +666,10 @@ function showDocInfo(key) {
   if (r.quality_score!=null) html += dipRow('Quality Score',r.quality_score.toFixed(2));
   if (r.recommendation) html += dipRow('Recommendation',recBadge(r.recommendation));
   html += dipRow('Extracted', r.extracted ? '<span style="color:#1a7f37">Yes</span>' : '<span style="color:#999">No</span>');
+  if (r.extraction_method) {
+    var _em = {docling:'Docling', tesseract:'Tesseract', google_vision:'Google Vision API'}[r.extraction_method] || r.extraction_method;
+    html += dipRow('Extraction', escHtml(_em));
+  }
   if (r._availability) html += dipRow('Availability',availBadge(r._availability));
   if (r.url) html += dipRow('URL','<a href="'+escHtml(r.url)+'" target="_blank" rel="noopener">'+(r.url.length>45?escHtml(r.url.slice(0,45))+'\u2026':escHtml(r.url))+'</a>');
 
