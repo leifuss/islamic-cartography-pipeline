@@ -288,8 +288,8 @@
     &#11045; Extract text
   </button>
   <button class="btn-workflow" id="btnVisionOcr"
-    onclick="triggerWorkflow('vision-ocr.yml', {collection_slug: _collectionSlug, force: 'true'}, this, 'Vision OCR started')"
-    title="Re-OCR all docs using Google Vision API (force mode)">
+    onclick="openVisionModal('', this)"
+    title="Re-OCR docs using Google Vision API">
     &#128065; Vision OCR
   </button>
   <span style="border-left:1px solid #d2d2d7;height:20px;margin:0 4px"></span>
@@ -337,6 +337,60 @@
     <div class="btn-row">
       <button class="btn" onclick="closePdfModal()">Cancel</button>
       <button class="btn btn-primary" id="pdfSubmitBtn" onclick="submitPdf()">Submit</button>
+    </div>
+  </div>
+</div>
+
+<!-- Vision OCR Modal -->
+<div class="modal-overlay" id="visionModalOverlay" onclick="if(event.target===this)closeVisionModal()">
+  <div class="modal">
+    <h3>Vision OCR options</h3>
+    <div class="field">
+      <label>Language hints <span style="font-weight:400;color:#999">(helps Vision with non-Latin scripts)</span></label>
+      <div id="visionLangChecks" style="display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:4px">
+        <label style="display:inline-flex;align-items:center;gap:4px;font-weight:400;font-size:13px;color:#1d1d1f;cursor:pointer">
+          <input type="checkbox" value="ar" class="vision-lang"> Arabic
+        </label>
+        <label style="display:inline-flex;align-items:center;gap:4px;font-weight:400;font-size:13px;color:#1d1d1f;cursor:pointer">
+          <input type="checkbox" value="fa" class="vision-lang"> Persian
+        </label>
+        <label style="display:inline-flex;align-items:center;gap:4px;font-weight:400;font-size:13px;color:#1d1d1f;cursor:pointer">
+          <input type="checkbox" value="en" class="vision-lang"> English
+        </label>
+        <label style="display:inline-flex;align-items:center;gap:4px;font-weight:400;font-size:13px;color:#1d1d1f;cursor:pointer">
+          <input type="checkbox" value="fr" class="vision-lang"> French
+        </label>
+        <label style="display:inline-flex;align-items:center;gap:4px;font-weight:400;font-size:13px;color:#1d1d1f;cursor:pointer">
+          <input type="checkbox" value="de" class="vision-lang"> German
+        </label>
+        <label style="display:inline-flex;align-items:center;gap:4px;font-weight:400;font-size:13px;color:#1d1d1f;cursor:pointer">
+          <input type="checkbox" value="tr" class="vision-lang"> Turkish
+        </label>
+        <label style="display:inline-flex;align-items:center;gap:4px;font-weight:400;font-size:13px;color:#1d1d1f;cursor:pointer">
+          <input type="checkbox" value="el" class="vision-lang"> Greek
+        </label>
+        <label style="display:inline-flex;align-items:center;gap:4px;font-weight:400;font-size:13px;color:#1d1d1f;cursor:pointer">
+          <input type="checkbox" value="la" class="vision-lang"> Latin
+        </label>
+      </div>
+    </div>
+    <div class="field">
+      <label>Upsample <span style="font-weight:400;color:#999">(for low-DPI scans below ~150 DPI)</span></label>
+      <select id="visionUpsample">
+        <option value="1">None (original resolution)</option>
+        <option value="2">2&times; (recommended for low-DPI)</option>
+        <option value="3">3&times; (very low-DPI only)</option>
+      </select>
+    </div>
+    <div class="field">
+      <label style="display:inline-flex;align-items:center;gap:4px;font-weight:400;font-size:13px;color:#1d1d1f;cursor:pointer">
+        <input type="checkbox" id="visionForce" checked> <strong>Force</strong> &mdash; re-process all pages even if text already exists
+      </label>
+    </div>
+    <div id="visionTargetInfo" style="font-size:12px;color:#6e6e73;margin-top:4px"></div>
+    <div class="btn-row">
+      <button class="btn" onclick="closeVisionModal()">Cancel</button>
+      <button class="btn btn-primary" id="visionSubmitBtn" onclick="submitVisionOcr()">Run Vision OCR</button>
     </div>
   </div>
 </div>
@@ -672,7 +726,7 @@ function renderRow(r, idx) {
   var hasPdf = r.pdf_status==='stored'||r.pdf_status==='downloaded';
   var btn = hasPdf
     ? '<button class="btn-row-extract" title="Force re-extraction" onclick="event.stopPropagation();triggerWorkflow(\'extract.yml\',{collection_slug:_collectionSlug,keys:\''+r.key+'\',run_layout:\'true\',force_layout:\'true\'},this,\'Re-extract started\')">\u21ba Extract</button>'
-      +'<button class="btn-row-extract" title="Vision OCR (force)" onclick="event.stopPropagation();triggerWorkflow(\'vision-ocr.yml\',{collection_slug:_collectionSlug,keys:\''+r.key+'\',force:\'true\'},this,\'Vision OCR started\')">\ud83d\udc41 Vision</button>'
+      +'<button class="btn-row-extract" title="Vision OCR" onclick="event.stopPropagation();openVisionModal(\''+r.key+'\',this)">\ud83d\udc41 Vision</button>'
     : '<button class="btn-row-extract" disabled title="No PDF">\u21ba Extract</button>';
   return '<tr class="'+rowClass(r)+'" data-key="'+r.key+'" data-idx="'+idx+'" onclick="showDocInfo(\''+r.key+'\')">'
     +'<td class="title-text">'+escHtml(r.title)+'</td>'
@@ -867,7 +921,7 @@ function showDocInfo(key) {
   html += '<div class="dip-actions">';
   if (r.has_reader) html += '<a href="reader.html?key='+r.key+collectionQS('&')+'">Open Reader</a>';
   if (r.url) html += '<a href="'+escHtml(r.url)+'" target="_blank" rel="noopener" class="secondary">Open URL</a>';
-  if (r.pdf_status==='stored'||r.pdf_status==='downloaded') html += '<button class="btn-row-extract" style="margin-left:6px" onclick="triggerWorkflow(\'vision-ocr.yml\',{collection_slug:_collectionSlug,keys:\''+r.key+'\',force:\'true\'},this,\'Vision OCR started\')">\ud83d\udc41 Vision OCR (force)</button>';
+  if (r.pdf_status==='stored'||r.pdf_status==='downloaded') html += '<button class="btn-row-extract" style="margin-left:6px" onclick="openVisionModal(\''+r.key+'\',this)">\ud83d\udc41 Vision OCR</button>';
   html += '</div>';
 
   body.innerHTML = html;
@@ -963,6 +1017,77 @@ function _pdfStatus(msg, cls) {
   var el = document.getElementById('pdfStatus');
   el.textContent = msg;
   el.className = 'status-msg ' + cls;
+}
+
+/* ---- Vision OCR modal ---- */
+var _visionKeys = '';   // empty = batch (all docs), or space-separated keys
+var _visionBtn  = null; // the button element that opened the modal (for status feedback)
+
+function openVisionModal(keys, btn) {
+  _visionKeys = keys || '';
+  _visionBtn  = btn || null;
+
+  // Pre-check language boxes based on detected languages of target doc(s)
+  var checks = document.querySelectorAll('.vision-lang');
+  checks.forEach(function(cb){ cb.checked = false; });
+
+  var targetDocs = [];
+  if (_visionKeys) {
+    var keyList = _visionKeys.split(/\s+/);
+    targetDocs = DATA.filter(function(r){ return keyList.indexOf(r.key) >= 0; });
+  } else {
+    targetDocs = DATA.filter(function(r){ return r.pdf_status==='stored'||r.pdf_status==='downloaded'; });
+  }
+
+  // Collect detected languages from target docs and pre-check those boxes
+  var detectedLangs = {};
+  targetDocs.forEach(function(r){
+    var langs = Array.isArray(r.language) ? r.language : (r.language ? [r.language] : []);
+    langs.forEach(function(l){ detectedLangs[l] = true; });
+  });
+  checks.forEach(function(cb){
+    if (detectedLangs[cb.value]) cb.checked = true;
+  });
+
+  // Default upsample based on DPI
+  var lowDpi = targetDocs.some(function(r){ return r.pdf_dpi && r.pdf_dpi > 0 && r.pdf_dpi < 200; });
+  document.getElementById('visionUpsample').value = lowDpi ? '2' : '1';
+
+  // Info text
+  var info = document.getElementById('visionTargetInfo');
+  if (_visionKeys) {
+    info.textContent = 'Target: ' + _visionKeys + ' (' + targetDocs.length + ' doc' + (targetDocs.length!==1?'s':'') + ')';
+  } else {
+    info.textContent = 'Target: all ' + targetDocs.length + ' docs with PDFs in this collection';
+  }
+
+  document.getElementById('visionForce').checked = true;
+  document.getElementById('visionSubmitBtn').disabled = false;
+  document.getElementById('visionSubmitBtn').textContent = 'Run Vision OCR';
+  document.getElementById('visionModalOverlay').classList.add('open');
+}
+
+function closeVisionModal() {
+  document.getElementById('visionModalOverlay').classList.remove('open');
+}
+
+function submitVisionOcr() {
+  var inputs = { collection_slug: _collectionSlug };
+  if (_visionKeys) inputs.keys = _visionKeys;
+  if (document.getElementById('visionForce').checked) inputs.force = 'true';
+
+  var upsample = document.getElementById('visionUpsample').value;
+  if (upsample !== '1') inputs.upsample = upsample;
+
+  var langs = [];
+  document.querySelectorAll('.vision-lang:checked').forEach(function(cb){ langs.push(cb.value); });
+  if (langs.length) inputs.lang_hints = langs.join(' ');
+
+  var btn = document.getElementById('visionSubmitBtn');
+  closeVisionModal();
+  // Use the original row button for feedback if available, otherwise use the submit button
+  var feedbackBtn = _visionBtn || btn;
+  triggerWorkflow('vision-ocr.yml', inputs, feedbackBtn, 'Vision OCR started');
 }
 
 function submitPdf() {
