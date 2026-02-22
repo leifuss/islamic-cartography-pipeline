@@ -1,0 +1,135 @@
+name: Vision OCR
+
+# ── Triggers ──────────────────────────────────────────────────────────────────
+# Manual trigger only.
+# Run via: gh workflow run vision-ocr.yml -f keys="KEY1 KEY2"
+# Or via GitHub UI: Actions → Vision OCR → Run workflow
+on:
+  workflow_dispatch:
+    inputs:
+      collection_slug:
+        description: "Collection slug (from data/collections.json) — leave blank for root"
+        required: false
+        default: ""
+      keys:
+        description: "Space-separated doc keys to process (leave blank for all docs with page images)"
+        required: false
+        default: ""
+      pages:
+        description: "Page range (e.g. 1-10 or 1,3,5) — leave blank for all pages"
+        required: false
+        default: ""
+      force:
+        description: "Re-process pages that already have Vision output"
+        type: boolean
+        required: false
+        default: false
+      upsample:
+        description: "Upsample factor (1=none, 2-3 for low-DPI images below ~150 DPI)"
+        required: false
+        default: "1"
+      lang_hints:
+        description: "BCP-47 language hints (space-separated, e.g. 'fa ar en')"
+        required: false
+        default: ""
+
+# ── Permissions ───────────────────────────────────────────────────────────────
+permissions:
+  contents: write    # needed to commit OCR results back
+
+jobs:
+  vision-ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120   # Vision API is fast but large corpora take time
+
+    steps:
+      # ── Checkout ───────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Python setup ─────────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install google-cloud-vision Pillow
+
+      # ── Google Vision credentials ──────────────────────────────────────────
+      - name: Set up Google Vision credentials
+        run: |
+          if [ -z "$GCP_CREDENTIALS_JSON" ]; then
+            echo "::error::GCP_CREDENTIALS_JSON secret is not set."
+            echo "To configure:"
+            echo "  1. Create a GCP service account with Cloud Vision API enabled"
+            echo "  2. Download the JSON key file"
+            echo "  3. Base64-encode it:  base64 -w0 < service-account.json"
+            echo "  4. Add as repo secret: Settings → Secrets → Actions → GCP_CREDENTIALS_JSON"
+            exit 1
+          fi
+          echo "$GCP_CREDENTIALS_JSON" | base64 -d > /tmp/gcp-credentials.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-credentials.json" >> $GITHUB_ENV
+        env:
+          GCP_CREDENTIALS_JSON: ${{ secrets.GCP_CREDENTIALS_JSON }}
+
+      # ── Run Vision OCR ─────────────────────────────────────────────────────
+      - name: Run Vision OCR
+        run: |
+          FLAGS=""
+          [ -n "${{ inputs.collection_slug }}" ] && FLAGS="$FLAGS --collection-slug ${{ inputs.collection_slug }}"
+          [ -n "${{ inputs.keys }}" ]             && FLAGS="$FLAGS --key ${{ inputs.keys }}"
+          [ -n "${{ inputs.pages }}" ]            && FLAGS="$FLAGS --pages ${{ inputs.pages }}"
+          [ "${{ inputs.force }}" = "true" ]      && FLAGS="$FLAGS --force"
+          [ "${{ inputs.upsample }}" != "1" ]     && FLAGS="$FLAGS --upsample ${{ inputs.upsample }}"
+          [ -n "${{ inputs.lang_hints }}" ]       && FLAGS="$FLAGS --lang-hints ${{ inputs.lang_hints }}"
+
+          echo "Running: python scripts/10_ocr_vision.py $FLAGS"
+          python scripts/10_ocr_vision.py $FLAGS
+
+      # ── Commit results ─────────────────────────────────────────────────────
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          SLUG="${{ inputs.collection_slug }}"
+          if [ -n "$SLUG" ]; then
+            COLL_PATH=$(python3 -c "
+          import json
+          data = json.load(open('data/collections.json'))
+          for c in data.get('collections', []):
+              if c['slug'] == '$SLUG':
+                  p = c.get('path', '$SLUG')
+                  print('.' if p == '.' else f'data/{p}')
+                  break
+          ")
+            git add "${COLL_PATH}/texts/" 2>/dev/null || true
+          else
+            git add data/texts/ 2>/dev/null || true
+          fi
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            CHANGED=$(git diff --staged --name-only | grep -c 'page_texts.json' || true)
+            git commit -m "ocr(vision): ${CHANGED} doc(s) processed [skip ci]
+
+          Collection: ${{ inputs.collection_slug || 'root' }}
+          Keys: ${{ inputs.keys || 'all' }}
+          Run: ${{ github.run_id }}"
+            git pull --rebase origin main
+            git push
+            echo "Vision OCR results committed for ${CHANGED} doc(s)."
+          fi
+
+      # ── Cleanup ─────────────────────────────────────────────────────────────
+      - name: Cleanup credentials
+        if: always()
+        run: rm -f /tmp/gcp-credentials.json

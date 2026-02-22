@@ -43,6 +43,21 @@ from pathlib import Path
 _ROOT = Path(__file__).resolve().parent.parent
 _TEXTS = _ROOT / "data" / "texts"
 
+COLLECTIONS_PATH = _ROOT / "data" / "collections.json"
+
+
+def _resolve_collection_texts(slug: str) -> Path:
+    """Resolve the texts directory for a given collection slug."""
+    if not COLLECTIONS_PATH.exists():
+        print(f"ERROR: {COLLECTIONS_PATH} not found"); sys.exit(1)
+    colls = json.loads(COLLECTIONS_PATH.read_text("utf-8"))
+    for c in colls.get("collections", []):
+        if c["slug"] == slug:
+            path = c.get("path", slug)
+            base = _ROOT / "data" if path == "." else _ROOT / "data" / path
+            return base / "texts"
+    print(f"ERROR: collection slug {slug!r} not found"); sys.exit(1)
+
 
 # ── Credentials ────────────────────────────────────────────────────────────
 
@@ -334,6 +349,8 @@ def main():
     parser.add_argument("--lang-hints", nargs="+", default=None, metavar="LANG",
                         help="BCP-47 language hint(s) for Vision (e.g. fa ar en). "
                              "Useful for Arabic/Persian docs.")
+    parser.add_argument("--collection-slug", default=None,
+                        help="Collection slug from data/collections.json")
     args = parser.parse_args()
 
     # Credentials
@@ -344,9 +361,12 @@ def main():
 
     page_nums = parse_page_range(args.pages) if args.pages else None
 
+    # Resolve texts directory (collection-aware)
+    texts_dir = _resolve_collection_texts(args.collection_slug) if args.collection_slug else _TEXTS
+
     # Resolve doc list
     if args.key:
-        doc_dirs = [_TEXTS / k for k in args.key]
+        doc_dirs = [texts_dir / k for k in args.key]
         for d in doc_dirs:
             if not d.exists():
                 print(f"ERROR: {d} does not exist")
@@ -354,11 +374,11 @@ def main():
     else:
         # All docs with a pages/ directory
         doc_dirs = sorted(
-            d for d in _TEXTS.iterdir()
+            d for d in texts_dir.iterdir()
             if d.is_dir() and (d / "pages").exists()
         )
         if not doc_dirs:
-            print("No documents with page images found in data/texts/")
+            print(f"No documents with page images found in {texts_dir}")
             sys.exit(1)
 
     print(f"Documents : {len(doc_dirs)}")

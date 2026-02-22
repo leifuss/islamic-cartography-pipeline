@@ -1,0 +1,142 @@
+name: Backfill PDF DPI
+
+# ── Triggers ──────────────────────────────────────────────────────────────────
+# Manual trigger only.
+# Run via: gh workflow run backfill-dpi.yml
+# Or via GitHub UI: Actions → Backfill PDF DPI → Run workflow
+on:
+  workflow_dispatch:
+    inputs:
+      collection_slug:
+        description: "Collection slug (from data/collections.json) — leave blank for root"
+        required: false
+        default: ""
+
+# ── Permissions ───────────────────────────────────────────────────────────────
+permissions:
+  contents: write    # needed to commit updated inventory.json
+
+jobs:
+  backfill-dpi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # ── Checkout ───────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Python setup ─────────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install pypdfium2 pyzotero python-dotenv
+
+      # ── Set up .env for Zotero PDF fetch ────────────────────────────────────
+      - name: Create .env
+        run: |
+          python3 - << 'PYEOF'
+          import json, os
+          from pathlib import Path
+
+          c = json.load(open('data/corpus_config.json'))
+          z = c.get('source', {}).get('zotero_api', {})
+
+          slug = os.environ.get('COLLECTION_SLUG', '')
+          if slug:
+              try:
+                  colls = json.load(open('data/collections.json'))
+                  coll = next(
+                      (x for x in colls.get('collections', []) if x['slug'] == slug),
+                      None,
+                  )
+                  if coll:
+                      coll_src = coll.get('source', {})
+                      path = coll.get('path', slug)
+                      coll_cfg_path = (
+                          Path('data/corpus_config.json') if path == '.'
+                          else Path('data') / path / 'corpus_config.json'
+                      )
+                      coll_cfg_src = {}
+                      if coll_cfg_path.exists():
+                          coll_cfg = json.load(open(coll_cfg_path))
+                          coll_cfg_src = (
+                              coll_cfg.get('source', {}).get('zotero_api', {})
+                              or coll_cfg.get('source', {})
+                          )
+                      for k in ('library_id', 'library_type', 'collection_name', 'collection_key'):
+                          val = coll_cfg_src.get(k) or coll_src.get(k)
+                          if val:
+                              z[k] = val
+              except Exception as e:
+                  print(f'Warning: could not load collection config: {e}')
+
+          with open('.env', 'w') as f:
+              f.write(f"ZOTERO_API_KEY={os.environ.get('ZOTERO_API_KEY', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_ID={z.get('library_id') or ''}\n")
+              f.write(f"ZOTERO_LIBRARY_TYPE={z.get('library_type', 'user')}\n")
+              col = z.get('collection_name') or ''
+              f.write(f"COLLECTION_NAME={col}\n")
+          PYEOF
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+          COLLECTION_SLUG: ${{ inputs.collection_slug }}
+
+      # ── Fetch PDFs from Zotero ──────────────────────────────────────────────
+      - name: Fetch PDFs from Zotero
+        run: |
+          SLUG_FLAG=""
+          [ -n "${{ inputs.collection_slug }}" ] && SLUG_FLAG="--collection-slug ${{ inputs.collection_slug }}"
+          python scripts/00_stage_pdfs.py $SLUG_FLAG
+          echo "PDFs available:"
+          find data -name "*.pdf" 2>/dev/null | wc -l
+
+      # ── Run DPI backfill ────────────────────────────────────────────────────
+      - name: Run DPI backfill
+        run: |
+          FLAGS=""
+          [ -n "${{ inputs.collection_slug }}" ] && FLAGS="--collection-slug ${{ inputs.collection_slug }}"
+          python scripts/00_backfill_dpi.py $FLAGS
+
+      # ── Commit results ─────────────────────────────────────────────────────
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          SLUG="${{ inputs.collection_slug }}"
+          if [ -n "$SLUG" ]; then
+            COLL_PATH=$(python3 -c "
+          import json
+          data = json.load(open('data/collections.json'))
+          for c in data.get('collections', []):
+              if c['slug'] == '$SLUG':
+                  p = c.get('path', '$SLUG')
+                  print('.' if p == '.' else f'data/{p}')
+                  break
+          ")
+            git add "${COLL_PATH}/inventory.json" 2>/dev/null || true
+          else
+            git add data/inventory.json 2>/dev/null || true
+          fi
+
+          if git diff --staged --quiet; then
+            echo "No DPI changes to commit."
+          else
+            git commit -m "backfill(dpi): update PDF DPI data [skip ci]
+
+          Collection: ${{ inputs.collection_slug || 'root' }}
+          Run: ${{ github.run_id }}"
+            git pull --rebase origin main
+            git push
+            echo "DPI backfill committed."
+          fi
