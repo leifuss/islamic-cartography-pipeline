@@ -314,7 +314,12 @@ def _assign_text_from_image(pil_image, regions: list[dict],
                 break   # assign to first (topmost) containing region
 
     for reg, bucket in zip(regions, word_buckets):
-        reg["text"] = " ".join(bucket)
+        text = " ".join(bucket)
+        # Join words hyphenated across lines: "pro- teins" → "proteins".
+        # Pattern: letter, hyphen, whitespace, lowercase → remove hyphen+space.
+        import re as _re
+        text = _re.sub(r'([A-Za-z])-\s+([a-z])', r'\1\2', text)
+        reg["text"] = text
 
     return regions
 

@@ -1278,10 +1278,13 @@ const GLYPH_MAP = {
   // Extend as more are discovered
 };
 function fixGlyphs(raw) {
-  return raw.replace(/GLYPH\(cmap:([0-9a-fA-F]+)\)/gi, (_, code) => {
-    const ch = GLYPH_MAP[code.toLowerCase()];
-    return ch || `\x02${code}\x02`;   // sentinel for unknown; replaced after esc()
-  });
+  return raw
+    .replace(/\ufffe\r?\n/g, '')   // soft-hyphen line-break artifact from pypdfium2
+    .replace(/\ufffe/g, '')        // remaining soft hyphens
+    .replace(/GLYPH\(cmap:([0-9a-fA-F]+)\)/gi, (_, code) => {
+      const ch = GLYPH_MAP[code.toLowerCase()];
+      return ch || `\x02${code}\x02`;   // sentinel for unknown; replaced after esc()
+    });
 }
 function escWithGlyphs(raw) {
   const fixed = fixGlyphs(raw);
