@@ -1255,7 +1255,19 @@ async function renderFullDoc() {
     fullMd = await resp.text();
     el.innerHTML = '<div class="text-inner">' + buildFullDocHtml(fullMd) + '</div>';
   } catch {
-    el.innerHTML = '<em style="color:#666">Full document text not available.</em>';
+    // docling.md absent (robust/OCR extraction) — assemble from page_texts.json
+    if (pageTexts && Object.keys(pageTexts).length > 0) {
+      const pages = Object.keys(pageTexts).sort((a, b) => +a - +b);
+      const html = pages.map(pg => {
+        const text = pageTexts[pg] || '';
+        if (!text.trim()) return '';
+        return `<div class="page-marker">— PDF page ${pg} —</div>` +
+               '<p>' + mdToHtml(text) + '</p>';
+      }).filter(Boolean).join('<hr class="full-doc-divider">');
+      el.innerHTML = '<div class="text-inner">' + html + '</div>';
+    } else {
+      el.innerHTML = '<em style="color:#666">Full document text not available.</em>';
+    }
   }
 }
 

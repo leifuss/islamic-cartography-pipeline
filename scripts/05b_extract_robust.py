@@ -553,6 +553,8 @@ def main():
         sys.exit(1)
 
     inventory = json.loads(inv_path.read_text("utf-8"))
+    inv_by_key = {r["key"]: r for r in inventory}
+    inv_dirty  = False
 
     # ── Filter candidates ──────────────────────────────────────────────────────
     candidates = [
@@ -646,6 +648,18 @@ def main():
                            title=title, chars=result.get("chars"),
                            pages=result.get("pages"),
                            text_quality=q, elapsed_s=elapsed)
+            # Write extraction results back to inventory so the dashboard reflects them
+            nonlocal inv_dirty
+            if key in inv_by_key:
+                entry = inv_by_key[key]
+                entry["extracted"]    = True
+                entry["doc_type"]     = result.get("doc_type") or entry.get("doc_type")
+                entry["language"]     = result.get("language") or entry.get("language")
+                entry["page_count"]   = result.get("pages")    or entry.get("page_count")
+                entry["text_quality"] = result.get("text_quality")
+                entry["avg_chars_pg"] = cpp
+                entry["quality_score"] = round(cpp / 100, 2)  # normalised chars/pg ÷ 100
+                inv_dirty = True
         elif state == "skip":
             skip_count += 1
             _update_status(status, key, "skip", title=title)
@@ -671,6 +685,12 @@ def main():
                 result = {"key": item["key"], "title": item.get("title", ""),
                           "status": "error", "error": str(exc)}
             _on_done(result)
+
+    # ── Write inventory updates ────────────────────────────────────────────────
+    if inv_dirty and not args.dry_run:
+        inv_path.write_text(json.dumps(inventory, indent=2, ensure_ascii=False),
+                            encoding="utf-8")
+        print(f"\n✓ inventory.json updated with extraction results.")
 
     # ── Summary ────────────────────────────────────────────────────────────────
     q_counts: dict[str, int] = {}
