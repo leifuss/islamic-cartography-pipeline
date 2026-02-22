@@ -229,7 +229,7 @@ jobs:
           ")
             git add "${COLL_PATH}/texts/" "${COLL_PATH}/inventory.json" 2>/dev/null || true
           else
-            git add data/texts/ data/inventory.json
+          git add data/texts/ data/inventory.json 2>/dev/null || true
           fi
 
           if git diff --staged --quiet; then
@@ -323,7 +323,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add data/texts/
+          git add data/texts/ data/collections/*/texts/ 2>/dev/null || true
 
           if git diff --staged --quiet; then
             echo "Nothing new to commit from layout enrichment."
