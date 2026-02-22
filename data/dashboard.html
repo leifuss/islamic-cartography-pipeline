@@ -602,14 +602,15 @@ function computeDifficulty(r) {
   else if (yr < 2000) dateFactor = 2;
   else                dateFactor = 1;
 
-  // DPI factor: lower DPI = harder OCR
+  // DPI factor: lower DPI = harder OCR (0 = born-digital, no penalty)
   var dpi = r.pdf_dpi;
   var dpiFactor;
-  if      (dpi == null) dpiFactor = 3;   // unknown
-  else if (dpi < 150)   dpiFactor = 5;
-  else if (dpi < 200)   dpiFactor = 4;
-  else if (dpi < 300)   dpiFactor = 2;
-  else                  dpiFactor = 1;
+  if      (dpi === 0)    dpiFactor = 1;   // born-digital — no DPI concern
+  else if (dpi == null)  dpiFactor = 3;   // unknown
+  else if (dpi < 150)    dpiFactor = 5;
+  else if (dpi < 200)    dpiFactor = 4;
+  else if (dpi < 300)    dpiFactor = 2;
+  else                   dpiFactor = 1;
 
   // Language factor: script complexity
   var langs = Array.isArray(r.language) ? r.language : (r.language ? [r.language] : []);
@@ -675,7 +676,7 @@ function renderRow(r, idx) {
     +'<td>'+methodBadge(r.extraction_method)+'</td>'
     +'<td>'+(qualityBadge(r.text_quality||'')||'<span style="color:#d1d1d6">\u2014</span>')+'</td>'
     +'<td class="num">'+(r.page_count!=null?r.page_count:'\u2014')+'</td>'
-    +'<td class="num">'+(r.pdf_dpi!=null?r.pdf_dpi:'\u2014')+'</td>'
+    +'<td class="num">'+(r.pdf_dpi!=null?(r.pdf_dpi===0?'n/a':r.pdf_dpi):'\u2014')+'</td>'
     +'<td>'+escHtml(Array.isArray(r.language)?r.language.join(', '):(r.language||'\u2014'))+'</td>'
     +'<td>'+difficultyBadge(r._difficulty)+'</td>'
     +'<td style="white-space:nowrap">'+btn+'</td>'
@@ -840,7 +841,7 @@ function showDocInfo(key) {
     var _em = {docling:'Docling', tesseract:'Tesseract', google_vision:'Google Vision API'}[r.extraction_method] || r.extraction_method;
     html += dipRow('Extraction', escHtml(_em));
   }
-  html += dipRow('PDF DPI', r.pdf_dpi != null ? String(r.pdf_dpi) : '\u2014');
+  html += dipRow('PDF DPI', r.pdf_dpi != null ? (r.pdf_dpi === 0 ? 'n/a (born-digital)' : String(r.pdf_dpi)) : '\u2014');
   if (r._availability) html += dipRow('Availability',availBadge(r._availability));
   html += dipRow('Difficulty', difficultyBadge(r._difficulty));
   if (r.url) html += dipRow('URL','<a href="'+escHtml(r.url)+'" target="_blank" rel="noopener">'+(r.url.length>45?escHtml(r.url.slice(0,45))+'\u2026':escHtml(r.url))+'</a>');

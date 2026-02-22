@@ -142,14 +142,18 @@ def classify_pdf(path: Path) -> dict:
         result['doc_type'] = 'scanned' if avg < _SCANNED_THRESHOLD else 'embedded'
 
         # Estimate DPI from images on the first few sampled pages
-        all_dpis = []
-        for i in sample_indices[:3]:
-            d = _estimate_page_dpi(doc[i])
-            if d is not None:
-                all_dpis.append(d)
-        if all_dpis:
-            all_dpis.sort()
-            result['pdf_dpi'] = round(all_dpis[len(all_dpis) // 2])
+        # Born-digital docs get DPI 0 — no raster resolution to measure
+        if result['doc_type'] == 'embedded':
+            result['pdf_dpi'] = 0
+        else:
+            all_dpis = []
+            for i in sample_indices[:3]:
+                d = _estimate_page_dpi(doc[i])
+                if d is not None:
+                    all_dpis.append(d)
+            if all_dpis:
+                all_dpis.sort()
+                result['pdf_dpi'] = round(all_dpis[len(all_dpis) // 2])
 
         sample_text = ' '.join(texts)[:4000]
         result['lang_sample'] = sample_text[:200].strip()
