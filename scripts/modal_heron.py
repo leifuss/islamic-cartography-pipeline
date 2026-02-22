@@ -196,7 +196,7 @@ def run_heron(keys: list[str] | None = None, github_token: str = "", repo_url: s
         print(f"\n{'═'*50}\nFinal push ({ok_count} enriched, {len(failed)} failed)…", flush=True)
         _push_progress(
             REPO_DIR,
-            f"layout(05c/modal): {ok_count} doc(s) enriched on T4 GPU [skip ci]",
+            f"layout(05c/modal): {ok_count} doc(s) enriched on T4 GPU",
         )
         print("✓ Done.", flush=True)
 
