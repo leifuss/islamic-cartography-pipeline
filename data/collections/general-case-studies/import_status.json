@@ -1,20 +1,20 @@
 {
-  "last_scan": "2026-02-22T01:46:41Z",
+  "last_scan": "2026-02-22T02:01:39Z",
   "scan_complete": true,
   "import_running": false,
   "current_item": null,
   "progress_n": 6,
   "progress_total": 6,
-  "last_updated": "2026-02-22T01:46:41Z",
+  "last_updated": "2026-02-22T02:01:39Z",
   "items": {
     "3NV8QXDS": {
-      "availability": "unavailable",
-      "import_status": "pending",
+      "availability": "stored",
+      "import_status": "done",
       "pdf_url": null,
       "page_count": null,
       "large_flag": false,
       "failure_reason": null,
-      "last_updated": "2026-02-21T18:41:30Z"
+      "last_updated": "2026-02-22T02:01:39Z"
     },
     "4PSTTB2B": {
       "availability": "unavailable",
