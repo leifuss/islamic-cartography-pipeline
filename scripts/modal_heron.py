@@ -47,6 +47,7 @@ image = (
         "transformers",
         "Pillow",
         "pytesseract",
+        "pdfplumber",
         "python-dotenv",
         "tqdm",
         "anthropic",
