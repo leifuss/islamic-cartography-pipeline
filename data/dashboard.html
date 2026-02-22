@@ -287,6 +287,11 @@
     onclick="triggerWorkflow('extract.yml', {collection_slug: _collectionSlug}, this, 'Extraction started')">
     &#11045; Extract text
   </button>
+  <button class="btn-workflow" id="btnVisionOcr"
+    onclick="triggerWorkflow('vision-ocr.yml', {collection_slug: _collectionSlug, force: 'true'}, this, 'Vision OCR started')"
+    title="Re-OCR all docs using Google Vision API (force mode)">
+    &#128065; Vision OCR
+  </button>
   <span style="border-left:1px solid #d2d2d7;height:20px;margin:0 4px"></span>
   <span class="actions-label">Local</span>
   <button class="btn-workflow" id="btnUploadPdf" onclick="openPdfModal()">
@@ -667,6 +672,7 @@ function renderRow(r, idx) {
   var hasPdf = r.pdf_status==='stored'||r.pdf_status==='downloaded';
   var btn = hasPdf
     ? '<button class="btn-row-extract" title="Force re-extraction" onclick="event.stopPropagation();triggerWorkflow(\'extract.yml\',{collection_slug:_collectionSlug,keys:\''+r.key+'\',run_layout:\'true\',force_layout:\'true\'},this,\'Re-extract started\')">\u21ba Extract</button>'
+      +'<button class="btn-row-extract" title="Vision OCR (force)" onclick="event.stopPropagation();triggerWorkflow(\'vision-ocr.yml\',{collection_slug:_collectionSlug,keys:\''+r.key+'\',force:\'true\'},this,\'Vision OCR started\')">\ud83d\udc41 Vision</button>'
     : '<button class="btn-row-extract" disabled title="No PDF">\u21ba Extract</button>';
   return '<tr class="'+rowClass(r)+'" data-key="'+r.key+'" data-idx="'+idx+'" onclick="showDocInfo(\''+r.key+'\')">'
     +'<td class="title-text">'+escHtml(r.title)+'</td>'
@@ -861,6 +867,7 @@ function showDocInfo(key) {
   html += '<div class="dip-actions">';
   if (r.has_reader) html += '<a href="reader.html?key='+r.key+collectionQS('&')+'">Open Reader</a>';
   if (r.url) html += '<a href="'+escHtml(r.url)+'" target="_blank" rel="noopener" class="secondary">Open URL</a>';
+  if (r.pdf_status==='stored'||r.pdf_status==='downloaded') html += '<button class="btn-row-extract" style="margin-left:6px" onclick="triggerWorkflow(\'vision-ocr.yml\',{collection_slug:_collectionSlug,keys:\''+r.key+'\',force:\'true\'},this,\'Vision OCR started\')">\ud83d\udc41 Vision OCR (force)</button>';
   html += '</div>';
 
   body.innerHTML = html;

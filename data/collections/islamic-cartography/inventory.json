@@ -101,7 +101,8 @@
     "pua_ratio": 0.0,
     "replacement_ratio": 0.0,
     "empty_pages": 14,
-    "extraction_method": "tesseract"
+    "extraction_method": "tesseract",
+    "pdf_dpi": 0
   },
   {
     "key": "5FBQAZ7C",
@@ -233,7 +234,8 @@
     "pua_ratio": 0.0,
     "replacement_ratio": 0.0,
     "empty_pages": 15,
-    "extraction_method": "tesseract"
+    "extraction_method": "tesseract",
+    "pdf_dpi": 0
   },
   {
     "key": "ANLFTXVL",
@@ -432,7 +434,8 @@
     "pua_ratio": 0.0,
     "replacement_ratio": 0.0,
     "empty_pages": 3,
-    "extraction_method": "tesseract"
+    "extraction_method": "tesseract",
+    "pdf_dpi": 0
   },
   {
     "key": "MJEJY7UC",
@@ -665,6 +668,7 @@
     "pua_ratio": 0.0,
     "replacement_ratio": 0.0,
     "empty_pages": 36,
-    "extraction_method": "tesseract"
+    "extraction_method": "tesseract",
+    "pdf_dpi": 0
   }
 ]
