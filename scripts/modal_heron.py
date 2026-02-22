@@ -67,7 +67,11 @@ MAX_PAGES       = 800      # skip docs with more page images than this
 
 def _push_progress(repo_dir: Path, message: str) -> bool:
     """Commit any staged changes and push. Returns True if pushed."""
-    subprocess.run(["git", "add", "data/texts/"], cwd=repo_dir, check=True)
+    # Stage layout results from both root texts and collection-specific texts dirs
+    subprocess.run(
+        "git add data/texts/ data/collections/*/texts/ 2>/dev/null || true",
+        cwd=repo_dir, shell=True,
+    )
     diff = subprocess.run(["git", "diff", "--staged", "--quiet"], cwd=repo_dir)
     if diff.returncode == 0:
         return False  # nothing to commit
