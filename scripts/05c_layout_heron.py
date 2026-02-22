@@ -319,84 +319,38 @@ def _assign_text_from_image(pil_image, regions: list[dict],
     return regions
 
 
-# ── Text assignment from embedded PDF text (pypdfium2) ────────────────────────
+# ── Fast text assignment from page_texts.json ─────────────────────────────────
 
 _TEXT_LABELS = {"text", "list_item", "section_header", "title",
                 "caption", "footnote", "formula"}
 
 
-def _assign_text_from_pdf(pdfium_page, regions: list[dict],
-                           img_w_px: int, img_h_px: int) -> bool:
-    """
-    Assign text to Heron regions using pypdfium2 per-region text extraction.
-
-    Uses the same PDF engine as 05b_extract_robust.py (which generates
-    page_texts.json), so spacing and ligatures are always correct.
-
-    For each region, calls textpage.get_text_bounded(left, bottom, right, top)
-    with the region's bbox converted from image-pixel space to PDF-point space
-    (origin bottom-left, y increases upward).
-
-    Returns True if the page has embedded text, False for scanned pages.
-    Modifies regions in-place.
-    """
-    try:
-        textpage  = pdfium_page.get_textpage()
-        page_w    = pdfium_page.get_width()
-        page_h    = pdfium_page.get_height()
-        full_text = textpage.get_text_range() or ""
-    except Exception:
-        for r in regions:
-            r.setdefault("text", "")
-        return False
-
-    if not full_text.strip():
-        textpage.close()
-        for r in regions:
-            r.setdefault("text", "")
-        return False
-
-    # Scale factors: image pixels → PDF points.
-    # Image space: top-left origin, y increases downward.
-    # PDF space:   bottom-left origin, y increases upward.
-    scale_x = page_w / img_w_px
-    scale_y = page_h / img_h_px
-
-    for reg in regions:
-        x1, y1, x2, y2 = reg["bbox_px"]
-        pdf_left   = x1 * scale_x
-        pdf_right  = x2 * scale_x
-        pdf_top    = page_h - y1 * scale_y   # image top    → high PDF y
-        pdf_bottom = page_h - y2 * scale_y   # image bottom → low  PDF y
-        try:
-            text = textpage.get_text_bounded(pdf_left, pdf_bottom,
-                                             pdf_right, pdf_top) or ""
-        except Exception:
-            text = ""
-        reg["text"] = text.strip()
-
-    textpage.close()
-    return True
-
-
-# ── Proportional fallback for scanned / PDF-unavailable pages ─────────────────
-
 def _assign_text_fast(page_text: str, regions: list[dict]) -> list[dict]:
     """
-    Fallback text assignment when no embedded PDF text is available (scanned docs).
+    Fast text assignment using pre-extracted page text (from page_texts.json).
 
-    Slices the flat page text proportionally across text-bearing Heron regions
-    by their bbox pixel height, cutting at whitespace so words are never split.
+    Distributes text to Heron regions by vertical bbox proportion — same
+    reading order assumption as Tesseract, but instant (~0.001 s/page vs
+    ~10–100 s/page for Tesseract image_to_data).
+
+    Good enough for most single/double-column academic layouts. For
+    word-level precision, use --tesseract (which calls _assign_text_from_image).
     """
     if not page_text.strip() or not regions:
         for r in regions:
             r.setdefault("text", "")
         return regions
 
-    text = page_text.strip()
-    total_chars = len(text)
+    # Split into paragraphs (double-newline), fall back to lines
+    paragraphs = [p.strip() for p in _re.split(r'\n\s*\n', page_text) if p.strip()]
+    if not paragraphs:
+        paragraphs = [p.strip() for p in page_text.split('\n') if p.strip()]
+    if not paragraphs:
+        for r in regions:
+            r.setdefault("text", "")
+        return regions
 
-    # Identify text-bearing regions with their bbox pixel heights
+    # Identify text-bearing regions with their bbox heights
     text_slots: list[tuple[int, float]] = []   # (region_index, bbox_height)
     for i, r in enumerate(regions):
         if r["label"] in _TEXT_LABELS:
@@ -405,23 +359,35 @@ def _assign_text_fast(page_text: str, regions: list[dict]) -> list[dict]:
             text_slots.append((i, h))
 
     if not text_slots:
-        regions[0]["text"] = text
+        # No text regions — assign everything to first region
+        regions[0]["text"] = page_text.strip()
         for r in regions[1:]:
             r.setdefault("text", "")
         return regions
 
+    # Distribute paragraphs proportional to region heights
     total_h = sum(h for _, h in text_slots)
-    pos = 0
+    total_chars = sum(len(p) for p in paragraphs)
+
+    assigned_idx = 0
     for slot_num, (reg_idx, h) in enumerate(text_slots):
         if slot_num == len(text_slots) - 1:
-            regions[reg_idx]["text"] = text[pos:].strip()
+            # Last slot gets all remaining paragraphs
+            regions[reg_idx]["text"] = '\n'.join(paragraphs[assigned_idx:])
         else:
-            target_end = pos + int(total_chars * h / total_h)
-            while target_end < len(text) and not text[target_end].isspace():
-                target_end += 1
-            regions[reg_idx]["text"] = text[pos:target_end].strip()
-            pos = target_end
+            target_chars = total_chars * h / total_h
+            chars_so_far = 0
+            end_idx = assigned_idx
+            while end_idx < len(paragraphs) and chars_so_far < target_chars:
+                chars_so_far += len(paragraphs[end_idx])
+                end_idx += 1
+            # Ensure at least one paragraph per region
+            if end_idx == assigned_idx and assigned_idx < len(paragraphs):
+                end_idx = assigned_idx + 1
+            regions[reg_idx]["text"] = '\n'.join(paragraphs[assigned_idx:end_idx])
+            assigned_idx = end_idx
 
+    # Ensure all regions have text key
     for r in regions:
         r.setdefault("text", "")
 
@@ -520,19 +486,12 @@ def enrich_document(item: dict, force: bool = False,
                     max_pages: int = 0) -> dict:
     """
     Enrich layout_elements.json for one document using Heron.
-
-    Text assignment priority (for each page):
-      1. pypdfium2 region crops — crops the PDF page to each Heron region's bbox and
-         calls get_text_bounded().  Same engine as 05b/page_texts.json, so spacing and
-         ligatures are always correct.  Requires item["pdf_path"] and pypdfium2.
-      2. Tesseract OCR — opt-in via --tesseract.  Accurate for scanned pages but
-         slow (~10-100 s/page).
-      3. Proportional fallback — page_texts.json text sliced by bbox height.
-         Used for scanned pages when no PDF is available.
+    Works entirely from saved page images — no PDF required.
 
     Args:
         use_tesseract: If True, use Tesseract image_to_data for word-level text
-            assignment.  Has no effect when pypdfium2 succeeds.
+            assignment (~10-100 s/page). If False (default), use fast assignment
+            from page_texts.json (~0.001 s/page).
         max_pages: Skip docs with more page images than this (0 = no limit).
 
     Returns a result dict: key, status ('ok'|'error'|'skip'), pages, regions, elapsed_s.
@@ -590,23 +549,6 @@ def enrich_document(item: dict, force: bool = False,
     page_sizes = _get_page_sizes(doc_dir, n_pages, img_sizes)
     page_texts = json.loads(pt_path.read_text("utf-8"))
 
-    # ── Open PDF for embedded-text assignment (pypdfium2) ────────────────────
-    pdf_path_str = (item.get("pdf_staged_path") or item.get("pdf_path") or "")
-    if pdf_path_str and not Path(pdf_path_str).is_absolute():
-        pdf_path_str = str(_ROOT / pdf_path_str)
-    pdf_pages: dict[int, object] = {}   # 0-based index → pypdfium2 page
-    _pdfium_doc = None
-    if pdf_path_str and Path(pdf_path_str).exists():
-        try:
-            import pypdfium2 as _pdfium
-            _pdfium_doc = _pdfium.PdfDocument(pdf_path_str)
-            for pi in range(len(_pdfium_doc)):
-                pdf_pages[pi] = _pdfium_doc[pi]
-            print(f"    PDF open for text assignment ({len(pdf_pages)} pages)", flush=True)
-        except Exception as _e:
-            print(f"    ⚠ pypdfium2 unavailable ({_e}) — using proportional fallback", flush=True)
-            _pdfium_doc = None
-
     # ── Run Heron in batches ──────────────────────────────────────────────────
     heron_per_page: dict[int, list[dict]] = {}
     page_indices   = sorted(pil_images.keys())
@@ -632,12 +574,7 @@ def enrich_document(item: dict, force: bool = False,
 
     # ── Assign text and build output ──────────────────────────────────────────
     result_elements: dict[str, object] = {}
-    if use_tesseract:
-        mode_label = "tesseract"
-    elif pdf_pages:
-        mode_label = "pypdfium2 (region crops)"
-    else:
-        mode_label = "proportional fallback"
+    mode_label = "tesseract" if use_tesseract else "fast (page_texts)"
     print(f"    assigning text to {n_pages} pages [{mode_label}] …", flush=True)
 
     for i in range(n_pages):
@@ -663,22 +600,14 @@ def enrich_document(item: dict, force: bool = False,
         for r in regions:
             r.setdefault("bbox_px", r.get("bbox_px", [0, 0, 1, 1]))
 
-        # Text assignment priority:
-        #   1. pypdfium2 region crops (embedded PDFs — same engine as page_texts.json)
-        #   2. Tesseract OCR (opt-in; works for scanned pages too)
-        #   3. Proportional fallback (scanned, no PDF available)
-        w_px, h_px = pil_img.size
+        # Text assignment: fast (default) or Tesseract (opt-in)
         if use_tesseract:
             _assign_text_from_image(pil_img, regions, lang=tess_lang)
-        elif i in pdf_pages:
-            ok = _assign_text_from_pdf(pdf_pages[i], regions, w_px, h_px)
-            if not ok:
-                # Scanned page — no embedded words; fall back to proportional
-                _assign_text_fast(page_text, regions)
         else:
             _assign_text_fast(page_text, regions)
 
         # Convert bboxes to PDF point space
+        w_px, h_px = pil_img.size
         page_regions_out = []
         for reg in regions:
             x1, y1, x2, y2 = reg["bbox_px"]
@@ -689,13 +618,6 @@ def enrich_document(item: dict, force: bool = False,
             })
 
         result_elements[page_num] = page_regions_out
-
-    # ── Close PDF (if opened) ──────────────────────────────────────────────────
-    if _pdfium_doc is not None:
-        try:
-            _pdfium_doc.close()
-        except Exception:
-            pass
 
     # ── Write enriched layout_elements.json ───────────────────────────────────
     result_elements["_page_sizes"]      = page_sizes
@@ -749,14 +671,7 @@ def main():
     parser.add_argument("--max-pages", type=int, default=0,
                         help="Skip docs with more page images than this (0 = no limit)")
     parser.add_argument("--inventory", default="data/inventory.json")
-    parser.add_argument("--texts-root", default="data/texts",
-                        help="Root directory containing per-key text subdirs "
-                             "(default: data/texts; use data/collections/SLUG/texts "
-                             "for collection items)")
     args = parser.parse_args()
-
-    global TEXTS_ROOT
-    TEXTS_ROOT = _ROOT / args.texts_root
 
     inv_path  = _ROOT / args.inventory
     inventory = json.loads(inv_path.read_text("utf-8"))
