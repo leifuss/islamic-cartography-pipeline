@@ -118,7 +118,8 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            CHANGED=$(git diff --staged --name-only | grep -c 'page_texts.json' || true)
+            # Count distinct doc keys (directories) with staged changes
+            CHANGED=$(git diff --staged --name-only | grep -oP 'texts/\K[^/]+' | sort -u | wc -l)
             git commit -m "ocr(vision): ${CHANGED} doc(s) processed [skip ci]
 
           Collection: ${{ inputs.collection_slug || 'root' }}

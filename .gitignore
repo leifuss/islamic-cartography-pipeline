@@ -5,6 +5,7 @@ data/collections/*/pdfs/
 # Exclude bulky/redundant files inside texts/ but keep the rest
 data/texts/*/docling.md
 data/texts/*/*.docling.json
+data/collections/*/texts/*/*.docling.json
 data/raw/
 data/extracted/
 data/test_samples/
