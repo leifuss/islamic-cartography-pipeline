@@ -277,7 +277,7 @@ def generate_collection_explorer(coll_entry: dict, inventory: list) -> None:
     try:
         sys.path.insert(0, str(_ROOT / 'scripts'))
         from generate_explore import build_html
-        html = build_html(inventory, data_dir=data_dir)
+        html = build_html(inventory, data_dir=data_dir, collection_slug=slug)
         explore_path = data_dir / 'explore.html'
         explore_path.write_text(html, encoding='utf-8')
         log.info(f"  Wrote {explore_path} ({explore_path.stat().st_size // 1024} KB)")

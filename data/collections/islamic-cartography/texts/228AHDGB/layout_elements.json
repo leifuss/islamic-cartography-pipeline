@@ -2,7 +2,7 @@
   "1": [
     {
       "label": "section_header",
-      "text": "I.13\nGEOGRAPHY AND MAPMAKING\nUNTIL 700/1300\nMichael Bonner\nGeography and cartography together constituted an area of high achievement for the Islamicate\nworld. They did not, however, enjoy full scientific status in the manner of, say, geometry and\nastronomy; for instance, they did not appear in the classification of the sciences by the philo-\nsopher al-Fārābi (d. 339/950-1). Of course, geography was not the only discipline with such\nambivalent status; history in particular offers parallels (Rosenthal 1968, 30-53). All the same,\nIslamicate geography achieved a striking \"style\" and \"look\" of its own, with the visual beauty of\nits maps, the refinement of its texts, its love of precise observation and its far-ranging curiosity. It\nalso presented an original blend of what we might call, in our modern terms, the Islamic sciences\nand humanities, raising interesting questions about each of these.\nI.13.1\nOrigins\nIt would be difficult to say, at least in a brief summary, how the Arabs of the pre-Islamic era re-\npresented the physical world to themselves. To begin with, their most precious cultural resource,\ntheir poetry, required a vast knowledge of Arabian topography and place-names, from both poets\nand audiences. Beginning in the late 20s-early 30s/630s, however, the great conquests and the\nensuing exodus from Arabia had the effect of blurring, if not erasing this knowledge. The Arabic\nphilologists of the Umayyad and early Abbasid eras accordingly compiled massive amounts of\ninformation about Arabian toponyms, and much of this later found its way into the geograph-\nical literature (Kramers 1954a, 84). However, our fullest information in this area comes from\nthe Qur'an. Here the earth is flat, with the sky raised over it as a \"guarded roof\" (saqf mahfuz.\n21:32) and the mountains serving to keep it stable (13:3, 15:19, 50:7, 79:30, etc.). God has\nalso fashioned the sky into seven heavens (samāwāt, 2:29, 41:12, etc.) or roads or tracts (tara'iq,\n23:17). On the whole, this Qur'anic cosmology accords with archaic Near Eastern mythology\nand tradition. In the following centuries, it received amplification in ḥadīth (Prophetical Tradi-\ntion) and in tafsir (scriptural exegesis). However, it remained mostly separate from the literature\ndescribed here as 'geographical,' despite attempts at reconciling the two (Ibn al-Faqih 1885, 3;\nMuqaddasi 1877, 10-19).\nThis geographical literature began in circumstances that remain obscure to us for several\nreasons, including the fact that none of it is extant from before the later 2nd/8th century, as\nis the case for Arabic literature more generally. We do have references to mapping during the\nDOI: 10.4324/9781315170718-15\n166",
+      "text": "1.13",
       "bbox": {
         "l": 348.0,
         "b": 881.0,
@@ -12,7 +12,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "GEOGRAPHY AND MAPMAKING UNTIL 700/1300",
       "bbox": {
         "l": 105.0,
         "b": 794.0,
@@ -22,7 +22,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Michael Bonner",
       "bbox": {
         "l": 315.0,
         "b": 741.0,
@@ -42,7 +42,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Geography and cartography together constituted an area of high achievement for the Islamicate world. They did not, however, enjoy fall scientific status in the manner of, say, geometry and astronomy; for instance, they did not appear in the classification of the sciences by the philo- sopher al-Farabi (d. 339/950-1). Of course, geography was not the only discipline with such ambivalent status; history in particular offers parallels (Rosenthal 1968, 30-53). All the same, Islamicate geography achieved a striking “style” and “look” of its own, with the visual beauty of its maps, the refinement of its texts, its love of precise observation and its far-ranging curiosity. It also presented an original blend of what we might call, in our modern terms, the Islamic sciences and humanities, raising interesting questions about each of these.",
       "bbox": {
         "l": 101.0,
         "b": 484.0,
@@ -52,7 +52,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "1.13.1 Origins",
       "bbox": {
         "l": 321.0,
         "b": 439.0,
@@ -62,7 +62,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "It would be difficult to say, at least in a brief summary, how the Arabs of the pre-Islamic era re- presented the physical world to themselves. To begin with, their most precious cultural resource, their poetry, required a vast knowledge of Arabian topography and place-names, from both poets and audiences. Beginning in the late 20s-early 30s/630s, however, the great conquests and the ensuing exodus from Arabia had the effect of blurring, ifnot erasing this knowledge. The Arabic philologists of the Umayyad and early Abbasid eras accordingly compiled massive amounts of information about Arabian toponyms, and much of this later found its way into the geograph- ical literature (Kramers 1954a, 84). However, our fullest information in this area comes fom the Quran. Here the earth is flat, with the sky raised over it as a “guarded roof” (sagf mabfz, 21:32) and the mountains serving to keep it stable (13:3, 15:19, 50:7, 79:30, etc:). God has also fashioned the sky into seven heavens (samdwit, 2:29, 41:12, etc.) or roads or tracts (tard’ig, 23:17). On the whole, this Qur’nic cosmology accords with archaic Near Eastern mythology and tradition. In the following centuries, it received amplification in badith (Prophetical Tradi- tion) and in taftr (scriptural exegesis). However, it remained mostly separate from the literature described here as ‘geographical, despite attempts at reconciling the two (Ibn al-Fagih 1885, 3; Mugaddast 1877, 10-19)",
       "bbox": {
         "l": 101.0,
         "b": 142.0,
@@ -72,7 +72,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘This geographical literature began in circumstances that remain obscure to us for several reasons, including the fact that none of it is extant from before the later 2nd/8th century, as is the case for Arabic literature more generally. We do have references to mapping during the",
       "bbox": {
         "l": 101.0,
         "b": 88.0,
@@ -82,7 +82,7 @@
     },
     {
       "label": "key_value",
-      "text": "",
+      "text": "DOI: 10.4324/9781315170718-15",
       "bbox": {
         "l": 102.0,
         "b": 53.0,
@@ -102,7 +102,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "16",
       "bbox": {
         "l": 632.0,
         "b": 54.0,
@@ -114,7 +114,7 @@
   "2": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Geography and mapmaking until 700/1300",
       "bbox": {
         "l": 250.0,
         "b": 979.0,
@@ -124,7 +124,7 @@
     },
     {
       "label": "text",
-      "text": "Geography and mapmaking until 700/1300\nUmayyad and early Abbasid eras, apparently for practical purposes. We know, for example,\nabout maps of Daylam (Ibn al-Faqih 1885, 283) and Bukhara (Tabari 2010, 2:1199), commis-\nsioned by the Umayyad governor al-Hajjaj (d. 95/714), and a map of the swamps of lower Iraq\n(Baladhuri 1866, 371; Tibbetts 1992a, 90) commissioned by the Abbasid Caliph al-Mansur (r.\n136-158/754-775). All in all, however, two things stand out about this literature's early history.\nThe first is its composite nature: it emerged from a variety of activities corresponding to a variety\nof needs. The second is that it began with acts of translation, not only from Greek but also from\nSanskrit, Middle Persian (Pahlavi) and Syriac.\nThe first important encounter was with India. It appears that several Indians learned in astro-\nnomy, astrology and cosmography visited the court of Caliph al-Mansur (r. 136-158/754-775),\nknown for his interest in astrology. As a result, we have some of the earliest translations (or adap-\ntations) of foreign works into Arabic (Gutas 1998[CB], 24-5). The Sanskrit word siddhanta,\nappearing in the titles of several astronomical works, entered Arabic as sindhind. Although the Ara-\nbic works in this tradition are now lost, Indian ideas retained a place in Islamicate geography and,\nafterward, in its Latin counterpart. These include the notion of a \"cupola of the earth,\" a summit\nor center of the known and inhabited hemisphere of the world, located at a place in central India\nequally distant from the northern, southern, eastern and western limits of this hemisphere.\nAs the translators churned out more and more scientific texts, Arabic speakers interested\nin astronomy, astrology, geography and mapmaking shifted their attention to the Greek he-\nritage in these fields, which Claudius Ptolemy of Alexandria (c. 100-170) came to represent\npractically all by himself. Ptolemy's Megale Syntaxis was translated early on into Arabic, as\nal-Majisti (from which came its later Latin title, Almagest). In this astronomical work, Ptolemy\nhad devoted a section to the division of the earth into \"climes\" (\"inclinations,\" Greek klimata,\nsing. klima), which divided the northern hemisphere into zones by latitude. Arabic scholars\nnow appropriated this term as iqlim, pl. aqālīm, and made it a vital element of their own under-\nstanding of these matters. It is unclear, however, if the translators of the 3rd/9th and 4th/10th\ncenturies ever produced an Arabic version of Ptolemy's work Geography, devoted entirely to\nthis field of knowledge. Ibn Khurradädhbih (d. 299/911-2) claimed to have translated it, and\ntranslations were attributed to later scholars. In the end, however, it seems that if an Arabic\ntranslation of Ptolemy's Geography did ever exist, it arrived later than the events about to be\ndescribed here.\n1.13.2 al-Khwārazmi and mathematical geography\nWhat appears to be a mere gap in the vast library of Arabic scientific translations acquires more\nimportance when we turn to a foundational moment for Islamicate geography, the appearance of\nthe Image of the Earth (Surat al-ard) by al-Khwārazmi ([d. c. 235/850;] see Nallino 1944; Kramers\n1954a, 192-5; Krachkovskii 1957, 91-2; Hopkins 1990; Tibbetts 1992a; Brentjes 2007). An\nastrologer with broad interests, Khwārazmi here embarked on a project best described as Ptole-\nmaic. Its Arabic title, which means, as indicated earlier, \"image, representation of the earth,\" is\nformed (calqued) after the Greek geographia, which means exactly the same thing. Both works\nconsist of tables, and al-Khwārazmi has taken over large amounts of data from his predecessor.\nHow did al-Khwārazmi get access to Ptolemy's Geography? It is unlikely that he knew Greek\nhimself, although perhaps someone could have translated for him on the spot. Since the Geogra-\nphy had been known previously to Syriac authors (Krachkovskii 1957, 20), including Bardesanes\n(d. c. 222), an anonymous translator (mid-5th century), and Jacob of Edessa (d. 89/708), Syriac\ncould quite plausibly have served as an intermediary (Chapter 1.2). In any case, while al-Khwārazmi\nreplicated many of his predecessor's values for latitude and longitude, he changed many others,\n167",
+      "text": "Umayyad and early Abbasid eras, apparently for practical purposes. We know, for example, about maps of Daylam (Ibn al-Fagih 1885, 283) and Bukhara (Tabari 2010, 2:1199), commis- sioned by the Umayyad governor al-Hajjaj (d. 95/714), and a map of the swamps of lower Iraq (Baldhuri 1866, 371; Tibbetts 1992a, 90) commissioned by the Abbasid Caliph al-Mangir (r. 136-158/754-775). All in all, however, two things stand out about this literature’s early history. ‘The first is its composite nature: it emerged from a variety of activities corresponding to a variety of needs. The second is that it began with acts of translation, not only from Greek but also fom Sanskrit, Middle Persian (Pahlavi) and Syriac",
       "bbox": {
         "l": 88.0,
         "b": 810.0,
@@ -134,7 +134,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘The first important encounter was with India. It appears that several Indians learned in astro~ nomy, astrology and cosmography visited the court of Caliph al-Mansir (r. 136-158/754-775), known for his interest in astrology. As a result, we have some of the earliest translations (or adap- tations) of foreign works into Arabic (Gutas 1998[CB],! 24-5). The Sanskrit word siddhanta, appearing in the titles of several astronomical works, entered Arabic as sindhind. Although the Ara bic works in this tradition are now lost, Indian ideas retained a place in Islamicate geography and, afterward, in its Latin counterpart. These include the notion of a “cupola of the earth,” summit or center of the known and inhabited hemisphere of the world, located at a place in central India equally distant from the northern, southern, eastern and western limits of this hemisphere.",
       "bbox": {
         "l": 89.0,
         "b": 647.0,
@@ -144,7 +144,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "As the translators churned out more and more scientific texts, Arabic speakers interested in astronomy, astrology, geography and mapmaking shifted their attention to the Greek he- ritage in these fields, which Claudius Ptolemy of Alexandria (¢. 100-170) came to represent practically all by himself. Ptolemy's Megalé Syntaxis was translated early on into Arabic, as al-Majisi (from which came its later Latin title, Almagest). In this astronomical work, Ptolemy had devoted a section to the division of the earth into “climes” (“inclinations,” Greek klimata, sing. klima), which divided the northern hemisphere into zones by latitude. Arabic scholars now appropriated this term as iglim, pl. agatim, and made ita vital element of their own under standing of these matters. It is unclear, however, ifthe translators of the 3rd/9th and 4th/10th centuries ever produced an Arabic version of Ptolemy's work Geography, devoted entirely to this field of knowledge. Ibn Khurradadhbih (4. 299/91 1-2) claimed to have translated it, and translations were attributed to later scholars. In the end, however, it seems that if an Arabic translation of Ptolemy's Geogmphy did ever exist, it arrived later than the events about to be described here.",
       "bbox": {
         "l": 88.0,
         "b": 399.0,
@@ -154,7 +154,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "1.13.2 al-Khwarazmi and mathematical geography",
       "bbox": {
         "l": 184.0,
         "b": 350.0,
@@ -164,7 +164,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘What appears to be a mere gap in the vast library of Arabic scientific translations acquires more importance when we turn to a foundational moment for Islamicate geography, the appearance of the Image of the Earth (Strat al-ard) by al-Khwarazmi ({d. c. 235/850:] see Nallino 1944; Kramers 1954a, 192-5; Krachkovskit 1957, 91-2; Hopkins 1990; Tibbetts 1992a; Brentjes 2007). An astrologer with broad interests, Khwarazmi here embarked on a project best described as Ptol maic. Its Arabic title, which means, as indicated earlier, “image, representation of the eart formed (calqued) after the Greek gedgraphia, which means exactly the same thing. Both works consist of tables, and al-Khwarazmi has taken over large amounts of data from his predecessor.",
       "bbox": {
         "l": 88.0,
         "b": 198.0,
@@ -174,7 +174,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "How did al-Khwarazmi get access to Ptolemy's Geography? It is unlikely that he knew Greek himself, although perhaps someone could have translated for him on the spot. Since the Geagra- phy had been known previously to Syriac authors (Krachkovskil 1957, 20), including Bardesanes (4. c. 222), an anonymous translator (mid-Sth century), and Jacob of Edessa (d. 89/708), Syriac could quite plausibly have served as an intermediary (Chapter .2). In any case, while al-Khwarazmi replicated many of his predecessor's values for latitude and longitude, he changed many others,",
       "bbox": {
         "l": 88.0,
         "b": 89.0,
@@ -184,7 +184,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "167",
       "bbox": {
         "l": 354.0,
         "b": 53.0,
@@ -196,7 +196,7 @@
   "3": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Bonner",
       "bbox": {
         "l": 356.0,
         "b": 982.0,
@@ -206,7 +206,7 @@
     },
     {
       "label": "section_header",
-      "text": "Bonner\nwhile rearranging the material's order and headings. He also added data relating to places that\ndid not exist in Ptolemy's time and substituted Arabic toponyms for now-obsolete Greek ones.\nThen where did al-Khwārazmi obtain his information, whenever he did not take it directly\nfrom Ptolemy? And on what basis did he \"correct\" many of Ptolemy's values? We have no evi-\ndence suggesting that he dispatched teams of collaborators to hundreds of locations throughout\nthe world. Accordingly, the likely answer is that al-Khwārazmi tweaked Ptolemy's data on the\nbasis of information from more recent sources, not all of them (or even most of them) necessarily\nmathematical or astronomical at all.\nTables of longitude and latitude were of little practical use at that time, although scholars\nwould continue to compile them for centuries to come. Quite a few modern researchers have\nmaintained, however, that al-Khwarazmi's project included drawing a world map, meant to\nfit within the dimensions of his book. Another idea, often proposed though not universally\naccepted, is that al-Khwārazmi was contributing here toward a large-scale world map, using\ncoordinates of latitude and longitude, for Caliph al-Ma'mun (r. 189-218/813-833). Such a\nproject is indeed mentioned in some sources. In further support of this notion, it appears that\nKhwārazmi participated in the \"House of Wisdom\" (bayt al-hikma) in Baghdad, which many\nmodern scholars have described as a research and/or teaching center supported by the caliphal\ncourt (Chapter III.1). However, problems arise. The Image of the Earth (of which only one\nmanuscript has survived) does not mention any cartographical project, big or small. A few later\nsources do refer to a \"Ma'munian image [or map]\" (sura ma'muniyya), but these accounts seem\ninaccurate or ill informed, especially that of al-Mas'udi ([d. 345/956]: 1894, 33), who appa-\nrently does not understand the Ptolemaic climes and who follows the Persian system of kishvars\n(regions) in his own work. Similarly, a bayt al-hikma may have existed in Baghdad as early as the\nreign of Caliph al-Mansur, but its nature and role are more obscure to us today than they were\nseveral decades ago; in any case, it seems to have been more involved with Iranian learning than\nwith Greek (Balty-Guesdon 1992; Gutas 1998, 53-60 [CB]; Richter-Bernburg 2016). Most\nsignificantly, difficulties arise regarding the process of mapmaking itself. Possibly because he did\nnot have a complete translation of Ptolemy's Geography, al-Khwarazmi apparently did not con-\nsult the chapter on projections and therefore did not address the problem of how to represent\nthe earth's spherical surface upon the flat surface of a map. All this makes it less likely that the\nMa'munian world map was based on mathematical coordinates; there is reason to think instead\nthat it used the Persian system of kishvars. Looking ahead, we have a partial explanation here for\nwhy Islamicate cartography never dealt fully with the problem of projection (Tibbetts 1992a,\n94-5), with the exception of al-Biruni (362-d. after 444/973-d. after 1053) and possibly a\nfew other scholars before 700/1300. Al-Khwarazmi's work in this area continued among later\nscholars including the astronomer al-Battānī (244-317/858-929), who developed further tables\nfor geographical coordinates, and the enigmatic Suhrab ([1st half 4th/10th century]; see Miquel\n1967-88, 1: 79–80), who did the same while providing explicit instructions for preparing a map.\nMost geographers considered the sphere of the earth as divided into two halves, only one\nof them known or even knowable. They divided the known half of the earth once more in\nhalf, with the northern part, or quadrant, constituting the inhabited world. They then further\ndivided this northern quadrant with equally spaced latitudinal lines, reaching from the equator\nto the pole; the area between each two of these constituted one of the seven climes. Work also\ncontinued on questions going back to the Hellenistic geographers, including how to calculate\nthe distance of a single degree of latitude. Meanwhile, from the beginning of Islam, scholars\nfaced the problem of determining the direction of Mecca (the qibla) from any point in the world;\ntheir solutions, both approximate and accurate, constituted a great achievement for Islamicate\ngeography over many centuries (King 1999[CB]; King and Lorch 1992[CB]; Chapter VI.3).\n168",
+      "text": "",
       "bbox": {
         "l": 356.0,
         "b": 982.0,
@@ -216,7 +216,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "while rearranging the material’s order and headings. He also added data relating to places that did not exist in Ptolemy's time and substituted Arabic toponyms for now-obsolete Greek ones.",
       "bbox": {
         "l": 102.0,
         "b": 917.0,
@@ -226,7 +226,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Then where did al-Khwarazmi obtain his information, whenever he did not take it directly from Ptolemy? And on what basis did he “correct” many of Ptolemy's values? We have no evi- dence suggesting that he dispatched teams of collaborators to hundreds of locations throughout the world. Accordingly, the likely answer is that al-Khwarazmi tweaked Ptolemy's data on the basis of information from more recent sources, not all of them (or even most of them) necessarily ‘mathematical or astronomical at all.",
       "bbox": {
         "l": 101.0,
         "b": 809.0,
@@ -236,7 +236,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Tables of longitude and latitude were of little practical use at that time, although scholars would continue to compile them for centuries to come. Quite a few modern researchers have maintained, however, that al-Khwarazmi’s project included drawing a world map, meant to fit within the dimensions of his book. Another idea, often proposed though not universally accepted, is that al-Khwarazmi was contributing here toward a large-scale world map, using coordinates of latitude and longitude, for Caliph al-Ma'min (r. 189-218/813-833). Such a project is indeed mentioned in some sources. In further support of this notion, it appears that Khwarazmi participated in the “House of Wisdom” (bayt al-bikma) in Baghdad, which many modern scholars have described as a research and/or teaching center supported by the caliphal court (Chapter IIL.1). However, problems arise. The Image of the Earth (of which only one ‘manuscript has survived) does not mention any cartographical project, big or small. A few later sources do refer to a “Ma'miinian image [or map]” (sira ma’miiniyya), but these accounts seem inaccurate or ill informed, especially that of al-Mas‘idi ({d. 345/956]; 1894, 33), who appa- rently does not understand the Ptolemaic climes and who follows the Persian system of kishvars (regions) in his own work. Similarly, a bayt al-hikma may have existed in Baghdad as early as the reign of Caliph al-Mangir, but its nature and role are more obscure to us today than they were several decades ago; in any case, it seems to have been more involved with Iranian learning than with Greek (Balty-Guesdon 1992; Gutas 1998, 53-60 [CB]; Richter-Bernburg 2016). Most significantly, difficulties arise regarding the process of mapmaking itself. Possibly because he did not have a complete translation of Ptolemy's Geography, al-Khwarazmi apparently did not con- sult the chapter on projections and therefore did not address the problem of how to represent the earth's spherical surface upon the flat surface of a map. Alll this makes it less likely that the ‘Ma'minian world map was based on mathematical coordinates; there is reason to think instead that it used the Persian system of kishvars. Looking ahead, we have a partial explanation here for why Islamicate cartography never dealt fully with the problem of projection (Tibbetts 1992a, 94-5), with the exception of al-Birini (362-4. after 444/973-d. after 1053) and possibly a few other scholars before 70/1300. Al-Khwarazmis work in this area continued among later scholars including the astronomer al-Battini (244-317/858-929), who developed further tables for geographical coordinates, and the enigmatic Subrab ({1st half 4th/10th century]; see Miquel 1967-88, 1: 79-80), who did the same while providing explicit instructions for preparing a map.",
       "bbox": {
         "l": 101.0,
         "b": 270.0,
@@ -246,7 +246,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Most geographers considered the sphere of the earth as divided into two halves, only one of them known or even knowable. They divided the known half of the earth once more in half, with the northern part, or quadrant, constituting the inhabited world. They then farther divided this northern quadrant with equally spaced latitudinal lines, reaching from the equator to the pole; the area between each two of these constituted one of the seven climes. Work also continued on questions going back to the Hellenistic geographers, including how to calculate the distance of a single degree of latitude. Meanwhile, fom the beginning of Islam, scholars faced the problem of determining the direction of Mecca (the gibla) from any point in the world; their solutions, both approximate and accurate, constituted a great achievement for Islamicate geography over many centuries (King 1999[CB]; King and Lorch 1992[CB]; Chapter VI.3).",
       "bbox": {
         "l": 102.0,
         "b": 89.0,
@@ -256,7 +256,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "168",
       "bbox": {
         "l": 366.0,
         "b": 51.0,
@@ -268,7 +268,7 @@
   "4": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Geography and mapmaking until 700/1300",
       "bbox": {
         "l": 250.0,
         "b": 979.0,
@@ -278,7 +278,7 @@
     },
     {
       "label": "section_header",
-      "text": "Geography and mapmaking until 700/1300\nI.13.3 Ibn Khurradadhbih and administrative geography\nIslamicate geography received input early on not only from Indian and Greek but also from\nPersian learning. Especially important was an Iranian tradition of representing the world as\ndivided into seven kishvars, with one kishvar located centrally and the other six grouped around\nit. Islamic-era writers in this tradition referred to the central kishvar as Transhahr, the \"domain\nof Iran,\" including not only modern-day Iran but also Iraq and some other places. This scheme\nappeared often in Islamicate geography, in effect as an alternative to the Ptolemaic system.\nHowever, since Arabic writers rendered Persian kishvar with the same term that they used for\nthe Ptolemaic \"clime,\" namely iqlim, and since they assigned a total of seven units or regions to\neach system, confusion often prevailed.\nUntil now our story has connected scientific work with centers of political power. It has also\ninvolved a process of translation relating, though only in part, to those same centers of power.\nIt has also been associated with the drawing of maps. Meanwhile, other things were happening\nin the vast area of the caliphate or Islamic Empire. In particular, armies, bureaucrats, merchants,\nseekers of religious merit and knowledge, criminals and other groups were on the move, often\nover long distances. This movement of so many people over so many routes created all sorts of\nmaterial, organizational and intellectual needs.\nHere again the caliphal government took the lead, through its chancery and bureaucracy. The\nmanagement of long-distance communications led to the creation (or continuing) of a postal and\nintelligence bureau (diwan al-barīd; Silverstein 2007). Heading this for a time in the mid-3rd/9th\ncentury was Ibn Khurradadhbih, a professional bureaucrat of Persian descent, whose Routes and\nRealms (al-Masalik wal-mamalik) can be considered, along with al-Khwārazmi's Image of the Earth,\nas one of the foundations of Islamicate geography. Although Ibn Khurradadhbih includes smat-\nterings of Greek and Persian geography in his text, and even claims to have translated Ptolemy\nhimself, he proceeds independently of astronomical and mathematical geography. Instead, and\ntrue to its title, Routes and Realms has a framework constituted by its wide-ranging itineraries. It\nindicates distances with stages (what a traveler can cover in a day), and with units of measurement\nsuch as the Persian farsakh (six kilometers) and the mil or \"Arab mile\" (somewhat longer than the\nEnglish mile). It seems obvious - although it is never stated outright - that these itineraries result\nfrom compilations by the diwan al-barīd and its predecessors. At times Ibn Khurradadhbih adds\nlandmarks for help in identifying place-names. He also gives fiscal information, less useful for\ntravelers but much appreciated by later historians. At the same time, he cites poetry connected\nwith particular places. He tells about wonders such as Sicilian volcanoes and the riches of Visi-\ngothic Spain, once seized by the Muslim conquerors. He also relays the purported accounts of\ntravelers, such as the expedition of Sallam the Interpreter, sent by an Abbasid caliph to the land\nof Yajuj and Mājūj (Gog and Magog) in the (otherwise legendary) northeastern corner of the\nworld. The overall result, while enjoyable for readers, lacks coherence, as some later geographers\nwould point out. Meanwhile, Ibn Khurradādhbih makes no use whatsoever of maps. But he\nused schemes or diagrams, for instance for representing various qiblas (King 1999).\nI.13.4 Geography under the unitary caliphate and its immediate successors\nTwo characteristics of Ibn Khurradadhbih's work proved essential for the next phase of geo-\ngraphical literature. The first was the participation of the imperial bureaucracy in compiling and\ndisseminating useful knowledge. The second was the cultivation of a fine literary style, together\nwith the display - indeed, the flaunting - of one's knowledge of many topics, including, but\nnot restricted to, matters relating to imperial administration. These traits distinguished the adīb,\n169",
+      "text": "1.13.3. Ibn Khurradadhbih and administrative geography",
       "bbox": {
         "l": 161.0,
         "b": 933.0,
@@ -288,7 +288,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Islamicate geography received input early on not only from Indian and Greek but also from Persian learning. Especially important was an Iranian tradition of representing the world as divided into seven kishvurs, with one kishvar located centrally and the other six grouped around it. Isamic-era writers in this tradition referred to the central kishvar as Irinshahr, the “domain of Iran,” including not only modern-day tran but also Iraq and some other places. This scheme appeared often in Islamicate geography, in effect as an alternative to the Ptolemaic system. However, since Arabic writers rendered Persian kishvur with the same term that they used for the Ptolemaic “clime,” namely iglim, and since they assigned a total of seven units or regions to each system, confusion often prevailed",
       "bbox": {
         "l": 89.0,
         "b": 762.0,
@@ -298,7 +298,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Until now our story has connected scientific work with centers of political power. It has also involved a process of translation relating, though only in part, to those same centers of power. It has also been associated with the drawing of maps. Meanwhile, other things were happening in the vast area of the caliphate or Islamic Empire. In particular, armies, bureaucrats, merchants, seckers of religious merit and knowledge, criminals and other groups were on the move, often over long distances. This movement of so many people over so many routes created all sorts of material, organizational and intellectual needs.",
       "bbox": {
         "l": 89.0,
         "b": 636.0,
@@ -308,7 +308,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Here again the caliphal government took the lead, through its chancery and bureaucracy. The ‘management of long-distance communications led to the creation (or continuing) of a postal and intelligence bureau (dfwin al-barid; Silverstein 2007). Heading this for a time in the mid-3rd/9th century was Ibn Khurradadhbih, a professional bureaucrat of Persian descent, whose Routes and Realms (al-Masaik wal-mamalik) can be considered, along with al-Khwarazmi’s Image of the Earth, as one of the foundations of Islamicate geography. Although Ibn Khurradidhbih includes smat- terings of Greek and Persian geography in his text, and even claims to have translated Ptolemy himself, he proceeds independently of astronomical and mathematical geography. Instead, and true to its title, Routes and Realms has a framework constituted by its wide-ranging itineraries. It indicates distances with stages (what a traveler can cover in a day), and with units of measurement such as the Persian farsakh (six kilometers) and the mil or “Arab mile” (somewhat longer than the English mile). It seems obvious — although it is never stated outright — that these itineraries result from compilations by the divin al-barid and its predecessors. At times Ibn Khurradadhbih adds landmarks for help in identifying place-names. He also gives fiscal information, less useful for travelers but much appreciated by later historians. At the same time, he cites poetry connected with particular places. He tells about wonders such as Sicilian volcanoes and the riches of Visi- gothic Spain, once seized by the Muslim conquerors. He also relays the purported accounts of travelers, such as the expedition of Sallim the Interpreter, sent by an Abbasid caliph to the land of Yajaj and Majaj (Gog and Magog) in the (otherwise legendary) northeastern corner of the world. The overall result, while enjoyable for readers, lacks coherence, as some later geographers would point out. Meanwhile, Ibn Khurradadhbih makes no use whatsoever of maps. But he used schemes or diagrams, for instance for representing various giblas (King 1999).",
       "bbox": {
         "l": 88.0,
         "b": 240.0,
@@ -318,7 +318,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "1.13.4 Geography under the unitary caliphate and its immediate successors",
       "bbox": {
         "l": 108.0,
         "b": 188.0,
@@ -328,7 +328,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Two characteristics of Ibn Khurradidhbih’s work proved essential for the next phase of geo- graphical literature, The first was the participation of the imperial bureaucracy in compiling and disseminating useful knowledge. The second was the cultivation of a fine literary style, together with the display — indeed, the flaunting — of one’s knowledge of many topics, including, but not restricted to, matters relating to imperial administration. These traits distinguished the adib,",
       "bbox": {
         "l": 89.0,
         "b": 89.0,
@@ -338,7 +338,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "169",
       "bbox": {
         "l": 354.0,
         "b": 53.0,
@@ -350,7 +350,7 @@
   "5": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Bonner",
       "bbox": {
         "l": 356.0,
         "b": 982.0,
@@ -360,7 +360,7 @@
     },
     {
       "label": "section_header",
-      "text": "Bonner\nor cultivated littérateur, while the relevant cultural domain was that of adab, which referred, on\none hand, to polite, refined behavior and conduct and, on the other hand, to literary works that\nconveyed those values and showed readers how to acquire them.\nIn the following decades, several authors followed Ibn Khurradadhbih's example. These\nincluded al-Jayhani (d. after 367/978), a vizier (chief administrator) for the principate of the\nSamanids in Transoxania (today Turkmenistan and Uzbekistan) in the early 4th/10th century,\nand the author of a book bearing the same title as Ibn Khurradadhbih's, Routes and Realms. We\ndo not have this work, although many fragments have survived through direct or indirect quo-\ntation. It seems clear, in any case, that Jayhānī followed Ibn Khurradadhbih in his use of official\narchives and his emphasis on adab.\nSomewhat earlier we have al-Ya'qubi (d. after 292/905), one of the most interesting writers\nin this entire literature. Ya'qubi worked in government service in various places, including the\nfrontier region of Armenia. With his astute understanding of high politics, he comes across as a\nhistorian first and foremost. His surviving works on history and geography effectively treat the\nlatter as the handmaiden of the former; geographical knowledge constitutes a prerequisite for\nthe study of history. In style and presentation, Ya'qubi is direct and unornamented. Even if he\nsubscribes to the values of adab, he does not foreground them.\nWe find a comparable trajectory in Mas'udi, mentioned earlier. Iraqi by birth, Mas'udi trave-\nled far and wide (although not as far and wide as he claimed) and acquired a great stock of expe-\nriential knowledge, together with an impressive erudition derived from books. Like Ya'qubi,\nMas'ūdī made history his primary concern. He differed from Ya'qubi, however, in being unen-\ncumbered by government service, and in his cultivation of the literary and educational values of\nadab. Indeed, Mas'udi imitated the prose style of the immortal al-Jaḥiz (d. 255/868), more suc-\ncessfully than anyone before or since. This \"literarization\" of the material, political and ethical\nworlds had already reached a peak in two geographers active around the turn of the 4th/10th\ncentury, Ibn al-Faqih al-Hamadhani and Ibn Rusta, both of western Iranian origin.\nQudāma ibn Ja'far is known to us as a loyal servant of the empire active in Baghdad in the\nearlier 4th/10th century and as the author of the Book of the Land-tax and the Secretary's Art (Kitab\nal-kharaj wa-sina'at al-kitaba). Geography constitutes only one of the disciplines forming the basis\nof this broad-ranging work. The Book of the Land-tax also differs from its predecessors in the\npresentation of its material. For instance, it isolates the itineraries within a chapter of their own.\nYet it rightly belongs within our sequence of geographical works for several reasons, beginning\nwith its treatment of the frontiers. In Qudama's day, the unitary caliphate was fast becoming a\nfiction, as it lost control of its territories while successor states arose everywhere to supplant it.\nThis fact underlies Qudama's chapter on the frontiers of Islam (thughur al-Islam), where he coun-\nterintuitively portrays an Islamic world where unity prevails, not only in culture and religion\nbut also, and above all, in political and administrative matters. This unity expresses itself through\nengagement with the frontiers of Islam throughout the known world.\nAnother reason for including Qudāma within the geographical literature is his awareness of\nits three main components, \"hard\" science, bureaucratic administration and adab. Qudāma shows\nample respect for the Ptolemaic tradition, and not surprisingly, he emphasizes the importance\nof administration. However, even though he advocates the cultivation of a fine Arabic style, he\nopposes the privileging of the values of adab characteristic of many of his contemporaries, and he\n\"rejects any attempt to subordinate the geographical discipline to the literary goals of a cultural\nelite\" (Heck 2002, 96).\nWe have seen both similarities and contrasts among the geographical writers active during\nthe decades after al-Khwārazmi and Ibn Khurradādhbih. Some modern researchers group these\ninto a putative 'Iraqi school,' but this seems to serve mainly for the purpose of contrasting them\n170",
+      "text": "",
       "bbox": {
         "l": 356.0,
         "b": 982.0,
@@ -370,7 +370,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "or cultivated littéateur, while the relevant cultural domain was that of adab, which referred, on cone hand, to polite, refined behavior and conduct and, on the other hand, to literary works that conveyed those values and showed readers how to acquire them.",
       "bbox": {
         "l": 102.0,
         "b": 899.0,
@@ -380,7 +380,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "In the following decades, several authors followed Ibn Khurradadhbih’s example. These included al-Jayhant (d. after 367/978), a vizier (chief administrator) for the principate of the Samanids in Transoxania (today Turkmenistan and Uzbekistan) in the early 4th/10th century, and the author of a book bearing the same title as Ibn Khurradadhbih’s, Routes and Realms. We do not have this work, although many fragments have survived through direct or indirect quo- tation. It seems clear, in any case, that Jayhani followed Ibn Khurradadhbih in his use of official archives and his emphasis on adab.",
       "bbox": {
         "l": 102.0,
         "b": 774.0,
@@ -390,7 +390,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Somewhat earlier we have al-Ya‘gibi (d. after 292/905), one of the most interesting writers in this entire literature. Ya'gibi worked in government service in various places, including the frontier region of Armenia. With his astute understanding of high politics, he comes across as a historian first and foremost. His surviving works on history and geography effectively treat the latter as the handmaiden of the former; geographical knowledge constitutes a prerequisite for the study of history. In style and presentation, Ya'qabi is direct and unornamented. Even if he subscribes to the values of adab, he does not foreground them.",
       "bbox": {
         "l": 101.0,
         "b": 648.0,
@@ -400,7 +400,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "We find a comparable trajectory in Mas'idi, mentioned earlier. Iraqi by birth, Mas‘idi trave- led far and wide (although not as far and wide as he claimed) and acquired a great stock of expe- riential knowledge, together with an impressive erudition derived from books. Like Ya'qibi, ‘Mas‘iidi made history his primary concern. He differed from Ya‘qibi, however, in being unen- cumbered by government service, and in his cultivation of the literary and educational values of adab. Indeed, Mas‘idi imitated the prose style of the immortal al-Jahiz (d. 255/868), more suc~ cessfully than anyone before or since. This “literarization” of the material, political and ethical worlds had already reached a peak in two geographers active around the turn of the 4th/10th century, Ibn al-Fagih al-Hamadhani and Ibn Rusta, both of western Iranian origin.",
       "bbox": {
         "l": 101.0,
         "b": 485.0,
@@ -410,7 +410,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Qudima ibn Ja'far is known to us as a loyal servant of the empire active in Baghdad in the earlier 4th/10th century and as the author ofthe Book of the Land-tax and the Secretary's Art (Kitab al-khardj wa-sina‘at al-kitaba). Geography constitutes only one of the disciplines forming the basis of this broad-ranging work. The Book of the Land-tax also differs from its predecessors in the presentation of its material. For instance, it isolates the itineraries within a chapter of their own. Yet it rightly belongs within our sequence of geographical works for several reasons, beginning with its treatment of the frontiers. In Qudma’s day, the unitary caliphate was fast becoming a fiction, as it lost control of its territories while successor states arose everywhere to supplant it ‘This fact underlies Qudama’s chapter on the frontiers of Islam (thughitr al-Isam), where he coun- terintuitively portrays an Islamic world where unity prevails, not only in culture and religion but also, and above all, in political and administrative matters. This unity expresses itself through engagement with the frontiers of Islam throughout the known world,",
       "bbox": {
         "l": 102.0,
         "b": 269.0,
@@ -420,7 +420,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Another reason for including Qudima within the geographical literature is his awareness of its three main components, “hard” science, bureaucratic administration and adab. Qudama shows ample respect for the Ptolemaic tradition, and not surprisingly, he emphasizes the importance of administration. However, even though he advocates the cultivation of a fine Arabic style, he opposes the privileging of the values of adab characteristic of many of his contemporaries, and he “rejects any attempt to subordinate the geographical discipline to the literary goals of a cultural elite” (Heck 2002, 96).",
       "bbox": {
         "l": 101.0,
         "b": 144.0,
@@ -430,7 +430,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘We have seen both similarities and contrasts among the geographical writers active during the decades after al-Khwarazmi and Ibn Khurradadhbih. Some modern researchers group these into a putative ‘Iraqi school but this seems to serve mainly for the purpose of contrasting them",
       "bbox": {
         "l": 102.0,
         "b": 89.0,
@@ -440,7 +440,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "170",
       "bbox": {
         "l": 367.0,
         "b": 52.0,
@@ -452,7 +452,7 @@
   "6": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Geography and mapmaking until 700/1300",
       "bbox": {
         "l": 250.0,
         "b": 979.0,
@@ -462,7 +462,7 @@
     },
     {
       "label": "text",
-      "text": "Geography and mapmaking until 700/1300\nwith the 'Balkhi school,' which we will take up next. One thing that does unite them, however,\nis their neglect of cartography, as they knew about maps but did not use them.\nI.13.5 The 'Balkhi School'\nModern scholarship has identified a 'Balkhi school,' active throughout most of the 4th/10th cen-\ntury but including only three members, with a sort of honorary membership usually extended\nto a fourth. However, not only is this 'Balkhi school' a concept of modern scholarship, but the\nrelations among these authors, especially the first three, are enigmatic. Perceptive scholars such\nas al-Idrisi (d. after 560/1164-5) and Yaqut al-Rumi (d. 626/1229) showed perplexity over what\nthese three took from one another and whether they were not really just one or two individuals.\nA solution came in 1871, when M. J. de Goeje (1836-1906) showed that these were indeed\nthree distinct authors; that the geographical work of the first of them, Balkhi, was no longer\nextant; and that the other two composed distinct, although related, books. Afterward, scholars\nwent on to associate this 'Balkhi school' with a collective project that they called 'the atlas of\nIslam' (Kramers 1932; Krachkovskii 1957, 194-219; Miquel 1967-88, 1:267-330; Miller 1986\n1.1.17, 5:109; Hopkins 1990, 312-15; Tibbetts 1992b).\nThe founding figure was the courtier and littérateur Abū Zayd al-Balkhi (d. 322/934), who\ncomposed a Book of the Image of the Earth (Kitab Surat al-ard). This began with a map of the world\nand then presented twenty maps of provinces or \"climes\" with accompanying text. Balkhi's work\nwas taken up afterward by al-Istakhri (d. after 340/951), who traveled extensively and composed\na Book of Routes and Realms (Kitab al-masalik wal-mamalik,), revising Balkhi's maps while adding\nnew text. We know little else about the connection between these two, since Balkhi's maps\nand text became absorbed into Istakhri's or simply disappeared. Then in 331/943, a young man\nknown as Ibn Hawqal departed from Baghdad, intending to map and describe as many of the\nregions of the world as he could. Some time later, he met Istakhri (Ibn Hawqal 1938, 329-30).\nThe encounter is often said to have taken place in Sind, since Ibn Hawqal describes it in his\nchapter on that province, but this is incorrect, since Ibn Hawqal almost certainly never went there\n(Miquel 1967-88, 1:299–300).\nAccording to Ibn Hawqal, after they had shown each other some of their maps, Istakhri asked\nthe younger man to correct and continue his own work. Ibn Hawqal agreed, but after doing\nthis for a while, he decided to take over Istakhri's work on his own account and rewrite the\ntext, redraw the maps and publish it all under his own name. In the wake of this apparent act\nof plagiarism we have, first of all, a book called Routes and Realms ascribed entirely to Işṭakhri,\nand then we have Ibn Hawqal's work which exists in two main recensions, the first called Routes\nand Realms, and the second Image of the Earth. In both recensions, Ibn Hawqal incorporates\nIşṭakhri's text while adding new material of his own. In other words, while the younger writer\nhas devoured his predecessor whole, the predecessor's work has also survived, separately and\nunscathed.\nThe 'Balkhi School' is also usually considered to include the great work by Ibn Hawqal's\nyounger contemporary al-Muqaddasi (2nd half 4th/10th century), The Best Division for Know-\nledge of the Climes (Ahsan al-taqasim li-ma'rifat al-aqalim). Muqaddasi knew about Balkhi and,\napparently, about Istakhri (De Goeje 1871, 47-8). However, even though he and Ibn Hawqal\nwere engaged in similar projects, they show no awareness of one another, whether out of igno-\nrance or jealousy.\nLike other Islamicate geographers, the 'Balkhi' authors show respect for the Ptolemaic tra-\ndition. In practice, however, they follow different principles, especially by using the iqlim as an\norganizing principle not in its Ptolemaic sense, but in a sense more akin to the Persian kishvar.\n171",
+      "text": "with the ‘Balkhi school, which we will take up next. One thing that does unite them, however, is their neglect of cartography, as they knew about maps but did not use them.",
       "bbox": {
         "l": 88.0,
         "b": 917.0,
@@ -472,7 +472,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "1.13.5 The ‘Balkhi School”",
       "bbox": {
         "l": 268.0,
         "b": 875.0,
@@ -482,7 +482,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Modern scholarship has identified a ‘Balkhi school, active throughout most of the 4th/10th cen- tury but including only three members, with a sort of honorary membership usually extended to a fourth. However, not only is this ‘Balkhi school’ a concept of modern scholarship, but the relations among these authors, especially the first three, are enigmatic. Perceptive scholars such as al-Idrist (A. after 560/1164-5) and Yaqiit al-Riimi (d. 626/129) showed perplexity over what these three took from one another and whether they were not really just one or two individuals. ‘A solution came in 1871, when M. J. de Goeje (1836-1906) showed that these were indeed three distinct authors; that the geographical work of the first of them, Balkhi, was no longer extant; and that the other two composed distinct, although related, books. Afterward, scholars went on to associate this “Balkhi schoo!’ with a collective project that they called ‘the atlas of Islam’ (Kramers 1932; Krachkovskif 1957, 194-219; Miquel 1967-88, 1:267-330; Miller 1986 1.1.17, 5:109; Hopkins 1990, 312-15; Tibbetts 1992b)",
       "bbox": {
         "l": 88.0,
         "b": 648.0,
@@ -492,7 +492,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘The founding figure was the courtier and littérateur Abii Zayd al-Balkhi (d. 322/934), who composed a Book of the Image of the Earth (Kitab Sirat al-ard). This began with a map of the world and then presented twenty maps of provinces or “climes” with accompanying text. Balkhi’s work was taken up afterward by al-Istakhei (d. after 340/951), who traveled extensively and composed a Book of Routes and Realms (Kitab al-masalik wal-mamalik,), revising Balkhi’s maps while adding new text. We know little else about the connection between these two, since Balkhi’s maps and text became absorbed into Israkhr’s or simply disappeared. Then in 331/943, a young man known as Ibn Hawgal departed from Baghdad, intending to map and describe as many of the regions of the world as he could. Some time later, he met Istakhri (Ibn Hawgal 1938, 329-30). ‘The encounter is often said to have taken place in Sind, since Ibn Hawgal describes it in his chapter on that province, but this is incorrect, since Ibn Hawgal almost certainly never went there (Miquel 1967-88, 1:299-300).",
       "bbox": {
         "l": 89.0,
         "b": 432.0,
@@ -502,7 +502,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "According to Ibn Hawgal, after they had shown each other some of their maps, Istakhri asked the younger man to correct and continue his own work. Ibn Hawgal agreed, but after doing this for a while, he decided to take over Igakhri’s work on his own account and rewrite the text, redraw the maps and publish it all under his own name. In the wake of this apparent act of plagiarism we have, first of all, a book called Routes and Realms ascribed entirely to Istakhei, and then we have Ibn Hawqal’s work which exists in two main recensions, the first called Routes and Realms, and the second Image of the Earth. In both recensions, Ibn Hawqal incorporates Isgakhe’s text while adding new material of his own. In other words, while the younger writer has devoured his predecessor whole, the predecessor's work has also survived, separately and unscathed,",
       "bbox": {
         "l": 89.0,
         "b": 253.0,
@@ -512,7 +512,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘The ‘Balkhi School’ is also usually considered to include the great work by Ibn Hawgal’s younger contemporary al-Mugaddasi (2nd half 4th/10th century), ‘The Best Division for Know- ledge of the Climes (Absan al-tagasim li-ma‘ifat al-agatim). Mugaddast knew about Balkhi and, apparently, about Istakhri (De Goeje 1871, 47-8). However, even though he and Ibn Hawgal were engaged in similar projects, they show no awareness of one another, whether out of igno- ance or jealousy.",
       "bbox": {
         "l": 89.0,
         "b": 143.0,
@@ -522,7 +522,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Like other Islamicate geographers, the ‘Balkhi’ authors show respect for the Ptolemaic tra~ dition. In practice, however, they follow different principles, especially by using the iglim as an organizing principle not in its Ptolemaic sense, but in a sense more akin to the Persian kishvur.",
       "bbox": {
         "l": 89.0,
         "b": 89.0,
@@ -532,7 +532,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "m1",
       "bbox": {
         "l": 355.0,
         "b": 53.0,
@@ -544,7 +544,7 @@
   "7": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Bonner",
       "bbox": {
         "l": 355.0,
         "b": 982.0,
@@ -554,7 +554,7 @@
     },
     {
       "label": "section_header",
-      "text": "Bonner\nAs a result, iqlim for them means something like province. Accordingly, the question of where to\ndraw the lines, how to delineate an iqlim, ranks high among their concerns. We may recall that\nthis was a time of political fragmentation, as the Abbasid caliphs lost all their territories and most\nof their authority. For the 'Balkhi' authors, the \"climes\" do not pertain to a caliphate (khilafa), or\neven to a juridically constructed Abode of Islam (dar al-Islam) but rather to a \"Realm of Islam\"\n(mamlakat al-Islam). Like the individual provinces, this realm is defined not only by religious\nand political criteria but also by cultural and economic ones. The work of the 'Balkhi' authors\nhas accordingly been described as the high point of an Islamicate 'human geography' (Miquel\n1967-88, 1: 267-330).\nAll this may help us understand another difference between the 'Balkhi' authors and their\npredecessors. Beginning with Ibn Khurradādhbih, travelers' itineraries are an essential feature\nof the geographical literature, extending through individual provinces all the way to the end of\nthe Islamic world, and constituting the communications network of a great empire. At times,\nIbn Khurradādhbih and his successors also look beyond the frontiers, relaying information\nabout India, China, Byzantium and so forth. Now, however, while the 'Balkhi' authors pre-\nsent itineraries as painstakingly detailed as their predecessors, they delineate them within the\nbounds of individual provinces (Figure 1.13.1). At the same time, with regard to their overall\nصورة المغرب\nداری بانه\nنخليه\nستون\nمسافر المرير\nفاس\nنامرت\nتروبله\nFigure 1.13.1 Map of the Maghrib, from al-Istakhri's Book of Routes and Kingdoms; MS Gotha, Research\nLibrary, orient. A 1521, fol. 13a.\nSource: Research Library, Gotha\n172",
+      "text": "",
       "bbox": {
         "l": 355.0,
         "b": 982.0,
@@ -564,7 +564,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Asa result, iglim for them means something like province. Accordingly, the question of where to draw the lines, how to delineate an iglim, ranks high among their concerns. We may recall that this was a time of political fragmentation, as the Abbasid caliphs lost all their territories and most of their authority. For the ‘BalkhT'authors, the “climes” do not pertain to a caliphate (khilafa), or even to a juridically constructed Abode of Islam (dar al-Islam) but rather to a “Realm of Islam” (mamlakat al-Islam). Like the individual provinces, this realm is defined not only by religious and political criteria but also by cultural and economic ones. The work of the ‘Balkhi’ authors has accordingly been described as the high point of an Islamicate ‘human geography’ (Miquel 1967-88, 1: 267-330).",
       "bbox": {
         "l": 101.0,
         "b": 792.0,
@@ -574,7 +574,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Alll this may help us understand another difference between the ‘Balkhi’ authors and their predecessors. Beginning with Ibn Khurradadhbih, travelers’ itineraries are an essential feature of the geographical literature, extending through individual provinces all the way to the end of the Islamic world, and constituting the communications network of a great empire. At times, Ibn Khurradadhbih and his successors also look beyond the frontiers, relaying information about India, China, Byzantium and so forth. Now, however, while the ‘BalkhY authors pre~ sent itineraries as painstakingly detailed as their predecessors, they delineate them within the bounds of individual provinces (Figure 1.13.1). At the same time, with regard to their overall",
       "bbox": {
         "l": 101.0,
         "b": 647.0,
@@ -594,7 +594,7 @@
     },
     {
       "label": "caption",
-      "text": "",
+      "text": "Figure 1.13.1 Map of the Maghrib, from al-Igzakhris Book of Routes and Kingdoms; MS Gotha, Research. Library, orient. A 1521, fol. 13a,",
       "bbox": {
         "l": 101.0,
         "b": 124.0,
@@ -604,7 +604,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Source: © Research Library, Gotha",
       "bbox": {
         "l": 102.0,
         "b": 98.0,
@@ -624,7 +624,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "172",
       "bbox": {
         "l": 367.0,
         "b": 54.0,
@@ -636,7 +636,7 @@
   "8": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Geography and mapmaking until 700/1300",
       "bbox": {
         "l": 250.0,
         "b": 979.0,
@@ -646,7 +646,7 @@
     },
     {
       "label": "text",
-      "text": "Geography and mapmaking until 700/1300\ncoverage, the 'Balkhi' authors limit themselves (at least in principle) to the treatment of the\nIslamic world: a restriction which results logically from their deployment of the concepts of\niqlim and mamlakat al-Islam. For similar reasons, the frontier regions where Islam comes\nup against other polities and civilizations - have less importance for them than for, say, Ibn\nKhurradadhbih or Qudama.\nWith the exception of their eponymous founder, the 'Balkhi' authors are neither bureau-\ncrats nor courtiers. They do share a need for autonomy, even privacy, in areas including their\npersonal life, where they come across as solitary figures. In their religious life, Ibn Hawqal and\nperhaps Muqaddasi have Ismaili associations, which they mainly keep to themselves. For\ntheir professional activities, they conduct commerce, mostly on their own account. They\nshow expertise in fiscal administration, commerce, agriculture, architecture, theology, law and\njust about everything else. What unites them above all is their critical acumen and power of\nobservation. They articulate and follow research methods of remarkable sophistication; among\nthe earlier (nonmathematical) geographers, it is al-Ya'qūbi who most has this in common\nwith them.\nFinally, a defining and original characteristic of the 'Balkhi school' is its use of maps. We do\nnot know what models Balkhi himself used for these, but it seems that in his work the maps\nheld pride of place while the text provided commentary. In Işṭakhri, however, the text can\nfunction without the maps. The same applies to Ibn Hawqal, while Muqaddasi's maps may\neven seem superfluous at times. In later centuries, however, the maps came to enjoy more\npopularity than the texts and acquired complex transmission histories of their own. Some\nmodern scholars have maintained that these 'Balkhi school' maps appeared in two distinctive\nvarieties, the 'Iṣṭakhri' and the 'Ibn Hawqal' types. However, this division is difficult to trace,\nespecially in its earlier stages, since the earliest complete (or nearly complete) set of 'Balkhi\nschool' maps that we have, accompanying an Ibn Hawqal manuscript, dates from around a\ncentury after the author's lifetime, while most extant examples date from considerably later\nthan that. All the 'Balkhi school' maps have distinctive features in common, including a lack\nof indications of latitude and longitude, and a predilection for simple geometrical shapes and\nstraight lines. They show the inhabited world enclosed by the Encircling Sea (al-baḥr al-mubit)\nor Ocean, with two large inlets extending inland from this sea, forming the Sea of the Romans\n(Mediterranean) and the Sea of the Persians (Indian Ocean, Arabian Sea, Persian Gulf, Red\nSea). In the following centuries, these became shared features of most Islamicate world maps.\nVery recently, Karen Pinto (2016) has identified a symbolic vocabulary of meanings for these\nfeatures and traits. She considers many historical sources for them and identifies Iranian,\nrather than Greco-Roman tradition, as their primary source. She also, less convincingly,\ndeprives Balkhi and his 'school' of the creative role usually attributed to them in cartographical\ntradition.\nI.13.6 Geography after the unitary caliphate\nAll the literature discussed so far has been in the Arabic language. But now a major work in\nPersian finally arrives, the Regions of the World (Hudud al-'alam) by an unknown author, dated\nto 272/982 (Minorsky 1937). This comprehensive and well-organized work probably has the\n(now-lost) Arabic-language Routes and Realms of Jayhānī as a major source. It also makes exten-\nsive use of Istakhri and perhaps Ibn Hawqal and lists no coordinates of longitude and latitude for\nits place-names. It accordingly has affinities with the 'Balkhi school.' On the other hand, it does\nnot include maps, apparently even in its original form, although it does occasionally refer\n173",
+      "text": "coverage, the “Balkhi’ authors limit themselves (at least in principle) to the treatment of the Islamic world: a restriction which results logically fom their deployment of the concepts of iglm and mamlakat al-Islam. For similar reasons, the frontier regions — where Islam comes up against other polities and civilizations — have less importance for them than for, say, Ibn Khurradidhbih or Qudima",
       "bbox": {
         "l": 89.0,
         "b": 864.0,
@@ -656,7 +656,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "With the exception of their eponymous founder, the ‘Balkhi’ authors are neither bureau- crats nor courtiers. They do share a need for autonomy, even privacy, in areas including their personal life, where they come across as solitary figures. In their religious life, Ibn Hawgal and perhaps Mugaddast have Ism2'ili associations, which they mainly keep to themselves. For their professional activities, they conduct commerce, mostly on their own account. They show expertise in fiscal administration, commerce, agriculture, architecture, theology, law and just about everything else. What unites them above all is their critical acumen and power of observation. They articulate and follow research methods of remarkable sophistication; among the earlier (nonmathematical) geographers, it is al-Ya' with them. 7 who most has this in common",
       "bbox": {
         "l": 88.0,
         "b": 686.0,
@@ -666,7 +666,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Finally, a defining and original characteristic of the ‘Balkhi school is its use of maps. We do not know what models Balkhi himself used for these, but it seems that in his work the maps held pride of place while the text provided commentary. In Istakhei, however, the text can fanction without the maps? The same applies to Ibn Hawgal, while Mugaddast’s maps may even seem superfluous at times. In later centuries, however, the maps came to enjoy more popularity than the texts and acquired complex transmission histories of their own. Some modern scholars have maintained that these “Balkhi school’ maps appeared in two distinctive varieties, the ‘Istakhei’ and the ‘Ibn Hawyal’ types. However, this division is difficult to trace, especially in its earlier stages, since the earliest complete (or nearly complete) set of ‘Balkhi school’ maps that we have, accompanying an Ibn Hawgal manuscript, dates from around a century after the author's lifetime, while most extant examples date from considerably later than that. All the ‘Balkhi school’ maps have distinctive features in common, including a lack of indications of latitude and longitude, and a predilection for simple geometrical shapes and straight lines. They show the inhabited world enclosed by the Encircling Sea (al-babr al-mubit) or Ocean, with two large inlets extending inland from this sea, forming the Sea of the Romans (Mediterranean) and the Sea of the Persians (Indian Ocean, Arabian Sea, Persian Gulf, Red Sea). In the following centuries, these became shared features of most Islamicate world maps. Very recently, Karen Pinto (2016) has identified a symbolic vocabulary of meanings for these features and traits. She considers many historical sources for them and identifies Iranian, rather than Greco-Roman tradition, as their primary source. She also, less convincingly, deprives Balkhi and his ‘school’ of the creative role usually attributed to them in cartographical tradition",
       "bbox": {
         "l": 89.0,
         "b": 289.0,
@@ -676,7 +676,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "1.13.6 Geography after the unitary caliphate",
       "bbox": {
         "l": 205.0,
         "b": 233.0,
@@ -686,7 +686,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "All the literature discussed so far has been in the Arabic language. But now a major work in Persian finally arrives, the Regions of the World (Hudad al-‘alam) by an unknown author, dated to 272/982 (Minorsky 1937). This comprehensive and well-organized work probably has the (now-lost) Arabic-language Routes and Realms of Jayhani as a major source. It also makes exten sive use of Israkhri and perhaps Ibn Hawgal and lists no coordinates of longitude and latitude for its place-names. It accordingly has affinities with the ‘Balkhi school: On the other hand, it does not include maps, apparently even in its original form, although it does occasionally refer",
       "bbox": {
         "l": 88.0,
         "b": 98.0,
@@ -696,7 +696,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "3",
       "bbox": {
         "l": 354.0,
         "b": 52.0,
@@ -708,7 +708,7 @@
   "9": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Bonner",
       "bbox": {
         "l": 355.0,
         "b": 982.0,
@@ -718,7 +718,7 @@
     },
     {
       "label": "text",
-      "text": "Bonner\nto a single map (surat), apparently of the world (Tibbetts 1992c, 138-9). In style and tone, it is\ndirect and unornamented.\nIn 2002, the Bodleian Library of Oxford acquired an Arabic manuscript by an unknown\nauthor titled The Book of Curiosities of the Sciences and Marvels for the Eyes (Kitab ghara'ib al-funun\nwa-mulaḥ al-'uyun). Online access was provided and in 2014 a full, illustrated edition and\ntranslation appeared (Rapoport and Savage-Smith 2014). Both manuscript and modern edi-\ntion are indeed \"marvels for the eyes.\" The editors date the composition of the work to the\nearly to mid-5th/11th century, with Fatimid Egypt the likely place of origin. The manuscript\nitself was copied, according to the editors, probably around the turn of the 7th/13th century.\nWhile the text corresponds to the time in question (before 442/1050), the maps are almost\ncertainly different from the originals, although it is difficult to say how much so since here,\nas with the 'Balkhi' maps, we have no direct knowledge of the first century or so of their\nexistence. One of the world maps resembles the famous round map associated with al-Idrisi.\nThe manuscript also includes a rectangular world map and maps of three great seas, five rivers\nand various formations in the Mediterranean (Figure 1.13.2), the area of greatest interest to\nthe author and his readers.\nThe Book of Curiosities differs from the geographical literature discussed so far, in being\ndivided into two parts (maqalas), the first on the heavens and their influence and the second on\nthe earth. In the second part, the author claims to follow Ptolemy's Geography, but he actually\nproceeds somewhat, although not entirely, in the manner of the 'Balkhi' authors; the geo-\ngraphical authors on whom he relies most are Mas'udi and Ibn Hawqal. The work concludes\nwith a section on wonders (aja'ib). The Book of Curiosities is of high interest for many reasons,\nincluding its context of courtly patronage under the Ismaili Shi'i caliphate of the Fatimids, at\na time when their old rivals, the Abbasids of Baghdad, no longer enjoyed much authority or\neven autonomy.\nFigure 1.13.2 Map of the Mediterranean Sea, from the Book of Curiosities written by an anonymous author\nfrom Fatimid Egypt; MS Oxford, Bodleian Library, Ar. 90 c., fols 30b-31a.\nSource: Bodleian Libraries, University of Oxford, Oxford\n174",
+      "text": "to a single map (sirat), apparently of the world (Tibbetts 1992c, 138-9). In style and tone, it is direct and unornamented.",
       "bbox": {
         "l": 101.0,
         "b": 920.0,
@@ -728,7 +728,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "In 2002, the Bodleian Library of Oxford acquired an Arabic manuscript by an unknown author titled The Book of Curiosities of the Sciences and Marvels for the Eyes (Kitab ghardib al-funiin wa-mulab al-‘uyiin). Online access was provided and in 2014 a fall, illustrated edition and translation appeared (Rapoport and Savage-Smith 2014). Both manuscript and modern edi- tion are indeed “marvels for the eyes.” The editors date the composition of the work to the early to mid-Sth/11th century, with Fatimid Egypt the likely place of origin. The manuscript itself was copied, according to the editors, probably around the turn of the 7th/13th century. While the text corresponds to the time in question (before 42/1050), the maps are almost certainly different from the originals, although it is difficult to say how much so since here, as with the ‘Balkhi’ maps, we have no direct knowledge of the first century or so of their existence. One of the world maps resembles the famous round map associated with al-Idrid. ‘The manuscript also includes a rectangular world map and maps of three great seas, five rivers and various formations in the Mediterranean (Figure 1.13.2), the area of greatest interest to the author and his readers.",
       "bbox": {
         "l": 101.0,
         "b": 667.0,
@@ -738,7 +738,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘The Book of Curisities differs from the geographical literature discussed so far, in being divided into two parts (magalas), the first on the heavens and their influence and the second on the earth. In the second part, the author claims to follow Ptolemy's Geography, but he actually proceeds somewhat, although not entirely, in the manner of the ‘Balkhi’ authors; the geo- graphical authors on whom he relies most are Mas‘idi and Ibn Hawgal. The work concludes with a section on wonders (‘ib). The Book of Curiosities is of high interest for many reasons, including its context of courtly patronage under the Isma'Tli Shi‘ caliphate of the Fatimids, at a time when their old rivals, the Abbasids of Baghdad, no longer enjoyed much authority or even autonomy.",
       "bbox": {
         "l": 101.0,
         "b": 503.0,
@@ -758,7 +758,7 @@
     },
     {
       "label": "caption",
-      "text": "",
+      "text": "Figure 113.2 Map of the Mediterranean Sea, from the Book of Curiosities written by an anonymous author from Fatimid Egypt; MS Oxford, Bodleian Library, Ar. 90 c.,fols 30b-31a.",
       "bbox": {
         "l": 102.0,
         "b": 112.0,
@@ -768,7 +768,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Soure: © Bodleian Libraries, University of Oxford, Oxford",
       "bbox": {
         "l": 103.0,
         "b": 88.0,
@@ -788,7 +788,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "174",
       "bbox": {
         "l": 367.0,
         "b": 54.0,
@@ -800,7 +800,7 @@
   "10": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Geography and mapmaking until 700/1300",
       "bbox": {
         "l": 250.0,
         "b": 979.0,
@@ -810,7 +810,7 @@
     },
     {
       "label": "section_header",
-      "text": "Geography and mapmaking until 700/1300\nI.13.7 al-Birūni\nWe have seen that a number of scholars after al-Khwārazmi continued to work on mathema-\ntical and astronomical geography, while their administratively - and humanistically-oriented\ncolleagues received more attention. Now, however, at least from our perspective, mathematical\ngeography recovers the spotlight with al-Birūni, who spent much of his career in the service\nof the Ghaznavids, in the easternmost regions of the Islamicate world. Birūnī made a supreme\ncontribution to 'human geography' with his book on India (Bīrūni 2000). On the more strictly\nmathematical side, like his predecessor Ibn Yunus (d. 399/1009), Biruni combined geographical\ncoordinates with tables of stellar coordinates. His Handbook for al-Mas'ud (al-Qanun al-mas'udi)\nprovided the best tables of latitude and longitude available at the time, covering an unprece-\ndented total of 600 places. In doing this, Birūnī addressed the old problem of the measurement\nof a single degree of latitude (Tibbetts 1992c, 141-2). As is well known, he arrived at a remark-\nably accurate figure for the circumference of the earth. He criticized the theory of projections\nthat he attributed to Marinus of Tyre (c. 70-130) and Ptolemy of Alexandria and proposed\ninstead the method that we know now as the equidistant azimuthal projection. In this projection,\nall points on a map are at proportionally correct distances from the center point; they are also at\nthe correct direction (or azimuth) from the center point. This method was taken up afterward\nby Gerard Mercator (1512-1594) and other cartographers of the early modern era and remains\nprominent in contemporary mapmaking.\nThese advances had relatively little effect on Islamicate cartography overall, with one major\nexception. Until this time most geographers had thought that at the southern end of the world,\nthe landmass that we now call Africa extended eastward as far as China, where it met the Sur-\nrounding Sea. The resulting confusion between \"Ethiopia\" and \"India\" pervaded medieval Euro-\npean travel literature. Birūni proved that this was wrong and, in his Book of Instruction in Astrology\n(Kitab al-Tafhim li-şina'at al-tanjim), included a sketch map of the inhabited world that became\ninfluential and widely used.\nI.13.8 al-Idrisi\nOne cartographer and geographer who did not follow Birūni in this last matter was one of the\nmost remarkable figures in the entire tradition, al-Idrīsi. A scholar of noble descent from Ceuta,\nMorocco, al-Idrisi received an invitation to the court of the Norman king Roger II of Sicily\n(r. 1130-1154), which had been conquered from the Muslims over half a century previously.\nThere, he became involved in a project of constructing a large-scale world map that, in its\nsurviving versions, is closely related to the world map accompanying the Fatimid-era Book of\nCuriosities (Rapoport and Savage-Smith 2014, 31). Al-Idrisi also undertook the composition of\na book combining maps with texts. In his introduction, he relates how it all began:\n[King Roger] ordered that a disk should be prepared for him of pure silver and divided\ninto massive, bulky sections.... He ordered the workers to engrave upon it the like-\nnesses of the seven climes with their countries, regions, shores, rural areas, gulfs, seas,\nand watercourses... inhabited and uninhabited places... well-trodden routes...\nand distances.... He also ordered them to compose a book [to which he] added a\ndescription of...the countries and lands, with regard to their people, places, locations,\nlikenesses, seas, mountains, distances, crops and revenues; the types of their buildings\nand the characteristics of the [economic] activities performed there; the industries\naccording with them; the merchandise carried to and from them; the marvels ...\n175",
+      "text": "1.13.7 al-Birdini",
       "bbox": {
         "l": 303.0,
         "b": 936.0,
@@ -820,7 +820,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘We have seen that a number of scholars after al-Khwarazmi continued to work on mathema- tical and astronomical geography, while their administratively — and humanistically — oriented colleagues received more attention. Now, however, at least from our perspective, mathematical geography recovers the spotlight with al-Birdni, who spent much of his career in the service of the Ghaznavids, in the easternmost regions of the Islamicate world. Biriini made a supreme contribution to ‘human geography’ with his book on India (Biriini 2000). On the more strictly ‘mathematical side, like his predecessor Ibn Yanus (4. 399/1009), Birdini combined geographical coordinates with tables of stellar coordinates. His Handbook for al-Mas‘ad (al-Qaniin al-mas‘idi) provided the best tables of latitude and longitude available at the time, covering an unprece- dented total of 600 places. In doing this, Birdini addressed the old problem of the measurement of a single degree of latitude (Tibbetts 1992c, 141-2). As is well known, he arrived at a remark- ably accurate figure for the circumference of the earth. He criticized the theory of projections that he attributed to Marinus of Tyre (c. 70-130) and Ptolemy of Alexandria and proposed instead the method that we know now as the equidistant azimuthal projection. In this projection, all points on a map are at proportionally correct distances from the center point; they are also at the correct direction (or azimuth) from the center point. This method was taken up afterward by Gerard Mercator (1512-1594) and other cartographers of the early modern era and remains prominent in contemporary mapmaking.",
       "bbox": {
         "l": 88.0,
         "b": 600.0,
@@ -830,7 +830,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘These advances had relatively little effect on Islamicate cartography overall, with one major exception. Until this time most geographers had thought that at the southern end of the world, the landmass that we now call Africa extended eastward as far as China, where it met the rounding Sea. The resulting confusion between “Ethiopia” and “India” pervaded medieval Euro- pean travel literature. Birdini proved that this was wrong and, in his Book of Instruction in Astrology (Kitab al-Tafhim li-sind‘at al-tanjim), included a sketch map of the inhabited world that became influential and widely used.",
       "bbox": {
         "l": 89.0,
         "b": 474.0,
@@ -840,7 +840,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "1.13.8 al-Idrisi",
       "bbox": {
         "l": 306.0,
         "b": 423.0,
@@ -850,7 +850,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "(One cartographer and geographer who did not follow Birini in this last matter was one of the ‘most remarkable figures in the entire tradition, al-Idrisi. A scholar of noble descent from Ceuta, Morocco, al-Idtisi received an invitation to the court of the Norman king Roger II of Sicily (t. 1130-1154), which had been conquered from the Muslims over half a century previously. ‘There, he became involved in a project of constructing a large-scale world map that, in its surviving versions, is closely related to the world map accompanying the Fatimid-era Book of Curiosities (Rapoport and Savage-Smith 2014, 31). Al-Idrisi also undertook the composition of a book combining maps with texts. In his introduction, he relates how it all began:",
       "bbox": {
         "l": 88.0,
         "b": 267.0,
@@ -860,7 +860,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "[King Roger] ordered that a disk should be prepared for him of pure silver and divided into massive, bulky sections. ... He ordered the workers to engrave upon it the like- nesses of the seven climes with their countries, regions, shores, rural areas, gulf, seas, and watercourses . .. inhabited and uninhabited places . . . well-trodden routes and distances. . .. He also ordered them to compose a book [to which he] added a description of . . . the countries and lands, with regard to their people, places, locations, likenesses, seas, mountains, distances, crops and revenues; the types of their buildings and the characteristics of the [economic] activities performed there; the industries according with them; the merchandise carried to and from them; the marvels",
       "bbox": {
         "l": 115.0,
         "b": 87.0,
@@ -870,7 +870,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "5",
       "bbox": {
         "l": 354.0,
         "b": 53.0,
@@ -882,7 +882,7 @@
   "11": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Bonner",
       "bbox": {
         "l": 355.0,
         "b": 982.0,
@@ -892,7 +892,7 @@
     },
     {
       "label": "section_header",
-      "text": "Bonner\nassociated with them; and [their] relation to the seven climes, all the while keeping\naccount of their inhabitants' condition, appearance, mores, costume and speech. [King\nRoger] ordered that this book should be named The Book of Pleasant Journeys into Far-\naway Lands (Kitāb nuzhat al-mushtaq fi khtiraq al-afaq). This took place in the first ten\ndays of January, corresponding to Shawwal of the year 548. Here I execute his order\nand command.\n(al-Idrīsī 1970, 1: 6-7)\nAl-Idrisi prudently attributes everything to his royal patron, but more important, we see a con-\nvergence between 'human geography' of the 'Balkhi' type and the mathematical-astronomical\ngeography of Ptolemy and al-Khwārazmi. Later in his introduction, al-Idrisi says that he began\nby drawing the usual seven latitudinal lines across the inhabited world and then drew ten lon-\ngitudinal lines, thus achieving a grid with seventy rectangular units. He then provided each of\nthese with a detailed map and description. This procedure allowed al-Idrisi to combine the two\ndominant modes of Islamic cartography within a single format. Claiming to follow Ptolemy,\nal-Idrisi gave coordinates of latitude and longitude. At the same time, and most remarkably, he\nprovided a summa of Arabic geographical learning up to his time while concomitantly pursuing\nempirical knowledge wherever he could find it and from anyone who would provide it to him,\nnot only in the Mediterranean environment (Figure 1.13.3) but all the way to the northern coast\nof Europe, where at some time he apparently went himself.\nAl-Idrisi also composed a shorter book titled The Gardens of Delight and the Diversion of Souls\n(Rawd al-faraj wa-nuzhat al-muhaj), possibly an abridgment of The Pleasure Excursion but more\nlikely an independent work (Maqbul 1992, 157-8, 163-7). Consisting largely of itineraries and\ndistances, The Gardens of Delight includes an additional clime (iqlim) just south of the equator,\nwhich it considers together with the \"usual\" first clime. It includes 73 sectional maps, smaller,\nless detailed, and less unified in format than the maps of The Pleasure Excursion.\nFigure 1.13.3 Map of a part of the Mediterranean Sea and adjacent territory around Tunis, from al-Idrisi's\nwork The Book of Pleasant Journeys into Faraway Lands (Kitab nuzhat al-mushtaq fi khtiraq al-\nafaq); MS Oxford, Bodleian Library, Greaves 42, fols 115b-116a.\nSource: The Bodleian Libraries, University of Oxford, Oxford\n176",
+      "text": "",
       "bbox": {
         "l": 355.0,
         "b": 982.0,
@@ -902,7 +902,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "associated with them; and [their] relation to the seven climes, all the while keeping account of their inhabitants’ condition, appearance, mores, costume and speech. [King Roger] ordered that this book should be named The Book of Pleasant Journeys into Far- away Lands (Kitab nuzhat al-mushtag ft khtirag al-afag). This took place in the first ten days of January, corresponding to Shawwal of the year 548. Here I execute his order and command.",
       "bbox": {
         "l": 128.0,
         "b": 848.0,
@@ -912,7 +912,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "(al-tdvist 1970, 1: 6-7)",
       "bbox": {
         "l": 493.0,
         "b": 827.0,
@@ -922,7 +922,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Al-Idris prudently attributes everything to his royal patron, but more important, we see a con- vergence between ‘human geography’ of the ‘Balkhi’ type and the mathematical-astronomical geography of Ptolemy and al-Khwarazmi. Later in his introduction, al-Idrisi says that he began by drawing the usual seven latitudinal lines across the inhabited world and then drew ten lon- gitudinal lines, thus achieving a grid with seventy rectangular units. He then provided each of these with a detailed map and description. This procedure allowed al-Idtis to combine the two dominant modes of Islamic cartography within a single format. Claiming to follow Ptolemy, al-Idrisi gave coordinates of latitude and longitude. At the same time, and most remarkably, he provided a summa of Arabic geographical learning up to his time while concomitantly pursuing empirical knowledge wherever he could find it and from anyone who would provide it to him, not only in the Mediterranean environment (Figure 1.13.3) but all the way to the northern coast of Europe, where at some time he apparently went himself.",
       "bbox": {
         "l": 101.0,
         "b": 593.0,
@@ -932,7 +932,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Al-Idris also composed a shorter book titled The Gardens of Delight and the Diversion of Souls (Rau al-faraj wa-nuzhat al-muha)), possibly an abridgment of The Pleasure Excursion but more likely an independent work (Maqbul 1992, 157-8, 163-7). Consisting largely of itineraries and distances, The Gardens of Delight includes an additional clime (iglim) just south of the equator, which it considers together with the “usual” first clime. It includes 73 sectional maps, smaller, less detailed, and less unified in format than the maps of The Pleasure Excursion.",
       "bbox": {
         "l": 101.0,
         "b": 485.0,
@@ -952,7 +952,7 @@
     },
     {
       "label": "caption",
-      "text": "",
+      "text": "Figure 1.13.3 Map ofa part of the Mediterranean Sea and adjacent territory around Tunis, from al-Ideis’s ‘work The Book of Pleasant Joumeys into Faraway Lands (Kitab nuzhat al-mushtag ft tirdg al- fig); MS Oxford, Bodleian Library, Greaves 42, fols 1156-1 16a.",
       "bbox": {
         "l": 101.0,
         "b": 112.0,
@@ -962,7 +962,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Soure: © The Bodleian Libraries, University of Oxford, Oxford",
       "bbox": {
         "l": 103.0,
         "b": 88.0,
@@ -982,7 +982,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "176",
       "bbox": {
         "l": 367.0,
         "b": 54.0,
@@ -994,7 +994,7 @@
   "12": [
     {
       "label": "page_header",
-      "text": "",
+      "text": "Geography and mapmaking until 700/1300",
       "bbox": {
         "l": 250.0,
         "b": 979.0,
@@ -1004,7 +1004,7 @@
     },
     {
       "label": "text",
-      "text": "Geography and mapmaking until 700/1300\nBecause of his service for a European Christian prince, al-Idrisi had a problematic reputation\nin later Islamic scholarship. Nonetheless, he had considerable influence over later geographers\nand historians including the North Africans 'Ali ibn Mūsā ibn Sa'id al-Maghribi (d. 685/1286)\nand Ibn Khaldun (732-808/1332-1406), and, in the Timurid East, Hafiz-i Abrū (d. 883/1430).\nThe round world map associated with al-Idrisi dates from after his lifetime and is now the best-\nknown image from all of Islamic cartography.\nI.13.9 Other developments\nThe term geographical may seem inappropriate when applied to all the maps and texts dis-\ncussed so far and those still remaining to be discussed. It certainly was not the term of choice\nfor those authors and mapmakers themselves, for whom jughrafiya meant about the same\nthing as sūrat al-ard, image or map of the world. We still use it now, however, in part because\nof the lack of an alternative. Interestingly, when our geographical authors proclaimed their\nambitions and projects, sometimes they did not identify their subject matter and discipline\nin a coherent or uniform way (e.g., Ibn Hawqal 1938, 3-4). Meanwhile, the broad category\nof geographical literature includes subgenres that we have not covered here, because of lack\nof space. These include the literature of travelers on land and sea that overlaps, notably, with\nthe narratives of the 'Balkhi' authors. Another subgenre is that of \"wonders of the world,\"\nwhich enjoyed popularity and became increasingly integrated into 'mainstream' geography,\nespecially in the Wonders of Creation ('Aja'ib al-makhluqāt) of al-Qazwini (d. 682/1283). And\nfinally, we have the encyclopedias of place-names, of which the greatest is the Dictionary of\nthe Countries (Mu'jam al-buldan) of Yaqut al-Rūmi (d. 626/1229). This reader-friendly work\npresents thousands of place names in alphabetical order, providing ample literary, historical\nand indeed, geographical information. Today it remains an indispensable tool for students\nand scholars, enduring testimony to the fascination, utility and enjoyment that this geo-\ngraphical literature brings.\n1 Consolidated bibliography.\nNotes\n2 The first printed edition of Istakhri (Leiden, 1870) has no maps, since the editor had none available. The\nsecond edition (Cairo, 1961) does include maps.\nBibliography\nSources\nal-Baladhuri, Aḥmad ibn Yahya. ed. de Goeje, M. J. 1866. Kitāb Futūḥ al-buldan [The Book of the Conquest\nof the Countries]. Leiden: Brill.\nal-Birūni. tr. and ed. Sachau, E. 2000. Alberuni's India. London: Routledge.\nIbn al-Faqih al-Hamadhani. 1885. \"Kitāb al-Buldan [The Book of the Countries],\" in BGA 5.\nIbn Hawqal, Abu l-Qasim al-Naşibi. ed. Kramers, J. H. 1938. \"Kitāb Şürat al-ard [The Book of the Image of\nthe Earth],\" BGA 2 [English tr. by Bonner, M. forthcoming. Reading: Garnet].\nIbn Khurradadhbih, Abu l-Qasim. 1889. \"Al-Masalik wa-l-mamalik [The Routes and the Realms],\" in\nBGA 6.\nIbn Rusta, Abū 'Ali Aḥmad ibn 'Umar. 1892. \"al-Alaq al-nafisa [The Precious Gems],\" BGA 7.\nal-Idrisi, Abū 'Abdallah Muḥammad. 1970-84. Opus geographicum [...]= Nuzhat al-mushtaq fikhtiraq al-äfäq\n[Geographical Work (...) = The Book of Pleasant Journeys into Faraway Lands], eds. Bombaci, A., et\nal. Leiden: Brill.\n177",
+      "text": "Because of his service for a European Christian prince, al-Idrisi had a problematic reputation in later Islamic scholarship. Nonetheless, he had considerable influence over later geographers and historians including the North Africans ‘Ali ibn Masi ibn Sa‘id al-Maghribi (d. 685/1286) and Ibn Khaldin (732-808/1332—1406), and, in the Timurid East, Hafiz-i Abra (d. 883/1430) ‘The round world map associated with al-Idrisi dates from after his lifetime and is now the best known image fom all of Islamic cartography.",
       "bbox": {
         "l": 88.0,
         "b": 845.0,
@@ -1014,7 +1014,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "1.13.9 Other developments",
       "bbox": {
         "l": 265.0,
         "b": 799.0,
@@ -1024,7 +1024,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘The term geographical may seem inappropriate when applied to all the maps and texts dis- cussed so far and those still remaining to be discussed. It certainly was not the term of choice for those authors and mapmakers themselves, for whom jughrifiyd meant about the same thing as sirat al-ard, image or map of the world. We still use it now, however, in part because of the lack of an alternative. Interestingly, when our geographical authors proclaimed their ambitions and projects, sometimes they did not identify their subject matter and discipline in a coherent or uniform way (e.g., Ibn Hawqal 1938, 3-4). Meanwhile, the broad category of geographical literature includes subgenres that we have not covered here, because of lack of space. These include the literature of travelers on land and sea that overlaps, notably, with the narratives of the ‘Balkhi’ authors. Another subgenre is that of “wonders of the worl which enjoyed popularity and became increasingly integrated into ‘mainstream’ geography, especially in the Wonders of Creation (‘Ajab al-makiiligat) of al-Qazwini (d. 682/1283). And finally, we have the encyclopedias of place-names, of which the greatest is the Dictionary of the Countries (Mu‘jam al-buldan) of Yaqitt al-Riimi (d. 626/1229). This reader-friendly work presents thousands of place names in alphabetical order, providing ample literary, historical and indeed, geographical information. Today it remains an indispensable tool for students and scholars, enduring testimony to the fascination, utility and enjoyment that this geo- graphical literature brings",
       "bbox": {
         "l": 88.0,
         "b": 466.0,
@@ -1034,7 +1034,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "Notes",
       "bbox": {
         "l": 342.0,
         "b": 419.0,
@@ -1044,7 +1044,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "1 Consolidated bibliography:",
       "bbox": {
         "l": 89.0,
         "b": 392.0,
@@ -1054,7 +1054,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "2 The first printed edition of Isakhei (Leiden, 1870) has no maps, since the editor had none available. The second edition (Cairo, 1961) does include maps.",
       "bbox": {
         "l": 88.0,
         "b": 363.0,
@@ -1064,7 +1064,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "Bibliography",
       "bbox": {
         "l": 317.0,
         "b": 312.0,
@@ -1074,7 +1074,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "Sources",
       "bbox": {
         "l": 337.0,
         "b": 281.0,
@@ -1084,7 +1084,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "al-Balidhusi, Ahmad ibn Yahya. ed. de Goeje, M. J. 1866. Kitab Furth al-buldin [The Book of the Conquest of the Countries}. Leiden: Bri.",
       "bbox": {
         "l": 88.0,
         "b": 240.0,
@@ -1094,7 +1094,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "al-Biring. tr. and ed. Sachau, E. 2000, Alheruni’ India. London: Routledge.",
       "bbox": {
         "l": 89.0,
         "b": 223.0,
@@ -1104,7 +1104,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Ibn al-Faghh al-Hamadhani. 1885. “Kitab al-Buldin [The Book of the Countries)\" in BGA 5.",
       "bbox": {
         "l": 89.0,
         "b": 209.0,
@@ -1114,7 +1114,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "{bn Hawgal, Abu I-Qisim al-Nasibi. ed. Kramers, J. H. 1938, “Kitab Sirat alard [The Book of the Image of the Earth],” BGA 2 [English tr. by Bonner, M. forthcoming. Reading: Garnet}.",
       "bbox": {
         "l": 89.0,
         "b": 178.0,
@@ -1124,7 +1124,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "{bn Khurradadhbih, Aba I-Qisim. 1889. “Al-Masilik wa-l-mamalik [The Routes and the Realms},” in BGAS.",
       "bbox": {
         "l": 89.0,
         "b": 151.0,
@@ -1144,7 +1144,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "bn Rusta, Abi ‘AIT Abmad ibn ‘Umar. 1892. “al-A’lig al-nafisa [The Precious Gems],” BGA 7.",
       "bbox": {
         "l": 88.0,
         "b": 134.0,
@@ -1154,7 +1154,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "al-ldsisi, Abi ‘Abdallsh Muhammad. 1970-84. Opus geographicum [.. .] = Nuzhat al-mushtg ft khtinig al-afig [Geographical Work (...) = The Book of Pleasant Journeys into Faraway Lands), eds. Bombaci, A., et al, Leiden: Brill",
       "bbox": {
         "l": 89.0,
         "b": 91.0,
@@ -1164,7 +1164,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "7",
       "bbox": {
         "l": 354.0,
         "b": 53.0,
@@ -1176,7 +1176,7 @@
   "13": [
     {
       "label": "section_header",
-      "text": "Bonner\nal-Istakhri, Abū Ishaq Ibrāhīm. 1870. Al-Masalik wa-l-mamalik [The Routes and the Realms], ed. M. J. de\nGoeje, M. J. BGA 1. [newly ed. by M. Hini. 1961. Cairo: Wizarat al-Thaqāfa].\nal-Mas'ūdī. 1894. \"Al-Tanbih wa-l-ishraf [The Notification and the Verification],\" BGA 8.\nMinorsky, V., ed. and tr. 1937. Hudud al-'alam [The Regions of the World]. London: Luzac.\nal-Muqaddasi, Shams al-Din Abū 'Abdallah Muḥammad. 1877. \"Ahsan al-taqasim fi ma'rifat al-aqālīm [The\nBest Divisions for Knowledge of the Regions],\" in BGA 3 [Collins, B. A., tr. Reading: Garnet, 1994].\nal-Qazwini, Zakariyya' ibn Muḥammad. ed. Wüstenfeld, F. 1849. Ajaib al-makhluqat [The Wonders of the\nCreated (Beings)]. Göttingen: Dieterichsche Buchhandlung.\nQudāma ibn Ja'far. ed. al-Zubaydi, M. H. 1981. Kitab al-kharaj wa-sina'at al-kitaba [The Book of Taxes and\nthe Art of Calligraphy]. Baghdad: Dar al-Rashid li-l-nashr.\nRapoport, Y. and Savage-Smith, E., trs. and eds. 2014. An Eleventh-Century Egyptian Guide to the Universe:\nThe Book of Curiosities. Leiden: Brill.\nal-Tabarī, Muḥammad ibn Jarir. eds. de Goeje, M. J. et al. 1879-1901. Tarikh al-rusul wa-l-muluk [History of\nProphets and Kings]. Leiden: Brill [Reprint: 2010].\nal-'Umari, Shihab al-Din. 1924. Masalik al-absar fi mamalik al-amsar [The Ways of Discernment into the\nRealms of the Capital Cities]. Cairo: Dar al-kutub al-mişriyya.\nal-Ya'qubi, Ibn Abi Ya'qub ibn Wadiḥ. 1892. \"Kitāb al-Buldan [The Book of the Countries],\" in BGA\n7.\nYaqut, Abū 'Abdallah Ya'qub al-Hamawi al-Rūmi. 1955. Mu'jam al-buldan [Dictionary of the Countries].\nBeirut: Dār Şadir.\nResearch literature\nBalty-Guesdon, M.-G. 1992. \"Le Bayt al-hikma de Bagdad,\" Arabica 39: 131-50.\nBrentjes, S. 2007. \"Khwarizmi,\" in Hockey et al., eds. [CB], 631-3.\nDe Goeje, M. J. 1871. \"Die Istakhri-Balkhi Frage,\" ZDMG 25: 41-58.\nHeck, P. 2002. The Construction of Knowledge in Islamic Civilization: Qudama b. Ja'far and His Kitāb al-kharāj\nwa-sina'at al-kitaba. Leiden: Brill.\nHopkins, J. F. P. 1990. \"Geographical and Navigational Literature,\" in Young, M. J. L., et al., eds. Religion,\nLearning and Science in the 'Abbasid Period. Cambridge: Cambridge University Press, 301-27.\nKennedy, E. S. and Kennedy, M. H. 1987. Geographical Coordinates of Localities from Islamic Sources.\nFrankfurt am Main: Institut für Geschichte der Arabisch-Islamischen Wissenschaft, Johann-Wolfgang-\nGoethe-Universität.\nKrachkovskii, I. J. 1957. Arabskaya geograficheskaya literatura. Izbranniye sochineniya. Vol. 4. Moscow and\nLeningrad: Izdatel'stvo Akademii Nauk SSSR.\nKramers, J. H. 1932. \"La question Balhi-Isṭahri et l'atlas de l'Islam,\" Acta Orientalia 10: 9-30.\nKramers, J. H. 1954a. \"La littérature géographique classique des Musulmans,\" in Analecta Orientalia. Leiden:\nBrill, 172-204.\nKramers, J. H. 1954b. \"Al-Biruni's Determination of Geographical Longitude by Measuring the Distances,\"\nAnalecta Orientalia. Leiden: Brill, 205-22.\nMaqbul Ahmad, S. 1992. \"Cartography of al-Sharif al-Idrisi,\" in GTISAS, 156-74.\nMaqbul Ahmad, S. 1995. A History of Arab-Islamic Geography, 9th-16th Century AD. Mafraq: Al al-Bayt\nUniversity.\nMaqbul Ahmad, S. 1973-1978.\"Djughrāfiyā,\" in El-2, 4: 575-87.\nMiller, K. 19862 [1926-1931]. Mappae arabicae. Arabische Welt- und Länderkarten des 9-13 Jahrhunderts.\nWiesbaden: L. Reichert.\nMiquel, A. 1967-1988. La géographie humaine du monde musulman jusqu'au milieu du 11° siècle. Paris: Mouton,\nEHESS.\nNallino, C. A. 1944. \"Al-Khuwarizmi e il suo rifacimento della Geografia di Tolomeo [al-Khwarizmi and\nHis Rewriting of Ptolemy's Geography],\" Raccolta di scritti editi e inediti. Rome: Istituto per l'Oriente, 5:\n458-532.\nPinto, K. 2016. Medieval Islamic Maps: An Exploration. Chicago: University of Chicago Press.\nRichter-Bernburg, L. 2016. \"Potemkin in Baghdad: The Abbasid 'House of Wisdom' as Constructed by\n1001 Inventions,\" in Brentjes et al., eds. [CB], 121-32.\nRosenthal, F. 1968. A History of Muslim Historiography. Leiden: Brill.\nSilverstein, A. 2007. Postal Systems in the Pre-Modern Islamic World. Cambridge: Cambridge University\nPress.\n178",
+      "text": "Bonner",
       "bbox": {
         "l": 356.0,
         "b": 983.0,
@@ -1186,7 +1186,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "al-ggakhei, AbG Ishig Ibrahim. 1870. Al-Masalie wa-L-mamalik [The Routes and the Realms), ed. M. J. de Goeje, M. |. BGA 1. [newly ed. by M. Hini. 1961. Cairo: Wizarat al-Thagafi]",
       "bbox": {
         "l": 101.0,
         "b": 921.0,
@@ -1196,7 +1196,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "al-Masiidi. 1894, “Al-Tanbih wa-Lishraf [The Notification and the Verification,” BGA 8.",
       "bbox": {
         "l": 102.0,
         "b": 907.0,
@@ -1206,7 +1206,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "‘Minorsky, V, ed. and tr. 1937. Hudid al-lam [The Regions of the World]. London: Luzac.",
       "bbox": {
         "l": 102.0,
         "b": 892.0,
@@ -1216,7 +1216,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "al-Mugaddasi, Shams al-Din Aba ‘Abdallih Muhammad. 1877. “Ahsan al-tagisim fi ma'rifit al-agilim [The Best Divisions for Knowledge of the Regions,” in BGA 3 [Collins, B. A., tz. Reading: Garnet, 1994].",
       "bbox": {
         "l": 102.0,
         "b": 862.0,
@@ -1226,7 +1226,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "al-Qazwini, Zakariyyl' ibn Muhammad. ed. Wiistenfeld, F 1849. ‘Aja%b al-mabdligat [The Wonders of the Created (Beings)]. Gattingen: Dieterichsche Buchhandlung,",
       "bbox": {
         "l": 102.0,
         "b": 832.0,
@@ -1236,7 +1236,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Qudima ibn Jsfar. ed. al-Zubaydi, M. H. 1981. Kitab al-khanij wa-sind‘aral-ktaba [The Book of Taxes and the Art of Calligraphy]. Baghdad: Dir al-Rashid li rnashr.",
       "bbox": {
         "l": 102.0,
         "b": 802.0,
@@ -1246,7 +1246,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Rapoport, ¥. and Savage-Smith, E., ts. and eds. 2014. An Eleventh-Century Egyptian Guide to the Universe: The Book of Curiosities. Leiden: Brill",
       "bbox": {
         "l": 101.0,
         "b": 772.0,
@@ -1256,7 +1256,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "al-Tabari, Mubammad ibn Jari. eds. de Goeje, M. J. etal. 1879-1901. Tikh al-rusul wt Prophets and Kings). Leiden: Brill [Reprint: 2010], lak [History of",
       "bbox": {
         "l": 101.0,
         "b": 742.0,
@@ -1266,7 +1266,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "alUmasi, Shihab al-Din. 1924. Masdlikeal-abr ff mamalik al-amsar (The Ways of Discernment into the of the Capital Cities]. Cairo: Dar al-kutub al-misryys",
       "bbox": {
         "l": 101.0,
         "b": 712.0,
@@ -1276,7 +1276,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": ", Ibn Abi Ya'qib ibn Wadib. 1892. “Kitab al-Buldin [The Book of the Countries],\" in BGA",
       "bbox": {
         "l": 102.0,
         "b": 683.0,
@@ -1286,7 +1286,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "‘Yagat, Aba ‘Abdallah Yitqab al-Hamawi al-Ran ‘Beirut: Dar Sadir. 1955. Mujam al-huldin [Dictionary of the Countries)",
       "bbox": {
         "l": 101.0,
         "b": 652.0,
@@ -1296,7 +1296,7 @@
     },
     {
       "label": "section_header",
-      "text": "",
+      "text": "Research literature",
       "bbox": {
         "l": 311.0,
         "b": 610.0,
@@ -1306,7 +1306,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Balty-Guesdon, M.-G. 1992. “Le Bayt al-bikma de Bagdad,” Arabica 39: 131-50.",
       "bbox": {
         "l": 102.0,
         "b": 583.0,
@@ -1316,7 +1316,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "Brengjes, S. 2007. \"Khwarizmil” in Hockey et al, eds. [CB], 631-3.",
       "bbox": {
         "l": 102.0,
         "b": 568.0,
@@ -1336,7 +1336,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "De Goeje, M. J. 1871. “Die Istakhri-Balkhi Frage,” ZDMG 25: 41-58.",
       "bbox": {
         "l": 102.0,
         "b": 553.0,
@@ -1346,7 +1346,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Heck, P 2002, The Construction of Knowledge in Islamic Civilization: Qudma b, Jafar and His Kitab al-Khar3j warsini‘at al-kitiba, Leiden: Brill",
       "bbox": {
         "l": 101.0,
         "b": 523.0,
@@ -1356,7 +1356,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Hopkins, . E P. 1990. “Geographical and Navigational Literature\" in Young, M. J. L, etal. eds. Religion, ‘Learning and Science in the ‘Abbasid Period, Cambridge: Cambridge University Press, 301-27.",
       "bbox": {
         "l": 101.0,
         "b": 493.0,
@@ -1366,7 +1366,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Kennedy, E. S. and Kennedy, M. H. 1987. Geographical Coordinates of Localities from Islamic Sources. Frankfurt am Main: Institue fir Geschichte der Arabisch-Islamischen Wissenschaft, Johann-Wolfgang- Goethe-Universitit.",
       "bbox": {
         "l": 102.0,
         "b": 449.0,
@@ -1376,7 +1376,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Krachkovskif, 1. J 1957. Arabskaya geograficheskaya literatura. I=branniye sochineniya. Vol. 4. Moscow and Leningrad: Iedatelstvo Akademii Nauk SSSR.",
       "bbox": {
         "l": 102.0,
         "b": 418.0,
@@ -1386,7 +1386,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Kramers, J. H. 1932. “La question Balhi-lggahei et I'atlas de Islam,\" Acta Orientalia 10: 9-30.",
       "bbox": {
         "l": 102.0,
         "b": 403.0,
@@ -1396,7 +1396,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Kramers, JH. 1954a. “La littérature géographique classique des Musulmans”” in Analecta Oriental. Leiden: Brill, 172-204,",
       "bbox": {
         "l": 102.0,
         "b": 374.0,
@@ -1406,7 +1406,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Kramers, . H. 1954b, “Al-Biruni’ Determination of Geographical Longitude by Measuring the Distances,” ‘Analecta Orientalia. Leiden: Brill, 205-22.",
       "bbox": {
         "l": 102.0,
         "b": 344.0,
@@ -1416,7 +1416,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "‘Magbul Ahmad, S. 1992. “Cartography of al-Sharif al-Idrisi,” in GTISAS, 156-74.",
       "bbox": {
         "l": 101.0,
         "b": 328.0,
@@ -1426,7 +1426,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Magbul Ahmad, S. 1995. A History of Arab-Lslamic Geography, 9th—16th Century AD. Mafraq: Al al-Bayt University",
       "bbox": {
         "l": 101.0,
         "b": 298.0,
@@ -1436,7 +1436,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Magbul Ahmad, S. 1973-1978.“Djughrafiya” in EI-2, 4: 575-87.",
       "bbox": {
         "l": 102.0,
         "b": 283.0,
@@ -1456,7 +1456,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Miller, K. 1986? [1926-1931]. Mappae arabicae. Arabische Welt und Linderkarten des 9-13 Jalrhunders ‘Wiesbaden: L. Reichert.",
       "bbox": {
         "l": 101.0,
         "b": 254.0,
@@ -1466,7 +1466,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Miquel, A. 1967-1988. La géographie humaine du monde musulman jusqu’au milieu du 11° siéele. Paris: Mouton, EHESS,",
       "bbox": {
         "l": 101.0,
         "b": 226.0,
@@ -1476,7 +1476,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Nallino, C. A. 1944, “A-Khuwirizmi e il suo rifacimento della Geografia di Tolomeo [al-Khwarizmi and His Rewriting of Prolemy’s Geography),” Raccolta di seit editieinediti. Rome: Istituto per ' Oriente, 5: 458-532.",
       "bbox": {
         "l": 101.0,
         "b": 180.0,
@@ -1486,7 +1486,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Pinto, K. 2016. Medieval Islamic Maps: An Exploration. Chicago: University of Chicago Pres.",
       "bbox": {
         "l": 102.0,
         "b": 163.0,
@@ -1496,7 +1496,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Richter-Bernburg, L. 2016. “Potemkin in Baghdad: The Abbasid ‘House of Wisdom’ as Constructed by. 1001 Inventions.” in Brentjes et al, eds. [CB], 121-32.",
       "bbox": {
         "l": 102.0,
         "b": 133.0,
@@ -1506,7 +1506,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Rosenthal, E1968. A History of Muslim Historiography. Leiden: Brill,",
       "bbox": {
         "l": 102.0,
         "b": 118.0,
@@ -1526,7 +1526,7 @@
     },
     {
       "label": "list_item",
-      "text": "",
+      "text": "Silverstein, A. 2007. Postal Systems in the Pre-Modern Islamic World. Cambridge: Cambridge University Press",
       "bbox": {
         "l": 102.0,
         "b": 91.0,
@@ -1536,7 +1536,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "78",
       "bbox": {
         "l": 368.0,
         "b": 54.0,
@@ -1548,7 +1548,7 @@
   "14": [
     {
       "label": "section_header",
-      "text": "Geography and mapmaking until 700/1300\nTibbetts, G. 1992a. \"The Beginnings of a Cartographic Tradition,\" in GTISAS, 90-107.\nTibbetts, G. 1992b. \"The Balkhi School of Geographers,\" in GTISAS, 108-36.\nTibbetts, G.1992c. \"Later Cartographic Developments,\" in GTISAS, 137-55.\nZadeh, T. 2011. Mapping Frontiers Across Medieval Islam: Geography, Translation and the 'Abbasid Empire.\nLondon: Tauris.\n179",
+      "text": "Geography and mapmaking until 700/1300",
       "bbox": {
         "l": 250.0,
         "b": 979.0,
@@ -1558,7 +1558,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Tibbetts, G. 1992a, “The Beginnings of a Cartographic Tradition,” in 90-107.",
       "bbox": {
         "l": 88.0,
         "b": 937.0,
@@ -1568,7 +1568,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Tibbetts, G. 1992b. “The Balkhi School of Geographers,” in GT",
       "bbox": {
         "l": 89.0,
         "b": 922.0,
@@ -1578,7 +1578,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "‘Tibbetts, G.1992c. “Later Cartographic Developments.” in GTIS",
       "bbox": {
         "l": 89.0,
         "b": 907.0,
@@ -1588,7 +1588,7 @@
     },
     {
       "label": "text",
-      "text": "",
+      "text": "London:",
       "bbox": {
         "l": 107.0,
         "b": 879.0,
@@ -1598,7 +1598,7 @@
     },
     {
       "label": "page_footer",
-      "text": "",
+      "text": "179",
       "bbox": {
         "l": 354.0,
         "b": 54.0,
