@@ -168,7 +168,7 @@
     "abstract": "A distributed, end-to-end information integration system that is based on the Semantic Web architecture is of considerable interest to both commercial and government organizations. However, there are a number of challenges that have to be resolved to build such a system given the currently available Semantic Web technologies. We describe here the ISENS prototype system we designed, implemented, and tested (on a small scale) to address this problem. We discuss certain system limitations (some coming from underlying technologies used) and future ISENS development to resolve them and to enable an extended set of capabilities.",
     "pub_title": "The Semantic Web - ISWC 2006",
     "pages": "764-777",
-    "url": "https://link.springer.com/content/pdf/10.1007/11926078_55.pdf",
+    "url": "http://dx.doi.org/10.1007/11926078_55",
     "tags": [],
     "notes": [],
     "pdf_status": "url_only",
