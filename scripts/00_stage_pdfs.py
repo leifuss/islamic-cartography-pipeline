@@ -70,6 +70,35 @@ def _save_inventory(inventory: list, inv_path: Path = INV_PATH):
     tmp.replace(inv_path)
 
 
+def _mark_staged_in_status(key: str, inv_path: Path) -> None:
+    """Update import_status.json to mark a Zotero-staged PDF as stored/done.
+
+    The availability scan skips items that already have an 'availability' value,
+    so without this update a previously-scanned 'unavailable' item would never
+    be promoted even though a PDF now exists locally.
+    """
+    import time as _time
+    status_path = inv_path.parent / "import_status.json"
+    if status_path.exists():
+        try:
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+        except Exception:
+            status = {}
+    else:
+        status = {}
+
+    items = status.setdefault("items", {})
+    entry = items.get(key, {})
+    entry["availability"]  = "stored"
+    entry["import_status"] = "done"
+    entry["last_updated"]  = _time.strftime("%Y-%m-%dT%H:%M:%SZ", _time.gmtime())
+    items[key] = entry
+
+    tmp = status_path.with_suffix(".tmp.json")
+    tmp.write_text(json.dumps(status, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp.replace(status_path)
+
+
 def fetch_pdf(library, item: dict, children_by_parent: dict,
               pdfs_dir: Path, dry_run: bool = False,
               force: bool = False) -> dict:
@@ -210,6 +239,7 @@ def main():
             # Save after each doc (resume-safe)
             if not args.dry_run:
                 _save_inventory(inventory, inv_path)
+                _mark_staged_in_status(key, inv_path)
 
         elif status == "already_staged":
             skipped += 1

@@ -277,6 +277,7 @@ def scan(force: bool = False, collection_slug: str | None = None) -> None:
         time.sleep(0.3)
 
     status['scan_complete'] = True
+    status['last_scan'] = now_iso()   # update to scan-completion time
     save_status(status, status_path)
 
     # ── Write availability + pdf_status back to inventory.json ─────────────
