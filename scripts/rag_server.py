@@ -28,6 +28,7 @@ import re
 import sys
 import time
 import hashlib
+import threading
 from pathlib import Path
 from typing import Iterator
 
@@ -589,22 +590,29 @@ _INDEX_BUILT = False
 _USE_EMBEDDINGS = True
 
 
+_INDEX_LOCK = threading.Lock()
+
+
 def _ensure_index():
     global CHUNKS, BM25_INDEX, EMBEDDINGS, INDEX_STATS, _INDEX_BUILT
     if _INDEX_BUILT:
         return
-    CHUNKS, BM25_INDEX, INDEX_STATS, EMBEDDINGS = build_index(use_embeddings=_USE_EMBEDDINGS)
-    _INDEX_BUILT = True
+    with _INDEX_LOCK:
+        if _INDEX_BUILT:
+            return
+        CHUNKS, BM25_INDEX, INDEX_STATS, EMBEDDINGS = build_index(use_embeddings=_USE_EMBEDDINGS)
+        _INDEX_BUILT = True
 
 
 @app.on_event("startup")
 def startup():
-    _ensure_index()
+    threading.Thread(target=_ensure_index, daemon=True).start()
 
 
 @app.get("/api/status")
 def status():
-    _ensure_index()
+    if not _INDEX_BUILT:
+        return {"status": "starting", "index": {}, "mode": "initializing"}
     return {
         "status": "ok",
         "index": INDEX_STATS,
