@@ -6,6 +6,10 @@ data/collections/*/pdfs/
 data/texts/*/docling.md
 data/texts/*/*.docling.json
 data/collections/*/texts/*/*.docling.json
+
+# Temporary upsampled images from Vision OCR (10_ocr_vision.py)
+data/texts/*/ocr_test/
+data/collections/*/texts/*/ocr_test/
 data/raw/
 data/extracted/
 data/test_samples/

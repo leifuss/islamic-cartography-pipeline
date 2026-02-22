@@ -35,6 +35,7 @@ Notes:
 import argparse
 import json
 import os
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -309,6 +310,10 @@ def process_doc(client, doc_dir: Path, page_nums: list[int] | None,
 
         # Polite rate limiting (Vision free tier: ~1800 req/min)
         time.sleep(0.05)
+
+    # Clean up temporary upsampled images
+    if ocr_dir.exists():
+        shutil.rmtree(ocr_dir, ignore_errors=True)
 
     return {
         "key": key,
