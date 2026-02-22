@@ -70,22 +70,46 @@ jobs:
           fi
           python scripts/import_scan.py $FORCE_FLAG $SLUG_FLAG
 
-      - name: Commit import_status.json
+      - name: Update inventory flags
+        run: |
+          SLUG_FLAG=""
+          if [ -n "${{ inputs.collection_slug }}" ]; then
+            SLUG_FLAG="--collection-slug ${{ inputs.collection_slug }}"
+          fi
+          python scripts/00_update_inventory_flags.py $SLUG_FLAG
+
+      - name: Commit results
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage status files and inventory files (availability is written back to inventory)
+          # Stage status files and inventory files
           git add data/import_status.json data/*/import_status.json 2>/dev/null || true
           git add data/collections/*/import_status.json 2>/dev/null || true
           git add data/inventory.json data/collections/*/inventory.json 2>/dev/null || true
 
           if git diff --staged --quiet; then
-            echo "No changes to import_status.json."
+            echo "No changes to commit."
           else
-            STORED=$(python3 -c "
-          import json
-          s = json.load(open('data/import_status.json'))
+            SLUG="${{ inputs.collection_slug }}"
+            SUMMARY=$(python3 -c "
+          import json, os, sys
+          slug = '$SLUG'
+          if slug:
+              try:
+                  colls = json.load(open('data/collections.json'))
+                  p = next(
+                      ('data/import_status.json' if c.get('path',slug)=='.' else f'data/{c[\"path\"]}/import_status.json')
+                      for c in colls.get('collections',[]) if c['slug']==slug
+                  )
+              except Exception:
+                  p = f'data/{slug}/import_status.json'
+          else:
+              p = 'data/import_status.json'
+          if not os.path.exists(p):
+              print('(status file not found)')
+              sys.exit(0)
+          s = json.load(open(p))
           items = s.get('items', {})
           counts = {}
           for v in items.values():
@@ -93,11 +117,11 @@ jobs:
               counts[av] = counts.get(av, 0) + 1
           print('  '.join(f'{k}:{v}' for k, v in sorted(counts.items())))
           " 2>/dev/null || echo "")
-            git commit -m "import-scan: availability updated [skip ci]
+            git commit -m "scan: availability + flags synced [skip ci]
 
-          ${STORED}
+          ${SUMMARY}
           Run: ${{ github.run_id }}"
             git pull --rebase origin main
             git push
-            echo "import_status.json committed."
+            echo "Results committed."
           fi

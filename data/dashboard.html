@@ -155,8 +155,8 @@
 <div class="actions-bar">
   <span class="actions-label">Run</span>
   <button class="btn-workflow" id="btnScan"
-    onclick="triggerWorkflow('import-scan.yml', {collection_slug: _collectionSlug}, this, 'Scan started')">
-    ↺ Scan availability
+    onclick="triggerWorkflow('import-scan.yml', {collection_slug: _collectionSlug}, this, 'Resync started')">
+    ↺ Resync collection
   </button>
   <button class="btn-workflow" id="btnFetch"
     onclick="triggerWorkflow('import-pdfs.yml', {collection_slug: _collectionSlug, mode: 'available'}, this, 'PDF fetch started')">
