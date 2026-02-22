@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Research Library — Explorer</title>
+<title>VicarelloBeakers — Explorer</title>
 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 <!-- Leaflet for the map view -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -373,21 +377,41 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
 .b-good      { background:#0d2a1a; color:#5fba7d; border:1px solid #1a4a2a; }
 .b-suspect   { background:#2a2000; color:#d4b05a; border:1px solid #4a3800; }
 .b-garbled   { background:#2a1a1a; color:#d47a5a; border:1px solid #4a2a1a; }
+.b-oa        { background:#0d200d; color:#5fba7d; border:1px solid #1a4a1a; }
+.b-paywalled { background:#2a1a00; color:#d4a05a; border:1px solid #4a3000; }
+.b-unavail   { background:#1e1e1e; color:#555;    border:1px solid #2e2e2e; }
 
 /* ── Scrollbars ── */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+/* ── Scholion brand ── */
+.scholion-logo {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px; font-weight: 600; color: #fff;
+  letter-spacing: .04em; text-decoration: none; line-height: 1; flex-shrink: 0;
+}
+.scholion-logo:hover { color: #ccc; }
+.header-divider { color: #444; font-size: 14px; flex-shrink: 0; }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Islamic Cartography — Corpus Explorer</h1>
-  <span class="sub">Generated 2026-02-21 13:01 · 6 items · 6 with date · 0 with place</span>
+  <a href="../../index.html" class="scholion-logo">Scholion</a>
+  <span class="header-divider">·</span>
+  <h1>VicarelloBeakers — Explorer</h1>
+  <span class="sub">
+    6 items
+    
+    
+    
+    · 6 dated · 0 placed
+  </span>
   <nav class="site-nav">
-    <a href="dashboard.html">📋 Dashboard</a>
-    <a href="explore.html" class="active">🔭 Explorer</a>
+    <a href="../../dashboard.html?collection=vicarellobeakers">📋 Dashboard</a>
+    <a href="../../explore.html?collection=vicarellobeakers" class="active">🔭 Explorer</a>
   </nav>
 </header>
 
@@ -444,6 +468,15 @@ header .sub { font-size: 12px; color: var(--muted); flex: 1; }
       <option value="19c">19th Century (1800–1900)</option>
       <option value="20c">20th Century (1900–2000)</option>
       <option value="modern">21st Century (2000–)</option>
+    </select>
+  </label>
+  <label>Avail:
+    <select id="fAvail" onchange="applyFilters()">
+      <option value="">All</option>
+      <option value="stored">Stored</option>
+      <option value="open_access">Open access</option>
+      <option value="restricted">Paywalled</option>
+      <option value="unavailable">Unavailable</option>
     </select>
   </label>
   <span class="filter-count" id="filterCount"></span>
@@ -528,7 +561,7 @@ function esc(s) {
 
 /** Return the best link for an item: reader > URL > null */
 function itemHref(r) {
-  if (r.has_reader) return `reader.html?key=${r.key}`;
+  if (r.has_reader) return `../../reader.html?key=${r.key}&collection=vicarellobeakers`;
   if (r.url)        return r.url;
   return null;
 }
@@ -576,6 +609,15 @@ function qualityBadge(s) {
   return '';
 }
 
+function availabilityBadge(s) {
+  // Skip badge if already covered by pdfBadge (stored) or not yet scanned
+  if (!s || s === 'stored') return '';
+  if (s === 'open_access')  return badge('b-oa',         'Open access');
+  if (s === 'restricted' || s === 'unknown')  return badge('b-paywalled', 'Paywalled');
+  if (s === 'unavailable')  return badge('b-unavail',    'Unavailable');
+  return '';
+}
+
 // ─── Filtering ───────────────────────────────────────────────────────────────
 function applyFilters() {
   const q       = document.getElementById('q').value.toLowerCase();
@@ -584,6 +626,7 @@ function applyFilters() {
   const fDoc    = document.getElementById('fDoc').value;
   const fLang   = document.getElementById('fLang').value;
   const fPeriod = document.getElementById('fPeriod').value;
+  const fAvail  = document.getElementById('fAvail').value;
 
   filtered = DATA.filter(r => {
     if (q && !JSON.stringify(r).toLowerCase().includes(q)) return false;
@@ -592,6 +635,11 @@ function applyFilters() {
     if (fDoc    && r.doc_type   !== fDoc)    return false;
     if (fLang   && r.language   !== fLang)   return false;
     if (fPeriod && periodOf(r.year) !== fPeriod) return false;
+    if (fAvail) {
+      const match = r.availability === fAvail ||
+                    (fAvail === 'restricted' && r.availability === 'unknown');
+      if (!match) return false;
+    }
     return true;
   });
 
@@ -922,6 +970,7 @@ function renderList() {
         <div class="card-meta">${esc(meta)}</div>
         <div class="card-badges">
           ${pdfBadge(r.pdf_status)}
+          ${availabilityBadge(r.availability)}
           ${typeBadge(r.doc_type)}
           ${r.language ? badge('b-lang', r.language) : ''}
           ${badge('b-itype', r.item_type || '')}

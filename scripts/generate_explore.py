@@ -132,7 +132,8 @@ def build_decade_data(inventory: list) -> list:
     return result
 
 
-def build_html(inventory: list, data_dir: Path = None, corpus_name: str = 'My Research Library') -> str:
+def build_html(inventory: list, data_dir: Path = None, corpus_name: str = 'My Research Library',
+               collection_slug: str = '') -> str:
     # ── Pre-compute derived data for JS ───────────────────────────────────────
     # Tag items that already have a generated reader HTML
     if data_dir is None:
@@ -177,6 +178,12 @@ def build_html(inventory: list, data_dir: Path = None, corpus_name: str = 'My Re
     data_js      = json.dumps(inventory,  ensure_ascii=False)
     decades_js   = json.dumps(decades,    ensure_ascii=False)
     map_items_js = json.dumps(map_items,  ensure_ascii=False)
+
+    # Nav links differ when generating a standalone file inside collections/{slug}/
+    # vs the root-level data/explore.html.
+    nav_prefix  = '../../' if collection_slug else ''
+    coll_qs     = f'?collection={collection_slug}' if collection_slug else ''
+    reader_qs   = f'&collection={collection_slug}' if collection_slug else ''
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -579,7 +586,7 @@ header .sub {{ font-size: 12px; color: var(--muted); flex: 1; }}
 <body>
 
 <header>
-  <a href="index.html" class="scholion-logo">Scholion</a>
+  <a href="{nav_prefix}index.html" class="scholion-logo">Scholion</a>
   <span class="header-divider">·</span>
   <h1>{corpus_name} — Explorer</h1>
   <span class="sub">
@@ -590,8 +597,8 @@ header .sub {{ font-size: 12px; color: var(--muted); flex: 1; }}
     · {with_year} dated · {with_place} placed
   </span>
   <nav class="site-nav">
-    <a href="dashboard.html">📋 Dashboard</a>
-    <a href="explore.html" class="active">🔭 Explorer</a>
+    <a href="{nav_prefix}dashboard.html{coll_qs}">📋 Dashboard</a>
+    <a href="{nav_prefix}explore.html{coll_qs}" class="active">🔭 Explorer</a>
   </nav>
 </header>
 
@@ -741,7 +748,7 @@ function esc(s) {{
 
 /** Return the best link for an item: reader > URL > null */
 function itemHref(r) {{
-  if (r.has_reader) return `reader.html?key=${{r.key}}`;
+  if (r.has_reader) return `{nav_prefix}reader.html?key=${{r.key}}{reader_qs}`;
   if (r.url)        return r.url;
   return null;
 }}
