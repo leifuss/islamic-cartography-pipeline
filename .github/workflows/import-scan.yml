@@ -63,20 +63,26 @@ jobs:
                       None,
                   )
                   if coll:
+                      # collections.json has source.{library_id,...} directly
+                      coll_src = coll.get('source', {})
                       path = coll.get('path', slug)
                       coll_cfg_path = (
                           Path('data/corpus_config.json') if path == '.'
                           else Path('data') / path / 'corpus_config.json'
                       )
+                      # Also try the collection's own corpus_config.json
+                      coll_cfg_src = {}
                       if coll_cfg_path.exists():
                           coll_cfg = json.load(open(coll_cfg_path))
-                          # Collection config may be flat or wrapped in "source.zotero_api"
-                          nested = coll_cfg.get('source', {}).get('zotero_api', {})
-                          flat = coll_cfg  # flat keys like library_id, library_type, collection_name
-                          for k in ('library_id', 'library_type', 'collection_name', 'collection_key'):
-                              val = nested.get(k) or flat.get(k)
-                              if val is not None:
-                                  z[k] = val
+                          # May be source.zotero_api.* (root style) or source.* (collection style)
+                          coll_cfg_src = (
+                              coll_cfg.get('source', {}).get('zotero_api', {})
+                              or coll_cfg.get('source', {})
+                          )
+                      for k in ('library_id', 'library_type', 'collection_name', 'collection_key'):
+                          val = coll_cfg_src.get(k) or coll_src.get(k)
+                          if val:
+                              z[k] = val
               except Exception as e:
                   print(f'Warning: could not load collection config: {e}')
 
