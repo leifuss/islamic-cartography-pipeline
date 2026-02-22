@@ -328,51 +328,45 @@ _TEXT_LABELS = {"text", "list_item", "section_header", "title",
 def _assign_text_from_pdf(pdf_page, regions: list[dict],
                            img_w_px: int, img_h_px: int) -> bool:
     """
-    Assign text to Heron regions using word-level bboxes from the embedded PDF.
+    Assign text to Heron regions by cropping the PDF page to each region's bbox
+    and calling extract_text() on the crop.
 
-    pdfplumber.extract_words() returns each word with its exact position in
-    PDF-point space (origin top-left, y increases downward).  We convert those
-    coordinates to image-pixel space and use the same centre-point intersection
-    logic as the Tesseract path.
+    This uses pdfplumber's full text-extraction heuristics (character spacing,
+    ligatures, etc.) applied per-region, so words are always properly spaced —
+    unlike extract_words() which fails for PDFs with character-level positioning.
 
-    Returns True if any words were found (embedded PDF), False for scanned pages.
+    Returns True if the page has embedded text, False for scanned pages.
     Modifies regions in-place.
     """
+    # Check whether the page has any embedded text at all.
     try:
-        words = pdf_page.extract_words(use_text_flow=True, keep_blank_chars=False)
+        page_check = pdf_page.extract_text() or ""
     except Exception:
-        words = []
+        page_check = ""
 
-    if not words:
+    if not page_check.strip():
         for r in regions:
             r.setdefault("text", "")
         return False
 
-    # Scale factors: PDF points → image pixels
-    # pdfplumber uses top-left origin (top increases downward), same as image space.
+    # Scale factors: image pixels → PDF points (pdfplumber top-left origin).
     page_w_pts = pdf_page.width or 1
     page_h_pts = pdf_page.height or 1
-    sx = img_w_px / page_w_pts
-    sy = img_h_px / page_h_pts
+    scale_x = page_w_pts / img_w_px
+    scale_y = page_h_pts / img_h_px
 
-    # Collect word centres in pixel space
-    word_list: list[tuple[float, float, str]] = []
-    for w in words:
-        cx = (w["x0"] + w["x1"]) / 2 * sx
-        cy = (w["top"] + w["bottom"]) / 2 * sy
-        word_list.append((cx, cy, w["text"]))
-
-    # Assign each word to the first containing Heron region (same as Tesseract path)
-    word_buckets: list[list[str]] = [[] for _ in regions]
-    for cx, cy, word in word_list:
-        for i, reg in enumerate(regions):
-            x1, y1, x2, y2 = reg["bbox_px"]
-            if x1 <= cx <= x2 and y1 <= cy <= y2:
-                word_buckets[i].append(word)
-                break
-
-    for reg, bucket in zip(regions, word_buckets):
-        reg["text"] = " ".join(bucket)
+    for reg in regions:
+        x1, y1, x2, y2 = reg["bbox_px"]
+        x0_pts  = x1 * scale_x
+        top_pts = y1 * scale_y
+        x1_pts  = x2 * scale_x
+        bot_pts = y2 * scale_y
+        try:
+            cropped = pdf_page.crop((x0_pts, top_pts, x1_pts, bot_pts))
+            text = cropped.extract_text() or ""
+        except Exception:
+            text = ""
+        reg["text"] = text.strip()
 
     return True
 
