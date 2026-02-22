@@ -97,7 +97,8 @@ def _push_progress(repo_dir: Path, message: str) -> bool:
     timeout=14400,         # 4 hours total budget
     secrets=[modal.Secret.from_name("islamic-cartography")],
 )
-def run_heron(keys: list[str] | None = None, github_token: str = "", repo_url: str = ""):
+def run_heron(keys: list[str] | None = None, github_token: str = "", repo_url: str = "",
+              inventory: str = "", texts_root: str = ""):
     import json
     import os
     import subprocess
@@ -155,11 +156,16 @@ def run_heron(keys: list[str] | None = None, github_token: str = "", repo_url: s
         print(f"\n{'═'*50}\n[{n}/{total}] Layout: {key}  (elapsed {elapsed_total}s)\n{'═'*50}", flush=True)
 
         try:
+            cmd = [sys.executable, "scripts/05c_layout_heron.py",
+                   "--batch", "4",
+                   "--max-pages", str(MAX_PAGES),
+                   "--keys", key]
+            if inventory:
+                cmd += ["--inventory", inventory]
+            if texts_root:
+                cmd += ["--texts-root", texts_root]
             result = subprocess.run(
-                [sys.executable, "scripts/05c_layout_heron.py",
-                 "--batch", "4",
-                 "--max-pages", str(MAX_PAGES),
-                 "--keys", key],
+                cmd,
                 cwd=REPO_DIR,
                 timeout=PER_KEY_TIMEOUT,
             )
@@ -200,12 +206,15 @@ def run_heron(keys: list[str] | None = None, github_token: str = "", repo_url: s
 
 # ── Local entrypoint ─────────────────────────────────────────────────────────
 @app.local_entrypoint()
-def main(keys: str = ""):
+def main(keys: str = "", inventory: str = "", texts_root: str = ""):
     """
     Run Heron enrichment on Modal T4 GPU.
 
     Args:
-        --keys: Space-separated doc keys. Leave blank for all unenriched.
+        --keys:       Space-separated doc keys. Leave blank for all unenriched.
+        --inventory:  Path to inventory.json (default: data/inventory.json).
+        --texts-root: Path to per-key text dirs (default: data/texts).
+                      Pass data/collections/SLUG/texts for collection items.
 
     GITHUB_TOKEN is read from the local environment (set automatically in
     GitHub Actions, or set manually when running locally with a PAT).
@@ -216,5 +225,6 @@ def main(keys: str = ""):
     # Derive repo URL from GitHub Actions env (GITHUB_REPOSITORY = "owner/repo")
     gh_repo = os.environ.get("GITHUB_REPOSITORY", "")
     repo_url = f"https://github.com/{gh_repo}.git" if gh_repo else ""
-    result = run_heron.remote(key_list, github_token=github_token, repo_url=repo_url)
+    result = run_heron.remote(key_list, github_token=github_token, repo_url=repo_url,
+                              inventory=inventory, texts_root=texts_root)
     print(f"\nResult: {result}")

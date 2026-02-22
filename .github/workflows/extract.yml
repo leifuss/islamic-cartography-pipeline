@@ -312,7 +312,10 @@ jobs:
 
           echo "Dispatching Heron to Modal T4 GPU for keys: $KEYS"
           echo "(Modal will clone the repo, run Heron, commit results, and push back)"
-          modal run scripts/modal_heron.py --keys "$KEYS"
+          modal run scripts/modal_heron.py \
+            --keys "$KEYS" \
+            --inventory "$INV_FILE" \
+            --texts-root "$TEXTS_DIR"
 
       # ── Commit layout results after Heron ────────────────────────────────────
       # Modal already commits+pushes from inside its container, so this step is

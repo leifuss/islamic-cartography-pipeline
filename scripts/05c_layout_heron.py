@@ -671,7 +671,14 @@ def main():
     parser.add_argument("--max-pages", type=int, default=0,
                         help="Skip docs with more page images than this (0 = no limit)")
     parser.add_argument("--inventory", default="data/inventory.json")
+    parser.add_argument("--texts-root", default="data/texts",
+                        help="Root directory containing per-key text subdirs "
+                             "(default: data/texts; use data/collections/SLUG/texts "
+                             "for collection items)")
     args = parser.parse_args()
+
+    global TEXTS_ROOT
+    TEXTS_ROOT = _ROOT / args.texts_root
 
     inv_path  = _ROOT / args.inventory
     inventory = json.loads(inv_path.read_text("utf-8"))
