@@ -95,27 +95,30 @@ def classify_pdf(pdf_path: Path) -> dict:
         avg = sample_chars / min(3, n_pages) if n_pages else 0
         doc_type = "scanned" if avg < 50 else "embedded"
 
-        # DPI estimation
-        pdf_dpi = None
-        try:
-            from pypdfium2.raw import FPDF_PAGEOBJ_IMAGE
-            dpis = []
-            for i in range(min(3, n_pages)):
-                page = doc[i]
-                for obj in page.get_objects(filter=[FPDF_PAGEOBJ_IMAGE]):
-                    try:
-                        px_w, px_h = obj.get_size()
-                        left, bottom, right, top = obj.get_bounds()
-                        box_w = abs(right - left)
-                        if box_w > 0 and px_w > 0:
-                            dpis.append(px_w / (box_w / 72.0))
-                    except Exception:
-                        continue
-            if dpis:
-                dpis.sort()
-                pdf_dpi = round(dpis[len(dpis) // 2])
-        except Exception:
-            pass
+        # DPI estimation — born-digital docs get 0 (no raster resolution)
+        if doc_type == "embedded":
+            pdf_dpi = 0
+        else:
+            pdf_dpi = None
+            try:
+                from pypdfium2.raw import FPDF_PAGEOBJ_IMAGE
+                dpis = []
+                for i in range(min(3, n_pages)):
+                    page = doc[i]
+                    for obj in page.get_objects(filter=[FPDF_PAGEOBJ_IMAGE]):
+                        try:
+                            px_w, px_h = obj.get_size()
+                            left, bottom, right, top = obj.get_bounds()
+                            box_w = abs(right - left)
+                            if box_w > 0 and px_w > 0:
+                                dpis.append(px_w / (box_w / 72.0))
+                        except Exception:
+                            continue
+                if dpis:
+                    dpis.sort()
+                    pdf_dpi = round(dpis[len(dpis) // 2])
+            except Exception:
+                pass
 
         doc.close()
         return {"doc_type": doc_type, "page_count": n_pages, "pdf_dpi": pdf_dpi}

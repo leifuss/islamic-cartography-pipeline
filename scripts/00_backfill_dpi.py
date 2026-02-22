@@ -128,6 +128,14 @@ def main():
             continue
 
         scanned += 1
+
+        # Born-digital docs get DPI 0 — no raster resolution to measure
+        if item.get("doc_type") == "embedded":
+            item["pdf_dpi"] = 0
+            updated += 1
+            print(f"  {key}: 0 DPI (born-digital)")
+            continue
+
         dpi = estimate_pdf_dpi(pdf_path)
 
         if dpi is not None:
