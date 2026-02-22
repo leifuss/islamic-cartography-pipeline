@@ -329,9 +329,10 @@ def _assign_text_fast(page_text: str, regions: list[dict]) -> list[dict]:
     """
     Fast text assignment using pre-extracted page text (from page_texts.json).
 
-    Distributes text to Heron regions by vertical bbox proportion — same
-    reading order assumption as Tesseract, but instant (~0.001 s/page vs
-    ~10–100 s/page for Tesseract image_to_data).
+    Slices the flat page text proportionally across text-bearing Heron regions
+    by their bbox pixel height.  Cuts are made at the nearest whitespace boundary
+    so individual words are never split.  This works regardless of whether the
+    source text has paragraph separators.
 
     Good enough for most single/double-column academic layouts. For
     word-level precision, use --tesseract (which calls _assign_text_from_image).
@@ -341,19 +342,10 @@ def _assign_text_fast(page_text: str, regions: list[dict]) -> list[dict]:
             r.setdefault("text", "")
         return regions
 
-    # Split into paragraphs (double-newline), fall back to lines.
-    # Also fall back when double-newline gives only 1 chunk — that happens when
-    # the extractor emits no blank lines, leaving a single blob that would be
-    # dumped entirely into the first region and leaving all others empty.
-    paragraphs = [p.strip() for p in _re.split(r'\n\s*\n', page_text) if p.strip()]
-    if len(paragraphs) <= 1:
-        paragraphs = [p.strip() for p in page_text.split('\n') if p.strip()]
-    if not paragraphs:
-        for r in regions:
-            r.setdefault("text", "")
-        return regions
+    text = page_text.strip()
+    total_chars = len(text)
 
-    # Identify text-bearing regions with their bbox heights
+    # Identify text-bearing regions with their bbox pixel heights
     text_slots: list[tuple[int, float]] = []   # (region_index, bbox_height)
     for i, r in enumerate(regions):
         if r["label"] in _TEXT_LABELS:
@@ -363,32 +355,24 @@ def _assign_text_fast(page_text: str, regions: list[dict]) -> list[dict]:
 
     if not text_slots:
         # No text regions — assign everything to first region
-        regions[0]["text"] = page_text.strip()
+        regions[0]["text"] = text
         for r in regions[1:]:
             r.setdefault("text", "")
         return regions
 
-    # Distribute paragraphs proportional to region heights
+    # Slice text proportionally by region height, cutting at word boundaries
     total_h = sum(h for _, h in text_slots)
-    total_chars = sum(len(p) for p in paragraphs)
-
-    assigned_idx = 0
+    pos = 0
     for slot_num, (reg_idx, h) in enumerate(text_slots):
         if slot_num == len(text_slots) - 1:
-            # Last slot gets all remaining paragraphs
-            regions[reg_idx]["text"] = '\n'.join(paragraphs[assigned_idx:])
+            regions[reg_idx]["text"] = text[pos:].strip()
         else:
-            target_chars = total_chars * h / total_h
-            chars_so_far = 0
-            end_idx = assigned_idx
-            while end_idx < len(paragraphs) and chars_so_far < target_chars:
-                chars_so_far += len(paragraphs[end_idx])
-                end_idx += 1
-            # Ensure at least one paragraph per region
-            if end_idx == assigned_idx and assigned_idx < len(paragraphs):
-                end_idx = assigned_idx + 1
-            regions[reg_idx]["text"] = '\n'.join(paragraphs[assigned_idx:end_idx])
-            assigned_idx = end_idx
+            target_end = pos + int(total_chars * h / total_h)
+            # Snap forward to the next whitespace so we don't cut mid-word
+            while target_end < len(text) and not text[target_end].isspace():
+                target_end += 1
+            regions[reg_idx]["text"] = text[pos:target_end].strip()
+            pos = target_end
 
     # Ensure all regions have text key
     for r in regions:
