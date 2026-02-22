@@ -55,10 +55,16 @@ except ImportError:
     _PDFIUM = False
 
 try:
-    from langdetect import detect, LangDetectException
-    _LANGDETECT = True
+    from language_detector import detect_languages
+    _LANG_DETECTOR = True
 except ImportError:
-    _LANGDETECT = False
+    _LANG_DETECTOR = False
+
+# Map Tesseract codes back to ISO 639-1 for inventory consistency
+_TESS_TO_ISO = {
+    'eng': 'en', 'fra': 'fr', 'ara': 'ar', 'fas': 'fa',
+    'deu': 'de', 'tur': 'tr', 'lat': 'la', 'ell': 'el', 'grc': 'el',
+}
 
 # Avg chars/page threshold below which we call a PDF "scanned"
 _SCANNED_THRESHOLD = 50
@@ -158,10 +164,17 @@ def classify_pdf(path: Path) -> dict:
         sample_text = ' '.join(texts)[:4000]
         result['lang_sample'] = sample_text[:200].strip()
 
-        if _LANGDETECT and sample_text.strip():
+        if _LANG_DETECTOR and sample_text.strip():
             try:
-                result['language'] = detect(sample_text)
-            except LangDetectException:
+                tess_codes = detect_languages(sample_text)
+                iso_codes = sorted(set(
+                    _TESS_TO_ISO.get(c, c) for c in tess_codes
+                ))
+                if len(iso_codes) == 1:
+                    result['language'] = iso_codes[0]
+                elif iso_codes:
+                    result['language'] = iso_codes
+            except Exception:
                 result['language'] = 'unknown'
 
     except Exception as e:

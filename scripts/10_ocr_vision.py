@@ -38,6 +38,7 @@ import os
 import sys
 import time
 from pathlib import Path
+from PIL import Image
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 _ROOT = Path(__file__).resolve().parent.parent
@@ -169,7 +170,6 @@ def ocr_page(client, img_path: Path, upsample: int = 1,
 
 
 def _image_size(img_path: Path) -> tuple[int, int]:
-    from PIL import Image
     with Image.open(img_path) as img:
         return img.size  # (width, height)
 
