@@ -279,14 +279,18 @@ def scan(force: bool = False, collection_slug: str | None = None) -> None:
     status['scan_complete'] = True
     save_status(status, status_path)
 
-    # ── Write availability back to inventory.json ─────────────────────────────
-    # This makes the field visible to explore.html without an extra fetch.
+    # ── Write availability + pdf_status back to inventory.json ─────────────
+    # This makes the fields visible to the dashboard without an extra fetch.
     inv_changed = False
     for item in inventory:
         key = item['key']
         av = (status['items'].get(key) or {}).get('availability')
         if av and item.get('availability') != av:
             item['availability'] = av
+            inv_changed = True
+        # If PDF is stored locally but inventory still says url_only / no_attachment, fix it
+        if av == 'stored' and item.get('pdf_status') not in ('stored', 'downloaded', 'stored_embedded'):
+            item['pdf_status'] = 'downloaded'
             inv_changed = True
     if inv_changed:
         tmp = inv_path.with_suffix('.tmp.json')

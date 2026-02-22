@@ -32,8 +32,9 @@ import time
 from pathlib import Path
 
 _ROOT = Path(__file__).parent.parent
-INV_PATH = _ROOT / "data" / "inventory.json"
-PDFS_DIR = _ROOT / "data" / "pdfs"
+INV_PATH         = _ROOT / "data" / "inventory.json"
+PDFS_DIR         = _ROOT / "data" / "pdfs"
+COLLECTIONS_PATH = _ROOT / "data" / "collections.json"
 
 sys.path.insert(0, str(_ROOT / "src"))
 
@@ -44,11 +45,29 @@ except ImportError:
     pass
 
 
-def _save_inventory(inventory: list):
+def _get_collection_paths(slug: str | None) -> tuple[Path, Path]:
+    """Return (inv_path, pdfs_dir) for the given collection slug."""
+    if not slug:
+        return INV_PATH, PDFS_DIR
+    if not COLLECTIONS_PATH.exists():
+        raise SystemExit("ERROR: data/collections.json not found")
+    with open(COLLECTIONS_PATH, encoding="utf-8") as f:
+        coll_data = json.load(f)
+    for c in coll_data.get("collections", []):
+        if c["slug"] == slug:
+            path = c.get("path", slug)
+            if path == ".":
+                return INV_PATH, PDFS_DIR
+            base = _ROOT / "data" / path
+            return base / "inventory.json", base / "pdfs"
+    raise SystemExit(f"ERROR: collection slug {slug!r} not found in data/collections.json")
+
+
+def _save_inventory(inventory: list, inv_path: Path = INV_PATH):
     """Atomic write."""
-    tmp = INV_PATH.with_suffix(".tmp.json")
+    tmp = inv_path.with_suffix(".tmp.json")
     tmp.write_text(json.dumps(inventory, indent=2, ensure_ascii=False), encoding="utf-8")
-    tmp.replace(INV_PATH)
+    tmp.replace(inv_path)
 
 
 def fetch_pdf(library, item: dict, children_by_parent: dict,
@@ -119,11 +138,20 @@ def main():
     parser.add_argument("--keys", nargs="+", default=[],
                         help="Only fetch these doc keys")
     parser.add_argument("--inventory", default="data/inventory.json")
+    parser.add_argument("--collection-slug", default=None,
+                        help="Collection slug from data/collections.json "
+                             "(default: root collection)")
     args = parser.parse_args()
 
     from zotero_client import ZoteroLibrary
 
-    inv_path = _ROOT / args.inventory
+    if args.collection_slug:
+        inv_path, pdfs_dir = _get_collection_paths(args.collection_slug)
+        print(f"Collection: {args.collection_slug}  ({inv_path})")
+    else:
+        inv_path = _ROOT / args.inventory
+        pdfs_dir = PDFS_DIR
+
     inventory = json.loads(inv_path.read_text("utf-8"))
     key_to_idx = {item["key"]: i for i, item in enumerate(inventory)}
 
@@ -149,7 +177,7 @@ def main():
 
     for item in candidates:
         result = fetch_pdf(library, item, children_by_parent,
-                           PDFS_DIR, dry_run=args.dry_run, force=args.force)
+                           pdfs_dir, dry_run=args.dry_run, force=args.force)
         status = result["status"]
         key = result["key"]
 
@@ -170,7 +198,7 @@ def main():
                 inventory[idx]["pdf_path"] = result.get("pdf_staged_path")
             # Save after each doc (resume-safe)
             if not args.dry_run:
-                _save_inventory(inventory)
+                _save_inventory(inventory, inv_path)
 
         elif status == "already_staged":
             skipped += 1
@@ -194,8 +222,8 @@ def main():
           f"Failed: {failed}  Total: {total}")
 
     if not args.dry_run and staged:
-        print(f"\nPDFs saved to {PDFS_DIR}/")
-        print(f"Provenance stored in {INV_PATH.name}")
+        print(f"\nPDFs saved to {pdfs_dir}/")
+        print(f"Provenance stored in {inv_path.name}")
 
 
 if __name__ == "__main__":
