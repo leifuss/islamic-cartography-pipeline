@@ -56,7 +56,7 @@ image = (
 app = modal.App("islamic-cartography-heron", image=image)
 
 # ── Repo volume — cloned fresh each run (LFS included) ───────────────────────
-REPO_URL = "https://github.com/leifuss/islamic-cartography-pipeline.git"
+REPO_URL = "https://github.com/leifuss/scholion.git"
 REPO_DIR = Path("/repo")
 
 # ── Tuning ────────────────────────────────────────────────────────────────────
@@ -93,17 +93,19 @@ def _push_progress(repo_dir: Path, message: str) -> bool:
     timeout=14400,         # 4 hours total budget
     secrets=[modal.Secret.from_name("islamic-cartography")],
 )
-def run_heron(keys: list[str] | None = None, github_token: str = ""):
+def run_heron(keys: list[str] | None = None, github_token: str = "", repo_url: str = ""):
     import json
     import os
     import subprocess
     import time
     from pathlib import Path
 
+    clone_url = repo_url or REPO_URL
+
     # Clone the repo and pull LFS objects
-    print("Cloning repo...")
+    print(f"Cloning repo from {clone_url}...")
     subprocess.run(
-        ["git", "clone", "--depth=1", REPO_URL, str(REPO_DIR)],
+        ["git", "clone", "--depth=1", clone_url, str(REPO_DIR)],
         check=True, capture_output=True
     )
     print("Pulling LFS objects (PDFs)...")
@@ -117,8 +119,9 @@ def run_heron(keys: list[str] | None = None, github_token: str = ""):
     github_token = github_token or os.environ.get("GITHUB_TOKEN", "")
     can_push = bool(github_token)
     if can_push:
-        remote = f"https://x-access-token:{github_token}@github.com/leifuss/islamic-cartography-pipeline.git"
-        subprocess.run(["git", "remote", "set-url", "origin", remote], cwd=REPO_DIR, check=True)
+        # Derive authenticated remote from clone URL
+        auth_url = clone_url.replace("https://", f"https://x-access-token:{github_token}@")
+        subprocess.run(["git", "remote", "set-url", "origin", auth_url], cwd=REPO_DIR, check=True)
     else:
         print("ℹ No GITHUB_TOKEN — results will not be pushed.")
 
@@ -206,5 +209,8 @@ def main(keys: str = ""):
     import os
     key_list = keys.split() if keys.strip() else None
     github_token = os.environ.get("GITHUB_TOKEN", "")
-    result = run_heron.remote(key_list, github_token=github_token)
+    # Derive repo URL from GitHub Actions env (GITHUB_REPOSITORY = "owner/repo")
+    gh_repo = os.environ.get("GITHUB_REPOSITORY", "")
+    repo_url = f"https://github.com/{gh_repo}.git" if gh_repo else ""
+    result = run_heron.remote(key_list, github_token=github_token, repo_url=repo_url)
     print(f"\nResult: {result}")

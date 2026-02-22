@@ -76,27 +76,67 @@ jobs:
         run: |
           python3 - << 'PYEOF'
           import json, os
-          c = json.load(open('data/corpus_config.json'))
+          from pathlib import Path
+
+          root = Path('data/corpus_config.json')
+          c = json.load(open(root))
           z = c.get('source', {}).get('zotero_api', {})
+
+          slug = os.environ.get('COLLECTION_SLUG', '')
+          if slug:
+              try:
+                  colls = json.load(open('data/collections.json'))
+                  coll = next(
+                      (x for x in colls.get('collections', []) if x['slug'] == slug),
+                      None,
+                  )
+                  if coll:
+                      coll_src = coll.get('source', {})
+                      path = coll.get('path', slug)
+                      coll_cfg_path = (
+                          Path('data/corpus_config.json') if path == '.'
+                          else Path('data') / path / 'corpus_config.json'
+                      )
+                      coll_cfg_src = {}
+                      if coll_cfg_path.exists():
+                          coll_cfg = json.load(open(coll_cfg_path))
+                          coll_cfg_src = (
+                              coll_cfg.get('source', {}).get('zotero_api', {})
+                              or coll_cfg.get('source', {})
+                          )
+                      for k in ('library_id', 'library_type', 'collection_name', 'collection_key'):
+                          val = coll_cfg_src.get(k) or coll_src.get(k)
+                          if val:
+                              z[k] = val
+              except Exception as e:
+                  print(f'Warning: could not load collection config: {e}')
+
           with open('.env', 'w') as f:
               f.write(f"ZOTERO_API_KEY={os.environ.get('ZOTERO_API_KEY', '')}\n")
-              f.write(f"ZOTERO_LIBRARY_ID={z.get('library_id', '')}\n")
+              f.write(f"ZOTERO_LIBRARY_ID={z.get('library_id') or ''}\n")
               f.write(f"ZOTERO_LIBRARY_TYPE={z.get('library_type', 'user')}\n")
-              col = z.get('collection_name', '') or ''
+              col = z.get('collection_name') or ''
               f.write(f"COLLECTION_NAME={col}\n")
               f.write(f"GEMINI_API_KEY={os.environ.get('GEMINI_API_KEY', '')}\n")
               f.write(f"ANTHROPIC_API_KEY={os.environ.get('ANTHROPIC_API_KEY', '')}\n")
+
+          print(f"ZOTERO_LIBRARY_ID={z.get('library_id') or '(unset)'}")
+          print(f"ZOTERO_LIBRARY_TYPE={z.get('library_type', 'user')}")
+          print(f"COLLECTION_NAME={z.get('collection_name') or ''}")
           PYEOF
         env:
           ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+          COLLECTION_SLUG: ${{ inputs.collection_slug }}
 
       # ── Fetch PDFs from Zotero cloud ─────────────────────────────────────────
       - name: Fetch PDFs from Zotero
         run: |
+          SLUG_FLAG=""
+          [ -n "${{ inputs.collection_slug }}" ] && SLUG_FLAG="--collection-slug ${{ inputs.collection_slug }}"
           if [ -n "${{ inputs.keys }}" ]; then
-            python scripts/00_stage_pdfs.py --keys ${{ inputs.keys }}
+            python scripts/00_stage_pdfs.py --keys ${{ inputs.keys }} $SLUG_FLAG
           else
-            python scripts/00_stage_pdfs.py
+            python scripts/00_stage_pdfs.py $SLUG_FLAG
           fi
           echo "PDFs available:"
           find data/pdfs -name "*.pdf" 2>/dev/null | wc -l

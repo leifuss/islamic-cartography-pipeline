@@ -212,7 +212,18 @@ def scan(force: bool = False, collection_slug: str | None = None) -> None:
         title = (item.get('title') or key)[:70]
 
         existing = status['items'].get(key, {})
+
+        # Always re-check stored status — a PDF may have been staged since last scan
         if not force and existing.get('availability'):
+            if existing['availability'] != 'stored' and is_stored(item, pdfs_dir):
+                # PDF was staged since last scan — promote to stored
+                existing['availability']  = 'stored'
+                existing['import_status'] = 'done'
+                existing['last_updated']  = now_iso()
+                status['items'][key] = existing
+                save_status(status, status_path)
+                print(f"[{idx:4d}/{total}] stored (newly staged): {title[:45]}")
+                continue
             print(f"[{idx:4d}/{total}] skip (already scanned): {title[:45]}")
             continue
 
