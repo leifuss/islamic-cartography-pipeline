@@ -144,11 +144,10 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage status files, inventory files, and any newly-staged PDFs
+          # Stage status files and inventory files (PDFs are not tracked in git)
           git add data/import_status.json data/*/import_status.json 2>/dev/null || true
           git add data/collections/*/import_status.json 2>/dev/null || true
           git add data/inventory.json data/collections/*/inventory.json 2>/dev/null || true
-          git add data/pdfs/ data/collections/*/pdfs/ 2>/dev/null || true
 
           if git diff --staged --quiet; then
             echo "No changes to commit."
