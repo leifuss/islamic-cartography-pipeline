@@ -13,8 +13,8 @@
     "url": "",
     "tags": [],
     "notes": [],
-    "pdf_status": "no_attachment",
-    "pdf_path": null,
+    "pdf_status": "stored",
+    "pdf_path": "data/collections/general-case-studies/pdfs/3NV8QXDS.pdf",
     "doc_type": "unknown",
     "page_count": null,
     "avg_chars_pg": null,
@@ -25,7 +25,11 @@
     "has_reader": false,
     "text_quality": null,
     "chars_per_page": null,
-    "availability": "unavailable"
+    "availability": "unavailable",
+    "pdf_staged_path": "data/collections/general-case-studies/pdfs/3NV8QXDS.pdf",
+    "pdf_original_name": "11574620_56.pdf",
+    "pdf_staged_at": "2026-02-22T01:26:09",
+    "pdf_zotero_key": "XI4C4AVM"
   },
   {
     "key": "4PSTTB2B",
