@@ -303,44 +303,7 @@ jobs:
 
           EXPLICIT_KEYS="${{ inputs.keys }}"
           export TEXTS_DIR RAW_KEYS FORCE EXPLICIT_KEYS
-          KEYS=$(python3 - <<'PYEOF'
-import json, os, sys
-from pathlib import Path
-
-texts_dir     = Path(os.environ['TEXTS_DIR'])
-# Force Heron if --force flag set, OR if caller supplied explicit keys
-# (explicit key dispatch always means "reprocess this doc fully")
-explicit_keys = bool(os.environ.get('EXPLICIT_KEYS', '').strip())
-force         = os.environ.get('FORCE', '').lower() == 'true' or explicit_keys
-raw_keys      = os.environ.get('RAW_KEYS', '').split()
-
-keep = []
-for key in raw_keys:
-    d = texts_dir / key
-    # Must have page_texts.json (05b extraction succeeded)
-    if not (d / 'page_texts.json').exists():
-        print(f'Skipping {key} — no page_texts.json', file=sys.stderr)
-        continue
-    # Must have page images (Heron runs on rendered page images)
-    pages_dir = d / 'pages'
-    if not pages_dir.is_dir() or not any(pages_dir.glob('*.jpg')):
-        print(f'Skipping {key} — no page images', file=sys.stderr)
-        continue
-    # Skip if already Heron-enriched (unless force_layout is set)
-    if not force:
-        le = d / 'layout_elements.json'
-        if le.exists():
-            try:
-                if json.loads(le.read_text()).get('_heron_version'):
-                    print(f'Skipping {key} — already Heron-enriched', file=sys.stderr)
-                    continue
-            except Exception:
-                pass  # corrupt file → re-enrich
-    keep.append(key)
-
-print(' '.join(keep))
-PYEOF
-          )
+          KEYS=$(python3 scripts/filter_heron_keys.py)
           KEYS=$(echo $KEYS | xargs)   # trim whitespace
 
           if [ -z "$KEYS" ]; then

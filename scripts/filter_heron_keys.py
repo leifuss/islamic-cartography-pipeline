@@ -1,10 +1,11 @@
 """Filter candidate keys for Heron layout enrichment.
 
-Reads TEXTS_DIR, RAW_KEYS, and FORCE from environment variables and
-prints the subset of keys that actually need Heron to run:
+Reads TEXTS_DIR, RAW_KEYS, FORCE, and EXPLICIT_KEYS from environment
+variables and prints the subset of keys that actually need Heron to run:
   - must have page_texts.json  (05b extraction succeeded)
   - must have at least one page image (Heron works on rendered pages)
-  - if FORCE != 'true', skip keys already enriched by Heron
+  - if FORCE != 'true' and no explicit keys were given, skip keys
+    already enriched by Heron
 """
 import json
 import os
@@ -12,7 +13,10 @@ import sys
 from pathlib import Path
 
 texts_dir = Path(os.environ["TEXTS_DIR"])
-force = os.environ.get("FORCE", "").lower() == "true"
+# Force Heron if --force flag set, OR if caller supplied explicit keys
+# (explicit key dispatch always means "reprocess this doc fully")
+explicit_keys = bool(os.environ.get("EXPLICIT_KEYS", "").strip())
+force = os.environ.get("FORCE", "").lower() == "true" or explicit_keys
 raw_keys = os.environ.get("RAW_KEYS", "").split()
 
 keep = []
@@ -27,7 +31,7 @@ for key in raw_keys:
     if not pages_dir.is_dir() or not any(pages_dir.glob("*.jpg")):
         print(f"Skipping {key} — no page images", file=sys.stderr)
         continue
-    # Skip if already Heron-enriched (unless FORCE is set)
+    # Skip if already Heron-enriched (unless force is set)
     if not force:
         le = d / "layout_elements.json"
         if le.exists():
