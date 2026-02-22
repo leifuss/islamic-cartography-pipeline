@@ -428,7 +428,7 @@ function renderRow(r, idx) {
   const extractBtn = hasPdf
     ? `<button class="btn-row-extract"
          title="Force re-extraction (05b + Heron)"
-         onclick="triggerWorkflow('extract.yml',{collection_slug:_collectionSlug,keys:'${r.key}',run_layout:true,force_layout:true},this,'Re-extract started')"
+         onclick="triggerWorkflow('extract.yml',{collection_slug:_collectionSlug,keys:'${r.key}',run_layout:'true',force_layout:'true'},this,'Re-extract started')"
        >\u21ba Re-extract</button>`
     : `<button class="btn-row-extract" disabled title="No PDF available">\u21ba Re-extract</button>`;
   return `<tr class="${rowClass(r)}" data-idx="${idx}">
@@ -571,6 +571,10 @@ function triggerWorkflow(workflow, inputs, btn, successMsg) {
     .replace('https://github.com/', 'https://api.github.com/repos/')
     + '/actions/workflows/' + workflow + '/dispatches';
 
+  // GitHub workflow_dispatch API requires all input values to be strings.
+  var stringInputs = {};
+  Object.keys(inputs).forEach(function (k) { stringInputs[k] = String(inputs[k]); });
+
   fetch(apiUrl, {
     method: 'POST',
     headers: {
@@ -578,7 +582,7 @@ function triggerWorkflow(workflow, inputs, btn, successMsg) {
       'Accept':        'application/vnd.github+json',
       'Content-Type':  'application/json',
     },
-    body: JSON.stringify({ ref: 'main', inputs: inputs }),
+    body: JSON.stringify({ ref: 'main', inputs: stringInputs }),
   })
   .then(function (r) {
     if (r.status === 204) {
@@ -605,6 +609,9 @@ function triggerWorkflow(workflow, inputs, btn, successMsg) {
         btn.textContent = 'Error ' + r.status + ' \u2014 retry';
         btn.title       = t;
         btn.disabled    = false;
+        var msg = t;
+        try { msg = JSON.stringify(JSON.parse(t), null, 2); } catch (e) {}
+        alert('GitHub API error ' + r.status + ' while triggering ' + workflow + ':\n\n' + msg);
       });
     }
   })
