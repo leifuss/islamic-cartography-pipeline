@@ -35,6 +35,7 @@ Notes:
 import argparse
 import json
 import os
+import re
 import shutil
 import sys
 import time
@@ -98,6 +99,52 @@ def upscale_image(img_path: Path, factor: int, tmp_dir: Path) -> Path:
     return tmp
 
 
+def _classify_paragraph(para, block_type, para_text: str,
+                        para_height: float, img_w: int, img_h: int,
+                        t_px: float, b_px: float,
+                        median_body_height: float) -> str:
+    """
+    Assign a Docling-compatible label to a Vision paragraph using
+    block_type and position/size heuristics.
+    """
+    from google.cloud import vision
+
+    # Non-text block types
+    if block_type == vision.Block.BlockType.TABLE:
+        return "table"
+    if block_type == vision.Block.BlockType.PICTURE:
+        return "picture"
+
+    text = para_text.strip()
+
+    # Page header: in top 8% of page, short text
+    if t_px < img_h * 0.08 and len(text) < 80:
+        return "page_header"
+
+    # Page footer: in bottom 8% of page, short text
+    if b_px > img_h * 0.92 and len(text) < 80:
+        return "page_footer"
+
+    # Footnote: small text in bottom 30% of page, starts with a number
+    if (median_body_height > 0 and para_height < median_body_height * 0.75
+            and b_px > img_h * 0.70
+            and len(text) < 200):
+        if re.match(r'^\d{1,3}[\s.)‐–-]', text):
+            return "footnote"
+
+    # Section header: tall text (> 1.3× median body height) and short
+    if (median_body_height > 0 and para_height > median_body_height * 1.3
+            and len(text) < 120):
+        return "section_header"
+
+    # Caption: short italic-style text near pictures (heuristic: short + parenthetical)
+    if len(text) < 100 and (text.startswith("Fig") or text.startswith("Table")
+                            or text.startswith("Map") or text.startswith("Plate")):
+        return "caption"
+
+    return "text"
+
+
 def ocr_page(client, img_path: Path, upsample: int = 1,
              lang_hints: list[str] | None = None,
              tmp_dir: Path | None = None) -> dict:
@@ -135,6 +182,20 @@ def ocr_page(client, img_path: Path, upsample: int = 1,
     blocks = []
     img_w, img_h = _image_size(img_path)
 
+    # First pass: collect paragraph heights to compute median body-text height
+    para_heights = []
+    for page in response.full_text_annotation.pages:
+        for block in page.blocks:
+            if block.block_type != vision.Block.BlockType.TEXT:
+                continue
+            for para in block.paragraphs:
+                verts = para.bounding_box.vertices
+                ys = [v.y for v in verts]
+                if ys:
+                    para_heights.append(max(ys) - min(ys))
+    median_body_height = sorted(para_heights)[len(para_heights) // 2] if para_heights else 0
+
+    # Second pass: extract blocks with labels
     for page in response.full_text_annotation.pages:
         for block in page.blocks:
             for para in block.paragraphs:
@@ -156,12 +217,19 @@ def ocr_page(client, img_path: Path, upsample: int = 1,
                 r = max(xs)
                 t_px = min(ys)   # top in pixels (from top)
                 b_px = max(ys)   # bottom in pixels (from top)
+                para_height = b_px - t_px
                 # Convert to Docling convention: t > b (measured from page bottom)
                 t = img_h - t_px
                 b = img_h - b_px
 
+                label = _classify_paragraph(
+                    para, block.block_type, para_text.strip(),
+                    para_height, img_w, img_h, t_px, b_px,
+                    median_body_height,
+                )
+
                 blocks.append({
-                    "label": "text",
+                    "label": label,
                     "text": para_text.strip(),
                     "bbox": {"l": round(l, 2), "t": round(t, 2),
                              "r": round(r, 2), "b": round(b, 2)},
