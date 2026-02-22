@@ -558,7 +558,7 @@ header .sub {{ font-size: 12px; color: var(--muted); flex: 1; }}
 .b-suspect   {{ background:#2a2000; color:#d4b05a; border:1px solid #4a3800; }}
 .b-garbled   {{ background:#2a1a1a; color:#d47a5a; border:1px solid #4a2a1a; }}
 .b-oa        {{ background:#0d200d; color:#5fba7d; border:1px solid #1a4a1a; }}
-.b-restricted{{ background:#2a1a00; color:#d4a05a; border:1px solid #4a3000; }}
+.b-paywalled {{ background:#2a1a00; color:#d4a05a; border:1px solid #4a3000; }}
 .b-unavail   {{ background:#1e1e1e; color:#555;    border:1px solid #2e2e2e; }}
 
 /* ── Scrollbars ── */
@@ -655,7 +655,7 @@ header .sub {{ font-size: 12px; color: var(--muted); flex: 1; }}
       <option value="">All</option>
       <option value="stored">Stored</option>
       <option value="open_access">Open access</option>
-      <option value="restricted">Restricted</option>
+      <option value="restricted">Paywalled</option>
       <option value="unavailable">Unavailable</option>
     </select>
   </label>
@@ -793,7 +793,7 @@ function availabilityBadge(s) {{
   // Skip badge if already covered by pdfBadge (stored) or not yet scanned
   if (!s || s === 'stored') return '';
   if (s === 'open_access')  return badge('b-oa',         'Open access');
-  if (s === 'restricted')   return badge('b-restricted', 'Restricted');
+  if (s === 'restricted' || s === 'unknown')  return badge('b-paywalled', 'Paywalled');
   if (s === 'unavailable')  return badge('b-unavail',    'Unavailable');
   return '';
 }}
@@ -815,7 +815,11 @@ function applyFilters() {{
     if (fDoc    && r.doc_type   !== fDoc)    return false;
     if (fLang   && r.language   !== fLang)   return false;
     if (fPeriod && periodOf(r.year) !== fPeriod) return false;
-    if (fAvail  && r.availability !== fAvail) return false;
+    if (fAvail) {{
+      const match = r.availability === fAvail ||
+                    (fAvail === 'restricted' && r.availability === 'unknown');
+      if (!match) return false;
+    }}
     return true;
   }});
 

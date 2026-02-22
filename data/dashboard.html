@@ -78,7 +78,7 @@
   .b-arbitrate   { background: #fff3e0; color: #b45309; }
   .b-manual      { background: #fde8e8; color: #c0392b; }
   .b-oa          { background: #e8f8ed; color: #1a7f37; }
-  .b-restricted  { background: #fff3e0; color: #b45309; }
+  .b-paywalled   { background: #fff3e0; color: #b45309; }
   .b-unavail     { background: #fde8e8; color: #c0392b; }
   .b-not-scanned { background: #f0f0f0; color: #999; }
   .scan-note { font-size: 11px; color: #6e6e73; margin-left: auto; align-self: center; }
@@ -147,7 +147,7 @@
   <div class="stat"><div class="val" id="stat-extracted">&mdash;</div><div class="lbl">Text extracted</div></div>
   <div class="stat" style="border-left:2px solid #e0e0e5;padding-left:16px">
     <div class="val" id="stat-oa">&mdash;</div><div class="lbl">Open access</div></div>
-  <div class="stat"><div class="val" id="stat-restricted">&mdash;</div><div class="lbl">Restricted</div></div>
+  <div class="stat"><div class="val" id="stat-restricted">&mdash;</div><div class="lbl">Paywalled</div></div>
   <div class="stat"><div class="val" id="stat-unavail">&mdash;</div><div class="lbl">Unavailable</div></div>
   <span class="scan-note" id="scan-note"></span>
 </div>
@@ -199,7 +199,7 @@
     <select id="filter-avail" onchange="filterTable()">
       <option value="">All</option>
       <option value="open_access">Open access</option>
-      <option value="restricted">Restricted</option>
+      <option value="restricted">Paywalled</option>
       <option value="unavailable">Unavailable</option>
       <option value="stored">Stored locally</option>
     </select>
@@ -342,7 +342,7 @@ function init(inventory, statusData) {
   document.getElementById('stat-scanned').textContent    = count(r => r.doc_type === 'scanned');
   document.getElementById('stat-extracted').textContent  = count(r => r.extracted);
   document.getElementById('stat-oa').textContent         = count(r => r._availability === 'open_access');
-  document.getElementById('stat-restricted').textContent = count(r => r._availability === 'restricted');
+  document.getElementById('stat-restricted').textContent = count(r => r._availability === 'restricted' || r._availability === 'unknown');
   document.getElementById('stat-unavail').textContent    = count(r => r._availability === 'unavailable');
 
   // Populate language filter
@@ -376,7 +376,7 @@ function typeBadge(s) {
 
 function availBadge(s) {
   if (s === 'open_access')  return '<span class="badge b-oa">Open access</span>';
-  if (s === 'restricted')   return '<span class="badge b-restricted">Restricted</span>';
+  if (s === 'restricted' || s === 'unknown')  return '<span class="badge b-paywalled">Paywalled</span>';
   if (s === 'unavailable')  return '<span class="badge b-unavail">Unavailable</span>';
   if (s === 'stored')       return '<span class="badge b-stored">Stored</span>';
   return '<span class="badge b-not-scanned">—</span>';
@@ -456,7 +456,11 @@ function filterTable() {
     if (pdf   && r.pdf_status    !== pdf)   return false;
     if (type  && r.doc_type      !== type)  return false;
     if (lang  && r.language      !== lang)  return false;
-    if (avail && r._availability !== avail) return false;
+    if (avail) {
+      const match = r._availability === avail ||
+                    (avail === 'restricted' && r._availability === 'unknown');
+      if (!match) return false;
+    }
     if (ext  === 'yes' && !r.extracted) return false;
     if (ext  === 'no'  &&  r.extracted) return false;
     return true;
