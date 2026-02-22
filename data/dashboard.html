@@ -112,6 +112,14 @@
   }
   .btn-workflow:hover:not(:disabled) { background: #e8e8ed; border-color: #0071e3; color: #0071e3; }
   .btn-workflow:disabled { opacity: .5; cursor: default; }
+  .btn-row-extract {
+    padding: 2px 7px; border-radius: 5px; font-size: 11px; font-weight: 500;
+    cursor: pointer; border: 1px solid #d2d2d7; background: #f5f5f7;
+    color: #555; white-space: nowrap;
+    transition: background .15s, border-color .15s, color .15s;
+  }
+  .btn-row-extract:hover:not(:disabled) { background: #e8e8ed; border-color: #0071e3; color: #0071e3; }
+  .btn-row-extract:disabled { opacity: .45; cursor: default; }
   .actions-gh-link {
     font-size: 11px; color: #0071e3; text-decoration: none; margin-left: 4px; display: none;
   }
@@ -233,10 +241,11 @@
   <th data-col="12" onclick="sortTable(12)">Lang<span class="sort-arrow">&#8597;</span></th>
   <th data-col="13" onclick="sortTable(13)">Quality<span class="sort-arrow">&#8597;</span></th>
   <th data-col="14" onclick="sortTable(14)">Result<span class="sort-arrow">&#8597;</span></th>
+  <th style="width:1%;white-space:nowrap"></th>
 </tr>
 </thead>
 <tbody id="tbody">
-  <tr><td colspan="15" class="loading">Loading inventory&hellip;</td></tr>
+  <tr><td colspan="16" class="loading">Loading inventory&hellip;</td></tr>
 </tbody>
 </table>
 </div>
@@ -288,7 +297,7 @@ function collectionQS(prefix) {
     .then(([inventory, statusData]) => init(inventory, statusData))
     .catch(err => {
       document.getElementById('tbody').innerHTML =
-        `<tr><td colspan="15" class="loading">Failed to load inventory.json: ${err.message}</td></tr>`;
+        `<tr><td colspan="16" class="loading">Failed to load inventory.json: ${err.message}</td></tr>`;
     });
 })();
 
@@ -415,6 +424,13 @@ function escHtml(s) {
 function renderRow(r, idx) {
   const q = r.quality_score !== null && r.quality_score !== undefined
             ? r.quality_score.toFixed(2) : '\u2014';
+  const hasPdf = r.pdf_status === 'stored' || r.pdf_status === 'downloaded';
+  const extractBtn = hasPdf
+    ? `<button class="btn-row-extract"
+         title="Force re-extraction (05b + Heron)"
+         onclick="triggerWorkflow('extract.yml',{collection_slug:_collectionSlug,keys:'${r.key}',run_layout:'true',force_layout:'true'},this,'Re-extract started')"
+       >\u21ba Re-extract</button>`
+    : `<button class="btn-row-extract" disabled title="No PDF available">\u21ba Re-extract</button>`;
   return `<tr class="${rowClass(r)}" data-idx="${idx}">
     <td class="num">${idx+1}</td>
     <td class="key-mono">${escHtml(r.key)}</td>
@@ -431,6 +447,7 @@ function renderRow(r, idx) {
     <td>${escHtml(r.language||'\u2014')}</td>
     <td class="num">${q}</td>
     <td>${recBadge(r.recommendation)}</td>
+    <td style="white-space:nowrap">${extractBtn}</td>
   </tr>`;
 }
 
