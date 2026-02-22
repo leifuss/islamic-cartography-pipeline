@@ -319,55 +319,63 @@ def _assign_text_from_image(pil_image, regions: list[dict],
     return regions
 
 
-# ── Text assignment from embedded PDF text (pdfplumber) ───────────────────────
+# ── Text assignment from embedded PDF text (pypdfium2) ────────────────────────
 
 _TEXT_LABELS = {"text", "list_item", "section_header", "title",
                 "caption", "footnote", "formula"}
 
 
-def _assign_text_from_pdf(pdf_page, regions: list[dict],
+def _assign_text_from_pdf(pdfium_page, regions: list[dict],
                            img_w_px: int, img_h_px: int) -> bool:
     """
-    Assign text to Heron regions by cropping the PDF page to each region's bbox
-    and calling extract_text() on the crop.
+    Assign text to Heron regions using pypdfium2 per-region text extraction.
 
-    This uses pdfplumber's full text-extraction heuristics (character spacing,
-    ligatures, etc.) applied per-region, so words are always properly spaced —
-    unlike extract_words() which fails for PDFs with character-level positioning.
+    Uses the same PDF engine as 05b_extract_robust.py (which generates
+    page_texts.json), so spacing and ligatures are always correct.
+
+    For each region, calls textpage.get_text_bounded(left, bottom, right, top)
+    with the region's bbox converted from image-pixel space to PDF-point space
+    (origin bottom-left, y increases upward).
 
     Returns True if the page has embedded text, False for scanned pages.
     Modifies regions in-place.
     """
-    # Check whether the page has any embedded text at all.
     try:
-        page_check = pdf_page.extract_text() or ""
+        textpage  = pdfium_page.get_textpage()
+        page_w    = pdfium_page.get_width()
+        page_h    = pdfium_page.get_height()
+        full_text = textpage.get_text_range() or ""
     except Exception:
-        page_check = ""
-
-    if not page_check.strip():
         for r in regions:
             r.setdefault("text", "")
         return False
 
-    # Scale factors: image pixels → PDF points (pdfplumber top-left origin).
-    page_w_pts = pdf_page.width or 1
-    page_h_pts = pdf_page.height or 1
-    scale_x = page_w_pts / img_w_px
-    scale_y = page_h_pts / img_h_px
+    if not full_text.strip():
+        textpage.close()
+        for r in regions:
+            r.setdefault("text", "")
+        return False
+
+    # Scale factors: image pixels → PDF points.
+    # Image space: top-left origin, y increases downward.
+    # PDF space:   bottom-left origin, y increases upward.
+    scale_x = page_w / img_w_px
+    scale_y = page_h / img_h_px
 
     for reg in regions:
         x1, y1, x2, y2 = reg["bbox_px"]
-        x0_pts  = x1 * scale_x
-        top_pts = y1 * scale_y
-        x1_pts  = x2 * scale_x
-        bot_pts = y2 * scale_y
+        pdf_left   = x1 * scale_x
+        pdf_right  = x2 * scale_x
+        pdf_top    = page_h - y1 * scale_y   # image top    → high PDF y
+        pdf_bottom = page_h - y2 * scale_y   # image bottom → low  PDF y
         try:
-            cropped = pdf_page.crop((x0_pts, top_pts, x1_pts, bot_pts))
-            text = cropped.extract_text() or ""
+            text = textpage.get_text_bounded(pdf_left, pdf_bottom,
+                                             pdf_right, pdf_top) or ""
         except Exception:
             text = ""
         reg["text"] = text.strip()
 
+    textpage.close()
     return True
 
 
@@ -514,17 +522,17 @@ def enrich_document(item: dict, force: bool = False,
     Enrich layout_elements.json for one document using Heron.
 
     Text assignment priority (for each page):
-      1. pdfplumber word bboxes — uses exact embedded-text positions from the PDF.
-         Identical in principle to the Tesseract path but instant (no OCR needed).
-         Requires item["pdf_path"] to point to the PDF and pdfplumber to be installed.
+      1. pypdfium2 region crops — crops the PDF page to each Heron region's bbox and
+         calls get_text_bounded().  Same engine as 05b/page_texts.json, so spacing and
+         ligatures are always correct.  Requires item["pdf_path"] and pypdfium2.
       2. Tesseract OCR — opt-in via --tesseract.  Accurate for scanned pages but
          slow (~10-100 s/page).
       3. Proportional fallback — page_texts.json text sliced by bbox height.
-         Used for scanned pages when neither PDF nor Tesseract is available.
+         Used for scanned pages when no PDF is available.
 
     Args:
         use_tesseract: If True, use Tesseract image_to_data for word-level text
-            assignment.  Has no effect when pdfplumber succeeds.
+            assignment.  Has no effect when pypdfium2 succeeds.
         max_pages: Skip docs with more page images than this (0 = no limit).
 
     Returns a result dict: key, status ('ok'|'error'|'skip'), pages, regions, elapsed_s.
@@ -582,22 +590,22 @@ def enrich_document(item: dict, force: bool = False,
     page_sizes = _get_page_sizes(doc_dir, n_pages, img_sizes)
     page_texts = json.loads(pt_path.read_text("utf-8"))
 
-    # ── Open PDF for embedded-text assignment (pdfplumber) ────────────────────
+    # ── Open PDF for embedded-text assignment (pypdfium2) ────────────────────
     pdf_path_str = (item.get("pdf_staged_path") or item.get("pdf_path") or "")
     if pdf_path_str and not Path(pdf_path_str).is_absolute():
         pdf_path_str = str(_ROOT / pdf_path_str)
-    pdf_pages: dict[int, object] = {}   # 0-based index → pdfplumber page
-    _pdfplumber_pdf = None
+    pdf_pages: dict[int, object] = {}   # 0-based index → pypdfium2 page
+    _pdfium_doc = None
     if pdf_path_str and Path(pdf_path_str).exists():
         try:
-            import pdfplumber as _pdfplumber
-            _pdfplumber_pdf = _pdfplumber.open(pdf_path_str)
-            for pi, pg in enumerate(_pdfplumber_pdf.pages):
-                pdf_pages[pi] = pg
-            print(f"    PDF open for word-bbox assignment ({len(pdf_pages)} pages)", flush=True)
+            import pypdfium2 as _pdfium
+            _pdfium_doc = _pdfium.PdfDocument(pdf_path_str)
+            for pi in range(len(_pdfium_doc)):
+                pdf_pages[pi] = _pdfium_doc[pi]
+            print(f"    PDF open for text assignment ({len(pdf_pages)} pages)", flush=True)
         except Exception as _e:
-            print(f"    ⚠ pdfplumber unavailable ({_e}) — using proportional fallback", flush=True)
-            _pdfplumber_pdf = None
+            print(f"    ⚠ pypdfium2 unavailable ({_e}) — using proportional fallback", flush=True)
+            _pdfium_doc = None
 
     # ── Run Heron in batches ──────────────────────────────────────────────────
     heron_per_page: dict[int, list[dict]] = {}
@@ -627,7 +635,7 @@ def enrich_document(item: dict, force: bool = False,
     if use_tesseract:
         mode_label = "tesseract"
     elif pdf_pages:
-        mode_label = "pdfplumber (word bboxes)"
+        mode_label = "pypdfium2 (region crops)"
     else:
         mode_label = "proportional fallback"
     print(f"    assigning text to {n_pages} pages [{mode_label}] …", flush=True)
@@ -656,7 +664,7 @@ def enrich_document(item: dict, force: bool = False,
             r.setdefault("bbox_px", r.get("bbox_px", [0, 0, 1, 1]))
 
         # Text assignment priority:
-        #   1. pdfplumber word bboxes (embedded PDFs — instant and exact)
+        #   1. pypdfium2 region crops (embedded PDFs — same engine as page_texts.json)
         #   2. Tesseract OCR (opt-in; works for scanned pages too)
         #   3. Proportional fallback (scanned, no PDF available)
         w_px, h_px = pil_img.size
@@ -683,9 +691,9 @@ def enrich_document(item: dict, force: bool = False,
         result_elements[page_num] = page_regions_out
 
     # ── Close PDF (if opened) ──────────────────────────────────────────────────
-    if _pdfplumber_pdf is not None:
+    if _pdfium_doc is not None:
         try:
-            _pdfplumber_pdf.close()
+            _pdfium_doc.close()
         except Exception:
             pass
 
