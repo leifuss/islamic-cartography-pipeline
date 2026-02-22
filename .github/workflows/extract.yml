@@ -301,14 +301,18 @@ jobs:
           ")
           fi
 
-          export TEXTS_DIR RAW_KEYS FORCE
+          EXPLICIT_KEYS="${{ inputs.keys }}"
+          export TEXTS_DIR RAW_KEYS FORCE EXPLICIT_KEYS
           KEYS=$(python3 - <<'PYEOF'
 import json, os, sys
 from pathlib import Path
 
-texts_dir = Path(os.environ['TEXTS_DIR'])
-force     = os.environ.get('FORCE', '').lower() == 'true'
-raw_keys  = os.environ.get('RAW_KEYS', '').split()
+texts_dir     = Path(os.environ['TEXTS_DIR'])
+# Force Heron if --force flag set, OR if caller supplied explicit keys
+# (explicit key dispatch always means "reprocess this doc fully")
+explicit_keys = bool(os.environ.get('EXPLICIT_KEYS', '').strip())
+force         = os.environ.get('FORCE', '').lower() == 'true' or explicit_keys
+raw_keys      = os.environ.get('RAW_KEYS', '').split()
 
 keep = []
 for key in raw_keys:
