@@ -80,6 +80,8 @@ def _push_progress(repo_dir: Path, message: str) -> bool:
         cwd=repo_dir, check=True,
     )
     for attempt in range(4):
+        # Pull-rebase first so we're never behind main when pushing
+        subprocess.run(["git", "pull", "--rebase"], cwd=repo_dir)
         result = subprocess.run(["git", "push"], cwd=repo_dir)
         if result.returncode == 0:
             return True

@@ -1287,6 +1287,7 @@ function escWithGlyphs(raw) {
   const fixed = fixGlyphs(raw);
   return fixed
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/\r\n|\r|\n/g, '<br>')
     .replace(/\x02([0-9a-f]+)\x02/gi,
       (_, c) => `<span class="glyph-unknown" title="Unresolved glyph cmap:${c}">·</span>`);
 }
