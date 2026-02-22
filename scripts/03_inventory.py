@@ -49,6 +49,7 @@ from zotero_client import ZoteroLibrary
 # ── PDF classification ─────────────────────────────────────────────────────────
 try:
     import pypdfium2 as pdfium
+    from pypdfium2.raw import FPDF_PAGEOBJ_IMAGE
     _PDFIUM = True
 except ImportError:
     _PDFIUM = False
@@ -63,10 +64,42 @@ except ImportError:
 _SCANNED_THRESHOLD = 50
 
 
+def _estimate_page_dpi(page) -> float | None:
+    """Estimate effective DPI of images on a single PDF page.
+
+    Compares each embedded image's pixel size to its bounding box on the page
+    (in points, 72pt = 1 inch) and returns the median DPI across all images.
+    Returns None if no images found.
+    """
+    if not _PDFIUM:
+        return None
+    dpis = []
+    try:
+        for obj in page.get_objects(filter=[FPDF_PAGEOBJ_IMAGE]):
+            try:
+                px_w, px_h = obj.get_size()
+                left, bottom, right, top = obj.get_bounds()
+                box_w_pts = abs(right - left)
+                box_h_pts = abs(top - bottom)
+                if box_w_pts > 0 and px_w > 0:
+                    dpis.append(px_w / (box_w_pts / 72.0))
+                if box_h_pts > 0 and px_h > 0:
+                    dpis.append(px_h / (box_h_pts / 72.0))
+            except Exception:
+                continue
+    except Exception:
+        return None
+    if not dpis:
+        return None
+    dpis.sort()
+    return dpis[len(dpis) // 2]
+
+
 def classify_pdf(path: Path) -> dict:
     """
     Classify a PDF as embedded-font or scanned, and detect language.
     Samples up to the first 5 pages only — fast enough for 300+ items.
+    Also estimates the effective DPI of embedded images.
     """
     result = {
         'page_count':    None,
@@ -74,6 +107,7 @@ def classify_pdf(path: Path) -> dict:
         'avg_chars_page': None,
         'language':      None,
         'lang_sample':   None,
+        'pdf_dpi':       None,
     }
 
     if not _PDFIUM:
@@ -106,6 +140,16 @@ def classify_pdf(path: Path) -> dict:
         avg = first_chars / len(head) if head else 0
         result['avg_chars_page'] = round(avg, 1)
         result['doc_type'] = 'scanned' if avg < _SCANNED_THRESHOLD else 'embedded'
+
+        # Estimate DPI from images on the first few sampled pages
+        all_dpis = []
+        for i in sample_indices[:3]:
+            d = _estimate_page_dpi(doc[i])
+            if d is not None:
+                all_dpis.append(d)
+        if all_dpis:
+            all_dpis.sort()
+            result['pdf_dpi'] = round(all_dpis[len(all_dpis) // 2])
 
         sample_text = ' '.join(texts)[:4000]
         result['lang_sample'] = sample_text[:200].strip()
@@ -296,6 +340,7 @@ def build_inventory(classify: bool = True) -> list:
             'doc_type':    pdf_info.get('doc_type', 'unknown' if not pdf_path else 'unknown'),
             'page_count':  pdf_info.get('page_count'),
             'avg_chars_pg': pdf_info.get('avg_chars_page'),
+            'pdf_dpi':     pdf_info.get('pdf_dpi'),
             'language':    pdf_info.get('language'),
             # Extraction
             'extracted':   bool(ext),

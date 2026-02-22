@@ -68,14 +68,16 @@
   tr:hover td { background: #fafafa; }
   tr[data-key] { cursor: pointer; }
 
-  .col-title   { width: 38%; }
+  .col-title   { width: 30%; }
   .col-year    { width: 55px; }
-  .col-authors { width: 15%; }
-  .col-pdf     { width: 90px; }
-  .col-avail   { width: 90px; }
+  .col-authors { width: 13%; }
+  .col-pdf     { width: 85px; }
+  .col-method  { width: 80px; }
   .col-type    { width: 80px; }
-  .col-pp      { width: 55px; }
+  .col-pp      { width: 50px; }
+  .col-dpi     { width: 50px; }
   .col-lang    { width: 45px; }
+  .col-diff    { width: 70px; }
   .col-action  { width: 95px; }
 
   tr.row-quality-good    td:first-child { border-left: 3px solid #34c759; }
@@ -101,6 +103,13 @@
   .b-good      { background: #e8f8ed; color: #1a7f37; }
   .b-suspect   { background: #fff3e0; color: #b45309; }
   .b-garbled   { background: #fde8e8; color: #c0392b; }
+  .b-docling   { background: #e8f0fe; color: #1a56db; }
+  .b-tesseract { background: #fff3e0; color: #b45309; }
+  .b-vision    { background: #f3e8ff; color: #7c3aed; }
+  .b-diff-easy { background: #e8f8ed; color: #1a7f37; }
+  .b-diff-mod  { background: #fff3e0; color: #b45309; }
+  .b-diff-hard { background: #fde8e8; color: #c0392b; }
+  .b-diff-vhard{ background: #f3e8ff; color: #7c3aed; }
   .b-lang      { background: #eef; color: #336; }
   .b-itype     { background: #f0f0f0; color: #555; }
   .b-tag       { background: #f0f0f0; color: #555; }
@@ -266,13 +275,12 @@
       <option value="">All</option>
     </select>
   </label>
-  <label>Availability:
-    <select id="filter-avail" onchange="filterTable()">
+  <label>Method:
+    <select id="filter-method" onchange="filterTable()">
       <option value="">All</option>
-      <option value="open_access">Open access</option>
-      <option value="restricted">Paywalled</option>
-      <option value="unavailable">Unavailable</option>
-      <option value="stored">Stored locally</option>
+      <option value="docling">Docling</option>
+      <option value="tesseract">Tesseract</option>
+      <option value="google_vision">Google Vision</option>
     </select>
   </label>
   <label>Extracted:
@@ -293,15 +301,17 @@
   <th class="col-year"    data-col="1" onclick="sortTable(1)">Year<span class="sort-arrow">&#8597;</span></th>
   <th class="col-authors" data-col="2" onclick="sortTable(2)">Authors<span class="sort-arrow">&#8597;</span></th>
   <th class="col-pdf"     data-col="3" onclick="sortTable(3)">PDF source<span class="sort-arrow">&#8597;</span></th>
-  <th class="col-avail"   data-col="4" onclick="sortTable(4)">Avail<span class="sort-arrow">&#8597;</span></th>
+  <th class="col-method"  data-col="4" onclick="sortTable(4)">Method<span class="sort-arrow">&#8597;</span></th>
   <th class="col-type"    data-col="5" onclick="sortTable(5)">Quality<span class="sort-arrow">&#8597;</span></th>
   <th class="col-pp"      data-col="6" onclick="sortTable(6)">pp<span class="sort-arrow">&#8597;</span></th>
-  <th class="col-lang"    data-col="7" onclick="sortTable(7)">Lang<span class="sort-arrow">&#8597;</span></th>
+  <th class="col-dpi"     data-col="7" onclick="sortTable(7)">DPI<span class="sort-arrow">&#8597;</span></th>
+  <th class="col-lang"    data-col="8" onclick="sortTable(8)">Lang<span class="sort-arrow">&#8597;</span></th>
+  <th class="col-diff"    data-col="9" onclick="sortTable(9)">Difficulty<span class="sort-arrow">&#8597;</span></th>
   <th class="col-action"  style="cursor:default"></th>
 </tr>
 </thead>
 <tbody id="tbody">
-  <tr><td colspan="9" class="loading">Loading inventory&hellip;</td></tr>
+  <tr><td colspan="12" class="loading">Loading inventory&hellip;</td></tr>
 </tbody>
 </table>
 </div>
@@ -354,7 +364,7 @@ function collectionQS(prefix) {
     .then(function(arr){ init(arr[0], arr[1]); })
     .catch(function(err){
       document.getElementById('tbody').innerHTML =
-        '<tr><td colspan="9" class="loading">Failed to load inventory.json: '+err.message+'</td></tr>';
+        '<tr><td colspan="12" class="loading">Failed to load inventory.json: '+err.message+'</td></tr>';
     });
 })();
 
@@ -438,6 +448,7 @@ function init(inventory, statusData) {
     r._availability  = (si && si.availability)  || null;
     r._import_status = (si && si.import_status) || null;
     r._scan_updated  = (si && si.last_updated)  || null;
+    r._difficulty    = computeDifficulty(r);
   });
   var lastScan    = statusData && statusData.last_scan;
   var scanRunning = statusData && statusData.import_running;
@@ -489,6 +500,62 @@ function qualityBadge(s) {
   if (s==='garbled') return '<span class="badge b-garbled">&#10007; garbled</span>';
   return '';
 }
+function methodBadge(s) {
+  if (s==='docling')       return '<span class="badge b-docling">Docling</span>';
+  if (s==='tesseract')     return '<span class="badge b-tesseract">Tesseract</span>';
+  if (s==='google_vision') return '<span class="badge b-vision">Vision</span>';
+  return '<span class="badge b-unknown">&mdash;</span>';
+}
+function computeDifficulty(r) {
+  // Date factor: older publications are harder (archaic fonts, degraded scans)
+  var yr = parseInt(r.year) || 2000;
+  var dateFactor;
+  if      (yr < 1800) dateFactor = 5;
+  else if (yr < 1900) dateFactor = 4;
+  else if (yr < 1950) dateFactor = 3;
+  else if (yr < 2000) dateFactor = 2;
+  else                dateFactor = 1;
+
+  // DPI factor: lower DPI = harder OCR
+  var dpi = r.pdf_dpi;
+  var dpiFactor;
+  if      (dpi == null) dpiFactor = 3;   // unknown
+  else if (dpi < 150)   dpiFactor = 5;
+  else if (dpi < 200)   dpiFactor = 4;
+  else if (dpi < 300)   dpiFactor = 2;
+  else                  dpiFactor = 1;
+
+  // Language factor: script complexity
+  var langs = Array.isArray(r.language) ? r.language : (r.language ? [r.language] : []);
+  var langFactor = 1;
+  var rtl  = ['ar','fa','ur','ps','ku','he','yi','syr'];
+  var cjk  = ['zh','ja','ko'];
+  var nonLatin = ['el','ru','uk','bg','sr','ka','hy','th','my','km','lo','ta','te','kn','ml','hi','bn','gu','pa','si'];
+  for (var i = 0; i < langs.length; i++) {
+    var l = langs[i].toLowerCase().slice(0, 2);
+    if (rtl.indexOf(l) >= 0)           { langFactor = Math.max(langFactor, 4); }
+    else if (cjk.indexOf(l) >= 0)      { langFactor = Math.max(langFactor, 3.5); }
+    else if (nonLatin.indexOf(l) >= 0) { langFactor = Math.max(langFactor, 2.5); }
+  }
+
+  // Length factor: more pages = more effort
+  var pp = r.page_count || 0;
+  var lengthFactor;
+  if      (pp > 500) lengthFactor = 4;
+  else if (pp > 200) lengthFactor = 3;
+  else if (pp > 50)  lengthFactor = 2;
+  else               lengthFactor = 1;
+
+  return dateFactor + dpiFactor + langFactor + lengthFactor;
+}
+function difficultyBadge(score) {
+  if (score == null) return '<span style="color:#d1d1d6">&mdash;</span>';
+  var s = Math.round(score * 10) / 10;
+  if (s <= 7)  return '<span class="badge b-diff-easy">'  + s + '</span>';
+  if (s <= 11) return '<span class="badge b-diff-mod">'   + s + '</span>';
+  if (s <= 15) return '<span class="badge b-diff-hard">'  + s + '</span>';
+  return '<span class="badge b-diff-vhard">' + s + '</span>';
+}
 function recBadge(s) {
   if (!s) return '';
   if (s==='auto_accept') return '<span class="badge b-accept">Auto &#10003;</span>';
@@ -519,10 +586,12 @@ function renderRow(r, idx) {
     +'<td>'+escHtml(r.year)+'</td>'
     +'<td>'+shortAuthors(r.authors)+'</td>'
     +'<td>'+pdfBadge(r.pdf_status)+'</td>'
-    +'<td>'+availBadge(r._availability)+'</td>'
+    +'<td>'+methodBadge(r.extraction_method)+'</td>'
     +'<td>'+(qualityBadge(r.text_quality||'')||'<span style="color:#d1d1d6">\u2014</span>')+'</td>'
     +'<td class="num">'+(r.page_count!=null?r.page_count:'\u2014')+'</td>'
+    +'<td class="num">'+(r.pdf_dpi!=null?r.pdf_dpi:'\u2014')+'</td>'
     +'<td>'+escHtml(Array.isArray(r.language)?r.language.join(', '):(r.language||'\u2014'))+'</td>'
+    +'<td>'+difficultyBadge(r._difficulty)+'</td>'
     +'<td style="white-space:nowrap">'+btn+'</td>'
     +'</tr>';
 }
@@ -537,7 +606,7 @@ function filterTable() {
   var pdf     = document.getElementById('filter-pdf').value;
   var quality = document.getElementById('filter-quality').value;
   var lang    = document.getElementById('filter-lang').value;
-  var avail   = document.getElementById('filter-avail').value;
+  var method  = document.getElementById('filter-method').value;
   var ext     = document.getElementById('filter-ext').value;
   currentData = DATA.filter(function(r){
     if (q && !((r.title||'').toLowerCase().indexOf(q)>=0||(r.authors||'').toLowerCase().indexOf(q)>=0||(r.key||'').toLowerCase().indexOf(q)>=0)) return false;
@@ -547,9 +616,7 @@ function filterTable() {
       var _la = Array.isArray(r.language) ? r.language : (r.language ? [r.language] : []);
       if (_la.indexOf(lang) < 0) return false;
     }
-    if (avail) {
-      if (r._availability!==avail && !(avail==='restricted'&&r._availability==='unknown')) return false;
-    }
+    if (method && r.extraction_method !== method) return false;
     if (ext==='yes' && !r.extracted) return false;
     if (ext==='no'  &&  r.extracted) return false;
     return true;
@@ -563,7 +630,7 @@ function renderTable() {
 }
 
 /* ---- Sort ---- */
-var COL_KEYS = ['title','year','authors','pdf_status','_availability','text_quality','page_count','language'];
+var COL_KEYS = ['title','year','authors','pdf_status','extraction_method','text_quality','page_count','pdf_dpi','language','_difficulty'];
 
 function sortTable(col) {
   if (sortCol===col) sortAsc=!sortAsc; else { sortCol=col; sortAsc=true; }
@@ -612,7 +679,9 @@ var FIELD_TIPS = {
   'Chars/page':'Average characters per PDF page after extraction',
   'PUA ratio':'Fraction of characters in Unicode Private Use Area \u2014 high values indicate OCR artifacts or encoding errors',
   'Repl. ratio':'Fraction of Unicode replacement characters (U+FFFD) \u2014 indicates bytes that could not be decoded',
-  'Empty pages':'Number of pages yielding no usable text after extraction'
+  'Empty pages':'Number of pages yielding no usable text after extraction',
+  'PDF DPI':'Estimated effective DPI of embedded images in the PDF \u2014 higher is better for OCR',
+  'Difficulty':'Rough extraction difficulty score (4\u201319) based on publication date, DPI, language script, and page count'
 };
 function tipIcon(label) {
   var tip=FIELD_TIPS[label];
@@ -685,7 +754,9 @@ function showDocInfo(key) {
     var _em = {docling:'Docling', tesseract:'Tesseract', google_vision:'Google Vision API'}[r.extraction_method] || r.extraction_method;
     html += dipRow('Extraction', escHtml(_em));
   }
+  html += dipRow('PDF DPI', r.pdf_dpi != null ? String(r.pdf_dpi) : '\u2014');
   if (r._availability) html += dipRow('Availability',availBadge(r._availability));
+  html += dipRow('Difficulty', difficultyBadge(r._difficulty));
   if (r.url) html += dipRow('URL','<a href="'+escHtml(r.url)+'" target="_blank" rel="noopener">'+(r.url.length>45?escHtml(r.url.slice(0,45))+'\u2026':escHtml(r.url))+'</a>');
 
   // Abstract
