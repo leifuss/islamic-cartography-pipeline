@@ -69,27 +69,34 @@ def try_download(url: str, session: requests.Session) -> dict:
                     'content': None, 'bytes': 0}
         url = dl_url
 
-    # Try HEAD first to check Content-Type without downloading body
+    # Try HEAD first to check Content-Type without downloading body.
+    # Some servers return 405 (Method Not Allowed) for HEAD — fall through to GET.
+    final_url = url
+    head_ok = False
     try:
         head = session.head(url, allow_redirects=True, timeout=20)
         final_url = head.url
+        if head.status_code == 403:
+            return {'status': 'paywall', 'download_url': final_url, 'content': None, 'bytes': 0}
+        if head.status_code == 404:
+            return {'status': 'not_found', 'download_url': final_url, 'content': None, 'bytes': 0}
+        if head.status_code in (200, 206):
+            head_ok = True
+            if is_pdf_response(head):
+                pass  # confirmed PDF — fall through to download
+            else:
+                # Non-PDF content-type on HEAD; check URL pattern before attempting GET
+                url_looks_like_pdf = (
+                    final_url.lower().endswith('.pdf') or '/pdf' in final_url.lower() or
+                    url.lower().endswith('.pdf') or '/pdf' in url.lower()
+                )
+                if not url_looks_like_pdf:
+                    return {'status': 'not_pdf', 'download_url': final_url,
+                            'content': None, 'bytes': 0}
+        # For 405 or other non-fatal codes, fall through and try GET directly
     except Exception as e:
         return {'status': 'error', 'download_url': url,
                 'content': None, 'bytes': 0, 'error': str(e)[:120]}
-
-    if head.status_code == 403:
-        return {'status': 'paywall', 'download_url': final_url, 'content': None, 'bytes': 0}
-    if head.status_code == 404:
-        return {'status': 'not_found', 'download_url': final_url, 'content': None, 'bytes': 0}
-    if head.status_code not in (200, 206):
-        return {'status': f'http_{head.status_code}', 'download_url': final_url,
-                'content': None, 'bytes': 0}
-
-    if not is_pdf_response(head):
-        # Some servers don't send Content-Type on HEAD — try GET with streaming
-        # to peek at content (but only if URL looks like a PDF)
-        if not (final_url.lower().endswith('.pdf') or '/pdf' in final_url.lower()):
-            return {'status': 'not_pdf', 'download_url': final_url, 'content': None, 'bytes': 0}
 
     # Actually download the PDF
     try:

@@ -58,13 +58,23 @@ jobs:
         env:
           ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
 
-      - name: Stage PDFs from Zotero
+      - name: Sync Zotero metadata
+        continue-on-error: true   # don't block scan if Zotero API is unavailable
         run: |
           SLUG_FLAG=""
           if [ -n "${{ inputs.collection_slug }}" ]; then
             SLUG_FLAG="--collection-slug ${{ inputs.collection_slug }}"
           fi
-          python scripts/00_stage_pdfs.py $SLUG_FLAG
+          python scripts/zotero_sync.py $SLUG_FLAG || echo "⚠ Zotero metadata sync skipped"
+
+      - name: Stage PDFs from Zotero
+        continue-on-error: true   # don't block scan if Zotero API is unavailable
+        run: |
+          SLUG_FLAG=""
+          if [ -n "${{ inputs.collection_slug }}" ]; then
+            SLUG_FLAG="--collection-slug ${{ inputs.collection_slug }}"
+          fi
+          python scripts/00_stage_pdfs.py $SLUG_FLAG || echo "⚠ Zotero staging skipped (see above)"
 
       - name: Scan availability
         run: |

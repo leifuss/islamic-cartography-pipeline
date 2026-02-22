@@ -30,7 +30,8 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
 log = logging.getLogger(__name__)
 
-_ROOT = Path(__file__).parent.parent
+_ROOT            = Path(__file__).parent.parent
+COLLECTIONS_PATH = _ROOT / 'data' / 'collections.json'
 
 try:
     from dotenv import load_dotenv
@@ -119,7 +120,22 @@ def _item_to_entry(item: dict) -> dict:
     }
 
 
-def sync(dry_run: bool = False) -> dict:
+def _get_collection_inv_path(slug: str) -> Path:
+    """Return the inventory.json path for the given collection slug."""
+    if not COLLECTIONS_PATH.exists():
+        raise SystemExit("ERROR: data/collections.json not found")
+    with open(COLLECTIONS_PATH, encoding='utf-8') as f:
+        coll_data = json.load(f)
+    for c in coll_data.get('collections', []):
+        if c['slug'] == slug:
+            path = c.get('path', slug)
+            if path == '.':
+                return _ROOT / 'data' / 'inventory.json'
+            return _ROOT / 'data' / path / 'inventory.json'
+    raise SystemExit(f"ERROR: collection slug {slug!r} not found in data/collections.json")
+
+
+def sync(dry_run: bool = False, inv_path: Path | None = None) -> dict:
     """
     Sync Zotero library → inventory.json.
 
@@ -150,7 +166,8 @@ def sync(dry_run: bool = False) -> dict:
             notes_by_key[parent_key] = item_notes
 
     # Load existing inventory
-    inv_path = _ROOT / 'data' / 'inventory.json'
+    if inv_path is None:
+        inv_path = _ROOT / 'data' / 'inventory.json'
     if inv_path.exists():
         existing = json.loads(inv_path.read_text(encoding='utf-8'))
     else:
@@ -229,10 +246,9 @@ def sync(dry_run: bool = False) -> dict:
             log.info(f"  + [{key}] {title}")
 
     if not dry_run and (added or updated):
-        inv_path.write_text(
-            json.dumps(result, indent=2, ensure_ascii=False),
-            encoding='utf-8',
-        )
+        tmp = inv_path.with_suffix('.tmp.json')
+        tmp.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding='utf-8')
+        tmp.replace(inv_path)
         log.info(f"\n  Saved {inv_path}")
 
     return summary
@@ -244,9 +260,20 @@ def main():
                         help='Show changes without writing')
     parser.add_argument('--trigger-extract', action='store_true',
                         help='Write new keys to GITHUB_OUTPUT for downstream workflow')
+    parser.add_argument('--collection-slug', default=None,
+                        help='Sync only this collection\'s inventory.json '
+                             '(default: root data/inventory.json)')
     args = parser.parse_args()
 
-    result = sync(dry_run=args.dry_run)
+    inv_path = _get_collection_inv_path(args.collection_slug) if args.collection_slug else None
+    if inv_path:
+        log.info(f"Collection slug: {args.collection_slug}  →  {inv_path}")
+
+    try:
+        result = sync(dry_run=args.dry_run, inv_path=inv_path)
+    except Exception as e:
+        log.warning(f"Zotero sync failed: {e}")
+        return
 
     # Write new keys to GITHUB_OUTPUT for workflow chaining
     if args.trigger_extract and result['added']:

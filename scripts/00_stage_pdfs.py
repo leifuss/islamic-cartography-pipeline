@@ -156,10 +156,21 @@ def main():
     key_to_idx = {item["key"]: i for i, item in enumerate(inventory)}
 
     # Connect to Zotero and fetch all items + children in one call
-    library = ZoteroLibrary()
+    try:
+        library = ZoteroLibrary()
+    except Exception as e:
+        print(f"⚠ Could not connect to Zotero: {e}")
+        print("  Skipping PDF staging — check ZOTERO_API_KEY / ZOTERO_LIBRARY_ID.")
+        return
+
     print(f"Connecting to Zotero web API ({library.library_type} library, "
           f"ID {library.library_id})...")
-    _items, children_by_parent = library.get_all_items_with_children()
+    try:
+        _items, children_by_parent = library.get_all_items_with_children()
+    except Exception as e:
+        print(f"⚠ Zotero API error: {e}")
+        print("  Skipping PDF staging.")
+        return
     print(f"  {len(_items)} items, "
           f"{sum(len(v) for v in children_by_parent.values())} child objects")
 
