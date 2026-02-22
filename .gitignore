@@ -1,5 +1,6 @@
-# PDFs tracked via Git LFS (see .gitattributes)
-# data/pdfs/ — intentionally NOT ignored; LFS handles storage
+# PDFs are downloaded fresh each workflow run — not tracked in git
+data/pdfs/
+data/collections/*/pdfs/
 
 # Exclude bulky/redundant files inside texts/ but keep the rest
 data/texts/*/docling.md
