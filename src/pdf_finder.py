@@ -24,7 +24,9 @@ HEADERS = {
 # Domains we know require login or subscription — skip without attempting
 PAYWALL_DOMAINS = {
     'jstor.org', 'brill.com', 'cambridge.org', 'press.uchicago.edu',
-    'onlinelibrary.wiley.com', 'degruyter.com', 'springer.com',
+    'onlinelibrary.wiley.com', 'degruyter.com',
+    # springer.com removed — Springer hosts significant OA content and Unpaywall
+    # returns Springer URLs for OA articles; let HTTP response determine access.
     'loebclassics.com', 'fulcrum.org', 'vlebooks.com', 'aspresolver.com',
     'librarysearch.exeter.ac.uk', 'iupress.istanbul.edu.tr',
     'referenceworks.brillonline.com',
