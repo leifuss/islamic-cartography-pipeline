@@ -160,6 +160,7 @@ def run_heron(keys: list[str] | None = None, github_token: str = "", repo_url: s
             cmd = [sys.executable, "scripts/05c_layout_heron.py",
                    "--batch", "4",
                    "--max-pages", str(MAX_PAGES),
+                   "--tesseract",
                    "--keys", key]
             if inventory:
                 cmd += ["--inventory", inventory]
