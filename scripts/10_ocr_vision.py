@@ -126,10 +126,11 @@ def _classify_paragraph(para, block_type, para_text: str,
         return "page_footer"
 
     # Footnote: small text in bottom 30% of page, starts with a number
+    # Supports both Latin (1, 2) and Persian/Arabic (۱, ۲) numerals
     if (median_body_height > 0 and para_height < median_body_height * 0.75
             and b_px > img_h * 0.70
             and len(text) < 200):
-        if re.match(r'^\d{1,3}[\s.)‐–-]', text):
+        if re.match(r'^[\d۰-۹٠-٩]{1,3}[\s.)‐–\-]', text):
             return "footnote"
 
     # Section header: tall text (> 1.3× median body height) and short
@@ -137,9 +138,10 @@ def _classify_paragraph(para, block_type, para_text: str,
             and len(text) < 120):
         return "section_header"
 
-    # Caption: short italic-style text near pictures (heuristic: short + parenthetical)
-    if len(text) < 100 and (text.startswith("Fig") or text.startswith("Table")
-                            or text.startswith("Map") or text.startswith("Plate")):
+    # Caption: short text starting with figure/table/map label
+    # Supports Latin (Fig, Table, Map, Plate) and Arabic/Persian (شکل, جدول, نقشه, صورت)
+    if len(text) < 100 and re.match(
+            r'^(Fig|Table|Map|Plate|شکل|جدول|نقشه|صورت|لوحه)', text):
         return "caption"
 
     return "text"
