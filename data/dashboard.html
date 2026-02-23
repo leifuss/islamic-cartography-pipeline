@@ -956,7 +956,7 @@ function clearGithubToken() { localStorage.removeItem('scholion_gh_pat'); }
 
 /* ---- PDF Upload/URL Modal ---- */
 var _pdfTab = 'upload';
-var PDF_SERVER = 'http://127.0.0.1:8787';
+var PDF_SERVER = window.location.origin;
 
 function openPdfModal() {
   // Populate key dropdowns with items that don't have PDFs
@@ -1130,7 +1130,7 @@ function submitPdf() {
         btn.disabled = false;
       })
       .catch(function(e){
-        _pdfStatus('Server unreachable. Start: python scripts/pdf_server.py', 'err');
+        _pdfStatus('Server unreachable — is rag_server running?', 'err');
         btn.disabled = false;
       });
 
@@ -1169,7 +1169,7 @@ function submitPdf() {
         btn.disabled = false;
       })
       .catch(function(e){
-        _pdfStatus('Server unreachable. Start: python scripts/pdf_server.py', 'err');
+        _pdfStatus('Server unreachable — is rag_server running?', 'err');
         btn.disabled = false;
       });
   }
