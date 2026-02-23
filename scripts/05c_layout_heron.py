@@ -514,6 +514,9 @@ def enrich_document(item: dict, force: bool = False,
             if existing.get("_heron_version"):
                 return {"key": key, "title": title, "status": "skip",
                         "reason": "already enriched"}
+            if existing.get("_vision_version"):
+                return {"key": key, "title": title, "status": "skip",
+                        "reason": "Vision OCR output — skipping Heron"}
         except Exception:
             pass  # corrupt file → re-run
 
