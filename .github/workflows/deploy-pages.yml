@@ -12,6 +12,7 @@ on:
       - "Import PDFs"
       - "Extract PDF batch"
       - "Zotero sync"
+      - "Vision OCR"
     types: [completed]
     branches: [main]
 
