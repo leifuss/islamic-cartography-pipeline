@@ -201,6 +201,41 @@ def ocr_page(client, img_path: Path, upsample: int = 1,
     # Second pass: extract blocks with labels
     for page in response.full_text_annotation.pages:
         for block in page.blocks:
+            bt = block.block_type
+
+            # ── Non-text blocks (PICTURE, TABLE) — emit at block level ──
+            # These may have no paragraphs/words, so we use the block bbox
+            # and collect any text that does exist inside.
+            if bt in (vision.Block.BlockType.PICTURE,
+                      vision.Block.BlockType.TABLE):
+                # Block-level bounding box
+                bverts = block.bounding_box.vertices
+                bxs = [v.x / scale for v in bverts]
+                bys = [v.y / scale for v in bverts]
+                bl = min(bxs); br = max(bxs)
+                bt_px = min(bys); bb_px = max(bys)
+                b_t = img_h - bt_px   # Docling convention
+                b_b = img_h - bb_px
+
+                label = "picture" if bt == vision.Block.BlockType.PICTURE else "table"
+
+                # Collect any text inside the block (tables often have cell text)
+                block_text = " ".join(
+                    " ".join("".join(s.text for s in w.symbols) for w in p.words)
+                    for p in block.paragraphs
+                    for _ in [None]  # flatten
+                    if p.words
+                ).strip() if block.paragraphs else ""
+
+                blocks.append({
+                    "label": label,
+                    "text": block_text,
+                    "bbox": {"l": round(bl, 2), "t": round(b_t, 2),
+                             "r": round(br, 2), "b": round(b_b, 2)},
+                })
+                continue
+
+            # ── Text blocks — process paragraph by paragraph ──
             for para in block.paragraphs:
                 # Collect paragraph text
                 para_text = " ".join(
