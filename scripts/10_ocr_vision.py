@@ -405,6 +405,8 @@ def process_doc(client, doc_dir: Path, page_nums: list[int] | None,
         layout_elements["_page_sizes"][pstr] = {
             "w": result["src_w"], "h": result["src_h"]
         }
+        # Mark as Vision output so Heron won't overwrite
+        layout_elements["_vision_version"] = "1.0"
 
         word_count = len(result["text"].split())
         print(f"  page {pnum:4d}: {word_count} words, {len(result['blocks'])} blocks")
