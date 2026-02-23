@@ -180,9 +180,12 @@ def ocr_page(client, img_path: Path, upsample: int = 1,
 
     # Extract paragraph-level blocks with bboxes
     blocks = []
-    img_w, img_h = _image_size(img_path)
+    img_w, img_h = _image_size(img_path)        # original JPEG dimensions
+    # Vision returns coords in the image it received (which may be upsampled)
+    scale = upsample if upsample > 1 else 1
 
     # First pass: collect paragraph heights to compute median body-text height
+    # (work in original-image space so thresholds are consistent)
     para_heights = []
     for page in response.full_text_annotation.pages:
         for block in page.blocks:
@@ -190,7 +193,7 @@ def ocr_page(client, img_path: Path, upsample: int = 1,
                 continue
             for para in block.paragraphs:
                 verts = para.bounding_box.vertices
-                ys = [v.y for v in verts]
+                ys = [v.y / scale for v in verts]
                 if ys:
                     para_heights.append(max(ys) - min(ys))
     median_body_height = sorted(para_heights)[len(para_heights) // 2] if para_heights else 0
@@ -207,11 +210,11 @@ def ocr_page(client, img_path: Path, upsample: int = 1,
                 if not para_text.strip():
                     continue
 
-                # Convert normalised vertices to pixel coords matching Docling schema
+                # Vision coords → original image space (undo upsample)
                 verts = para.bounding_box.vertices
-                xs = [v.x for v in verts]
-                ys = [v.y for v in verts]
-                # Docling bbox: l=left, t=top, r=right, b=bottom (in points from bottom-left)
+                xs = [v.x / scale for v in verts]
+                ys = [v.y / scale for v in verts]
+                # Docling bbox: l=left, t=top, r=right, b=bottom (from bottom-left)
                 # Vision gives pixel coords from top-left; convert to Docling-style
                 l = min(xs)
                 r = max(xs)
