@@ -215,6 +215,10 @@ header {
 .text-content.rtl .le-caption {
   text-align: center;
 }
+.text-content.rtl .md-table th,
+.text-content.rtl .md-table td {
+  text-align: right;
+}
 
 /* ── Footer / navigation ── */
 footer {
@@ -1234,6 +1238,13 @@ async function renderFullDoc() {
   qEl.textContent = translMode ? 'translated' : '';
   el.className = 'text-content full-doc-mode';
 
+  // Detect Arabic script → apply RTL (only in original mode, using page_texts sample)
+  if (!translMode && pageTexts) {
+    const sample = Object.values(pageTexts).slice(0, 5).join('');
+    const arabicChars = (sample.match(/[\u0600-\u06FF]/g) || []).length;
+    if (sample.length > 0 && arabicChars > sample.length * 0.3) el.classList.add('rtl');
+  }
+
   // In translation mode, assemble from translated page texts
   if (translMode && translationData && translationData.page_texts) {
     const pages = Object.keys(translationData.page_texts)
@@ -1640,6 +1651,13 @@ function renderLayoutElements() {
   const items   = activeElements(pageKey);   // uses translation when translMode=true
 
   el.className = 'text-content';
+
+  // Detect Arabic script → apply RTL (only in original mode)
+  if (!translMode) {
+    const allText = items ? items.map(it => it.text || '').join('') : '';
+    const arabicChars = (allText.match(/[\u0600-\u06FF]/g) || []).length;
+    if (allText.length > 0 && arabicChars > allText.length * 0.3) el.classList.add('rtl');
+  }
 
   if (!items || items.length === 0) {
     qEl.textContent = '';
