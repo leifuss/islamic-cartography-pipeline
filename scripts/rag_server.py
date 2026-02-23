@@ -31,11 +31,12 @@ import hashlib
 import threading
 from pathlib import Path
 from typing import Iterator
+from urllib.parse import urlparse
 
 import numpy as np
-from fastapi import FastAPI
+from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from rank_bm25 import BM25Okapi
 
@@ -653,6 +654,184 @@ def chat(body: dict):
         media_type="text/event-stream",
         headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
     )
+
+
+# ── PDF upload / URL fetch ─────────────────────────────────────────────────────
+
+COLLECTIONS_JSON = ROOT / "data" / "collections.json"
+
+
+def _get_collection_paths(slug: str) -> dict | None:
+    """Resolve paths for a collection slug."""
+    if not COLLECTIONS_JSON.exists():
+        return None
+    with open(COLLECTIONS_JSON, encoding="utf-8") as f:
+        data = json.load(f)
+    for c in data.get("collections", []):
+        if c["slug"] == slug:
+            path = c.get("path", slug)
+            base = ROOT / "data" if path == "." else ROOT / "data" / path
+            return {
+                "base": base,
+                "pdfs_dir": base / "pdfs",
+                "texts_dir": base / "texts",
+                "inventory": base / "inventory.json",
+            }
+    return None
+
+
+def _classify_pdf(pdf_path: Path) -> dict:
+    """Quick classification of a PDF — doc_type, page_count, DPI."""
+    try:
+        import pypdfium2 as pdfium
+    except ImportError:
+        return {"doc_type": "unknown", "page_count": None, "pdf_dpi": None}
+    try:
+        doc = pdfium.PdfDocument(str(pdf_path))
+        n_pages = len(doc)
+        sample_chars = 0
+        for i in range(min(3, n_pages)):
+            page = doc[i]
+            textpage = page.get_textpage()
+            sample_chars += len(textpage.get_text_range() or "")
+        avg = sample_chars / min(3, n_pages) if n_pages else 0
+        doc_type = "scanned" if avg < 50 else "embedded"
+        if doc_type == "embedded":
+            pdf_dpi = 0
+        else:
+            pdf_dpi = None
+            try:
+                from pypdfium2.raw import FPDF_PAGEOBJ_IMAGE
+                dpis = []
+                for i in range(min(3, n_pages)):
+                    page = doc[i]
+                    for obj in page.get_objects(filter=[FPDF_PAGEOBJ_IMAGE]):
+                        try:
+                            px_w, px_h = obj.get_size()
+                            left, bottom, right, top = obj.get_bounds()
+                            box_w = abs(right - left)
+                            if box_w > 0 and px_w > 0:
+                                dpis.append(px_w / (box_w / 72.0))
+                        except Exception:
+                            continue
+                if dpis:
+                    dpis.sort()
+                    pdf_dpi = round(dpis[len(dpis) // 2])
+            except Exception:
+                pass
+        doc.close()
+        return {"doc_type": doc_type, "page_count": n_pages, "pdf_dpi": pdf_dpi}
+    except Exception as e:
+        return {"doc_type": "unknown", "page_count": None, "pdf_dpi": None,
+                "error": str(e)[:100]}
+
+
+def _update_inventory(inv_path: Path, key: str, updates: dict) -> bool:
+    """Update a single item in inventory.json. Returns True if item was found."""
+    if not inv_path.exists():
+        return False
+    with open(inv_path, encoding="utf-8") as f:
+        inventory = json.load(f)
+    found = False
+    for item in inventory:
+        if item["key"] == key:
+            item.update(updates)
+            found = True
+            break
+    if found:
+        tmp = inv_path.with_suffix(".tmp.json")
+        tmp.write_text(json.dumps(inventory, indent=2, ensure_ascii=False),
+                       encoding="utf-8")
+        tmp.replace(inv_path)
+    return found
+
+
+def _save_pdf(pdf_content: bytes, key: str, collection: str,
+              filename: str) -> dict:
+    """Save PDF to the collection's pdfs dir and update inventory."""
+    paths = _get_collection_paths(collection)
+    if not paths:
+        return {"error": f"collection {collection!r} not found"}
+    dest = paths["pdfs_dir"] / key / filename
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_bytes(pdf_content)
+    info = _classify_pdf(dest)
+    rel_path = str(dest.relative_to(ROOT))
+    _update_inventory(paths["inventory"], key, {
+        "pdf_path":   rel_path,
+        "pdf_status": "downloaded",
+        "doc_type":   info.get("doc_type", "unknown"),
+        "page_count": info.get("page_count"),
+        "pdf_dpi":    info.get("pdf_dpi"),
+    })
+    return {
+        "status": "ok", "key": key, "pdf_path": rel_path,
+        "bytes": len(pdf_content),
+        "page_count": info.get("page_count"),
+        "doc_type": info.get("doc_type"),
+        "pdf_dpi": info.get("pdf_dpi"),
+    }
+
+
+@app.post("/api/upload-pdf")
+async def upload_pdf(
+    file: UploadFile = File(...),
+    key: str = Form(...),
+    collection: str = Form(...),
+):
+    content = await file.read()
+    if content[:4] != b"%PDF":
+        return JSONResponse({"error": "File does not appear to be a PDF"}, 400)
+    filename = file.filename or f"{key}.pdf"
+    if not filename.lower().endswith(".pdf"):
+        filename += ".pdf"
+    result = _save_pdf(content, key, collection, filename)
+    if "error" in result:
+        return JSONResponse(result, 400)
+    print(f"  Uploaded: {key} -> {result['pdf_path']} "
+          f"({len(content) // 1024}KB, {result.get('page_count', '?')}pp)")
+    return result
+
+
+@app.post("/api/fetch-url")
+async def fetch_url(body: dict):
+    url = body.get("url", "").strip()
+    key = body.get("key", "").strip()
+    collection = body.get("collection", "").strip()
+    if not url:
+        return JSONResponse({"error": "url is required"}, 400)
+    if not key:
+        return JSONResponse({"error": "key is required"}, 400)
+    if not collection:
+        return JSONResponse({"error": "collection is required"}, 400)
+    try:
+        import requests as req_lib
+    except ImportError:
+        return JSONResponse({"error": "requests library not installed on server"}, 500)
+    try:
+        session = req_lib.Session()
+        session.headers.update({"User-Agent": "Scholion/1.0 (scholarly research tool)"})
+        resp = session.get(url, timeout=30)
+        if resp.status_code != 200:
+            return JSONResponse({"error": f"HTTP {resp.status_code}"}, 502)
+        ct = resp.headers.get("Content-Type", "")
+        if "html" in ct.lower() and resp.content[:4] != b"%PDF":
+            return JSONResponse({"error": "Response is HTML, not a PDF"}, 502)
+        if resp.content[:4] != b"%PDF":
+            return JSONResponse({"error": "Response does not look like a PDF"}, 502)
+    except Exception as e:
+        return JSONResponse({"error": f"Download failed: {str(e)[:200]}"}, 502)
+    url_path = urlparse(url).path
+    filename = Path(url_path).name
+    if not filename.lower().endswith(".pdf"):
+        filename = f"{key}.pdf"
+    result = _save_pdf(resp.content, key, collection, filename)
+    if "error" in result:
+        return JSONResponse(result, 400)
+    result["url"] = url
+    print(f"  Fetched: {key} -> {result['pdf_path']} "
+          f"({len(resp.content) // 1024}KB, {result.get('page_count', '?')}pp)")
+    return result
 
 
 # ── Static files (data/) — must be mounted after API routes ────────────────────
