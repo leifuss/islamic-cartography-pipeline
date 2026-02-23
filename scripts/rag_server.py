@@ -318,7 +318,17 @@ def _build_embeddings(chunks: list[dict]) -> np.ndarray | None:
         from fastembed import TextEmbedding
         model = TextEmbedding(model_name=EMBED_MODEL)
         texts = [c["text"][:512] for c in chunks]  # truncate to model max
-        embeddings = np.array(list(model.embed(texts)), dtype=np.float32)
+
+        # Batch to limit peak memory (important on Railway's 512MB limit)
+        BATCH = 256
+        batches = []
+        for i in range(0, len(texts), BATCH):
+            batch_emb = list(model.embed(texts[i:i + BATCH]))
+            batches.extend(batch_emb)
+            if i % (BATCH * 4) == 0 and i > 0:
+                print(f"    … {i}/{len(texts)} embedded", flush=True)
+        embeddings = np.array(batches, dtype=np.float32)
+        del batches  # free memory
 
         # Cache to disk
         np.savez_compressed(EMB_CACHE, embeddings=embeddings, fingerprint=fingerprint)

@@ -96,7 +96,7 @@ def merge_doc(doc_dir: Path, dry_run: bool = False) -> dict:
     vision_ps  = vision_data.get("_page_sizes",  {})   # pixel dims
     docling_ps = docling_data.get("_page_sizes", {})    # PDF-point dims
 
-    stats = {"relabelled": 0, "pages": 0, "non_text_in_docling": 0}
+    stats = {"relabelled": 0, "pages": 0, "non_text_in_docling": 0, "injected": 0}
 
     updated = {}  # page_str → new element list
 
@@ -140,6 +140,7 @@ def merge_doc(doc_dir: Path, dry_run: bool = False) -> dict:
         new_v_els = [dict(el) for el in v_els]  # deep-ish copy
 
         used_vision_idx = set()
+        matched_docling_idx = set()
 
         for di, del_ in enumerate(d_els):
             lbl = (del_.get("label") or "text").lower()
@@ -165,10 +166,46 @@ def merge_doc(doc_dir: Path, dry_run: bool = False) -> dict:
                     best_vi = vi
 
             if best_vi is not None and iou(d_norm[di], v_norm[best_vi]) >= IOU_THRESHOLD:
+                matched_docling_idx.add(di)
                 if new_v_els[best_vi]["label"] != lbl:
                     new_v_els[best_vi]["label"] = lbl
                     stats["relabelled"] += 1
                     used_vision_idx.add(best_vi)
+
+        # Inject Docling-only visual elements (picture/table) that Vision missed
+        # entirely — these have no matching Vision element at all
+        VISUAL_LABELS = {"picture", "table"}
+        for di, del_ in enumerate(d_els):
+            if di in matched_docling_idx:
+                continue
+            lbl = (del_.get("label") or "text").lower()
+            if lbl not in VISUAL_LABELS:
+                continue
+            if not del_.get("bbox"):
+                continue
+            # Convert Docling bbox (in pdf-point space) to pixel space
+            # so it's consistent with Vision elements
+            db = del_["bbox"]
+            if dps and vps:
+                # Scale from pdf-point space to pixel space
+                sx = vps["w"] / dps["w"]
+                sy = vps["h"] / dps["h"]
+                pixel_bbox = {
+                    "l": round(db["l"] * sx, 2),
+                    "t": round(db["t"] * sy, 2),
+                    "r": round(db["r"] * sx, 2),
+                    "b": round(db["b"] * sy, 2),
+                }
+            else:
+                pixel_bbox = db  # best effort
+            new_v_els.append({
+                "label": lbl,
+                "text": del_.get("text", ""),
+                "bbox": pixel_bbox,
+                "page": del_.get("page", int(pg)),
+                "_source": "docling",
+            })
+            stats["injected"] = stats.get("injected", 0) + 1
 
         updated[pg] = new_v_els
         stats["pages"] += 1
@@ -206,7 +243,9 @@ def main():
         key    = result["key"]
         if status in ("merged", "dry_run"):
             prefix = "[dry] " if status == "dry_run" else "✓ "
-            print(f"{prefix}{key}: {result['relabelled']} relabelled "
+            injected = result.get('injected', 0)
+            inj_str = f", {injected} injected" if injected else ""
+            print(f"{prefix}{key}: {result['relabelled']} relabelled{inj_str} "
                   f"({result['non_text_in_docling']} structural in Docling, "
                   f"{result['pages']} pages)")
         else:
