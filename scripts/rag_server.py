@@ -752,10 +752,15 @@ def _save_pdf(pdf_content: bytes, key: str, collection: str,
     paths = _get_collection_paths(collection)
     if not paths:
         return {"error": f"collection {collection!r} not found"}
-    dest = paths["pdfs_dir"] / key / filename
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_bytes(pdf_content)
+    try:
+        dest = paths["pdfs_dir"] / key / filename
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(pdf_content)
+        print(f"  PDF saved: {dest} ({len(pdf_content) // 1024}KB)")
+    except Exception as e:
+        return {"error": f"Failed to save PDF: {e}"}
     info = _classify_pdf(dest)
+    print(f"  Classified: {info}")
     rel_path = str(dest.relative_to(ROOT))
     _update_inventory(paths["inventory"], key, {
         "pdf_path":   rel_path,
@@ -779,36 +784,42 @@ async def upload_pdf(
     key: str = Form(...),
     collection: str = Form(...),
 ):
-    content = await file.read()
-    if content[:4] != b"%PDF":
-        return JSONResponse({"error": "File does not appear to be a PDF"}, 400)
-    filename = file.filename or f"{key}.pdf"
-    if not filename.lower().endswith(".pdf"):
-        filename += ".pdf"
-    result = _save_pdf(content, key, collection, filename)
-    if "error" in result:
-        return JSONResponse(result, 400)
-    print(f"  Uploaded: {key} -> {result['pdf_path']} "
-          f"({len(content) // 1024}KB, {result.get('page_count', '?')}pp)")
-    return result
+    try:
+        print(f"  Upload request: key={key}, collection={collection}, "
+              f"file={file.filename}")
+        content = await file.read()
+        if content[:4] != b"%PDF":
+            return JSONResponse({"error": "File does not appear to be a PDF"}, 400)
+        filename = file.filename or f"{key}.pdf"
+        if not filename.lower().endswith(".pdf"):
+            filename += ".pdf"
+        result = _save_pdf(content, key, collection, filename)
+        if "error" in result:
+            return JSONResponse(result, 400)
+        print(f"  Upload OK: {key} -> {result['pdf_path']}")
+        return result
+    except Exception as e:
+        print(f"  Upload FAILED: {e}")
+        return JSONResponse({"error": str(e)[:300]}, 500)
 
 
 @app.post("/api/fetch-url")
 async def fetch_url(body: dict):
-    url = body.get("url", "").strip()
-    key = body.get("key", "").strip()
-    collection = body.get("collection", "").strip()
-    if not url:
-        return JSONResponse({"error": "url is required"}, 400)
-    if not key:
-        return JSONResponse({"error": "key is required"}, 400)
-    if not collection:
-        return JSONResponse({"error": "collection is required"}, 400)
     try:
-        import requests as req_lib
-    except ImportError:
-        return JSONResponse({"error": "requests library not installed on server"}, 500)
-    try:
+        url = body.get("url", "").strip()
+        key = body.get("key", "").strip()
+        collection = body.get("collection", "").strip()
+        print(f"  Fetch request: key={key}, url={url[:80]}")
+        if not url:
+            return JSONResponse({"error": "url is required"}, 400)
+        if not key:
+            return JSONResponse({"error": "key is required"}, 400)
+        if not collection:
+            return JSONResponse({"error": "collection is required"}, 400)
+        try:
+            import requests as req_lib
+        except ImportError:
+            return JSONResponse({"error": "requests library not installed on server"}, 500)
         session = req_lib.Session()
         session.headers.update({"User-Agent": "Scholion/1.0 (scholarly research tool)"})
         resp = session.get(url, timeout=30)
@@ -819,19 +830,19 @@ async def fetch_url(body: dict):
             return JSONResponse({"error": "Response is HTML, not a PDF"}, 502)
         if resp.content[:4] != b"%PDF":
             return JSONResponse({"error": "Response does not look like a PDF"}, 502)
+        url_path = urlparse(url).path
+        filename = Path(url_path).name
+        if not filename.lower().endswith(".pdf"):
+            filename = f"{key}.pdf"
+        result = _save_pdf(resp.content, key, collection, filename)
+        if "error" in result:
+            return JSONResponse(result, 400)
+        result["url"] = url
+        print(f"  Fetch OK: {key} -> {result['pdf_path']}")
+        return result
     except Exception as e:
-        return JSONResponse({"error": f"Download failed: {str(e)[:200]}"}, 502)
-    url_path = urlparse(url).path
-    filename = Path(url_path).name
-    if not filename.lower().endswith(".pdf"):
-        filename = f"{key}.pdf"
-    result = _save_pdf(resp.content, key, collection, filename)
-    if "error" in result:
-        return JSONResponse(result, 400)
-    result["url"] = url
-    print(f"  Fetched: {key} -> {result['pdf_path']} "
-          f"({len(resp.content) // 1024}KB, {result.get('page_count', '?')}pp)")
-    return result
+        print(f"  Fetch FAILED: {e}")
+        return JSONResponse({"error": str(e)[:300]}, 500)
 
 
 # ── Static files (data/) — must be mounted after API routes ────────────────────
